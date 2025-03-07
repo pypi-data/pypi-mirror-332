@@ -1,0 +1,9 @@
+README.md
+setup.py
+AShelve/__init__.py
+AShelve/main.py
+AShelve.egg-info/PKG-INFO
+AShelve.egg-info/SOURCES.txt
+AShelve.egg-info/dependency_links.txt
+AShelve.egg-info/requires.txt
+AShelve.egg-info/top_level.txt
