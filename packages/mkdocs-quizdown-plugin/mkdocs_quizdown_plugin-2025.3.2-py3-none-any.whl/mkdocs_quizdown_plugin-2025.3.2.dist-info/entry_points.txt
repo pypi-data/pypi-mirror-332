@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+quizdown = mkdocs_quizdown_plugin.plugin:QuizdownPlugin
