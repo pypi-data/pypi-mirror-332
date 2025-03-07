@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+configuracoes_notebooks/__init__.py
+configuracoes_notebooks/set_proj_dir/__init__.py
+configuracoes_notebooks/set_proj_dir/find_dir.py
+configuracoes_notebooks/set_proj_dir/find_git_proj_dir.py
+configuracoes_notebooks/set_proj_dir/set_dir_in_path.py
+configuracoes_notebooks/set_proj_dir/set_proj_dir.py
+configuracoes_notebooks_seplan.egg-info/PKG-INFO
+configuracoes_notebooks_seplan.egg-info/SOURCES.txt
+configuracoes_notebooks_seplan.egg-info/dependency_links.txt
+configuracoes_notebooks_seplan.egg-info/top_level.txt
