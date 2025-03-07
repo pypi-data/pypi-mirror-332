@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: dynflowparser
+Version: 1.0.12
+Home-page: https://github.com/pafernanr/dynflowparser
+Author: Pablo Fernández Rodríguez
+License: GPLv3
+License-File: LICENSE
+License-File: AUTHORS
+Dynamic: author
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+
+Get sosreport dynflow files and generates user friendly html pages for tasks, plans, actions and steps.
