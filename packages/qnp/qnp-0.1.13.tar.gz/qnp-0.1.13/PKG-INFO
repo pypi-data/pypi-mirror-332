@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: qnp
+Version: 0.1.13
+Summary: Add your description here
+Author-email: Alireza Rezaei <alireza10rezaei10@gmail.com>
+Requires-Python: >=3.9
+Requires-Dist: matplotlib>=3.9.4
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: pyyaml>=6.0.2
+Description-Content-Type: text/markdown
+
+# qnp
+
+Describe your project here.
