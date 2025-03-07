@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: rw_workspace_utils_keywords
+Version: 0.0.2
+Summary: A set of RunWhen published workspace utilities keywords for the RunWhen Platform.
+Home-page: https://github.com/runwhen-contrib/rw-cli-codecollection
+Author: RunWhen
+Author-email: info@runwhen.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: robotframework>=4.1.2
+Requires-Dist: jmespath>=1.0.1
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pyyaml
+Requires-Dist: docker
+Requires-Dist: azure-containerregistry
+Requires-Dist: azure-identity
+Requires-Dist: rw-cli-keywords>=0.0.19
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# rw-workspace-utils
+[Public] RunWhen Workspace Utilities CodeCollection Repository - Managed by terraform
+
+## Purpose
+This is a specialized CodeCollection that is focused on developing workspace specific tasks that help in the overall maintenance or effeciveness of the workspace. These will allow for fast iteration and high customization. 

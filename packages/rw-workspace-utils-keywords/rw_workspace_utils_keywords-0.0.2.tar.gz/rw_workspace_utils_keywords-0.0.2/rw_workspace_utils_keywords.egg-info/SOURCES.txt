@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+requirements.txt
+setup.py
+RW/__init__.py
+rw_workspace_utils_keywords.egg-info/PKG-INFO
+rw_workspace_utils_keywords.egg-info/SOURCES.txt
+rw_workspace_utils_keywords.egg-info/dependency_links.txt
+rw_workspace_utils_keywords.egg-info/requires.txt
+rw_workspace_utils_keywords.egg-info/top_level.txt
