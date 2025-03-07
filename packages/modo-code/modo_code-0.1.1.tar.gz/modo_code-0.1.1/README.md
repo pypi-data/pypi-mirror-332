@@ -1,0 +1,1 @@
+Modo code assistant client
