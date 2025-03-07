@@ -1,0 +1,100 @@
+[build-system]
+build-backend = "mesonpy"#"hatchling.build" #"mesonpy"
+requires = [
+    "hatch-meson",
+    "numpy", 
+    "meson-python"
+    ]
+
+[tool.meson-python.args]
+# setup = ['-Doption=false', '-Dfeature=enabled', '-Dvalue=42']
+compile = ['-j8']
+# install = ['--tags=bindings']
+# dist = ['--include-subprojects']
+
+[project]
+name = "SILEXlight"
+authors = [
+     {name = "Antoine Legay", email = "antoine.legay@lecnam.net"},
+     {name = "Luc Laurent", email = "luc.laurent@lecnam.net"},
+]
+maintainers = [
+     {name = "Luc Laurent", email = "luc.laurent@lecnam.net"},
+]
+description = "Basic SILEX library"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Fortran",
+    "Intended Audience :: Education",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering :: Physics"
+]
+dependencies = [
+    "numpy", 
+    "scipy"
+]
+readme = "README.md"
+dynamic = ["version"]
+
+# [tool.setuptools.dynamic]
+# readme = { file = ["README.md"], content-type = "text/markdown" }
+
+[tool.hatch.version]
+path = "SILEXlight/__init__.py"
+
+[project.urls]
+homepage = "https://antoinelegay.free.fr"
+repository = "https://github.com/luclaurent/SILEX-light"
+
+[project.optional-dependencies]
+dev = ["pylint ~=2.14.0", "toml ~=0.10.2", "yapf ~=0.32.0"]
+test = ["pytest", "pytest-cov[all]", "pytest-benchmark"]
+
+[tool.hatch.build]
+# packages = ["SILEXlib"]
+only-packages = true
+ignore-vcs = false
+
+[tool.hatch.build.hooks.meson]
+[tool.hatch.metadata.hooks.meson]
+
+[tool.pytest.ini_options]
+addopts = "-v --cov-report term --cov-report html:htmlcov --cov-report xml --cov-fail-under 1"
+
+
+[tool.coverage.run]
+branch = true
+command_line = "-m unittest discover -s SILEXlight/tests"
+
+[tool.coverage.html]
+directory = "coverage_html_report"
+
+[tool.ruff]
+# Allow lines to be as long as 120.
+line-length = 120
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.cibuildwheel]
+test-requires = "pytest"
+test-command = "python -m pytest --pyargs SILEXlight.tests"
+manylinux-x86_64-image="manylinux2014"
+
+[tool.cibuildwheel.linux]
+repair-wheel-command = "auditwheel repair -w {dest_dir} {wheel}"
+
+# [[tool.cibuildwheel.overrides]]
+# select = "cp3{9,10,11,12,13}-*"
+
+
