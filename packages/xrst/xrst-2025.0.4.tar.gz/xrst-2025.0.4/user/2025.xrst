@@ -1,0 +1,53 @@
+SPDX-License-Identifier: GPL-3.0-or-later
+SPDX-FileCopyrightText: Bradley M. Bell <bradbell@seanet.com>
+SPDX-FileContributor: 2020-25 Bradley M. Bell
+----------------------------------------------------------------------------
+{xrst_begin 2025 user}
+{xrst_spell
+   conda
+   furo
+   pyenchant
+}
+
+xrst Release Notes for 2025
+###########################
+These change, at the beginning of 2025, were included in the 2025 version
+because they improve its distribution.
+
+mm-dd
+*****
+
+03-07
+=====
+There was a bug in the error message when a single or double quote in the
+output of the :ref:`config_file@input_files` command.
+This has been fixed.
+
+02-18
+=====
+A :ref:`spell_cmd@spell_off` command would not be recognized
+if it was in the first line of a :ref:`template_cmd@template_file`  .
+This is fixed starting with version 2025.0.3 .
+
+01-05
+=====
+Conda Forge does not yet handle dependencies that are different for
+different systems.
+It was therefore decided to totally remove pyenchant
+as a requirement when installing xrst.
+In the same spirit, only the default html theme furo is a requirement.
+If you use the pyenchant spell checker or one of the other themes,
+and it is not installed, you will get a message suggesting that you install it.
+
+
+01-04
+=====
+Remove the pyenchant install requirement on windows; see
+:ref:`user-guide@Dependencies` .
+
+01-03
+=====
+Improve the discussion of spelling errors in the
+:ref:`get_started-name` example.
+
+{xrst_end 2025}

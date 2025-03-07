@@ -1,0 +1,5 @@
+sphinx
+toml
+sphinx-copybutton
+pyspellchecker
+furo
