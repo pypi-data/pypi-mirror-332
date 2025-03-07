@@ -1,0 +1,168 @@
+#output:
+#  count: 5
+#type: union
+#items:
+#  - type: string
+#  - type: integer
+
+#type: list
+#sub_type:
+#  type: string
+#  chars: abcdef
+#  max_length: 5
+#  min_length: 2
+#max_length: 3
+#
+#type: choice
+#items:
+#  - red
+#  - green
+#  - blue
+
+output:
+#  format: xml
+  xml_tag: FeatureCollection
+#  directory: "."
+#  filename_format: "{name}.{format}"
+  header_separator: "~"
+config:
+  formatter_dir: dist
+objects:
+#  Feature:
+#    output:
+#      collection: true
+#      count: 3
+#    type: object
+#    properties:
+#      fid:
+#        type: integer
+#        expression: interval
+#        xml_attr: true
+#      Description:
+#        type: string
+#        xml_attr: true
+      Line:
+        type: object
+        properties:
+          srsName:
+            type: static
+            value: urn:ogc:def:crs:EPSG::4326
+            xml_attr: true
+          srsDimension:
+            type: static
+            value: 2
+            xml_attr: true
+          points:
+            type: list
+            hidden: true
+            sub_type:
+              type: object
+              properties:
+                lat:
+                  type: float
+                  min_offset: -90
+                  max_offset: 90
+                lon:
+                  type: float
+                  min_offset: -180
+                  max_offset: 180
+          pos:
+            type: object
+            properties:
+              coords:
+                type: string
+                expression: Line().points | iter('format', '{item.lat} {item.lon}') | join(' ')
+#  html:
+#    type: object
+#    properties:
+#      head:
+#        type: object
+#        properties:
+#          title:
+#            type: object
+#            properties:
+#              string:
+#                type: name
+#      body:
+#        type: object
+#        properties:
+#          header:
+#            type: object
+#            xml_tag: h1
+#            properties:
+#              string:
+#                type: string
+#                expression: html().head.title.string
+#
+#          paragraph1:
+#            type: object
+#            xml_tag: p
+#            properties:
+#              class:
+#                type: string
+#                xml_attr: true
+#              string:
+#                type: string
+#          new_list:
+#            type: object
+#            xml_tag: ul
+#            properties:
+#              first_item:
+#                type: object
+#                xml_tag: li
+#                properties:
+#                  string:
+#                    type: static
+#                    value: First Item
+#              list_items:
+#                type: list
+#                min_length: 2
+#                max_length: 4
+#                sub_type:
+#                  type: object
+#                  xml_tag: li
+#                  properties:
+#                    string:
+#                      type: string
+#              last_item:
+#                type: object
+#                xml_tag: li
+#                properties:
+#                  string:
+#                    type: static
+#                    value: Last Item
+
+#  my_data:
+#    type: object
+#    properties:
+#      id:
+#        type: integer
+#        expression: interval
+#        xml_attr: true
+#      field_1:
+#        type: string
+#      field_2:
+#        type: integer
+#  object2:
+#    type: object
+#    properties:
+#      id:
+#        type: integer
+#        expression: interval
+#      field_1:
+#        type: string
+#      field_2:
+#        type: integer
+#objects:
+#  my_data:
+#    output:
+#      count: 10
+#    type: object
+#    properties:
+#      field_1:
+#        type: string
+#  new_data:
+#    output:
+#      format: json
+#      collection: false
+#    type: string
