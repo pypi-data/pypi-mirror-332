@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hydra-buddies
+Version: 0.1.0
+Summary: Un gestionnaire de configuration basé sur Hydra
+Home-page: https://github.com/MChrys/hydra-buddies
+License: MIT
+Keywords: hydra,configuration,omegaconf
+Author: MChrys
+Author-email: chrys.beltran@outlook.fr
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: hydra-core (>=1.3.2,<2.0.0)
+Requires-Dist: omegaconf (>=2.3.0,<3.0.0)
+Project-URL: Repository, https://github.com/MChrys/hydra-buddies
+Description-Content-Type: text/markdown
+
+# hydra-buddy
+package to read more easier hydra 
+
