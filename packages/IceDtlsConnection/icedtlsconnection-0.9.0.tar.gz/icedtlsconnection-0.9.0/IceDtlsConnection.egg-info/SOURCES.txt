@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+IceDtlsConnection/IceDtlsSocket.py
+IceDtlsConnection.egg-info/PKG-INFO
+IceDtlsConnection.egg-info/SOURCES.txt
+IceDtlsConnection.egg-info/dependency_links.txt
+IceDtlsConnection.egg-info/requires.txt
+IceDtlsConnection.egg-info/top_level.txt

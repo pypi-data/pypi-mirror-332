@@ -1,0 +1,17 @@
+# file: pyproject.toml
+
+[build-system]
+requires = [
+    "setuptools >= 65",
+    "wheel >= 0.38",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "IceDtlsConnection"
+version = "0.9.0"
+dependencies = [
+    "aioice",
+    "pylibsrtp",
+    "pyOpenSSL",
+]
