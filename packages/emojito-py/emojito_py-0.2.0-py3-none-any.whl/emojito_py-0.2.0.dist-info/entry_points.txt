@@ -1,0 +1,2 @@
+[console_scripts]
+emojito = emojito.cli:main
