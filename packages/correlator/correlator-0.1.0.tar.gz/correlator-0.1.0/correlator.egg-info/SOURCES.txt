@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+correlator.egg-info/PKG-INFO
+correlator.egg-info/SOURCES.txt
+correlator.egg-info/dependency_links.txt
+correlator.egg-info/entry_points.txt
+correlator.egg-info/top_level.txt
+kasper/__init__.py
+kasper/main.py
