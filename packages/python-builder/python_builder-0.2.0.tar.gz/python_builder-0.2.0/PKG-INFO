@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: python-builder
+Version: 0.2.0
+Summary: Implementation of generic python builder
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
