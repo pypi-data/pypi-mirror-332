@@ -1,0 +1,1 @@
+recursive-include CharNetOCR/models *.pt
