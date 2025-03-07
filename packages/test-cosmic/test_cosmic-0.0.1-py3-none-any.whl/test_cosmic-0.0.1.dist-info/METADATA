@@ -1,0 +1,4 @@
+Metadata-Version: 2.2
+Name: test_cosmic
+Version: 0.0.1
+Summary: A Python SDK for interacting with the My API service.
