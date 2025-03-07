@@ -1,0 +1,2 @@
+[console_scripts]
+fibonacci-even-sum = fibonacci_even_sum:main
