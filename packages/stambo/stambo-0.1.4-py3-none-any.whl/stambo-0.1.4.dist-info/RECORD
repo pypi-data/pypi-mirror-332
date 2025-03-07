@@ -1,0 +1,11 @@
+stambo/__init__.py,sha256=XqwOVmNO8bl27cPKYtGF9zSW5sSQzJv_Aoe_bNG8dgU,223
+stambo/_predsamplewrapper.py,sha256=KaATh-rV1ibQlJfQhbM7l0p5Pnp8nRJRKJPdbyuj15Y,2725
+stambo/_stambo.py,sha256=KV0eZe9k2w-ze-NHm278AksIyd9PiPCz0TTragsIVRM,10875
+stambo/_utils.py,sha256=5n-7EonqH__x7a6U_n3JzsJ9r0NtoUB_DfnYlljCYMw,2766
+stambo/metrics.py,sha256=B3HK0VR2sbpoQAK4kLOZkQu1JaH_3ZKuh3PmghXJHNY,3698
+stambo/synthetic.py,sha256=de1T9M3TcIqQUAUqUEdXOMdS8pDYeebpqrU1AyiOPP0,6550
+stambo-0.1.4.dist-info/LICENSE,sha256=otJkcKrkrzb98ES-stYfh3LWdX-HzafLnoYOQ10zKAE,1099
+stambo-0.1.4.dist-info/METADATA,sha256=lZ61-1CCtIf6cLsY9qibTxRNnbHKbwIaigOSTf2Fjts,1442
+stambo-0.1.4.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+stambo-0.1.4.dist-info/top_level.txt,sha256=iBSi4JgcIlwPu0gAyXVT4_db2efFPKJrHnVd5UE3TpE,7
+stambo-0.1.4.dist-info/RECORD,,
