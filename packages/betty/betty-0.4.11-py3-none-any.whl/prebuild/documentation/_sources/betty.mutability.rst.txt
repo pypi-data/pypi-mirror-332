@@ -1,0 +1,7 @@
+betty.mutability module
+=======================
+
+.. automodule:: betty.mutability
+   :members:
+   :show-inheritance:
+   :undoc-members:
