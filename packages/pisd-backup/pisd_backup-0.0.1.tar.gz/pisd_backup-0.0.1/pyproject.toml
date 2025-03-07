@@ -1,0 +1,62 @@
+[project]
+name = "piSD-backup"
+version = "0.0.1"
+description = "Python app for creating Raspberry Pi SD card images"
+authors = [{ name = "Jose Ignacio Piñero", email = "piwero@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "python-crontab"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/Piwero/pisd-backup"
+Issues = "https://github.com/Piwero/pisd-backup/issues"
+
+[tool.black]
+line-length = 88
+exclude = '''
+/(
+  | migrations
+  | .venv
+)/
+'''
+
+[tool.ruff]
+select = ["E", "F", "I"]
+ignore = ["E501", ]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "**/migrations",
+    "settings.py"
+]
+line-length = 120
+
+[build-system]
+requires = ["setuptools >= 63.0"]
+build-backend = "setuptools.build_meta"
