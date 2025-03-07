@@ -1,0 +1,19 @@
+[build-system]
+requires = [
+    "hatchling>=1.0.0",
+    "opencv-python>=4.11.0.86"
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "vid-to-ascii"
+version = "0.0.1"
+requires-python = ">=3.7"
+
+[tool.hatch.build]
+only-include = [ # still cant exclude .gitignore and pyproject.toml
+    "vid_to_ascii.py",
+    "sample.mp4",
+    "sample.pkl",
+    "README.md",
+]
