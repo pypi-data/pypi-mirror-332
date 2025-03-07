@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: gdllm
+Version: 0.2.0
+Summary: TBC
+Project-URL: Homepage, https://github.com/GandalfsDad/gdllm
+Author-email: Rhian McClelland <Rhian.McClelland@outlook.com>
+License: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: anthropic>=0.47.2
+Requires-Dist: google-genai>=1.2.0
+Requires-Dist: openai>=1.63.0
+Requires-Dist: pydantic>=2.10.6
+Description-Content-Type: text/markdown
+
+# gdllm
+
+Basic common LLM API framework mostly intended for personal use.
