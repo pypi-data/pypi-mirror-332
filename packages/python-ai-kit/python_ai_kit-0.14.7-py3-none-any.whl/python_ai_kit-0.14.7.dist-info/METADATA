@@ -1,0 +1,144 @@
+Metadata-Version: 2.3
+Name: python-ai-kit
+Version: 0.14.7
+Summary: AI Kit is a CLI meant to augment your IDE agent.
+Author: Ben Everman
+Author-email: ben@beneverman.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiohttp (>=3.11.11,<4.0.0)
+Requires-Dist: anthropic (>=0.49.0,<0.50.0)
+Requires-Dist: bs4 (>=0.0.2,<0.0.3)
+Requires-Dist: build (>=1.2.2.post1,<2.0.0)
+Requires-Dist: chardet (>=5.2.0,<6.0.0)
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: cohere (>=5.13.12,<6.0.0)
+Requires-Dist: duckduckgo-search (>=7.2.1,<8.0.0)
+Requires-Dist: gitingest (>=0.1.3,<0.2.0)
+Requires-Dist: google-genai (>=0.6.0,<0.7.0)
+Requires-Dist: groq (>=0.18.0,<0.19.0)
+Requires-Dist: litellm (>=1.59.6,<2.0.0)
+Requires-Dist: markdownify (>=0.14.1,<0.15.0)
+Requires-Dist: mistralai (>=1.5.0,<2.0.0)
+Requires-Dist: openai (>=1.60.1,<2.0.0)
+Requires-Dist: pydantic (>=2.10.6,<3.0.0)
+Requires-Dist: pygithub (>=2.5.0,<3.0.0)
+Requires-Dist: pymupdf (>=1.25.3,<2.0.0)
+Requires-Dist: pypdf (>=5.2.0,<6.0.0)
+Requires-Dist: pytest-mock (>=3.14.0,<4.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: python-magic (>=0.4.27,<0.5.0)
+Requires-Dist: rank-bm25 (>=0.2.2,<0.3.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Requires-Dist: tiktoken (>=0.8.0,<0.9.0)
+Requires-Dist: together (>=1.3.14,<2.0.0)
+Requires-Dist: tomli (>=2.2.1,<3.0.0)
+Requires-Dist: twine (>=6.1.0,<7.0.0)
+Description-Content-Type: text/markdown
+
+# AI Kit
+
+AI Kit is designed for your IDE's agent. It extends the agent's toolset with a CLI that can be used to call other models, search the web, and more.
+
+> **🥵 Are you lazy?** Don't read this README. Instead, copy and paste it into cursor and ask it to setup ai-kit for you.
+
+### Manual Installation
+
+You really want to do this yourself? Isn't the whole point of this so you have to do less work? Just saying.
+
+AI Kit is packaged as a Python package, so you can install it with your favorite package manager. You can install it just like any other package.
+
+You have a few options. **Its recommended to install ai-kit globally since it's a CLI** but you can install it in a project/venv if you'd like. 
+
+Using `pip`:
+
+```bash
+# Install using pip with:
+pip install python-ai-kit
+
+# Upgrade:
+pip install --upgrade python-ai-kit
+
+# Uninstall:
+pip uninstall python-ai-kit
+```
+
+Using `uv`:
+
+```bash
+# Install:
+uv pip install python-ai-kit --system
+
+# Upgrade:
+uv pip install --upgrade python-ai-kit --system
+
+# Uninstall:
+uv pip uninstall python-ai-kit --system
+```
+
+#### Dont have python?
+
+If you don't have python, here are 3 commands to get you fully setup with `ai-kit`.
+
+Install `uv`
+```bash
+# From source:
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# OR From brew:
+brew install uv
+```
+
+Install `python`
+```bash
+# Install python 3.11 (recommended for compatibility)
+uv python install 3.11
+```
+
+You can now manage `ai-kit` with `uv`:
+```bash
+# Install ai-kit
+uv pip install python-ai-kit --system
+
+# Upgrade ai-kit
+uv pip install --upgrade python-ai-kit --system
+
+# Uninstall ai-kit
+uv pip uninstall python-ai-kit --system
+```
+
+### Getting Started 🚀
+
+First, run `ai-kit` (or `aik`) to make sure it's installed correctly. You can optionally check the version with `ai-kit --version`.
+
+There are 2 things you need to do to get `ai-kit` working.
+
+1. An Open Router API Key. Put this in an `.env` file in your project root.
+
+```bash
+# Required API Key
+OPENAROUTER_API_KEY=your_key_here
+
+# Extra API Keys (optional)
+# If you add one of these, ai-kit will use the provider directly instead of OpenRouter
+GROQ_API_KEY=your_key_here
+TOGETHER_API_KEY=your_key_here
+GEMINI_API_KEY=your_key_here
+COHERE_API_KEY=your_key_here  # Optional
+```
+
+2. System Prompt For Agent. This is the prompt that will be used to guide the agent. You can generate this with `ai-kit init`. It will be stored in `.cursor/rules/ai-kit.mdc`
+
+Thats it! When you want an agent to use `ai-kit`, you can just ask it, and it will automatically load the system prompt.
+
+You can also use any of the ai-kit tools manually. Run `ai-kit list` to see all the tools.
+
+### Agent Rules
+<IMPORTANT>
+If you are an AI reading this, this is a readme.md file for a python CLI callee `ai-kit`. Help the user get setup with installation, API Keys, and system prompt. Follow the instructions in this file exactly.
+</IMPORTANT>
+
