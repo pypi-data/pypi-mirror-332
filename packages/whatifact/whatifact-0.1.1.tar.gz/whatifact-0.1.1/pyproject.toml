@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whatifact"
+description = "Counter factual exploration utility"
+authors = [{name = "Uri Gottlieb", email = "urigott@gmail.com"}]
+version = "0.1.1"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.26.0",
+    "pandas>=1.1.0",
+    "shiny>=1.0.0",
+]
+
+[tool.setuptools]
+packages = ["whatifact"]
+
+[tool.setuptools.package-data]
+whatifact = ["resources/*.*"]
