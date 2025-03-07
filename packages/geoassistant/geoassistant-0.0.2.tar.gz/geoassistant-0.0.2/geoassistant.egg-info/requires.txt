@@ -1,0 +1,6 @@
+geogeometry==0.0.4
+pyarrow~=18.1.0
+python-pptx~=1.0.2
+numpy
+matplotlib
+twine
