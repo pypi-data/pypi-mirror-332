@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hello_quinx"
+version = "0.1.6"
+description = "Learn how to publish a PyPI package"
+authors = ["Quynh Nguyen <seriquynh@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hello_quinx", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.7.0"
+isort = "^5.12.0"
+flake8 = "^6.1.0"
+
+[tool.poetry.scripts]
+hello = "hello_quinx.cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
