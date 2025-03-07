@@ -1,0 +1,11 @@
+roadtools/roadtx/federation.py,sha256=QTze8Agp3o2Z5DVP49uOhaPOOXCA2K_Z69M8PedMPrA,17407
+roadtools/roadtx/firstpartyscopes.json,sha256=_t6a6dfasivVwl6M4yI2F8qI2M4220z-WuloabTzsS8,728580
+roadtools/roadtx/keepass.py,sha256=tEu5gKeCxsFQKKa54fDI406yzNeYOn9BBSi4vo-eimY,7865
+roadtools/roadtx/main.py,sha256=lQlgmj663kg_MTB7yqQmG1oIBrAIY9fkTzfbIjWJD_0,115020
+roadtools/roadtx/selenium.py,sha256=ki1CS0mvPK7NREcBdq4DfmrVkIZu5Kb2XCVUDJ5k3bM,32334
+roadtools/roadtx/utils.py,sha256=WIzlNRu_fS7wyCdPNAOHUHO4GGQnC7bkDONymX78y9E,1367
+roadtx-1.17.0.dist-info/METADATA,sha256=3TI_huGTRJhyC1gEYbinfkjcFA0m1quakzh8PW2RmqE,807
+roadtx-1.17.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+roadtx-1.17.0.dist-info/entry_points.txt,sha256=hRP4h2cmTE6IoQ2Ka323bTfuHzgLyIFAjjx92m2dp2M,54
+roadtx-1.17.0.dist-info/top_level.txt,sha256=JSG6t-icqbjsOrwGoaGqkpjXBih4CpLyzCioJovObps,10
+roadtx-1.17.0.dist-info/RECORD,,
