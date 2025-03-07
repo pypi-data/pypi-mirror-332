@@ -1,0 +1,19 @@
+version: 1.2
+tools:
+  - subclass: CWL
+    primaryDescriptorPath: /workflows/huggingface-rdf.cwl
+    readMePath: /README.md
+    name: huggingface-rdf
+    authors:
+      - orcid: 0000-0001-6683-2270
+    topic: Generate RDF from Hugging Face Croissant ML descriptions
+    publish: true
+notebooks:
+  - format: JUPYTER
+    language: PYTHON
+    name: croissant-rdf-example
+    path: notebooks/example.ipynb
+    topic: This notebook demonstrates how to use croissant-rdf
+    authors:
+      - orcid: 0000-0001-6683-2270
+    publish: true
