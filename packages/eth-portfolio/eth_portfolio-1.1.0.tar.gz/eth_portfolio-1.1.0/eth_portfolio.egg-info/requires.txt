@@ -1,0 +1,9 @@
+checksum_dict>=1.1.2
+dank_mids>=4.20.109
+eth-brownie<1.21,>=1.19.3
+eth_retry<1,>=0.1.15
+evmspec>=0.2.0
+ez-a-sync>=0.24.43
+numpy<2
+pandas<1.6,>=1.4.3
+ypricemagic<5,>=4.0.57
