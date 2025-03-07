@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: HAI_Bot
+Version: 0.1
+Summary: A Python package for creating ChatBot with your own data
+Home-page: https://github.com/HDAI654/HAI_Bot
+Author: Hamed Amiri
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: keras
+Requires-Dist: numpy
