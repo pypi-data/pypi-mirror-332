@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="52bada7e-dc5c-48b6-8717-97e505a3a753" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/features.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/features.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/badge/tests.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/badge/tests.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/usage.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/usage.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pydantic_file_secrets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pydantic_file_secrets/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_ignored_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ignored_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_original_source.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_original_source.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_plain.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_plain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_prefix.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_prefix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_secrets_dir.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_secrets_dir.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_settings_args.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_settings_args.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_strip_whitespace.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_strip_whitespace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_subdir.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_subdir.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tox.ini" beforeDir="false" afterPath="$PROJECT_DIR$/tox.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uv.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2kbUNdfYCaM9agCrJAiXdS424Vc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Shell Script.alacritty.sh.executor": "Run",
+    "Shell Script.terminal.sh.executor": "Run",
+    "git-widget-placeholder": "30-typing-for-filesecretssettingssource",
+    "last_opened_file_path": "/Users/m/repos/pydantic-file-secrets/tests/usage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/usage" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/docs" />
+      <recent name="$PROJECT_DIR$/NEWS.d" />
+      <recent name="$PROJECT_DIR$/.dev" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.dev" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="terminal.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/.dev/terminal.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/.dev" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/sh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.terminal.sh" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.19416.19" />
+        <option value="bundled-python-sdk-337b0a7a993a-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.19416.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52bada7e-dc5c-48b6-8717-97e505a3a753" name="Changes" comment="" />
+      <created>1723551734301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723551734301</updated>
+      <workItem from="1723551735621" duration="16710000" />
+      <workItem from="1723753780962" duration="13185000" />
+      <workItem from="1723793597698" duration="11000" />
+      <workItem from="1723818472116" duration="13588000" />
+      <workItem from="1724853673752" duration="3349000" />
+      <workItem from="1725376349322" duration="16078000" />
+      <workItem from="1725792331216" duration="1472000" />
+      <workItem from="1725809264651" duration="406000" />
+      <workItem from="1725822486992" duration="4081000" />
+      <workItem from="1725891913975" duration="352000" />
+      <workItem from="1725896962481" duration="9000" />
+      <workItem from="1725978389884" duration="1187000" />
+      <workItem from="1726229222888" duration="458000" />
+      <workItem from="1728491886297" duration="4589000" />
+      <workItem from="1728986503512" duration="6000" />
+      <workItem from="1732608145857" duration="13327000" />
+      <workItem from="1732706930132" duration="1000000" />
+      <workItem from="1734868266557" duration="66000" />
+      <workItem from="1734966558449" duration="1918000" />
+      <workItem from="1735587362792" duration="569000" />
+      <workItem from="1735917360541" duration="1867000" />
+      <workItem from="1736161402985" duration="462000" />
+      <workItem from="1737392890815" duration="1821000" />
+      <workItem from="1739797363443" duration="1122000" />
+      <workItem from="1740599918228" duration="55782000" />
+      <workItem from="1741116492766" duration="311000" />
+      <workItem from="1741117336179" duration="588000" />
+      <workItem from="1741118033872" duration="44017000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
