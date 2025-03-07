@@ -1,0 +1,2 @@
+[console_scripts]
+abi-fetcher = abi_fetcher.client:main
