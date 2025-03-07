@@ -1,0 +1,13 @@
+coslab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coslab/aws.py,sha256=bIpO0qEYCnwMt2tLqjF1Wy60vat0L5-kfJ0-GQ3Weik,1562
+coslab/azure_vision.py,sha256=VlUC1AoU2NtEVZINnApCias2YsJq0ZWQNb6j2bAdGh0,2140
+coslab/clarify.py,sha256=RSSn6watuKwSDPEjvV1Ndzym0N-CotZci-TyGZeUNoM,1817
+coslab/common.py,sha256=DY_hAQrb6b8cxxaQ9efTYgScDEofkBCEz7y43BGjfkE,20
+coslab/coslabcli.py,sha256=PYyno8Kz6wF7X0UyYFW-fNmv46k2mF802HqC4TJnMGI,3746
+coslab/googlecloud.py,sha256=4r_lnhNWO4jIptRg2RalOBEuQxuRwMC_DqykAuUfbn4,1589
+coslab/tag_comparator.py,sha256=oqO0XB_8MqDqwBJyAsOVvEeZXEu8SlS1z1XyQ7jVDu4,2632
+coslab/taggerresults.py,sha256=ATT3TiM7GUVaw8xZxXQrK_N7q98i1ChfqzIzdlQB44A,3473
+coslab_core-0.9.4.dist-info/METADATA,sha256=CcKO2I-mgI6XdmYdYgNjoAuisK4X2ORLo745YtaUGnw,4181
+coslab_core-0.9.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+coslab_core-0.9.4.dist-info/entry_points.txt,sha256=VoF_9szJWqkJ9ceI3tuN6zbEDLx1KQZ9cLmUskCNG5k,55
+coslab_core-0.9.4.dist-info/RECORD,,
