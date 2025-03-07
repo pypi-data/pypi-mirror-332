@@ -1,0 +1,12 @@
+clite/__init__.py,sha256=ro1pZ_SX38OHvDWL9IT9FdR-dU2L4S9GAETl2uCFZd4,66
+clite/errors.py,sha256=SWVh83_9z8nIjRgKE9ACQkDh6-xV82dgRRHUCOYvkEs,230
+clite/main.py,sha256=gcVi77s1STy6i7wKo7rsbm1UKkmvCMpkUej0lj2vxJI,1738
+clite/output.py,sha256=pMkkJRBQZfsmJKSFl8jxx-1kl4EWYqFm0jNE2uVOFic,463
+clite/params_types.py,sha256=Laks4MN_ejPE4AgjCIar0tdni12IS1hYsIDHr-aod70,1718
+clite/parser.py,sha256=7eNm4-gsN36Q7JCvGupE8u9q6lt73X1R9SrZgHNPic4,2106
+clite/testing.py,sha256=TJnX8ZQSdvomxqNzE037sGFBcpVev_q-dRH927H16pU,241
+clite/types.py,sha256=Ry6mvZe9EVlJOGHsqFbMIgsxPD9th4W9Ruo0re1ZrBc,179
+clite-0.2.1.dist-info/METADATA,sha256=k4cXUn3alksFGYK-y6WddL8D6LWgEJuZp51jpjmPghM,1228
+clite-0.2.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+clite-0.2.1.dist-info/top_level.txt,sha256=ek8rRIdqSWIlj9d7u9BVifZdS55mTE3AJZEpVFsjMI0,6
+clite-0.2.1.dist-info/RECORD,,
