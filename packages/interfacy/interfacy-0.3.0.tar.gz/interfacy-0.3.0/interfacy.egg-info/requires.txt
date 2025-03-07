@@ -1,0 +1,15 @@
+nested_argparse==0.1.2
+stdl>=0.6.1
+objinspect>=0.2.15
+strto>=0.1.8
+
+[dev]
+black
+pytest
+flake8
+
+[full]
+argcomplete
+
+[test]
+pytest
