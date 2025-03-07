@@ -1,0 +1,93 @@
+{
+  "StarCraft": {
+      "Strategic_Planning": {
+          "RPM": 0.3,
+          "EER": 0.3,
+          "SUR": 0.3,
+          "TRR": 0.1
+      },
+      "Real_Time_Decision": {
+          "APM": 0.5,
+          "EPM": 0.5
+      },
+      "Learning_Ability": {
+          "WR": 0.6,
+          "GA": 0.4
+      },
+      "Team_Collaboration": {
+      },
+      "Social_Reasoning": {
+      }
+  },
+  "Civilization": {
+      "Strategic_Planning": {
+          "EGR": 0.2,
+          "CER": 0.2,
+          "TRP": 0.2,
+          "LUR": 0.2,
+          "MGR": 0.2
+      },
+      "Learning_Ability": {
+          "GA": 0.5,
+          "WBR": 0.5
+      },
+      "Team_Collaboration": {},
+      "Real_Time_Decision": {},
+      "Social_Reasoning": {}
+  },
+  "StreetFighter": {
+      "Real_Time_Decision": {
+          "AHR": 0.4,
+          "SMHR": 0.3,
+          "HCR": 0.3
+      },
+      "Learning_Ability": {
+          "WR": 0.6,
+          "GA": 0.4
+      },
+      "Strategic_Planning": {},
+        "Team_Collaboration": {},
+        "Social_Reasoning": {}
+  },
+  "Diplomacy": {
+      "Strategic_Planning": {
+          "CNT": 0.5,
+          "WFS": 0.5
+      },
+      "Social_Reasoning": {
+          "BTR": 1.0
+      },
+      "Team_Collaboration": {
+          "ASR": 0.5,
+          "ALT": 0.5
+      },
+      "Real_Time_Decision": {},
+        "Learning_Ability": {}
+  },
+  "Werewolf": {
+      "Social_Reasoning": {
+          "IRP": 1.0
+
+      },
+      "Team_Collaboration": {
+          "KRS": 0.5,
+          "VSS": 0.5
+      },
+      "Strategic_Planning": {},
+        "Real_Time_Decision":{},
+        "Learning_Ability": {}
+  },
+  "Stratego": {
+      "Strategic_Planning": {
+          "PCR": 0.5,
+          "KPR": 0.5
+      },
+      "Learning_Ability": {
+          "WR": 0.6,
+          "GA": 0.4
+      },
+      "Real_Time_Decision": {},
+        "Social_Reasoning": {},
+        "Team_Collaboration": {}
+  }
+}

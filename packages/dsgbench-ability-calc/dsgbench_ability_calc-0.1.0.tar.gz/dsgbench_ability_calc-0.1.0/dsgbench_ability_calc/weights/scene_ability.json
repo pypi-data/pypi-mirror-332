@@ -1,0 +1,29 @@
+{
+    "StarCraft": {
+        "scene1": 0.20,
+        "scene2": 0.20,
+        "scene3": 0.20,
+        "scene4": 0.20,
+        "scene5": 0.10,
+        "scene6": 0.10
+    },
+    "Civilization": {
+        "scene1": 0.40,
+        "scene2": 0.30,
+        "scene3": 0.30
+    },
+    "StreetFighter": {
+        "scene1": 0.50,
+        "scene2": 0.50
+    },
+    "Werewolf": {
+        "scene1": 1.00
+    },
+    "Diplomacy": {
+        "scene1": 1.0
+    },
+    "Stratego": {
+        "scene1": 0.50,
+        "scene2": 0.50
+    }
+}

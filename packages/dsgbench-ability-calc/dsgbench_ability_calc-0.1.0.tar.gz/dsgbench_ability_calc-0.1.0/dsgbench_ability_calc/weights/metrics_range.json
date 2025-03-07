@@ -1,0 +1,93 @@
+{
+  "StarCraft": {
+      "Strategic_Planning": {
+          "RPM": {"min_value":0,"max_value":60},
+          "EER": {"min_value":0,"max_value":1},
+          "SUR": {"min_value":0,"max_value":1},
+          "TRR": {"min_value":0,"max_value":1}
+      },
+      "Real_Time_Decision": {
+          "APM": {"min_value":0,"max_value":180},
+          "EPM": {"min_value":0,"max_value":180}
+      },
+      "Learning_Ability": {
+          "WR": {"min_value":0,"max_value":2},
+          "GA": {"min_value":0,"max_value":1}
+      },
+      "Team_Collaboration": {
+      },
+      "Social_Reasoning": {
+      }
+  },
+  "Civilization": {
+      "Strategic_Planning": {
+          "EGR": {"min_value":0,"max_value":10},
+          "CER": {"min_value":0,"max_value":1},
+          "TRP": {"min_value":0,"max_value":100},
+          "LUR": {"min_value":0,"max_value":1},
+          "MGR": {"min_value":0,"max_value":10}
+      },
+      "Learning_Ability": {
+          "GA": {"min_value":0,"max_value":1},
+          "WBR": {"min_value":0,"max_value":2}
+      },
+      "Team_Collaboration": {},
+      "Real_Time_Decision": {},
+      "Social_Reasoning": {}
+  },
+  "StreetFighter": {
+      "Real_Time_Decision": {
+          "AHR": {"min_value":0,"max_value":1},
+          "SMHR": {"min_value":0,"max_value":1},
+          "HCR": {"min_value":0,"max_value":1}
+      },
+      "Learning_Ability": {
+          "WR": {"min_value":0,"max_value":2},
+          "GA": {"min_value":0,"max_value":1}
+      },
+      "Strategic_Planning": {},
+        "Team_Collaboration": {},
+        "Social_Reasoning": {}
+  },
+  "Diplomacy": {
+      "Strategic_Planning": {
+          "CNT": {"min_value":0,"max_value":22},
+          "WFS": {"min_value":0,"max_value":100}
+      },
+      "Social_Reasoning": {
+          "BTR": {"min_value":0,"max_value":1}
+      },
+      "Team_Collaboration": {
+          "ASR": {"min_value":0,"max_value":22},
+          "ALT": {"min_value":0,"max_value":20}
+      },
+      "Real_Time_Decision": {},
+        "Learning_Ability": {}
+  },
+  "Werewolf": {
+      "Social_Reasoning": {
+          "IRP": {"min_value":0,"max_value":1}
+
+      },
+      "Team_Collaboration": {
+          "KRS": {"min_value":0,"max_value":1},
+          "VSS": {"min_value":0,"max_value":1}
+      },
+      "Strategic_Planning": {},
+        "Real_Time_Decision":{},
+        "Learning_Ability": {}
+  },
+  "Stratego": {
+      "Strategic_Planning": {
+          "PCR": {"min_value":0,"max_value":1},
+          "KPR": {"min_value":0,"max_value":1}
+      },
+      "Learning_Ability": {
+          "WR": {"min_value":0,"max_value":2},
+          "GA": {"min_value":0,"max_value":1}
+      },
+      "Real_Time_Decision": {},
+        "Social_Reasoning": {},
+        "Team_Collaboration": {}
+  }
+}
