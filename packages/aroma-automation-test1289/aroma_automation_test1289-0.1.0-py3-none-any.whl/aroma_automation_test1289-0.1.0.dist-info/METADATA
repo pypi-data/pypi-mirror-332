@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: aroma-automation-test1289
+Version: 0.1.0
+Summary: 
+Author: Svring
+Author-email: lxf83553899@163.com
+Requires-Python: >=3.11,<3.14
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: keyboard (>=0.13.5,<0.14.0)
+Requires-Dist: pendulum (>=3.0.0,<4.0.0)
+Requires-Dist: pyautogui (>=0.9.54,<0.10.0)
+Requires-Dist: pynput (>=1.8.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
