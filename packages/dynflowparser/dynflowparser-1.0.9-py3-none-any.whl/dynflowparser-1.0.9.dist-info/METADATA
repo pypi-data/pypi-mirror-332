@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: dynflowparser
+Version: 1.0.9
+Summary: Get sosreport dynflow files and generates user friendly html pages for tasks, plans, actions and steps.
+Home-page: https://github.com/pafernanr/dynflowparser
+Author: Pablo Fernández Rodríguez
+License: GPLv3
+Requires-Python: >3.8
+License-File: LICENSE
+License-File: AUTHORS
+Dynamic: author
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
