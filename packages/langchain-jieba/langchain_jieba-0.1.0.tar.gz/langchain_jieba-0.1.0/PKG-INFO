@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: langchain-jieba
+Version: 0.1.0
+Summary: An integration package connecting Jieba and LangChain
+License: MIT
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: jieba (>=0.42.1,<0.43.0)
+Requires-Dist: langchain-community (>=0.3.19,<0.4.0)
+Requires-Dist: langchain-core (>=0.3.15,<0.4.0)
+Project-URL: Repository, https://github.com/cqzyys/langchain-jieba
+Project-URL: Release Notes, https://github.com/cqzyys/langchain-jieba/releases?&expanded=true
+Project-URL: Source Code, https://github.com/cqzyys/langchain-jieba/tree/main/langchain-jieba
+Description-Content-Type: text/markdown
+
+# langchain-jieba
+An integration package connecting Jieba and LangChain
+
