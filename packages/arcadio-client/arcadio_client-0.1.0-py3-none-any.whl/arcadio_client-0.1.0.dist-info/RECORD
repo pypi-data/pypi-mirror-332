@@ -1,0 +1,9 @@
+arcadio_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcadio_client/achtung.py,sha256=urXVgO8ursmfLvLgsN9UQjKsDdqH5yOfsSltN626k6k,1902
+arcadio_client/client.py,sha256=s3sWuowYidevSo0FvstUIwGkVSeCYkpaLWcyLrMGdQk,4742
+arcadio_client/game.py,sha256=R29ML0eah1xmsrb257Gu1J78POUvb8YDFd40EIPFNOo,574
+arcadio_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcadio_client/strategy.py,sha256=4IbW7Iv8TpvtYMu9hTSI_xg1OyjB59Alt4PKoso_XSY,1310
+arcadio_client-0.1.0.dist-info/METADATA,sha256=EwpCNOILRVSdOLmzksbCN-CpKEyn75TI_owU24D8Dwk,239
+arcadio_client-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+arcadio_client-0.1.0.dist-info/RECORD,,
