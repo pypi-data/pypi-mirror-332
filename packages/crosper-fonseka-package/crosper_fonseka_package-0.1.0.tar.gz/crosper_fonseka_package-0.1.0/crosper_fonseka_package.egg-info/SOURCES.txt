@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+crosper_fonseka_package/__init__.py
+crosper_fonseka_package.egg-info/PKG-INFO
+crosper_fonseka_package.egg-info/SOURCES.txt
+crosper_fonseka_package.egg-info/dependency_links.txt
+crosper_fonseka_package.egg-info/top_level.txt
+crosper_fonseka_package/my_sub_module/__init__.py
+crosper_fonseka_package/my_sub_module/utils.py
