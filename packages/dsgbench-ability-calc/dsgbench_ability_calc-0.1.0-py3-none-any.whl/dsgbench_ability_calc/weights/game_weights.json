@@ -1,0 +1,44 @@
+{
+    "StarCraft": {
+        "Strategic_Planning": 0.35,
+        "Real_Time_Decision": 0.40,
+        "Learning_Ability": 0.25,
+        "Team_Collaboration": 0.0,
+        "Social_Reasoning": 0.0
+    },
+    "Civilization": {
+        "Strategic_Planning": 0.6,
+        "Learning_Ability": 0.4,
+        "Team_Collaboration": 0.0,
+        "Real_Time_Decision": 0.0,
+        "Social_Reasoning": 0.0
+    },
+    "StreetFighter": {
+        "Real_Time_Decision": 0.70,
+        "Learning_Ability": 0.30,
+        "Strategic_Planning": 0.0,
+        "Team_Collaboration": 0.0,
+        "Social_Reasoning": 0.0
+    },
+    "Diplomacy": {
+        "Strategic_Planning": 0.35,
+        "Social_Reasoning": 0.40,
+        "Team_Collaboration": 0.25,
+        "Real_Time_Decision": 0.0,
+        "Learning_Ability": 0.0
+    },
+    "Werewolf": {
+        "Social_Reasoning": 0.60,
+        "Team_Collaboration": 0.40,
+        "Strategic_Planning": 0.0,
+        "Real_Time_Decision": 0.0,
+        "Learning_Ability": 0.0
+    },
+    "Stratego": {
+        "Strategic_Planning": 0.65,
+        "Learning_Ability": 0.35,
+        "Real_Time_Decision": 0.0,
+        "Social_Reasoning": 0.0,
+        "Team_Collaboration": 0.0
+    }
+}

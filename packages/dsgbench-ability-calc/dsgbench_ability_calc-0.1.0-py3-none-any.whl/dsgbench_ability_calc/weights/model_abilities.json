@@ -1,0 +1,9 @@
+{
+  "abilities": {
+      "Strategic_Planning": 0.25,
+      "Real_Time_Decision": 0.20,
+      "Social_Reasoning": 0.20,
+      "Team_Collaboration": 0.15,
+      "Learning_Ability": 0.20
+  }
+}
