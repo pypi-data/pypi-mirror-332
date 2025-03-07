@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tidystring"
+version = "0.1.0"
+description = "Tidyverse-style string ops in Python."
+authors = ["Colin Conwell <colinconwell@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tidystring"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+pandas = ">=1.2.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
