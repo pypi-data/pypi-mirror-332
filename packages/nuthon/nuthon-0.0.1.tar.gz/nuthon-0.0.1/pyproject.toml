@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nuthon"
+version = "0.0.1"
+authors = [
+	{ name="Sacha Carle", email="carle.sacha@gmail.com"}
+]
+description = "Python filesystem abstraction and experimentation with concurence."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+	    "Programming Language :: Python :: 3",
+	    "Operating System :: OS Independent",
+	    "License :: OSI Approved :: MIT License",
+]
+license = {file = "LICENSE"}
+
+[project.urls]
+Homepage = "https://github.com/SachaCarle/python_distribution"
+Issues = "https://github.com/SachaCarle/python_distribution/issues"
