@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/python_builder/__init__.py
+src/python_builder/builder.py
+src/python_builder.egg-info/PKG-INFO
+src/python_builder.egg-info/SOURCES.txt
+src/python_builder.egg-info/dependency_links.txt
+src/python_builder.egg-info/top_level.txt
+tests/test_builder.py
+tests/test_module_import.py
