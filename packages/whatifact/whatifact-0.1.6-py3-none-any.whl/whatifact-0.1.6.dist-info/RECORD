@@ -1,0 +1,13 @@
+whatifact/__init__.py,sha256=Lipt9JKN2QnQe3Qb9Lt-lve8weMbTtlrFEgoNQvIS4A,232
+whatifact/_inference.py,sha256=wYhIPv67YzKR3a04_UAABISxkGMP2wzHuZAzWGOrvSY,7457
+whatifact/_server.py,sha256=jWxvbIeuSflXbU2XDcfE9gp9gtKz14m1xW91Kcz5LsM,4285
+whatifact/_utilities.py,sha256=BzoxOmUdHWMJuKmRFoyonQrIKrrctOcnwT5R6TuDlEc,2689
+whatifact/_widgets.py,sha256=CCK341W_GNhFp66FMRVNOk1dxzEICA9-iYFwt8UpdA8,2092
+whatifact/whatifact.py,sha256=EcWA57YC4H_AqyR9O-YeqBMaDa7bSupPCUqFNZNNWVY,2385
+whatifact/resources/revert_icon.svg,sha256=6CAwuHHkD1guznYlLGt5049ca_GACLLNUijCEhNKivY,1364
+whatifact/resources/style.css,sha256=4NSnXy9OTS2ZPHn795euDd_rNE1LWHFii1zB2FcAmDQ,1268
+whatifact-0.1.6.dist-info/LICENSE,sha256=AkyuOMoigEMVivwG-fRtxl6EBRa0yPq2BZUDracXeWc,1069
+whatifact-0.1.6.dist-info/METADATA,sha256=KGs9c1CoKrVOahiCI17LdpSW2fn4GISYg1RBDj26kRo,5431
+whatifact-0.1.6.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+whatifact-0.1.6.dist-info/top_level.txt,sha256=vYuLwRxy2SSXHVvPTHbAkqrx7N2IQmYESA5ZzHc5ZTI,10
+whatifact-0.1.6.dist-info/RECORD,,
