@@ -1,0 +1,42 @@
+# If you don't have 'just' installed, install it with the following command:
+#
+# $  uv tool install rust-just
+#
+# The 'just' website: https://just.systems/man/en/
+
+default:
+    @just --list
+
+system-info:
+  @echo "This is an {{arch()}} machine, running {{os()}}".
+
+docs-build:
+    uv run mkdocs build
+
+docs-publish: docs-build
+    uv run mkdocs gh-deploy -r upstream -m "documentation update"
+
+# part is one of (patch | minor | major)
+bump part:
+    uv run bump.py --no-verbose {{part}}
+
+# part is one of (patch | minor | major)
+build part: (bump part)
+    rm -r dist
+    uv build --all-packages
+
+# part is one of (patch | minor | major)
+publish part: (build part)
+    uv publish --token $UV_PUBLISH_TOKEN
+
+typecheck:
+    uv run mypy -p cgse-common --strict
+
+test:
+    uv run pytest -v
+
+format:
+    uvx ruff format
+
+fix:
+    uvx ruff check --fix
