@@ -1,0 +1,10 @@
+pr_reviewer/__init__.py,sha256=gIkLnpI1UiRaQs6WtPfDzKrGd3r_cgVxrIDNIkzoFwI,225
+pr_reviewer/pr_reviewer.py,sha256=lEn3Mh2Knlx8VN_Z4ioTCPQ4X0vm2CuyI3FxxGXEIOQ,11062
+pr_reviewer/utils/__init__.py,sha256=71HJrSn0_MocNUUQ3RLh6z5qJtkFCmkkcZl5rdwphD4,168
+pr_reviewer/utils/config.py,sha256=8cXfd76sPbJUQFfBp2ejxFmNqs66A1MEkLs0Qpd9yIM,1508
+afila_pr_reviewer-0.1.0.dist-info/LICENSE,sha256=TpVQklEEX4yUYSuGUr-Jon5t4p6RxyXaHP4IZqvJp7w,1074
+afila_pr_reviewer-0.1.0.dist-info/METADATA,sha256=s5jNoRfSqmsJLaZoKBPPGIdnF9HM8imijZ_dPGJYtYg,2244
+afila_pr_reviewer-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+afila_pr_reviewer-0.1.0.dist-info/entry_points.txt,sha256=apvV_QgEqA15r9yV19cF7EacVcHdsVBFCB1JxpcItys,49
+afila_pr_reviewer-0.1.0.dist-info/top_level.txt,sha256=_5odx4ju4KGaWaT6Y0O-tj9iwgIjAKqBgt-DZsHQuI0,12
+afila_pr_reviewer-0.1.0.dist-info/RECORD,,
