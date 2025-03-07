@@ -1,0 +1,8 @@
+asyncio_connection_pool/__init__.py,sha256=I-se4zG46hrk8cdgc4uA4_ODWt3g3RlwXnvB1nu-MEs,7600
+asyncio_connection_pool/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncio_connection_pool/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncio_connection_pool/contrib/datadog.py,sha256=5y5TrFSsb2FmjjjGXVZ_Ty3knz6cq6qJjO6NKlWtN5w,5401
+asyncio_connection_pool-1.1.0.dist-info/METADATA,sha256=Hbm8FxXElMp4xcQ7oaANpAyahdaBe3Cs6ttFlD4iZs8,6905
+asyncio_connection_pool-1.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+asyncio_connection_pool-1.1.0.dist-info/licenses/LICENSE,sha256=tvrZwcLnEjbpJDBQ2UreNZxnh9QlEWxW8NcHKDdXwh8,1528
+asyncio_connection_pool-1.1.0.dist-info/RECORD,,
