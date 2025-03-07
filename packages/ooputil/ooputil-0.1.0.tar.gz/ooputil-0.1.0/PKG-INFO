@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: ooputil
+Version: 0.1.0
+Summary: Library for OOP utilities
+Author: Rafael da Rocha Ferreira
+Author-email: Rafael da Rocha Ferreira <programadorlhama@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/programadorLhama/ooputil.git
+Project-URL: Repository, https://github.com/programadorLhama/ooputil.git
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: requires-python
+
+# ooputil
+
+This package defines utilities for object-oriented programming in python.
+
+## How to use
+
+### Interfaces
+
+```python
+from ooputil import Interface
+
+# Implementing an OOP interface
+class MyInterface(Interface):
+    def do_something(self, elem: str) -> None: pass
+
+    def do_another_thing(self) -> None: pass
+
+
+# Creating a class that implements the interface
+class MyClass(MyInterface):
+    def do_something(self, elem: str) -> None:
+        print(elem)
+
+    def do_another_thing(self) -> None:
+        print("Using my method :)")
