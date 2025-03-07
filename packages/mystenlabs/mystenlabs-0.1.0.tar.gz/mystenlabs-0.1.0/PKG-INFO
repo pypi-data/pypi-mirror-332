@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: mystenlabs
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: A Python library for interacting with MystenLabs products.
+Author-email: Will Bradley <will.bradley@mystenlabs.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Mysten Labs Python Package
+
+This is a placeholder for future work from Mysten Labs on a Python SDK.
+

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["maturin>=1.8,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "mystenlabs"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+authors = [
+  { name="Will Bradley", email="will.bradley@mystenlabs.com" },
+]
+description = "A Python library for interacting with MystenLabs products."
+readme = "README.md"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]

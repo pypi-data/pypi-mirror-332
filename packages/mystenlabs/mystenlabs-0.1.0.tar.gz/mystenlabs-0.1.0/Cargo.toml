@@ -1,0 +1,22 @@
+[package]
+name = "mystenlabs"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+# The name of the native library. This is the name which will be used in Python to import the
+# library (i.e. `import mystenlabs`). If you change this, you must also change the name of the
+# `#[pymodule]` in `src/lib.rs`.
+name = "mystenlabs"
+# "cdylib" is necessary to produce a shared library for Python to import from.
+#
+# Downstream Rust code (including code in `bin/`, `examples/`, and `tests/`) will not be able
+# to `use mystenlabs;` unless the "rlib" or "lib" crate type is also included, e.g.:
+# crate-type = ["cdylib", "rlib"]
+crate-type = ["cdylib"]
+
+[dependencies]
+hex = "0.4.3"
+pyo3 = { version = "0.23.5", features = ["extension-module"] }
+sha2 = "0.10.8"
+
