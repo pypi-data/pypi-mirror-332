@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+ezmcp/__init__.py
+ezmcp/app.py
+ezmcp/templates.py
+ezmcp/types.py
+ezmcp.egg-info/PKG-INFO
+ezmcp.egg-info/SOURCES.txt
+ezmcp.egg-info/dependency_links.txt
+ezmcp.egg-info/requires.txt
+ezmcp.egg-info/top_level.txt
+tests/test_ezmcp.py
