@@ -1,0 +1,11 @@
+gffx/__init__.py,sha256=nsP_q2t5aSWHcTXGRmqFkjlomO72Z7VXkRBKRxgdAG4,79
+gffx/__main__.py,sha256=-tUJcq8bapS4yoQ8RKkaj4zT_FAgQcvbTXpThLG1ORo,3964
+gffx/context/__init__.py,sha256=yIRcexatet4RZ_I0wac-O1qED2yY8tAhYbBKehEW64A,288
+gffx/linalg/__init__.py,sha256=eDf2sfLy-CuLDBuvQiskDXIIRsJaDuU9TP1bv4NUgD8,4196
+gffx/obj/__init__.py,sha256=_r8ysXwFzQYhGK9NilYd8oKGRB1R89owaATbbjMhNB8,13559
+gffx/ray/__init__.py,sha256=HeV_z5zkEIT9EV9F9HZCZplUn10Wmv2lQ2WIIjFnmIc,10865
+gffx/ray/camera.py,sha256=PBcJ0a62g7K7on4J9YqTrynAvV1OFXW0c6cpqY8nUf0,2837
+gffx-0.1.1.dist-info/LICENSE,sha256=ye96oZM4dBrUCrY2b9pyp7w07J6-SV72Jzq9yv2z5ro,1070
+gffx-0.1.1.dist-info/METADATA,sha256=VcxAGANqStA3TSLowL25pNgWAeEbklzQ2bQv-zzq_go,2314
+gffx-0.1.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+gffx-0.1.1.dist-info/RECORD,,
