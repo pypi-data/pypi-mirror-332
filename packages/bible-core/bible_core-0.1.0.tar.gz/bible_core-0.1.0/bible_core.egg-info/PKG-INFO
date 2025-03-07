@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: bible-core
+Version: 0.1.0
+Summary: Python package for the Catholic Bible
+Author: James
+License: MIT
+Project-URL: Homepage, https://github.com/lim-james/bible-api
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bible-api
+python package for the catholic bible

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+bible/__init__.py
+bible/api.py
+bible/citations.py
+bible/database.py
+bible/reader.py
+bible/assets/bible.csv
+bible_core.egg-info/PKG-INFO
+bible_core.egg-info/SOURCES.txt
+bible_core.egg-info/dependency_links.txt
+bible_core.egg-info/top_level.txt
