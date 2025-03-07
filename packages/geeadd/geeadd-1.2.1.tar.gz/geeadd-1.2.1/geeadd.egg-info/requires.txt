@@ -1,0 +1,9 @@
+colorama>=0.4.6
+earthengine-api>=1.1.2
+jsbeautifier>=1.15.1
+logzero>=1.7.0
+packaging>=24.2
+requests>=2.32.3
+setuptools>=65.5.0
+tqdm>=4.66.5
+beautifulsoup4>=4.9.0
