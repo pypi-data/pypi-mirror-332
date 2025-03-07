@@ -1,0 +1,8 @@
+nlp_tfidf/__init__.py,sha256=L5TtEhIP9VqqkhowC_AkTUNgfHPSly-7Op6oXCOks8E,48
+nlp_tfidf/stop_word.py,sha256=cFjROC4ezRQ2xyOgFr_ejjPBbEtjVHPiWsn3lbGHO1Q,38389
+nlp_tfidf/tfidf.py,sha256=XiweOf5WZZsmlDvYCxy6ndmf6vEEHw0134eyC4PNcsc,10857
+nlp_tfidf-1.6.7.dist-info/LICENSE,sha256=HDbMJ7oItmxTn3jVtZFi6jUFAHovset5jzAPUderjOc,1073
+nlp_tfidf-1.6.7.dist-info/METADATA,sha256=3xfOf7LRkQWmVu5ZsgpcSiOZnWdZ7K10EpOuAWDuRUw,1879
+nlp_tfidf-1.6.7.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+nlp_tfidf-1.6.7.dist-info/top_level.txt,sha256=LHM9qgFVrEixbDFKMT5bJ4lCFD2kWC5dqZy2faSj1O8,10
+nlp_tfidf-1.6.7.dist-info/RECORD,,
