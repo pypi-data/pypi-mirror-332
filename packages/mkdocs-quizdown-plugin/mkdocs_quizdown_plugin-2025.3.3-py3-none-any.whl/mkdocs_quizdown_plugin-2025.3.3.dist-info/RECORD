@@ -1,0 +1,10 @@
+mkdocs_quizdown_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_quizdown_plugin/plugin.py,sha256=7Gsawx7pV2ERJWXf0zKf4eIL2EZuI85pBtJd__2QEjU,3207
+mkdocs_quizdown_plugin/assets/quizdown.js,sha256=ZWlm9xH0oO-YPvvTCCDEpjrS3c6kl8DjEGSiXj5I_SQ,299332
+mkdocs_quizdown_plugin/assets/quizdown_init.js,sha256=W0QmS8L1FBRiMZ7oZtc747VDLV1bRoQM1a11cKz66aM,125
+mkdocs_quizdown_plugin-2025.3.3.dist-info/LICENSE,sha256=OvGbFDqdOc4xxXIt_lLiR5inDoB4bD6_wpNQHgwB1lQ,1087
+mkdocs_quizdown_plugin-2025.3.3.dist-info/METADATA,sha256=_SRwQie-ZCHl_cgQvrcDoyh6jZiQ3P47c0eGUhdDUQY,4431
+mkdocs_quizdown_plugin-2025.3.3.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+mkdocs_quizdown_plugin-2025.3.3.dist-info/entry_points.txt,sha256=GiI10IJhy-l9TJ4M2M11Of2_onfDQVVuWxaeDJIHT_M,73
+mkdocs_quizdown_plugin-2025.3.3.dist-info/top_level.txt,sha256=tc2qGPgyZ6-iA6JHFEKhEG_ETj66yt95FjCX6C9X0lc,23
+mkdocs_quizdown_plugin-2025.3.3.dist-info/RECORD,,
