@@ -1,0 +1,7 @@
+setup.py
+vidmerge_zoomout.egg-info/PKG-INFO
+vidmerge_zoomout.egg-info/SOURCES.txt
+vidmerge_zoomout.egg-info/dependency_links.txt
+vidmerge_zoomout.egg-info/entry_points.txt
+vidmerge_zoomout.egg-info/requires.txt
+vidmerge_zoomout.egg-info/top_level.txt
