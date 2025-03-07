@@ -1,0 +1,11 @@
+bible/__init__.py,sha256=deqwEAJbo9ta9rajZKS0VQri3DDuW18m9lL9X5e1DCc,27
+bible/api.py,sha256=o-6DScxWa7zex4bWYzvA4_1acmv-jeR3Ob9x0A0JA18,400
+bible/citations.py,sha256=6ESy_7rANYkMv-Vdb-sDKWMmc3eRN6N-8fXSXuB5p6o,628
+bible/database.py,sha256=AqCNwnAu71gzGuBA7lR0jbBkBks7mGa_lksHKQ95rus,708
+bible/reader.py,sha256=oaW_ezMPmuO7hwFhAaBoiAHHNDRkFEtJtNLWu9QV_VQ,992
+bible/assets/bible.csv,sha256=UGS_5sazbTtqjG94GWD946xwpi0l0AbH2HkR1lpnQuI,4895662
+bible_core-0.1.0.dist-info/LICENSE,sha256=uVD6JVAMZHSM1Q4SEqP4IG-eiSBK2ocALxCsVtFQlNc,1066
+bible_core-0.1.0.dist-info/METADATA,sha256=98wr1osKlTjmXVchY2Q3EPZwSKoNxN8vzanWYzhwve0,326
+bible_core-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+bible_core-0.1.0.dist-info/top_level.txt,sha256=jo4ZIHB7rNnZ0EAq2KEjMNtOkUuEteHz0PbY6AzqeBM,6
+bible_core-0.1.0.dist-info/RECORD,,
