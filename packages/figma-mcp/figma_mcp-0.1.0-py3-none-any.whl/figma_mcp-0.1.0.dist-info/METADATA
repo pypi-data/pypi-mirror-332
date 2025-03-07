@@ -1,0 +1,120 @@
+Metadata-Version: 2.2
+Name: figma-mcp
+Version: 0.1.0
+Summary: Allow your AI coding agents to access figma files & prototypes directly
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/figma-mcp-python
+Project-URL: Bug Tracker, https://github.com/yourusername/figma-mcp-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mcp[cli]>=1.3.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: requests>=2.32.3
+
+# Figma MCP Python
+
+Allow your AI coding agents to access Figma files & prototypes directly.
+
+## Quick Installation
+
+### Option 1: Install with pipx (Recommended)
+
+```bash
+pipx install figma-mcp
+```
+
+Then run:
+
+```bash
+figma-mcp --figma-api-key=your_figma_api_token
+```
+
+### Option 2: Run without installing
+
+```bash
+pipx run figma-mcp --figma-api-key=your_figma_api_token
+```
+
+## Environment Variables Configuration
+
+You can also set your Figma API token as an environment variable:
+
+```bash
+export FIGMA_API_TOKEN=your_figma_api_token
+figma-mcp
+```
+
+Or create a `.env` file in your working directory:
+
+```
+FIGMA_API_TOKEN=your_figma_api_token
+```
+
+You can generate an API token in your Figma account settings.
+
+## MCP Configuration
+
+### Configuration File Example
+
+If you're using Cursor, there are two ways to configure:
+
+1. In settings, add an MCP server using the command:
+```shell
+figma-mcp --figma-api-key=your_figma_key
+```
+
+2. Add a `.cursor/mcp.json` file in your project:
+
+```json
+{
+	"mcpServers": {
+		"figma-python": {
+			"command": "figma-mcp",
+			"env": {
+				"FIGMA_API_TOKEN": "your_figma_api_key"
+			}
+		}
+	}
+}
+```
+
+For other IDEs like Windsurf, use an MCP configuration file (e.g., `mcp_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "figma-python": {
+      "command": "figma-mcp",
+      "args": [
+        "--figma-api-key=your_figma_key"
+      ]
+    } 
+  }
+}
+```
+
+## Development Setup
+
+If you want to develop or modify this package:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/figma-mcp-python.git
+cd figma-mcp-python
+
+# Install uv and set up the environment
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv venv
+source .venv/bin/activate
+uv sync
+
+# Run locally
+python -m figma_mcp.main
+```
+
+
