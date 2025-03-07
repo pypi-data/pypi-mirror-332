@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+papaeragent.egg-info/PKG-INFO
+papaeragent.egg-info/SOURCES.txt
+papaeragent.egg-info/dependency_links.txt
+papaeragent.egg-info/requires.txt
+papaeragent.egg-info/top_level.txt
+paperagent/__init__.py
+paperagent/agent.py
