@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: arborium
+Version: 0.1.0
+Summary: A tree visualization and analysis package
+Home-page: https://github.com/yourusername/arborium
+Author: Rishabh Mandayam
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Arborium
+
+A powerful tree visualization and analysis package.
+
+## Description
+
+Arborium is designed to make tree-based models more interpretable and easier to understand through advanced visualization techniques.
+
+## Installation
+
+```bash
+pip install arborium
+```
+
+## Coming Soon
+
+More features and documentation will be available soon. 
