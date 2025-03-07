@@ -1,0 +1,27 @@
+                # Convert markdown to HTML
+                md = markdown.Markdown(extensions=["tables"])
+                html_content = md.convert(markdown_text)
+                result = f"""\
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Result</title>
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }}
+        img {{ max-width: 100%; height: auto; }}
+        h1, h2, h3 {{ margin-top: 1.5em; }}
+        p {{ margin: 1em 0; }}
+    </style>
+</head>
+<body>
+{html_content}
+</body>
+</html>"""
