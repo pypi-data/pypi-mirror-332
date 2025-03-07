@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: deeplogit
+Version: 0.1.0
+Summary: Mixed Logit Estimation with Text and Image Embeddings Extracted Using Deep Learning Models
+Home-page: https://github.com/franklinshe/DeepLogit
+Author: 
+Author-email: 
+License: GPL-3.0
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: xlogit
+Requires-Dist: pandas
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow_hub
+Requires-Dist: torch
+Requires-Dist: sentence-transformers
+Requires-Dist: keras
+Requires-Dist: scikit-learn
+Requires-Dist: nltk

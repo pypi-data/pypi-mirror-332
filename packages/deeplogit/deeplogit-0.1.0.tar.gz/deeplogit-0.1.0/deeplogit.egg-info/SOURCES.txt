@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+deeplogit/__init__.py
+deeplogit/deeplogit.py
+deeplogit/embeddings.py
+deeplogit/pca.py
+deeplogit.egg-info/PKG-INFO
+deeplogit.egg-info/SOURCES.txt
+deeplogit.egg-info/dependency_links.txt
+deeplogit.egg-info/requires.txt
+deeplogit.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+numpy
+xlogit
+pandas
+tensorflow
+tensorflow_hub
+torch
+sentence-transformers
+keras
+scikit-learn
+nltk
