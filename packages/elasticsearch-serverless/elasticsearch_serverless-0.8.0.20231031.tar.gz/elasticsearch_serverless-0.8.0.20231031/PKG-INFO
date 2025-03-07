@@ -1,0 +1,120 @@
+Metadata-Version: 2.4
+Name: elasticsearch-serverless
+Version: 0.8.0.20231031
+Summary: Python client for Elasticsearch Serverless
+Project-URL: Documentation, https://elasticsearch-serverless-python.readthedocs.io
+Project-URL: Homepage, https://github.com/elastic/elasticsearch-serverless-python
+Project-URL: Issue Tracker, https://github.com/elastic/elasticsearch-serverless-python/issues
+Project-URL: Source Code, https://github.com/elastic/elasticsearch-serverless-python
+Author-email: Elastic Client Library Maintainers <client-libs@elastic.co>
+Maintainer-email: Elastic Client Library Maintainers <client-libs@elastic.co>
+License-Expression: Apache-2.0
+License-File: LICENSE
+License-File: NOTICE
+Keywords: REST,client,elastic,elasticsearch,index,kibana,mapping,search
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: elastic-transport<9,>=8.4.1
+Provides-Extra: async
+Requires-Dist: aiohttp<4,>=3; extra == 'async'
+Provides-Extra: dev
+Requires-Dist: aiohttp; extra == 'dev'
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: jinja2; extra == 'dev'
+Requires-Dist: mapbox-vector-tile; extra == 'dev'
+Requires-Dist: nox; extra == 'dev'
+Requires-Dist: numpy; extra == 'dev'
+Requires-Dist: orjson; extra == 'dev'
+Requires-Dist: pandas; extra == 'dev'
+Requires-Dist: pyarrow; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-asyncio; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: python-dateutil; extra == 'dev'
+Requires-Dist: pyyaml>=5.4; extra == 'dev'
+Requires-Dist: requests<3,>=2; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Requires-Dist: unasync; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx-autodoc-typehints; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme>=1.2.2; extra == 'docs'
+Requires-Dist: sphinx==6.2.1; extra == 'docs'
+Provides-Extra: orjson
+Requires-Dist: orjson>=3; extra == 'orjson'
+Provides-Extra: pyarrow
+Requires-Dist: pyarrow>=1; extra == 'pyarrow'
+Provides-Extra: requests
+Requires-Dist: requests<3.0.0,>=2.4.0; extra == 'requests'
+Description-Content-Type: text/markdown
+
+# Elasticsearch Serverless Python Client
+
+<p align="center">
+  <a href="https://pypi.org/project/elasticsearch-serverless/"><img alt="PyPI Version" src="https://img.shields.io/pypi/v/elasticsearch-serverless" /></a>
+  <a href="https://pypi.org/project/elasticsearch-serverless/"><img alt="Python Versions" src="https://img.shields.io/pypi/pyversions/elasticsearch-serverless" /></a>
+  <a href="https://pepy.tech/project/elasticsearch-serverless?versions=*"><img alt="Downloads" src="https://static.pepy.tech/badge/elasticsearch-serverless" /></a>
+  <a href="https://elasticsearch-serverless-python.readthedocs.io/"><img alt="Documentation Status" src="https://readthedocs.org/projects/elasticsearch-serverless-python/badge/?version=latest" /></a>
+</p>
+
+> [!WARNING]
+> Starting with the release of the Elastic Stack 9.0.0, this client will be discontinued. Instead, you can use the latest version of the [Elasticsearch Python Client](https://github.com/elastic/elasticsearch-py) to build your Elasticsearch Serverless Python applications.
+
+## Features
+
+* Translating basic Python data types to and from JSON
+* Configurable automatic discovery of cluster nodes
+* Persistent connections
+* Load balancing (with pluggable selection strategy) across available nodes
+* Failed connection penalization (time based - failed connections won't be
+  retried until a timeout is reached)
+* Support for TLS and HTTP authentication
+* Thread safety across requests
+* Pluggable architecture
+* Helper functions for idiomatically using APIs together
+
+## Quick Start
+
+
+```python
+# Import the client from the 'elasticsearch' module
+# Import the client from the 'elasticsearch' module
+>>> from elasticsearch_serverless import Elasticsearch
+
+# Instantiate a client instance
+>>> client = Elasticsearch("http://localhost:9200")
+
+# Call an API, in this example `info()`
+>>> resp = client.info()
+
+# View the result
+>>> resp
+{
+"name" : "instance-name",
+"cluster_name" : "cluster-name",
+"cluster_uuid" : "cluster-uuid",
+"version" : {
+   "number" : "7.14.0",
+   ...
+},
+"tagline" : "You know, for Search"
+}
+```
+
+## License
+
+This software is licensed under the [Apache License 2.0](./LICENSE). See [NOTICE](./NOTICE).
