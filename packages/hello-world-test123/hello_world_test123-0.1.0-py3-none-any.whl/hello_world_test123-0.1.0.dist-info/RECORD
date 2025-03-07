@@ -1,0 +1,7 @@
+hello_world/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hello_world/hello.py,sha256=E-krFjmVuznsV-JRMhrPWZQCu_g5rYWeO80jClSUOOA,46
+hello_world/main.py,sha256=3oWp5aDvSneSXGz9a-hMeOhhxwmtMr061tSSJTIpxOk,89
+hello_world_test123-0.1.0.dist-info/METADATA,sha256=3xVnufxylaWGOrK7jJTB16MZtaKg5ht63i4f37pboLo,168
+hello_world_test123-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+hello_world_test123-0.1.0.dist-info/top_level.txt,sha256=vY8b2A8Sa2-5PUXRoDjDABQ-zMBnaxTqNarDpG9ub2s,12
+hello_world_test123-0.1.0.dist-info/RECORD,,
