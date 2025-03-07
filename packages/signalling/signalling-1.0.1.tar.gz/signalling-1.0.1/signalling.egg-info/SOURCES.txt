@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+signalling/__init__.py
+signalling/standard.py
+signalling/weak.py
+signalling.egg-info/PKG-INFO
+signalling.egg-info/SOURCES.txt
+signalling.egg-info/dependency_links.txt
+signalling.egg-info/top_level.txt
+signalling/tests/__init__.py
+signalling/tests/test_standard.py
+signalling/tests/test_weak.py
