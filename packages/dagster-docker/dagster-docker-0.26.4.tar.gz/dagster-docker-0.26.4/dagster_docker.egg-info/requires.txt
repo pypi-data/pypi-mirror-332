@@ -1,0 +1,6 @@
+dagster==1.10.4
+docker
+docker-image-py
+
+[test]
+flaky
