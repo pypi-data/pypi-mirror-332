@@ -1,0 +1,16 @@
+flet_audio_recorder/__init__.py,sha256=r-oY247ol9kOAjUWlqZ6KycB_UvpDnbFkmZ28SoXRqY,147
+flet_audio_recorder/audio_recorder.py,sha256=80AJ6n0ttEdTtCBOPBmJEFEnHIHCwWt7QRXktzrChY8,8865
+flutter/flet_audio_recorder/CHANGELOG.md,sha256=66sWepPaeTc9_lzcYIGU55AlxSU5Z1XVtknXpzd_-p8,40
+flutter/flet_audio_recorder/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+flutter/flet_audio_recorder/README.md,sha256=KcVP2UEKbA9P0r3i2GimRFFLwOqV3Az_7IjZYEXhd8w,76
+flutter/flet_audio_recorder/analysis_options.yaml,sha256=32kjGAc-zF87inWaH5M46yGZWQDTwrwfvNLHeAocfG4,154
+flutter/flet_audio_recorder/pubspec.lock,sha256=8TW1u8KVq_9_Y2EzXY_rtLXh1WodjYCAWfrJ4VFoHuc,23602
+flutter/flet_audio_recorder/pubspec.yaml,sha256=NUiMZLwGc0l8m-BZQhIQz6gGt9EfZUFVnxcxtcF7X4c,431
+flutter/flet_audio_recorder/lib/flet_audio_recorder.dart,sha256=G7PZrFNGuF-Q5HNgslMt3GQINx7tMqs5uXg6tcJ50Xw,93
+flutter/flet_audio_recorder/lib/src/audio_recorder.dart,sha256=jUPsjU1UpAth9zEREwsxCqHCxDkspwqgdPUOcgQ1qv0,5753
+flutter/flet_audio_recorder/lib/src/create_control.dart,sha256=JkeTh2RUrGVwkXOGAIKdlNBaqpGeR9H6IPG9Dn5-Lrs,387
+flutter/flet_audio_recorder/lib/src/utils/audio_recorder.dart,sha256=soCZM07_9BCrZyrw3nz_3fX-Py8CP07ZfUERyQYsMJo,626
+flet_audio_recorder-0.2.0.dev17.dist-info/METADATA,sha256=g-p3kqvXyMCMZ5Pq098DWIvL0gUVJ5DneQ8qf3SDtkU,3163
+flet_audio_recorder-0.2.0.dev17.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+flet_audio_recorder-0.2.0.dev17.dist-info/top_level.txt,sha256=fi4uOe4C7Pitw9OIzx7l0TgjkYomndtLYrQg8mjD-iA,28
+flet_audio_recorder-0.2.0.dev17.dist-info/RECORD,,
