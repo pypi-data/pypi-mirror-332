@@ -1,0 +1,16 @@
+pdf2zh/__init__.py,sha256=lai_A1T2IBADU8Xea6rWVJAMJv71PSHZ7lIDCGGHzLI,197
+pdf2zh/backend.py,sha256=hKxVbZMeZIyGm7zGshtDxwOpV-0A9DxbPKm3m9psMFU,2808
+pdf2zh/cache.py,sha256=PQ9gXM9mz1A_auCRxeKE7sk3D0V-HQRsZspZyZsumDU,4506
+pdf2zh/config.py,sha256=2UpUzz4B1aLzrqa4eESRm6fVPn8-1crHV4cYisRZ__E,8077
+pdf2zh/converter.py,sha256=fjHk8w7S951rY73--XBWZi5jYI3w96tJqfZ2sDH3EiA,25352
+pdf2zh/doclayout.py,sha256=oU5SIcSJboRUwNo_xQYBGYuJrd4xgm96y_Bn4FAgbuY,5551
+pdf2zh/gui.py,sha256=t7gY9ZIkUPOMOPQYJ46keP5xab-mUG5V3d-AYgNi_zU,27071
+pdf2zh/high_level.py,sha256=I3LCFFvVVUXYqt8TvfdyDUMEou3clqGd_yrL6Ur0UNs,13455
+pdf2zh/pdf2zh.py,sha256=eYL-_u2iCrSLfCqQU5E72Qp6x0thGGxUhFJdSbOQmOU,12069
+pdf2zh/pdfinterp.py,sha256=UDkF7KvJxunJPsKIGUbzu1BFFYOFceOUle91n4n-f_w,14006
+pdf2zh/translator.py,sha256=sw8Kv1Xy40sI96z2FBgoC7GJRVqdyD4S8nEWMpE5wIo,32213
+pdf2zh-1.9.4.dist-info/METADATA,sha256=cuI5qiIelzw52HiMdqEg5YsbVD2evduBCjCXzc60auM,17040
+pdf2zh-1.9.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pdf2zh-1.9.4.dist-info/entry_points.txt,sha256=7l2Y_HUswe4WfBZcZYe64Wd5hCLZaPQK2hh9HCuqdlY,46
+pdf2zh-1.9.4.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+pdf2zh-1.9.4.dist-info/RECORD,,
