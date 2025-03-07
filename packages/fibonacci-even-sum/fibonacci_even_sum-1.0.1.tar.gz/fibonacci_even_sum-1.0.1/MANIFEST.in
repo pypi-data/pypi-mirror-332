@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+include README.en.md
+include test_fibonacci_even_sum.py
+recursive-include fibonacci_even_sum * 
