@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+src/Modion.gRPC.egg-info/PKG-INFO
+src/Modion.gRPC.egg-info/SOURCES.txt
+src/Modion.gRPC.egg-info/dependency_links.txt
+src/Modion.gRPC.egg-info/top_level.txt
+src/Modion/gRPC/__init__.py
+src/Modion/gRPC/placeholder.py

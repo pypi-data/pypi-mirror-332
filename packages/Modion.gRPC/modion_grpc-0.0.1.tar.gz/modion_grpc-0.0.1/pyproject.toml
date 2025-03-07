@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "Modion.gRPC"
+version = "0.0.1"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+keywords = ["Modion", "gRPC"]
+description = "gRPC functions for Modion D3PLOT, PRIMER, REPORTER and T/HIS"
+authors = [
+  {name = "Miles Thornton"},
+]
+maintainers = [
+  {email = "dyna.support@arup.com"},
+]
+
+
+[project.urls]
+"Homepage" = "https://www.oasys-software.com/dyna/"
