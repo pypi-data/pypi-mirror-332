@@ -1,0 +1,2 @@
+[ipython_magic]
+sqlcmd = sqlcmd:load_ipython_extension
