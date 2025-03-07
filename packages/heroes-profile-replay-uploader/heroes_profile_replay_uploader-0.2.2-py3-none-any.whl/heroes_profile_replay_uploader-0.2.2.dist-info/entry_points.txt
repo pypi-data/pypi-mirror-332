@@ -1,0 +1,2 @@
+[console_scripts]
+heroes-profile-replay-uploader = heroes_profile_replay_uploader.uploader:main
