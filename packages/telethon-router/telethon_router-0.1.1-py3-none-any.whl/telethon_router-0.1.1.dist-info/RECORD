@@ -1,0 +1,9 @@
+telethon_router/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telethon_router/navigator.py,sha256=zxf3QAh21_8gOef0bOqNkcj6kb3_W0UBBcNK5YbwubE,4575
+telethon_router/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telethon_router/types/handler.py,sha256=CteAJaI_2vfg7mHCwhpwKqDvWFwDvvGt_9sYNO5fMC0,133
+telethon_router-0.1.1.dist-info/LICENSE,sha256=uPi8j9FbFxPp3V4pzaouJQZ5n8CEbw-qvyhOuo6whFU,1072
+telethon_router-0.1.1.dist-info/METADATA,sha256=dahmYkEdTkVJ5WUsSAaTrMjeUpBhsuYdA0H7Hp3uQgI,6216
+telethon_router-0.1.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+telethon_router-0.1.1.dist-info/top_level.txt,sha256=cLwz57xRkCqo7x8SRpuDSWak_XdslgNuQMhgnTRvj8I,16
+telethon_router-0.1.1.dist-info/RECORD,,
