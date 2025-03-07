@@ -1,0 +1,17 @@
+rozetka/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rozetka/entities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rozetka/entities/category.py,sha256=Rm2gO1Dw6YKyxKZgnz8eJqC7pDu87ToteWxrWbtObOY,11636
+rozetka/entities/item.py,sha256=by2wbEevvXWN5NX3jFe5AgsJriao1nxYj1Vbj60rKPY,13004
+rozetka/entities/point.py,sha256=t-Y51xwyw9mmsWEqCfUWFs9vCTCQ9M-uNeUrjUdqjFs,597
+rozetka/entities/supercategory.py,sha256=4rf1Nzlx6R4jx1HsS3Yz_J3MGqladfi-Q_zTYfsTVkI,10859
+rozetka/examples/example_category.py,sha256=LWirlHlMVcd0Nh1QGY3F7EEPrJlw-Z3FKY4xzBdMlNc,821
+rozetka/examples/example_item.py,sha256=pst6Vs8azx0wkg5J1qHbkggokrTm2-M3mMyhBlchcZ4,108
+rozetka/runners/parse_api.py,sha256=mdJe6u-ISLtPoOnjX58qn5jtTu2Ih0i5e0iaA29HAtY,4956
+rozetka/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rozetka/tools/constants.py,sha256=UajKO4GrRhSrw3GeiSDxOv0bs5Ori_6F_BPmryYzaVs,1919
+rozetka/tools/db.py,sha256=NqvjRMF89s3LZWfz_3MQgW_0vyDJPt7INP0ORQaXNRo,4729
+rozetka/tools/tools.py,sha256=8anS0dCE-ARx4wBHbVkCQDWgztU0a2_N-o-5_Co4GFo,7733
+rozetka_api-1.7.0.dist-info/METADATA,sha256=muCqonfAKbToAfTFbZueI7vPSGLxzzIUwcPjOvGjLZE,2512
+rozetka_api-1.7.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+rozetka_api-1.7.0.dist-info/licenses/AUTHORS.rst,sha256=8penrTYzgj_mSliz5Wm0O0qWqwTCn08NwqVMXactBcU,167
+rozetka_api-1.7.0.dist-info/RECORD,,
