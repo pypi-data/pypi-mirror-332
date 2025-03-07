@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: kawapythonserver
+Version: 0.29.5
+Summary: Kawa python server to run python scripts from Kawa - https://docs.kawa.ai
+Author-email: Kawa Analytics <emmmanuel@kawa.ai>, Kawa Analytics <max@kawa.ai>
+Maintainer-email: Kawa Analytics <max@kawa.ai>, Kawa Analytics <emmmanuel@kawa.ai>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: kywy>=0.29.0
+Requires-Dist: pandas
+Requires-Dist: pyarrow==16.1.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: pex==2.33.1
