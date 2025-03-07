@@ -1,0 +1,2 @@
+[console_scripts]
+pytruststore = pytruststore.__main__:main
