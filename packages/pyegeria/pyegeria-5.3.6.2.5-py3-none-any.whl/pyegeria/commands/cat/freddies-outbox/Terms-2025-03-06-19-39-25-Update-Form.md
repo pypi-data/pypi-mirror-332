@@ -1,0 +1,78 @@
+# Update Glossaries Form - created at 2025-03-06 19:39
+Glossaries found from the search string:  `All Glossaries`
+
+# Update Glossary
+
+## Glossary Name 
+Egeria-Markdown
+
+## Description
+Glossary to describe the vocabulary of Freddie - an Egeria Markdown language to support the exchange of metadata in a Markdown form.
+Freddie allows users to input metadata using any text entry system that supports the entry of standard Markdown characters and through post-processing
+commands, validates the Egeria content and allows the requests to be sent to Egeria. This is an update
+
+## Language
+English
+
+## Usage
+1) (optional) load an example or template for the type of object from Egeria.
+2) Create a new document (perhaps from the template) and edit it, adding in the content with the Freddie controlled Markdown language.
+3) Process the document to validate and display it before you submit it, Validation may annotate your document with recommendations and potential issues.
+4) Submit the document to Egeria using the Freddie_sings command.
+5) anything?
+
+## Qualified Name
+Glossary:Egeria-Markdown
+
+## GUID
+5d45b499-d0d5-4fad-bc23-763bc4073296
+
+
+---
+
+# Update Glossary
+
+## Glossary Name 
+Teddy Bear Drop Foot Terminology
+
+## Description
+This glossary describes terminology invented for the fictitious study into Teddy Bear Drop Foot that is being used to demonstrate aspects of open governance without risk to real patient data. 
+
+## Language
+English
+
+## Usage
+Used with the Teddy Bear Drop Foot Demonstration Study.
+
+## Qualified Name
+Glossary:TeddyBearDropFootTerminology
+
+## GUID
+c103d0c9-7581-47e1-a684-6bbe0ecd596f
+
+
+---
+
+# Update Glossary
+
+## Glossary Name 
+Sustainability Glossary
+
+## Description
+Terminology associated with Coco Pharmaceutical's sustainability initiative.
+
+## Language
+English
+
+## Usage
+For all Coco Pharmaceutical employees wishing to understand more about sustainability and the organization's efforts to improve its operations.
+
+## Qualified Name
+Glossary:Sustainability
+
+## GUID
+30bfe79e-adf2-4fda-b9c5-9c86ad6b0d6c
+
+
+---
+
