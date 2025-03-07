@@ -1,0 +1,37 @@
+[
+  {
+    "Sheet": "Sheet1",
+    "Metric": [
+      "Three",
+      "Test"
+    ],
+    "Cell": "B4",
+    "Formula": "=B2+B3",
+    "References": [
+      {
+        "sheet": "Sheet1",
+        "cell": "B2"
+      },
+      {
+        "sheet": "Sheet1",
+        "cell": "B3"
+      }
+    ]
+  },
+  {
+    "Sheet": "Sheet2",
+    "Metric": [
+      null,
+      "test"
+    ],
+    "Cell": "A2",
+    "Formula": "=SUM(30,[1]Sheet1!D12)",
+    "References": [
+      {
+        "file": "Book2.xlsx",
+        "sheet": "Sheet1",
+        "cell": "D12"
+      }
+    ]
+  }
+]
