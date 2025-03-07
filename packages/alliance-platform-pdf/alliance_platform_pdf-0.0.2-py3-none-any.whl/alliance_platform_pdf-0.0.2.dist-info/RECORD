@@ -1,0 +1,13 @@
+alliance_platform/pdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alliance_platform/pdf/apps.py,sha256=fhZg2qXZgORp7HM_M6zVABa3KsOFTpR7Kg_kpRpNLis,323
+alliance_platform/pdf/decorators.py,sha256=duKtt_cWs-5kVwY3IDt3ZUAA5JlMQ5-CFhSxJWtMJW8,5836
+alliance_platform/pdf/render.py,sha256=jZNyWzys6BsLgCtK1M5D0rj1e2ZQ6-Y4mANgD7XRzCU,7255
+alliance_platform/pdf/render_process.py,sha256=i1jvqfO-2qCpnuAIeVY4vKknJLwqWF6PjHONUyNjIBs,6587
+alliance_platform/pdf/request_handlers.py,sha256=-HzUM5d_Kv6dN6x7euo92374qtJljkMcrULqnXjOofk,9515
+alliance_platform/pdf/settings.py,sha256=0Mof7DzOpRz5bTjqfwkUidiLZwEVs_coheaXH34V9u0,1832
+alliance_platform/pdf/utils.py,sha256=Ga4DXTSs2KefKSVKcUbdY8tYhqk_PlS1quLc_yAmuu4,2831
+alliance_platform/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alliance_platform_pdf-0.0.2.dist-info/METADATA,sha256=DAjSpz3pGQ3QCDtyb8AxFIAGuSjvJVkCEdhWivcJU5U,426
+alliance_platform_pdf-0.0.2.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+alliance_platform_pdf-0.0.2.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+alliance_platform_pdf-0.0.2.dist-info/RECORD,,
