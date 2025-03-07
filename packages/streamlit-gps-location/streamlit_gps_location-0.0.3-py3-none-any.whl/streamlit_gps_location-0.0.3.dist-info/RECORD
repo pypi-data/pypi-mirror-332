@@ -1,0 +1,15 @@
+streamlit_gps_location/__init__.py,sha256=EXFhKGroEEa8jgXZ4a8F3jOXHg9ZWFX36NxD31WgDzk,598
+streamlit_gps_location/example.py,sha256=b0cqWjekvbpn4451Zl-zNmefT1iyoTxZMwQrLZoztmw,410
+streamlit_gps_location/frontend/build/asset-manifest.json,sha256=BJ48tflbGBvk2P7uflaGsxnOfCrH0H3RNgRsukCZvsM,374
+streamlit_gps_location/frontend/build/bootstrap.min.css,sha256=hTwg6axJ8dAPmGVJmYTrsQS3JhKWA0skJ-td54UbEOk,197459
+streamlit_gps_location/frontend/build/index.html,sha256=asnFPeiLfMd9Dv1lViiWOX2YxaJMnmAgeL0GCyFs61c,553
+streamlit_gps_location/frontend/build/static/css/main.72768c64.css,sha256=oMIhFG88joBLHvVydEF5S7KRWsnzLrvw9peGE8DYpIY,1677
+streamlit_gps_location/frontend/build/static/css/main.72768c64.css.map,sha256=Wn1XE9Dk3O-HfvKC9rfRFpTKyZVXzMJk9AaORqaCkP8,3478
+streamlit_gps_location/frontend/build/static/js/main.b7996ba3.js,sha256=AyVsit1FqwBh6ld2EabwSqSrjal838HRL4ynW5XLTis,317275
+streamlit_gps_location/frontend/build/static/js/main.b7996ba3.js.LICENSE.txt,sha256=cmjEMovgjlkZ-Bs7b5rRQ8FsJtL1F77Y3YkM2E9yfUs,1293
+streamlit_gps_location/frontend/build/static/js/main.b7996ba3.js.map,sha256=DVHOqG84TNNYl1YeeIR-UUnP4fGDJjd1G1H4-X0vaZE,1251384
+streamlit_gps_location-0.0.3.dist-info/LICENSE,sha256=9VDWIUfeWnnobvVpN2KtC5cHaNpAmxhdjyF4LivEPNw,1063
+streamlit_gps_location-0.0.3.dist-info/METADATA,sha256=JcugnQY7IZhBvT4wzyFXyAliGSdp2yDeUR1pDNr8VG8,1070
+streamlit_gps_location-0.0.3.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+streamlit_gps_location-0.0.3.dist-info/top_level.txt,sha256=UiPxzfhsLARJFcUcvbbDHVN90vYRS-TUfamzCu38lIg,23
+streamlit_gps_location-0.0.3.dist-info/RECORD,,
