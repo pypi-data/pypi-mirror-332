@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pybabyfpa/__init__.py
+src/pybabyfpa.egg-info/PKG-INFO
+src/pybabyfpa.egg-info/SOURCES.txt
+src/pybabyfpa.egg-info/dependency_links.txt
+src/pybabyfpa.egg-info/top_level.txt
