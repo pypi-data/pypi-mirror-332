@@ -1,0 +1,26 @@
+[project]
+name = "abcreate"
+dynamic = ["version"]
+description = "application bundle creator"
+readme = "README.md"
+authors = [
+    { name = "René de Hesselle", email = "dehesselle@web.de" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "lxml>=5.3.1",
+    "pydantic-xml>=2.14.1",
+]
+
+[project.scripts]
+abcreate = "abcreate:main"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/abcreate/_version.py"
