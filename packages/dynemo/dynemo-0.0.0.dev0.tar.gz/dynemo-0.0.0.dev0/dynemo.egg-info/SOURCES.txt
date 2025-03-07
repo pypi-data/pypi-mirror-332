@@ -1,0 +1,5 @@
+setup.py
+dynemo.egg-info/PKG-INFO
+dynemo.egg-info/SOURCES.txt
+dynemo.egg-info/dependency_links.txt
+dynemo.egg-info/top_level.txt
