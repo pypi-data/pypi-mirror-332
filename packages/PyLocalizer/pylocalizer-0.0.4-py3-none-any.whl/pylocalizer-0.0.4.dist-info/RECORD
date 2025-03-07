@@ -1,0 +1,11 @@
+PyLocalizer/EntryFormatting.py,sha256=__VE_pnE_4Y4EaqA94aWd3xddSQHgsQKqQbmK3UVPHo,1289
+PyLocalizer/WebLocalization.py,sha256=onMFx-KLROR4oWA02jAE6WlAdtFweacDT8kOQ6ZazzU,2258
+PyLocalizer/__init__.py,sha256=p4P-pRccHVwL30FarrjhTEWXDAADYTqzrc8fK4s_FMc,101
+PyLocalizer/internal/JSONLocalization.py,sha256=F6I5EzQ6sTb5gGcFFLv7rbB8JrnqQy4SkJZyk9FYa_g,3124
+PyLocalizer/internal/RawLocalization.py,sha256=MMpmXLbQRe7gwKtE_xwDpayYFDAMBckzxwa_37SSIMs,3416
+PyLocalizer/internal/__init__.py,sha256=ScQJS51RhxScjK2Mkw3a9ZWeU6VjyfOG76OYwopjUcY,120
+pylocalizer-0.0.4.dist-info/LICENSE,sha256=m19Ilz7D5P7xTNknLTvjtOOv04fPuD19ey1an1VYnuA,1083
+pylocalizer-0.0.4.dist-info/METADATA,sha256=Tvokwv-kkONlVG6i-ZIbHowusAwlaqbXYuFFPswaNNs,929
+pylocalizer-0.0.4.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+pylocalizer-0.0.4.dist-info/top_level.txt,sha256=XaniAYYMRGHvrGL-DVkhmFNcKaCFsTMNyzk1mJfKON0,12
+pylocalizer-0.0.4.dist-info/RECORD,,
