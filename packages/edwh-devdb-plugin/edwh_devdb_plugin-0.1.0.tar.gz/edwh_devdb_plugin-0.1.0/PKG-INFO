@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: edwh-devdb-plugin
+Version: 0.1.0
+Summary: edwh plugin for quick database snapshot creation and recovery
+Project-URL: Documentation, https://github.com/educationwarehouse/edwh-devdb-plugin#readme
+Project-URL: Issues, https://github.com/educationwarehouse/edwh-devdb-plugin/issues
+Project-URL: Source, https://github.com/educationwarehouse/edwh-devdb-plugin
+Author-email: Remco Boerma <remco.b@educationwarehouse.nl>, Robin van der Noord <robin.vdn@educationwarehouse.nl>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: edwh
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.12
+Requires-Dist: edwh-files-plugin
+Requires-Dist: edwh>=0.56.0
+Provides-Extra: dev
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: python-semantic-release<8; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# edwh-devdb-plugin
