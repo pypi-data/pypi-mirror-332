@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: cnki-agent
+Version: 0.1.1
+Summary: A Python package for scraping CNKI papers.
+Home-page: https://github.com/zstar1003/cnki-agent
+Author: zstar
+Author-email: zstar1003@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: selenium
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
