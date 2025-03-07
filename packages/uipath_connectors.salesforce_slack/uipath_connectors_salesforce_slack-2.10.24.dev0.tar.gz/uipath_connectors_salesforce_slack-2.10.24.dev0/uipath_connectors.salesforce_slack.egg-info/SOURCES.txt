@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+uipath_connectors.salesforce_slack.egg-info/PKG-INFO
+uipath_connectors.salesforce_slack.egg-info/SOURCES.txt
+uipath_connectors.salesforce_slack.egg-info/dependency_links.txt
+uipath_connectors.salesforce_slack.egg-info/requires.txt
+uipath_connectors.salesforce_slack.egg-info/top_level.txt
