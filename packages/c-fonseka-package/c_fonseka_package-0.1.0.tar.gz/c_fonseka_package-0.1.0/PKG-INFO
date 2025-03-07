@@ -1,0 +1,38 @@
+Metadata-Version: 2.2
+Name: c_fonseka_package
+Version: 0.1.0
+Summary: A Python package with a submodule
+Home-page: https://github.com/yourusername/c_fonseka_package
+Author: Crosper fonseka
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# My Package
+A Python package with a submodule for demonstration purposes.
+
+## Installation
+```sh
+pip install c_fonseka_package
+```
+
+## Usage
+```python
+from c_fonseka_package.my_submodule import hello_world
+print(hello_world())
+```
+
+## License
+This project is licensed under the MIT License.
