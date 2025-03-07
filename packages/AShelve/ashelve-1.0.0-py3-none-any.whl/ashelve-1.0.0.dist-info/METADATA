@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: AShelve
+Version: 1.0.0
+Summary: A simple async wrapper for the built-in shelve module
+Author: XelXen
+Author-email: xelxen@duck.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: asyncio
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
