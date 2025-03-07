@@ -1,0 +1,94 @@
+Metadata-Version: 2.2
+Name: dhenara
+Version: 1.0.0
+Summary: Dhenara Package for Multi Provider AI-Model API calls
+Home-page: https://github.com/dhenara/dhenara
+Author: Dhenara
+Author-email: support@dhenara.com
+License: MIT
+Project-URL: Homepage, https://dhenara.com
+Project-URL: Documentation, https://docs.dhenara.com/
+Project-URL: Bug Reports, https://github.com/dhenara/dhenara/issues
+Project-URL: Source Code, https://github.com/dhenara/dhenara
+Keywords: ai,llm,machine learning,language models
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx>=0.28.0
+Requires-Dist: requests>=2.32.1
+Requires-Dist: asgiref>=3.8.0
+Requires-Dist: cryptography>=44.0.0
+Requires-Dist: aiohttp>=3.11.0
+Requires-Dist: pydantic>=2.10.0
+Requires-Dist: openai>=1.65.0
+Requires-Dist: google-genai>=1.4.0
+Requires-Dist: anthropic>=0.49.0
+Requires-Dist: azure-ai-inference>=1.0.0b9
+Requires-Dist: boto3>=1.37.7
+Requires-Dist: botocore>=1.37.7
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: add-trailing-comma; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+```markdown
+# Dhenara
+
+Python package for interacting with various AI models in a unified way.
+
+[![PyPI version](https://badge.fury.io/py/dhenara.svg)](https://badge.fury.io/py/dhenara)
+[![Build Status](https://github.com/dhenara/dhenara/actions/workflows/tests.yml/badge.svg)](https://github.com/dhenara/dhenara/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Installation
+
+```bash
+pip install dhenara
+```
+
+For AWS support:
+```bash
+pip install "dhenara[aws]"
+```
+
+For Azure support:
+```bash
+pip install "dhenara[azure]"
+```
+
+## Quick Start
+
+```python
+from dhenara.ai import ChatModel
+
+model = ChatModel.from_provider("openai", model="gpt-4")
+response = model.generate("Hello, world!")
+print(response)
+```
+
+## Documentation
+
+For full documentation, visit [docs.dhenara.com](https://docs.dhenara.com/).
