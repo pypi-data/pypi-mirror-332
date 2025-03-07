@@ -1,0 +1,3 @@
+[console_scripts]
+buddy=hydra_buddies.cli:cli
+
