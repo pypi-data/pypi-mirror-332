@@ -1,0 +1,6 @@
+textract
+openai
+nltk==3.8.1
+python-docx
+docx
+tqdm
