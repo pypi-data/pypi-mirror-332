@@ -1,0 +1,12 @@
+ppc_asm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppc_asm/dol_file.py,sha256=sKRObyVj7icw_0pSaT_fe4XaGjpFFj-Al0zbTBoNlw4,5305
+ppc_asm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppc_asm/version.py,sha256=qEW4HoWHYDkBguijNs9nZzHd38qlKSeRTDG2QQbYrGY,511
+ppc_asm/assembler/__init__.py,sha256=RZwZJiQaLYWwj8akVp89eP5_BBHFPk7wo5xmL8IuWx4,951
+ppc_asm/assembler/custom_ppc.py,sha256=5xZn0EB6MXc5UHSRN-udpp34DhbCx2Y_XP1GeKGQS88,2069
+ppc_asm/assembler/ppc.py,sha256=oefi2pZJ4SfxSToFsmAYOoUoCvixlGuDyfb-DKALI2Y,22264
+ppc_asm-1.5.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+ppc_asm-1.5.0.dist-info/METADATA,sha256=D0RbOEpFUF1gXIubvVzJvipRfAjtupteN149Hj1lguw,1515
+ppc_asm-1.5.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+ppc_asm-1.5.0.dist-info/top_level.txt,sha256=CR_Kmiw3o00AqYXc4wPhtCTWHm8rS14rlMZ1hZcclgU,8
+ppc_asm-1.5.0.dist-info/RECORD,,
