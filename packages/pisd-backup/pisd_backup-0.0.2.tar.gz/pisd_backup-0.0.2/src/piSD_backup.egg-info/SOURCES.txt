@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/app.py
+src/piSD_backup.egg-info/PKG-INFO
+src/piSD_backup.egg-info/SOURCES.txt
+src/piSD_backup.egg-info/dependency_links.txt
+src/piSD_backup.egg-info/requires.txt
+src/piSD_backup.egg-info/top_level.txt
+src/pisd_backup.egg-info/PKG-INFO
+src/pisd_backup.egg-info/SOURCES.txt
+src/pisd_backup.egg-info/dependency_links.txt
+src/pisd_backup.egg-info/requires.txt
+src/pisd_backup.egg-info/top_level.txt
