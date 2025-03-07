@@ -1,0 +1,3 @@
+requests
+fancyutil>=0.0.1
+altcolor>=0.0.5

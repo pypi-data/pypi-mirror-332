@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+multicoin/__init__.py
+multicoin/main.py
+multicoin.egg-info/PKG-INFO
+multicoin.egg-info/SOURCES.txt
+multicoin.egg-info/dependency_links.txt
+multicoin.egg-info/requires.txt
+multicoin.egg-info/top_level.txt
