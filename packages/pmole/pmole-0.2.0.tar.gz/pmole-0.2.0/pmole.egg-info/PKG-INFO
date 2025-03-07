@@ -1,0 +1,48 @@
+Metadata-Version: 2.2
+Name: pmole
+Version: 0.2.0
+Summary: Project Mole
+Author-email: Tsotne Otanadze <otanadzetsotne@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: flake8>=6.0.0; extra == "dev"
+
+# Project Mole
+
+## Overview
+Python package for code analysis and execution tracing. Provides CLI tools for analyzing Python code structure and dependencies.
+
+## Features
+- CLI interface for tracing Python file execution
+- Import dependency resolution
+- Module hierarchy visualization
+- Verbose debugging mode
+- PyPI package distribution
+
+## Installation
+```bash
+# Install from PyPI
+pip install pmole
+
+# Install locally from source
+pip install .
+```
+
+## Usage
+```bash
+# Trace a Python file's execution
+pmole trace path/to/file.py
+
+# Enable verbose output
+pmole trace path/to/file.py -v
+```
+
+## License
+MIT - See [LICENSE](LICENSE) for details.
