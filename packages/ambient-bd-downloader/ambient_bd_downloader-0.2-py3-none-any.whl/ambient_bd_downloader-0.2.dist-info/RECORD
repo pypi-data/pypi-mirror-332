@@ -1,0 +1,17 @@
+ambient_bd_downloader/__init__.py,sha256=rfeCQRy-6_hzdbRbIGW9VB9IVUlgvLpqX4rExtVuHgg,21
+ambient_bd_downloader/generate_config.py,sha256=gPQ_y4DyJlmWnl6nAcVRmbQYvP15_eB7vECsxXyK6VI,443
+ambient_bd_downloader/main.py,sha256=ocGlG5_F0H1gkyxLBMml2ZoHaF5t64Ts2ruwN7UnAtc,4294
+ambient_bd_downloader/download/__init__.py,sha256=NMtnlh3m6HWEr2EbMQO-alN9HCa7yXNUXJouV2HMg5E,19
+ambient_bd_downloader/download/compliance.py,sha256=ztqq7VCyxZ_TkUdMSk2vk2yg7zZ6iBaMNYlljY3Mnq0,2450
+ambient_bd_downloader/download/data_download.py,sha256=e2iGclEiolypK_FrZuzsjn36s4PJf_N_vjEUVnkEWcw,8947
+ambient_bd_downloader/sf_api/__init__.py,sha256=q4vhn08pdZ5n-VzJrJ0nkvYHbmIebeJx-14Uk4n0z1o,17
+ambient_bd_downloader/sf_api/dom.py,sha256=pnXzfR0PwTY-POBCwE4f0j14pE0OdvJgyLTRU8Qyca8,2019
+ambient_bd_downloader/sf_api/somnofy.py,sha256=WzI49qk8SPc_QGThXxFxE8Lmsywe-JXCUQgsxv5AMak,6140
+ambient_bd_downloader/storage/__init__.py,sha256=uPXUBizRcerVXWMOnt3r3CWsJBc1T0DqNT-jnRK2CyU,18
+ambient_bd_downloader/storage/paths_resolver.py,sha256=RKrhk1VD2ZyNBfWdpi8-dfXgeQNboHfLTUvKwds7-Ho,2007
+ambient_bd_downloader-0.2.dist-info/LICENSE,sha256=pcdrRVifpcO9tDabcWezZNFcaObKEl9bhCLWrAIh568,1094
+ambient_bd_downloader-0.2.dist-info/METADATA,sha256=oJMDCuX8QEONwPV8nizL0yRYEDyRQ9aT_uxWESF_c8g,513
+ambient_bd_downloader-0.2.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+ambient_bd_downloader-0.2.dist-info/entry_points.txt,sha256=QfJETvyCo3UyEUvQi_a22YBrMSrSamQhovOP6aaKtgM,149
+ambient_bd_downloader-0.2.dist-info/top_level.txt,sha256=57q4vUqkkhJ0oPO0ZGnKv_k70h9owv5LH31UAOFQocY,22
+ambient_bd_downloader-0.2.dist-info/RECORD,,
