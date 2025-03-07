@@ -1,0 +1,162 @@
+# Traducciones para Django_LogMonitor.
+# Copyright (C) 2025 El equipo de Django_LogMonitor
+# Este archivo se distribuye bajo la misma licencia que el paquete Django_LogMonitor.
+# Javier L. Pulido <grupol2st@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django_LogMonitor 1.0\n"
+"Report-Msgid-Bugs-To: grupol2st@gmail.com\n"
+"POT-Creation-Date: 2025-03-06 14:42-0500\n"
+"PO-Revision-Date: 2025-03-06 21:50+0500\n"
+"Last-Translator: Javier L. Pulido <grupol2st@gmail.com>\n"
+"Language-Team: Español <grupol2st@gmail.com>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\admin.py:42 .\admin.py:138
+msgid "Detalles de la acción"
+msgstr "Detalles de la acción"
+
+#: .\admin.py:50
+msgid "Información del usuario"
+msgstr "Información del usuario"
+
+msgid "Desconocido"
+msgstr "Desconocido"
+
+#: .\admin.py:53
+msgid "Datos en formato JSON"
+msgstr "Datos en formato JSON"
+
+#: .\admin.py:134
+msgid "No se hicieron modificaciones"
+msgstr "No se hicieron modificaciones"
+
+#: .\admin.py:137 .\admin.py:186 .\admin.py:262
+msgid "No disponible"
+msgstr "No disponible"
+
+#: .\admin.py:147 .\models.py:21
+msgid "Modelo"
+msgstr "Modelo"
+
+#: .\admin.py:151 .\admin.py:276 .\admin.py:288
+msgid "Es un registro nuevo ó los datos no estan disponibles."
+msgstr "Es un registro nuevo o los datos no están disponibles."
+
+#: .\admin.py:187
+msgid "DATOS ANTERIORES"
+msgstr "DATOS ANTERIORES"
+
+msgid "Nuevo registro"
+msgstr "Nuevo registro"
+
+#: .\admin.py:225
+msgid "Registro eliminado"
+msgstr "Registro eliminado"
+
+#: .\admin.py:263
+msgid "DATOS NUEVOS"
+msgstr "DATOS NUEVOS"
+
+#: .\admin.py:277
+msgid "DATOS ANTERIORES (json)"
+msgstr "DATOS ANTERIORES (json)"
+
+#: .\admin.py:289
+msgid "DATOS NUEVOS (json)"
+msgstr "DATOS NUEVOS (json)"
+
+#: .\models.py:12
+msgid "Creación"
+msgstr "Creación"
+
+#: .\models.py:13
+msgid "Actualización"
+msgstr "Actualización"
+
+#: .\models.py:14
+msgid "Eliminación"
+msgstr "Eliminación"
+
+#: .\models.py:17
+msgid "Usuario"
+msgstr "Usuario"
+
+#: .\models.py:18
+msgid "Fecha y Hora"
+msgstr "Fecha y Hora"
+
+#: .\models.py:19
+msgid "Acción"
+msgstr "Acción"
+
+#: .\models.py:20
+msgid "App"
+msgstr "App"
+
+#: .\models.py:22
+msgid "ID del Objeto"
+msgstr "ID del Objeto"
+
+#: .\models.py:23
+msgid "Dato Anterior"
+msgstr "Dato Anterior"
+
+#: .\models.py:24
+msgid "Dato Nuevo"
+msgstr "Dato Nuevo"
+
+#: .\models.py:25
+msgid "Navegador"
+msgstr "Navegador"
+
+#: .\models.py:26
+msgid "Dirección IP"
+msgstr "Dirección IP"
+
+#: .\models.py:29
+msgid "Registro de Auditoría"
+msgstr "Registro de Auditoría"
+
+#: .\models.py:30
+msgid "Registros de Auditoría"
+msgstr "Registros de Auditoría"
+
+msgid "Copiar"
+msgstr "Copiar"
+
+#: .\templates\admin\logmonitor\submit_line.html:5
+msgid "Save"
+msgstr "Guardar"
+
+#: .\templates\admin\logmonitor\submit_line.html:8
+msgid "SALIR"
+msgstr "SALIR"
+
+#: .\templates\admin\logmonitor\submit_line.html:11
+msgid "Save as new"
+msgstr "Guardar como nuevo"
+
+#: .\templates\admin\logmonitor\submit_line.html:14
+msgid "Save and add another"
+msgstr "Guardar y añadir otro"
+
+#: .\templates\admin\logmonitor\submit_line.html:18
+msgid "Save and continue editing"
+msgstr "Guardar y continuar editando"
+
+#: .\templates\admin\logmonitor\submit_line.html:18
+msgid "Save and view"
+msgstr "Guardar y ver"
+
+#: .\static\js\copiar_json.js
+msgid "Copiado..."
+msgstr "Copiado..."
+
+msgid "Error al copiar"
+msgstr "Error al copiar"
