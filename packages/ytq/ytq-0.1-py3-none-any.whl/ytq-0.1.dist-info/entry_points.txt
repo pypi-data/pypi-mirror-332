@@ -1,0 +1,2 @@
+[console_scripts]
+ytq = ytq.cli:app
