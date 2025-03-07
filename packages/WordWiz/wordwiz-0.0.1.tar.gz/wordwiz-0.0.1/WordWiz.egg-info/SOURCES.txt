@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+WordWiz/__init__.py
+WordWiz/antonyms.py
+WordWiz/definition.py
+WordWiz/errors.py
+WordWiz/synonyms.py
+WordWiz.egg-info/PKG-INFO
+WordWiz.egg-info/SOURCES.txt
+WordWiz.egg-info/dependency_links.txt
+WordWiz.egg-info/requires.txt
+WordWiz.egg-info/top_level.txt
