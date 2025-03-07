@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+agentweave/__init__.py
+agentweave.egg-info/PKG-INFO
+agentweave.egg-info/SOURCES.txt
+agentweave.egg-info/dependency_links.txt
+agentweave.egg-info/entry_points.txt
+agentweave.egg-info/requires.txt
+agentweave.egg-info/top_level.txt
