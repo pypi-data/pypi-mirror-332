@@ -1,0 +1,48 @@
+Metadata-Version: 2.2
+Name: interfacy
+Version: 0.3.0
+Author-email: Žiga Ivanšek <ziga.ivansek@gmail.com>
+Project-URL: Repository, https://github.com/zigai/interfacy
+Keywords: interfacy,cli,command-line,argparse,cli-generator,cli-builder,cli-framework
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nested_argparse==0.1.2
+Requires-Dist: stdl>=0.6.1
+Requires-Dist: objinspect>=0.2.15
+Requires-Dist: strto>=0.1.8
+Provides-Extra: full
+Requires-Dist: argcomplete; extra == "full"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+
+# Interfacy
+[![PyPI version](https://badge.fury.io/py/interfacy.svg)](https://badge.fury.io/py/interfacy)
+![Supported versions](https://img.shields.io/badge/python-3.10+-blue.svg)
+[![Downloads](https://static.pepy.tech/badge/interfacy)](https://pepy.tech/project/interfacy)
+[![license](https://img.shields.io/github/license/zigai/interfacy.svg)](https://github.com/zigai/interfacy/blob/main/LICENSE)
+
+Generate CLIs from Python functions or classes 
+# Installation
+#### From PyPi
+```
+pip install interfacy
+```
+#### From source
+```
+pip install git+https://github.com/zigai/interfacy.git
+```
+# License
+[MIT License](https://github.com/zigai/interfacy/blob/master/LICENSE)
