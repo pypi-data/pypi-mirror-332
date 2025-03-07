@@ -1,0 +1,4 @@
+exclude pywxbase/*.py
+exclude pywxbase/**/*.py
+exclude pywxbase/**/*.c
+exclude pywxbase/logging/logger.pyi
