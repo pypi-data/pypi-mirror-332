@@ -1,0 +1,8 @@
+sounddevice==0.4.6
+numpy==1.26.2
+paho-mqtt==1.6.1
+
+[dev]
+flake8>=4.0.1
+build>=1.2.2.post1
+twine>=4.0.0
