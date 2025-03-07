@@ -1,0 +1,11 @@
+unfat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unfat/axolotl.py,sha256=sErAYrCg_11hGYEZyJrYJWTPwJKBxk24PFOIfO_Fjdg,9648
+unfat/client.py,sha256=-WWd9rM63qOISdAEkWJBOauxIvhMWhoceBPvLE45uq4,5295
+unfat/datasets.py,sha256=vEO5Qpna9nIk0e72DLLg4Hvg22N2UofJ3yjhgVblu6g,5037
+unfat/extract.py,sha256=HesP06nXET83JICzdE_L2GMJ0anZXbcmjyY1MJBXovw,4599
+unfat/lora.py,sha256=60D8X0a30DFfGOAmpuhDdYztAiuMSV9XAjfvCTn4jnU,375
+unfat/together.py,sha256=aKTolDKBhKc3hWgWrc1QB_T-HMKOd9Mut_1JCu-bJl8,5554
+unfat-0.0.5.dist-info/METADATA,sha256=ijnkAQHFFD14d_NI2JxDKeDaIEg9Uh-HuVPvYqJ5aeM,12705
+unfat-0.0.5.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+unfat-0.0.5.dist-info/top_level.txt,sha256=n4A0S1Wq6fclDpflSJTMLww5yK2xBTuLFNFtszaKTDE,6
+unfat-0.0.5.dist-info/RECORD,,
