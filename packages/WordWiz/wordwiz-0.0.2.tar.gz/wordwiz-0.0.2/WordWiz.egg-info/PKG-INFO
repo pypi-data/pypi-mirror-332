@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: WordWiz
+Version: 0.0.2
+Summary: A word API for definitions, synonyms and antonyms.
+Home-page: https://github.com/devs-des1re/WordWiz/
+Author: devs_des1re
+Author-email: arjunbrij8811@gmail.com
+License: MIT
+Project-URL: Bug Reporter, https://github.com/devs-des1re/WordWiz/issues
+Project-URL: Repository, https://github.com/devs-des1re/WordWiz
+Keywords: words
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: bs4
+Requires-Dist: requests
+
+## WordWiz: A wizard of words!
+
+WordWiz was inspired by [PyDictionary](https://github.com/geekpradd/PyDictionary). It can get defintions from the [dictionaryapi](https://dictionaryapi.dev). For synonyms and antonyms, it uses [synonym.com](https://synonym.com). This library uses Requests and BeautifulSoup4 to power WordWiz!
+
+### Installation
+```
+pip install WordWiz
+```
+
+### Definitions
+```
+import WordWiz
+
+term = input("Enter a term: ")
+print(WordWiz.get_definitions(term))
+```
+
+### Synonyms
+```
+import WordWiz
+
+term = input("Enter a term: ")
+print(WordWiz.get_synonyms(term))
+```
+
+### Antonyms
+```
+import WordWiz
+
+term = input("Enter a term: ")
+print(WordWiz.get_antonyms(term))
+```
+
+### Errors
+```
+import WordWiz
+from WordWiz import errors
+
+term = input("Enter a term: ")
+
+try:
+    print(WordWiz.get_definitions(term))
+except errors.APIException as e:
+    print("Term not found in the api.")
+```
+```
+import WordWiz
+from WordWiz import errors
+
+term = input("Enter a term: ")
+
+try:
+    print(WordWiz.get_definitions(term))
+except errors.TermException as e:
+    print("Term must be a single word.")
+```
+
+### About
+Current Version: 0.0.2 devs_des1re
