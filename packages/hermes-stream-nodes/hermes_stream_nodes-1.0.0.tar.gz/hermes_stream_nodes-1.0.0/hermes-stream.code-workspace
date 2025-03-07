@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../packages/hermes-core"
+		}
+	],
+	"settings": {
+		"python-envs.pythonProjects": []
+	}
+}
