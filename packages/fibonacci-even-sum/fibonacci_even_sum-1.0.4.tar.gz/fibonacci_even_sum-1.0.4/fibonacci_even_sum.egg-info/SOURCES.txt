@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.en.md
+README.md
+setup.py
+fibonacci_even_sum/__init__.py
+fibonacci_even_sum/fibonacci_even_sum.py
+fibonacci_even_sum/test_fibonacci_even_sum.py
+fibonacci_even_sum.egg-info/PKG-INFO
+fibonacci_even_sum.egg-info/SOURCES.txt
+fibonacci_even_sum.egg-info/dependency_links.txt
+fibonacci_even_sum.egg-info/entry_points.txt
+fibonacci_even_sum.egg-info/top_level.txt
