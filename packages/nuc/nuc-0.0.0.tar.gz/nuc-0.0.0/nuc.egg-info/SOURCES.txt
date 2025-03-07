@@ -1,0 +1,5 @@
+pyproject.toml
+nuc.egg-info/PKG-INFO
+nuc.egg-info/SOURCES.txt
+nuc.egg-info/dependency_links.txt
+nuc.egg-info/top_level.txt
