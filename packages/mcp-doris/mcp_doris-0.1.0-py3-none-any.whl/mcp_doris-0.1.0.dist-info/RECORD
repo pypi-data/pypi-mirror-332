@@ -1,0 +1,9 @@
+mcp_doris/__init__.py,sha256=_DjNmhuWtak9lvzeB42uKwwFnScghNiJ8C-d0BFfogE,219
+mcp_doris/main.py,sha256=3TdtBq4eFffCd6ydNw5Y3Shm1GzTos7I_Vig3qxP0cE,94
+mcp_doris/mcp_env.py,sha256=4HIYXQUF7GcEIIzQm1DbuSO_rMMavW52Td9UsKLO8as,3539
+mcp_doris/mcp_server.py,sha256=FdmcOkXQYSVm7CthqEyvjIgvSJogZGsoSyQuFu7-WnQ,6108
+mcp_doris-0.1.0.dist-info/METADATA,sha256=kJg_0EFeVb-Czz6Muq2IsGHPWxetdtTJWyk165i172M,1064
+mcp_doris-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_doris-0.1.0.dist-info/entry_points.txt,sha256=XDGdu9CiEj6nIRKRJ6qZTtLb8KHKUmVBFz892qtAD6w,50
+mcp_doris-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mcp_doris-0.1.0.dist-info/RECORD,,
