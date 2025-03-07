@@ -1,0 +1,8 @@
+xpartition/__init__.py,sha256=bK3pqEvpgvLTHharTh1w0s5OvexjKFqrdvn2-qBrDWY,90
+xpartition/xarray_utils.py,sha256=0EnhNh3YXknbbuBxkk9u1Vr9_HeTKykzmdvkeOjoUx8,11832
+xpartition/xpartition.py,sha256=dcXj2HO8Mt6Xi_oRAI5Jae0HBSZpB2iKhlKA0oQ9C2s,24871
+xpartition-2025.3.0.dist-info/LICENSE,sha256=o_eLpsCGSIg3z_TQwmqecZMjM2oXSaWV7v4iPr5ovnk,1070
+xpartition-2025.3.0.dist-info/METADATA,sha256=OYlj_Isw5oVYli3e-pMiabQA_U7T_SW770RgYEM99hw,1124
+xpartition-2025.3.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+xpartition-2025.3.0.dist-info/top_level.txt,sha256=FVuR8gDtHQbak0KuzHqL1XS8g1alZAJgusYZ_P99PAA,11
+xpartition-2025.3.0.dist-info/RECORD,,
