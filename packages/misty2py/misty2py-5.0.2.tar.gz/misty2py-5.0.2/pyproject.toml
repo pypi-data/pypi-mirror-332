@@ -1,0 +1,45 @@
+[project]
+name = "misty2py"
+version = "5.0.2"
+description = "A Python package for Misty II development"
+authors = [
+    {name = "Chris 'Scar(R)ed' Vajdík",email = "chrisquackless@duck.com"}
+]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+include = [
+    "LICENSE",
+    "CHANGELOG.md",
+    "misty2py/allowed_actions.json",
+    "misty2py/allowed_data.json",
+    "misty2py/allowed_infos.json",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "websocket-client (>=1.8.0,<2.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)"
+]
+
+[project.urls]
+Documentation = "https://misty2py-documentation.onrender.com/"
+Repository = "https://gitlab.com/scarred-libraries/misty2py"
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+pytest = "^8.3.5"
+pytest-cov = "^6.0.0"
+pylint = "^3.3.4"
+pycodestyle = "^2.12.1"
+pdoc3 = "^0.11.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
