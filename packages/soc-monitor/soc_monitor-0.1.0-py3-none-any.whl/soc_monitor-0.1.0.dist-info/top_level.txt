@@ -1,0 +1,2 @@
+soc_monitor
+system_monitor

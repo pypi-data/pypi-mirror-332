@@ -1,0 +1,13 @@
+soc_monitor/__init__.py,sha256=NE5Uv7kvklSydXaNoeZywl2KWMMDIDQjgrY7i7ZzD2A,90
+soc_monitor/cli.py,sha256=LU5chxTHQbSDtMH6TDcc-M_z8QSerjdqiyqtTTEf8PE,1277
+soc_monitor/server.py,sha256=IKVmQ1XAtiuKKGPUpZAqUJJ7VVB0GxaU1fbrzTEe9Z8,7550
+soc_monitor/utils.py,sha256=DlxtJYRsRyq8pPPOtRem8PeaVEWfh8HH4SEKBqcGulE,1111
+system_monitor/__init__.py,sha256=NE5Uv7kvklSydXaNoeZywl2KWMMDIDQjgrY7i7ZzD2A,90
+system_monitor/cli.py,sha256=LU5chxTHQbSDtMH6TDcc-M_z8QSerjdqiyqtTTEf8PE,1277
+system_monitor/server.py,sha256=IKVmQ1XAtiuKKGPUpZAqUJJ7VVB0GxaU1fbrzTEe9Z8,7550
+system_monitor/utils.py,sha256=DlxtJYRsRyq8pPPOtRem8PeaVEWfh8HH4SEKBqcGulE,1111
+soc_monitor-0.1.0.dist-info/METADATA,sha256=MyrAF-z8naHYWL7LNgOZZwkgRveG1PjxhR43fTA0rD4,429
+soc_monitor-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+soc_monitor-0.1.0.dist-info/entry_points.txt,sha256=CJHVT00cCdlvieJCT7JP6tmBZSmXrZuHgz-2s1kDTFo,53
+soc_monitor-0.1.0.dist-info/top_level.txt,sha256=Q8x7bFtlp-i3HdwiiVk3aSOKPRS1lFcrOWmBQwNJCQo,27
+soc_monitor-0.1.0.dist-info/RECORD,,
