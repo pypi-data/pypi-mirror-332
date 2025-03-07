@@ -1,0 +1,5 @@
+[console_scripts]
+envi-viewer = happy.tkinter.envi_viewer.viewer:sys_main
+happy-data-viewer = happy.tkinter.data_viewer.viewer:sys_main
+happy-envi-viewer = happy.tkinter.envi_viewer.viewer:sys_main
+happy-raw-checker = happy.tkinter.raw_checker.checker:sys_main

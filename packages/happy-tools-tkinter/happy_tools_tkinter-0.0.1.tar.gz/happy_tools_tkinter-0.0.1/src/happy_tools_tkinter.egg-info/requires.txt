@@ -1,0 +1,9 @@
+fast-opex>=0.0.4
+happy_tools_core>0.0.1
+matplotlib
+orjson
+pygubu==0.31
+redis
+scikit-learn
+shapely
+ttkSimpleDialog==1.2.1
