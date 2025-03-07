@@ -1,0 +1,3 @@
+[console_scripts]
+hello=hello_quinx.cli:app
+
