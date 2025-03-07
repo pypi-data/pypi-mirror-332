@@ -1,0 +1,9 @@
+MANIFEST.in
+board.py
+board2048.py
+setup.py
+board2048.egg-info/PKG-INFO
+board2048.egg-info/SOURCES.txt
+board2048.egg-info/dependency_links.txt
+board2048.egg-info/top_level.txt
+board2048.egg-info/zip-safe
