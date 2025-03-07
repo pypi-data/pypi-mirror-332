@@ -1,0 +1,14 @@
+digital_diffeomorphism/__init__.py,sha256=SeXTwtOQ579q1EQsDrkyQsmG7lzGzKqjqFtjORHWMy0,454
+digital_diffeomorphism/cli.py,sha256=nb74O7HRJ9BNlUkAJfevo2JcdQV0zcbB-5zuKRFG3eo,4300
+digital_diffeomorphism/core.py,sha256=QWFo1K9JyivkdvEZDuyJG5a-dI_ywEbigZX6Z1S4_6I,2865
+digital_diffeomorphism/jacobian_calculator_torch.py,sha256=kSEAHZyNLfT8C2ZwRf_rxr6qD7uLMzUivMokiOZ1ORU,8966
+digital_diffeomorphism/non_diffeomorphic_measures.py,sha256=56sgjrtsWv6YfB4e7D4bubqUBApYqI-fdMMPG-doiA0,2924
+digital_diffeomorphism/utils.py,sha256=PWNlc5SBO_d_7k9TTMu9KFKOC741RDSXne1mTgLoSgY,2316
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/example_nda.py,sha256=7y2Wnc4QAKyLcqOOFodZNpmvhx5iVvk1L8SMDowgAGs,2143
+examples/example_ndv.py,sha256=ov14a4gbcB_UAYx6eo_Bms5RiSGLP75Sg-Q3gOawnfo,2175
+digital_diffeomorphism-1.1.0.dist-info/METADATA,sha256=eynbGya2J0QO30rcMXnC5S9ECxRcEsBciYcM2F9aGi0,5303
+digital_diffeomorphism-1.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+digital_diffeomorphism-1.1.0.dist-info/entry_points.txt,sha256=h3W5OxTxBeRV4BkGF8cDWIj8hml5GMSOXld_GmO-z2o,132
+digital_diffeomorphism-1.1.0.dist-info/top_level.txt,sha256=8IzNTepsKvEJ1_btVawbZtyFUdFGPQ7UBygqEA5yeo0,32
+digital_diffeomorphism-1.1.0.dist-info/RECORD,,
