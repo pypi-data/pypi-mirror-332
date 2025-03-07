@@ -1,0 +1,2 @@
+[console_scripts]
+running-analyzer = running_analyzer.cli:app
