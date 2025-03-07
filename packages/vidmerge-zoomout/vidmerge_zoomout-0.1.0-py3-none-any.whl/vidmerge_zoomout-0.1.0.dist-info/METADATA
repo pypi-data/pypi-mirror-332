@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: vidmerge_zoomout
+Version: 0.1.0
+Requires-Dist: opencv-python >=4.5.1
+Requires-Dist: tqdm >=4.56.0
+

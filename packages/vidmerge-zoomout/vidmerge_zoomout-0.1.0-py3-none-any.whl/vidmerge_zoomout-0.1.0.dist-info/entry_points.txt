@@ -1,0 +1,2 @@
+[console_scripts]
+generate = generate_zoom_out_video:main
