@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+uipath_connectors.google_gmail.egg-info/PKG-INFO
+uipath_connectors.google_gmail.egg-info/SOURCES.txt
+uipath_connectors.google_gmail.egg-info/dependency_links.txt
+uipath_connectors.google_gmail.egg-info/requires.txt
+uipath_connectors.google_gmail.egg-info/top_level.txt
