@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+test_cosmic.egg-info/PKG-INFO
+test_cosmic.egg-info/SOURCES.txt
+test_cosmic.egg-info/dependency_links.txt
+test_cosmic.egg-info/top_level.txt

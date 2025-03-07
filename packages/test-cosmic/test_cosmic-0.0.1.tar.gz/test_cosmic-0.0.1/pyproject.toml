@@ -1,0 +1,4 @@
+[project]
+description = "A Python SDK for interacting with the My API service."
+name = "test_cosmic"
+version = "0.0.1"
