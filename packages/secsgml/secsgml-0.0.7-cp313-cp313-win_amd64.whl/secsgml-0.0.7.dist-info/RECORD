@@ -1,0 +1,10 @@
+secsgml/__init__.py,sha256=86ViK0JycIxv4mhIyFwuiAKmsdgg-WNxqUuslXbi0Yw,119
+secsgml/parse_sgml_submission.py,sha256=-EjOgLyBg0auMFdJnIIGoMiGCW3z32NhFanKNHwjYTk,1100
+secsgml/sgml_memory.py,sha256=StaIIUsMJFeXXEMuLTpxddBaK5Z3FOwqwN6hKDu3OyM,10514
+secsgml/sgml_memory_cy.cp313-win_amd64.pyd,sha256=XrS-QX0_Pl3wnQdLE-kguxgI6eh5jJZh6B7HPV4rDfQ,135680
+secsgml/uu_decode.py,sha256=_KHpClV6W15DyQQsDQFolcXmLkorSxKK6iA48O7CXps,991
+secsgml/uu_decode_cy.cp313-win_amd64.pyd,sha256=i3O6YNHdW1FpHv-X9cO2Irtn31pDlC5ZVzuGuo-Ch_Q,44544
+secsgml-0.0.7.dist-info/METADATA,sha256=2L9xEGyjVFAgRubxt6aMkkVSC8I8TWzifktCoMUmZ6g,1761
+secsgml-0.0.7.dist-info/WHEEL,sha256=4oNF-ClUxXRX55MBZicDC2_sTLjRbJdXNr8x18QuDzw,101
+secsgml-0.0.7.dist-info/top_level.txt,sha256=JGMl2318trr3mDHmxwnp5El5QwvmQQW8owT5UFM-wZI,8
+secsgml-0.0.7.dist-info/RECORD,,
