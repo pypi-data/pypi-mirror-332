@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: spheral
+Version: 0.1.0
+Summary: Spherical representation of data
+License: MIT
+Author: MauricioSalazare
+Requires-Python: >=3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: numpy (>=2.2.3,<3.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: scipy (>=1.15.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MauricioSalazare/spheral/master?urlpath=lab/tree/examples)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/MauricioSalazare/spheral/blob/master/LICENSE)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/multicopula)](https://pypi.python.org/pypi/spheral/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/multicopula)](https://pypi.python.org/pypi/spheral/)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/MauricioSalazare/spheral)]((https://github.com/MauricioSalazare/spheral))
+[![PyPI - Version](https://img.shields.io/pypi/v/spheral)](https://pypi.python.org/pypi/spheral/)
+
+# Spheral
+## What is Spheral?
+It is a principal component analysis (PCA) dimensionality reduction technique that projects the data into a Sphere-like
+structure.
+
+## How to install
+The package can be installed via pip using:
+
+```shell
+    pip install spheral
+```

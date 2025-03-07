@@ -1,0 +1,10 @@
+spheral/__init__.py,sha256=P21jBdRm6cHLq7v8L7pPHmw0_ykkmmkUbCSM4sQwSxM,442
+spheral/config.py,sha256=h0qdyZ3tLEpyEypSpqCkTejTk7Mh6ZQRQsXsnoXrbwY,2204
+spheral/data_models.py,sha256=hy8Zo7jd6_1XBpHP41YSvzY_A-pLyYLy13pfsfe5T34,11976
+spheral/logger.py,sha256=ISYTmg3RkKawmn7PJkjiagaLd-cMEdxqAOFjTTaBsbk,2111
+spheral/sphere_models.py,sha256=GcQgsT7cLFC3zRnaRdupaz-IOwtfaUUA2hbZZjbrO5E,10631
+spheral/sphere_utils.py,sha256=jrJJbZ_lD8mvPRNSn9XAQ-1elyoZywmL_q7yuNbGDvk,9026
+spheral-0.1.0.dist-info/LICENSE,sha256=lyytz5l6fqq9i814qkBR-MY-ud4LFE1WUnU7Lo1oJRU,1073
+spheral-0.1.0.dist-info/METADATA,sha256=ddbqoqlwHtVZ7rImjoJ_mZyCoPhQIeHbtKSrRb4IxNc,1568
+spheral-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+spheral-0.1.0.dist-info/RECORD,,
