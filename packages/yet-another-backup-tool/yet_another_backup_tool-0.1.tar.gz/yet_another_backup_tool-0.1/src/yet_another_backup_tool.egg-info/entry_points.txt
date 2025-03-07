@@ -1,0 +1,2 @@
+[console_scripts]
+yabt = yabt.yabt:main
