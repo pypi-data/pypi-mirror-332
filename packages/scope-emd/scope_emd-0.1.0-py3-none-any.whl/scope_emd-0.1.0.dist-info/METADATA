@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: scope-emd
+Version: 0.1.0
+Summary: scope is the Python-based package for detecting oscillatory                  signals in observational or experimental time series with the                 EMD technique and assessing their statistical significance vs.                 power-law distributed background noise.
+Author: Dmitrii Kolotkov, Weijie Gu, Sergey Belov, Valery Nakariakov
+Author-email: Sergey.Belov@warwick.ac.uk
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: colorednoise >=2.2.0
+Requires-Dist: emd >=0.7.0
+Requires-Dist: numpy >=1.26.4
+Requires-Dist: lmfit >=1.3.2
+
