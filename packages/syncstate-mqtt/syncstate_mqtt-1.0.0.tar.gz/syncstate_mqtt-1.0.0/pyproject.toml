@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "syncstate_mqtt"
+authors = [
+  { name="Goldenbeasty" },
+]
+description = "Python dictionary state sync keeper with mqtt, read-only"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+]
+dynamic = ["version"]
+dependencies = [
+    "paho-mqtt"
+]
+
+[project.urls]
+Homepage = "https://github.com/goldenbeasty/syncstate_mqtt"
+Issues = "https://github.com/goldenbeasty/syncstate_mqtt/issues"
+
+[tool.setuptools_scm]
+version_file = "src/syncstate_mqtt/_version.py"
