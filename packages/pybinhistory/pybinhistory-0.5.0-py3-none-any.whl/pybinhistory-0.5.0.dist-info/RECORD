@@ -1,0 +1,9 @@
+binhistory/__init__.py,sha256=GyqrCei6eP21t89UsovwVDioVhOAoo1uaaV_GA5gYGI,74
+binhistory/binlog.py,sha256=nJ077CKk8gXeS76RSij8oe4Cp2K-MusqAyG-c6CofEM,10540
+binhistory/defaults.py,sha256=WWie7OVzjyvKARz7_yjGH4DCxquQa8Zjh-KG-ru-DME,1434
+binhistory/exceptions.py,sha256=1yFdeAUHNfJ5K6q9lHXJuF39RNPk4U3ApcXWmmRg1Ks,640
+pybinhistory-0.5.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pybinhistory-0.5.0.dist-info/METADATA,sha256=npIMwKYBbuzRxNCkDlX_N4eOt0DodhyJyH75kKwgN5M,6400
+pybinhistory-0.5.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+pybinhistory-0.5.0.dist-info/top_level.txt,sha256=SQbfs86jW2wqKhYZMTSy0thsuyFYJsin7UTGrjQTYj8,11
+pybinhistory-0.5.0.dist-info/RECORD,,
