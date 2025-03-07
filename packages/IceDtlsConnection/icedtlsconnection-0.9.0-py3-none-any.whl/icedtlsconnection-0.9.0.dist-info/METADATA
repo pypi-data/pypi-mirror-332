@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: IceDtlsConnection
+Version: 0.9.0
+License-File: LICENSE
+Requires-Dist: aioice
+Requires-Dist: pylibsrtp
+Requires-Dist: pyOpenSSL
