@@ -1,0 +1,13 @@
+---
+- name:
+  block:
+    - name: Check docker installation
+      ansible.builtin.shell: |
+        which docker && docker compose -h && docker ps | grep janus 
+      changed_when: False
+
+    - debug: msg="Will skip docker installation"
+  rescue:
+    - name: Calling do_main to install docker
+      ansible.builtin.include_tasks: do_main.yml
+  tags: ["install", "configure", "postinstall", "docker_install", "docker_configure", "docker_postinstall"]
