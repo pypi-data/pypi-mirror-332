@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "Modion.D3PLOT"
+version = "0.0.1"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+keywords = ["Modion", "D3PLOT"]
+dependencies = [
+  "Modion.gRPC"
+]
+description = "Python API for Modion D3PLOT"
+authors = [
+  {name = "Miles Thornton"},
+]
+maintainers = [
+  {email = "dyna.support@arup.com"},
+]
+
+
+[project.urls]
+"Homepage" = "https://www.oasys-software.com/dyna/"

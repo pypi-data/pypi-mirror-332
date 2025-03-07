@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/Modion.D3PLOT.egg-info/PKG-INFO
+src/Modion.D3PLOT.egg-info/SOURCES.txt
+src/Modion.D3PLOT.egg-info/dependency_links.txt
+src/Modion.D3PLOT.egg-info/requires.txt
+src/Modion.D3PLOT.egg-info/top_level.txt
+src/Modion/D3PLOT/__init__.py
+src/Modion/D3PLOT/placeholder.py
