@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+kasper/__init__.py
+kasper/main.py
+kasper.egg-info/PKG-INFO
+kasper.egg-info/SOURCES.txt
+kasper.egg-info/dependency_links.txt
+kasper.egg-info/entry_points.txt
+kasper.egg-info/top_level.txt
