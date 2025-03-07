@@ -1,0 +1,10 @@
+src/swift/__init__.py,sha256=77e1YSuw8_YgW8bV-sFx03enP3VF1yn4H68lqne6SVE,821
+src/swift/dispatch_queue.py,sha256=QKQIRKkdNLRNjHmh0B9cPCQ4aNI9HLU0pP8mcHGlvgU,8422
+src/swift/group.py,sha256=u4hSNXynjbCUzpXfv0KyvBsZ7CjPBbi87vlu-Mwt4NA,1051
+src/swift/semaphore.py,sha256=pYS_er6ZPdka8n5OKJdhw_ADhU7I7qHAAorbCiZkgsY,443
+src/swift/source.py,sha256=YtdKoUIVyt3B-wo-asnMHAAzdo-c2OnV0kr0kQzOGkQ,3791
+src/swift/time.py,sha256=VCDcEGlMgUylH0B4PCW60PVAd6FX4HpqZlJP1yy9UvM,1131
+src/swift/work_item.py,sha256=Znk_lWdW690jGlVYBMulNl2JFYETB7onqHq9HpggW64,2574
+swiftpy_gcd-0.0.1.dist-info/METADATA,sha256=r02gjOZtFXKVtpXJJk1wI-zoTZOfkN7vcdCq-RXhK9g,2667
+swiftpy_gcd-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+swiftpy_gcd-0.0.1.dist-info/RECORD,,
