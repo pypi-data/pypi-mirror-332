@@ -1,0 +1,102 @@
+Metadata-Version: 2.3
+Name: ssb-kostra-python
+Version: 0.0.3
+Summary: SSB Kostra Python
+License: MIT
+Author: Magne Furuholmen Myhren
+Author-email: mfm@ssb.no
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pandas (>=2.2.3)
+Requires-Dist: pandas-stubs (>=2.2.3.241126)
+Requires-Dist: ssb-klass-python (>=1.0.0)
+Project-URL: Changelog, https://github.com/statisticsnorway/ssb-kostra-python/releases
+Project-URL: Documentation, https://statisticsnorway.github.io/ssb-kostra-python
+Project-URL: Homepage, https://github.com/statisticsnorway/ssb-kostra-python
+Project-URL: Repository, https://github.com/statisticsnorway/ssb-kostra-python
+Description-Content-Type: text/markdown
+
+# SSB Kostra Python
+
+[![PyPI](https://img.shields.io/pypi/v/ssb-kostra-python.svg)][pypi status]
+[![Status](https://img.shields.io/pypi/status/ssb-kostra-python.svg)][pypi status]
+[![Python Version](https://img.shields.io/pypi/pyversions/ssb-kostra-python)][pypi status]
+[![License](https://img.shields.io/pypi/l/ssb-kostra-python)][license]
+
+[![Documentation](https://github.com/statisticsnorway/ssb-kostra-python/actions/workflows/docs.yml/badge.svg)][documentation]
+[![Tests](https://github.com/statisticsnorway/ssb-kostra-python/actions/workflows/tests.yml/badge.svg)][tests]
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=statisticsnorway_ssb-kostra-python&metric=coverage)][sonarcov]
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=statisticsnorway_ssb-kostra-python&metric=alert_status)][sonarquality]
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)][poetry]
+
+[pypi status]: https://pypi.org/project/ssb-kostra-python/
+[documentation]: https://statisticsnorway.github.io/ssb-kostra-python
+[tests]: https://github.com/statisticsnorway/ssb-kostra-python/actions?workflow=Tests
+
+[sonarcov]: https://sonarcloud.io/summary/overall?id=statisticsnorway_ssb-kostra-python
+[sonarquality]: https://sonarcloud.io/summary/overall?id=statisticsnorway_ssb-kostra-python
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[black]: https://github.com/psf/black
+[poetry]: https://python-poetry.org/
+
+## Features
+
+- TODO
+
+## Requirements
+
+- TODO
+
+## Installation
+
+You can install _SSB Kostra Python_ via [pip] from [PyPI]:
+
+```console
+pip install ssb-kostra-python
+```
+
+## Usage
+
+Please see the [Reference Guide] for details.
+
+## Contributing
+
+Contributions are very welcome.
+To learn more, see the [Contributor Guide].
+
+## License
+
+Distributed under the terms of the [MIT license][license],
+_SSB Kostra Python_ is free and open source software.
+
+## Issues
+
+If you encounter any problems,
+please [file an issue] along with a detailed description.
+
+## Credits
+
+This project was generated from [Statistics Norway]'s [SSB PyPI Template].
+
+[statistics norway]: https://www.ssb.no/en
+[pypi]: https://pypi.org/
+[ssb pypi template]: https://github.com/statisticsnorway/ssb-pypitemplate
+[file an issue]: https://github.com/statisticsnorway/ssb-kostra-python/issues
+[pip]: https://pip.pypa.io/
+
+<!-- github-only -->
+
+[license]: https://github.com/statisticsnorway/ssb-kostra-python/blob/main/LICENSE
+[contributor guide]: https://github.com/statisticsnorway/ssb-kostra-python/blob/main/CONTRIBUTING.md
+[reference guide]: https://statisticsnorway.github.io/ssb-kostra-python/reference.html
+
