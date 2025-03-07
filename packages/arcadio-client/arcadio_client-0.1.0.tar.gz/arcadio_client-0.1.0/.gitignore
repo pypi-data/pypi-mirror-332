@@ -1,0 +1,9 @@
+.vscode
+*.egg-info/
+**/__pycache__/
+**/.venv/
+**/.vscode/
+**/.ruff_cache/
+**/target/
+**/dist/
+.DS_Store
