@@ -1,0 +1,14 @@
+aws_s3_controller/__init__.py,sha256=sAybSXluWYIX_YPKDypUKsEPPcfS2Ai5rsR24lKl9k4,361
+aws_s3_controller/alias.py,sha256=_PimBVdGotZ6bgEWnOb9jmjSGxflgsJp9lmOhDQzqTY,382
+aws_s3_controller/aws_connector.py,sha256=RMboUpR-h2o_4zHzMwsbdjOzzSZdChBkFLwGXYQdwYA,283
+aws_s3_controller/aws_consts.py,sha256=0m6Ez0mrNrphoqHKlk8OAEXpuSTqD7clQnqi74y37pM,219
+aws_s3_controller/s3_dataframe_reader.py,sha256=-y0oE1LQC1Ifq2Ut1Xk2bg94EAaMbFyh4Cvri0y3suw,4431
+aws_s3_controller/s3_scanner.py,sha256=FFDi_gVhfoBm5CnOSl7pP57n9xA8vS40pRTZZWu5IxE,3428
+aws_s3_controller/s3_special_operations.py,sha256=WtfLdXMZELPjSNkrTQOYEHeC_O7HF-mddJFPNv86OVM,1271
+aws_s3_controller/s3_structure.py,sha256=JQdubEFVPKVu3McrkJG7k-F-c5xs1Gh5IRxSq1AXW78,665
+aws_s3_controller/s3_transfer.py,sha256=DX-1Ykxc5NnvR9cigmQOR__XzyNKeML87qaO4DeRCyg,7057
+aws_s3_controller-0.7.5.dist-info/LICENSE,sha256=anJmBY0SNnHTe61tVXtyRgqIU_zyWUkozN5lPVJ1gOE,1143
+aws_s3_controller-0.7.5.dist-info/METADATA,sha256=HsTmzr3KXam6WeKYqeq5Mpqpy7vSYsSNdc28vuGt3zk,4593
+aws_s3_controller-0.7.5.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+aws_s3_controller-0.7.5.dist-info/top_level.txt,sha256=rm0rfXhELeboIiGKwi5bh0uNi3rhyg9nfnJrVugVMkk,18
+aws_s3_controller-0.7.5.dist-info/RECORD,,
