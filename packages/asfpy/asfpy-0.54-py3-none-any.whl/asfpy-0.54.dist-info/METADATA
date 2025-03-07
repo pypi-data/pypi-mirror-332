@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: asfpy
+Version: 0.54
+Summary: ASF Common Python Methods
+Author: ASF Infrastructure
+Author-email: users@infra.apache.org
+Requires-Python: >=3.9,<4
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.10.5,<4.0.0)
+Requires-Dist: bonsai (>=1.5.3,<2.0.0)
+Requires-Dist: cffi (>=1.17.1,<2.0.0)
+Requires-Dist: cryptography (>=43.0.1,<44.0.0)
+Requires-Dist: easydict (>=1.13,<2.0)
+Requires-Dist: ezt (>=1.1,<2.0)
+Requires-Dist: python-ldap (>=3.4.4,<4.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: watchfiles (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# asfpy - ASF Infrastructure Common Library for Python functions
+
+This Python library contains features commonly used at the Apache Software Foundation.
+
+(For asfpy 0.37 and below, look at our old [Subversion repository](https://svn.apache.org/repos/infra/infrastructure/trunk/projects/asfpy/))
+
+
+## Building asfpy package
+
+Preparation
+
+* `apt install python3.10-venv`
+* `pip3 install build twine`
+
+Bump the version number in `setup.py` and run:
+`python3 -m build`
+
+
+## Publishing a new asfpy package
+
+After building the asfpy package, run the following command, where $version is the new version to publish:
+
+`python3 -m twine upload dist/asfpy-$version*`  (for instance `dist/asfpy-0.38*`)
+
+The above command will upload the `.whl` and the `.tar.gz` (the glob-asterisk is important!)
+
+See [this guide](https://realpython.com/pypi-publish-python-package/#publish-your-package-to-pypi) for more details on working with PyPi.
+
+Please also create a tag for the release.
+
+### for testing
+
+Create an account on https://test.pypi.org/, then add a token with an
+"all projects" scope. Place that into your `.pypirc` like so:
+
+```
+[testpypi]
+  repository = https://test.pypi.org/legacy/
+  username = __token__
+  password = pypi-tokenstringgoeshere
+```
+
+Then you can test an upload with:
+`python3 -m twine upload -r testpypi dist/asf-py$version*`
+
+The package should upload to the test.pypi.org service.
+
