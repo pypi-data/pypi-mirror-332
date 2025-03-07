@@ -1,0 +1,76 @@
+---
+title: Data Types
+description: Data Types in CocoIndex
+---
+
+# Data Types in CocoIndex
+
+In CocoIndex, all data processed by the flow have a type determined when the flow is defined, before any actual data is processed at runtime.
+
+This makes schema of data processed by CocoIndex clear, and easily determine the schema of your index.
+
+## Data Types 
+
+### Basic Types
+
+This is the list of all basic types supported by CocoIndex:
+
+| Type | Type in Python | Original Type in Python |
+|------|-----------------|--------------------------|
+| `bytes` | `bytes` | `bytes` |
+| `str` | `str` | `str` |
+| `bool` | `bool` | `bool` |
+| `int64` | `int` | `int` |
+| `float32` | `cocoindex.typing.Float32` |`float` | 
+| `float64` |  `cocoindex.typing.Float64` |`float` |
+| `range` | `cocoindex.typing.Range`  | `tuple[int, int]` |
+| `vector(*type* [, *N*])` |`Annotated[list[type], cocoindex.typing.Vector(dim=N)]` | `list[type]` | 
+| `json` | `cocoindex.typing.Json` | Any type convertible to JSON by `json` package | 
+
+For some types, CocoIndex Python SDK provides annotated types with finer granularity than Python's original type, e.g. `Float32` and `Float64` for `float`, and `vector` has dimension information.
+
+When defining [custom functions](/docs/core/custom_function), use the specific types as type annotations for arguments and return values.
+So CocoIndex will have information about the specific type.
+
+### Struct
+
+A struct has a bunch of fields, each with a name and a type.
+
+### Table
+
+A table has a collection of rows, each of which is a struct with specified schema.
+
+The first field of a table is always the primary key.
+
+:::note
+
+CocoIndex will support functions taking struct and table types as arguments or returning composite types soon.
+We'll update this section with corresponding Python types by then.
+
+:::
+
+## Types to Create Indexes
+
+### Key Types
+
+Currently, the following types are supported as types for key fields:
+
+- `bytes`
+- `str`
+- `bool`
+- `int64`
+- `range`
+- Struct with all fields being key types
+
+### Vector Type
+
+Users can create vector index on fields with `vector` types.
+A vector index also needs to be configured with a similarity metric, and the index is only effective when this metric is used during retrieval.
+
+Following metrics are supported:
+
+| Metric Name | Description | Similarity Order |
+|-------------|-------------|------------------|
+| `CosineSimilarity` | [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) | Larger is more similar |
+| `L2Distance` | [L2 distance (a.k.a. Euclidean distance)](https://en.wikipedia.org/wiki/Euclidean_distance) | Smaller is more similar |
+| `InnerProduct` | [Inner product](https://en.wikipedia.org/wiki/Inner_product_space) | Larger is more similar |
