@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/hello_world.py
+src/hello_world_testpypisedo.egg-info/PKG-INFO
+src/hello_world_testpypisedo.egg-info/SOURCES.txt
+src/hello_world_testpypisedo.egg-info/dependency_links.txt
+src/hello_world_testpypisedo.egg-info/top_level.txt
