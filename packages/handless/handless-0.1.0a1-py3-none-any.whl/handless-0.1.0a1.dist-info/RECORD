@@ -1,0 +1,9 @@
+handless/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+handless/container.py,sha256=-WLbqqHQKxFR-M4ziBcnkjho05rLu0Bhftavg3RmBsY,4033
+handless/descriptor.py,sha256=Y_j-DiL1JEdHVDfQV7_BT5z1N1Uyi_smZhyxdDOxLJA,3761
+handless/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handless/registry.py,sha256=DPc8yNU8XQNjOf_A1v6rAeKtbfFb3yzaXvlVE62huto,6704
+handless-0.1.0a1.dist-info/METADATA,sha256=VORsQa8N_JmKZvc8EJ8-zi8gxa1R7_w33SAb33oT8-o,3390
+handless-0.1.0a1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+handless-0.1.0a1.dist-info/licenses/LICENSE,sha256=GNkrgwd6dyEGENjREPTsf-xLnMdewKuD4mIpsq-pAZM,1071
+handless-0.1.0a1.dist-info/RECORD,,
