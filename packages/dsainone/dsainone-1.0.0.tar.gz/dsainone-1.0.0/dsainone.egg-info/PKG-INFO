@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: dsainone
+Version: 1.0.0
+Summary: A high-performance DSA library optimized for speed and memory efficiency.
+Author: Kinshuk jain
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: numba
+Dynamic: author
+Dynamic: classifier
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
