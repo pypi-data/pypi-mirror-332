@@ -1,0 +1,2 @@
+[console_scripts]
+itera = itera_lib.cli:cli
