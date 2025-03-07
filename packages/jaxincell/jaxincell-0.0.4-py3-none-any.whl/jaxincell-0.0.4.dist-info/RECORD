@@ -1,0 +1,17 @@
+jaxincell/__init__.py,sha256=2so0NiFYy1AEj0vHNaqLFOUBypln4ckcLS2GWKj7-W8,210
+jaxincell/__main__.py,sha256=CXi6HLy3EQklp1uyXR4R-PHhk7pdMEqXCfaNSZiGyjo,714
+jaxincell/_boundary_conditions.py,sha256=qBY3gOcUlfs9rwKJfH1c6JL5rk8ZVkfdSNusMpX-Ico,11983
+jaxincell/_constants.py,sha256=IrgKyLxiTcsOtjUire-Z5sv-rXGjQQ0VFbv1dslq2qs,542
+jaxincell/_diagnostics.py,sha256=MfEHD19ey3W6oTR2hZ3--Gg7ywgVqlclexAIqcBCXys,3321
+jaxincell/_fields.py,sha256=3rzxAaUFBRq_SDHnkKYQ1NCSVwhlWmlp6eKkytSR0Dw,7255
+jaxincell/_particles.py,sha256=b5Ix0tKMytuX-H5ZRACZQ0X1cB9Z2RnO1zxJeFQ2xy0,5136
+jaxincell/_plot.py,sha256=EsbTKPjQtEQQtFlrScGt0UFNGc0sDY3jzWTQk3p3Byk,9701
+jaxincell/_simulation.py,sha256=C86m7DQ19swB-dln34n9HTDgG9yjcLDIaJTOcrqmXAg,21442
+jaxincell/_sources.py,sha256=uz3_B03G4fD8eKT3d7zkdMgUc2UOsBU8z_Gdjj0jSu0,6951
+jaxincell/version.py,sha256=EY1c6JeG6uVHQoQcoxYAagjmJgQQxJk7iQ23gAoevU4,511
+jaxincell-0.0.4.dist-info/LICENSE,sha256=GhjInzkUXmxsby6B3onpbd_E-NyJMf6k48t7eN8yauY,1065
+jaxincell-0.0.4.dist-info/METADATA,sha256=255pmJMjxf7USHnWVho_9-sr_Ju-IUxL8W_3eEDLXgo,10520
+jaxincell-0.0.4.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+jaxincell-0.0.4.dist-info/entry_points.txt,sha256=5unvozqmpES6PuhLnl-YPADpIbZtRatGKgoxSZijzZ4,54
+jaxincell-0.0.4.dist-info/top_level.txt,sha256=-HP6AiQPUXB7YSXbTST6qUROUja9k8Srlys7OHzZsy0,10
+jaxincell-0.0.4.dist-info/RECORD,,
