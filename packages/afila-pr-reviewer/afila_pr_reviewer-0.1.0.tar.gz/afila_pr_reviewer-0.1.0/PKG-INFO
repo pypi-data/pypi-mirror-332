@@ -1,0 +1,86 @@
+Metadata-Version: 2.2
+Name: afila-pr-reviewer
+Version: 0.1.0
+Summary: A tool for reviewing GitHub PRs using OpenAI, developed by AFILALABS
+Author-email: AFILALABS <team@afilalabs.com>
+License: MIT
+Project-URL: Homepage, https://github.com/AFILALABS/pr-reviewer
+Project-URL: Bug Tracker, https://github.com/AFILALABS/pr-reviewer/issues
+Keywords: github,pull request,code review,openai,ai
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Requires-Dist: urllib3>=1.26.0
+Requires-Dist: keyring>=23.0.0
+
+# AFILALABS PR Reviewer
+
+A command-line tool developed by AFILALABS (Chicago) that reviews GitHub pull requests using OpenAI's GPT-4 API.
+
+## Features
+
+- Automatically analyzes pull requests from a GitHub URL
+- Reviews each file in the PR individually
+- Provides overall assessment of the PR
+- Can add comments directly to GitHub (optional)
+- Configurable through environment variables or config file
+
+## Installation
+
+```bash
+pip install afila-pr-reviewer
+```
+
+## Requirements
+
+- Python 3.7+
+- GitHub personal access token with repo scope
+- OpenAI API key
+
+## Usage
+
+### Quick Start
+
+First time setup:
+```bash
+pr-reviewer --setup
+```
+
+Review a PR:
+```bash
+pr-reviewer https://github.com/owner/repo/pull/123
+```
+
+### Command line options
+
+```bash
+pr-reviewer https://github.com/owner/repo/pull/123 \
+  --github-token your-github-token \
+  --openai-key your-openai-api-key \
+  --comment \  # Add comments to the PR
+  --output review.md  # Save the review to a file
+```
+
+### Environment Variables
+
+You can use environment variables instead of passing tokens as arguments:
+
+```bash
+export GITHUB_TOKEN=your-github-token
+export OPENAI_API_KEY=your-openai-api-key
+pr-reviewer https://github.com/owner/repo/pull/123
+```
+
+## License
+
+MIT

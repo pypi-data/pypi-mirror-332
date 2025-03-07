@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "afila-pr-reviewer"
+version = "0.1.0"
+description = "A tool for reviewing GitHub PRs using OpenAI, developed by AFILALABS"
+readme = "README.md"
+authors = [
+    {name = "AFILALABS", email = "team@afilalabs.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Quality Assurance",
+]
+keywords = ["github", "pull request", "code review", "openai", "ai"]
+dependencies = [
+    "requests>=2.25.0",
+    "urllib3>=1.26.0",
+    "keyring>=23.0.0",
+]
+requires-python = ">=3.7"
+
+[project.urls]
+"Homepage" = "https://github.com/AFILALABS/pr-reviewer"
+"Bug Tracker" = "https://github.com/AFILALABS/pr-reviewer/issues"
+
+[project.scripts]
+pr-reviewer = "pr_reviewer:main"
