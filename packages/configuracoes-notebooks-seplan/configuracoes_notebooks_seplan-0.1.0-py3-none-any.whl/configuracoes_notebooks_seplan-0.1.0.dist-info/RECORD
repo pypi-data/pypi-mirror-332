@@ -1,0 +1,11 @@
+configuracoes_notebooks/__init__.py,sha256=N5x6WIy8PzAMhd8GqaAK0a8SpwJ8LwovgjhUpp4TF7c,63
+configuracoes_notebooks/set_proj_dir/__init__.py,sha256=DtVxRYgCR7kXH5FNycSasY2wKMITI3XtESbuhD2DVhY,47
+configuracoes_notebooks/set_proj_dir/find_dir.py,sha256=emXS7ZyJIK-WV-NLSTzM9mvRrWBpaGleBXVTKcLe5pQ,1362
+configuracoes_notebooks/set_proj_dir/find_git_proj_dir.py,sha256=sUnb95VPhcwEpRYFCkQN_hxU_ouAReGXFPmqm4o0Ngk,455
+configuracoes_notebooks/set_proj_dir/set_dir_in_path.py,sha256=LdDsK0gHOVkWdjC_wot5lu0FmVE355MHxon3joU72PI,274
+configuracoes_notebooks/set_proj_dir/set_proj_dir.py,sha256=zjHsORYzegaT59UXAqJPB7ygxA93d0PPAnf16-2uLRU,475
+configuracoes_notebooks_seplan-0.1.0.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+configuracoes_notebooks_seplan-0.1.0.dist-info/METADATA,sha256=ul2tiJ6BZZRrkSo2WA06Ec5SKgnPzbIBsP6S06XmIn0,41167
+configuracoes_notebooks_seplan-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+configuracoes_notebooks_seplan-0.1.0.dist-info/top_level.txt,sha256=cbeflY1trfnYZKuXFgOvn4UYUiCE9FvnE24vwxJZn6k,24
+configuracoes_notebooks_seplan-0.1.0.dist-info/RECORD,,
