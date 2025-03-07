@@ -1,0 +1,11 @@
+shaperglot-1.0.0.dist-info/METADATA,sha256=pVCemO5sL0OuPeZAhvhkl_70hEbzbUS0kBb6LnAayz0,471
+shaperglot-1.0.0.dist-info/WHEEL,sha256=jvRN5iU-S6FQ6j-AmQ_BXs3dNTW_OBiZVcLSuiEKP7s,134
+shaperglot/cli/whatuses.py,sha256=PQpXc7hS_hOKvHMQKDrFiNvS0MUhjURAm1Ae60Oh3UU,1742
+shaperglot/cli/check.py,sha256=n9cGjkMgkZjJxd0V0O4T62bjZkqlgfy6c1ZTXFgTeMM,2680
+shaperglot/cli/describe.py,sha256=oGsH6j6S2DlUGCoOiVwpVpfpO2GEyuLgSQyhg1if1mI,1551
+shaperglot/cli/report.py,sha256=xsF2JS3vICV1moukgUdvig70WoiGQeZE48Tpkk4HD-U,4690
+shaperglot/cli/__init__.py,sha256=-gOmLqH29jTfLALslnviMVbQnPjSCYVabGD0lfoXQCQ,2779
+shaperglot/__main__.py,sha256=Zu87Al-49wwhZDngH-Mk1EkX4XEK5QNpHPnD1122zM8,143
+shaperglot/__init__.py,sha256=dJLDKXRdkXVN9vFcCFmCQK7Orq5IwSDTqrx64PSQ8XI,322
+shaperglot/_shaperglot.pypy38-pp73-arm-linux-gnu.so,sha256=jqafhhEidkmP2-T7Six2ahQd4LMPro_h_L2lMdmC4FU,6096036
+shaperglot-1.0.0.dist-info/RECORD,,
