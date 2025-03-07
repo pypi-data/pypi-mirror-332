@@ -1,0 +1,29 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+{% load static %}
+{% block extrahead %}
+    {{ block.super }}
+    <!-- Pasar textos traducidos a JavaScript -->
+    <script>
+        const TRANSLATIONS = {
+            COPIADO: "{% trans 'Copiado...' %}",
+            ERROR_COPIA: "{% trans 'Error al copiar' %}",
+            COPIAR: "{% trans 'Copiar' %}"
+        };
+    </script>
+    <!-- Cargar el archivo JavaScript -->
+    <script src="{% static 'logmonitor/js/copiar_json.js' %}"></script>
+{% endblock %}
+{% block submit_buttons_bottom %}
+
+<style>
+
+
+    .submit-row input[name="_save"], 
+    .submit-row input[name="_addanother"], 
+    .submit-row input[name="_continue"] {
+        display: none;
+    }
+</style>
+{% endblock %}
+
