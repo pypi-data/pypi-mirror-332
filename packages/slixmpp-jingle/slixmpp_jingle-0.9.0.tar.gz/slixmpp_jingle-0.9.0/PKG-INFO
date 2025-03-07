@@ -1,0 +1,4 @@
+Metadata-Version: 2.2
+Name: slixmpp_jingle
+Version: 0.9.0
+Requires-Dist: slixmpp
