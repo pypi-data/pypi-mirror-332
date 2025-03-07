@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/Modion.PRIMER.egg-info/PKG-INFO
+src/Modion.PRIMER.egg-info/SOURCES.txt
+src/Modion.PRIMER.egg-info/dependency_links.txt
+src/Modion.PRIMER.egg-info/requires.txt
+src/Modion.PRIMER.egg-info/top_level.txt
+src/Modion/PRIMER/__init__.py
+src/Modion/PRIMER/placeholder.py
