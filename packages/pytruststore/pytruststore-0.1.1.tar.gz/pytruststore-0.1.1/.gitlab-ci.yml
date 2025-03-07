@@ -1,0 +1,80 @@
+# GitLab CI/CD Pipeline for Python Package (ʘ‿ʘ)✧
+# This pipeline handles testing, building, and publishing to PyPI
+
+stages:
+  - lint
+  - test
+  - build
+  - publish
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip-cache"
+  PYTHON_VERSION: "3.8"
+
+# Cache dependencies between jobs
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .pip-cache/
+    - .pytest_cache/
+    - .ruff_cache/
+
+# Linting job
+lint:
+  stage: lint
+  image: python:${PYTHON_VERSION}
+  script:
+    - pip install uv
+    - uv pip install ruff
+    - uv pip install .
+    - ruff check .
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+# Testing job
+test:
+  stage: test
+  image: python:${PYTHON_VERSION}
+  script:
+    - pip install uv
+    - uv pip install pytest
+    - uv pip install .
+    - pytest
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+# Security scanning
+sast:
+  stage: test
+include:
+  - template: Security/SAST.gitlab-ci.yml
+
+# Build package
+build:
+  stage: build
+  image: python:${PYTHON_VERSION}
+  script:
+    - pip install build
+    - python -m build
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_TAG =~ /^v\d+\.\d+\.\d+/
+
+# Publish to PyPI on tag
+publish_pypi:
+  stage: publish
+  image: python:${PYTHON_VERSION}
+  script:
+    - pip install twine
+    - TWINE_PASSWORD=${PYPI_API_TOKEN} TWINE_USERNAME=__token__ twine upload dist/*
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^v\d+\.\d+\.\d+/
+  environment:
+    name: pypi
+    url: https://pypi.org/project/pytruststore/
