@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: pyconstrobe
+Version: 1.0.1
+Summary: This package is used to automate the DES application ConStrobe.
+Author: Joseph Louis
+Author-email: joseph.louis@oregonstate.edu
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+This package works when jStrobe is installed at c:/Program Files/jStrobe/jStrobe/jStrobe.exe
+
+Download example files from https://github.com/jlouis2k4/TestPythonJS
+
+
