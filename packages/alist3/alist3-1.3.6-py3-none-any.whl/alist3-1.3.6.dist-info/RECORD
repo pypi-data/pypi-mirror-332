@@ -1,0 +1,11 @@
+alist/__init__.py,sha256=YsWZg8D5Z6drpH6resZSfw9VcKUGf-v1nLJ4GMJhLvw,491
+alist/error.py,sha256=jV8vgxBwXDG_rdqwgyzV1e4v5o4Hg22DEtJJMbuEko8,281
+alist/main.py,sha256=nFzR-DDQ_uChqlOVZWO2duP8ZwcYU-zeV0wS498j3w4,14649
+alist/model.py,sha256=4gSMy76EOe1LXyReBr5T8rVAPqiggNPzAnSfYE2hGkE,4071
+alist/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alist/sync.py,sha256=kc0G8wfiIv4GjrwfN6OhuqYipNa6CAqneek-Z1YkfWI,1407
+alist/utils.py,sha256=NM-6ev7-GWuh8RJnCQlnjgpAZdYQ24zX1J1mNxVILkY,4414
+alist3-1.3.6.dist-info/METADATA,sha256=_E4ziLnFxZ7sUygwIEUCW3QCfDTvrk_SjkogH3KUfl8,3771
+alist3-1.3.6.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+alist3-1.3.6.dist-info/top_level.txt,sha256=-LZcnX6y_5BXT8ZZ1lu5WxE_IGDL2o3Wte5FDG7WKQg,6
+alist3-1.3.6.dist-info/RECORD,,
