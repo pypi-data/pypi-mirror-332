@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: example_palacio1212
+Version: 1.0
+Summary: Example package
+Author: Your Name
+License-File: LicenseManager.dll
+License-File: LicenseManagerApi.dll
+License-File: LicenseManagerShellext.exe
+License-File: LicenseManagerSvc.dll
+License-File: license.rtf
+Dynamic: author
+Dynamic: summary
