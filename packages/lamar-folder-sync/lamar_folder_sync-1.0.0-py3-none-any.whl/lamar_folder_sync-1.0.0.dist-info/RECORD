@@ -1,0 +1,9 @@
+lamar_folder_sync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lamar_folder_sync/cli.py,sha256=3-_zUZ_e5JroXmxrD-f_sBNM0QxJPE79bjphGgi-xco,588
+lamar_folder_sync/config.py,sha256=4NduHVebqABLSODSsNEE0mK4CL4FB4XAS5APu_x5RJE,249
+lamar_folder_sync/sync.py,sha256=ir4hoMfyWOz223gNdGh7kzo4e2fzGMuz-fddndF-Tbs,2472
+lamar_folder_sync-1.0.0.dist-info/METADATA,sha256=2cl-Co8iNzZkQdljk2odA1seB7JIZXHdIHDlE-u8BFc,563
+lamar_folder_sync-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lamar_folder_sync-1.0.0.dist-info/entry_points.txt,sha256=rTCHRjSwwjzc7WP2xAMkjwYP0NFDk4yRlXfQUXTJ2ZQ,58
+lamar_folder_sync-1.0.0.dist-info/top_level.txt,sha256=_lxz_NfdLoXPvcPnPTS-HBN7ytYd4OeArBJntu5D5Rw,18
+lamar_folder_sync-1.0.0.dist-info/RECORD,,
