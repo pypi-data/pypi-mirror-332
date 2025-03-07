@@ -1,0 +1,3 @@
+[console_scripts]
+prompt2txt=prompt2txt.cli:main
+
