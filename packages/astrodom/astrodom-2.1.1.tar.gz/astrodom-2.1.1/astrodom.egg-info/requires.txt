@@ -1,0 +1,8 @@
+astropy
+matplotlib
+numpy
+pandas
+PyQt6
+photutils
+pyqtgraph
+importlib_resources
