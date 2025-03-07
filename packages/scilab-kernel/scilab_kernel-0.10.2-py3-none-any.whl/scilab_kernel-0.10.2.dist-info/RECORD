@@ -1,0 +1,14 @@
+scilab_kernel/__init__.py,sha256=HHv_iRtvc2HI8xCopLqTD644Cx6EdPokHMZtwTxPKq0,61
+scilab_kernel/__main__.py,sha256=RtkX6Cv8VB6UIFiRDEab93-ZO93xERBx5JkDz5Be7Kw,98
+scilab_kernel/_make_figures.sci,sha256=ihbpAfQnlFsUhno9z92HkU8-JS0GnuwxlrUk7zHA_d0,509
+scilab_kernel/_version.py,sha256=5k3L1uRS0m__fGOY7kwG9QajUwp2OJZ5j0GNvdGz9-Y,22
+scilab_kernel/check.py,sha256=VRt9cDUJTtpAPMpbMPDHnZ6v4z-Yd1Q0MlEETKbzrEI,522
+scilab_kernel/kernel.json,sha256=YBx_RzTVgti7iGm2chH3bTEhXjEw5hWLKuU-v-GK54E,223
+scilab_kernel/kernel.py,sha256=N-5Igi5rgxKXnSTEC57HsFF5SgEZMoDZ0LM9F9ZvYKs,12861
+scilab_kernel/images/logo-32x32.png,sha256=2rd-XRYYNhJTFyg51FfvmGlUR_rvqyZP2r5DAmOiMUM,2670
+scilab_kernel/images/logo-64x64.png,sha256=Kwh4bL-hhK5TaOl5mGF7EdGChCqpd888RiWM1ZZNCDY,4891
+scilab_kernel/magics/plot_magic.py,sha256=Ylb1IdUUhP3-L37gLN4plr0qJdj6miVqcrcJyYfPpZE,1909
+scilab_kernel-0.10.2.dist-info/METADATA,sha256=R0Ef2NCvAnFHfWhAo9DVghknmVUoO8Uga8AYDoLbMBg,5650
+scilab_kernel-0.10.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+scilab_kernel-0.10.2.dist-info/licenses/LICENSE.txt,sha256=lnTYsdyV9E72HuJ7SlLrcnFfkTYGcU6PUKl_L629ThQ,1092
+scilab_kernel-0.10.2.dist-info/RECORD,,
