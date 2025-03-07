@@ -1,0 +1,2 @@
+hive-common>=0.1.0
+hive-messaging>=0.12.0
