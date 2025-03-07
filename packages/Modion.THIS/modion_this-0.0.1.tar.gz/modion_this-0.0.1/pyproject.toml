@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "Modion.THIS"
+version = "0.0.1"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+keywords = ["Modion", "THIS", "T/HIS"]
+dependencies = [
+  "Modion.gRPC"
+]
+description = "Python API for Modion T/HIS"
+authors = [
+  {name = "Miles Thornton"},
+]
+maintainers = [
+  {email = "dyna.support@arup.com"},
+]
+
+
+[project.urls]
+"Homepage" = "https://www.oasys-software.com/dyna/"

@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/Modion.THIS.egg-info/PKG-INFO
+src/Modion.THIS.egg-info/SOURCES.txt
+src/Modion.THIS.egg-info/dependency_links.txt
+src/Modion.THIS.egg-info/requires.txt
+src/Modion.THIS.egg-info/top_level.txt
+src/Modion/THIS/__init__.py
+src/Modion/THIS/placeholder.py
