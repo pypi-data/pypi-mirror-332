@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: rastertoolkit
+Version: 0.0.1
+Summary: Python scripts for working with shapefiles and rasterized population data
+Author: Katherine Rosenfeld
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rastertoolkit
+Repository for RasterToolkit
