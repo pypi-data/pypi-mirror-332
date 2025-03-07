@@ -1,0 +1,11 @@
+shellix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shellix/__main__.py,sha256=nuOmR6Ju22JexKf31bn6QixnMNHzvwQQVyKCdoHGI1o,2236
+shellix/ai_core.py,sha256=sdRcDq7U5TdhHQfpkWdp7l8VKosDm20F-N0IIAc12W8,3490
+shellix/memory.py,sha256=dgmAL-OaYLp3VkqBEwRqSkT4LLG_9_HFDyKd9rKQ7LU,455
+shellix/shell_tool.py,sha256=CNKucg5I-3iB9tIXq3FTrkL4QSjrcB8uCiNwUjad6qk,3631
+shellix/write_tool.py,sha256=2nVKyVWzpu15Npci-sfHhYowC05RIE2-BeqcEZn-gjc,2052
+shellix-0.2.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+shellix-0.2.5.dist-info/METADATA,sha256=TKijVGZjwTwzToHrA1GXOAJHr5_BprDGmtSyWAxfu3c,3362
+shellix-0.2.5.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+shellix-0.2.5.dist-info/entry_points.txt,sha256=zRnDkLLBKAXYgYdVlE32zOmpq9Z2O9hbRHVNK8KSuTU,74
+shellix-0.2.5.dist-info/RECORD,,
