@@ -1,0 +1,2 @@
+[console_scripts]
+pmole = pmole.cli:trace
