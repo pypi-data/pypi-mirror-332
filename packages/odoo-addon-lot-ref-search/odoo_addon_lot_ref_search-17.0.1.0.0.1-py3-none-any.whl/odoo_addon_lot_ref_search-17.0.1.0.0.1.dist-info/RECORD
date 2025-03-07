@@ -1,0 +1,14 @@
+odoo/addons/lot_ref_search/README.rst,sha256=CyiOl9r9tvaYcDlySXqXsXZPoyYvbQx02H53x3K3xsE,2961
+odoo/addons/lot_ref_search/__init__.py,sha256=eShEGRadAlxopoLqIQ4-N42FM7MWPSuBe0h_l1cXTPM,87
+odoo/addons/lot_ref_search/__manifest__.py,sha256=VQvV3YIby4IaCUd_bnDKC5m_2YCr0I8JCdK0OPKz9eg,540
+odoo/addons/lot_ref_search/models/__init__.py,sha256=dXZDaCrQe91ZeMdWOht_9uZWAfE-0iMDZYYnL_CvEjI,90
+odoo/addons/lot_ref_search/models/stock_lot.py,sha256=MNoJqF6B9hmSncQ6SExFNeXsqyj7zDUaUJgAGBV2jOI,459
+odoo/addons/lot_ref_search/readme/CONTRIBUTORS.md,sha256=vdTcwM0_6IuPK1jIEMuLS9tYXVdeqoRcW38GgFp2UV8,136
+odoo/addons/lot_ref_search/readme/DESCRIPTION.md,sha256=r0UwGwny0EYyhL_-dQnqjb1FCN1ueTwZ92Cy9j3AO8k,218
+odoo/addons/lot_ref_search/readme/USAGE.md,sha256=w5n_HvVcLElD3Dl-QGvwbFyRj1hi4pFhHFv80Yi1Tac,596
+odoo/addons/lot_ref_search/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/lot_ref_search/static/description/index.html,sha256=ErkSxJoGg5QWH6uMBXKagy75dv3crwaufIkkQhP3Iio,12517
+odoo_addon_lot_ref_search-17.0.1.0.0.1.dist-info/METADATA,sha256=GqCs15Gt6i1IVK2tCdrb-R-tE107XhQFfJvd18QseeE,3524
+odoo_addon_lot_ref_search-17.0.1.0.0.1.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_lot_ref_search-17.0.1.0.0.1.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_lot_ref_search-17.0.1.0.0.1.dist-info/RECORD,,
