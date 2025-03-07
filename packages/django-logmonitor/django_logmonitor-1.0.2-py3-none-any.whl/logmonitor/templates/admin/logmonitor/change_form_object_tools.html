@@ -1,0 +1,9 @@
+{% if not is_popup %}
+    {% block object-tools-items %}
+        {% for tool in object_tools %}
+            {% if "history" not in tool.attrs.href %}  {# 🔥 Ocultar el botón "HISTORY" #}
+                <li><a{% for attr, value in tool.attrs.items %} {{ attr }}="{{ value }}"{% endfor %}>{{ tool.label }}</a></li>
+            {% endif %}
+        {% endfor %}
+    {% endblock %}
+{% endif %}
