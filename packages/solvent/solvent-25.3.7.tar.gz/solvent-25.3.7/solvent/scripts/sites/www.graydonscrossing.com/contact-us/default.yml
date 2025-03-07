@@ -1,0 +1,105 @@
+locators:
+  inclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+  exclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+actions:
+  - verb: ''
+    name: ''
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: fill
+    name: your_name
+    locators:
+      - mode: name
+        value: your-name
+        index: 0
+        uses: 2
+  - verb: fill
+    name: your_email
+    locators:
+      - mode: name
+        value: your-email
+        index: 0
+        uses: 2
+  - verb: fill
+    name: subject
+    locators:
+      - mode: name
+        value: your-subject
+        index: 0
+        uses: 2
+  - verb: fill
+    name: message
+    locators:
+      - mode: name
+        value: your-message
+        index: 0
+        uses: 2
+  - verb: click
+    name: submit
+    locators:
+      - mode: text
+        value: Submit
+        index: 0
+        uses: 2
+  - verb: click
+    name: banner
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: text
+        value: Banner
+        index: 0
+        uses: -1
+      - mode: text
+        value: Banner
+        index: 0
+        uses: -1
+      - mode: text
+        value: banner
+        index: 0
+        uses: -1
+      - mode: value
+        value: Banner
+        index: 0
+        uses: -1
+      - mode: value
+        value: Banner
+        index: 0
+        uses: -1
+      - mode: value
+        value: banner
+        index: 0
+        uses: -1
+      - mode: text (partial)
+        value: Banner
+        index: 0
+        uses: -1
+      - mode: text (partial)
+        value: Banner
+        index: 0
+        uses: -1
+      - mode: text (partial)
+        value: banner
+        index: 0
+        uses: -1
+      - mode: css
+        value: et_pb_row
+        index: 0
+        uses: -1
+      - mode: css
+        value: .et_pb_row
+        index: 0
+        uses: 1
