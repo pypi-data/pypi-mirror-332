@@ -1,0 +1,229 @@
+# toml_i18n
+
+`toml_i18n` is a lightweight internationalization (i18n) package for Python projects that provides an elegant way to manage and retrieve localized strings using TOML files.
+
+## Overview
+
+This package allows you to:
+- Store translations in structured TOML files
+- Access translations using simple dot notation
+- Format translated strings with variables
+- Fall back to a default language when translations are missing
+- Format numbers according to locale conventions
+
+## Installation
+
+```bash
+pip install toml-i18n
+```
+
+## Quick Start
+
+```python
+from toml_i18n import TomlI18n, i18n
+
+# Initialize once at the start of your application
+TomlI18n.initialize(locale="fr", fallback_locale="en", directory="i18n")
+
+# Use anywhere in your code
+greeting = i18n("general.greeting", name="John")
+print(greeting)  # "Bonjour John!" if French locale is active
+```
+
+## Translation Files Structure
+
+Your translation files should follow this naming pattern:
+- `{namespace}.{locale}.toml`
+
+Example file structure:
+```
+i18n/
+  ├── general.en.toml
+  ├── general.fr.toml
+  ├── errors.en.toml
+  └── errors.fr.toml
+```
+
+## TOML File Format
+
+Translation files use nested structures with sections:
+
+**general.en.toml**:
+```toml
+[general]
+greeting = "Hello {name}!"
+farewell = "Goodbye {name}!"
+
+[general.buttons]
+save = "Save"
+cancel = "Cancel"
+```
+
+**general.fr.toml**:
+```toml
+[general]
+greeting = "Bonjour {name}!"
+farewell = "Au revoir {name}!"
+
+[general.buttons]
+save = "Enregistrer"
+cancel = "Annuler"
+```
+
+## Core API
+
+### TomlI18n Class
+
+The main class that manages translations.
+
+#### Initialization
+
+```python
+TomlI18n.initialize(locale="en", fallback_locale="en", directory="i18n")
+```
+
+Parameters:
+- `locale` (str): Primary locale code (e.g., 'en', 'fr', 'de')
+- `fallback_locale` (str): Fallback locale used when translations are missing in the primary locale
+- `directory` (str): Path to the directory containing translation files
+
+#### Checking Initialization Status
+
+```python
+is_ready = TomlI18n.is_initialized()
+```
+
+Returns:
+- `bool`: True if the TomlI18n singleton has been initialized
+
+### Utility Functions
+
+#### i18n()
+
+Retrieves a localized string.
+
+```python
+i18n(key, **kwargs)
+```
+
+Parameters:
+- `key` (str): Dot-notation path to the translation (e.g., 'general.greeting')
+- `**kwargs`: Variables for string formatting
+
+Returns:
+- `str`: The localized and formatted string
+
+The function automatically handles formatting by substituting the provided keyword arguments into placeholders in the translation string.
+
+Examples:
+```python
+# Simple lookup
+button_text = i18n("general.buttons.save")
+
+# With formatting
+greeting = i18n("general.greeting", name="Alice")
+
+# Multiple variables
+welcome = i18n("app.welcome", name="John", days_remaining=30)
+# Applies to a string like "Welcome back {name}! You have {days_remaining} days remaining."
+
+# Default values for missing variables
+# If a translation uses {count} and {type} but you only provide count:
+notification = i18n("alerts.new_items", count=5)
+# The {type} placeholder will be replaced with an empty string
+# This avoids KeyError exceptions from formatting
+
+# Handling complex expressions
+message = i18n("user.profile.completion", 
+               percentage=75, 
+               remaining_items="2 profile fields", 
+               action_text="click here")
+# Applies to "Your profile is {percentage}% complete. Fill in {remaining_items} ({action_text})."
+```
+
+Each placeholder enclosed in curly braces `{placeholder_name}` in your translation string will be replaced with the value of the matching keyword argument provided to the `i18n()` function.
+
+#### i18n_number()
+
+Formats a number according to locale conventions.
+
+```python
+i18n_number(number, decimals=None)
+```
+
+Parameters:
+- `number` (int|float): The number to format
+- `decimals` (int, optional): Number of decimal places. If None, follows locale conventions
+
+Returns:
+- `str`: The formatted number as a string
+
+Examples:
+```python
+price = i18n_number(1234.56, decimals=2)  # "1,234.56" in en_US, "1 234,56" in fr_FR
+```
+
+## Best Practices
+
+1. **Early Initialization**:
+   - Initialize TomlI18n once at the start of your application.
+
+2. **Organized Translation Keys**:
+   - Use namespaces to organize your translations (e.g., 'general.buttons.save').
+
+3. **Meaningful Keys**:
+   - Choose descriptive translation keys that indicate their purpose.
+
+4. **Consistent Variables**:
+   - Use consistent variable names across different languages.
+
+5. **Fallback Strategy**:
+   - Always provide an English (or other widely used language) fallback.
+
+## Common Patterns
+
+### Application-wide Setup
+
+```python
+# In your app's initialization code:
+from toml_i18n import TomlI18n
+
+def setup_application():
+    # Set up translations
+    TomlI18n.initialize(
+        locale=get_user_locale(),
+        fallback_locale="en",
+        directory="i18n"
+    )
+    # ... other setup code
+```
+
+
+
+### Formatting Complex Messages
+
+```python
+# Translation file:
+# [notifications]
+# new_messages = "You have {count} new {messages}."
+
+def notify_user(message_count):
+    message_text = i18n("notifications.new_messages", 
+                        count=message_count,
+                        messages="message" if message_count == 1 else "messages")
+    show_notification(message_text)
+```
+
+## Error Handling
+
+When a translation is missing, the package will:
+1. Try to find the key in the primary locale
+2. If not found, try to find it in the fallback locale
+3. If still not found, return `"Missing translation for '{key}'"`
+
+## Limitations
+
+- No pluralization rules support beyond manual formatting
+- No gender-based translations 
+- No RTL (right-to-left) text direction handling
+- Does not handle complex date/time formatting
