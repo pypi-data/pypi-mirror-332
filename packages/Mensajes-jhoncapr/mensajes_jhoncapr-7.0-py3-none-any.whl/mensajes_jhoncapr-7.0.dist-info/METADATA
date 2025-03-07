@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: Mensajes-jhoncapr
+Version: 7.0
+Summary: Un paquete para saludar y despedirse
+Home-page: https://www.google.com
+Author: El bebecito programados
+Author-email: bebecito@gmail.com
+Classifier: Environment :: Console
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.23.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# Mensajes
+
+El paquete de mensajeria para pruebas de Jhon Prada.
+

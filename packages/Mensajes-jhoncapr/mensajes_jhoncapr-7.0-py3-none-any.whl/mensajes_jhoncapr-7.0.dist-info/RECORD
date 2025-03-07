@@ -1,0 +1,12 @@
+mensajes/__init__.py,sha256=YhJt5RWPIt5Kxjbh0RMtgaWLOQlRfQt4vsTZY8FZXrE,44
+mensajes/adios/__init__.py,sha256=CjWkD72IRmQ5umoywfvSkmtTzAP0KyNymnwv5IO0hYU,49
+mensajes/adios/despedidas.py,sha256=x_xt6rfNz1cMOJvhb7YB-75HrNmc4PaOJ-1SHpAMM2o,201
+mensajes/hola/__init__.py,sha256=yeBx_obCo1_RFJE2_nSvKHy7IK8x2xn-obfig5CVmWY,33
+mensajes/hola/saludos.py,sha256=yHwmtBqSCOYdVRQeRiOO73-U5Wo5i3xSPQ9r1GlnyXQ,443
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_hola.py,sha256=1k_578R5S0pk0FY2ttqQCouwpilpRLpGVNATvc5wuWA,370
+mensajes_jhoncapr-7.0.dist-info/LICENSE,sha256=xkF139rbni9O8LnBKxB1yTtj73w4uf-aHOhdh99Ql9I,1088
+mensajes_jhoncapr-7.0.dist-info/METADATA,sha256=EsTCHciLz4gmVfzCKsxKIDOn8f3EURv6MXaBpBVDtBA,809
+mensajes_jhoncapr-7.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+mensajes_jhoncapr-7.0.dist-info/top_level.txt,sha256=gD40JdIxiaPRvMl4iCu3Edq1ctVrOdqjON-Ms9kPSQk,15
+mensajes_jhoncapr-7.0.dist-info/RECORD,,
