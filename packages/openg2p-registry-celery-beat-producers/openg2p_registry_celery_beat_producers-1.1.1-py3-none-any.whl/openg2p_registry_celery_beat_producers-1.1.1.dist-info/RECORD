@@ -1,0 +1,8 @@
+openg2p_registry_celery_beat_producers/__init__.py,sha256=q8_5C0f-8mHWNb6mMw02zlYPnEGXBqvOmP3z0CEwZKM,22
+openg2p_registry_celery_beat_producers/app.py,sha256=AYQmGiu8z0OD4u1Tra8CNdsFGGxZLzj4Y6PxGf_9jio,981
+openg2p_registry_celery_beat_producers/config.py,sha256=_VJimHSLrai_gmw6HanUeRMy40KK1LBvC0SuqTk-1rY,999
+openg2p_registry_celery_beat_producers/tasks/__init__.py,sha256=JLMxxVJgbMcNXi1ct9oWm7C9I-Z0-DvRFKRvW58KhjY,59
+openg2p_registry_celery_beat_producers/tasks/registry_beat_producer.py,sha256=XItEyQBkgYLDUost8nu4EBCKTAKCHO-EtGegnwg7pIY,1740
+openg2p_registry_celery_beat_producers-1.1.1.dist-info/METADATA,sha256=j0sBRIDJxPKHLb8egnj7ey3-IKcEH7eTTsyxfGJ-xro,1839
+openg2p_registry_celery_beat_producers-1.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+openg2p_registry_celery_beat_producers-1.1.1.dist-info/RECORD,,
