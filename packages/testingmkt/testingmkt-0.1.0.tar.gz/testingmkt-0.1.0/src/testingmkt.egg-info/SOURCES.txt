@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/testingmkt.py
+src/testingmkt.egg-info/PKG-INFO
+src/testingmkt.egg-info/SOURCES.txt
+src/testingmkt.egg-info/dependency_links.txt
+src/testingmkt.egg-info/top_level.txt
