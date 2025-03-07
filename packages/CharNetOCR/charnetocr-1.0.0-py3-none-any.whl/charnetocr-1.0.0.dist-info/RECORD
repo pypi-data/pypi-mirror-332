@@ -1,0 +1,15 @@
+CharNetOCR/__init__.py,sha256=nGZXjcFobHndsuc1tDCRyh6cfwhwwEQgvrSW68nEXrE,39
+CharNetOCR/main.py,sha256=IQq_-zHGKGi5_aIIz29jBsiwVvDhrqB9-ICOv8mJiA4,2610
+CharNetOCR/models/CharNetDC.pt,sha256=X6cxp7vcsV2B2dom0qEHK6Ho4-XCoSSt7qstqMSYozg,6262435
+CharNetOCR/models/CharNetLC.pt,sha256=EZzMnmWmnCkXUs-dr3B-mjIFmazKa0-kAA697eT222Y,6258211
+CharNetOCR/models/CharNetUC.pt,sha256=8NLb7NtYAcV4JnCEmtDUPO3btDTFaxT_6oOf6kKY8fQ,12364786
+CharNetOCR/models/__init__.py,sha256=ATobHKurxPZmh3XO3Jjzc3rhlRfO_7gyoXXoiPtZ3Dc,7
+CharNetOCR/temp/__init__.py,sha256=RhG7QIJBP7uSRzxxworX0M692BRWeXVfy3Mzja9Ibco,6
+CharNetOCR/utils/__init__.py,sha256=ky92_4qw4qPH28M7Ex9bf6NzvguX_XBcRceqFeQ3oME,70
+CharNetOCR/utils/bboxes.py,sha256=LGY1FOjpLW33TJe_XwocM5-CFGxyD_rP90yL_iqTMhM,3899
+CharNetOCR/utils/detection.py,sha256=WSQiwGWP3oLyc1j0WpXs4W1OfKRZmP5Ftdwq8hMn4X4,3911
+CharNetOCR/utils/misc.py,sha256=UNvWu3zypYwEM_ss_P_wbluBL4ar9LhJc6p1Mza67X8,422
+charnetocr-1.0.0.dist-info/METADATA,sha256=s9w_M1WgbTX4rfUdjtLvb7yegJKPecHi-Ds5LpEAf8A,161
+charnetocr-1.0.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+charnetocr-1.0.0.dist-info/top_level.txt,sha256=fvGHy9PUavYpCLEXhIPe0kSeTTRMpkB8gXI5UWx5WM4,11
+charnetocr-1.0.0.dist-info/RECORD,,
