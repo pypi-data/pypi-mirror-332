@@ -1,0 +1,10 @@
+rotel/__about__.py,sha256=ijNx32MwfqjOO5vscIOInWafaphC6aNfLxqjsvWEEVs,25
+rotel/__init__.py,sha256=aje9cg-wRIdmecIQpEbpXFINo9iFqQvniPRrJwyfPbo,265
+rotel/agent.py,sha256=jA4UtgJEhMGMz6wvDLpg7UT6l7co10NZVghMEBJeoCE,2395
+rotel/client.py,sha256=kZWCs4nB1cVkPCHrnNz10gNCPR1Qd5Av6BkqeFCtdsg,625
+rotel/config.py,sha256=pWKjpBKN_3LFaydgZPkNccyJ8X_WFd-em_wqK5pp24E,5681
+rotel/rotel-agent,sha256=pTWaAMs5SzObvmAZsDf4H1VG165Gt71vllskkKDWJig,8203408
+rotel-0.0.1a3.dist-info/METADATA,sha256=MHNaKDk7Ic-DAVx0PG13Ext9o9U24rTd-67joNDn-xo,7420
+rotel-0.0.1a3.dist-info/WHEEL,sha256=MbU43Us0L4mN3wshhTWfg4vJiJo04uDwKa1GHXE8WXM,139
+rotel-0.0.1a3.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rotel-0.0.1a3.dist-info/RECORD,,
