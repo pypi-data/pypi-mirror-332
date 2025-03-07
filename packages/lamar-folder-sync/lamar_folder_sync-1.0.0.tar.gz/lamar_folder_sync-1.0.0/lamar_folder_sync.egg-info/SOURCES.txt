@@ -1,0 +1,12 @@
+README.md
+setup.py
+lamar_folder_sync/__init__.py
+lamar_folder_sync/cli.py
+lamar_folder_sync/config.py
+lamar_folder_sync/sync.py
+lamar_folder_sync.egg-info/PKG-INFO
+lamar_folder_sync.egg-info/SOURCES.txt
+lamar_folder_sync.egg-info/dependency_links.txt
+lamar_folder_sync.egg-info/entry_points.txt
+lamar_folder_sync.egg-info/requires.txt
+lamar_folder_sync.egg-info/top_level.txt

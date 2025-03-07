@@ -1,0 +1,2 @@
+[console_scripts]
+lamar-sync = lamar_folder_sync.cli:main
