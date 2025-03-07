@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: flask-hot-reload
+Version: 0.1.0
+Summary: A Flask extension that provides real-time hot reload for templates, static files and Python code changes
+Home-page: https://github.com/ZhouYu2156/flask-hot-reload
+Author: Blake Zhou
+Author-email: 1043744584@qq.com
+Keywords: flask hot reload live reload
+Requires-Dist: Flask>=2.0.0
+Requires-Dist: flask-sock>=0.4.0
+Requires-Dist: watchdog>=2.1.0
+Requires-Dist: colorama>=0.4.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
