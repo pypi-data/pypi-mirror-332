@@ -1,0 +1,18 @@
+[project]
+name = "parseflow"
+version = "0.1.0"
+description = "ParseFlow is a versatile Python library for extracting and structuring content from various document formats, including PDFs, Word documents, Excel files, images, and more. It provides a standardized JSON output, making it ideal for Retrieval-Augmented Generation (RAG), document processing, and data extraction workflows."
+authors = [
+    {name = "anooj-gandham",email = "anoojgandham@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
