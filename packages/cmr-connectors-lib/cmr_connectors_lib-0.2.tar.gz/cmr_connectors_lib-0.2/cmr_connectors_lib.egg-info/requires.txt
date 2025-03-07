@@ -1,0 +1,7 @@
+libkrb5-dev
+libsasl2-dev
+pymssql
+pyodbc
+psycopg2
+sqlalchemy
+cx_oracle
