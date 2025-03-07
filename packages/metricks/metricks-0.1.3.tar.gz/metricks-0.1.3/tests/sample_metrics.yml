@@ -1,0 +1,43 @@
+version: 0.1
+
+metrics:
+  mikes.sandwiches.orders_overview:
+    title: "Daily Orders Overview"
+    owner: "mike_owner"
+    description: "Shows number of daily orders and delivery orders"
+    x: "date"
+    y: ["num_orders", "num_delivery_orders"]
+    query: |
+      select
+        date,
+        sum(num_orders) as num_orders,
+        sum(num_delivery_orders) as num_delivery_orders
+      from mikes_analytics.sales.daily_orders_breakdown
+      where true
+        and date >= dateadd(day, -30, current_date())
+        and order_type in ('Dine-in', 'Delivery')
+      group by all
+    chart_type: "line"
+    date_col: "date"
+    y_label: "Number of Orders"
+
+  mikes.sandwiches.menu_item_clicks:
+    title: "Number of menu items clicked on website"
+    description: "The number of times menu items were clicked on the online menu page."
+    x: "date"
+    y: ["clicks_daily", "clicks_weekly", "clicks_monthly"]
+    prepared_table: "mikes_analytics.website.menu_item_clicks"
+    chart_type: "line"
+    date_col: "date"
+    y_label: "Number of clicks"
+
+  # TODO: Should this be a separate metric, or just an option on the above?
+  mikes.sandwiches.menu_item_clicks_by_category:
+    title: "Menu clicks by category"
+    description: "The number of times menu items were clicked, broken down by category (hot sandwiches, cold sandwiches, sides, drinks)"
+    x: "date"
+    y: ["clicks_monthly"]
+    prepared_table: "mikes_analytics.website.menu_item_clicks_by_category"
+    chart_type: "line"
+    date_col: "date"
+    y_label: "Monthly number of clicks"

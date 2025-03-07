@@ -1,0 +1,58 @@
+[project]
+name = "metricks"
+version = "0.1.3"
+description = "Snowflake metrics as code"
+readme = "README.md"
+authors = [
+    { name = "Zachary Blackwood", email = "zachary.blackwood@snowflake.com" },
+    { name = "Arnaud Miribel", email = "arnaud.miribel@snowflake.com" },
+]
+requires-python = ">=3.8,<3.14"
+dependencies = [
+    "loguru>=0.7",
+    "pandas>=2.0",
+    "pyyaml>=6.0",
+    "snowflake-connector-python[pandas,secure-local-storage]>=3.14.0",
+    "snowflake-snowpark-python>=1.28.0",
+]
+
+[project.optional-dependencies]
+streamlit = ["streamlit>=1.39.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = ["example_usage", "publish.sh", "recipe"]
+
+[tool.ruff]
+exclude = [".git", ".vscode", ".pytest_cache", ".mypy_cache", ".env"]
+
+lint.select = [
+    "B",   # https://pypi.org/project/flake8-bugbear/
+    "E",   # https://pycodestyle.pycqa.org/en/latest/intro.html#error-codes
+    "F",   # https://flake8.pycqa.org/en/latest/user/error-codes.html
+    "W",   # https://pycodestyle.pycqa.org/en/latest/intro.html#error-codes
+    "I",   # https://pycqa.github.io/isort/
+    "N",   # https://github.com/PyCQA/pep8-naming
+    "C4",  # https://github.com/adamchainz/flake8-comprehensions
+    "EXE", # https://pypi.org/project/flake8-executable/
+    "ISC", # https://github.com/flake8-implicit-str-concat/flake8-implicit-str-concat
+    "ICN", # https://pypi.org/project/flake8-import-conventions/
+    "PIE", # https://pypi.org/project/flake8-pie/
+    "PT",  # https://github.com/m-burst/flake8-pytest-style
+    "RET", # https://pypi.org/project/flake8-return/
+    "SIM", # https://pypi.org/project/flake8-simplify/
+    "PLC", # https://beta.ruff.rs/docs/rules/#convention-plc
+    "RUF", # https://beta.ruff.rs/docs/rules/#ruff-specific-rules-ruf
+    "ARG", # https://beta.ruff.rs/docs/rules/#flake8-unused-arguments-arg
+]
+
+lint.ignore = ["B008", "ISC001", "E501", "W191", "N817"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["metricks"]
+
+[dependency-groups]
+dev = ["ipython>=8.12.3", "pandas-stubs>=2.0.2.230605", "pytest>=8.3.5"]
