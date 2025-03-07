@@ -1,0 +1,6 @@
+langchain_jieba/__init__.py,sha256=TmY9m2mGr9z-sumSXTjQrdKkWV1gOBNYWoK6s27RbGw,80
+langchain_jieba/graph_vectorstores/extractors/jieba_link_extractor.py,sha256=c-3kTHihuHDdz_0JE6ZmQeG1bHtFOJZcz5x-HN4M-DM,5913
+langchain_jieba-0.1.1.dist-info/LICENSE,sha256=twsM9ZFDk-paQlS5ZMxDovKa5XOxta6zw_xyvAbTmAA,1084
+langchain_jieba-0.1.1.dist-info/METADATA,sha256=1QDqoWX3jYwcBLnp-PUFgIhQtUUF_kWLobHpc5HEKOA,2716
+langchain_jieba-0.1.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+langchain_jieba-0.1.1.dist-info/RECORD,,
