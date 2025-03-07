@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+academicagent/__init__.py
+academicagent/agent.py
+academicagent.egg-info/PKG-INFO
+academicagent.egg-info/SOURCES.txt
+academicagent.egg-info/dependency_links.txt
+academicagent.egg-info/requires.txt
+academicagent.egg-info/top_level.txt
