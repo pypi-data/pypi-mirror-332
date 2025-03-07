@@ -1,0 +1,10 @@
+golden_dataset/__init__.py,sha256=XJMOpjK6--nJsmHzayjEyzZ4JCgnK5_uVYRrnoL2X1I,288
+golden_dataset/cli.py,sha256=uElNDoALQ5BU02Ckh2rSB5cPGjJAvs1XPjYdIfCWTCE,11247
+golden_dataset/core.py,sha256=MMnikOeOUTwDrg_Hlpq4e2s6srsbtHkWcbtkYzRSMs4,22268
+golden_dataset/exc.py,sha256=i03DKWqJRBjS2XU0j7K_Aw7jV7Z0bvRWWoIhLb2jI0E,1062
+golden_dataset/main.py,sha256=iTtII03eUYU2krEAoXc7HIMPjXQgJ9lZgBeXTYGU54Q,27254
+golden_dataset-0.1.0.dist-info/METADATA,sha256=0cGNsKTbXqZ0SEjrvxu5AIIG9sSIOUypjKByDbBfEGs,7912
+golden_dataset-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+golden_dataset-0.1.0.dist-info/entry_points.txt,sha256=H2E_wk1gZbvyGMt1Rmfrg57MPwmygEpjWMr0fqAeuCc,50
+golden_dataset-0.1.0.dist-info/licenses/LICENSE,sha256=ok9TnE7_0-CuOP48KyiWReDCvcM-DqAylxW-dYDL25k,1067
+golden_dataset-0.1.0.dist-info/RECORD,,
