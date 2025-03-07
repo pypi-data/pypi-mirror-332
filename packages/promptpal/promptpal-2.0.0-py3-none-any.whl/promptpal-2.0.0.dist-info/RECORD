@@ -1,0 +1,10 @@
+promptpal/__init__.py,sha256=fNZAfoNxq2AwD_qFuprBeierl2X8CHvbpWSYc7pdVXM,111
+promptpal/promptpal.py,sha256=Af6EXzD7sNRmObSRcMyMo3rdZI2ItbUn7SLM8oAHsmM,25013
+promptpal/promptpal_ui.py,sha256=BscHe4ZXP6xhdl3JRLeaavCXboUWL2fpwF3NPvUUJ1I,6926
+promptpal/roles/role_schema.yaml,sha256=jRQxs0yWi0ykhrTJQW3AIm_GFxxWGXGDPyvc1kCSqSU,1705
+promptpal/roles/roles.yaml,sha256=75rFo66QlTPkDJxEFgy9Kjie48zz3gtUytVPBe_Gsxs,37718
+promptpal-2.0.0.dist-info/LICENSE.txt,sha256=C45WH1WEHSgeVL13eKcsUm_tR1gCzrkqe3xABqPgq3c,1071
+promptpal-2.0.0.dist-info/METADATA,sha256=VKLfOyMV0pg2xbPQFta06QvIuKep1SiVLNTnmZJwKY4,12660
+promptpal-2.0.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+promptpal-2.0.0.dist-info/top_level.txt,sha256=8EBwCg4DnkczUMeJbabqG88DVvpKTTX_xgDw11YRr0I,10
+promptpal-2.0.0.dist-info/RECORD,,
