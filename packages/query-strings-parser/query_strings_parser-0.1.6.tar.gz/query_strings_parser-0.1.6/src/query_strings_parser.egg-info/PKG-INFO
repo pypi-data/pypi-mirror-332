@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: query_strings_parser
+Version: 0.1.6
+Home-page: https://github.com/nutes-uepb/query_strings_parser
+Author: Jefferson Sampaio de Medeiros
+Author-email: jefferson.medeiros@nutes.uepb.edu.br
+License: Apache License 2.0
+Keywords: query query-strings sql parser
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
