@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/vidmerge_zoomout/__init__.py
+src/vidmerge_zoomout/__main__.py
+src/vidmerge_zoomout/generate_zoom_out_video.py
+src/vidmerge_zoomout.egg-info/PKG-INFO
+src/vidmerge_zoomout.egg-info/SOURCES.txt
+src/vidmerge_zoomout.egg-info/dependency_links.txt
+src/vidmerge_zoomout.egg-info/requires.txt
+src/vidmerge_zoomout.egg-info/top_level.txt
