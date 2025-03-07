@@ -1,0 +1,126 @@
+import mcp_run
+import pydantic_ai
+import pydantic
+from pydantic import BaseModel, Field
+
+from typing import TypedDict, List, Set, AsyncIterator, Any
+import traceback
+from contextlib import asynccontextmanager
+
+__all__ = ["BaseModel", "Field", "Agent", "mcp_run", "pydantic_ai", "pydantic"]
+
+
+def _convert_type(t):
+    if t == "string":
+        return str
+    elif t == "boolean":
+        return bool
+    elif t == "number":
+        return float
+    elif t == "integer":
+        return int
+    elif t == "object":
+        return dict
+    elif t == "array":
+        return list
+    raise TypeError(f"Unhandled conversion type: {t}")
+
+
+class Agent(pydantic_ai.Agent):
+    """
+    A Pydantic Agent using tools from mcp.run
+    """
+
+    client: mcp_run.Client
+    ignore_tools: Set[str]
+    _original_tools: list
+
+    def __init__(
+        self,
+        *args,
+        client: mcp_run.Client | None = None,
+        ignore_tools: List[str] | None = None,
+        **kw,
+    ):
+        self.client = client or mcp_run.Client()
+        self._original_tools = kw.get("tools", [])
+        self.ignore_tools = set(ignore_tools or [])
+        super().__init__(*args, **kw)
+        self._update_tools()
+
+    def set_profile(self, profile: str):
+        self.client.set_profile(profile)
+        self._update_tools()
+
+    def register_tool(self, tool: mcp_run.Tool, f=None):
+        if tool.name in self.ignore_tools:
+            return
+
+        def wrap(tool, inner):
+            props = tool.input_schema["properties"]
+            t = {k: _convert_type(v["type"]) for k, v in props.items()}
+            InputType = TypedDict("Input", t)
+
+            if inner is not None:
+
+                def f(input: InputType):
+                    try:
+                        return inner(input)
+                    except Exception as exc:
+                        return f"ERROR call to tool {tool.name} failed: {traceback.format_exception(exc)}"
+            else:
+
+                def f(input: InputType):
+                    try:
+                        res = self.client.call_tool(tool=tool.name, params=input)
+                        return res.content[0].text
+                    except Exception as exc:
+                        return f"ERROR call to tool {tool.name} failed: {traceback.format_exception(exc)}"
+
+            return f
+
+        self._register_tool(
+            pydantic_ai.Tool(
+                wrap(tool, f),
+                name=tool.name,
+                description=tool.description,
+            )
+        )
+
+    def reset_tools(self):
+        self._function_tools = {}
+        for t in self._original_tools.copy():
+            self._register_tool(t)
+
+    def _update_tools(self):
+        self.reset_tools()
+        for tool in self.client.tools.values():
+            self.register_tool(tool)
+
+    async def run(self, *args, **kw):
+        self._update_tools()
+        return await super().run(*args, **kw)
+
+    def run_sync(self, *args, **kw):
+        self._update_tools()
+        return super().run_sync(*args, **kw)
+
+    async def run_async(self, *args, **kw):
+        self._update_tools()
+        return await super().run_async(*args, **kw)
+
+    def run_stream(
+        self,
+        *args,
+        **kw,
+    ) -> AsyncIterator[Any]:
+        self._update_tools()
+        return super().run_stream(*args, **kw)
+
+    def iter(
+        self,
+        *args,
+        **kw,
+    ) -> AsyncIterator[Any]:
+        self._update_tools()
+        return super().iter(*args, **kw)
