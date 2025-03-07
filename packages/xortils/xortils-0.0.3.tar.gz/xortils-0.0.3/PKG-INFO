@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: xortils
+Version: 0.0.3
+Summary: A collection of useful utilities.
+Project-URL: Source, https://github.com/Xorgon/xortils
+Project-URL: Documentation, https://xortils.readthedocs.io/en/latest/
+Author-email: Elijah Andrews <elijahan@umich.edu>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
