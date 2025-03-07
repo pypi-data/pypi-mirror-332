@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+itera.egg-info/PKG-INFO
+itera.egg-info/SOURCES.txt
+itera.egg-info/dependency_links.txt
+itera.egg-info/entry_points.txt
+itera.egg-info/requires.txt
+itera.egg-info/top_level.txt
+itera_lib/__init__.py
+itera_lib/cli.py
