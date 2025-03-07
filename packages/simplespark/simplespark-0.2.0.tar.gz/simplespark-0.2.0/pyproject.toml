@@ -1,0 +1,23 @@
+[project]
+name = "simplespark"
+version = "0.2.0"
+authors = [
+  {name="Ross Palmer", email="rossbpalmer@gmail.com"}
+]
+description = "Spark environment manager and job orchestrator"
+readme = "README.md"
+
+[project.urls]
+Homepage="https://github.com/rosspalmer/Simple-Spark"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.15.1"
+paramiko = "3.5.1"
+
+[tool.poetry.scripts]
+simplespark = "simplespark.main:app"
