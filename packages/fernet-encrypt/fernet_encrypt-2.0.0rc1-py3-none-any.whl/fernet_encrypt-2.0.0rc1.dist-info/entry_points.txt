@@ -1,0 +1,3 @@
+[console_scripts]
+fernet-encrypt=fernet_encrypt.app:main
+
