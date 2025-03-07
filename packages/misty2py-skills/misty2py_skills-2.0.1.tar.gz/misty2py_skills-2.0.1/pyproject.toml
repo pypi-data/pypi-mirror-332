@@ -1,0 +1,45 @@
+[project]
+name = "misty2py-skills"
+version = "2.0.1"
+description = "A Python library of Misty II skills developed using Misty2py library"
+authors = [
+    {name = "Chris 'Scar(R)ed' Vajdík",email = "chrisquackless@duck.com"}
+]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ]
+include = [
+    "LICENSE",
+    "CHANGELOG.md"
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pymitter (>=1.0.0,<2.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "keyboard (>=0.13.5,<0.14.0)",
+    "pynput (>=1.8.0,<2.0.0)",
+    "misty2py (>=5.0.1,<6.0.0)",
+    "deprecated (>=1.2.18,<2.0.0)",
+    "speechrecognition (>=3.14.1,<4.0.0)",
+    "num2words (>=0.5.14,<0.6.0)"
+]
+
+[project.urls]
+Documentation = "https://misty2py-skills-documentation.onrender.com/"
+Repository = "https://gitlab.com/scarred-libraries/misty2py-skills"
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.4"
+pdoc3 = "^0.11.5"
+black = "^25.1.0"
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
