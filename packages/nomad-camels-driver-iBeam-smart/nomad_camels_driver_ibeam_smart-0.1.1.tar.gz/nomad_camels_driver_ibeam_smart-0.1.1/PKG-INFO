@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: nomad_camels_driver_iBeam_smart
+Version: 0.1.1
+Summary: Instrument driver for iBeam_smart for NOMAD CAMELS using pylablib as the backend.
+Author-email: FAIRmat - HU Berlin <nomad-camels@fau.de>
+Project-URL: NOMAD Camels GitHub, https://github.com/FAU-LAP/NOMAD-CAMELS
+Project-URL: CAMELS Drivers GitHub, https://github.com/FAU-LAP/CAMELS_drivers
+Project-URL: NOMAD Camels Documentation, https://fau-lap.github.io/NOMAD-CAMELS/doc/instruments/instruments.html
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.9.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: nomad-camels>=1.0.6
+Requires-Dist: pyvisa
+Requires-Dist: pyvisa-py
+Requires-Dist: pylablib>=1.4.2
+
+# NOMAD Camels driver for iBeam_smart
+
+Driver for iBeam_smart written for the measurement software [NOMAD Camels](https://fau-lap.github.io/NOMAD-CAMELS/).
+This driver utilizes the iBeam smart driver from [pylablib](https://pylablib.readthedocs.io/en/latest/devices/Toptica.html) in the backend and simply offers a front end for CAMELS. It dynamically creates all set and read channels for each channel of the laser.
+
+This driver is licensed under GPL 3 due to using the pylablib backend.
+
+## Changes
+
+- Fixed imports and class names: You can now combine multiple types of dynamically created instruments (like EPICS, OPC-UA instruments and iBeam smart) in a single measurement.
+
+## Documentation
+
+For more information and instruments visit the [documentation](https://fau-lap.github.io/NOMAD-CAMELS/doc/instruments/instruments.html).
