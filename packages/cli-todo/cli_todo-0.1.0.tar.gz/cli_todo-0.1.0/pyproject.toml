@@ -1,0 +1,11 @@
+[project]
+name = "cli-todo"
+version = "0.1.0"
+description = "A simple command-line interface (CLI) application to manage your todo list."
+readme = "README.md"
+requires-python = ">=3.12"
+maintainers = [{name = "Syeda Hoorain Ali", email = "jagjets133@gmail.com"}]
+dependencies = [
+    "click>=8.1.8",
+    "inquirer>=3.4.0",
+]

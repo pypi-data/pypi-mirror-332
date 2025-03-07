@@ -1,0 +1,8 @@
+README.md
+main.py
+pyproject.toml
+cli_todo.egg-info/PKG-INFO
+cli_todo.egg-info/SOURCES.txt
+cli_todo.egg-info/dependency_links.txt
+cli_todo.egg-info/requires.txt
+cli_todo.egg-info/top_level.txt
