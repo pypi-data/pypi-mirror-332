@@ -1,0 +1,6 @@
+---
+description: General Agent guidance
+globs: 
+alwaysApply: false
+---
+When doing certain file updates be careful with new line characters that might cause the agent to fail.

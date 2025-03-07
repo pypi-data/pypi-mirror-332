@@ -1,0 +1,178 @@
+---
+description: A helper function to handle managing progress and ensuring alignment
+globs: openagents_json/**
+alwaysApply: false
+---
+ # End-of-Cycle Review and GitHub Issue Integration
+
+This rule provides a comprehensive end-of-cycle review process to ensure code quality, maintain documentation, and update GitHub issues. Run this at the end of each development cycle ("yolo") to ensure consistent quality and documentation.
+
+The github token is in this file - .scripts/.env.scripts
+
+## Process Overview
+
+At the end of each development cycle, perform the following:
+
+1. Generate repository structure documentation
+2. Review code changes against standards
+3. Assess deliverables and progress
+4. Update GitHub issues
+5. Update project documentation and user/developer guides
+6. Provide recommendations for future work
+
+## 1. Repository Structure Documentation
+
+Run the following script to generate an updated repository structure:
+
+```bash
+.scripts/generate_repo_tree.sh
+```
+
+This creates a timestamped repository structure file in `project_docs/repo_structure/` that documents the current state of the codebase.
+
+## 2. Code Review Checklist
+
+Review all changed files against the following standards:
+
+### 2.1 General Code Quality
+- [ ] Code follows project style guidelines and conventions
+- [ ] Consistent formatting throughout new/modified files
+- [ ] No commented-out code unless explicitly marked as examples
+- [ ] No debug print statements or logging left in production code
+- [ ] Functions and classes have appropriate docstrings
+- [ ] Variable names are descriptive and follow naming conventions
+
+### 2.2 Developer Experience
+- [ ] APIs are intuitive and well-documented
+- [ ] Error messages are helpful and descriptive
+- [ ] Complex logic includes inline comments explaining "why", not just "what"
+- [ ] Any new dependencies are properly documented in requirements files
+- [ ] Environment variable changes are reflected in .env.example
+
+### 2.3 AI Agent Framework Considerations
+- [ ] Agent interfaces are consistent with existing patterns
+- [ ] New components are modular and reusable
+- [ ] Stateful operations are properly isolated and documented
+- [ ] I/O operations properly handle errors and edge cases
+- [ ] Any agent-specific configurations are well-documented
+
+## 3. Key Deliverables Assessment
+
+For each key deliverable in the cycle:
+
+1. Identify if the deliverable is complete
+2. Document any known limitations or edge cases
+3. Verify compatibility with the rest of the codebase
+4. Note any performance considerations
+5. Assess scalability implications
+
+## 4. GitHub Issue Updates
+
+Use the integrated GitHub issue management scripts to update relevant issues:
+
+```bash
+cd .scripts/gh_issue_management
+
+# Update completed and pending tasks in the JSON files
+# completed_tasks.json - Tasks that have been completed
+# pending_tasks.json - Tasks that are still pending
+
+# Then run the update script
+./update_issue.sh --issue ISSUE_NUMBER --update-tasks
+```
+
+See the full GitHub issue integration documentation for more details.
+
+## 5. Documentation Updates
+
+At the end of each cycle, ensure all documentation is updated to reflect the current state of the project. This includes both internal project documentation and external user/developer documentation.
+
+### 5.1 Project Documentation Updates
+
+Review and update documentation in the `project_docs` directory, with particular focus on:
+
+- [ ] Build strategy documents in `project_docs/mvp_plan/`
+- [ ] Implementation strategies and technical decisions
+- [ ] Package distribution guidelines
+- [ ] Scaling path documentation
+- [ ] Architecture diagrams and flowcharts
+
+Update the implementation-strategy.md file with any new architectural decisions:
+
+```bash
+# Review and update the implementation strategy document
+vi project_docs/mvp_plan/implementation-strategy.md
+```
+
+### 5.2 User and Developer Documentation Updates
+
+Review and update user-facing documentation in the `docs` directory:
+
+- [ ] User guides and tutorials in `docs/getting-started/`
+- [ ] Developer documentation for API usage
+- [ ] Function-level documentation
+- [ ] Configuration and environment setup guides
+
+If new functionality was added, ensure it is properly documented:
+
+```bash
+# Check if new features are documented in the quick start guide
+vi docs/getting-started/quick-start.md
+
+# Update installation guides if dependencies changed
+vi docs/getting-started/installation.md
+```
+
+### 5.3 Documentation Consistency Check
+
+Ensure consistency between:
+- [ ] Code docstrings and external documentation
+- [ ] README examples and actual API behavior
+- [ ] GitHub issue descriptions and implementation details
+- [ ] Build strategy documents and actual implemented features
+
+## 6. Future Recommendations
+
+Based on the review, provide recommendations for:
+
+1. Technical debt that should be addressed
+2. Potential optimizations for performance or developer experience
+3. Documentation improvements
+4. Testing gaps that should be filled
+5. Architecture considerations for scaling
+
+## Example Template for Issue Updates
+
+```markdown
+## End-of-Cycle Review Summary
+
+### Completed Items
+- [List completed items from this cycle]
+
+### Pending Items
+- [List items still pending]
+
+### Code Quality Assessment
+- [Summary of code quality findings]
+
+### Developer Experience
+- [Assessment of DX improvements/issues]
+
+### Documentation Updates
+- [Summary of documentation changes]
+- [Links to updated documentation]
+
+### Future Recommendations
+- [Key recommendations for next steps]
+
+### Repository Structure
+Repository structure documentation has been updated at: [link to structure file]
+```
+
+## Automation Reminder
+
+Remember to run the repository structure script after completing this review:
+
+```bash
+.scripts/generate_repo_tree.sh
+```

@@ -1,0 +1,1 @@
+[{"name":"Database storage backend","details":["Create database-backed JobStore implementation"]},{"name":"Execution control","details":["Add retry policies and distributed execution"]}]

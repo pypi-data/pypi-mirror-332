@@ -1,0 +1,8 @@
+./openagents_json
+./openagents_json/__pycache__
+./openagents_json/agent
+./openagents_json/core
+./openagents_json/core/__pycache__
+./openagents_json/job
+./openagents_json/job/migrations
+./openagents_json/workflow

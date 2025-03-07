@@ -1,0 +1,144 @@
+---
+description: A helper function to update and manage Github issue management
+globs: 
+alwaysApply: false
+---
+# Cursor Rules for GitHub Issue Management - Apply this at the end of a agentic run.
+
+## Overview
+
+This repository includes scripts for automating GitHub issue updates located in `.scripts/gh_issue_management`. These tools help you:
+
+1. Add detailed progress updates as comments to GitHub issues
+2. Update task lists in issue descriptions (checking off completed items)
+3. Maintain consistent formatting for progress reports
+
+When prompted to update github issues and progress us and run these scripts to update the repo status.
+
+## Setup Requirements
+
+1. **GitHub Personal Access Token**
+   - Generate a token at https://github.com/settings/tokens
+   - Required scopes: `repo` (for private repos) or `public_repo` (for public repos)
+   - Set the token as an environment variable:
+   ```bash
+   export GITHUB_TOKEN=your_personal_access_token
+   ```
+
+2. **Python Dependencies**
+   - The scripts require Python 3.6+ and the requests library
+   - Install dependencies:
+   ```bash
+   pip install requests
+   ```
+
+## File Structure
+
+- `github_issue_updater.py` - Main Python script for updating issues
+- `update_issue.sh` - Shell script wrapper for easier usage
+- `completed_tasks.json` - List of completed tasks with details
+- `pending_tasks.json` - List of remaining tasks with details
+- `additional_notes.txt` - Additional notes to include in updates
+
+## Basic Usage
+
+### Update an Issue with Progress Information
+
+```bash
+cd .scripts/gh_issue_management
+./update_issue.sh --issue 22 --update-tasks
+```
+
+This will:
+1. Add a comment to issue #22 with all completed and pending tasks
+2. Update the checkboxes in the original issue description (if `--update-tasks` is specified)
+
+### Options for Shell Script
+
+- `--repo owner/repo` - Specify repository (default is from environment)
+- `--issue NUMBER` - Issue number to update (required)
+- `--update-tasks` - Flag to update task list in issue description
+
+## Updating Task Lists
+
+To update the tasks being tracked:
+
+1. Edit the JSON files in the `.scripts/gh_issue_management` directory:
+   - `completed_tasks.json` - Tasks that have been completed
+   - `pending_tasks.json` - Tasks that are still pending
+
+2. The JSON format is:
+```json
+[
+  {
+    "name": "Task Name",
+    "details": [
+      "Detail 1",
+      "Detail 2"
+    ]
+  }
+]
+```
+
+3. Moving a task from pending to completed:
+   - Cut the task entry from `pending_tasks.json`
+   - Paste it into `completed_tasks.json`
+   - Update details as needed
+
+## Advanced Usage
+
+### Direct Python Script Usage
+
+For more flexibility, use the Python script directly:
+
+```bash
+python github_issue_updater.py \
+  --issue 22 \
+  --completed completed_tasks.json \
+  --pending pending_tasks.json \
+  --notes "Additional notes here" \
+  --update-tasks
+```
+
+### Update Multiple Issues
+
+To update multiple issues, you can create separate JSON files for each issue and run the script multiple times:
+
+```bash
+# Update issue #22
+./update_issue.sh --issue 22 --update-tasks
+
+# Update issue #34
+./update_issue.sh --issue 34 --repo different/repo \
+  --completed issue34_completed.json \
+  --pending issue34_pending.json
+```
+
+## Common Workflows
+
+### Weekly Progress Update
+
+1. Update task lists by moving completed items from `pending_tasks.json` to `completed_tasks.json`
+2. Edit `additional_notes.txt` with any context or explanations
+3. Run `./update_issue.sh --issue NUMBER`
+
+### Final Issue Completion
+
+1. Move all items to `completed_tasks.json`
+2. Update `additional_notes.txt` with final summary
+3. Run `./update_issue.sh --issue NUMBER --update-tasks`
+4. Close the issue manually in GitHub UI or use the GitHub CLI
+
+## Troubleshooting
+
+### Authentication Errors
+
+- Ensure `GITHUB_TOKEN` is set correctly
+- Verify the token has not expired
+- Check that the token has the correct permissions
+
+### Script Errors
+
+- Make sure Python 3.6+ is installed
+- Verify requests library is installed
+- Check JSON files have valid format
