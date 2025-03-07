@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+bsb_connector.egg-info/PKG-INFO
+bsb_connector.egg-info/SOURCES.txt
+bsb_connector.egg-info/dependency_links.txt
+bsb_connector.egg-info/entry_points.txt
+bsb_connector.egg-info/requires.txt
+bsb_connector.egg-info/top_level.txt
