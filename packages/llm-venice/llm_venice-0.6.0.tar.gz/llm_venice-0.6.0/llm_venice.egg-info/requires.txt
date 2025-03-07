@@ -1,0 +1,6 @@
+llm>=0.23
+
+[test]
+jsonschema
+pytest
+sqlite_utils
