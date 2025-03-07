@@ -1,0 +1,2 @@
+[chatgpt_mirai.plugins]
+api_colletion = api_colletion:ApiCollectionPlugin
