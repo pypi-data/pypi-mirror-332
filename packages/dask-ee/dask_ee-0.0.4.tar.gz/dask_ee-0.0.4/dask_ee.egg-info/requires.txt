@@ -1,0 +1,12 @@
+earthengine-api>=0.1.374
+dask[dataframe]
+pandas
+
+[dev]
+dask-ee[tests]
+build
+
+[tests]
+absl-py
+pytest
+pyink
