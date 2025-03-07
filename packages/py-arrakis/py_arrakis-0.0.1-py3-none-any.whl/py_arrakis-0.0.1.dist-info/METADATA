@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: py-arrakis
+Version: 0.0.1
+Summary: SDK (wip) for https://github.com/abshkbh/arrakis
+Home-page: https://github.com/abshkbh/py-arrakis
+Author: Abhishek Bhardwaj
+Author-email: abshkbh@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# py-arrakis
+
+This is a placeholder package to reserve the name `py-arrakis` on PyPI.
+
+## Description
+
+This package is currently a work in progress. The full implementation will be coming soon.
+
+## Installation
+
+```
+pip install py-arrakis
+```
+
+## License
+
+MIT
