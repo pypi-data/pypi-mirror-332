@@ -1,0 +1,7 @@
+emptylog>=0.0.9
+cantok>=0.0.32
+escaping>=0.0.14
+locklib>=0.0.17
+
+[:python_version < "3.8"]
+typing_extensions
