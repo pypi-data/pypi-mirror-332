@@ -1,0 +1,82 @@
+Metadata-Version: 2.4
+Name: astrocompute
+Version: 1.0.3
+Summary: A general purpose package for astronomy calculations.
+Keywords: astro,astronomy,package
+Author-email: Omar Crosby <omar.crosby@gmail.com>
+Maintainer: Omar Crosby
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+License-File: LICENSE
+Requires-Dist: toml
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pytest-mock ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: coverage ; extra == "dev"
+Requires-Dist: pytest-bdd ; extra == "dev"
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: pylint ; extra == "dev"
+Requires-Dist: radon ; extra == "dev"
+Requires-Dist: marimo ; extra == "dev"
+Requires-Dist: sphinx ; extra == "dev"
+Requires-Dist: sphinx_rtd_theme ; extra == "dev"
+Requires-Dist: sphinx-autodoc-typehints ; extra == "dev"
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx_rtd_theme ; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints ; extra == "docs"
+Project-URL: Homepage, https://github.com/ocrosby/astrocompute
+Project-URL: Issues, https://github.com/ocrosby/astrocompute/issues
+Provides-Extra: dev
+Provides-Extra: docs
+
+# AstroCompute
+
+[![Node CI](https://github.com/ocrosby/astrocompute/actions/workflows/node_ci.yaml/badge.svg)](https://github.com/ocrosby/astrocompute/actions/workflows/node_ci.yaml)
+[![Python Lint](https://github.com/ocrosby/astrocompute/actions/workflows/lint.yaml/badge.svg)](https://github.com/ocrosby/astrocompute/actions/workflows/lint.yaml)
+[![Test](https://github.com/ocrosby/astrocompute/actions/workflows/test.yaml/badge.svg)](https://github.com/ocrosby/astrocompute/actions/workflows/test.yaml)
+[![Coverage Status](https://coveralls.io/repos/github/ocrosby/astrocompute/badge.svg)](https://coveralls.io/github/ocrosby/astrocompute)
+
+## Description
+
+A python package containing a variety of astronomy calculations.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Authors](#authors)
+- [Acknowledgements](#acknowledgements)
+- [References](#references)
+
+## Installation
+
+```shell
+pip install astrocompute
+```
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
+
+## References
+
+- [Semantic Versioning 2.0](https://semver.org/)
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [Commitlint](https://commitlint.js.org/)
+- [Husky](https://typicode.github.io/husky/#/)
+- [Automate your GitHub Actions Releases (with Semantic Release)!](https://www.youtube.com/watch?v=mah8PV6ugNY&t=904s)
+
