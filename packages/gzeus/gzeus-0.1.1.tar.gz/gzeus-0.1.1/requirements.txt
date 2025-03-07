@@ -1,0 +1,12 @@
+# Requirements only for compiling from source and testing things out locally
+# Needed for local development
+maturin[patchelf]>=1.7; sys_platform == "linux"
+maturin>=1.7; sys_platform != "linux"
+pre-commit
+ipykernel
+
+# For testing
+polars>=1
+pandas>=1
+pyarrow
+pytest
