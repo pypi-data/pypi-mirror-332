@@ -1,0 +1,16 @@
+firehot-0.1.1.dist-info/METADATA,sha256=BLB4nRAkfM_nPEJaMiR5NWuO4MKMQQ7IVioENPCKhpw,4614
+firehot-0.1.1.dist-info/WHEEL,sha256=0lIaBJ0H7Rb-e5G21nEFCfbwH5Y7xgrxeT0ptO6oWh4,104
+firehot/__init__.py,sha256=WuuK9YKuuvWuCUH_8XLOi6iXTdDrTNEKON9C0JNr0gw,124
+firehot/isolate.py,sha256=Ed_HCRdLnreBZOHEYqcqMGDvAA-FAZiJfrt7DdEkJBQ,1530
+firehot/__tests__/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+firehot/__tests__/embedded/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+firehot/__tests__/embedded/test_call_serializer.py,sha256=PqswNVsGTVoxAsPO2X7RlqwkvffqaCCbAp3m1XNxonU,3237
+firehot/__tests__/embedded/test_child_entrypoint.py,sha256=DS0UtoAMhXzRBj59xv2bJEtXLkm1wA1Cotozy-eQVcw,1930
+firehot/__tests__/test_environment.py,sha256=0yhqVH-PC58DS0nDUJSXrImg53si4Wms5MRmoApu0Mw,1928
+firehot/environment.py,sha256=qEpcQsP2dOWASSAE9eEivNEWHxEO2hYvoqGgngLwtL4,1835
+firehot/embedded/child_entrypoint.py,sha256=RpLJBiGFqUBj3kes_onujA9jn_VwGcHwpfZtFKiDk8w,1456
+firehot/embedded/parent_entrypoint.py,sha256=0UJTx_jzuWldQtnFBvta0dRldbY_YVFSG6NIGEzy0sU,5417
+firehot/embedded/types.py,sha256=ABZoLna5OdRt0i0LLaAh5Xnvwhc27Aajh1Mc-J1C5g8,347
+firehot/embedded/call_serializer.py,sha256=AbBpVWsRuRefvZ-frLuiuE88Cb_3ob2l7DZ-igr-WrM,1516
+firehot/firehot.cpython-311-darwin.so,sha256=gODfaBU_FY1rd4S16l30BXPyQFSjQUYM6ua4UaMUZik,4859840
+firehot-0.1.1.dist-info/RECORD,,
