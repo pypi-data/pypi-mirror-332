@@ -1,0 +1,53 @@
+Metadata-Version: 2.3
+Name: robotframework-find-unused
+Version: 0.1.0
+Summary: Find unused parts of your Robot Framework project
+License: ./LICENSE
+Author: Sander van Beek
+Requires-Python: >=3.10
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Robot Framework :: Tool
+Classifier: Development Status :: 4 - Beta
+Classifier: Typing :: Typed
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: pytest[dev] (>=8.3.4,<9.0.0)
+Requires-Dist: robotframework (>=6.1.1)
+Requires-Dist: robotframework-robocop (>=5.6.0)
+Requires-Dist: ruff[dev] (>=0.9.1,<0.10.0)
+Project-URL: Homepage, https://github.com/Lakitna/robotframework-find-unused
+Project-URL: Repository, https://github.com/Lakitna/robotframework-find-unused
+Description-Content-Type: text/markdown
+
+# Robot Framework Find Unused
+
+Find unused parts of your Robot Framework project.
+
+[Robocop](https://github.com/MarketSquare/robotframework-robocop) is great at finding unused parts
+in a single file. Find unused finds unused parts across all your project files.
+
+Allows you to find unused:
+
+- Keywords
+- Keyword arguments
+- Keyword return statements
+- Global variables
+
+## Installation
+
+Install with pip
+
+```shell
+pip install robotframework-find-unused
+```
+
+## How to use
+
+- CLI
+- API
+
+## [Important remarks]
+
+## Contributing
+
+## Testing
+
