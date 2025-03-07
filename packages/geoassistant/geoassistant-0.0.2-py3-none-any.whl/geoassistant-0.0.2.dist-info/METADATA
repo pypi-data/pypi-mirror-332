@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: geoassistant
+Version: 0.0.2
+Summary: A Python geotechnical library
+Author: Jorge Martinez
+Author-email: jmartinez@gmintec.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: geogeometry ==0.0.4
+Requires-Dist: pyarrow ~=18.1.0
+Requires-Dist: python-pptx ~=1.0.2
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: twine
+
+# GeoAssistant
+
+![Version](https://img.shields.io/badge/version-0.0.2-blue)
+![Python Version](https://img.shields.io/badge/python-3.10-green)
