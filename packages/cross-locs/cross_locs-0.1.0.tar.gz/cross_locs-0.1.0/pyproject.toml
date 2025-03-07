@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "cross-locs"
+version = "0.1.0"
+description = "Python library focused on location-oriented operations"
+authors = ["Fedor Sulitskiy <fedor@crosstech.co.uk>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "cross_locs" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+geopandas = "^1.0.1"
+pandera = "^0.23.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+crosstech-py-tools = "^0.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
