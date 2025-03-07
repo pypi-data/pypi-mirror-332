@@ -1,0 +1,15 @@
+setup.py
+soc_monitor/__init__.py
+soc_monitor/cli.py
+soc_monitor/server.py
+soc_monitor/utils.py
+soc_monitor.egg-info/PKG-INFO
+soc_monitor.egg-info/SOURCES.txt
+soc_monitor.egg-info/dependency_links.txt
+soc_monitor.egg-info/entry_points.txt
+soc_monitor.egg-info/requires.txt
+soc_monitor.egg-info/top_level.txt
+system_monitor/__init__.py
+system_monitor/cli.py
+system_monitor/server.py
+system_monitor/utils.py

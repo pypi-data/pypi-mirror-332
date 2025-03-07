@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: soc_monitor
+Version: 0.1.0
+Summary: A system monitoring tool with FastAPI backend.
+Home-page: https://github.com/Shreyashs98/soc-monitor
+Author: Shreyas H S
+Author-email: s09082003@gmail.com
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: psutil
+Requires-Dist: speedtest-cli
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
