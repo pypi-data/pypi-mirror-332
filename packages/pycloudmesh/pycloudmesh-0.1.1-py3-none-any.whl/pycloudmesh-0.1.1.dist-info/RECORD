@@ -1,0 +1,10 @@
+cloudmesh/__init__.py,sha256=Q_JexOJwQKYMNw4LKhNsLDZ8oBNjozzcy8g5QhbeCHA,32
+cloudmesh/aws.py,sha256=MVJG0HSTmF_7GcpUf9RDMPcdCdGn27EXBTGY3AZa6iI,943
+cloudmesh/azure.py,sha256=_gXaipY-WYItT3sFKzC3h7aQWWlCtI8kQ3YDXMhmk0Q,647
+cloudmesh/cloudmesh.py,sha256=17GZFG1mugdhc-n7_i1Wz1stGO-5Ha-qnBaasSK0FLc,750
+cloudmesh/gcp.py,sha256=22ILROSuUgllBlTfYUl4xw2iit6RSvH2bLuz5_P_jNI,2077
+pycloudmesh-0.1.1.dist-info/LICENSE,sha256=uZOa_V8VUlyQRDRw9VRT42HntAzRXp5y1uonuyapg70,1064
+pycloudmesh-0.1.1.dist-info/METADATA,sha256=6tpjs-l1RUy9LOPZEwerb8H8r9GW-oZv30rnWEccukA,752
+pycloudmesh-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pycloudmesh-0.1.1.dist-info/top_level.txt,sha256=aTw_KEhKv-8X8yWzikhSTeYlXkcauZxg_98rOi1SJHg,10
+pycloudmesh-0.1.1.dist-info/RECORD,,
