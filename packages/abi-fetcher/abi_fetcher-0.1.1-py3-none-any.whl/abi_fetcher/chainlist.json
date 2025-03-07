@@ -1,0 +1,532 @@
+{
+  "list": [
+    {
+      "chainname": "ethereum mainnet",
+      "chainid": "1",
+      "blockexplorer": "https://etherscan.io",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=1",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "sepolia testnet",
+      "chainid": "11155111",
+      "blockexplorer": "https://sepolia.etherscan.io",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=11155111",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "holesky testnet",
+      "chainid": "17000",
+      "blockexplorer": "https://sepolia.etherscan.io",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=17000",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "bnb smart chain mainnet",
+      "chainid": "56",
+      "blockexplorer": "https://bscscan.com",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=56",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "bnb smart chain testnet",
+      "chainid": "97",
+      "blockexplorer": "https://testnet.bscscan.com",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=97",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "polygon mainnet",
+      "chainid": "137",
+      "blockexplorer": "https://polygonscan.com",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=137",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "polygon amoy testnet",
+      "chainid": "80002",
+      "blockexplorer": "https://amoy.polygonscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=80002",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "polygon zkevm mainnet",
+      "chainid": "1101",
+      "blockexplorer": "https://zkevm.polygonscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=1101",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "polygon zkevm cardona testnet",
+      "chainid": "2442",
+      "blockexplorer": "https://cardona-zkevm.polygonscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=2442",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "base mainnet",
+      "chainid": "8453",
+      "blockexplorer": "https://basescan.org",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=8453",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "base sepolia testnet",
+      "chainid": "84532",
+      "blockexplorer": "https://sepolia.basescan.org/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=84532",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "arbitrum one mainnet",
+      "chainid": "42161",
+      "blockexplorer": "https://arbiscan.io",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=42161",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "arbitrum nova mainnet",
+      "chainid": "42170",
+      "blockexplorer": "https://nova.arbiscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=42170",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "arbitrum sepolia testnet",
+      "chainid": "421614",
+      "blockexplorer": "https://sepolia.arbiscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=421614",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "linea mainnet",
+      "chainid": "59144",
+      "blockexplorer": "https://lineascan.build/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=59144",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "linea sepolia testnet",
+      "chainid": "59141",
+      "blockexplorer": "https://sepolia.lineascan.build/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=59141",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "fantom opera mainnet",
+      "chainid": "250",
+      "blockexplorer": "https://ftmscan.com",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=250",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "fantom testnet",
+      "chainid": "4002",
+      "blockexplorer": "https://testnet.ftmscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=4002",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "blast mainnet",
+      "chainid": "81457",
+      "blockexplorer": "https://blastscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=81457",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "blast sepolia testnet",
+      "chainid": "168587773",
+      "blockexplorer": "https://sepolia.blastscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=168587773",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "op mainnet",
+      "chainid": "10",
+      "blockexplorer": "https://optimistic.etherscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=10",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "op sepolia testnet",
+      "chainid": "11155420",
+      "blockexplorer": "https://sepolia-optimism.etherscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=11155420",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "avalanche c-chain",
+      "chainid": "43114",
+      "blockexplorer": "https://snowscan.xyz/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=43114",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "avalanche fuji testnet",
+      "chainid": "43113",
+      "blockexplorer": "https://testnet.snowscan.xyz/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=43113",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "bittorrent chain mainnet",
+      "chainid": "199",
+      "blockexplorer": "https://bttcscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=199",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "bittorrent chain testnet",
+      "chainid": "1028",
+      "blockexplorer": "https://testnet.bttcscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=1028",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "celo mainnet",
+      "chainid": "42220",
+      "blockexplorer": "https://celoscan.io",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=42220",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "celo alfajores testnet",
+      "chainid": "44787",
+      "blockexplorer": "https://alfajores.celoscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=44787",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "cronos mainnet",
+      "chainid": "25",
+      "blockexplorer": "https://cronoscan.com",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=25",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "fraxtal mainnet",
+      "chainid": "252",
+      "blockexplorer": "https://fraxscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=252",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "fraxtal testnet",
+      "chainid": "2522",
+      "blockexplorer": "https://holesky.fraxscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=2522",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "gnosis",
+      "chainid": "100",
+      "blockexplorer": "https://gnosisscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=100",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "kroma mainnet",
+      "chainid": "255",
+      "blockexplorer": "https://kromascan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=255",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "kroma sepolia testnet",
+      "chainid": "2358",
+      "blockexplorer": "https://sepolia.kromascan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=2358",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "mantle mainnet",
+      "chainid": "5000",
+      "blockexplorer": "https://mantlescan.xyz/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=5000",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "mantle sepolia testnet",
+      "chainid": "5003",
+      "blockexplorer": "https://sepolia.mantlescan.xyz/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=5003",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "moonbeam mainnet",
+      "chainid": "1284",
+      "blockexplorer": "https://moonbeam.moonscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=1284",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "moonriver mainnet",
+      "chainid": "1285",
+      "blockexplorer": "https://moonriver.moonscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=1285",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "moonbase alpha testnet",
+      "chainid": "1287",
+      "blockexplorer": "https://moonbase.moonscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=1287",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "opbnb mainnet",
+      "chainid": "204",
+      "blockexplorer": "https://opbnb.bscscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=204",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "opbnb testnet",
+      "chainid": "5611",
+      "blockexplorer": "https://opbnb-testnet.bscscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=5611",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "scroll mainnet",
+      "chainid": "534352",
+      "blockexplorer": "https://scrollscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=534352",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "scroll sepolia testnet",
+      "chainid": "534351",
+      "blockexplorer": "https://sepolia.scrollscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=534351",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "taiko mainnet",
+      "chainid": "167000",
+      "blockexplorer": "https://taikoscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=167000",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "taiko hekla l2 testnet",
+      "chainid": "167009",
+      "blockexplorer": "https://hekla.taikoscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=167009",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "wemix3.0 mainnet",
+      "chainid": "1111",
+      "blockexplorer": "https://wemixscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=1111",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "wemix3.0 testnet",
+      "chainid": "1112",
+      "blockexplorer": "https://testnet.wemixscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=1112",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "zksync mainnet",
+      "chainid": "324",
+      "blockexplorer": "https://era.zksync.network/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=324",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "zksync sepolia testnet",
+      "chainid": "300",
+      "blockexplorer": "https://sepolia-era.zksync.network/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=300",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "xai mainnet",
+      "chainid": "660279",
+      "blockexplorer": "https://xaiscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=660279",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "xai sepolia testnet",
+      "chainid": "37714555429",
+      "blockexplorer": "https://sepolia.xaiscan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=37714555429",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "xdc mainnet",
+      "chainid": "50",
+      "blockexplorer": "https://xdcscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=50",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "xdc apothem testnet",
+      "chainid": "51",
+      "blockexplorer": "https://testnet.xdcscan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=51",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "apechain mainnet",
+      "chainid": "33139",
+      "blockexplorer": "https://apescan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=33139",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "apechain curtis testnet",
+      "chainid": "33111",
+      "blockexplorer": "https://curtis.apescan.io/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=33111",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "world mainnet",
+      "chainid": "480",
+      "blockexplorer": "https://worldscan.org/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=480",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "world sepolia testnet",
+      "chainid": "4801",
+      "blockexplorer": "https://sepolia.worldscan.org/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=4801",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "sophon mainnet",
+      "chainid": "50104",
+      "blockexplorer": "https://sophscan.xyz/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=50104",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "sophon sepolia testnet",
+      "chainid": "531050104",
+      "blockexplorer": "https://testnet.sophscan.xyz/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=531050104",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "sonic mainnet",
+      "chainid": "146",
+      "blockexplorer": "https://sonicscan.org/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=146",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "sonic blaze testnet",
+      "chainid": "57054",
+      "blockexplorer": "https://testnet.sonicscan.org/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=57054",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "unichain mainnet",
+      "chainid": "130",
+      "blockexplorer": "https://uniscan.xyz/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=130",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "unichain sepolia testnet",
+      "chainid": "1301",
+      "blockexplorer": "https://sepolia.uniscan.xyz/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=1301",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "abstract mainnet",
+      "chainid": "2741",
+      "blockexplorer": "https://abscan.org/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=2741",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "abstract sepolia testnet",
+      "chainid": "11124",
+      "blockexplorer": "https://sepolia.abscan.org/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=11124",
+      "status": 1,
+      "comment": ""
+    },
+    {
+      "chainname": "berachain mainnet",
+      "chainid": "80094 ",
+      "blockexplorer": "https://berascan.com/",
+      "apiurl": "https://api.etherscan.io/v2/api?chainid=80094 ",
+      "status": 1,
+      "comment": ""
+    }
+  ]
+}
