@@ -1,0 +1,213 @@
+Metadata-Version: 2.1
+Name: enindex-tools
+Version: 0.1.2
+Summary: Tools for using the enindex api
+License: GNU GPL v3
+Author: Paul Rowe-Jones
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: ratelimit (>=2.2.1,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+
+# Python API Tools Package
+
+[![PyPI version](https://badge.fury.io/py/package-name.svg)](https://pypi.org/project/enindex_tools/)  
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+
+
+## Overview
+
+This Python package provides a suite of tools to simplify interaction with the EnIndex API. 
+This library abstracts the complexities of making requests, handling authentication and parsing results so you can focus on building your application.
+
+---
+
+## Features
+
+- **Easy API Integration**: Streamlined methods for interacting with the EnIndex API.
+- **Automated Chunking and Rate Limiting**: Large requests are automatically chunked and rate limited.
+- **Authentication Handling**: Built-in support for API keys and token management.
+- **Result Parsing**: Get results directly as a pandas dataframe or JSON.
+
+---
+
+## Installation
+
+Install the package via pip:
+
+```bash
+pip install enindex-tools
+```
+
+---
+
+## Usage
+
+### 1. Create a .env file
+
+Enindex tools uses [dotenv](https://pypi.org/project/python-dotenv/) to handle your config.  
+
+You will need to add a new file to your project folder named ".env" containing the folowing environment variables.  
+
+If you are able to log into the EnIndex platform you will have these details. Your API key can be found by clicking on the 
+user menu in the top right of the platform:  
+
+![Description of Image](assets/api_key.png)
+
+
+E.g. if you log into https://alpha.enindex.com with the username jon.doe@acme.com your .env will look like this:  
+
+```.env
+ENINDEX_SUBDOMAIN = alpha
+ENINDEX_USERNAME = jon.doe@acme.com
+ENINDEX_API_KEY = 9fafec**********************************************************
+```
+
+
+### 2. Make Requests
+```python
+from enindex_tools import Api
+import datetime as dt
+
+# Initialize the Api
+api = Api()
+
+# Make a request
+stack = api.get_stack_at(dt.datetime.now(),format='pandas')
+
+# Do some analysis
+print(f'NESO are spending £{stack["revenueRate"].sum()} per hour right now.')
+```
+
+---
+
+## Contributing
+
+The enindex_tools package is intended to be an open source project and contributions are welcomed. The github repo will be made public soon. For now, contact prj@enindex.com if you have suggestions.
+
+---
+
+## Support
+
+If you have questions or need assistance, feel free to reach out to prj@enindex.com
+
+---
+
+## Acknowledgments
+
+Thank you for using this package! We hope it simplifies your API interaction and accelerates your development process.
+
+# API Class Documentation
+
+## **`get_index`**
+
+### Description:
+Retrieves an index dataset within a specified time range and returns the data in the requested format.
+
+### Parameters:
+- **`dataset`** (`str`):  
+  Identifier of the index dataset, e.g., `"NET_CCL_ND"`.
+  
+- **`time_from`** (`datetime.datetime`):  
+  Start time of the query. If not on a minute boundary, it is rounded down to the prior minute boundary. Must include timezone information.
+
+- **`time_to`** (`datetime.datetime`):  
+  End time of the query. If not on a minute boundary, it is rounded up to the next minute boundary. Must include timezone information.
+
+- **`format`** (`str`, optional):  
+  Format of the returned data.  
+  - `"json"`: Returns a list of `IndexSegment` objects.  
+  - `"pandas"`: Returns a `pandas.DataFrame` object.  
+  Default is `"json"`.
+
+- **`bm_unit`** (`str`, optional):  
+  Make a request for a specific BMU. This will return a dataset for a specific bmunit. E.g. requesting with dataset="PN" and bm_unit="T_COSO-1" will return Physical Notifications for Coryton South.
+
+### Returns:
+- **List[IndexSegment]** (if `format="json"`) or `pandas.DataFrame` (if `format="pandas"`).  
+  Each `IndexSegment` contains:
+  - `dataset` (`str`)
+  - `timeFrom` (`str`)
+  - `levelFrom` (`float`)
+  - `timeTo` (`str`)
+  - `levelTo` (`float`)
+  - `bmUnit` (`optional - will only be included if data is bmu specific.`) (`float`)
+  
+---
+
+## **`get_stack_at`**
+
+### Description:
+Fetches the system stack at a specific time and returns it in the requested format.
+
+### Parameters:
+- **`time`** (`datetime.datetime`):  
+  Time for which to retrieve the system stack. If not on a minute boundary, it is rounded down to the prior minute boundary. Must include timezone information.
+
+- **`format`** (`str`, optional):  
+  Format of the returned data.  
+  - `"json"`: Returns a list of stack elements.  
+  - `"pandas"`: Returns a `pandas.DataFrame` object.  
+  Default is `"json"`.
+
+### Returns:
+- **List[StackElement]** (if `format="json"`) or `pandas.DataFrame` (if `format="pandas"`).  
+  Stack elements include:
+  - `timeType` (`str`)
+  - `bmUnit` (`str`)
+  - `elementId` (`int`)
+  - `time` (`str`)
+  - `elementType` (`str`)
+  - `commitmentTime` (`int`)
+  - `direction` (`str`)
+  - `eFlaggedAccepted`, `eFlaggedNet`, `eFlaggedReversed` (`int`)
+  - `mainPrice` (`float`)
+  - `memberOf` (`list[str]`)
+  - `noticeTime` (`int`)
+  - `pairId` (`int`)
+  - `quantity`, `quantityAccepted`, `quantityAvailable` (`float`)
+  - `revenueRate` (`float`)
+  - `reversePrice` (`float`)
+  - `sFlaggedAccepted`, `sFlaggedNet`, `sFlaggedReversed` (`int`)
+  - `side` (`str`)
+  - `zeroToSel` (`bool`)
+  - `zeroToSil` (`bool`)
+
+> **Note:** Only elements with `timeType` = `"FROM"` are returned, corresponding to the instant immediately after the specified time.
+
+---
+
+## **`get_bmu_stack`**
+
+### Description:
+Retrieves stack elements for a specific BMU (Balancing Mechanism Unit) within a given time range.
+
+### Parameters:
+- **`bm_unit`** (`str`):  
+  Identifier of the BMU, e.g., `"T_COSO-1"`.
+
+- **`time_from`** (`datetime.datetime`):  
+  Start time of the query. If not on a minute boundary, it is rounded down to the prior minute boundary. Must include timezone information.
+
+- **`time_to`** (`datetime.datetime`):  
+  End time of the query. If not on a minute boundary, it is rounded up to the next minute boundary. Must include timezone information.
+
+- **`format`** (`str`, optional):  
+  Format of the returned data.  
+  - `"json"`: Returns a list of stack elements.  
+  - `"pandas"`: Returns a `pandas.DataFrame` object.  
+  Default is `"json"`.
+
+### Returns:
+- **List[StackElement]** (if `format="json"`) or `pandas.DataFrame` (if `format="pandas"`).  
+  Stack elements include the same fields as `get_stack_at`.  
+
+> **Note:** Both `timeType = "FROM"` and `timeType = "TO"` elements are included, representing the instant before and after the requested time.
