@@ -1,0 +1,3 @@
+[console_scripts]
+clippy=clippy_ai.clippy:clippy
+
