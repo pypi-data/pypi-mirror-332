@@ -1,0 +1,25 @@
+[project]
+name = "aroma-automation-test1289"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Svring",email = "lxf83553899@163.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "pendulum (>=3.0.0,<4.0.0)",
+    "pyautogui (>=0.9.54,<0.10.0)",
+    "keyboard (>=0.13.5,<0.14.0)",
+    "pynput (>=1.8.0,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "poetry_demo", from = "src"}]
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.12.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
