@@ -1,0 +1,16 @@
+./.dockerignore,sha256=6A8xoPwl-Yr6VIQBp4mX1qNfOeDSHzdv6pg_a4MvlLk,236
+./.gitignore,sha256=-7I6K1-7e6pXfZzp0oix3y2vb0HoYsdSgfBKawY8GJM,397
+./Dockerfile,sha256=ltoAWf-7K63gtmAd1FgZD1v9XP-_D2Ewc-jRuU7HFag,1013
+./PKG-INFO,sha256=-ApLK-791EMPN5cr8c8CskTzfm9pP66MNu2bChohh7Y,1081
+./README.md,sha256=L1-o2Ibd-SALXTTTjBegKWjfhBf7bF27uJXWleYuHK4,720
+./main.py,sha256=-mgSPRqd0addwUdm_hD9mDPybEwQ891yXY7SCwgu4uk,2018
+./pyproject.toml,sha256=KGryxOYzT0F1MaPDmjnnqk5IdnskAmvls5w8g89KwzA,543
+./uv.lock,sha256=XbT9Ggev5gOSgUlE9Wb8EEey12B4r10R3ZH3ZLctM6U,27305
+./api/__init__.py,sha256=kVUj_z9UbSFpxwxtDI3X-aeA3GfteOZK6J0Zr09x-dM,246
+./api/auth.py,sha256=qS_RZzHvLGM7EhzI2zpl3Vs1c7r7P1xN7kZnflXLuto,126
+./api/download.py,sha256=ADuZAkDaR3A4QIv-gJUiqnA1l0eCPDcbb-NsyuTumyg,2057
+./api/search.py,sha256=Yy96ImSL47QbeXcYRO_BdAfVLqxOhgF8nIXhz3_73dY,499
+sketchfab_mcp-0.1.2.dist-info/METADATA,sha256=-ApLK-791EMPN5cr8c8CskTzfm9pP66MNu2bChohh7Y,1081
+sketchfab_mcp-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sketchfab_mcp-0.1.2.dist-info/entry_points.txt,sha256=01wyPYpqIlh4xXcHhwpYuy4e8XCHER6FkyWCYeX32l0,47
+sketchfab_mcp-0.1.2.dist-info/RECORD,,
