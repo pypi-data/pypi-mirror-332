@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: distance_transforms
+Version: 0.1.1
+Summary: Python bindings for the Julia DistanceTransforms.jl package
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: juliacall>=0.9.24
+Requires-Dist: numpy>=2.2.3
+Requires-Dist: torch>=2.6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.5; extra == "dev"
+
+# distance_transforms
+
+Python bindings for the Julia [DistanceTransforms.jl](https://github.com/MolloiLab/DistanceTransforms.jl) package, providing efficient Euclidean distance transforms for arrays.
+
+## Installation
+
+```bash
+pip install distance_transforms
+```
