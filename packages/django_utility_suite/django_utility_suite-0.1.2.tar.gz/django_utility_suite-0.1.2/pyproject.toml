@@ -1,0 +1,16 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "django_utility_suite"
+version = "0.1.2"
+description = "A Django utility suite with additional features"
+authors = ["toni <tonicapagarcia@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.1.6"
+djangorestframework = "^3.15.2"
