@@ -1,0 +1,14 @@
+ujson5/__init__.py,sha256=ysH2KpHkv83flq_nGr-45ydzr0wcPQ8HfO4QrghKy6E,608
+ujson5/__version__.py,sha256=r4RCO62l3QESc0zIKxHNv79zJdKTnqDDfPSCeCX0l_A,806
+ujson5/cli.py,sha256=LygPf0H_EuCtzWnfwG-aD3GN9aoKYiSoPCsNArGUN-k,3702
+ujson5/consts.py,sha256=2MasBrmItyLkvMLg6bCQj_7e6UOoJ1ub4fB2EtSRvXM,2991
+ujson5/core.py,sha256=Xdg0KVhUY6piLIpL1PpK0bOc8qPSfLCM3HX97w94Vlk,2672
+ujson5/decoder.py,sha256=9Rex9qX85XOyT5fagzhInSdQ0nVVG7DgEB3EZhJOUao,29044
+ujson5/encoder.py,sha256=cmS8btbDaUtJlNAJxWgts0c6X0dmR2Z_8j9u6Mtr8y4,29825
+ujson5/err_msg.py,sha256=AfAv8gtDaEaiPMKcIWXWdY6PPgPSxQworNRX5-6b718,5101
+ujson5/lexer.py,sha256=ps84GBikR6OFitRzn6-EBPjJ6yA7j46Q5aok8GL9Xr4,19828
+ujson5-1.0.0b0.dist-info/METADATA,sha256=hhj2Pm1ZCrjsptZvzeZpfJWyYB3jsxfyJfWI6In-LQA,8311
+ujson5-1.0.0b0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ujson5-1.0.0b0.dist-info/entry_points.txt,sha256=k2IYbnzCLIJb9qa7bUgykSh4l6a9z2G24gLQ9aDORJ8,43
+ujson5-1.0.0b0.dist-info/licenses/LICENSE,sha256=rqpQocIC-42ls7wmQfnACrRj5Usl8Wh9L14JACIiWl0,1067
+ujson5-1.0.0b0.dist-info/RECORD,,
