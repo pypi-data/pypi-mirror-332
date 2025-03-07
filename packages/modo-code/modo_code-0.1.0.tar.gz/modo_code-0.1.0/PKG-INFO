@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: modo-code
+Version: 0.1.0
+Summary: Modo code assistant client
+Author: mohamad171
+Author-email: mohamadmohamadi249@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: json5 (==0.10.0)
+Requires-Dist: llama-index (==0.12.19)
+Requires-Dist: llama-index-packs-code-hierarchy (==0.4.1)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: shellingham (==1.4.0)
+Requires-Dist: tree-sitter-languages (==1.10.2)
+Requires-Dist: typer (==0.15.2)
+Description-Content-Type: text/markdown
+
+Modo code assistant client
