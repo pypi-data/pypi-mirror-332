@@ -1,0 +1,10 @@
+sbom4js/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sbom4js/cli.py,sha256=-4SkAJznVMgbR1qkqZALH3CcZx1ibnX20xt4IuXykbE,4027
+sbom4js/scanner.py,sha256=jdOmANMNkg5CtR2WTUsUwjOz_KkESsRkicjftFM6v50,15879
+sbom4js/version.py,sha256=Kt87j_7xNu35JaFcdf0rUV4bt03dp89KzhQI-Ahozzo,100
+sbom4js-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sbom4js-0.2.1.dist-info/METADATA,sha256=KL4qcz5Ps9HEMH4U_6BvCLZbgTCrpcC_WMqw4ikW64k,5970
+sbom4js-0.2.1.dist-info/WHEEL,sha256=P2T-6epvtXQ2cBOE_U1K4_noqlJFN3tj15djMgEu4NM,110
+sbom4js-0.2.1.dist-info/entry_points.txt,sha256=hCd2yxJ9JsqkDRqd9nmzaorWFKX_pPlgZDe5iX355Fw,45
+sbom4js-0.2.1.dist-info/top_level.txt,sha256=p68WRgzYmtbxfLure26BBcmCmSYaNwrDLYKFIOKcH28,8
+sbom4js-0.2.1.dist-info/RECORD,,
