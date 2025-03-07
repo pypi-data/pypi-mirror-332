@@ -1,0 +1,14 @@
+fastbot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastbot/bot.py,sha256=o7Hba9Rh-FFQQuzueJl-_-4p2GYVrfL-gWBZb7vs7yU,5458
+fastbot/matcher.py,sha256=fZBrL0uFCwQgwfUv-WrzTgEy5aHVunb9b36QIf2_1yw,1250
+fastbot/message.py,sha256=E5wjMX54s3wa27XeeAUvRZXmhI9m1nKTvb5iePguhzE,11350
+fastbot/plugin.py,sha256=aatCP3wEYcCTS653sJGIJsTGEIormtkcHTk-g6rZSGg,12747
+fastbot/event/__init__.py,sha256=4D8RDdlssGudEC5_ntjDkcSjb3KNaeU61UD_AsSjp-0,944
+fastbot/event/message.py,sha256=lUd2Oytj9w1chlVtcZgkj_7HSt7elyORTBGfGCzrfuc,6246
+fastbot/event/meta.py,sha256=229iEywXZqK_LhwkUE0uIiweIEYRfaMCWF1om5nqZm8,1953
+fastbot/event/notice.py,sha256=aeXiFZtRtbfthkuQy7wqN04kYxnB_g8RcyE2xvMfAro,5346
+fastbot/event/request.py,sha256=jcT461SCQp4_zx6cOaewsA3hal6IlEeI4FZc6tv81k8,2960
+fastbot_onebot-2025.3.7.dist-info/METADATA,sha256=sc9x8SpR1fQQfOKY9O8Psuw_iqk6U1AqKxuXwX_CXH8,4967
+fastbot_onebot-2025.3.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fastbot_onebot-2025.3.7.dist-info/licenses/LICENSE,sha256=qn6EWN8c_fSl1ChSmEVRQfoKiHWt3k3imfStWJtay9c,1059
+fastbot_onebot-2025.3.7.dist-info/RECORD,,
