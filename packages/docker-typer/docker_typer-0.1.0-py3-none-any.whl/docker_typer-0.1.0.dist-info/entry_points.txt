@@ -1,0 +1,3 @@
+[console_scripts]
+docker-typer=docker_typer.main:app
+
