@@ -1,0 +1,4 @@
+mip==1.16rc0
+pandas>=2.2.2
+xmltodict==0.12.0
+requests>=2.0.0
