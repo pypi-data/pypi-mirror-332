@@ -1,0 +1,7 @@
+betty.test\_utils.model.collections module
+==========================================
+
+.. automodule:: betty.test_utils.model.collections
+   :members:
+   :show-inheritance:
+   :undoc-members:
