@@ -1,0 +1,16 @@
+test_command_generation.py,sha256=K1NZltdwc1eMJ3qBwVR_pZI8EJ8Auxw18CGHFPwEAOU,754
+wish_command_generation-0.0.2a3.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+wish_command_generation-0.0.2a3.dist-info/METADATA,sha256=d06IOyB-Oub-GYeTjwBrVHYRLSZuLUit0VIMStKEAj4,42714
+wish_command_generation-0.0.2a3.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+wish_command_generation-0.0.2a3.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+wish_command_generation/__init__.py,sha256=qvavtb5Vg6gncjRreRlBHXXmlasGy7c2x-MAk1SuvbM,116
+wish_command_generation/generator.py,sha256=STl9i0eNmJ8VdfL6S0CPVcfw9thaBwjbNJU6LBdtY1A,792
+wish_command_generation/graph.py,sha256=IPyFagVt2W9-NIas8aHhBmEtsvBfJVQ7kR8Nji2u4zE,1097
+wish_command_generation/models.py,sha256=J6sdv5GTrfv9TM-4UpEiVUHWGZjJ7qr88eR6hjGbdSc,1011
+wish_command_generation/nodes/__init__.py,sha256=cz2TlBvDvOzziTi0TTS-rnbHvNT9Ig8FDRJUMLASFAs,135
+wish_command_generation/nodes/command_generation.py,sha256=t31Ix3eKMInmKYv-N5UX9tiMiiKBOCGzBHECf9KCXHw,4316
+wish_command_generation/nodes/rag.py,sha256=7CwU_-TTcH_DvyW9kuKHVVx4FrwD24X3UWAIJ0y_Z1s,1864
+wish_command_generation/settings.py,sha256=lCxu9aoCKm0X5IhO4VRbCwB5jk8M7E6xRrGACtcvUyA,534
+wish_command_generation/test_factories/__init__.py,sha256=LVd_aHEPnFb2sTRq4S-fICK8t74_GRIYyuliAXGkpy4,59
+wish_command_generation/test_factories/state_factory.py,sha256=mi28uM1HWguztfLJEgLBWeBf0dIzX6tJAbWJo_4DTns,2776
+wish_command_generation-0.0.2a3.dist-info/RECORD,,
