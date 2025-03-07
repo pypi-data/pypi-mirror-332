@@ -1,0 +1,11 @@
+orunnerpool/__init__.py,sha256=raziATmD5wQrZEk_9WZIUFWYSdGbkPOZJebDdighjxw,137
+orunnerpool/__main__.py,sha256=DdPo0ShEvoxTuI3WZmD7buIbvcb82kwaRUFeVq5z0xU,153
+orunnerpool/cli.py,sha256=Fuonjl4vxwcMKjPSkYv2z66Ec70FuNENJOtih-bSrtk,1730
+orunnerpool/setup.py,sha256=F2ipFLRQUjDTJ9U3GmQgNRukja4CvKwli-NhSwBoe5A,4828
+orunnerpool/worker.py,sha256=PKZ783jO1FbYy-gxgforvwAsLK9shWjBV5VEosZAVCc,22010
+orunnerpool-0.1.3.dist-info/LICENSE,sha256=ODAUzWicBpLXAM4rpbZ2gU8pI0xUqskihFwWZ2fyN-g,1074
+orunnerpool-0.1.3.dist-info/METADATA,sha256=1FquNfbEMraJ7SQ4-DR3ipj5gRUtPkTWDiML-ayPgfI,5420
+orunnerpool-0.1.3.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+orunnerpool-0.1.3.dist-info/entry_points.txt,sha256=fjESvxXPm9CbbMA9xYidFO21RNx7dlHBZT_o2Omfh5s,57
+orunnerpool-0.1.3.dist-info/top_level.txt,sha256=Hf8mjSjvGXtcC5KTXV5hU0i1CKCjUUXCjFrJ7-_P1GE,12
+orunnerpool-0.1.3.dist-info/RECORD,,
