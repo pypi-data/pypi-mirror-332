@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+SetProjRootinPath.egg-info/PKG-INFO
+SetProjRootinPath.egg-info/SOURCES.txt
+SetProjRootinPath.egg-info/dependency_links.txt
+SetProjRootinPath.egg-info/top_level.txt
+set_proj_dir/__init__.py
+set_proj_dir/find_dir.py
+set_proj_dir/find_git_proj_dir.py
+set_proj_dir/set_dir_in_path.py
+set_proj_dir/set_proj_dir.py
