@@ -1,0 +1,5 @@
+[console_scripts]
+dataverse-rdf = croissant_rdf.providers.dataverse:main
+huggingface-rdf = croissant_rdf.providers.huggingface:main
+kaggle-rdf = croissant_rdf.providers.kaggle:main
+openml-rdf = croissant_rdf.providers.openml:main
