@@ -1,0 +1,2 @@
+[console_scripts]
+create_samb2 = multipie2.scripts.create_samb:cmd
