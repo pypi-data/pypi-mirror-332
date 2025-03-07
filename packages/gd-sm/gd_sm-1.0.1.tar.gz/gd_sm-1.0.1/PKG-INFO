@@ -1,0 +1,70 @@
+Metadata-Version: 2.3
+Name: gd_sm
+Version: 1.0.1
+Summary: python实现的国密SM2/SM3/SM4算法库
+Author-email: liudi <di.liu@quantum-info.com>
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography >=44.0.2
+Project-URL: Home, https://www.quantumtest.top
+
+# gd_sm
+
+## 软件说明
+
+这是一个python实现的国密算法库，按照国密规范实现了sm2/sm3/sm4算法，其中sm2的功能主要是参考[gmssl](https://github.com/py-gmssl/py-gmssl) 库，在其基础上进行了一定的完善。
+sm3和sm4是利用了[cryptography](https://github.com/pyca/cryptography)库，采用这个库进行了sm3和sm4运算，这里只是对其进行了简单封装。  
+每个模块实现了以下功能，在使用这些函数或方法时，传入的数据需要是16进制字符串或者bytes格式(
+传入bytes格式会被转成16进制字符串处理)，
+返回的数据均为16进制字符串，建议调用的时候统一使用16进制字符串。
+
+- sm2:
+    - sign: 使用sm2私钥进行签名
+    - verify: 使用sm2公钥进行验签
+    - encrypt: 使用sm2公钥进行加密
+    - decrypt: 使用sm2私钥进行加密
+    - private_key_export_pubkey: 通过私钥导出公钥
+- sm3:
+    - sm3_hash: 计算sm3 hash值
+    - check_sm3: 校验sm3 hash值是否正确
+- sm4:
+    - encrypt: sm4加密，支持ecb/cbc模式，采用pkcs7 padding
+    - decrypt: sm4解密，支持ecb/cbc模式，采用pkcs7 padding
+
+## 使用说明
+
+使用pip安装本项目`pip install gd_sm`,在代码中使用`from gd_sm import *`语句引用，详细参考下面的示例章节
+
+## 示例
+
+```python
+from gd_sm import *
+
+# sm2使用示例
+s2 = sm2.SM2()  # 示例化一个sm2对象
+print(f"实例化一个sm2对象，私钥:{s2.private_key}, 公钥:{s2.public_key}")  # 打印对象的公私钥
+data = "C27AA65FCA082F8959D8B0F71764B6C5CA02C0AAD27C0CF6B393E61136B82EA9"  # 待处理的数据,16进制字符串格式
+sign_data = s2.sign(data)  # 使用私钥签名
+valid_sign = s2.verify(data, sign_data)  # 公钥验签
+assert valid_sign is True
+enc_data = s2.encrypt(data)  # 公钥加密
+dec_data = s2.decrypt(enc_data)  # 私钥解密
+assert dec_data.lower() == data.lower()
+
+# sm3使用示例
+data = "C27AA65FCA082F8959D8B0F71764B6C5CA02C0AAD27C0CF6B393E61136B82EA9"  # 待处理的数据,16进制字符串格式
+data_hash = sm3.sm3_hash(data)
+valid_hash = sm3.check_sm3(data, data_hash)
+assert valid_hash is True
+
+# sm4使用示例
+data = "C27AA65FCA082F8959D8B0F71764B6C5CA02C0AAD27C0CF6B393E61136B82EA9"  # 待处理的数据,16进制字符串格式
+key = "000102030405060708090A0b0c0d0e0f"
+iv = "00000101020203030404050506060707"
+enc_data = sm4.encrypt(key, data)  # 默认ecb模式，pkcs7 padding
+dec_data = sm4.decrypt(key, enc_data)
+assert dec_data.lower() == data.lower()
+enc_data = sm4.encrypt(key, data, mode="cbc", iv=iv)  # cbc模式，pkcs7 padding
+dec_data = sm4.decrypt(key, enc_data, mode="cbc", iv=iv)
+assert dec_data.lower() == data.lower()
+
+```
