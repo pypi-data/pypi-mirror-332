@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/Modion.REPORTER.egg-info/PKG-INFO
+src/Modion.REPORTER.egg-info/SOURCES.txt
+src/Modion.REPORTER.egg-info/dependency_links.txt
+src/Modion.REPORTER.egg-info/requires.txt
+src/Modion.REPORTER.egg-info/top_level.txt
+src/Modion/REPORTER/__init__.py
+src/Modion/REPORTER/placeholder.py
