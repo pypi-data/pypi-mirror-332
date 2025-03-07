@@ -1,0 +1,10 @@
+quattro/__init__.py,sha256=asXjJv4mfeHfzaiH8wg_tDpPKwJ5JnNGQu5zYGGirWs,854
+quattro/_cancelscope.py,sha256=mNwgSgCTmSGy9UHOZsqmKd6TqpU4F71xYYeoAtl8MBw,8249
+quattro/_defer.py,sha256=rPRkpK4tQvd-_6ghN_SDoSQm_Oidmfj2zev0rLkj0Z8,6596
+quattro/_gather.py,sha256=PlB8RhFVlnQEyCwi3WxsVLwpjHQiyVVLSE2R464H59Q,6038
+quattro/_taskgroup.py,sha256=cd2_KxWwvenoGI7f6kQBHMDxpfnBcxW3arggcos-PJc,1804
+quattro/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quattro-25.2.0.dist-info/METADATA,sha256=Ux1syxW7PcanjrOQub37fv7FjrOoWhCwDz9IP9poZzM,2888
+quattro-25.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+quattro-25.2.0.dist-info/licenses/LICENSE,sha256=ieEKJ-VczfHpbzAARBk5cBwN-Qfu4_jjKLNpnH1JyAg,9161
+quattro-25.2.0.dist-info/RECORD,,
