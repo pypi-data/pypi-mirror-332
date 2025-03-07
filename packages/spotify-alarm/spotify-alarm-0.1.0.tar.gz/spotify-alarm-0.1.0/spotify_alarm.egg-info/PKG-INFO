@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: spotify-alarm
+Version: 0.1.0
+Summary: A beautiful Spotify alarm clock for macOS
+Home-page: https://github.com/yourusername/spotify-alarm
+Author: Md. Arman Hossain
+Author-email: armanhossain.tech@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tkinter
+
+# Spotify Alarm Clock
+
+A beautiful alarm clock for macOS that plays Spotify tracks or playlists at specified times.
+
+## Installation
+```bash
+pip install spotify-alarm
