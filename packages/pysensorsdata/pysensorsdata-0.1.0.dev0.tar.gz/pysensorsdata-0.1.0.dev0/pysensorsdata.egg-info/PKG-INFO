@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: pysensorsdata
+Version: 0.1.0.dev0
+Summary: Python interface to SensorsData DataWarehouse
+Home-page: https://sensorsdata.com/
+Author: Chen Wang
+Author-email: wangchen@sensorsdata.com
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database :: Front-Ends
+Requires-Dist: future
+Requires-Dist: python-dateutil
+Requires-Dist: thrift>=0.10.0
+Requires-Dist: thrift_sasl>=0.1.0
+Provides-Extra: sqlalchemy
+Requires-Dist: sqlalchemy>=1.3.0; extra == "sqlalchemy"
+Provides-Extra: kerberos
+Requires-Dist: requests_kerberos>=0.12.0; extra == "kerberos"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary
+
+# pysensorsdata
+
+Python client for HiveServer2 implementations of SensorsData DataWarehouse.

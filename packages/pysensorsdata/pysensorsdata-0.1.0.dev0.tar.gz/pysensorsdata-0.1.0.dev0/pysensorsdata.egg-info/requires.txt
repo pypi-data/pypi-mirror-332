@@ -1,0 +1,10 @@
+future
+python-dateutil
+thrift>=0.10.0
+thrift_sasl>=0.1.0
+
+[kerberos]
+requests_kerberos>=0.12.0
+
+[sqlalchemy]
+sqlalchemy>=1.3.0

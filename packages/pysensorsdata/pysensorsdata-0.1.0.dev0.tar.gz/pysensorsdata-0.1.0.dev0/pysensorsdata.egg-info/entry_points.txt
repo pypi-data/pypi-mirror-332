@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+sensorsdata = pysensorsdata.sqlalchemy:SensorsDataDialect
