@@ -1,0 +1,11 @@
+LicenseManager.dll
+LicenseManagerApi.dll
+LicenseManagerShellext.exe
+LicenseManagerSvc.dll
+license.rtf
+setup.py
+example/__init__.py
+example_palacio1212.egg-info/PKG-INFO
+example_palacio1212.egg-info/SOURCES.txt
+example_palacio1212.egg-info/dependency_links.txt
+example_palacio1212.egg-info/top_level.txt
