@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: bytedancer-tensorflow-rocm
+Version: 0.1.8
+Summary: A simple package named bytedancer-tensorflow-rocm
+Home-page: https://github.com/yourusername/bytedancer-tensorflow-rocm
+Author: Your Name
+Author-email: your.email@example.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
