@@ -1,0 +1,2 @@
+[console_scripts]
+leizha-demo-app = leizha_demo_app:main
