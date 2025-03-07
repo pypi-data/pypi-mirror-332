@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/mkdocs_quizdown_plugin/__init__.py
+src/mkdocs_quizdown_plugin/plugin.py
+src/mkdocs_quizdown_plugin.egg-info/PKG-INFO
+src/mkdocs_quizdown_plugin.egg-info/SOURCES.txt
+src/mkdocs_quizdown_plugin.egg-info/dependency_links.txt
+src/mkdocs_quizdown_plugin.egg-info/entry_points.txt
+src/mkdocs_quizdown_plugin.egg-info/requires.txt
+src/mkdocs_quizdown_plugin.egg-info/top_level.txt
+src/mkdocs_quizdown_plugin/assets/quizdown.js
+src/mkdocs_quizdown_plugin/assets/quizdown_init.js

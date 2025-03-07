@@ -1,0 +1,138 @@
+Metadata-Version: 2.2
+Name: mkdocs-quizdown-plugin
+Version: 2025.3.3
+Summary: MkDocs plugin for quizdown-js
+Author-email: Thomas Breitner <mail@thms.de>
+License: The MIT License
+        
+        Copyright (c) Thomas Breitner https://thms.de
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+        
+Project-URL: Repository, https://github.com/tombreit/mkdocs-quizdown-plugin
+Project-URL: Homepage, https://github.com/tombreit/mkdocs-quizdown-plugin
+Project-URL: Documentation, https://github.com/tombreit/mkdocs-quizdown-plugin/blob/main/README.md
+Project-URL: Issues, https://github.com/tombreit/mkdocs-quizdown-plugin/issues
+Classifier: Framework :: MkDocs
+Classifier: Topic :: Documentation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mkdocs>=1.6
+Provides-Extra: pypi
+Requires-Dist: build; extra == "pypi"
+Requires-Dist: twine; extra == "pypi"
+
+<!--
+SPDX-FileCopyrightText: 2024 Thomas Breitner
+
+SPDX-License-Identifier: MIT
+-->
+
+# mkdocs-quizdown-plugin
+
+**🔥 This is work in progress - no liability for nothing.**
+
+- Allows embedding [quizdown-js](https://github.com/bonartm/quizdown-js) quizzes in MkDocs pages
+- Multiple quizzes can be embedded on multiple pages, and/or
+- Multiple quizzes can be embedded on one page
+- `quizdown-js` Javascript library included, no CDNs involved
+
+## Demo
+
+<https://tombreit.github.io/mkdocs-quizdown-plugin/>
+
+## Install
+
+### via PyPI
+
+<https://pypi.org/project/mkdocs-quizdown-plugin/>
+
+```bash
+pip install mkdocs-quizdown-plugin
+```
+
+### Development version via git
+
+```bash
+# Initial install:
+python -m pip install \
+  'mkdocs-quizdown-plugin @ git+https://github.com/tombreit/mkdocs-quizdown-plugin'
+
+# Upgrade plugin:
+python -m pip install \
+  --upgrade --no-deps --force-reinstall \
+  'mkdocs-quizdown-plugin @ git+https://github.com/tombreit/mkdocs-quizdown-plugin'
+```
+
+You can use the requirement item `'mkdocs-quizdown-plugin @ git+https://github.com/tombreit/mkdocs-quizdown-plugin'` in your `requirements.txt`:
+
+```text
+# file: requirements.txt
+
+mkdocs
+mkdocs-quizdown-plugin @ git+https://github.com/tombreit/mkdocs-quizdown-plugin
+```
+
+## Configuration
+
+See [`mkdocs.yml`](https://github.com/tombreit/mkdocs-quizdown-plugin/blob/main/mkdocs.yml)
+
+## Usage
+
+Embed your quiz as a Markdown block in your MkDocs Markdown page and enclose it with the mkdocs-quizdown start (`:::{quizdown}`) and end markers (`:::`):
+
+```md
+# Quiz
+
+Some **markdown** content.
+
+:::{quizdown}
+
+---
+primaryColor: steelblue
+shuffleQuestions: false
+shuffleAnswers: true
+---
+
+# What is the capital of France?
+
+> Paris is the capital and largest city of France.
+
+1. [x] Paris
+2. [ ] London
+3. [ ] Berlin
+4. [ ] Madrid
+
+:::
+
+Some **markdown** content.
+```
+
+- Try the [quizdown live editor](https://bonartm.github.io/quizdown-live-editor/) from the author of `quizdown-js` to prepare your quiz markdown
+- [quizdown-js configuration options](https://github.com/bonartm/quizdown-js/blob/main/docs/options.md)
+- MkDocs integration demo: [`docs/index.md`](docs/index.md)
+
+## Credits
+
+- [quizdown-js by Malte Bonart](https://github.com/bonartm/quizdown-js)
+- [MkDocs](https://www.mkdocs.org/)
