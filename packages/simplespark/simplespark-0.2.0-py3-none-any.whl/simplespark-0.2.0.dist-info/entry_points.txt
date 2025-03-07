@@ -1,0 +1,3 @@
+[console_scripts]
+simplespark=simplespark.main:app
+
