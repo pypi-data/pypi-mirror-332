@@ -1,0 +1,9 @@
+toml
+packaging
+randomname
+click
+rich_click
+questionary
+requests
+pytest
+msgpack
