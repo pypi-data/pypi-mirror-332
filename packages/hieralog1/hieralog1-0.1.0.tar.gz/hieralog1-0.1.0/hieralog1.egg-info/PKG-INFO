@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: hieralog1
+Version: 0.1.0
+Summary: Hierarchical logging library with enhanced printing functions.
+Home-page: https://github.com/yourusername/hieralog
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: colorama
+
+# Hieralog
+
+**Hieralog** is a hierarchical logging library for Python that provides enhanced logging and printing functions. It supports multiple levels, color coding, framed and plain output, and integrates seamlessly with progress bars.
+
+## Features
+
+- **Hierarchical Logging:** Auto-detect log levels with a "[x]" prefix.
+- **Color-Coded Output:** Different colors for each log level.
+- **Enhanced Print Functions:** 
+  - **hprint()**: Hierarchical (framed) logging output.
+  - **pprint()**: Plain print with hierarchical indentation.
+  - **fprint()**: Framed print with hierarchical indentation.
+  - **progress_write()**: Writes progress messages with the proper indent.
+- **Automatic Completion Message:** A final completion log is printed automatically when the program ends.
+
+## Installation
+
+Install via pip:
+
+```bash
+pip install hieralog1
