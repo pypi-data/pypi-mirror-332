@@ -1,0 +1,8 @@
+hello/__init__.py,sha256=cdw0E_AeUeeqyfwulq936LYh_h6ENrgwCj1-ZLp48RA,95
+hello/cli.py,sha256=yp7nAOAH6IQEkYhVs6UYQ3LZSlfWFxO_WLbPeA5HRa8,481
+hello/core.py,sha256=Tre-MfHWcuE2PCCgJjEHKin4PgXH1Z2twwNpk3incRA,188
+hello/recipe/greeting.py,sha256=8TWuPvPTLUSY6BTco_8slOxD5nMXyIyYZUFHGHU2ecU,241
+hello_quinx-0.2.0.dist-info/entry_points.txt,sha256=NQcSKiuwd8OI-RgaDmHbTSshwO4o4vOVId3bClpE31w,39
+hello_quinx-0.2.0.dist-info/METADATA,sha256=O1mxaxjlxjjwGrQiM2M5B9rDBP_-dTfn4ScRGG4SYWU,1744
+hello_quinx-0.2.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+hello_quinx-0.2.0.dist-info/RECORD,,
