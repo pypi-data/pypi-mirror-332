@@ -1,0 +1,6 @@
+bulletin_board_client-0.3.3.dist-info/METADATA,sha256=QEyXJ3EArSQheXipwzjA4aV-AUZtxSHKvCxd2tGxl_4,4845
+bulletin_board_client-0.3.3.dist-info/WHEEL,sha256=UikT-0yNSRjFwHTq48Crva23dP51dpEy0cz15Gdw5Lc,106
+bulletin_board_client/__init__.py,sha256=DXoglEqZwdEYXwLD5YCB68kPq2uNV2YFj0438FAyQ8E,278
+bulletin_board_client/helper.py,sha256=f2Vlc5GgAeZp6x9gV-Yv7Li5tQhqWhj-NuawBFCYhXk,3230
+bulletin_board_client/bulletin_board_client.cpython-312-darwin.so,sha256=-cbY8ZVeXtFh4unk_GHHO1kK38bARzzwU5oOwXI8Ee0,894576
+bulletin_board_client-0.3.3.dist-info/RECORD,,
