@@ -1,0 +1,11 @@
+printado/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+printado/config.py,sha256=um7SEFwH5gz42MSu11t_u9m2Lwoao_FDvzmNafRD-b0,589
+printado/hotkey_listener.py,sha256=4IN8YzvWd7HkZQVHfG_FvJXcg7327KDzp_Ctf_DxFl0,1198
+printado/main.py,sha256=yhs8zS8ufZOKsPFvaQoXFp0rTZZNI1NeE1l-a8qUyqM,241
+printado/version.py,sha256=Aj77VL1d5Mdku7sgCgKQmPuYavPpAHuZuJcy6bygQZE,21
+printado-1.0.0.dist-info/LICENSE,sha256=7rMdo0zJgakT_CX_0NObj_jxCJAAp2leXwQ2tK6CuGE,1068
+printado-1.0.0.dist-info/METADATA,sha256=_c34EtAOCAEIVG3tubOQ9csJW0weskcsOvR__XTQslU,724
+printado-1.0.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+printado-1.0.0.dist-info/entry_points.txt,sha256=kYsDKQZbGCDDXUILs371r64XgAbpUGRRBF3qgmuOiNY,48
+printado-1.0.0.dist-info/top_level.txt,sha256=pv_HIIuqRm1T7uiH2xGooTyy9Rqs1Qc6w5SvKqihPWA,9
+printado-1.0.0.dist-info/RECORD,,
