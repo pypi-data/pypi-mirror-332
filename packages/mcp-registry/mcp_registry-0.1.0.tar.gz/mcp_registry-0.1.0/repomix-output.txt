@@ -1,0 +1,1042 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+================================================================
+File Summary
+================================================================
+
+Purpose:
+--------
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+
+File Format:
+------------
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Multiple file entries, each consisting of:
+  a. A separator line (================)
+  b. The file path (File: path/to/file)
+  c. Another separator line
+  d. The full contents of the file
+  e. A blank line
+
+Usage Guidelines:
+-----------------
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+
+Notes:
+------
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+
+Additional Info:
+----------------
+
+================================================================
+Directory Structure
+================================================================
+examples/
+  basic_usage.py
+src/
+  mcp_registry/
+    __init__.py
+    compound.py
+tests/
+  test_compound.py
+  test_integration.py
+Goal.md
+LICENSE
+pyproject.toml
+README.md
+
+================================================================
+Files
+================================================================
+
+================
+File: examples/basic_usage.py
+================
+"""Example usage of MCPAggregator and MCPCompoundServer."""
+
+import asyncio
+from mcp_registry.compound import (
+    MCPServerSettings,
+    ServerRegistry,
+    MCPAggregator,
+    MCPCompoundServer
+)
+
+# Example server configurations
+server_configs = {
+    "file_server": MCPServerSettings(
+        transport="stdio",
+        command="python",
+        args=["-m", "mcp.contrib.file"],
+        description="File operations server"
+    ),
+    "search_server": MCPServerSettings(
+        transport="stdio",
+        command="python",
+        args=["-m", "mcp.contrib.search"],
+        description="Search operations server"
+    ),
+    "remote_server": MCPServerSettings(
+        transport="sse",
+        url="http://localhost:8000/sse",
+        description="Remote tools server"
+    )
+}
+
+# Example 1: Using MCPAggregator directly
+async def example_aggregator():
+    print("\n=== MCPAggregator Example ===")
+
+    # Create registry and aggregator with specific servers
+    registry = ServerRegistry(server_configs)
+    aggregator = MCPAggregator(registry, ["file_server", "search_server"])
+
+    # List available tools
+    tools = await aggregator.list_tools()
+    print("\nAvailable tools:")
+    for tool in tools.tools:
+        print(f"- {tool.name}")
+
+    # Example tool call
+    try:
+        result = await aggregator.call_tool(
+            "file_server-read_file",
+            {"path": "example.txt"}
+        )
+        print(f"\nTool call result: {result}")
+    except Exception as e:
+        print(f"\nError calling tool: {e}")
+
+# Example 2: Using MCPCompoundServer
+async def example_compound_server():
+    print("\n=== MCPCompoundServer Example ===")
+
+    # Create registry
+    registry = ServerRegistry(server_configs)
+
+    # List all available servers
+    print("\nRegistered servers:")
+    for name in registry.list_servers():
+        print(registry.get_server_info(name))
+
+    # Create compound server with selected servers
+    server = MCPCompoundServer(
+        registry=registry,
+        server_names=["file_server", "search_server"],
+        name="ExampleCompoundServer"
+    )
+
+    print("\nStarting compound server...")
+    await server.run_stdio_async()
+
+# Run examples
+async def main():
+    # Run aggregator example by default
+    await example_aggregator()
+
+    # Uncomment to run compound server example instead
+    # await example_compound_server()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+================
+File: src/mcp_registry/__init__.py
+================
+"""MCP Registry - A simplified MCP server aggregator and compound server implementation."""
+
+from mcp_registry.compound import (
+    MCPServerSettings,
+    ServerRegistry,
+    MCPAggregator,
+    MCPCompoundServer,
+    NamespacedTool
+)
+
+__version__ = "0.1.0"
+__all__ = [
+    "MCPServerSettings",
+    "ServerRegistry",
+    "MCPAggregator",
+    "MCPCompoundServer",
+    "NamespacedTool"
+]
+
+================
+File: src/mcp_registry/compound.py
+================
+"""
+MCP Registry - A simplified MCP server aggregator and compound server implementation.
+
+This module provides tools for managing and aggregating multiple MCP servers,
+allowing them to be used either directly or as a compound server.
+"""
+
+from asyncio import gather
+from contextlib import asynccontextmanager
+from typing import Dict, List, AsyncGenerator
+from pydantic import BaseModel
+
+from mcp.client.session import ClientSession
+from mcp.server.lowlevel.server import Server
+from mcp.server.stdio import stdio_server
+from mcp.client.stdio import StdioServerParameters, stdio_client
+from mcp.client.sse import sse_client
+from mcp.types import CallToolResult, ListToolsResult, Tool
+
+
+class MCPServerSettings(BaseModel):
+    """Basic server configuration settings."""
+    transport: str  # "stdio" or "sse"
+    command: str | None = None  # for stdio
+    args: list[str] | None = None  # for stdio
+    url: str | None = None  # for sse
+    env: dict | None = None
+    description: str | None = None  # optional description of the server
+
+
+class ServerRegistry:
+    """Simple registry for managing server configurations."""
+
+    def __init__(self, servers: Dict[str, MCPServerSettings]):
+        self.registry = servers
+
+    @asynccontextmanager
+    async def get_client(self, server_name: str) -> AsyncGenerator[ClientSession, None]:
+        """Create a client session for a server."""
+        if server_name not in self.registry:
+            raise ValueError(f"Server '{server_name}' not found in registry")
+
+        config = self.registry[server_name]
+
+        if config.transport == "stdio":
+            if not config.command or not config.args:
+                raise ValueError(f"Command and args required for stdio transport: {server_name}")
+
+            params = StdioServerParameters(
+                command=config.command,
+                args=config.args,
+                env=config.env or {}
+            )
+
+            async with stdio_client(params) as (read_stream, write_stream):
+                session = ClientSession(read_stream, write_stream)
+                async with session:
+                    await session.initialize()
+                    yield session
+
+        elif config.transport == "sse":
+            if not config.url:
+                raise ValueError(f"URL required for SSE transport: {server_name}")
+
+            async with sse_client(config.url) as (read_stream, write_stream):
+                session = ClientSession(read_stream, write_stream)
+                async with session:
+                    await session.initialize()
+                    yield session
+        else:
+            raise ValueError(f"Unsupported transport: {config.transport}")
+
+    def list_servers(self) -> List[str]:
+        """List all registered server names."""
+        return list(self.registry.keys())
+
+    def get_server_info(self, server_name: str) -> str:
+        """Get information about a specific server."""
+        if server_name not in self.registry:
+            return f"Server '{server_name}' not found"
+
+        config = self.registry[server_name]
+        desc = f" - {config.description}" if config.description else ""
+        transport_info = (
+            f"stdio: {config.command} {' '.join(config.args or [])}"
+            if config.transport == "stdio"
+            else f"sse: {config.url}"
+        )
+        return f"{server_name}: {transport_info}{desc}"
+
+
+class NamespacedTool(BaseModel):
+    """A tool that is namespaced by server name."""
+    tool: Tool
+    server_name: str
+    namespaced_tool_name: str
+
+
+class MCPAggregator:
+    """Aggregates multiple MCP servers."""
+
+    def __init__(self, registry: ServerRegistry, server_names: List[str] | None = None):
+        """
+        Initialize the aggregator.
+
+        Args:
+            registry: The server registry to use
+            server_names: Optional list of server names to use. If None, uses all registered servers.
+        """
+        self.registry = registry
+        self.server_names = server_names or registry.list_servers()
+        self._namespaced_tool_map: Dict[str, NamespacedTool] = {}
+
+    async def load_servers(self):
+        """Discover tools from each server."""
+        async def load_server_tools(server_name: str):
+            try:
+                async with self.registry.get_client(server_name) as client:
+                    result: ListToolsResult = await client.list_tools()
+                    return server_name, result.tools or []
+            except Exception as e:
+                print(f"Error loading tools from {server_name}: {e}")
+                return server_name, []
+
+        # Gather tools from all servers concurrently
+        results = await gather(
+            *(load_server_tools(server_name) for server_name in self.server_names)
+        )
+
+        # Build tool map
+        for server_name, tools in results:
+            for tool in tools:
+                namespaced_name = f"{server_name}-{tool.name}"
+                self._namespaced_tool_map[namespaced_name] = NamespacedTool(
+                    tool=tool,
+                    server_name=server_name,
+                    namespaced_tool_name=namespaced_name
+                )
+
+    async def list_tools(self) -> ListToolsResult:
+        """List all available tools."""
+        if not self._namespaced_tool_map:
+            await self.load_servers()
+        return ListToolsResult(tools=[
+            tool.tool.model_copy(update={"name": tool.namespaced_tool_name})
+            for tool in self._namespaced_tool_map.values()
+        ])
+
+    async def call_tool(self, name: str, arguments: dict | None = None) -> CallToolResult:
+        """Call a tool by its namespaced name."""
+        if not self._namespaced_tool_map:
+            await self.load_servers()
+
+        if "-" in name:
+            server_name, tool_name = name.split("-", 1)
+        else:
+            return CallToolResult(isError=True, message=f"Tool '{name}' not found")
+
+        async with self.registry.get_client(server_name) as client:
+            return await client.call_tool(name=tool_name, arguments=arguments)
+
+
+class MCPCompoundServer(Server):
+    """A compound server that aggregates multiple MCP servers."""
+
+    def __init__(
+        self,
+        registry: ServerRegistry,
+        server_names: List[str] | None = None,
+        name: str = "MCPCompoundServer"
+    ):
+        """
+        Initialize the compound server.
+
+        Args:
+            registry: The server registry to use
+            server_names: Optional list of server names to use. If None, uses all registered servers.
+            name: Name for this compound server
+        """
+        super().__init__(name)
+        self.aggregator = MCPAggregator(registry, server_names)
+
+        # Register handlers
+        self.list_tools()(self._list_tools)
+        self.call_tool()(self._call_tool)
+
+    async def _list_tools(self) -> List[Tool]:
+        """List all tools from connected servers."""
+        result = await self.aggregator.list_tools()
+        return result.tools
+
+    async def _call_tool(self, name: str, arguments: dict | None = None) -> CallToolResult:
+        """Call a specific tool."""
+        return await self.aggregator.call_tool(name=name, arguments=arguments)
+
+    async def run_stdio_async(self):
+        """Run the server using stdio transport."""
+        async with stdio_server() as (read_stream, write_stream):
+            await self.run(
+                read_stream=read_stream,
+                write_stream=write_stream,
+                initialization_options=self.create_initialization_options()
+            )
+
+================
+File: tests/test_compound.py
+================
+"""Tests for the compound module."""
+
+import pytest
+from mcp_registry.compound import (
+    MCPServerSettings,
+    ServerRegistry,
+    MCPAggregator,
+    MCPCompoundServer
+)
+
+# Test configurations
+TEST_CONFIGS = {
+    "test_server1": MCPServerSettings(
+        transport="stdio",
+        command="python",
+        args=["-m", "test.server1"],
+        description="Test server 1"
+    ),
+    "test_server2": MCPServerSettings(
+        transport="sse",
+        url="http://test.server/sse",
+        description="Test server 2"
+    )
+}
+
+def test_server_registry_initialization():
+    """Test that ServerRegistry initializes correctly."""
+    registry = ServerRegistry(TEST_CONFIGS)
+    assert len(registry.registry) == 2
+    assert "test_server1" in registry.registry
+    assert "test_server2" in registry.registry
+
+def test_server_registry_list_servers():
+    """Test that ServerRegistry lists servers correctly."""
+    registry = ServerRegistry(TEST_CONFIGS)
+    servers = registry.list_servers()
+    assert len(servers) == 2
+    assert "test_server1" in servers
+    assert "test_server2" in servers
+
+def test_server_registry_get_info():
+    """Test that ServerRegistry provides correct server info."""
+    registry = ServerRegistry(TEST_CONFIGS)
+
+    info1 = registry.get_server_info("test_server1")
+    assert "stdio" in info1
+    assert "python" in info1
+    assert "Test server 1" in info1
+
+    info2 = registry.get_server_info("test_server2")
+    assert "sse" in info2
+    assert "http://test.server/sse" in info2
+    assert "Test server 2" in info2
+
+def test_mcp_aggregator_initialization():
+    """Test that MCPAggregator initializes correctly."""
+    registry = ServerRegistry(TEST_CONFIGS)
+
+    # Test with specific servers
+    aggregator1 = MCPAggregator(registry, ["test_server1"])
+    assert len(aggregator1.server_names) == 1
+    assert "test_server1" in aggregator1.server_names
+
+    # Test with all servers
+    aggregator2 = MCPAggregator(registry)
+    assert len(aggregator2.server_names) == 2
+    assert "test_server1" in aggregator2.server_names
+    assert "test_server2" in aggregator2.server_names
+
+def test_mcp_compound_server_initialization():
+    """Test that MCPCompoundServer initializes correctly."""
+    registry = ServerRegistry(TEST_CONFIGS)
+
+    # Test with specific servers
+    server1 = MCPCompoundServer(registry, ["test_server1"])
+    assert len(server1.aggregator.server_names) == 1
+    assert "test_server1" in server1.aggregator.server_names
+
+    # Test with all servers
+    server2 = MCPCompoundServer(registry)
+    assert len(server2.aggregator.server_names) == 2
+    assert "test_server1" in server2.aggregator.server_names
+    assert "test_server2" in server2.aggregator.server_names
+
+================
+File: tests/test_integration.py
+================
+"""Integration tests for MCP Registry."""
+
+import pytest
+import tempfile
+import os
+from mcp_registry import MCPServerSettings, ServerRegistry, MCPAggregator, MCPCompoundServer
+
+# Get the current shell environment including PATH
+shell_env = os.environ.copy()
+
+# Test server configuration using the memory server which is simpler to test with
+TEST_CONFIGS = {
+    "memory_server": MCPServerSettings(
+        transport="stdio",
+        command="npx",
+        args=["-y", "@modelcontextprotocol/server-memory"],
+        description="Memory operations server",
+        env=shell_env  # Pass the shell environment to the subprocess
+    )
+}
+
+@pytest.mark.asyncio
+async def test_aggregator_with_real_servers():
+    """Test MCPAggregator with memory server."""
+    # Create registry and aggregator
+    registry = ServerRegistry(TEST_CONFIGS)
+    aggregator = MCPAggregator(registry, ["memory_server"])
+
+    # List available tools
+    result = await aggregator.list_tools()
+
+    # Debug: Print all available tools
+    print("\nAvailable tools:", [t.name for t in result.tools])
+    print("Server response:", result)
+
+    # Memory server should have at least set/get tools
+    assert len(result.tools) > 0, "No tools found"
+    tool_names = [t.name for t in result.tools]
+
+    # Debug: Print what we're looking for
+    print("\nLooking for 'create_entities' or 'search_nodes' in:", tool_names)
+
+    assert any("create_entities" in name.lower() for name in tool_names), f"No 'create_entities' tool found in {tool_names}"
+    assert any("search_nodes" in name.lower() for name in tool_names), f"No 'search_nodes' tool found in {tool_names}"
+
+@pytest.mark.asyncio
+async def test_compound_server_with_real_servers():
+    """Test MCPCompoundServer with memory server."""
+    # Create compound server
+    registry = ServerRegistry(TEST_CONFIGS)
+    server = MCPCompoundServer(
+        registry=registry,
+        server_names=["memory_server"],
+        name="TestCompoundServer"
+    )
+
+    # Get tools directly from the server
+    tools = await server._list_tools()
+
+    # Debug: Print available tools
+    print("\nCompound server tools:", [t.name for t in tools])
+
+    assert len(tools) > 0, "No tools found in compound server"
+
+    # Verify tools are properly namespaced
+    tool_names = [t.name for t in tools]
+    assert all(name.startswith("memory_server-") for name in tool_names), f"Tools not properly namespaced: {tool_names}"
+
+@pytest.mark.asyncio
+async def test_tool_calling():
+    """Test calling tools through the aggregator."""
+    registry = ServerRegistry(TEST_CONFIGS)
+    aggregator = MCPAggregator(registry, ["memory_server"])
+
+    # First, list available tools to debug
+    tools = await aggregator.list_tools()
+    print("\nAvailable tools for calling:", [t.name for t in tools.tools])
+
+    # Test creating new entities
+    test_entities = [
+        {
+            "name": "test_entity_1",
+            "entityType": "person",
+            "observations": ["observation1", "observation2"]
+        },
+        {
+            "name": "test_entity_2",
+            "entityType": "location",
+            "observations": ["observation3"]
+        }
+    ]
+
+    create_result = await aggregator.call_tool(
+        "memory_server-create_entities",
+        {"entities": test_entities}
+    )
+    assert not create_result.isError, f"create_entities operation failed: {create_result}"
+    assert len(str(create_result)) > 0, "Expected non-empty creation result"
+
+================
+File: Goal.md
+================
+read the codebase. 
+
+I want to make mcp-registry a cli tool.
+
+it should support the same config file format as claude desktop
+so on first invocation
+first it should check if there's existing claude desktop config and if user want to copy from it as a starting point
+
+Mac: ~/Library/Application Support/Claude/claude_desktop_config.json
+Windows: %APPDATA%\Claude\claude_desktop_config.json
+------
+
+then copy it to some appropriate place like ~/.config/claude_registry/claude_registry_config.json
+
+based on this format. it should support commands that let's you add / remove mcp server in the registry using Claude Code's syntax
+
+
+mcp-registry add mcp-server-name command args 
+mcp-registry remove mcp-server-name
+mcp-registry list
+
+-----------
+
+this is just a registry feature
+
+I want it to be a thin wrapper for aggegrating multiple servers 
+
+like suppose user have the following servers registered : memory, github, weather, filesystem
+
+and user wants to expose a few select servers to a mcp client
+instead of registring all the select servers again to the client,
+user should be able to run
+
+mcp-registry serve memory filesystem
+
+to launch these 2 with a single command, and aggegrate / expose all the tools of these servers
+
+------
+
+besides this quality of life features, mcp-registry should also expose the core logic as library for client developers to build apps that talks to mcp servers individually without using MCPCompoundServer
+
+================
+File: LICENSE
+================
+Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   Copyright 2025 MCP Registry Contributors
+
+   This project includes code derived from MCP Agent (https://github.com/lastmile-ai/mcp-agent),
+   Copyright 2025 LastMile AI.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+================
+File: pyproject.toml
+================
+[project]
+name = "mcp-registry"
+version = "0.1.0"
+description = "A simplified MCP server aggregator and compound server implementation"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+dependencies = [
+    "mcp>=1.3.0",
+    "pydantic>=2.0.0",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.25.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_registry"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+include = '\.pyi?$'
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+]
+ignore = []
+
+[tool.ruff.isort]
+known-first-party = ["mcp_registry"]
+
+================
+File: README.md
+================
+# MCP Registry
+
+A simplified MCP server aggregator and compound server implementation that allows you to:
+- Manage multiple MCP servers through a simple registry
+- Use servers directly through the MCPAggregator
+- Create a compound server that exposes tools from multiple servers
+
+## Installation
+
+Using uv (recommended):
+```bash
+uv pip install mcp-registry
+```
+
+Or using pip:
+```bash
+pip install mcp-registry
+```
+
+## Usage
+
+### 1. Using MCPAggregator Directly
+
+```python
+from mcp_registry.compound import MCPServerSettings, ServerRegistry, MCPAggregator
+
+# Define your server configurations
+server_configs = {
+    "file_server": MCPServerSettings(
+        transport="stdio",
+        command="python",
+        args=["-m", "mcp.contrib.file"],
+        description="File operations server"
+    ),
+    "search_server": MCPServerSettings(
+        transport="stdio",
+        command="python",
+        args=["-m", "mcp.contrib.search"],
+        description="Search operations server"
+    )
+}
+
+async def main():
+    # Create registry and aggregator
+    registry = ServerRegistry(server_configs)
+
+    # Use specific servers
+    aggregator = MCPAggregator(registry, ["file_server"])
+    # Or use all servers
+    # aggregator = MCPAggregator(registry)
+
+    # List available tools
+    tools = await aggregator.list_tools()
+    print("Available tools:")
+    for tool in tools.tools:
+        print(f"- {tool.name}")
+
+    # Call a tool
+    result = await aggregator.call_tool(
+        "file_server-read_file",
+        {"path": "example.txt"}
+    )
+    print(f"Result: {result}")
+```
+
+### 2. Using MCPCompoundServer
+
+```python
+from mcp_registry.compound import MCPServerSettings, ServerRegistry, MCPCompoundServer
+
+async def main():
+    # Create registry with server configurations
+    registry = ServerRegistry({
+        "file_server": MCPServerSettings(
+            transport="stdio",
+            command="python",
+            args=["-m", "mcp.contrib.file"]
+        )
+    })
+
+    # Create compound server with specific servers
+    server = MCPCompoundServer(
+        registry=registry,
+        server_names=["file_server"],  # Optional: specify which servers to use
+        name="MyCompoundServer"
+    )
+
+    # Run the server
+    await server.run_stdio_async()
+```
+
+## Features
+
+- **Server Registry**: Manage server configurations in one place
+- **Multiple Transport Support**:
+  - stdio: For local servers
+  - SSE: For remote servers
+- **Selective Server Usage**: Choose which servers to use in aggregator or compound server
+- **Namespaced Tools**: Tools are namespaced by server name to avoid conflicts
+- **Concurrent Tool Loading**: Tools from multiple servers are loaded concurrently
+- **Error Handling**: Graceful handling of server connection failures
+
+## Server Configuration
+
+The `MCPServerSettings` class supports:
+
+```python
+MCPServerSettings(
+    transport="stdio",  # or "sse"
+    command="python",  # for stdio transport
+    args=["-m", "my.server"],  # for stdio transport
+    url="http://example.com/sse",  # for sse transport
+    env={"KEY": "value"},  # optional environment variables
+    description="My server"  # optional description
+)
+```
+
+## Development
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/mcp-registry.git
+   cd mcp-registry
+   ```
+
+2. Create and activate a virtual environment using uv:
+   ```bash
+   uv venv
+   source .venv/bin/activate  # On Unix
+   # or
+   .venv\Scripts\activate  # On Windows
+   ```
+
+3. Install development dependencies:
+   ```bash
+   uv pip install -e ".[dev]"
+   ```
+
+4. Run tests:
+   ```bash
+   pytest
+   ```
+
+5. Format code:
+   ```bash
+   black .
+   ruff check --fix .
+   ```
+
+## License
+
+MIT License
+
+
+
+================================================================
+End of Codebase
+================================================================
