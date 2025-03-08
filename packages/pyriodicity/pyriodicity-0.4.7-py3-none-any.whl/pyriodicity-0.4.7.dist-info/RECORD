@@ -1,0 +1,13 @@
+pyriodicity/__init__.py,sha256=HqK_dblA83kLc-uZ0MP5EVAdq15ILBdr7LwWDfod2As,270
+pyriodicity/detectors/__init__.py,sha256=uPQe94a9Vq207S_xv0o7Ts_VcYUktGNbxynlCK_ZE34,330
+pyriodicity/detectors/acf.py,sha256=s3-bJs1luz2L2COnQ3jADqhqCvGkX03oar3NJuafE7U,4600
+pyriodicity/detectors/autoperiod.py,sha256=kpdqmKUQDj0_xw_tIyPfBpSAgxUNpUkY7VgDgMS9wtw,9648
+pyriodicity/detectors/cfd_autoperiod.py,sha256=MPQDLWJivN3UfX0tIlV0GONSz4Jcj8QAQsd4Z3qntrQ,8555
+pyriodicity/detectors/fft.py,sha256=QNN0RrqRpjhaYWIfRqC-BvetrXlMN8YUwLFQQvURqTY,4410
+pyriodicity/detectors/robustperiod.py,sha256=SE5TDynOObpyezwNXrMO95tsB2ESN00JnoPzhrlNb8I,21882
+pyriodicity/tools/__init__.py,sha256=XsTrZbVqAsSuoI2tnN9vkWvqCs1ODxUCssCNIGzfrFw,137
+pyriodicity/tools/_tools.py,sha256=z1Ra1d5YozqlqSoDWG4-xXnRLRxIwK52IlTADz5pKnc,2755
+pyriodicity-0.4.7.dist-info/LICENSE,sha256=leK7HbVy-SvbaVMuVvVPvTsyizcSfw-jPTMeno9snjM,1070
+pyriodicity-0.4.7.dist-info/METADATA,sha256=h7mVP4lF8nFUuVayaClOUfLMI4WwME8wW9Y_i_nsuNw,4736
+pyriodicity-0.4.7.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pyriodicity-0.4.7.dist-info/RECORD,,
