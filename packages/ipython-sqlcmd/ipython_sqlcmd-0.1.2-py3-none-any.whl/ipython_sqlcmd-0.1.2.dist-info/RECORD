@@ -1,0 +1,12 @@
+sqlcmd/__init__.py,sha256=jgfvxz11TIHVJa5FOsmqj_PnmeO5Qmq-xuShnLaBoTA,349
+sqlcmd/connection.py,sha256=9bbINPtMlUDtcpl_i6j0G5pH6aJ1pFG-oAp4_vztVh0,2637
+sqlcmd/exceptions.py,sha256=1g4C31PGZGeQ4jllCLmtOADOX6Wk30YWBTtL7VEUXnA,4187
+sqlcmd/executor.py,sha256=jJMcGF92qZvqBvrmsijXGDSUkkT4kkqP8cnJHYrfeKY,13567
+sqlcmd/magic.py,sha256=Cd-SyRSChDeB9tN8jJEQBqo5C4H0-L2bJfv1xxMc4DI,8351
+sqlcmd/parser.py,sha256=E1b3WcYC-PY4cJIQYFgOpL3vgZpcDFQKDZE_uhZyN6I,6858
+ipython_sqlcmd-0.1.2.dist-info/LICENSE,sha256=QxTTlL6YL0MKmk8mR8OJcdbHVJShWH6uD8cl8rwLv0M,1099
+ipython_sqlcmd-0.1.2.dist-info/METADATA,sha256=8ECfWvqpWMeOthS5X1cw3rYpCHXInpcbnPycJcFU4cY,4428
+ipython_sqlcmd-0.1.2.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+ipython_sqlcmd-0.1.2.dist-info/entry_points.txt,sha256=R52P5OhYljOpe_B7-jt2uPMv4f8CuxBMuEU1Sjt1IU0,55
+ipython_sqlcmd-0.1.2.dist-info/top_level.txt,sha256=P0_UwfcKOUqOdhQR_say5p_VkDNbmG52T5Zu4UlW5mk,7
+ipython_sqlcmd-0.1.2.dist-info/RECORD,,
