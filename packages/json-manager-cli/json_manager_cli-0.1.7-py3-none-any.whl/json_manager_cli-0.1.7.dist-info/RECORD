@@ -1,0 +1,9 @@
+json_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_manager/buffered_cmd2.py,sha256=rmt5Jdo2LoEyaawBc39Jax9wtKaoFRaq3dyjZdaZP8Q,12261
+json_manager/db_console.py,sha256=56k75lv2SJxuv6jUE2hU5iLHVsmYHV_OysS4HkJR3lM,19001
+json_manager/json_console.py,sha256=hX6qz0Nwkd_08eyZ3IrztlsVaBKrneXezssRMVeCwnQ,16209
+json_manager/main.py,sha256=-uTzIm9YoW4qoAGwvZjE_GN5zLiVj5DyDWj_rHaAJCY,2828
+json_manager_cli-0.1.7.dist-info/entry_points.txt,sha256=j-aLG3JYHuPHme70blLdJwMhXacUnz39FHnMwksRHbQ,50
+json_manager_cli-0.1.7.dist-info/METADATA,sha256=ec90G4YujPpyxDkcLs4a9tG9xDN5FpDFDxM2Fa9r8qg,3969
+json_manager_cli-0.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+json_manager_cli-0.1.7.dist-info/RECORD,,
