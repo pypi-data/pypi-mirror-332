@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: draw-nn
+Version: 0.1
+Summary: A simple package to visualize neural network architectures
+Home-page: https://github.com/developerAtharva/draw_nn
+Author: Atharva
+Author-email: developer.atharva2001@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
