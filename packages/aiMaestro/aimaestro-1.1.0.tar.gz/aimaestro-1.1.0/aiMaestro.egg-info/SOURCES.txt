@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+aiMaestro/__init__.py
+aiMaestro.egg-info/PKG-INFO
+aiMaestro.egg-info/SOURCES.txt
+aiMaestro.egg-info/dependency_links.txt
+aiMaestro.egg-info/requires.txt
+aiMaestro.egg-info/top_level.txt

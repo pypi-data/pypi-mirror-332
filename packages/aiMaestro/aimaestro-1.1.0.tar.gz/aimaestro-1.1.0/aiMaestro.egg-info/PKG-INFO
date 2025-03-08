@@ -1,0 +1,35 @@
+Metadata-Version: 2.2
+Name: aiMaestro
+Version: 1.1.0
+Summary: aiMaestro Description
+Home-page: https://gitee.com/ZYPH/aimaestro
+Author: YanPing
+Author-email: zyphhxx@foxmail.com
+Maintainer: YanPing
+Maintainer-email: zyphhxx@foxmail.com
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: amqp
+Requires-Dist: eventlet
+Requires-Dist: kombu
+Requires-Dist: pika
+Requires-Dist: pytz
+Requires-Dist: psutil
+Requires-Dist: pycryptodomex
+Requires-Dist: pymongo
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
