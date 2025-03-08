@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+neuroslides/__init__.py
+neuroslides.egg-info/PKG-INFO
+neuroslides.egg-info/SOURCES.txt
+neuroslides.egg-info/dependency_links.txt
+neuroslides.egg-info/top_level.txt
