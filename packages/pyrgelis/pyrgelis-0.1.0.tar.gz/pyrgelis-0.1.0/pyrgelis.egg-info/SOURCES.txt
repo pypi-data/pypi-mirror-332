@@ -1,0 +1,14 @@
+LICENSE
+README.md
+README.rst
+setup.py
+pyrgelis/__init__.py
+pyrgelis/cli.py
+pyrgelis/game.py
+pyrgelis/rgeli.py
+pyrgelis.egg-info/PKG-INFO
+pyrgelis.egg-info/SOURCES.txt
+pyrgelis.egg-info/dependency_links.txt
+pyrgelis.egg-info/entry_points.txt
+pyrgelis.egg-info/requires.txt
+pyrgelis.egg-info/top_level.txt
