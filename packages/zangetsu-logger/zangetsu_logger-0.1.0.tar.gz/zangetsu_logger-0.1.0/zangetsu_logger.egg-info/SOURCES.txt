@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+zangetsu_logger/__init__.py
+zangetsu_logger/cloud_handlers.py
+zangetsu_logger/config.py
+zangetsu_logger/default_config.yaml
+zangetsu_logger/formatters.py
+zangetsu_logger/handlers.py
+zangetsu_logger.egg-info/PKG-INFO
+zangetsu_logger.egg-info/SOURCES.txt
+zangetsu_logger.egg-info/dependency_links.txt
+zangetsu_logger.egg-info/requires.txt
+zangetsu_logger.egg-info/top_level.txt
