@@ -1,0 +1,13 @@
+juham_watermeter/__init__.py,sha256=7BJ-_1Zw2FgJJ_JmL15KyBuQQC8mK1qLXxykvZxEM20,414
+juham_watermeter/leakdetector.py,sha256=IOTlvsRQ7N6zC2kADMr2XjrPMBGFnSBac-PpqixiyZE,6369
+juham_watermeter/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+juham_watermeter/watermeter_imgdiff.py,sha256=njBhUJpAK5YH5Ob3HpHyqVCikIFtRB8mZ-lTAOObECg,12138
+juham_watermeter/watermeter_ocr.py,sha256=b9DS_7tPPDS_BHrS34x0Rfh3kTotJVMZ9tmtdz8OWz4,9105
+juham_watermeter/watermeter_ts.py,sha256=T4nKoVNpgU53CDvSIRgEbm4oy1UiqET7xfRcg_OtoPI,3246
+juham_watermeter/webcamera.py,sha256=Z7Yk_XcHC6-qk6uMVlUCFwhnRzII0la7QFCkyuFlTTI,5848
+juham_watermeter-0.0.6.dist-info/LICENSE.rst,sha256=xCUTZIYDotncT_ibKn8nNVkUGiK05hJyOWypG8G7Evk,1074
+juham_watermeter-0.0.6.dist-info/METADATA,sha256=h8vNkZxa4td0B-n0og4aCadMq1IQ33-VwK1ov9h3V_8,4865
+juham_watermeter-0.0.6.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+juham_watermeter-0.0.6.dist-info/entry_points.txt,sha256=4KQZ-XUjd026JX-9dLAvw6e5XE6kdshWYE4pqDgeYtE,252
+juham_watermeter-0.0.6.dist-info/top_level.txt,sha256=kvbS5ION4k6uJwlJuWRNHIKPrOvpVldiWeNLWbqH2X0,17
+juham_watermeter-0.0.6.dist-info/RECORD,,

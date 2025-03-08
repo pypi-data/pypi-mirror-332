@@ -1,0 +1,131 @@
+Metadata-Version: 2.2
+Name: juham-watermeter
+Version: 0.0.6
+Summary: Web-camera based watermeter for Juham
+Author-email: J Meskanen <juham.api@gmail.com>
+Maintainer-email: "J. Meskanen" <juham.api@gmail.com>
+License: MIT License
+        ===========
+        
+        Copyright (c) 2024, Juha Meskanen
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        
+        
+Project-URL: Homepage, https://gitlab.com/juham/juham
+Project-URL: Bug Reports, https://gitlab.com/juham/juham
+Project-URL: Funding, https://meskanen.com
+Project-URL: Say Thanks!, http://meskanen.com
+Project-URL: Source, https://gitlab.com/juham/juham
+Keywords: object-oriented,plugin,framework,watermeter,home automation
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: juham-core>=0.1.1
+Requires-Dist: numpy
+Requires-Dist: Pillow>=10.4.0
+Requires-Dist: opencv-python-headless>=4.10.0
+Requires-Dist: pytesseract>=0.3.13
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+
+Watermeter plugin for Juham™
+=============================
+
+Description
+-----------
+
+A web camera and AI-based water meter solution for Juham™ home automation.
+
+This package includes two different water meter implementations:
+
+* A simple class that compares subsequent images to measure differences. The greater the difference between images,
+  the more the arrows and digits on the water meter have changed, indicating water consumption.
+  This solution also uploads the images to a specified FTP site when water consumption is detected,
+  allowing homeowners to inspect the water meter visually. While this solution doesn’t provide exact water
+  consumption readings, it is highly reliable for detecting leaks. Just ensure that spiders or other potentially moving
+  objects don't obstruct the camera's view of the water meter.  
+  
+* Tesseract OCR and OpenCV solution for reading and interpreting water meter digits.
+  This class requires further work to be truly useful. My Raspberry Pi didn't have enough disk
+  space, so I decided to set this aside for now.
+
+
+.. image:: _static/images/watermeter_diff.png
+   :alt: Web camera based water meter leak detector based on comparison of subsequent images
+   :width: 640px
+   :align: center  
+
+
+Getting Started
+---------------
+
+To install:
+
+   .. code-block:: bash
+
+      pip install juham-watermeter
+
+Which installs everything needed for reading water meters with the simple image comparison based solution.
+
+
+If you want to play with the Tesseract OCR and OpenCV solution for reading and interpreting water meter digits,
+please read on.
+
+
+Installing Tesseract OCR to read the digits:
+
+.. code-block:: bash
+
+      sudo apt install tesseract-ocr
+
+If you are on Windows, visit the Tesseract GitHub repository, or Download a precompiled Windows binary from UB Mannheim.
+
+2. Install 
+
+   .. code-block:: bash
+
+      pip install juham-watermeter
+
+
+2. Configure
+
+To adjust update interval and other attributes edit `WaterMeter.json` configuration file.
+
+
+### Note about OpenCV and contributors
+
+The Python coverage failed with the No source for code: 'juham_watermeter\config-3.py'
+error, when all the other Python projects with precisely identical structures worked fine.
+Traced down the bug to opencv package, and added a .coveragerc file with the following content:
+
+  .. code-block:: bash
+
+    [run]
+    omit = 
+      config.py
+      config-3.py
+
+as a solution. This will of course blow up sooner or later, when some OpenCV developer decides
+to rename those files.
+
