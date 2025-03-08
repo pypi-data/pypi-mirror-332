@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: STmulator
+Version: 0.1.2
+Summary: 3D Spatial Transcriptomics Simulator, with realistic varaince modeling and statiscial fitting. Here is a early preview version.
+Author-email: Yiru CHEN <yiru.22@intl.zju.edu.cn>
+License: MIT
+Project-URL: Homepage, https://github.com/maiziezhoulab/SimulaTor
+Project-URL: Repository, https://github.com/maiziezhoulab/SimulaTor
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: alphashape>=1.3.1
+Requires-Dist: anndata>=0.11.3
+Requires-Dist: geomloss>=0.2.6
+Requires-Dist: joblib>=1.1.0
+Requires-Dist: matplotlib>=3.7.3
+Requires-Dist: numba>=0.60.0
+Requires-Dist: numpy>=1.23.1
+Requires-Dist: pandas>=1.5.3
+Requires-Dist: paste2>=1.0.1
+Requires-Dist: scanpy>=1.11.0
+Requires-Dist: scikit-learn>=1.2.1
+Requires-Dist: scipy>=1.7.3
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: Shapely>=2.0.7
+Requires-Dist: torch>=1.12.1
+Requires-Dist: tqdm>=4.64.0
+
+# ST simulator
+This project is under construction. STmulator focuses on Simulation and interpolation of spatial transcriptomics for clustering, alignment, and 3D reconstruction. 
