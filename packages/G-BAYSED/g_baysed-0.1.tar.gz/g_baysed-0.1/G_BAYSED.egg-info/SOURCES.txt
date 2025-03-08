@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+G_BAYSED.egg-info/PKG-INFO
+G_BAYSED.egg-info/SOURCES.txt
+G_BAYSED.egg-info/dependency_links.txt
+G_BAYSED.egg-info/requires.txt
+G_BAYSED.egg-info/top_level.txt
