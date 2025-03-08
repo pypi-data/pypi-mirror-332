@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: ergo-lib-python
+Version: 0.28.0a1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Python bindings to sigma-rust
+Author: Kamal Ahmad <kamalahmad22@pm.me>
+Author-email: Kamal Ahmad <kamalahmad22@pm.me>
+License: CC0-1.0
+Requires-Python: >=3.8
+Project-URL: Source Code, https://github.com/ergoplatform/sigma-rust
