@@ -1,0 +1,9 @@
+texture2ddecoder/__init__.py,sha256=aX562NzWr7eSoXTvgWsPYk13EZGF40cMwqK2Hts2Qfk,1038
+texture2ddecoder/_texture2ddecoder.pyd,sha256=_5s8ijWwX-pMUMb6FNc5uxTuaG-Hcy7QQJjpVXDbRFA,118784
+texture2ddecoder/_texture2ddecoder.pyi,sha256=SeI1gEsfSPstiqgrkd8M1sKJcxM7dNhV87RGspI1nJc,1490
+texture2ddecoder/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+texture2ddecoder-1.0.5.dist-info/LICENSE,sha256=rCG0D_ovp7iegipUOc-jcqawGPJGtCugjpPrcwz_r9I,1083
+texture2ddecoder-1.0.5.dist-info/METADATA,sha256=SrKelE527wyJ_001S2LD7l6nJf4uFdLpAmh8Zwrfxx0,8774
+texture2ddecoder-1.0.5.dist-info/WHEEL,sha256=nh9TM2GsHHbJbtELCrXfnWEl3Ed6m0auR4uC_KAFl2s,99
+texture2ddecoder-1.0.5.dist-info/top_level.txt,sha256=pzf3VJTeqRp4kilxzf9niTKwCqWE-veR0YWrf7S2SS4,17
+texture2ddecoder-1.0.5.dist-info/RECORD,,
