@@ -1,0 +1,14 @@
+fastdigest-0.8.2.dist-info/METADATA,sha256=d0k981fCxFDvTOSyusXzEZZKozAub_1vryAjEJEtaTk,7079
+fastdigest-0.8.2.dist-info/WHEEL,sha256=pMqzKLccC5HeEo6ZWHmt3kpxwdaUGzh7-xYAtt1oRX0,119
+fastdigest-0.8.2.dist-info/licenses/LICENSE,sha256=MjNL2XYi0ENnHTIMw8iiXRyu6QfNTJBUH7wwOgT046M,1056
+fastdigest.pyi,sha256=5xCTaJfZhHHIsRQpQUPuI51WhEcwzJ7f_zQwRw7BQVo,10351
+benchmark.py,sha256=P25dWd1Vvm59JKzRq46VGGGk2vw-QWaHIe_3VJdfAYg,3549
+LICENSE,sha256=MjNL2XYi0ENnHTIMw8iiXRyu6QfNTJBUH7wwOgT046M,1056
+THIRD-PARTY-NOTICES,sha256=d5fNm2uqlzWbie2a1BN__hg5IeF0SbsP4p2e-p21W8Q,24059
+README.md,sha256=In9G0VSFkpj5TcWT2Z6IFTcgbCg-N-pNkVav5wMZths,6030
+API.md,sha256=L3KpNxsj1SmlLMUZsvnkqH9ZSbOCu1cmdXedYxjQq3U,10309
+fastdigest/__init__.py,sha256=GY8wbP7C2L3dlmnYD1Vh5Nv4C7kCUqeoZSZU7iBPqqw,123
+fastdigest/__init__.pyi,sha256=5xCTaJfZhHHIsRQpQUPuI51WhEcwzJ7f_zQwRw7BQVo,10351
+fastdigest/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastdigest/fastdigest.cpython-39-i386-linux-gnu.so,sha256=tSVC6XrL3XI47HShGsh5fDV5H8eZwVA1tr5VPpRoc7k,730512
+fastdigest-0.8.2.dist-info/RECORD,,
