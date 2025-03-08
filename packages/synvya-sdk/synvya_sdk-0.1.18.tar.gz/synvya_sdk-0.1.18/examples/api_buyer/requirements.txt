@@ -1,0 +1,7 @@
+agentstr[examples]
+psycopg[binary]
+sqlalchemy
+nest-asyncio
+pgvector
+fastapi
+uvicorn
