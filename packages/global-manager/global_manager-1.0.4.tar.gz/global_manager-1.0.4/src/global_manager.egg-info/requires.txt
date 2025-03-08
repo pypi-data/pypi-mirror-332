@@ -1,0 +1,10 @@
+
+[dev]
+pip-tools
+pytest
+coverage
+build
+reverse-patch
+
+[dev:python_version < "3.11"]
+tomli
