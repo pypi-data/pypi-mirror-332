@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: colmena-zeromq-pyre
+Version: 0.3.5
+Summary: Python ZRE implementation
+Home-page: http://www.github.com/philrhc/pyre/
+Author: Philip Cummins
+Author-email: philip.cummins@bsc.es
+Requires: pyzmq
+Requires: ipaddress
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: pyzmq
+Requires-Dist: ipaddress
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires
+Dynamic: requires-dist
+Dynamic: summary
