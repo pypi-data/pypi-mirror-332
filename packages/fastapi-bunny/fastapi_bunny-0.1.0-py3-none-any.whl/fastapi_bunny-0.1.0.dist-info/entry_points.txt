@@ -1,0 +1,3 @@
+[console_scripts]
+fastapi_bunny = fastapi_bunny.generate:create_boilerplate
+
