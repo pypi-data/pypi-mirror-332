@@ -1,0 +1,9 @@
+jimaku_dl/__init__.py,sha256=8rTx2JuWJe6cPbmnNiqsdv8LVAjM3l4gf8mg6QAiQUU,306
+jimaku_dl/cli.py,sha256=R6Aa9twO5rXKoMXT7haRjziLcCRVov8U2kWJf8UUAgI,1878
+jimaku_dl/downloader.py,sha256=7ocnXvX9sR09Re5igkoa7fivxvMTn0lg1F5xrI8yhuc,25093
+jimaku_dl-0.1.1.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+jimaku_dl-0.1.1.dist-info/METADATA,sha256=xcpQe76l7TQRH0Cryv4E3NwCiOq-7loAtLFD-zzWsh8,2782
+jimaku_dl-0.1.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+jimaku_dl-0.1.1.dist-info/entry_points.txt,sha256=CHgFNNMPotdvzTvCu3SGn4P_-Jdeas2G7oAlXk55dv4,49
+jimaku_dl-0.1.1.dist-info/top_level.txt,sha256=YcAY17XtDWLhHNl08x0XfUrt_0UxfimrzB26MIJ_8aY,10
+jimaku_dl-0.1.1.dist-info/RECORD,,
