@@ -1,0 +1,8 @@
+ffmpeg_setpath/__init__.py,sha256=Bqg4zygRD-M1XglPXBJbNu0FV6g4Q5F-riRlCkek_qE,880
+ffmpeg_setpath/examples.py,sha256=qMU7IKVA4AO-KT6eE7AeTdJLl9nnwD8YegMo1gln-5g,492
+ffmpeg_setpath/ffmpeg_setpath.py,sha256=OmiWKtH45GV2DgUrLYeVzrOMeMvwyyd92Go07lCFOuo,13551
+ffmpeg_setpath-1.0.0.dist-info/LICENSE,sha256=BbiDYXR0i07Jlg5-99juWgul1WVivPFUvznfFJ1x-Ng,1121
+ffmpeg_setpath-1.0.0.dist-info/METADATA,sha256=EVg2gnX3a3P5WxLKwzAXdmI3IY87ZItPhtYOSmu5GWI,5794
+ffmpeg_setpath-1.0.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+ffmpeg_setpath-1.0.0.dist-info/top_level.txt,sha256=wwlJEzpUxcf0ujHzleASKw1ocODiOAMmNSokv4AUrmY,15
+ffmpeg_setpath-1.0.0.dist-info/RECORD,,
