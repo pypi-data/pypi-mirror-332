@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: autoslug
+Version: 1.0.0
+Summary: automatically rename files and directories to be URL-friendly
+Project-URL: repository, https://github.com/tuftsrt/autoslug
+Author-email: Uku-Kaspar Uustalu <uku-kaspar.uustalu@tufts.edu>
+Maintainer-email: Uku-Kaspar Uustalu <uku-kaspar.uustalu@tufts.edu>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: slug,slugify,url,urlify
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Utilities
+Requires-Python: <4,>=3.8
+Requires-Dist: fs<3,>=2.4.16
+Requires-Dist: inflection<1,>=0.5.1
+Requires-Dist: unicode-slugify<1,>=0.1.5
