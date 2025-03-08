@@ -1,0 +1,2 @@
+[console_scripts]
+ontol = dpd.main:main
