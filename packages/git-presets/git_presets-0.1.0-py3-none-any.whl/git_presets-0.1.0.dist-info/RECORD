@@ -1,0 +1,17 @@
+git_presets/__init__.py,sha256=cH8p8bVveu3FUL6kBhldcSlLaoHgD82Kd0-SwSNfGXw,87
+git_presets/attr.py,sha256=Dgawcy-1Vyw6Bc54l2xcNYfD1owQhUxwzNyHtvMZIsw,111
+git_presets/config.py,sha256=37HYGK1Wviv6WkYepEo1KPx6oOQaQVU5HdyL2VbbmKQ,3447
+git_presets/context.py,sha256=qsiliS1Y6e7XAD5tjJ4HOuF6Ef8rjCVXg-7BU_VRYw0,193
+git_presets/exceptions.py,sha256=g9DLcgaODvih3xhMJ-0PKXIZIvdxsbZ_6uyZCqdQUiY,301
+git_presets/main.py,sha256=KZtUmg4RnL2pabMqi5gtsobl6bShhkz9xiVfzn8dc6E,1723
+git_presets/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_presets/cli/remove.py,sha256=1eJ64pr6dXq5rUP0TEo2IRCbjhr12CLKDF-ZB-9QFVA,624
+git_presets/cli/set.py,sha256=9TkAHv2BxuOTlmzYz8Jq6yWBtOtpvsGk2cahYLTh0L0,844
+git_presets/cli/show.py,sha256=_25Ianh2JhV2ohefE3cwyL4qSn0nwg6d0uV_JQRb6-8,1213
+git_presets/cli/unset.py,sha256=BJ9cBunz-5mxSd0fk4dpP-Sv9kCrLB1R6lnZi8ukpEM,782
+git_presets/cli/use.py,sha256=aIB9qH8jhMvsCIZ3-plaI2SEVTMlnGmZfoxljmJJgOg,1413
+git_presets-0.1.0.dist-info/METADATA,sha256=4vfDXzRWph1zdTDFc6hadzcwCjLOZP0sJkYVpG86j7M,1654
+git_presets-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+git_presets-0.1.0.dist-info/entry_points.txt,sha256=tsKFTdMEDnOajPz9jf2MmB9qYUjCzgr0shNzERUAEf4,53
+git_presets-0.1.0.dist-info/licenses/LICENSE,sha256=MvOwge9Uf3LMblH1Sx8bGYjrdVQH1fIfYJymH_9KFbQ,1063
+git_presets-0.1.0.dist-info/RECORD,,
