@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+easy_image_processor/__init__.py
+easy_image_processor/core.py
+easy_image_processor.egg-info/PKG-INFO
+easy_image_processor.egg-info/SOURCES.txt
+easy_image_processor.egg-info/dependency_links.txt
+easy_image_processor.egg-info/requires.txt
+easy_image_processor.egg-info/top_level.txt
+tests/test_easy_image_processor.py

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easy_image_processor"
+version = "0.1.0"
+description = "A package designed to convert images to grayscale and resize them easily"
+authors = [{name = "Victor Monterisi"}]
+dependencies = ["Pillow"]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "mypy"]
+
+[tool.black]
+line-length = 88
+
+[tool.setuptools]
+packages = ["easy_image_processor"]
