@@ -1,0 +1,8 @@
+strip_ast_comments.py,sha256=NKkiTXm8gnBHgx-LK7bpSzIxfeYWuLvEJ97Sjriezp4,11263
+strip_python3.py,sha256=2h5Ml96jh0hXsksBofVQ_TFJVvetKinjsnpBxTWNmUU,58933
+strip_python3-0.8.1095.dist-info/LICENSE,sha256=SSuVkfC9aWjCzzvCpLsWH6d_flNaw72LO_4LQkPuV1I,1073
+strip_python3-0.8.1095.dist-info/METADATA,sha256=3vmVdoYgb_B7WiftM17i6YEYpvxjxE-Kac_lszNNidk,9349
+strip_python3-0.8.1095.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+strip_python3-0.8.1095.dist-info/entry_points.txt,sha256=EFUlnKj1R0z-_ubarLxkS_Qoyo3ayJdZqGo6agXWAOU,53
+strip_python3-0.8.1095.dist-info/top_level.txt,sha256=axljt6E1rYOyrNUxDO4LC8CVNZ4X4zhrAxE253vPVLU,33
+strip_python3-0.8.1095.dist-info/RECORD,,
