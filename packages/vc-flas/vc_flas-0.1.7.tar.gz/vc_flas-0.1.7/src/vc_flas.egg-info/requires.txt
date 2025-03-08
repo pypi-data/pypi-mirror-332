@@ -1,0 +1,5 @@
+numpy<3.0,>=1.21
+psutil
+
+[test]
+pytest>=7.4
