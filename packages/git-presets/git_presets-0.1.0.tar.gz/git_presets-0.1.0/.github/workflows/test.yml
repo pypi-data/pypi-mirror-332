@@ -1,0 +1,34 @@
+name: Test
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - src/**
+      - tests/**
+      - .github/workflows/test.yml
+
+jobs:
+  test:
+    name: test with ${{ matrix.env }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        env:
+          - "3.13"
+          - "3.12"
+          - "3.11"
+          - "3.10"
+          - "3.9"
+        os:
+          - ubuntu-latest
+          - macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - name: Install tox
+        run: uv tool install --python-preference only-managed --python ${{ matrix.env }} tox --with tox-uv --with tox-gh
+      - name: Run test
+        run: tox run
+        env:
+          TOX_GH_MAJOR_MINOR: ${{ matrix.env }}

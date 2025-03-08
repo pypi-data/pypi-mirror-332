@@ -1,0 +1,13 @@
+env_list = ["3.13", "3.12", "3.11", "3.10", "3.9"]
+
+[env_run_base]
+  description = "run unit tests"
+  deps = ["pytest", "pytest-mock"]
+  commands = [["pytest"]]
+
+[gh.python]
+  "3.13" = ["3.13"]
+  "3.12" = ["3.12"]
+  "3.11" = ["3.11"]
+  "3.10" = ["3.10"]
+  "3.9" = ["3.9"]

@@ -1,0 +1,17 @@
+colors: false
+no_tty: true
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: ruff
+      glob: "*.py"
+      group:
+        piped: true
+        jobs:
+          - name: lint
+            run: uv run ruff check --fix {staged_files}
+            stage_fixed: true
+          - name: format
+            run: uv run ruff format {staged_files}
+            stage_fixed: true

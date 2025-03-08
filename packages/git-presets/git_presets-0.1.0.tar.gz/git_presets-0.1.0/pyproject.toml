@@ -1,0 +1,42 @@
+[project]
+  name = "git-presets"
+  description = "The CLI tool to use multiple git config presets easily."
+  readme = "README.md"
+  requires-python = ">=3.9"
+  dependencies = ["pydantic>=2.10.6", "typer>=0.15.2"]
+  classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+  ]
+  dynamic = ["version"]
+  license = "MIT"
+
+  [project.scripts]
+    git-presets = "git_presets.main:app"
+
+  [project.urls]
+    Homepage = "https://github.com/a4rcvv/git-presets"
+    Documentation = "https://github.com/a4rcvv/git-presets"
+    Repository = "https://github.com/a4rcvv/git-presets.git"
+    Issues = "https://github.com/a4rcvv/git-presets/issues"
+
+[build-system]
+  requires = ["hatchling", "hatch-vcs"]
+  build-backend = "hatchling.build"
+
+[dependency-groups]
+  dev = [
+    "pytest>=8.3.5",
+    "pytest-mock>=3.14.0",
+    "ruff>=0.9.9",
+    "tox>=4.24.1",
+    "tox-uv>=1.25.0",
+  ]
+
+[tool.hatch.version]
+  source = "vcs"
