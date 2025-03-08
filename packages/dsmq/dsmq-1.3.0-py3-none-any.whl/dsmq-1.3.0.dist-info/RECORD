@@ -1,0 +1,15 @@
+dsmq/.server.py.swp,sha256=RLjzmw9FyOQY73HurM9PEjp4meAgVEZIN8M92OqgBzw,28672
+dsmq/__init__.py,sha256=YCgbnQAk8YbtHRyMcU0v2O7RdRhPhlT-vS_q40a7Q6g,50
+dsmq/client.py,sha256=_JJlDFTw1-VsRNsm-grYvexrWkkh50n62Q6-aGWum5Q,2547
+dsmq/demo.py,sha256=K53cC5kN7K4kNJlPq7c5OTIMHRCKTo9hYX2aIos57rU,542
+dsmq/example_get_client.py,sha256=PvAsDGEAH1kVBifLVg2rx8ZxnAZmvzVCvZq13VgpLds,301
+dsmq/example_put_client.py,sha256=QxDc3i7KAjjhpwxRRpI0Ke5KTNSPuBf9kkcGyTvUEaw,353
+dsmq/server.py,sha256=Ej6iQ1aw4LVHyHvdeZxxwSZS3VBIQP0qsFstuo0hwnY,8487
+dsmq/tests/.performance_suite.py.swp,sha256=D3B86JpgBIYDE0at6nG2Uw9WWASFxp12mB9zlNXYPbA,24576
+dsmq/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsmq/tests/integration_test.py,sha256=dLsQGCmpXv4zRb93TriccH7TbUyD9MHcLckAQqfDOK4,5980
+dsmq/tests/performance_suite.py,sha256=E59zB2ZvM8V5f8RxaB7p-Kehqyhrgsl0sXuy7g74BaI,5218
+dsmq-1.3.0.dist-info/METADATA,sha256=bZRJ0Oz5Vnavl4AU9bO2f7TuktSpUOJQ9hyx7Yusne4,4859
+dsmq-1.3.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dsmq-1.3.0.dist-info/licenses/LICENSE,sha256=3Yu1mAp5VsKmnDtzkiOY7BdmrLeNwwZ3t6iWaLnlL0Y,1071
+dsmq-1.3.0.dist-info/RECORD,,
