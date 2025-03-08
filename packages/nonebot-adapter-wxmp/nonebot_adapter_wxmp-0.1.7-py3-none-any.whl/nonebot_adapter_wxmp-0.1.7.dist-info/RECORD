@@ -1,0 +1,17 @@
+nonebot/adapters/wxmp/__init__.py,sha256=PItK4x3f564VeRs_erMG0ZZmFWjRZtIHdmsZd7In4Xg,228
+nonebot/adapters/wxmp/adapter.py,sha256=ff96e-cx-SSgkNOE0KyEe5zmjROQdQVpR1_7kBwR-vE,10124
+nonebot/adapters/wxmp/bot.py,sha256=hc62i5FOCW-SV5BJfgos7xazzfMQzIE7nfgswWRM5w0,16436
+nonebot/adapters/wxmp/bot.pyi,sha256=CUO1POCbzIpKMb8uDy-Oa64zm9Gj_ttZgrNp6ZMVQpE,1729
+nonebot/adapters/wxmp/config.py,sha256=l1__mhuXw-cuVNm7iy7yFIihDySC7iV5mTiknZnMYV8,715
+nonebot/adapters/wxmp/event.py,sha256=XV3U_0sJoXxwLg4tP8k69UX2DgcAp7H1iHMzBY-NK1Q,9316
+nonebot/adapters/wxmp/exception.py,sha256=mKun894f2yK4Jr-aM-aIr_CD9Mrt35QipzqqMX6rWI0,2565
+nonebot/adapters/wxmp/file.py,sha256=4HR_IYXgCJFwzjgZSgywOugbNyzzBXwvjadytqEpQN0,1873
+nonebot/adapters/wxmp/message.py,sha256=kQR7oDH2wdsuunwxesQnH6suUo--nkmWXUTPw5bh5hg,14724
+nonebot/adapters/wxmp/secret.py,sha256=x-ZR_e5vIMh2SipxxHgT9s8v4PbR0o4E6DI-mUcgS0Q,2112
+nonebot/adapters/wxmp/store.py,sha256=2TtsFsub3mSSvdJsHK38uqyIlbbXIafUSfx5XwLJmCg,1159
+nonebot/adapters/wxmp/utils.py,sha256=ZoRWR09RF1GRYW16ESHzWzoOZcF0eDhCoel7Xex8lwE,285
+nonebot_adapter_wxmp-0.1.7.dist-info/LICENSE,sha256=KXnzaRRWb9r8W0IP1PmP8L3C_AFIPcc61gu850ZHz2I,1064
+nonebot_adapter_wxmp-0.1.7.dist-info/METADATA,sha256=raiPrlAEPBr1mWF6e2xB58gMTp2mvSaBR6ASEJ07RLM,6124
+nonebot_adapter_wxmp-0.1.7.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+nonebot_adapter_wxmp-0.1.7.dist-info/top_level.txt,sha256=UbTJda3tqCl6lnlSQGIWohDsoFmeaM0N2eRJSkbK5nY,8
+nonebot_adapter_wxmp-0.1.7.dist-info/RECORD,,
