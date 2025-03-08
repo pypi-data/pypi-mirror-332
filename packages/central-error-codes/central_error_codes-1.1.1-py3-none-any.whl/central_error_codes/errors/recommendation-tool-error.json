@@ -1,0 +1,7 @@
+{
+     "SampleError": {
+      "errorCode": "SampleError",
+      "statusCode": 500,
+      "errorMessage": "Error while SampleError"
+    }
+}
