@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+description.txt
+long_description.md
+requirements.txt
+setup.py
+osn_requests/__init__.py
+osn_requests/proxies.py
+osn_requests.egg-info/PKG-INFO
+osn_requests.egg-info/SOURCES.txt
+osn_requests.egg-info/dependency_links.txt
+osn_requests.egg-info/requires.txt
+osn_requests.egg-info/top_level.txt
+osn_requests/user_agents/__init__.py
+osn_requests/user_agents/data.py
+osn_requests/user_agents/data_types.py
