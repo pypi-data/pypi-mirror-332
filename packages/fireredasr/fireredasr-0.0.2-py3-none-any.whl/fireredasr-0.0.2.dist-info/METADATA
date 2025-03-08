@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: fireredasr
+Version: 0.0.2
+Summary: FireRed ASR
+Home-page: https://github.com/pengzhendong/fireredasr
+Author: Zhendong Peng
+Author-email: pzd17@tsinghua.org.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cn2an>=0.5.23
+Requires-Dist: kaldiio>=2.18.0
+Requires-Dist: kaldi_native_fbank>=1.15
+Requires-Dist: modelscope
+Requires-Dist: numpy>=1.26.1
+Requires-Dist: peft>=0.13.2
+Requires-Dist: sentencepiece
+Requires-Dist: torch>=2.0.0
+Requires-Dist: transformers>=4.46.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# fireredasr
