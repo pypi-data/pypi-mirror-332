@@ -1,0 +1,17 @@
+sippy_unipi/OLSims_methods.py,sha256=pr93LvHfhEiTqsKA0iv1FaGi937BXjJbDr_rh6J1eng,8192
+sippy_unipi/Parsim_methods.py,sha256=4jOhNTNgtgb3gcUfY5odWocTi3T01T247JRJQc7CDLg,11793
+sippy_unipi/__init__.py,sha256=VOmLuXSjRn4RlvK6n5w1PgpYM6agOs3aNf5StXm1z2E,18290
+sippy_unipi/armax.py,sha256=t_DV8yRp8Z-QK4coKHNb9K7oEVTvifnXfpOucaaahOc,12029
+sippy_unipi/arx.py,sha256=YL7yrIKjhQAMNbc-ZSvBhpA8FVIIW3JVVssJPd7-_vk,5872
+sippy_unipi/functionset.py,sha256=iaS6eN4DPexmLZd3hwPIpDY7D6-Jhn1W9JzXzFWxS-8,7042
+sippy_unipi/functionsetSIM.py,sha256=3B-ykACOWLcDTLEoQczQ4-fynbV6-qZJsyU40bjndfo,4580
+sippy_unipi/functionset_OPT.py,sha256=g6WkrU4ZRH3qM4MNlfwkBt4Y9_P0ap5RsBS8aZ-atok,7265
+sippy_unipi/io_opt.py,sha256=mYttG5cp1VVCBbTsI_ClMVwqazMQhmk8llWPcgzV1RU,3482
+sippy_unipi/io_rls.py,sha256=eeD265_e3ibXWHlApYnhyrvVc119C3M_nELa1Wa5rlo,5724
+sippy_unipi/model.py,sha256=XLwx0wC83nTSqUx9bhRLIM7lWV21CKZs8i-sJxyvNwc,15261
+sippy_unipi/typing.py,sha256=IMsYqkxO9Sppid2vYDdtg0QrxC-HqK6_f6vERAKaJ1c,1574
+sippy_unipi/utils.py,sha256=wVHqpGicSYNZoaDYEsnw1Gif6dbbY5o-irAeFMUeljY,7199
+sippy_unipi-1.0.2.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+sippy_unipi-1.0.2.dist-info/METADATA,sha256=4OsVPuSkmDoetULXHolS9xisDoS3WoSjIOifEL_zpR4,4820
+sippy_unipi-1.0.2.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+sippy_unipi-1.0.2.dist-info/RECORD,,
