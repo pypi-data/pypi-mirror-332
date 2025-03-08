@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "RoBits"
+version = "0.0.1"
+description = ""
+authors = ["Markus Grotz <grotz@uw.edu>"]
+packages = [{include = "robits"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+numpy = ">=1.24.4"
+rich-click = "^1"
+click-prompt = ">=0.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.8"]
+build-backend = "poetry.core.masonry.api"

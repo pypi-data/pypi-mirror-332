@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: RoBits
+Version: 0.0.1
+Summary: 
+Author: Markus Grotz
+Author-email: grotz@uw.edu
+Requires-Python: >=3.8.1,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click-prompt (>=0.6.0)
+Requires-Dist: numpy (>=1.24.4)
+Requires-Dist: rich-click (>=1,<2)
