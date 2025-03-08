@@ -1,0 +1,9 @@
+README.md
+setup.py
+neuroslides/__init__.py
+neuroslides/neuro.py
+neuroslides.egg-info/PKG-INFO
+neuroslides.egg-info/SOURCES.txt
+neuroslides.egg-info/dependency_links.txt
+neuroslides.egg-info/requires.txt
+neuroslides.egg-info/top_level.txt
