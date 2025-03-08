@@ -1,0 +1,4 @@
+PySocks
+legacy-cgi
+netaddr
+pyopenssl
