@@ -1,0 +1,12 @@
+attrs
+cffconvert
+httpx
+packaging
+pygithub
+ruamel.yaml
+tomli
+
+[testing]
+pytest-cov
+pytest-xdist
+pytest
