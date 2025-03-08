@@ -1,0 +1,5 @@
+numpy
+numba
+nltk
+h5py
+tqdm
