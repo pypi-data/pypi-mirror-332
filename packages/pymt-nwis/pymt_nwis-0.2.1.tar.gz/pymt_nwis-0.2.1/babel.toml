@@ -1,0 +1,30 @@
+[library]
+[library.Nwis]
+language = "python"
+library = "bmi_nwis"
+header = ""
+entry_point = "BmiNwis"
+
+[build]
+undef_macros = []
+define_macros = []
+libraries = []
+library_dirs = []
+include_dirs = []
+extra_compile_args = []
+
+[package]
+name = "pymt_nwis"
+requirements = [""]
+
+[info]
+github_username = "gantian127"
+package_author = "Tian Gan"
+package_author_email = "gantian127@gmail.com"
+package_license = "MIT"
+summary = "PyMT plugin for National Water Information System datasets"
+
+[ci]
+python_version = ["3.8"]
+os = ["linux", "mac", "windows"]
+
