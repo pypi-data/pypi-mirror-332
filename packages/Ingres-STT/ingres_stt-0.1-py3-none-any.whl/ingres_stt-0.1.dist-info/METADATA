@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: Ingres-STT
+Version: 0.1
+Summary: this is speech to text package created by yousuf kasmani
+Author: yousuf kasmani
+Author-email: yousuf.kasmani007@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
