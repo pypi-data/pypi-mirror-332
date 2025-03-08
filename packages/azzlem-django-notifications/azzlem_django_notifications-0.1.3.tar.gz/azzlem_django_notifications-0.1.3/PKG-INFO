@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: azzlem-django-notifications
+Version: 0.1.3
+Summary: Notifications for django
+License: MIT
+Author: azzlem
+Author-email: azzlem.sid@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: setuptools (>=75.8.2,<76.0.0)
+Description-Content-Type: text/markdown
+
+
