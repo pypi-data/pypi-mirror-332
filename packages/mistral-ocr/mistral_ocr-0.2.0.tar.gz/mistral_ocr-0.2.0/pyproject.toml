@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mistral-ocr"
+version = "0.2.0"
+authors = [
+    {name = "Elliot Arledge", email = "your.email@example.com"},
+]
+description = "A tool for OCR using Mistral"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/mistral-ocr"
+"Bug Tracker" = "https://github.com/yourusername/mistral-ocr/issues"
+
+[project.scripts]
+mistral-ocr = "mistral_ocr.cli:main" 
