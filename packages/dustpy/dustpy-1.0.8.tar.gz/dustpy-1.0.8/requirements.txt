@@ -1,0 +1,6 @@
+ipympl
+matplotlib
+numpy
+requests
+simframe
+.
