@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/dumb_maybe.egg-info/PKG-INFO
+src/dumb_maybe.egg-info/SOURCES.txt
+src/dumb_maybe.egg-info/dependency_links.txt
+src/dumb_maybe.egg-info/top_level.txt
+src/dumb_maybe_the_madman/__init__.py
