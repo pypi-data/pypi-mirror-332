@@ -1,0 +1,13 @@
+gtk_llm_chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gtk_llm_chat/db_operations.py,sha256=kcH6NCBdpnFSjBXRUkbJ7fOU2sDcOjfhimUSvezQxn8,2963
+gtk_llm_chat/gtk_llm_applet.py,sha256=o7_MCgkcWy0PZ4X__dMdZITsGbe6Ynkebu0JEsOYtIY,2662
+gtk_llm_chat/llm_process.py,sha256=qIWX9Nf0rSxFhkknm3t82qLZY3fyTQns-WRIhezAZ0I,7149
+gtk_llm_chat/main.py,sha256=POx1zhtmof_GOSjMIjHVzFLnKaWW0i6fs1z3CdD3c_c,21314
+gtk_llm_chat/markdownview.py,sha256=0g_Itu-YMw731Gh3UIwGrjrmCKVegcHnevYCFtXq78Q,12750
+gtk_llm_chat/hicolor/scalable/apps/org.fuentelibre.gtk_llm_Chat.svg,sha256=KyfmtJBi_XLZb9aP-DAKDdKLf4i9paJiFysrBT5vltI,5044
+gtk_llm_chat-1.1.1.dist-info/LICENSE,sha256=iOxolAfPLfmy61xFlSVk1RznPBKaO9_7FcDS0WGtdVg,8173
+gtk_llm_chat-1.1.1.dist-info/METADATA,sha256=35Ail7UPT-FSh0vnIauJWtfvp3C1qPph7LCe9zGPVcg,11992
+gtk_llm_chat-1.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gtk_llm_chat-1.1.1.dist-info/entry_points.txt,sha256=i_nRsHujyHGjNoT0ZZhKn23ujVkwD6gXZLajvboWxro,106
+gtk_llm_chat-1.1.1.dist-info/top_level.txt,sha256=vx-RD4_KAdpMYaOPqqlOLDdA3aHRJF73ZifXaSLq0Xc,13
+gtk_llm_chat-1.1.1.dist-info/RECORD,,
