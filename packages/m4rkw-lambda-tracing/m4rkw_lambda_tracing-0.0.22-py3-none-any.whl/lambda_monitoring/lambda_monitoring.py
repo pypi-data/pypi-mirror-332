@@ -1,0 +1,76 @@
+import os
+import sys
+import boto3
+import time
+import uuid
+import datetime
+import traceback
+from pushover import Client
+
+class LambdaMonitor:
+
+    def __init__(self, context, suffix=None):
+        self.start = time.time()
+
+        self.dbd = boto3.client('dynamodb')
+        self.function_name = context.function_name
+
+        if suffix is not None:
+            self.function_name = f"{self.function_name}_{suffix}"
+
+        self.state = self.get_state()
+        self.pushover = pushover = Client(os.environ['LAMBDA_TRACING_PUSHOVER_USER'], api_token=os.environ['LAMBDA_TRACING_PUSHOVER_APP'])
+
+
+    def get_state(self):
+        resp = self.dbd.get_item(
+            TableName="lambda_state",
+            Key={'key': {'S': self.function_name}}
+        )
+
+        if 'Item' in resp:
+            return resp['Item']
+
+        return {
+            'key': {'S': self.function_name}
+        }
+
+
+    def success(self):
+        runtime = time.time() - self.start
+
+        if 'success' in self.state and self.state['success']['BOOL'] == False:
+            self.pushover.send_message('resolved', title=self.function_name)
+
+        self.state['success'] = {'BOOL': True}
+        self.state['last_success'] = {'N': str(int(time.time()))}
+
+        self.dbd.put_item(
+            TableName="lambda_state",
+            Item=self.state
+        )
+
+
+    def failure(self):
+        runtime = time.time() - self.start
+
+        if 'success' not in self.state or self.state['success']['BOOL'] == True:
+            exception = traceback.format_exc()
+
+            self.dbd.put_item(
+                TableName="lambda_tracing",
+                Item={
+                    'key': {'S': self.state['key']['S']},
+                    'timestamp': {'N': str(int(time.time()))},
+                    'exception': {'S': exception}
+                }
+            )
+
+            self.pushover.send_message(exception, title=self.function_name)
+
+            self.state['success'] = {'BOOL': False}
+
+            resp = self.dbd.put_item(
+                TableName="lambda_state",
+                Item=self.state
+            )
