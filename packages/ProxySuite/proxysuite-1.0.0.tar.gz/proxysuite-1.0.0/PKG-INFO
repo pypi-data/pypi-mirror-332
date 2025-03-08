@@ -1,0 +1,43 @@
+Metadata-Version: 2.2
+Name: ProxySuite
+Version: 1.0.0
+Summary: A powerful tool to scrape, check, and manage proxies.
+Home-page: https://github.com/NotAdl22/ProxySuite
+Author: chef_lilou
+Author-email: georgang123@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: colorama
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## Features
+
+scrape all & check â†’ Scrapes all proxy types and automatically checks them
+scrape all â†’ Scrapes all available proxy types (HTTP, SOCKS4, SOCKS5)
+scrape <type> â†’ Scrapes a specific proxy type (scrape http or socks4 or socks5)
+check <type> â†’ Checks the validity and responsiveness of scraped proxies
+auto <type> â†’ Automates scraping and checking in one step
+
+---
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/NotAdl22/ProxySuite
+   cd ProxySuite
+   pip install -r requirements.txt
+   python main.py
+
