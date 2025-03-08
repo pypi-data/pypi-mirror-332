@@ -1,0 +1,6 @@
+mistralai==0.4.2
+anthropic
+semantic-text-splitter
+tokenizers
+openai
+print_color
