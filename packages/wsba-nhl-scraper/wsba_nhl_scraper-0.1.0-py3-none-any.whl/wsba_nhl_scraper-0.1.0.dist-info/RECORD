@@ -1,0 +1,8 @@
+wsba_nhl_scraper/__init__.py,sha256=eF8xqJM8fdZMRzGWMdDKx0YixUWmvyTRjixD3lZKo1Y,145
+wsba_nhl_scraper/data_scrape.py,sha256=ToInV4rJ7yB_fwWOwJ-xuyJaiDfe7eoEWaM5cUCR23c,24320
+wsba_nhl_scraper/wsba_nhl_scrape.py,sha256=t4AjYppoll6xKgXCjUTB4vUp30fTGL0ByJLOTAA_vR0,3202
+wsba_nhl_scraper-0.1.0.dist-info/LICENSE,sha256=t4nZ0rwA4n-OuDoR85lhnbs-VMxj3LvXZpUXnm-9pOc,1086
+wsba_nhl_scraper-0.1.0.dist-info/METADATA,sha256=e2thrXxaToONM5WizUkRnBG4EvomX8v346-Ju9ugWUs,615
+wsba_nhl_scraper-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+wsba_nhl_scraper-0.1.0.dist-info/top_level.txt,sha256=WlMdgv6QUwzUnxzZlyd74D_Hj0kdwOIMCR4phAMcEks,17
+wsba_nhl_scraper-0.1.0.dist-info/RECORD,,
