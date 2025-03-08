@@ -1,0 +1,2 @@
+[console_scripts]
+txt2mrs = txt2mrs.__main__:main
