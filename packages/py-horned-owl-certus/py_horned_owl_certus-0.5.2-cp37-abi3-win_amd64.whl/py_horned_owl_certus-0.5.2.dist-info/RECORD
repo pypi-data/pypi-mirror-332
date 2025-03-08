@@ -1,0 +1,11 @@
+py_horned_owl_certus-0.5.2.dist-info/METADATA,sha256=4kVP1WCn2yJHlcXLkmFCyTXoPsV4jipk9UqlIi7Cnq8,2105
+py_horned_owl_certus-0.5.2.dist-info/WHEEL,sha256=Z1HFrZPC9jRQIivfTAE-itjYBUf4Nxg3EsgOzhECnQU,94
+py_horned_owl_certus-0.5.2.dist-info/licenses/COPYING,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+py_horned_owl_certus-0.5.2.dist-info/licenses/COPYING.lesser,sha256=6n0EnHcF3BOvwgLdGOGCfzSE-CEv0_p7gvxKDDY0Msk,7816
+pyhornedowl/model/__init__.py,sha256=zhSyw8BchNfnO1_vkwOwNE_dIA5hDzlnHnAjHsuCpjY,6866
+pyhornedowl/model/__init__.pyi,sha256=_KsmPhkolvy2LucyevWT5jzW5ec-5V4IenT-w8LLAqU,16509
+pyhornedowl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyhornedowl/__init__.py,sha256=KjjScqiaz8y1spXbEsGehdytvS8HzP_ulp-DyUs8tqA,215
+pyhornedowl/__init__.pyi,sha256=uSpK5rIXiSDe1Bs5YBImwG8FWhVHxd9zyMYVRZcVxYY,4839
+pyhornedowl/pyhornedowl.pyd,sha256=748Hp5TNSW2IBxJ88M9__0GiEUMMkksLLeaYcSoAP2c,5937664
+py_horned_owl_certus-0.5.2.dist-info/RECORD,,
