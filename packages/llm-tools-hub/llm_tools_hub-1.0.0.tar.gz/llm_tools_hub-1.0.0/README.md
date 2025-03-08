@@ -1,0 +1,99 @@
+# LLM Tools Hub
+
+LLM Tools Hub allows developers to instantly integrate external tools and services into their LLM AI applications. This project excels at handling function calling by automatically generating JSON schemas from Python type annotations and seamlessly bridging LLMs with external APIs.
+
+## Features
+
+- **Decorator-based tool registration:** Simply decorate your functions to register them as tools.
+- **Automatic JSON schema generation:** Extracts function parameter types and descriptions from Python type hints and docstrings.
+- **Seamless integration with LLM function calling:** Leverage OpenAI's function calling API with minimal setup.
+- **Reusable conversation history:** Continue conversations across multiple interactions by providing your own message history.
+
+## Installation
+
+Install via pip (once published to PyPI):
+
+```bash
+pip install llm-tools-hub
+```
+
+Alternatively, clone the repository and install locally:
+
+```bash
+git clone https://github.com/yourusername/llm-tools-hub.git
+cd llm-tools-hub
+pip install .
+```
+
+## Usage Example
+
+Below is a simple example that demonstrates how to register two tools—a function to calculate the sum of two numbers and another to retrieve an exchange rate—then run an LLM conversation that uses these tools.
+
+```python
+from llm_tools_hub import ToolRegistry, run_llm_conversation, action
+from typing import Annotated
+
+@action(toolname="calculate_sum", requires=["math"])
+def calculate_sum(
+    a: Annotated[int, "First number"],
+    b: Annotated[int, "Second number"]
+) -> int:
+    """
+    Calculate the sum of two numbers.
+    """
+    return a + b
+
+@action(toolname="get_exchange_rate", requires=[])
+def get_exchange_rate(
+    base_currency: Annotated[str, "Base currency. e.g. USD"],
+    target_currency: Annotated[str, "Target currency. e.g. JPY"],
+    date: Annotated[str, "Date in YYYY-MM-DD format"] = "latest"
+) -> float:
+    """
+    Get the exchange rate between two currencies.
+    """
+    import requests
+    url = f"https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@{date}/v1/currencies/{base_currency.lower()}.json"
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        return data.get(base_currency.lower(), {}).get(target_currency.lower(), None)
+    else:
+        raise Exception(f"Error fetching exchange rate: {response.status_code}")
+
+# Create the registry (note: using 'tools' instead of 'registry')
+tools = ToolRegistry()
+tools.register_tool(calculate_sum)
+tools.register_tool(get_exchange_rate)
+
+# Define your conversation history
+messages = [
+    {"role": "user", "content": "How much is 1 USD in JPY? And what is 50 + 75?"}
+]
+
+# Run the conversation with the LLM
+run_llm_conversation(tools, messages, model="gpt-3.5-turbo-0613")
+```
+
+## Classes and Modules
+
+- **ToolRegistry**:  
+  Manages tool registration, automatically generates the JSON schema from function annotations and docstrings, and provides an interface to call the registered functions.
+
+- **@action decorator**:  
+  Registers a function as a tool. It extracts the function name, description, and parameter schema automatically—eliminating the need to manually write a JSON schema.
+
+- **run_llm_conversation**:  
+  Executes an LLM conversation using the OpenAI function calling API. It accepts a list of messages (allowing reuse of conversation history), injects registered functions into the API call, handles function calls from the LLM, and then produces a final response.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your changes with clear commit messages.
+4. Open a pull request describing your changes.
+
+## License
+
+This project is licensed under the MIT License.
