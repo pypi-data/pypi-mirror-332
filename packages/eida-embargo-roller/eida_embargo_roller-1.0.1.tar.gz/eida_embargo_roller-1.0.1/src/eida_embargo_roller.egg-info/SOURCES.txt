@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/eida_embargo_roller.egg-info/PKG-INFO
+src/eida_embargo_roller.egg-info/SOURCES.txt
+src/eida_embargo_roller.egg-info/dependency_links.txt
+src/eida_embargo_roller.egg-info/entry_points.txt
+src/eida_embargo_roller.egg-info/requires.txt
+src/eida_embargo_roller.egg-info/top_level.txt
+src/embargo_roller/__init__.py
+src/embargo_roller/cli.py
+src/embargo_roller/logger.py
+src/embargo_roller/processor.py
+src/embargo_roller/utils.py
+tests/test_integration.py
+tests/test_processor.py
+tests/test_utils.py

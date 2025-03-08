@@ -1,0 +1,2 @@
+[console_scripts]
+eida_embargo_roller = embargo_roller.cli:cli

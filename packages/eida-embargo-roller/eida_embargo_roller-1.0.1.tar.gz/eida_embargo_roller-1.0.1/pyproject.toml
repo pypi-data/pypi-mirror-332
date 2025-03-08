@@ -1,0 +1,24 @@
+[project]
+authors = [
+    {name = "Nikos Sokos",email = "nsokos@noa.gr"},
+    {name = "Jonathan Schaeffer", email = "jonathan.schaeffer@cnrs.fr"},
+    {name = "Kostas Boukouras", email = "kbouk@noa.gr"},
+]
+requires-python = "<4.0,>=3.11"
+dependencies = [
+    "click-log<1.0.0,>=0.4.0",
+    "pendulum>=3.0.0",
+    "obspy<2.0.0,>=1.4.0",
+    "setuptools>=75.6.0",
+    "pytest>=8.3.4",
+]
+name = "eida-embargo-roller"
+version = "1.0.1"
+description = ""
+readme = "README.md"
+[build-system]
+requires = ["setuptools>=62.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+eida_embargo_roller = "embargo_roller.cli:cli"
