@@ -1,0 +1,11 @@
+embargo_roller/__init__.py,sha256=I_70XkhVDp-hMuDgPBTxV3Dc-GsZZtbrQ4iKoG87TFQ,142
+embargo_roller/cli.py,sha256=qNBp91we8JPnAqpPvoY0h0BnV8-AWbg3b5eH8Q5Y398,1564
+embargo_roller/logger.py,sha256=T9Y6-RnYY0zCi8Kc2sDsaZ4AGxc9lSd508Ba1UWOI38,314
+embargo_roller/processor.py,sha256=rNsPJV6R095hSVh22GsJoSLibCCKuSrjDNwLSgVt478,17416
+embargo_roller/utils.py,sha256=pcO8DCz4_js1u0EOPFlM1BHOG2IA9C1k5oExHdJtZO0,2442
+eida_embargo_roller-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+eida_embargo_roller-1.0.1.dist-info/METADATA,sha256=UemhKQ9Ob3pcc3ROZ-P0fRQXF0RGHR2gHkwbhm6LVBI,3940
+eida_embargo_roller-1.0.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+eida_embargo_roller-1.0.1.dist-info/entry_points.txt,sha256=Se2QEMhtLqkAS8YwROd65LHhQ_nylL6JXPQwyLRMYj4,63
+eida_embargo_roller-1.0.1.dist-info/top_level.txt,sha256=DEh8ZWHku0-s0rkLA-MMNIoIdOvPQZYp6XnHTFcfP78,15
+eida_embargo_roller-1.0.1.dist-info/RECORD,,
