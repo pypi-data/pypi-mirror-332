@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: juham-homewizard
+Version: 0.0.5
+Summary: Homewizard Watermeter plugin for Juham
+Author-email: J Meskanen <juham.api@gmail.com>
+Maintainer-email: "J. Meskanen" <juham.api@gmail.com>
+Project-URL: Homepage, https://gitlab.com/juham/juham/juham-homewizard
+Project-URL: Bug Reports, https://gitlab.com/juham/juham/juham-homewizard
+Project-URL: Funding, https://meskanen.com
+Project-URL: Say Thanks!, http://meskanen.com
+Project-URL: Source, https://gitlab.com/juham/juham/juham-homewizard
+Keywords: object-oriented,plugin,framework,homewizard,home automation
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: juham-core>=0.1.1
+Requires-Dist: importlib-metadata
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
