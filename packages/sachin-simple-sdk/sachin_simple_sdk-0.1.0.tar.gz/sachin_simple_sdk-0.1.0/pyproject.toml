@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sachin_simple-sdk"
+version = "0.1.0"
+description = ""
+authors = ["sachinn3 <sachinn@capitalnumbers.com>"]
+readme = "README.md"
+packages = [{include = "simple_sdk"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+pydantic = "^2.10.6"
+pytest = "^8.3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

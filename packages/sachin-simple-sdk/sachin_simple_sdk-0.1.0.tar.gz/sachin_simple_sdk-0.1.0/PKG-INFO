@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sachin-simple-sdk
+Version: 0.1.0
+Summary: 
+Author: sachinn3
+Author-email: sachinn@capitalnumbers.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=2.10.6,<3.0.0)
+Requires-Dist: pytest (>=8.3.5,<9.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+
