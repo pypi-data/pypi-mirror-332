@@ -1,0 +1,2 @@
+[plover.command]
+python_dictionary_cmd = plover_python_dictionary_cmd:cmd
