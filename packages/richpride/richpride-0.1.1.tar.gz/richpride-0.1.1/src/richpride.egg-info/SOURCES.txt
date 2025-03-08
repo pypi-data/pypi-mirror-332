@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/richpride.egg-info/PKG-INFO
+src/richpride.egg-info/SOURCES.txt
+src/richpride.egg-info/dependency_links.txt
+src/richpride.egg-info/requires.txt
+src/richpride.egg-info/top_level.txt
+src/richpride_SafeyX3/__init__.py
