@@ -1,0 +1,32 @@
+[project]
+name = "txt2mrs"
+dynamic = ["version"]
+description = "txt2mrs encoding/decoding library"
+authors = [{ name = "Roman Babenko", email = "babenek@users.noreply.github.com" }]
+requires-python = ">=3.8"
+dependencies = ["simpleaudio"]
+readme = "README.md"
+keywords = ["morse", "sound", "text"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/babenek/txt2mrs"
+"Bug Tracker" = "https://github.com/babenek/txt2mrs/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/txt2mrs/__init__.py"
+
+[project.scripts]
+txt2mrs = "txt2mrs.__main__:main"
