@@ -1,0 +1,8 @@
+Django>=4.0
+pympler>=1.0
+django-widget-tweaks>=1.5
+
+[import_export]
+openpyxl
+pyyaml
+xlsxwriter
