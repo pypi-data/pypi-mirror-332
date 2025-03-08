@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gdpython/__init__.py
+gdpython/core.py
+gdpython/game.py
+gdpython/objects.py
+gdpython.egg-info/PKG-INFO
+gdpython.egg-info/SOURCES.txt
+gdpython.egg-info/dependency_links.txt
+gdpython.egg-info/requires.txt
+gdpython.egg-info/top_level.txt
