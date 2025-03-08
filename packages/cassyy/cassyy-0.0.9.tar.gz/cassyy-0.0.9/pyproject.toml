@@ -1,0 +1,77 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "cassyy"
+authors = [{name = "John Wagenleitner", email = "johnwa@mail.fresnostate.edu"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["Authentication", "SSO", "CAS"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+]
+dynamic = ["version", "description"]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.urls]
+Home = "https://github.com/jowage58/cassyy"
+Source = "https://github.com/jowage58/cassyy"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+]
+
+[tool.mypy]
+python_version = "3.11"
+packages = "cassyy"
+strict = true
+warn_unreachable = true
+
+[tool.ruff]
+target-version = "py311"
+extend-exclude = [".*", "dist"]
+
+[tool.ruff.format]
+preview = true
+
+[tool.ruff.lint]
+extend-select = [
+    "A",  # builtins
+    "ARG",  # unused args
+    "ASYNC",  # async
+    "B",  # flake8-bugbear
+    "C4",  # comprehensions
+    "DTZ", # datetimez
+    "E",  # pycodestyle (errors)
+    "ERA",  # eradicate commented out code
+    "F",  # Pyflakes
+    "G",  # logging format
+    "I",   # isort
+    "ISC",  # implicit string concat
+    "N",  # pep8 naming
+    "PERF",  # perflint
+    "PIE",  # misc lints
+    "PL",  # Pylint
+    "PTH",  # pathlib
+    "RET",  # returns
+    "RSE",  # raises
+    "RUF",  # ruff rules
+    "S",  # flake8-bandit
+    "SIM",  # simplify
+    "T20",  # flake8-print
+    "TRY",  # tryceratops
+    "UP",  # pyupgrade
+    "W",  # pycodestyle (warnings)
+]
+ignore = ["ASYNC109", "ISC001"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/test_cas.py" = ["E501"]
+
+[tool.ruff.lint.pylint]
+max-args = 8
