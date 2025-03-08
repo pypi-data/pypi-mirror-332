@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: black_stripe_detector
+Version: 0.1.0
+Summary: A Python package to detect black stripes in images that may indicate rendering errors.
+Author: Jer NC
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: Pillow >=9.0.0
+Requires-Dist: numpy >=1.21.0
+
