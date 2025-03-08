@@ -1,0 +1,9 @@
+simvue_tensorflow/__init__.py,sha256=XwJwzSH6FMQmSzhsyvsyxMmC89YOXvffynYpU2lCOgA,126
+simvue_tensorflow/extras/__init__.py,sha256=DMXyU45g6BXvNC8WL4ZC1J7XPGkO_32huZAwqoHktqU,56
+simvue_tensorflow/extras/create_alerts.py,sha256=uyclsG6WD9nKsfjlBZNOc4tZdDHDD7hLlDkySgfQOgU,1511
+simvue_tensorflow/extras/operators.py,sha256=3bcq0c-VXFuCRqw3BWPchNxjRpduJBFd5MTFP8OzfVE,775
+simvue_tensorflow/plugin.py,sha256=SIeaW51nIG165WEAUhUag7xEyz2HuQMxZ88vDziBdbA,24551
+simvue_tensorflow-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+simvue_tensorflow-1.0.0.dist-info/METADATA,sha256=rmFvFVEUj15_ufTOGM-qjbEY_Y63XX9aoiG5Vg65uSE,5833
+simvue_tensorflow-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+simvue_tensorflow-1.0.0.dist-info/RECORD,,
