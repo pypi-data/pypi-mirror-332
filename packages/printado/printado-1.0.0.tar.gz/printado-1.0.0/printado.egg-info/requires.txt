@@ -1,0 +1,10 @@
+PyQt5
+Pillow
+keyboard
+qtawesome
+mss
+pynput
+pyperclip
+python-dotenv
+pytest
+pytest-qt

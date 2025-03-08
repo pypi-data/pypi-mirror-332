@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+printado/__init__.py
+printado/config.py
+printado/hotkey_listener.py
+printado/main.py
+printado/version.py
+printado.egg-info/PKG-INFO
+printado.egg-info/SOURCES.txt
+printado.egg-info/dependency_links.txt
+printado.egg-info/entry_points.txt
+printado.egg-info/requires.txt
+printado.egg-info/top_level.txt
+tests/test_upload.py
+tests/test_utils.py

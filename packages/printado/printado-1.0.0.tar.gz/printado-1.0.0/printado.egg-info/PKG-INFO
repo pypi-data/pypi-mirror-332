@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: printado
+Version: 1.0.0
+Summary: Ferramenta de captura personalizada
+Home-page: https://github.com/Feharo-Tech/Printado
+Author: Felipe Aquino
+Author-email: felipe@feharo.com.br
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: PyQt5
+Requires-Dist: Pillow
+Requires-Dist: keyboard
+Requires-Dist: qtawesome
+Requires-Dist: mss
+Requires-Dist: pynput
+Requires-Dist: pyperclip
+Requires-Dist: python-dotenv
+Requires-Dist: pytest
+Requires-Dist: pytest-qt
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary

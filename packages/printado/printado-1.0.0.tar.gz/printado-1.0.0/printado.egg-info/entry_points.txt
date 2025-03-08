@@ -1,0 +1,2 @@
+[console_scripts]
+printado = printado.main:main
