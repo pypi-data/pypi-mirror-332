@@ -1,0 +1,2 @@
+[console_scripts]
+adformat = adformat.ADFormat:main
