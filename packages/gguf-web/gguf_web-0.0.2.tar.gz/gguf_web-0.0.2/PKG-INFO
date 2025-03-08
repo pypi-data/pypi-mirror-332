@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gguf-web
+Version: 0.0.2
+Summary: gguf web (frontend)
+Author-email: calcuis <info@calcu.io>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: GitHub, https://github.com/calcuis/gguf-web
+Project-URL: Homepage, https://gguf.org
+
+# gguf-web
+
+install it via pip/pip3
+```
+pip install gguf-web
+```
+act as a frontend of gguf-pack
+
