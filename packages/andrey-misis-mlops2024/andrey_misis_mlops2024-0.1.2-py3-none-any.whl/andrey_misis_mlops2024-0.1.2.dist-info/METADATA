@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: andrey_misis-mlops2024
+Version: 0.1.2
+Summary: MLOps course project
+Author: Andrey Laptev
+Author-email: Your Name <your.email@example.com>
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# misis-mlops2024
