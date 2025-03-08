@@ -1,0 +1,3 @@
+[console_scripts]
+nuztf=nuztf.cli:cli_command
+
