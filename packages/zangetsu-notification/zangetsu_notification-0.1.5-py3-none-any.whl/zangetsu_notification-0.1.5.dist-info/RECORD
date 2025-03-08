@@ -1,0 +1,12 @@
+zangetsu_notification/__init__.py,sha256=qhcPXMkfdqgNkxYHM8jDGsBoSooj9EXrbCtAerHRV9s,312
+zangetsu_notification/base.py,sha256=KhKpSdebciDRtnaZcNYXrocX_6dZ4PCm_vSZ5bBAJ_Q,1725
+zangetsu_notification/email.py,sha256=g5ktvuIt0FZ1E5Lnpvzp0teduhsebd_mYL_MHdcUX7Q,9190
+zangetsu_notification/factory.py,sha256=VfQ7NMovUjqlzV5ZejissJGAdESjOGm8kYwZ9GziQkM,8058
+zangetsu_notification/line.py,sha256=0egvJHgNBvhivmPYVY35jPOMjFLgct25Z61ZlsgnED0,5116
+zangetsu_notification/slack.py,sha256=wSoR7IwGA_jtIsad_6i7NWOl33MnWet-b-EVMaNxq5o,7255
+zangetsu_notification/teams.py,sha256=7c-FBVfzTHSse128ozjM5jHMDAk75znuvrdoqSnrzck,4974
+zangetsu_notification/webhook.py,sha256=voC0VLEiBoosWd8ldVQzVJoJN1YmduubXX1qdvcCZIk,5031
+zangetsu_notification-0.1.5.dist-info/METADATA,sha256=CPaeA0IhQbUixtsoKvQevnn8qlul_lyHYOskQSTYqjo,9070
+zangetsu_notification-0.1.5.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+zangetsu_notification-0.1.5.dist-info/top_level.txt,sha256=pXgebhe48cOlauqXbgvK_fcopimxZ-FCBNlpxV2MGeM,22
+zangetsu_notification-0.1.5.dist-info/RECORD,,
