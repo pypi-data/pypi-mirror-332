@@ -1,0 +1,11 @@
+medrouter/__init__.py,sha256=DDFka4U94trjXbhFY2HrQ0hwiwdLQ9OkbOps3LPNGF0,82
+medrouter/cli.py,sha256=L6ZMnc5a5IAEY1e6ump3izvcF29bJwE3aLKnOKlKLos,307
+medrouter/client.py,sha256=hNkZblfg25gejmlPtftd3faZ-hIWO0zgUYugi4UfT44,9767
+medrouter/config.py,sha256=ef5NueJyMG6RkU9cvKVA9PSgiWldWJfBfo176Q6ePsc,955
+medrouter/exceptions.py,sha256=4hfoQme84H5yYO1wt93cteyVoG2DOFWX1dTwn9_dinw,1018
+medrouter-0.5.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+medrouter-0.5.0.dist-info/METADATA,sha256=odwk5iYVrDcCIrLN8oTOuf4rsnlivLiUqkQsGEqxUk8,2621
+medrouter-0.5.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+medrouter-0.5.0.dist-info/entry_points.txt,sha256=w2WfUunfe1QAduhD1DsJUQ5TjsecHUg3BP__OqosZMQ,49
+medrouter-0.5.0.dist-info/top_level.txt,sha256=1IMEK4i32EUXCUfSJWPEowQk88nOgGWd8Q5vgM9NBSM,10
+medrouter-0.5.0.dist-info/RECORD,,
