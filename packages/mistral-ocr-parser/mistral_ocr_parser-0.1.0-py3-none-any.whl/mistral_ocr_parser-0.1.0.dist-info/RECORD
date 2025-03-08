@@ -1,0 +1,10 @@
+mistral_ocr/__init__.py,sha256=Pgt3HW0A6x97HCr-WEZCahRRmZ6RgXc_D7eTycxyhHA,682
+mistral_ocr/image.py,sha256=7scYZAhifOORvc0GM4bNq7dT86yL1PUemjgNitbr5l4,9318
+mistral_ocr/parser.py,sha256=TUgHrSQujSPPJJxsqVlK8uYHEzfZYgMnXIUykqjHOkk,7919
+mistral_ocr/utils.py,sha256=zeebQZqWW0tuQj88S-JK1ukuF2gwvHtjrWGcBI5C6Kk,1727
+mistral_ocr_parser-0.1.0.dist-info/LICENSE,sha256=qyKzHykQZ29Z_FJJ4gZPYjQQGYThyoVYedlJubbpguU,1066
+mistral_ocr_parser-0.1.0.dist-info/METADATA,sha256=PniY7FKQ4zZB_UlAfucBTyNS2td4PGFi4tIBZStqn7U,8258
+mistral_ocr_parser-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+mistral_ocr_parser-0.1.0.dist-info/entry_points.txt,sha256=LmGQdSddGDuZZ0N3b6tCPuQIDuj_y6sLYTYosTFQYXE,113
+mistral_ocr_parser-0.1.0.dist-info/top_level.txt,sha256=mrMF6Ao7Azh1lm2Cer3kEGxNPVjNVTaoEGJO2Amjguo,12
+mistral_ocr_parser-0.1.0.dist-info/RECORD,,

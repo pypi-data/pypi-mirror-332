@@ -1,0 +1,3 @@
+[console_scripts]
+mistral-ocr = mistral_ocr.parser:main
+mistral-ocr-batch = mistral_ocr.utils:batch_process_pdfs
