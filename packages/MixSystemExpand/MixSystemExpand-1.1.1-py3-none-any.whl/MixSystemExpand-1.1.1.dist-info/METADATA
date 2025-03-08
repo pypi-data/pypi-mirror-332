@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: MixSystemExpand
+Version: 1.1.1
+Summary: systemapi
+Home-page: https://www.github.com/SYSTEM-WIN12-ZDY/PythonPackageOSAPI
+Author: WIN12_ZDY
+Author-email: win12zdy@163.com
+License: Apache License, Version 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE1
+
+# OSAPI Package
+
+## Welcome using this package.
+
+## Version Data
+
+### Version 1.0.0
+
+> upload version.function:user controls,system commands.
+
+### Version 1.1.0
+
+> Add Windows:CreateCommand class,add from file run command options.
+> But This Version ReUpload Error.This Version is for 1.1.1 Version.
