@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: PATK
+Version: 1.0.0
+Summary: A Tkinter-based rewrapping component library.
+Home-page: https://github.com/Ashisheng2005/PATK
+Author: HUZHAOJUN
+Author-email: 3237495209@qq.com
+Project-URL: Bug Reports, https://github.com/Ashisheng2005/PATK/issues
+Project-URL: Source, https://github.com/Ashisheng2005/PATK
+Keywords: tkinter,widget,PATK,TK
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+
+# ATK
+
+Wrapper components based on tkinter
+
+
+
+基于tkinter 原生库进行二次封装，提供具有更多功能的组件
+
