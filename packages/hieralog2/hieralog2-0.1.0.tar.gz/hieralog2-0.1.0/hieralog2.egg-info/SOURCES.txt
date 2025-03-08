@@ -1,0 +1,7 @@
+README.md
+setup.py
+hieralog2.egg-info/PKG-INFO
+hieralog2.egg-info/SOURCES.txt
+hieralog2.egg-info/dependency_links.txt
+hieralog2.egg-info/requires.txt
+hieralog2.egg-info/top_level.txt
