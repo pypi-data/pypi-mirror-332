@@ -1,0 +1,117 @@
+# Introduction to AvaChain
+
+Welcome to AvaChain! This powerful framework enables you to build intelligent AI agents that can seamlessly interact with various tools and APIs. Whether you're building a simple chatbot or a complex AI assistant, AvaChain provides the building blocks you need.
+
+## What is AvaChain?
+
+AvaChain is a Python framework that combines the power of Large Language Models (LLMs) with custom tools and APIs. It provides:
+
+- **Flexible Agent Architecture**: Build AI agents that can use multiple tools and make decisions
+- **Tool Integration Framework**: Easily create and integrate custom tools
+- **Multiple LLM Support**: Work with OpenAI, Anthropic Claude, and Mistral AI models
+- **Streaming Responses**: Real-time response streaming for better user experience
+- **Text-to-Speech Integration**: Built-in support for various TTS providers
+- **Plugin System**: Publish and share tools through the AvaChain store
+
+## Quick Start
+
+Get started with AvaChain in minutes:
+
+```python
+from avachain import AvaAgent, OpenaiLLM, BaseTool
+
+# Initialize your LLM
+llm = OpenaiLLM(api_key="your-api-key")
+
+# Create an agent
+agent = AvaAgent(
+    sys_prompt="You are a helpful assistant",
+    ava_llm=llm,
+    logging=True
+)
+
+# Run the agent
+response = agent.run("Hello! Can you help me?")
+```
+
+## Key Features
+
+### Tool Creation
+
+Build custom tools easily:
+
+```python
+from avachain import BaseTool
+from pydantic import BaseModel, Field
+
+class MyToolInput(BaseModel):
+    query: str = Field(description="Input query")
+
+class MyTool(BaseTool):
+    name = "my_tool"
+    description = "A custom tool"
+    args_schema = MyToolInput
+
+    def _run(self, query: str):
+        return f"Processed: {query}"
+```
+
+### Real-time Streaming
+
+Enable streaming responses for real-time interaction:
+
+```python
+agent = AvaAgent(
+    sys_prompt="Your prompt",
+    ava_llm=llm,
+    streaming=True
+)
+```
+
+## Use Cases
+
+AvaChain is perfect for:
+
+- **AI Assistants**: Build conversational agents that can perform tasks
+- **Tool Integration**: Connect AI models with external services and APIs
+- **Task Automation**: Create agents that can execute complex workflows
+- **Voice Applications**: Build voice-enabled AI applications
+- **Plugin Development**: Create and share reusable AI tools
+
+## Why AvaChain?
+
+### Flexible Architecture
+
+AvaChain's modular design allows you to:
+
+- Add custom tools easily
+- Configure agents for specific use cases
+- Scale from simple to complex applications
+
+### Developer Experience
+
+We focus on making development smooth with:
+
+- Clear API design
+- Comprehensive documentation
+- Easy-to-follow examples
+- Built-in debugging tools
+
+### Production Ready
+
+AvaChain is built for production use with:
+
+- Robust error handling
+- Streaming support for better UX
+- Performance optimizations
+- Extensive logging options
+
+## Getting Started
+
+Ready to build with AvaChain? Check out our guides:
+
+- [Installation](#installation)
+- [Creating Tools](#creating-tools)
+- [Contributing](#contributing)
+
+We welcome contributions!
