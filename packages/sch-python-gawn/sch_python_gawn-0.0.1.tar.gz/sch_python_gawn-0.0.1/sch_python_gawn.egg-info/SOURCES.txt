@@ -1,0 +1,5 @@
+setup.py
+sch_python_gawn.egg-info/PKG-INFO
+sch_python_gawn.egg-info/SOURCES.txt
+sch_python_gawn.egg-info/dependency_links.txt
+sch_python_gawn.egg-info/top_level.txt
