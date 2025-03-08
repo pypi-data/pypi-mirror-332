@@ -1,0 +1,10 @@
+zangetsu_logger/__init__.py,sha256=YJMHiKt2Vp79iYH3bhdZZtSMawYU0PeqR-FMI7CuFXo,72
+zangetsu_logger/cloud_handlers.py,sha256=0ukYIzdCRXZbGwIGPUcr_NhL_Oxv6MM3ku4XQYPQZjU,12191
+zangetsu_logger/config.py,sha256=uhRDLBCAWWsVJc3z9Zc5_swCvlcfXwmAbnajYToy6Sc,9664
+zangetsu_logger/default_config.yaml,sha256=NwfUschkLD9VKLScQtmxFs3Zy4OYufO1xLlExm564M4,1145
+zangetsu_logger/formatters.py,sha256=rA7jimRVBC55SScHzczNH3QL_PnWgXySb2uYvbTHlsI,3469
+zangetsu_logger/handlers.py,sha256=5R97f3xDGllQ2xApPW9EM7cQAwRwRfL_N-0BWqSoKvs,2373
+zangetsu_logger-0.1.1.dist-info/METADATA,sha256=JWkjdJo2IOINQ9Jw_n_xb-XUvaE563mWG3rUHN3id8Y,3863
+zangetsu_logger-0.1.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+zangetsu_logger-0.1.1.dist-info/top_level.txt,sha256=xupKeX0ish5PNjuDaH6F_81PVrlFDrd4iu0zCfBEVYk,16
+zangetsu_logger-0.1.1.dist-info/RECORD,,
