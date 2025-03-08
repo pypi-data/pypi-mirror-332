@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+chrisfa-area-calculator-dci/src/chrisfa_area_calculator_dci.egg-info/PKG-INFO
+chrisfa-area-calculator-dci/src/chrisfa_area_calculator_dci.egg-info/SOURCES.txt
+chrisfa-area-calculator-dci/src/chrisfa_area_calculator_dci.egg-info/dependency_links.txt
+chrisfa-area-calculator-dci/src/chrisfa_area_calculator_dci.egg-info/top_level.txt
