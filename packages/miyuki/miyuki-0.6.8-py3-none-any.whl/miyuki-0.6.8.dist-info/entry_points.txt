@@ -1,0 +1,2 @@
+[console_scripts]
+miyuki = miyuki_src.main:main
