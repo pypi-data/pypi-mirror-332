@@ -1,0 +1,16 @@
+quran_detector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quran_detector/data_loader.py,sha256=y-ZMVQ9T9-Djbx8J-k8zK8xZ17oFR2EdaoEiAd1-AGo,3736
+quran_detector/dfiles/nonTerminals.txt,sha256=FH040CvVfpDI-XDg1Rgr3JFH2Cpgqu3glAATwLrf6Zg,1245
+quran_detector/dfiles/quran-index.xml,sha256=3SY-8M4y-35cn8Lw2hmYFrqyz2Rjb0LzbvB5p8hZNxg,15912
+quran_detector/dfiles/quran-simple.txt,sha256=0ls_7Ib86CJhlewMov_e8tv3DynIGrcXeS9de38DJ4Y,1362670
+quran_detector/main.py,sha256=nRCoz8oe7rNSTg-dNti09vA42ecJSo3Z6B1W03ajf40,651
+quran_detector/main_api.py,sha256=RQLB57wipPllPzqYu8s8-CHJzeKIpJzc1b8JwKOvUPQ,3430
+quran_detector/matcher.py,sha256=8WquAxNeKYIoPlkOCsqinzWWFYTUoTGZjQ-gFNowfO4,18711
+quran_detector/models.py,sha256=i9uU47DdBJcoySkTpgCHjevW6TKdLf4naOjbSz2ZyUA,7266
+quran_detector/schemas.py,sha256=g5481xF7E_zRv72ILfEPqyWkHHJRO1aE6WnCfJlorfo,433
+quran_detector/static/style.css,sha256=wbBCyGBMD7JIqVf0Sw2zGcjaDwkTrlbofeD-kM9NUDU,270
+quran_detector/templates/index.html,sha256=N1ypsne8_kZrytVRLJctRyIt3ysjuaYdiwM0804P_iU,647
+quran_detector/utils.py,sha256=kMHty1ZF5IkKD7mITs5WcrWRsGDrqRCmlZHH0Jd5PSE,2867
+quran_detector-0.1.0.dist-info/METADATA,sha256=6mKE0KwwItQ3U9HImyxWpphhBFwxiB-QjnqE4K1OoRg,1080
+quran_detector-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+quran_detector-0.1.0.dist-info/RECORD,,

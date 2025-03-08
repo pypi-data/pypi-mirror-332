@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: quran_detector
+Version: 0.1.0
+Summary: 
+Author: Muntaser Abukhadijah
+Author-email: mabukhad@amazon.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fastapi (>=0.115.8,<0.116.0)
+Requires-Dist: jinja2 (>=3.1.5,<4.0.0)
+Requires-Dist: levenshtein (>=0.26.1,<0.27.0)
+Requires-Dist: python-multipart (>=0.0.20,<0.0.21)
+Requires-Dist: uvicorn (>=0.34.0,<0.35.0)
+Description-Content-Type: text/markdown
+
+# Quran Detector
+
+## Description
+
+Quran detector is a Python-based tool designed to detect, match, and annotate Quranic verses within input texts. It reads Quranic data files, normalizes Arabic text, builds a trie-based data structure for efficient matching, and uses error-tolerant techniques (via Levenshtein distance) to handle minor mistakes in the input.
+
