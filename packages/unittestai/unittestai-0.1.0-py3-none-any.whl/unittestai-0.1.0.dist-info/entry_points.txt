@@ -1,0 +1,3 @@
+[console_scripts]
+unittestai=unitai.__main__:main
+
