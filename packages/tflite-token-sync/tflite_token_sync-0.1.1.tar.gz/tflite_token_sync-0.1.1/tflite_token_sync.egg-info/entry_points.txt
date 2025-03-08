@@ -1,0 +1,2 @@
+[console_scripts]
+tflite-token-sync = tflite_token_sync:main
