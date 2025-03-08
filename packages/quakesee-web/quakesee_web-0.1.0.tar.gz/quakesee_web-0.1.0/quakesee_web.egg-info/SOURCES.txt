@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+quakesee_web/__init__.py
+quakesee_web/about_web.py
+quakesee_web/app.py
+quakesee_web/eqcat_fetcher_web.py
+quakesee_web/logo.png
+quakesee_web/wave_fetcher_web.py
+quakesee_web.egg-info/PKG-INFO
+quakesee_web.egg-info/SOURCES.txt
+quakesee_web.egg-info/dependency_links.txt
+quakesee_web.egg-info/entry_points.txt
+quakesee_web.egg-info/requires.txt
+quakesee_web.egg-info/top_level.txt
