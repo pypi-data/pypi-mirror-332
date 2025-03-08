@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+notbank/__init__.py
+notbank/app.py
+notbank.egg-info/PKG-INFO
+notbank.egg-info/SOURCES.txt
+notbank.egg-info/dependency_links.txt
+notbank.egg-info/requires.txt
+notbank.egg-info/top_level.txt
