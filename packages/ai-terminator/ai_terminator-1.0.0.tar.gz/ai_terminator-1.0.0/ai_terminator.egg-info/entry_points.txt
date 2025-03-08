@@ -1,0 +1,2 @@
+[console_scripts]
+ai-terminator = terminal_ai.terminal:run_terminal

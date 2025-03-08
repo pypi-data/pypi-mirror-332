@@ -1,0 +1,9 @@
+README.md
+setup.py
+ai_terminator.egg-info/PKG-INFO
+ai_terminator.egg-info/SOURCES.txt
+ai_terminator.egg-info/dependency_links.txt
+ai_terminator.egg-info/entry_points.txt
+ai_terminator.egg-info/requires.txt
+ai_terminator.egg-info/top_level.txt
+terminal_ai/__init__.py
