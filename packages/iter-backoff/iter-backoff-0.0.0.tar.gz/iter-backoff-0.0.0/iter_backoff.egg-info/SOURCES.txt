@@ -1,0 +1,9 @@
+README.md
+setup.py
+iter_backoff/__init__.py
+iter_backoff/test.py
+iter_backoff.egg-info/PKG-INFO
+iter_backoff.egg-info/SOURCES.txt
+iter_backoff.egg-info/dependency_links.txt
+iter_backoff.egg-info/requires.txt
+iter_backoff.egg-info/top_level.txt

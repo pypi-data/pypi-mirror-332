@@ -1,0 +1,100 @@
+※下の方に日本語の説明があります。
+
+# 📖 `iter-backoff` Documentation
+
+## English Version
+
+### Overview
+`iter-backoff` is a simple Python library that allows you to implement **exponential backoff in loops** with minimal effort. Instead of manually handling retry logic with sleep intervals, this library provides an elegant iterable interface to automate the process.
+
+### Installation
+To install `iter-backoff`, use `pip`:
+```sh
+pip install iter-backoff
+```
+
+### Usage
+This library generates an iterable that yields exponential backoff times, allowing for simple loop-based retry logic.
+
+#### Example:
+```python
+import random
+import iter_backoff
+
+# Loop with exponential backoff
+for _ in iter_backoff(s0=0.5, r=2, n=4):
+    if random.random() < 1/4:
+        print("Success!")
+        break
+    else:
+        print("Failure!")
+```
+
+#### Explanation
+- The `for` loop automatically waits while repeating, with an exponentially increasing wait time.  
+- If the process succeeds, simply breaking out of the loop is sufficient.  
+- When `n=1` is specified, it attempts only once without any waiting time.
+
+### Function Signature
+```python
+iter_backoff(
+    s0,  # Initial wait time (seconds)
+    r,   # Growth rate (multiplier)
+    n    # Maximum number of retries
+)
+```
+
+### Parameters
+- `s0`: The initial wait time (in seconds).
+- `r`: The exponential growth factor (e.g., `2` doubles the wait time each iteration).
+- `n`: The maximum number of retries.
+
+---
+
+## 日本語版
+
+### 概要
+`iter-backoff` は、**指数バックオフをループで簡単に実装できる** Python ライブラリです。  
+
+### インストール
+`iter-backoff` をインストールするには、以下のコマンドを実行してください：
+```sh
+pip install iter-backoff
+```
+
+### 使い方
+このライブラリは、指数的に増加する待機時間を生成するイテレータを提供します。  
+このイテレータを `for` ループで利用することで、簡単にバックオフ付きのリトライ処理が書けます。
+
+#### 例:
+```python
+import random
+import iter_backoff
+
+# ループによる指数バックオフ
+for _ in iter_backoff(s0=0.5, r=2, n=4):
+    if random.random() < 1/4:
+        print("成功！")
+        break
+    else:
+        print("失敗！")
+```
+
+#### 説明
+- for文は、指数的に長くなる待機時間を自動的に待機しながら繰り返します。
+- 処理が成功した場合は単にbreakするだけでOKです。
+- n=1指定の場合、待ち時間なしで1回のみ試行されます。
+
+### 関数の仕様
+```python
+iter_backoff(
+    s0,  # 初回待機時間 (秒)
+    r,   # 待機時間の増加率 (倍率)
+    n    # 最大試行回数
+)
+```
+
+### 引数
+- `s0`: 初回の待機時間 (秒)。
+- `r`: 指数的な増加率 (例: `2` にすると毎回待機時間が 2 倍)。
+- `n`: 最大試行回数。
