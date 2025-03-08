@@ -1,0 +1,37 @@
+Metadata-Version: 2.3
+Name: sei-json-rpc
+Version: 0.1.1
+Summary: 
+Author: ever
+Author-email: everettr1024@gmail.com
+Requires-Python: >=3.13,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: deepdiff (>=8.2.0,<9.0.0)
+Requires-Dist: httpx (>=0.28.1,<0.29.0)
+Requires-Dist: loguru (>=0.7.3,<0.8.0)
+Requires-Dist: py-solc-x (>=2.0.3,<3.0.0)
+Requires-Dist: pytest (>=8.3.4,<9.0.0)
+Requires-Dist: pytest-asyncio (>=0.25.3,<0.26.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: tenacity (>=9.0.0,<10.0.0)
+Requires-Dist: types-pyyaml (>=6.0.12.20241230,<7.0.0.0)
+Requires-Dist: web3 (>=7.8.0,<8.0.0)
+Description-Content-Type: text/markdown
+
+# eth-json-rpc
+EVM json-rpc endpoints
+
+## 1.安装准备
+- 申请alchemy账号,获取API_KEY,并配置环境变量
+```shell
+export RPC_URL="${ETH_MAIN_RPC_URL}${ETH_MAIN_APIKEY}"
+
+# 安装依赖项
+poetry install --no-root 
+
+# 添加依赖
+poetry add pytest 
+```
+
+
