@@ -1,0 +1,9 @@
+synapse_token_authenticator/__init__.py,sha256=t3PvE4b3qgkJB9zESKlARGyXD8Xaxj2qn3wknFd2be0,102
+synapse_token_authenticator/claims_validator.py,sha256=CVDUja5NDoLGQolTrlMRjDVqs7ePMkKRiSZpJKAokfA,5336
+synapse_token_authenticator/config.py,sha256=NWJHO97ofeGFx-4TfqdnOgDhZkUfinmmyjmkYRMseq0,10049
+synapse_token_authenticator/token_authenticator.py,sha256=LnOIBgSpCsIx6Z5R-iCnSSZGpTkfaGDKMAUY4ye1oTA,27792
+synapse_token_authenticator/utils.py,sha256=hyYeeapwQSpPtWckI0iZuOBm3ec8B_racjeS6RrXtmQ,2508
+synapse_token_authenticator-0.10.0.dist-info/METADATA,sha256=4ONA559GdaMxOZqCQd0YcOeUtqNAvSTcOqoGyxesPGI,18625
+synapse_token_authenticator-0.10.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+synapse_token_authenticator-0.10.0.dist-info/licenses/LICENSE,sha256=TspYfXtoLPb8BlxNaRkUJuQwX3oIxxEU--ARLdYPgLw,34468
+synapse_token_authenticator-0.10.0.dist-info/RECORD,,
