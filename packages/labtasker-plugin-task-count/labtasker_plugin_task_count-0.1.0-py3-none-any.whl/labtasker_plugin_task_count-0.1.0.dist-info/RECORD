@@ -1,0 +1,8 @@
+labtasker_plugin_task_count/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+labtasker_plugin_task_count/impl.py,sha256=3yQqOI5IidQ8H9pztGvqDcWd6WPEm5IwQb6Opk1bJaI,478
+labtasker_plugin_task_count/main.py,sha256=ND1PRRU-z4_If0gibSs56AMPOnYzKfIQExlDNt-NcAk,1673
+labtasker_plugin_task_count-0.1.0.dist-info/METADATA,sha256=IvXMD0t49f8GRGJF4ZA7ELVDr7YJIGHtghPxsVeD1Zo,969
+labtasker_plugin_task_count-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+labtasker_plugin_task_count-0.1.0.dist-info/entry_points.txt,sha256=0FHOUXdPEMhFkfFdTJHWCxGhCovWLu1mbT8xfcqxFto,86
+labtasker_plugin_task_count-0.1.0.dist-info/top_level.txt,sha256=txOr6RpuwsZEFCmXc47OElVaaYKKbR8nt7vbRGGQKCo,28
+labtasker_plugin_task_count-0.1.0.dist-info/RECORD,,
