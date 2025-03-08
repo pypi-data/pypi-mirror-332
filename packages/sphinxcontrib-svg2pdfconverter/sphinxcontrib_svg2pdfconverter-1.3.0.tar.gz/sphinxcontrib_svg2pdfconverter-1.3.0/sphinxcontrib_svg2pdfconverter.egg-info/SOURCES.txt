@@ -1,0 +1,13 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.py
+sphinxcontrib/__init__.py
+sphinxcontrib/cairosvgconverter.py
+sphinxcontrib/inkscapeconverter.py
+sphinxcontrib/rsvgconverter.py
+sphinxcontrib_svg2pdfconverter.egg-info/PKG-INFO
+sphinxcontrib_svg2pdfconverter.egg-info/SOURCES.txt
+sphinxcontrib_svg2pdfconverter.egg-info/dependency_links.txt
+sphinxcontrib_svg2pdfconverter.egg-info/requires.txt
+sphinxcontrib_svg2pdfconverter.egg-info/top_level.txt
