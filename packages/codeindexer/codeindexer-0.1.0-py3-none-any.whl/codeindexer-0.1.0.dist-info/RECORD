@@ -1,0 +1,12 @@
+codeindexer/__init__.py,sha256=UEVhWt5-068_a3o97q0vSu5oGFf10sIMvMqK5QQCVIU,113
+codeindexer/cli.py,sha256=TyZOsKdptxTEMOpa2XDsxLv8thA2AmSkdZUTAByTi34,2837
+codeindexer/gitignore_parser.py,sha256=SmwublIdp3y8kEpnJlxFWDlx__wJ8_1S1lpmuNRpk2Y,3771
+codeindexer/indexer.py,sha256=WZNCYDDAZm-tKf3j31zAIeZnYVJp5h4dAnkAjac4A-4,9896
+codeindexer/utils.py,sha256=Z6L2k36KDCa3JNCbWqVvj2bn8lghoyBBHvEX9DEPXjo,2974
+codeindexer/tests/test_indexer.py,sha256=d17D4IYaqEgB-Lu6bziV0FHIDYjoHbux2glhqfy0B-4,3657
+codeindexer-0.1.0.dist-info/LICENSE,sha256=YG2U3wKi7F5h9WhflfZYKMRHTyLtObkbcUsC8eAbUgg,1071
+codeindexer-0.1.0.dist-info/METADATA,sha256=VqzbujdSh0jk2NUfqcdlP24MwkHiw2hEEDDv-kPlD6k,3084
+codeindexer-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+codeindexer-0.1.0.dist-info/entry_points.txt,sha256=uGU257bWQz4JlbtLxJwTYAWvGb0Z2ERyn5Y0Xmy8BWc,53
+codeindexer-0.1.0.dist-info/top_level.txt,sha256=ekVJegTQBOnR7owegGYQEHKfEsq1f5m-xwkayonFmCw,12
+codeindexer-0.1.0.dist-info/RECORD,,
