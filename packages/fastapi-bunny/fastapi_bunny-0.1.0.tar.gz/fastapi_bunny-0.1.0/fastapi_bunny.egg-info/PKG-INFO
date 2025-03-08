@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: fastapi-bunny
+Version: 0.1.0
+Summary: A package to generate FastAPI boilerplate based on user input
+Home-page: https://github.com/pranayvartak/fastapi_bunny
+Author: Pranay Vartak
+Author-email: iamvartak@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# fastapi_bunny
+
+A Python package to generate FastAPI boilerplate with MongoDB integration.
+
+## Installation
+
+```bash
+pip install fastapi_bunny
+```
+
+Usage
+
+fastapi_bunny
+You'll be prompted to enter your project name, and a FastAPI boilerplate will be generated.
+
+Features
+
+Generates FastAPI project structure
+MongoDB integration
+REST API with CRUD operations
+
