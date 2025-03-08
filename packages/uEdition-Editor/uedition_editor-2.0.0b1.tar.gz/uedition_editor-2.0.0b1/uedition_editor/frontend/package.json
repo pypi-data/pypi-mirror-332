@@ -1,0 +1,40 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@codemirror/lang-json": "^6.0.1",
+    "@codemirror/lang-markdown": "^6.2.5",
+    "@codemirror/lang-yaml": "^6.1.1",
+    "@mdi/js": "^7.4.47",
+    "@melt-ui/pp": "^0.3.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "@tanstack/svelte-query": "^5.29.0",
+    "@tiptap/core": "^2.2.6",
+    "@tiptap/extension-bubble-menu": "^2.2.6",
+    "@tiptap/extension-document": "^2.2.6",
+    "@tiptap/extension-history": "^2.2.6",
+    "@tiptap/extension-text": "^2.2.6",
+    "@tiptap/starter-kit": "^2.2.6",
+    "@tsconfig/svelte": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "bits-ui": "^0.21.3",
+    "deep-eql": "^5.0.2",
+    "slugify": "^1.6.6",
+    "svelte": "^4.2.12",
+    "svelte-check": "^3.6.9",
+    "svelte-codemirror-editor": "^1.3.0",
+    "tailwindcss": "^3.4.3",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.4",
+    "uuid": "^10.0.0",
+    "vite": "^5.2.8"
+  }
+}
