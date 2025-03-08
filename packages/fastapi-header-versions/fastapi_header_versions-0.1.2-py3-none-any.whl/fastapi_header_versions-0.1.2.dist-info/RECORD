@@ -1,0 +1,8 @@
+fast_version/__init__.py,sha256=nRxxGlM7lF7FvHEr4FRr-FcTFdJyhlgUz2ILEY0ldNc,240
+fast_version/app.py,sha256=oS4k1NKR5OqUTfllsvQ3XQzhrDPe5ymFHalhPTgoVis,5283
+fast_version/helpers.py,sha256=zeJ1mcxJDeVx_EzpPxgpzKfqxz8pvVLMAZLK1LXvJyE,807
+fast_version/router.py,sha256=ZNMMOpF2ZI7m5S2CQEbXCfCB-iTdk0FBmN1zACpfpr8,5743
+fastapi_header_versions-0.1.2.dist-info/METADATA,sha256=u1U2YsgO5hgCyW4EswY96EDuUGyE2yMhE20b6R5H2GM,231
+fastapi_header_versions-0.1.2.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+fastapi_header_versions-0.1.2.dist-info/top_level.txt,sha256=8o7PNZ9L_0icXB56sjo_rqFxfk47gQ2wvYQRt1q0NHs,13
+fastapi_header_versions-0.1.2.dist-info/RECORD,,
