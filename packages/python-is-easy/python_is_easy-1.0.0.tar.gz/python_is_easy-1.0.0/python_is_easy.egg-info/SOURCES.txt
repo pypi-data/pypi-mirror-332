@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+components/__init__.py
+components/code_executor.py
+lessons/__init__.py
+lessons/functions.py
+lessons/loops.py
+lessons/variables.py
+python_is_easy.egg-info/PKG-INFO
+python_is_easy.egg-info/SOURCES.txt
+python_is_easy.egg-info/dependency_links.txt
+python_is_easy.egg-info/requires.txt
+python_is_easy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_lessons.py
