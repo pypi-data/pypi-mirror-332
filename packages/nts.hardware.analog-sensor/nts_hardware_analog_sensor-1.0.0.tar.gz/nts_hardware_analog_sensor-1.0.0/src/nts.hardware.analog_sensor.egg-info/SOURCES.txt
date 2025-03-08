@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/nts.hardware.analog_sensor.egg-info/PKG-INFO
+src/nts.hardware.analog_sensor.egg-info/SOURCES.txt
+src/nts.hardware.analog_sensor.egg-info/dependency_links.txt
+src/nts.hardware.analog_sensor.egg-info/requires.txt
+src/nts.hardware.analog_sensor.egg-info/top_level.txt
+src/nts/hardware/analog_sensor/__init__.py
+src/nts/hardware/analog_sensor/interface.py
+src/nts/hardware/analog_sensor/interpolation.py
+src/nts/hardware/analog_sensor/linear.py
+src/nts/hardware/analog_sensor/version.py
+tests/test_interface.py
+tests/test_interpolation.py
+tests/test_linear.py
+tests/test_version.py
