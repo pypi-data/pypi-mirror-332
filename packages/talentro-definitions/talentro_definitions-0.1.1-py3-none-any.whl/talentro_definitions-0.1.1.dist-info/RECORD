@@ -1,0 +1,10 @@
+talentro_definitions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talentro_definitions/ad_channel.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talentro_definitions/general/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talentro_definitions/general/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talentro_definitions/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talentro_definitions/integrations/models.py,sha256=QDMffJBYCKzY4woEesUrZpvf9mJClvSl5wxVpOw54YY,657
+talentro_definitions/recruitment.py,sha256=wMFmYTQSS-dv5HxaCjad4VZl24qfS0G_z_p9oP7tqIM,1823
+talentro_definitions-0.1.1.dist-info/METADATA,sha256=4dTZcbdgD7NFgKMUWDq9JnEzO9_SozKnxIQF6aq0zcU,660
+talentro_definitions-0.1.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+talentro_definitions-0.1.1.dist-info/RECORD,,
