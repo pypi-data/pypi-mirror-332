@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/nopaque-config/__init__.py
+src/nopaque-config/config_manager.py
+src/tpconfig.egg-info/PKG-INFO
+src/tpconfig.egg-info/SOURCES.txt
+src/tpconfig.egg-info/dependency_links.txt
+src/tpconfig.egg-info/requires.txt
+src/tpconfig.egg-info/top_level.txt
