@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: pyllmchat
+Version: 1.0.0
+Summary: One library for all LLM related task
+Home-page: https://github.com/mdrehan4all/pyllmchat
+Author: Md Rehan
+Author-email: mdrehan4all@gmail.com
+License: MIT
+Keywords: llmchat genai
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# LLMChat
+
+One library for all LLM related task

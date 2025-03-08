@@ -1,0 +1,7 @@
+setup.py
+llmchat/__init__.py
+llmchat/main.py
+pyllmchat.egg-info/PKG-INFO
+pyllmchat.egg-info/SOURCES.txt
+pyllmchat.egg-info/dependency_links.txt
+pyllmchat.egg-info/top_level.txt
