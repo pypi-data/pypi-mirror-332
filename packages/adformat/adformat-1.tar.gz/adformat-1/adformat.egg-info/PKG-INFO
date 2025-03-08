@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: adformat
+Version: 1
+Summary: Formats multiply USB disks at once
+Home-page: https://github.com/ARnoLD-Digital-Store/ADFormat
+Author: ARnoLD Digital
+Author-email: arnold_digital@yandex.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: wmi
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Formats multiply USB disks at once
