@@ -1,0 +1,2 @@
+[console_scripts]
+gdrive-download = gdrive_downloader.downloader:main
