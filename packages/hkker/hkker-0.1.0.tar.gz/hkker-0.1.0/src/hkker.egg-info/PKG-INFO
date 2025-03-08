@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: hkker
+Version: 0.1.0
+Summary: hkker
+Requires-Python: <4.0,>=3.9
+Description-Content-Type: text/markdown
+
+# hkker
+
+## How to start
+
+1. generate project using `nb create` .
+2. create your plugin using `nb plugin create` .
+3. writing your plugins under `src/plugins` folder.
+4. run your bot using `nb run --reload` .
+
+## Documentation
+
+See [Docs](https://nonebot.dev/)
