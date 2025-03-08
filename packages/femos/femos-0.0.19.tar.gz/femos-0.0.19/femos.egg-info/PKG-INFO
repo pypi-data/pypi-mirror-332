@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: femos
+Version: 0.0.19
+Summary: My small library for neuroevolution
+Home-page: https://github.com/estissy/femos
+Author: estissy
+Author-email: estissy@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: humanize
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# Femos
+
+Library for neuro-evolution
+
+Set of classes and functions to build genetic algorithms.
+
+## Releasing new version to PyPi repository
+
+1. `python -m build`
+2. `python -m twine upload dist/*`
