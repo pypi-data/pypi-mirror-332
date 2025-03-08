@@ -1,0 +1,12 @@
+labelgenerator/__init__.py,sha256=kwlgs69Sq0mro8LPwa_xG4g-d_Z6hngg04IHgvkC8HU,374
+labelgenerator/iqtree.py,sha256=tyEFM54HzvkgUrPTAPoudEDxBrDw1dD2vkym6CPDBss,4444
+labelgenerator/iqtree_parser.py,sha256=bZuVMRzlBsaEi0rIAEWuILc_bkahBkEW2r7i4mKtPcw,6485
+labelgenerator/label.py,sha256=6L7s_xDYhtX7kNvx9UVf5e6KYSuZBBd6ohJHEUSODZ0,8699
+labelgenerator/logger.py,sha256=XbYSJyL-WsjjaObI6hS4zM8E_GzqlVRvBbXtcFJcOsE,861
+labelgenerator/main.py,sha256=nXmxEDL_i_IAiRmS0c9Z96F4IORAlHpjypQtzGwGW-M,4812
+labelgenerator/raxmlng.py,sha256=HwK3kPtBeUlsIkXI10T792cJ0YRajdeJ42VcTOMK8lQ,6075
+pythialabelgenerator-1.0.0.dist-info/METADATA,sha256=ZP94OQJ_j_SEsOwoLRxN-BVfQqyNVDrfj89MWpsH4vI,10438
+pythialabelgenerator-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pythialabelgenerator-1.0.0.dist-info/entry_points.txt,sha256=sI1fBhWG20vN_beYNPpLY7Ex6tXIo0ybBhgj7xTuslM,51
+pythialabelgenerator-1.0.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pythialabelgenerator-1.0.0.dist-info/RECORD,,
