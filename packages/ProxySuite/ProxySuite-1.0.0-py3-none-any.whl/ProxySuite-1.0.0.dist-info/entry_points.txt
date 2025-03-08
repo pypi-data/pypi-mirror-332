@@ -1,0 +1,2 @@
+[console_scripts]
+proxysuite = ProxySuite.main:main
