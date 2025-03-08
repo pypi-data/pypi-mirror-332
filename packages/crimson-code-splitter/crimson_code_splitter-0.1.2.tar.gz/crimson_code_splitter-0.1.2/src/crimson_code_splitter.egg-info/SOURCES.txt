@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/crimson/code_splitter/__init__.py
+src/crimson/code_splitter/chunker.py
+src/crimson/code_splitter/extractor.py
+src/crimson_code_splitter.egg-info/PKG-INFO
+src/crimson_code_splitter.egg-info/SOURCES.txt
+src/crimson_code_splitter.egg-info/dependency_links.txt
+src/crimson_code_splitter.egg-info/requires.txt
+src/crimson_code_splitter.egg-info/top_level.txt
+test/test_chunker.py
+test/test_extractor.py
