@@ -1,0 +1,16 @@
+matrixsketcher/__init__.py,sha256=WHKz-g_eDqBbWVOAlyq9CJV0Bwj02559CH_kZ32dh-M,632
+matrixsketcher/_utils.py,sha256=2AXLgjUsv-wfcL843awXdgcKHaegx2rDk-ZbDhHyt_s,530
+matrixsketcher/countsketch.py,sha256=93o3UPR_5PkdUajs2jm-i9DUxrBpNwnE6QcQN0BRkUo,684
+matrixsketcher/cur_decomposition.py,sha256=6J86HYwzrDKslAiEU5Z0NljTLBBQ1LBaP1J3FuUUIxs,2052
+matrixsketcher/fast_transforms.py,sha256=rXZZ3X9epLqXZqzZtbIyUiDotYrv3DRKRGjgz310hmw,1244
+matrixsketcher/leverage_score.py,sha256=ltweDbC19YctzIyPhNRbt9-SkZK0p7vjoZlj0MRqFv8,1445
+matrixsketcher/nystrom.py,sha256=LVRhcU3faAJM-jPSP6zen8fh3NvQGNWamPyT_VnOvvs,2481
+matrixsketcher/random_projection.py,sha256=fF3a4jfskJT5HYKD3ZyceZBieGbF1PA_D9psPclmguA,452
+matrixsketcher/row_sampling.py,sha256=rb6QyOH8OtL5CIGjc1NhK_iUzvNyJkU0ZydETyizBE0,843
+matrixsketcher/sparse_embedding.py,sha256=rWzO5WyDsS3I4iErdvwCClxIHq5gG1wOp6s2fu6PCmA,682
+matrixsketcher/subsampled_svd.py,sha256=FIl9qkPyPPUbOb1BpN3HfwW2nB7R-hCbA7N3Cqim_Uw,1060
+matrixsketcher-0.1.1.dist-info/LICENSE,sha256=u4bTBuIe-fwTQpGj7eyVHsyzQ4CzGIzDRSKrLea_huU,1073
+matrixsketcher-0.1.1.dist-info/METADATA,sha256=9HFXjZbu2xgEYlsi5t2Kg75KtWs_LmbmZ0cWIqMlsD8,452
+matrixsketcher-0.1.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+matrixsketcher-0.1.1.dist-info/top_level.txt,sha256=_Kfy4Ewjsymvq6SftsV_h14f7WFeXOk2-Ry2FKcfEMc,15
+matrixsketcher-0.1.1.dist-info/RECORD,,
