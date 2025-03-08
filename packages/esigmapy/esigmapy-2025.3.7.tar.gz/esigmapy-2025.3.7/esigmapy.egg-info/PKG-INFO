@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: esigmapy
+Version: 2025.3.7
+Summary: A collection of tools for academic research in gravitational-wave astronomy & astrophysics
+Home-page: https://github.com/gwnrtools/esigmapy
+Author: Prayush Kumar
+Author-email: prayush.kumar@gmail.com
+License: GPL
+License-File: LICENSE
+Requires-Dist: lscsoft_glue>=2.0.0
+Requires-Dist: matplotlib>=2.1
+Requires-Dist: numpy
+Requires-Dist: pathlib
+Requires-Dist: pycbc
+Requires-Dist: pytest
+Requires-Dist: scipy>=1.2.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# esigmapy

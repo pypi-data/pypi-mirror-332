@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+esigmapy/__init__.py
+esigmapy/blend.py
+esigmapy/generator.py
+esigmapy/legacy.py
+esigmapy/utils.py
+esigmapy.egg-info/PKG-INFO
+esigmapy.egg-info/SOURCES.txt
+esigmapy.egg-info/dependency_links.txt
+esigmapy.egg-info/requires.txt
+esigmapy.egg-info/top_level.txt
