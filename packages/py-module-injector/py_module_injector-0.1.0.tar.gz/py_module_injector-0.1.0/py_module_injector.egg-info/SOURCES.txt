@@ -1,0 +1,16 @@
+README.txt
+setup.py
+py_module_injector.egg-info/PKG-INFO
+py_module_injector.egg-info/SOURCES.txt
+py_module_injector.egg-info/dependency_links.txt
+py_module_injector.egg-info/entry_points.txt
+py_module_injector.egg-info/requires.txt
+py_module_injector.egg-info/top_level.txt
+python_module/__init__.py
+python_module/_logger.py
+python_module/inject.py
+python_module/injector.py
+python_module/injector_instance.py
+python_module/module.py
+tests/__init__.py
+tests/tests_core.py
