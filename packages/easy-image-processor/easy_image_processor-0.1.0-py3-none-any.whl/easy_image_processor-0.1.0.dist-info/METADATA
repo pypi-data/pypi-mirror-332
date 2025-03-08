@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: easy_image_processor
+Version: 0.1.0
+Summary: A package designed to convert images to grayscale and resize them easily
+Author: Victor Monterisi
+License-File: LICENSE
+Requires-Dist: Pillow
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
