@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+feather_df_cli/__init__.py
+feather_df_cli/cli.py
+feather_df_cli.egg-info/PKG-INFO
+feather_df_cli.egg-info/SOURCES.txt
+feather_df_cli.egg-info/dependency_links.txt
+feather_df_cli.egg-info/entry_points.txt
+feather_df_cli.egg-info/requires.txt
+feather_df_cli.egg-info/top_level.txt
+tests/test_cli.py
