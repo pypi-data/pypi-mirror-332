@@ -1,0 +1,2 @@
+[console_scripts]
+liberty-start = liberty.main:main
