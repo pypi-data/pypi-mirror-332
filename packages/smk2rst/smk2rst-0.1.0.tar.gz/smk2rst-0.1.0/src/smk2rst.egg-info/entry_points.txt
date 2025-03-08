@@ -1,0 +1,2 @@
+[console_scripts]
+smk2rst = smk2rst.cli.digest_codebase:main

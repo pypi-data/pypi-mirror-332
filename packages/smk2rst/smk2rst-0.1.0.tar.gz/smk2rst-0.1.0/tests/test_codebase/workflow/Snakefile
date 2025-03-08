@@ -1,0 +1,32 @@
+rule foo:
+    """
+    Do foo
+    
+    :output: - foo file for ``{par}``
+
+    """
+    output: "foo_{par}.test"
+    shell:
+        """
+        touch {output}
+        """
+        
+rule bar:
+    """
+    Do foo
+    
+    :output: - ``bar`` file
+
+    :input: - ``foo`` file
+
+    """
+    output:
+        bar = "bar_{par}.test"
+    input:
+        foo = "foo_{par}.test"
+
+def test_func(wildcards):
+    """
+    I'm a test function
+    """
+    return wildcards
