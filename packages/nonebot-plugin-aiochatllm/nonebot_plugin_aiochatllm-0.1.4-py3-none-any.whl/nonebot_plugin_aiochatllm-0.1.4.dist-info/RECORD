@@ -1,0 +1,14 @@
+nonebot_plugin_aiochatllm-0.1.4.dist-info/METADATA,sha256=mE9s_cm8-zvArRRz15xRCYM1Ag9q5Z5llDXBGKqtI8A,5582
+nonebot_plugin_aiochatllm-0.1.4.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+nonebot_plugin_aiochatllm-0.1.4.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nonebot_plugin_aiochatllm-0.1.4.dist-info/licenses/LICENSE,sha256=mFMRLQySG7PbSyK9JQYgWOC_dsgZgacvFZNfNkdL3wQ,1067
+nonebot_plugin_aiochatllm/__init__.py,sha256=7XCK3LoFiNYc57FLErtqGRXOHg_j5SV52ORjCoj3lmw,10376
+nonebot_plugin_aiochatllm/chat_mgr.py,sha256=WlbamyNgNIY2azU7WUOCjzZP7cHxTsn3NJD2VaLQ3f4,12676
+nonebot_plugin_aiochatllm/config.py,sha256=6hZRx5DiaDSfxQfAUreVtVYP1_Dj4Inpt3uoEoPtVsA,832
+nonebot_plugin_aiochatllm/mem_mgr.py,sha256=t4X7SLZ0fwuJ5FVbrf8NZ2c3LPnPDUwpwgskQbdT0j8,10158
+nonebot_plugin_aiochatllm/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nonebot_plugin_aiochatllm/tools/censor.py,sha256=RsArDi5yC8Zm2aUIjp3g8XBfc4F456UbNnLfBuX8gls,4155
+nonebot_plugin_aiochatllm/vector_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nonebot_plugin_aiochatllm/vector_db/base.py,sha256=b9mnKTpeCzF6PvHJqJo3TvOeCIb5KALtijgTAoXqT7g,4701
+nonebot_plugin_aiochatllm/vector_db/chromadb.py,sha256=nRxstTrEoeV_ONaRhPawDYRhuK_gR0BWXrjA2erRQF8,9024
+nonebot_plugin_aiochatllm-0.1.4.dist-info/RECORD,,
