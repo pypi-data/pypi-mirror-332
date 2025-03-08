@@ -1,0 +1,8 @@
+README.md
+mplbezier.py
+pyproject.toml
+mplbezier.egg-info/PKG-INFO
+mplbezier.egg-info/SOURCES.txt
+mplbezier.egg-info/dependency_links.txt
+mplbezier.egg-info/requires.txt
+mplbezier.egg-info/top_level.txt

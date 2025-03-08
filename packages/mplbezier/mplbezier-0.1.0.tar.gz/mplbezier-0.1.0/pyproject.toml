@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mplbezier"
+version = "0.1.0"
+description = "Draw Bezier curves on your matplotlib plots interactively."
+authors = [{ name = "Frederic Schell", email = "frederic.schell@iws.fraunhofer.de" }]
+license = { text = "MIT" }
+readme = "README.md"
+dependencies = [
+    "matplotlib"
+]
