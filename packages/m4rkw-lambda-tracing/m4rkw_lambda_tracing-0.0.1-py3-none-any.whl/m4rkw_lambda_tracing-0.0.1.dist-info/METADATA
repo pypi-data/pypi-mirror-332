@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: m4rkw-lambda-tracing
+Version: 0.0.1
+Summary: Python Distribution Utilities
+Home-page: https://github.com/m4rkw/lambda_tracing
+Author: Mark
+Author-email: m@rkw.io
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: python-pushover2
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
