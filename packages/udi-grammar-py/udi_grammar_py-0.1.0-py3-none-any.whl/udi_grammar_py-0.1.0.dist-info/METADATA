@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: udi-grammar-py
+Version: 0.1.0
+Summary: A python library for creating udi-grammar specifications
+Author-email: Devin Lange <devinscottlange@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# udi-grammar-py
+
+Python code for generating Universal Discovery Interface (UDI) specifications.
