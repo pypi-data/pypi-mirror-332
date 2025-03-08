@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+host_communication.egg-info/PKG-INFO
+host_communication.egg-info/SOURCES.txt
+host_communication.egg-info/dependency_links.txt
+host_communication.egg-info/top_level.txt
