@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+music_uri_alarm_clock.egg-info/PKG-INFO
+music_uri_alarm_clock.egg-info/SOURCES.txt
+music_uri_alarm_clock.egg-info/dependency_links.txt
+music_uri_alarm_clock.egg-info/entry_points.txt
+music_uri_alarm_clock.egg-info/top_level.txt
+spotify_alarm/__init__.py
+spotify_alarm/alarm_clock.py

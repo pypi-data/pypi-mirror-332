@@ -1,0 +1,2 @@
+[console_scripts]
+spotify-alarm = spotify_alarm.alarm_clock:main
