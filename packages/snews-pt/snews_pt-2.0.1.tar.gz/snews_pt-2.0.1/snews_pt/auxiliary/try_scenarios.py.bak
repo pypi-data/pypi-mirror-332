@@ -1,0 +1,62 @@
+import json
+import sys
+import time
+from os import path as osp
+
+import click
+import inquirer
+
+from snews_pt.messages import Publisher
+from snews_pt.remote_commands import reset_cache
+
+
+def try_scenarios(fd_mode: bool = False, is_test: bool = False):
+    if not is_test:
+        click.secho(
+            "This script is only for testing purposes, and uses past neutrino times.\n"
+            "We are running the scenarios in test mode",
+            fg="red",
+            bold=True,
+        )
+        is_test = True
+
+    with open(osp.join(osp.dirname(__file__), "scenarios.json")) as json_file:
+        data = json.load(json_file)
+
+    questions = [
+        inquirer.Checkbox(
+            "scenarios",
+            message=click.style(
+                " Which scenario(s) would you like to run next?", bg="yellow", bold=True
+            ),
+            choices=list(data.keys()) + list(["finish & exit", "restart cache"]),
+        )
+    ]
+
+    pub = Publisher(kafka_topic="kafka://kafka.scimma.org/snews.experiments-test", auth=True)
+
+    while True:
+        try:
+            answers = inquirer.prompt(questions)
+            for scenario in answers["scenarios"]:
+                if scenario == "finish & exit":
+                    click.secho("Terminating.")
+                    sys.exit()
+                elif scenario == "restart cache":
+                    reset_cache(firedrill=fd_mode, is_test=is_test)
+                    print("> Cache cleaned\n")
+                else:
+                    click.secho(f"\n>>> Testing {scenario}", fg="yellow", bold=True)
+                    messages = data[scenario]
+                    for msg in messages:  # send one by one and sleep in between
+                        print(msg, "\n\n")
+                        pub.add_message(msg)
+                        pub.send()
+                        time.sleep(1)
+
+                # clear cache after each scenario
+                reset_cache(firedrill=fd_mode, is_test=is_test)
+                print("> Cache cleaned\n")
+
+        except KeyboardInterrupt:
+            break
