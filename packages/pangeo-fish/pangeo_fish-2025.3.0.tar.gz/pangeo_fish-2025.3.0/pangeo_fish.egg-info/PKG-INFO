@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: pangeo-fish
+Version: 2025.3.0
+Summary: Utilities for fish geolocation
+Author: TAOS
+License: MIT
+Project-URL: Homepage, https://github.com/pangeo-fish/pangeo-fish
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: xarray>=2024.11.0
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: numba
+Requires-Dist: more_itertools
+Requires-Dist: opt_einsum
+Requires-Dist: sparse
+Requires-Dist: healpy
+Requires-Dist: movingpandas
+Requires-Dist: xarray-healpy
+Requires-Dist: cf_xarray
+Requires-Dist: pint-xarray
+Requires-Dist: intake
+Requires-Dist: s3fs
+Requires-Dist: fsspec
+Requires-Dist: healpix-convolution
+Requires-Dist: xdggs
+Requires-Dist: imageio[ffmpeg]
