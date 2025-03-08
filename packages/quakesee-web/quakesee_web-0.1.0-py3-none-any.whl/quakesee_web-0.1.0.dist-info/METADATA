@@ -1,0 +1,43 @@
+Metadata-Version: 2.2
+Name: quakesee_web
+Version: 0.1.0
+Summary: A web app using HoloViz Panel
+Author-email: Yudha Styawan <yudhastyawan26@gmail.com>
+License: GPL-3.0-only
+Project-URL: Homepage, https://github.com/yudhastyawan/quakesee_web
+Project-URL: Repository, https://github.com/yudhastyawan/quakesee_web
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: param>=2.1.1
+Requires-Dist: panel>=1.5.4
+Requires-Dist: obspy>=1.4.0
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: plotly>=6.0.0
+Requires-Dist: bokeh>=3.6.2
+Requires-Dist: pyproj>=3.4.1
+Requires-Dist: matplotlib>=3.9.2
+
+# QuakeSee - Seismic Event Viewer
+
+QuakeSee is an application for visualizing earthquake data, including event locations, instrument response, and waveforms from various seismic station networks.
+
+## Disclaimer:
+
+We are not responsible for any data processing errors that may occur in this program. 
+Users are encouraged to verify processing results before making decisions based on the 
+information provided.
+
+## About the Program:
+
+QuakeSee is an application designed to visualize earthquake data with features such as displaying 
+earthquake event locations, instrument responses, and waveforms obtained from various seismic station 
+networks worldwide.
+
+## Developer Information:
+
+This program was developed by:
+The QuakeSee Development Team - Yudha Styawan
+Lecturer, Geophysics Engineering - Institut Teknologi Sumatera
+Contact: yudhastyawan26@gmail.com
