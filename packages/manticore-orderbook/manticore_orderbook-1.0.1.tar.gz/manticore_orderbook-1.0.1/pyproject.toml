@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manticore-orderbook"
+version = "1.0.1"
+description = "A high-performance order book implementation for cryptocurrency exchanges"
+readme = "README.md"
+authors = [
+    {name = "Manticore Technologies"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+requires-python = ">=3.8"
+dependencies = ["tabulate>=0.8.9"]
+
+[project.optional-dependencies]
+benchmark = ["tabulate>=0.8.9"]
+dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "tabulate>=0.8.9"]
+
+[project.urls]
+"Homepage" = "https://manticore.technology"
+"GitHub" = "https://github.com/manticoretechnologies/manticore-orderbook"
+"Bug Tracker" = "https://github.com/manticoretechnologies/manticore-orderbook/issues" 
