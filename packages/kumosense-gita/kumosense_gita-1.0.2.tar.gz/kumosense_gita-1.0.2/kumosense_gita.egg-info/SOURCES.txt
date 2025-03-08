@@ -1,0 +1,12 @@
+README.md
+setup.py
+gita/__init__.py
+gita/cli.py
+gita/commit.py
+gita/git_helper.py
+kumosense_gita.egg-info/PKG-INFO
+kumosense_gita.egg-info/SOURCES.txt
+kumosense_gita.egg-info/dependency_links.txt
+kumosense_gita.egg-info/entry_points.txt
+kumosense_gita.egg-info/requires.txt
+kumosense_gita.egg-info/top_level.txt
