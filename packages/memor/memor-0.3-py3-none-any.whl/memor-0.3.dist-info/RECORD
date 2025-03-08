@@ -1,0 +1,14 @@
+memor/__init__.py,sha256=cNn_v5-x8XgDRggQ0gN9fYiCRSWNkAYVw60fFBk_vQA,333
+memor/errors.py,sha256=lcXtSozrZZBUUFjkze5lksDXG9oswwwwZH6CKNRHKT0,244
+memor/functions.py,sha256=iR7kJIvaEqUgA4TJjcFCQ5zERS61YZOOqN8iT3QcVYw,5172
+memor/params.py,sha256=9QnzX16_O0V1KNP-CYGyWDVc_J-M_KnGcHeEuGOEQF4,2416
+memor/prompt.py,sha256=G0BJ0mAMY0yUQG2qNh-L49hiY084scC_p4YyZPFvMYM,14686
+memor/response.py,sha256=mWqhdMG1O0o61cw6QUjWg4V1tirrgalhlJEi2YlIHkQ,10702
+memor/session.py,sha256=4yInojWh9Sa2cx4r46PxNRnW_uNs5inNvR0H3RNvBYY,11896
+memor/template.py,sha256=6Me67Hsm7x53DjxpgR6alBlnTqmgv-TuESglzjpcF4M,20365
+memor-0.3.dist-info/AUTHORS.md,sha256=4WuqAM8wEvqhuJrKUJ6sqxsERReY2hYhgwnuJf0fZec,357
+memor-0.3.dist-info/LICENSE,sha256=Ck6vYPIMtG-c66W_PK2oYx-WDILkeu3KkrzbUYGQgwo,1066
+memor-0.3.dist-info/METADATA,sha256=u2pv0chgxeJrUJAv_cnem-48S87W4lJG6EcpAjrTwDM,9211
+memor-0.3.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+memor-0.3.dist-info/top_level.txt,sha256=XWNkuLOmIbKZzvUo36F2CF4U3OeM3LbenmhDvi1YpWw,6
+memor-0.3.dist-info/RECORD,,
