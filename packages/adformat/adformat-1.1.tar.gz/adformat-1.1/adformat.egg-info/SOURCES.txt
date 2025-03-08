@@ -1,0 +1,10 @@
+README.md
+setup.py
+adformat/ADFormat.py
+adformat/__init__.py
+adformat.egg-info/PKG-INFO
+adformat.egg-info/SOURCES.txt
+adformat.egg-info/dependency_links.txt
+adformat.egg-info/entry_points.txt
+adformat.egg-info/requires.txt
+adformat.egg-info/top_level.txt
