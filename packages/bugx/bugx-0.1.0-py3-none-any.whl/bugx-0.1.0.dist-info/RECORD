@@ -1,0 +1,10 @@
+bugx/__about__.py,sha256=jMMAsT1ZK5yEhXYEQP2afheCynRR0citLIvFbrWvE6w,74
+bugx/__init__.py,sha256=rR9z391Zwvh0WQtlHY8ic6wgmv4VPf7TDUSX7ogmYrE,66
+bugx/__main__.py,sha256=cPiTgeOQDuhXFMfZtguvcoUEdU1zZzc7OKVVD7GkMx4,87
+bugx/bugreport_extractor.py,sha256=NyFKL68DVFHoFQbTqPTV0uub6kUZOgr5wN3kduA68mY,14018
+bugx/cli.py,sha256=AAuVaIRknEGgyZsXd66CGyLI8BqJXU0Jnsnl0aJHwIg,633
+bugx/cli_constants.py,sha256=-q9QmRgDyQdA132Tj5S1hNRdh-DzwkgRhb4VGtt8jPE,167
+bugx-0.1.0.dist-info/METADATA,sha256=6u2nRXl7kurm9DeBu4iRjEtABLmoNUlOxL6VrBfiv7E,351
+bugx-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bugx-0.1.0.dist-info/entry_points.txt,sha256=H1LtdRZl-OxSHTDluxvbf00JctmjiQWx2qAKqKwDHH0,41
+bugx-0.1.0.dist-info/RECORD,,
