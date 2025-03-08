@@ -1,0 +1,3 @@
+[console_scripts]
+create_ds=src.commands:app
+
