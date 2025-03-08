@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+rtac.egg-info/PKG-INFO
+rtac.egg-info/SOURCES.txt
+rtac.egg-info/dependency_links.txt
+rtac.egg-info/top_level.txt
