@@ -1,0 +1,9 @@
+README.md
+setup.py
+m_try/__init__.py
+m_try/algebra.py
+m_try/geometry.py
+m_try.egg-info/PKG-INFO
+m_try.egg-info/SOURCES.txt
+m_try.egg-info/dependency_links.txt
+m_try.egg-info/top_level.txt
