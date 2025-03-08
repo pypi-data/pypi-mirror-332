@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: txt2mrs
+Version: 0.0.7
+Summary: txt2mrs encoding/decoding library
+Project-URL: Homepage, https://github.com/babenek/txt2mrs
+Project-URL: Bug Tracker, https://github.com/babenek/txt2mrs/issues
+Author-email: Roman Babenko <babenek@users.noreply.github.com>
+Keywords: morse,sound,text
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: simpleaudio
+Description-Content-Type: text/markdown
+
+Text to morse sound
+===================
+
+The toy converts a text from STDIN to text and play the morse code.
+
+**How to install:**
+``pip install txt2mrs``
+
+**How to use:**
+``txt2mrs "HAPPY BIRTHDAY!"``
