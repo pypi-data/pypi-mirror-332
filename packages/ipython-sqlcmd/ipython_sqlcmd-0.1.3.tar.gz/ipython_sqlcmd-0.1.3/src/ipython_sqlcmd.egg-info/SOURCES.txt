@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/ipython_sqlcmd.egg-info/PKG-INFO
+src/ipython_sqlcmd.egg-info/SOURCES.txt
+src/ipython_sqlcmd.egg-info/dependency_links.txt
+src/ipython_sqlcmd.egg-info/entry_points.txt
+src/ipython_sqlcmd.egg-info/requires.txt
+src/ipython_sqlcmd.egg-info/top_level.txt
+src/sqlcmd/__init__.py
+src/sqlcmd/connection.py
+src/sqlcmd/exceptions.py
+src/sqlcmd/executor.py
+src/sqlcmd/magic.py
+src/sqlcmd/parser.py
