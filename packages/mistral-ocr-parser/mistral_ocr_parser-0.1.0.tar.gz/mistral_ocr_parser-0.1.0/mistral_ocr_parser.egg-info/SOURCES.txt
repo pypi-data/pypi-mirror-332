@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+mistral_ocr/__init__.py
+mistral_ocr/image.py
+mistral_ocr/parser.py
+mistral_ocr/utils.py
+mistral_ocr_parser.egg-info/PKG-INFO
+mistral_ocr_parser.egg-info/SOURCES.txt
+mistral_ocr_parser.egg-info/dependency_links.txt
+mistral_ocr_parser.egg-info/entry_points.txt
+mistral_ocr_parser.egg-info/requires.txt
+mistral_ocr_parser.egg-info/top_level.txt
+tests/test_image.py
+tests/test_parser.py
