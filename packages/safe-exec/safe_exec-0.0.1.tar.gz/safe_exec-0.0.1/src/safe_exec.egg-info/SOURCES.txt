@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/safe_exec/__init__.py
+src/safe_exec/safe_exec.pth
+src/safe_exec.egg-info/PKG-INFO
+src/safe_exec.egg-info/SOURCES.txt
+src/safe_exec.egg-info/dependency_links.txt
+src/safe_exec.egg-info/top_level.txt
+tests/test.py

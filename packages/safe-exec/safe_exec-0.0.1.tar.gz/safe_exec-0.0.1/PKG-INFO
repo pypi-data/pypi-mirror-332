@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: safe-exec
+Version: 0.0.1
+Summary: Inspect code passed into exec() and eval()
+Author-email: Lemonyte <contact@lemonyte.com>
+Project-URL: Repository, https://github.com/lemonyte/safe-exec
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
