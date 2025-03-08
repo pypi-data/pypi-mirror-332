@@ -1,0 +1,16 @@
+fundamentalvision/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fundamentalvision/acoes.py,sha256=IQNEHDdBRU2KlCLOrTBvi_gNXcizZaLQz24vPwJUkzA,4511
+fundamentalvision/app.py,sha256=tRnHf_nd0cxfqg7CZvDYKvA562RUCnPb6y3DhHzcNNE,620
+fundamentalvision/dashboard.py,sha256=F50GplXU7H9rq61XxLYE_doQolw-qiCn7SHqku85jMA,3932
+fundamentalvision/data_handler.py,sha256=pMW7e1Q2GGe-mTVRX2HqpPCNjxeUKEgFX0l-5DzClLE,492
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_acoes.py,sha256=sAKqSjZpn8FMxGHQQNspjC7ibaIG7PzL0uB31UNshCU,3814
+tests/test_app.py,sha256=FXo6VV8i3G9vHLmCXkYw2uytIp4q3f-9vQR19dLDgFY,500
+tests/test_dashboard.py,sha256=XLaCRuH9ww7v9GHWDRjz8-A9zXUZfcK3BTiSN5hECRY,1169
+tests/test_data_handler.py,sha256=TzpsCxC3YrTO-cMYg9bpFhcNJAh5EOK-hUTxff0xTGw,562
+tests/test_fundamentalvision.py,sha256=FXo6VV8i3G9vHLmCXkYw2uytIp4q3f-9vQR19dLDgFY,500
+fundamentalvision-0.1.0.dist-info/LICENCE,sha256=Wnp0E8Q17xVDC--hfwySG2guAj6A1w70uE0epiGjQRI,1098
+fundamentalvision-0.1.0.dist-info/METADATA,sha256=IXxZsz3t02WtElNcb5SUXZG6DMgP71yG2G8jr2o0-Po,6002
+fundamentalvision-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+fundamentalvision-0.1.0.dist-info/top_level.txt,sha256=-MxI9yQyDicaNthgYi1jYrPga58Ym7yBKiJK3DHwYyc,24
+fundamentalvision-0.1.0.dist-info/RECORD,,
