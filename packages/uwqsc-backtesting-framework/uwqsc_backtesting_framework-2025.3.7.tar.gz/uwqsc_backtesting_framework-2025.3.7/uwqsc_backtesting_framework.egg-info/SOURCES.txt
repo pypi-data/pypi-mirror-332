@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+uwqsc_backtesting_framework/__init__.py
+uwqsc_backtesting_framework/conv_to_parquet.py
+uwqsc_backtesting_framework/main.py
+uwqsc_backtesting_framework.egg-info/PKG-INFO
+uwqsc_backtesting_framework.egg-info/SOURCES.txt
+uwqsc_backtesting_framework.egg-info/dependency_links.txt
+uwqsc_backtesting_framework.egg-info/requires.txt
+uwqsc_backtesting_framework.egg-info/top_level.txt
+uwqsc_backtesting_framework/interfaces/IBacktestingFramework.py
+uwqsc_backtesting_framework/interfaces/__init__.py

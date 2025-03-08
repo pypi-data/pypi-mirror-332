@@ -1,0 +1,2 @@
+streamlit==1.43.0
+uwqsc-algorithmic-trading==2025.3.7.post2
