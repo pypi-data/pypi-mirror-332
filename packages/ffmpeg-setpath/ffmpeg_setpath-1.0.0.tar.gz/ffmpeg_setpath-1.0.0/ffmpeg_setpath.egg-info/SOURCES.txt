@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+ffmpeg_setpath/__init__.py
+ffmpeg_setpath/examples.py
+ffmpeg_setpath/ffmpeg_setpath.py
+ffmpeg_setpath.egg-info/PKG-INFO
+ffmpeg_setpath.egg-info/SOURCES.txt
+ffmpeg_setpath.egg-info/dependency_links.txt
+ffmpeg_setpath.egg-info/requires.txt
+ffmpeg_setpath.egg-info/top_level.txt
