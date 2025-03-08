@@ -1,0 +1,105 @@
+Metadata-Version: 2.3
+Name: snews-cs
+Version: 3.0.1
+Summary: An alert application for observing supernovas.
+License: BSD 3-Clause
+Author: SNEWS Collaboration
+Author-email: snews2.0@lists.bnl.gov
+Requires-Python: >=3.11,<3.13
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: hop-client (>=0.10.0,<0.11.0)
+Requires-Dist: ipython (<7.33.0)
+Requires-Dist: matplotlib (>=3.8.0,<4.0.0)
+Requires-Dist: numpy (>=1.26.0,<2.0.0)
+Requires-Dist: pandas (>=2.1.1,<3.0.0)
+Requires-Dist: pymongo (>=4.5.0,<5.0.0)
+Requires-Dist: python-dotenv (>=0.19,<0.20)
+Requires-Dist: scipy (>=1.11.3,<2.0.0)
+Requires-Dist: slack-sdk (>=3.26.2,<4.0.0)
+Requires-Dist: snews-data-formats (>=1.0.0,<2.0.0)
+Requires-Dist: sqlalchemy (>=2.0.32,<3.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Project-URL: Documentation, https://snews-coincidence-system.readthedocs.io/
+Project-URL: Homepage, https://github.com/SNEWS2/SNEWS_Coincidence_System.git
+Project-URL: Repository, https://github.com/SNEWS2/SNEWS_Coincidence_System.git
+Description-Content-Type: text/markdown
+
+# SNEWS_Coincidence_System
+
+Coincidence system backend for [SNEWS](https://snews2.org/) alert trigger.
+
+![tests](https://github.com/SNEWS2/SNEWS_Coincidence_System/actions/workflows/tests.yml/badge.svg)
+[![Documentation Status](https://readthedocs.org/projects/snews-coincidence-system/badge/?version=latest)](https://snews-coincidence-system.readthedocs.io/en/latest/?badge=latest&style=for-the-badge)
+[![arXiv](https://img.shields.io/badge/arXiv-2406.17743-b31b1b.svg)](https://arxiv.org/abs/2406.17743)
+
+## How to Install
+
+The package can be installed via `setuptools` or `poetry`. See [this page](./docs/user/installation.md) for more details.
+
+Clone this repo and change into the directory:
+```bash
+git clone https://github.com/SNEWS2/SNEWS_Coincidence_System.git
+cd SNEWS_Coincidence_System
+```
+
+## Usage
+
+`snews_cs` is the main software running on the servers to initiate coincidence seraches, and trigger alerts.
+ Basic usage is starting the coincidence search with the following command:
+```python
+snews_pt run-coincidence --no-firedrill
+```
+
+The command line tool provides information about the available commands and options:
+```python
+snews_pt --help
+```
+
+The heartbeat feedbacks can be tracked via the following command:
+```python
+snews_pt run-feedback
+```
+For more details and advanced usage, see the [documentation](https://snews-coincidence-system.readthedocs.io/en/latest/).
+
+# Note for the developers
+Please visit the [Developer Notes](./docs/user/Developers.md) page for more details. 
+Anytime a new package needs to be introduced, please do so over poetry and update the requirements.txt file for the setuptools using poetry as described in the notes. 
+
+# SNEWS Detector List
+
+* “Baksan”
+* “Borexino”
+* “DS-20K”
+* “DUNE”
+* “HALO”
+* “HALO-1kT”
+* “Hyper-K”
+* “IceCube”
+* “JUNO”
+* “KM3NeT”
+* “KamLAND”
+* “LVD”
+* “LZ”
+* “MicroBooNe”
+* “NOvA”
+* “PandaX-4T”
+* “SBND”
+* “SNO+”
+* “Super-K”
+* “XENONnT”
+
