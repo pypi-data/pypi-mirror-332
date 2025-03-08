@@ -1,0 +1,11 @@
+pynldas2/__init__.py,sha256=ssyVwOYyPdMUVMos8R4BcDxsXTkKnRt3zOFNQah1wKw,532
+pynldas2/_utils.py,sha256=dcxVkIUIpigIesxS6KZ_Ls7M8nz3-xhIwbnCEqpIibE,5626
+pynldas2/exceptions.py,sha256=ZNJFI9ge4tuss3tX5pfUeqZE4miuyQ7Xp5OaZO7TqLQ,2679
+pynldas2/print_versions.py,sha256=5x0nMr0OPbDFfaqy2H6StbjI_7FiYRLWEAN0F8NUd6k,4295
+pynldas2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynldas2/pynldas2.py,sha256=LYFywer2fnKV2dfG3NqhVHAHwKhhWOhH8Mk-WaFvPes,18926
+pynldas2-0.19.3.dist-info/METADATA,sha256=v_kvmCdGV2b1XFX89qdPKUEHHP-3OQ_7ZYHc9xHBDRc,11954
+pynldas2-0.19.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pynldas2-0.19.3.dist-info/licenses/AUTHORS.rst,sha256=jqTp9J8snXUfqwwbQDi_zpgl6qGPGecgVy_-hj-mbHA,168
+pynldas2-0.19.3.dist-info/licenses/LICENSE,sha256=EM87NgYgabO0a_E-z2nmbsrxomXdI5BDCgmomVDvLsE,1096
+pynldas2-0.19.3.dist-info/RECORD,,
