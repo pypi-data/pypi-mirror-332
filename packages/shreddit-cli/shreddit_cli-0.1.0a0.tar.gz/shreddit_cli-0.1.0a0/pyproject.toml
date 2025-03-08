@@ -1,0 +1,41 @@
+[project]
+name = "shreddit-cli"
+version = "0.1.0-a0"
+description = "Shreddit CLI is a command line tool to automate the removeal of reddit posts."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license-files = ["LICENSE"]
+authors = [
+    { name = "Ashley Connor", email = "me@ashleyconnor.co.uk" },
+    { name = "David John", email = "david@vaunt.eu" }
+]
+license = { text = "MIT" }
+
+dependencies = [
+    "praw==7.8.1",
+    "pyyaml==6.0.2",
+    "requests>=2.18.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/ashleyconnor/shreddit-cli"
+Issues = "https://github.com/ashleyconnor/shreddit-cli/issues"
+
+[project.scripts]
+shreddit = "shreddit_cli.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.setuptools.package-data]
+shreddit_cli = ["LICENSE", "README.md", "praw.ini.example", "shreddit.yml.example"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.10",
+]
