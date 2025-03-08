@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: pytoolsmith
+Version: 0.1.1
+Summary: A lightweight Python library that simplifies the process of exposing functions as tools for Large Language Models
+Project-URL: Homepage, https://github.com/zachrobo1/pytoolsmith
+Project-URL: Bug Tracker, https://github.com/zachrobo1/pytoolsmith/issues
+Author-email: Zach Cloud <me@zachb.cloud>
+License: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: pydantic==2.10.6
+Description-Content-Type: text/markdown
+
+file: README.md
+file: CHANGELOG.md
