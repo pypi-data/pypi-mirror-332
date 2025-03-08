@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: agox-extra
+Version: 0.1.0
+Summary: Extra tidbits for AGOX
+Author-email: Mads-Peter Verner Christiansen <machri@phys.au.dk>
+Requires-Python: >=3.11
+Requires-Dist: agox
+Provides-Extra: all
+Requires-Dist: jax; extra == 'all'
+Requires-Dist: jaxlib; extra == 'all'
+Requires-Dist: matscipy; extra == 'all'
+Provides-Extra: jax
+Requires-Dist: jax; extra == 'jax'
+Requires-Dist: jaxlib; extra == 'jax'
+Requires-Dist: matscipy; extra == 'jax'
+Provides-Extra: shepherd
