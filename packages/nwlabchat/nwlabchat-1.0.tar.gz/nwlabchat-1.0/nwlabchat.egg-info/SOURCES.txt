@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+nwlabchat.egg-info/PKG-INFO
+nwlabchat.egg-info/SOURCES.txt
+nwlabchat.egg-info/dependency_links.txt
+nwlabchat.egg-info/top_level.txt
