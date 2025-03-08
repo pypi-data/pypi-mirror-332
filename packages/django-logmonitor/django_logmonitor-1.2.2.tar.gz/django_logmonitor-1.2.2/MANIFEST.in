@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include logmonitor/templates *
+recursive-include logmonitor/static *
+recursive-include logmonitor/locale * # Incluir archivos de traducción
