@@ -1,0 +1,14 @@
+pandas>=2.2.0
+plotly>=6.0.0
+sentence-transformers>=3.4.0
+torchvision>=0.21.0
+gensim>=4.3.3
+scikit-learn>=1.6.1
+tqdm>=4.66.0
+fastopic>=1.0.0
+
+[dev]
+bertopic>=0.16.0
+
+[test]
+pytest>=8.3.0
