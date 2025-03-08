@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dingo-walk
+Version: 0.1.0
+Summary: High dimensional polytope sampling in Python. dingo_walk comes with a set of tools for metabolic network sampling and analysis. dingo_walk is part of GeomScale project.
+Author: Apostolos Chalkis
+Author-email: tolis.chal@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Cython (>=0.29.22,<0.30.0)
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: cobra (>=0.26.0,<0.27.0)
+Requires-Dist: kaleido (==0.2.1)
+Requires-Dist: matplotlib (>=3.4.1,<4.0.0)
+Requires-Dist: numpy (>=1.20.1,<2.0.0)
+Requires-Dist: plotly (>=5.11.0,<6.0.0)
+Requires-Dist: scipy (>=1.6.1,<2.0.0)
+Requires-Dist: simplejson (>=3.17.2,<4.0.0)
+Requires-Dist: sparseqr (>=1.2.1,<2.0.0)
