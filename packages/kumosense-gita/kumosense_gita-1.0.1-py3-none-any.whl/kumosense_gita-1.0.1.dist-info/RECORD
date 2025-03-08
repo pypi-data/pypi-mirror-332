@@ -1,0 +1,9 @@
+gita/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gita/cli.py,sha256=MrYMHvDJkVcEv-56hs6ZEqD8pJwg10zKY2ivKE1aRcs,1375
+gita/commit.py,sha256=y9_kQ5-JhGxqwelfKl8CtsdU4U7slZ3ogaGscRzYy8w,1377
+gita/git_helper.py,sha256=DWsWRXLUOxk2NVTHIfJb7XsFgxWmHPDdJ3m4vC3vYp0,636
+kumosense_gita-1.0.1.dist-info/METADATA,sha256=UUtCjXBtdbtD0BM2GvPZBtMasxMXjxVFA2wX75F7I7c,2519
+kumosense_gita-1.0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+kumosense_gita-1.0.1.dist-info/entry_points.txt,sha256=cTyGEu4JxgFxpB8R9Zf5WnLp9-6Hc0kDgO37QmOh5uA,39
+kumosense_gita-1.0.1.dist-info/top_level.txt,sha256=p9sxZLSCBaCf-xwRYniGGvycjx1asFH6x3YjLxjeCKI,5
+kumosense_gita-1.0.1.dist-info/RECORD,,
