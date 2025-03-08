@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "amlcompass-api"
+version = "0.1.0"
+authors = [
+    {name = "Yarel Leyva", email = "yarelleyva2@gmail.com"},
+]
+description = "Cliente API para Optima Compass - AML services"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "python-dotenv",
+    "requests",
+    "requests_oauthlib",
+]
+license = {text = "MIT License"}
+license-files = ["LICEN[CS]E.*"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = ["aml", "optima", "compass", "api"]
+
+[project.urls]
+Homepage = "https://github.com/yarel2l/amlcompass_api"
+
+[tool.setuptools]
+packages = ["amlcompass_api"]
+
+[project.optional-dependencies]
+test = ["pytest"]
