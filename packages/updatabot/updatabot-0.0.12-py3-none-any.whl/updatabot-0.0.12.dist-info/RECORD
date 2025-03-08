@@ -1,0 +1,10 @@
+updatabot/__init__.py,sha256=5LfEN1GdGXmBWit1nTsdj1vaFd466kFyvB2oS6Bk0fw,86
+updatabot/load_url.py,sha256=sHx84Eec-yHFeOoMxeiQiBefySkhxg7Cz_QSjJo5ywY,4825
+updatabot/save.py,sha256=fhTQt2Z_T4dYMXqmAbjT7YALFW9bSHu3CjkRhGjbLFg,995
+updatabot/schema/ons_api/ds_root.py,sha256=okc_fW2dsTHjT4qDr1l9siYIWWAARP6a-wGEAdQTq2U,3128
+updatabot/schema/ons_api/ds_version.py,sha256=C-Zc1Ltf1TB-bVh8pfiW-BYN2KVImBUSajFtYiHaAQQ,4620
+updatabot-0.0.12.dist-info/LICENCE,sha256=i4btP_uv843fJ1u6vvDow6wdBaghKasgClmVoaJ1yOI,1070
+updatabot-0.0.12.dist-info/METADATA,sha256=QuEehQVEMIbO3Fc2cCqWIfsXfjcMrMFon1O_n2b_N9A,809
+updatabot-0.0.12.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+updatabot-0.0.12.dist-info/top_level.txt,sha256=ID3aCcGHvdL0nQeA89dujaBLqRdQmCqFSpVK95CRAWE,10
+updatabot-0.0.12.dist-info/RECORD,,
