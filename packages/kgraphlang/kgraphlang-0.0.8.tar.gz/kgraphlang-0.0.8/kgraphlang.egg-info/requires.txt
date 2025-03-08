@@ -1,0 +1,8 @@
+SPARQLWrapper
+isodate
+numpy
+hnswlib
+lark>=1.2.2
+vital-ai-vitalsigns>=0.1.27
+vital-ai-domain>=0.1.7
+vital-logic>=0.1.0
