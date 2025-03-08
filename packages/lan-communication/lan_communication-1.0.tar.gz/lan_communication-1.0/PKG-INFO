@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: lan_communication
+Version: 1.0
+Summary: A Python package for enabling communication between two hosts using sockets.
+Author: Hakim Adiche
+Author-email: adiche@kfupm.edu.sa
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+# Host Communication
+
+This package provides tools for enabling communication between two hosts using sockets.
+
+## Installation
+
+```bash
+pip install host_communication

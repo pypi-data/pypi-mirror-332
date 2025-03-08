@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+lan_communication.egg-info/PKG-INFO
+lan_communication.egg-info/SOURCES.txt
+lan_communication.egg-info/dependency_links.txt
+lan_communication.egg-info/top_level.txt
+lan_host_communication/__init__.py
+lan_host_communication/client.py
+lan_host_communication/server.py
