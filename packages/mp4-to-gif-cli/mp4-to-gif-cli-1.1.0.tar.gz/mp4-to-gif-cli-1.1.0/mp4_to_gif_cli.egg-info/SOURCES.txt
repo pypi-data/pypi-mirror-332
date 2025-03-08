@@ -1,0 +1,11 @@
+README.md
+setup.py
+mp4_to_gif/__init__.py
+mp4_to_gif/cli.py
+mp4_to_gif/converter.py
+mp4_to_gif_cli.egg-info/PKG-INFO
+mp4_to_gif_cli.egg-info/SOURCES.txt
+mp4_to_gif_cli.egg-info/dependency_links.txt
+mp4_to_gif_cli.egg-info/entry_points.txt
+mp4_to_gif_cli.egg-info/requires.txt
+mp4_to_gif_cli.egg-info/top_level.txt
