@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+codesecdirectapachtolgpl21/__init__.py
+codesecdirectapachtolgpl21/module1.py
+codesecdirectapachtolgpl21.egg-info/PKG-INFO
+codesecdirectapachtolgpl21.egg-info/SOURCES.txt
+codesecdirectapachtolgpl21.egg-info/dependency_links.txt
+codesecdirectapachtolgpl21.egg-info/requires.txt
+codesecdirectapachtolgpl21.egg-info/top_level.txt
