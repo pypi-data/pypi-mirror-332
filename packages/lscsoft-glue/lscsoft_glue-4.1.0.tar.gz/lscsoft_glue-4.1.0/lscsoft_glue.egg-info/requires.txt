@@ -1,0 +1,11 @@
+igwn-segments
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[test]
+pytest
+
+[test:python_version < "3.13"]
+lalsuite

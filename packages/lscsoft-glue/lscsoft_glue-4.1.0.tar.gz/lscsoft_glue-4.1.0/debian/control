@@ -1,0 +1,33 @@
+# -- source package -----------------------------
+
+Source: lscsoft-glue
+Section: python
+Priority: optional
+Maintainer: Duncan Macleod <duncan.macleod@ligo.org>
+Homepage: https://git.ligo.org/lscsoft/glue/
+X-Python3-Version: >= 3.6
+Standards-Version: 4.2.1
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ python3-all (>= 3.6),
+ python3-igwn-segments,
+ python3-lal,
+ python3-pytest,
+ python3-setuptools (>= 61.0.0),
+
+# -- python 3 packages --------------------------
+
+Package: python3-lscsoft-glue
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Recommends:
+ python3-lal,
+Description: Grid LSC User Environment Python 3 library
+ Glue (Grid LSC User Environment) is a suite of python3 modules and programs to
+ allow users to run LSC codes on the grid.
+ .
+ This package provides the Python 3 library

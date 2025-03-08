@@ -1,0 +1,7 @@
+include LICENSE README.md MANIFEST.in
+include misc/*.py
+include misc/*.py.in
+include src/*.h
+include rpm/*
+include debian/*
+include debian/source/*
