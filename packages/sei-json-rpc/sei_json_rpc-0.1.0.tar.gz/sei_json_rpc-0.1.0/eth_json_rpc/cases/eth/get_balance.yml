@@ -1,0 +1,74 @@
+test_cases:
+  # ---------------------------
+  # get_balance 正常场景
+  # ---------------------------
+  - description: "正常场景 - 最新区块的余额查询（默认区块标识符）"
+    method_name: "get_balance"
+    params: [ "0x742d35Cc6634C0532925a3b844Bc454e4438f44e" ]
+
+  - description: "正常场景 - 显式指定最新区块"
+    method_name: "get_balance"
+    params: [ "0x742d35Cc6634C0532925a3b844Bc454e4438f44e" ]
+    kwargs: { block_identifier: "latest" }
+
+  - description: "正常场景 - 指定区块号查询"
+    method_name: "get_balance"
+    params: [ "0x742d35Cc6634C0532925a3b844Bc454e4438f44e" ]
+    kwargs: { block_identifier: 21966305 }
+
+  - description: "正常场景 - 使用区块哈希查询"
+    method_name: "get_balance"
+    params: [ "0x742d35Cc6634C0532925a3b844Bc454e4438f44e" ]
+    kwargs: { block_identifier: "0xce78e413cd5032a7b8910a01bf574ef6378237232f8414ab301c3414023b57aa" }
+
+  - description: "正常场景 - 使用ENS域名查询"
+    method_name: "get_balance"
+    params: [ "vitalik.eth" ]
+    kwargs: { block_identifier: "latest" }
+
+  - description: "正常场景 - 新创建地址零余额验证"
+    method_name: "get_balance"
+    params: [ "0x0000000000000000000000000000000012345678" ]
+    expected_result: 0  # Wei 类型，实际值为 0
+
+  # ---------------------------
+  # get_balance 异常场景
+  # ---------------------------
+  - description: "异常场景 - 无效地址格式"
+    method_name: "get_balance"
+    params: [ "0xINVALID_ADDRESS" ]
+    # "ERROR: ENS name: '0xINVALID_ADDRESS' is invalid."
+    expected_error: "is invalid"
+
+  - description: "异常场景 - 不存在的区块号"
+    method_name: "get_balance"
+    params: [ "0x742d35Cc6634C0532925a3b844Bc454e4438f44e" ]
+    kwargs: { block_identifier: 99999999 }
+    # "ERROR: HTTPSConnectionPool(host='mainnet.infura.io', port=443): Read timed out. (read timeout=5)"
+    expected_error: "timed out"
+
+  - description: "异常场景 - 错误类型参数（浮点数区块号）"
+    method_name: "get_balance"
+    params: [ "0x742d35Cc6634C0532925a3b844Bc454e4438f44e" ]
+    kwargs: { block_identifier: 123.45 }
+    # "ERROR: {'code': -32602, 'message': 'invalid argument 1: json: cannot unmarshal number into Go value of type string'}"
+    expected_error: "-32602"
+
+  - description: "异常场景 - 无效区块哈希"
+    method_name: "get_balance"
+    params: [ "0x742d35Cc6634C0532925a3b844Bc454e4438f44e" ]
+    kwargs: { block_identifier: "0xinvalid_hash" }
+    # "ERROR: {'code': -32602, 'message': 'invalid argument 1: invalid hex string'}"
+    expected_error: "-32602"
+
+  - description: "异常场景 - 不存在的ENS域名"
+    method_name: "get_balance"
+    params: [ "111nonexistent.eth" ]
+    # "ERROR: Could not find address for name '111nonexistent.eth'"
+    expected_error: "not find address for name"
+
+  - description: "边界场景 - 超大余额验证（测试Wei类型溢出）"
+    method_name: "get_balance"
+    params: [ "0x742d35Cc6634C0532925a3b844Bc454e4438f44e" ]
+    kwargs: { block_identifier: "latest" }
+

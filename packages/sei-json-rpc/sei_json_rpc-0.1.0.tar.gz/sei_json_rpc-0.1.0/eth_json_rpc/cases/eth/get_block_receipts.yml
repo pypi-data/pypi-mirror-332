@@ -1,0 +1,41 @@
+test_cases:
+  # ---------------------------
+  # get_block_receipts 正常场景
+  # ---------------------------
+  - description: "正常场景 - 使用区块号查询"
+    method_name: "get_block_receipts"
+    params: [ 21973539 ]
+
+  - description: "正常场景 - 使用区块哈希查询"
+    method_name: "get_block_receipts"
+    params: [ "0x6450f458c01f6a4b09cc46aca367d77e0bc76f426208fd2691159abdf124d8dd" ]
+
+  - description: "正常场景 - 最新区块查询（latest标签）"
+    method_name: "get_block_receipts"
+    params: [ "latest" ]
+
+  # ---------------------------
+  # get_block_receipts 异常场景
+  # ---------------------------
+  - description: "异常场景 - 无效区块号格式"
+    method_name: "get_block_receipts"
+    params: [ "invalid_number" ]
+    expected_error: "ERROR: {'code': -32602, 'message': 'quantity values must start with 0x'}"
+
+  - description: "异常场景 - 不存在的区块哈希"
+    method_name: "get_block_receipts"
+    params: [ "0x0000000000000000000000000000000000000000000000000000000000000000" ]
+    expected_error: "not found"
+
+  # ---------------------------
+  # get_block_receipts 边界场景
+  # ---------------------------
+  - description: "边界场景 - 创世区块查询"
+    method_name: "get_block_receipts"
+    params: [ 0 ]
+    expected_result: []
+
+  - description: "边界场景 - 超大区块号（2^64）"
+    method_name: "get_block_receipts"
+    params: [ 18446744073709551615 ]
+    expected_error: "ERROR: {'code': -32603, 'message': 'service temporarily unavailable'}"
