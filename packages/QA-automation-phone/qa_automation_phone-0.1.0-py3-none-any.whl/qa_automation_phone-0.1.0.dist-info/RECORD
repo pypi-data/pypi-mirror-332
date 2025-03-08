@@ -1,0 +1,10 @@
+QA_automation_phone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QA_automation_phone/config.py,sha256=Aznz1zME_zplg8qJNJJmPcUfM8fR3Qlf4_ZqQuHWenk,2445
+QA_automation_phone/coreapp.py,sha256=-sXDRTGYCw3DGDh_zw2kWDFP52GSi5YD_G2_mZAXXwc,3136
+QA_automation_phone/devices.py,sha256=lG9vD0b2GXLe0P1HfbskVIcOtsi5NY-pqQT_LW4O1QI,1146
+QA_automation_phone/setting.py,sha256=HsMvqohh7aq4ME6N2Pxab9o1Qoxo2JGNmb569E7v-jA,289
+qa_automation_phone-0.1.0.dist-info/LICENSE,sha256=8TbZvy0Lmkat5Fo1NKZO6mO8R4s1oNoPYS7g9eWLA2s,733
+qa_automation_phone-0.1.0.dist-info/METADATA,sha256=7TOMOm0mQZpYWYdrIHLnRRCQfsVPBBslqA0KCNkot-o,1646
+qa_automation_phone-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+qa_automation_phone-0.1.0.dist-info/top_level.txt,sha256=c3Bzx62JaIM0gACOrvmK0kyYGL5muNpir03mP--45dE,20
+qa_automation_phone-0.1.0.dist-info/RECORD,,
