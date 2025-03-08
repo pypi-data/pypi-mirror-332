@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "OHC_Backend"
+version = "0.0.0" # Placeholder, dynamically set by env var
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "aiohttp>=3.11.12",
+    "fastapi[standard]>=0.115.8",
+    "uvicorn>=0.34.0",
+]
+
+[dependency-groups]
+dev = ["pre-commit>=4.1.0", "pytest-asyncio>=0.25.3", "ruff>=0.9.6"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ohc_backend"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["src"]
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["ERA001", "TRY003", "COM812", "EM102", "EM101"]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/**/*.py" = ["S101", "ARG", "FBT", "PLR2004", "S311"]
