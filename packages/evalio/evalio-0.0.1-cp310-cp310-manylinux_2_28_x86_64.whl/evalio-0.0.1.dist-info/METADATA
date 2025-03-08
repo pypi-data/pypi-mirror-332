@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: evalio
+Version: 0.0.1
+Summary: Evaluate Lidar-Inertial Odometry on public datasets
+Keywords: lidar,odometry,evaluation,inertial,dataset,robotics
+Author-Email: Easton Potokar <contagon6@gmail.com>
+Maintainer-Email: Easton Potokar <contagon6@gmail.com>
+License: Copyright (c) 2025 Easton Potokar
+         
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+         
+         The above copyright notice and this permission notice shall be included in all
+         copies or substantial portions of the Software.
+         
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+         SOFTWARE.
+Requires-Python: >=3.10
+Requires-Dist: argcomplete>=3.3.0
+Requires-Dist: numpy
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: rosbags>=0.10
+Requires-Dist: tabulate>=0.9
+Requires-Dist: tqdm>=4.66
+Provides-Extra: fetch
+Requires-Dist: gdown>=5.2.0; extra == "fetch"
+Provides-Extra: vis
+Requires-Dist: rerun-sdk>=0.18.2; extra == "vis"
+Description-Content-Type: text/markdown
+
+## Evalio
+
+evalio is a tool for **Eval**uating **L**idar-**I**nertial **O**dometry.
+
+Specifically, it provides a common interface for connecting LIO datasets and LIO pipelines. This allows for easy addition of new datasets and pipelines, as well as a common location to evaluate them.
+
+## Building
+
+While we recommend simply installing the python package using your preferred python package manager, we've attempted to make building from source as easy as possible.
+
+You'll need,
+- [vcpkg](https://vcpkg.io/en/) installed and the `VCPKG_ROOT` environment variable set to the root of your vcpkg installation. `vcpkg` handles all of the C++ dependencies.
+- [uv](https://github.com/astral-sh/uv) installed and on your `$PATH`
+
+Building the C++ portion can be done as follows,
+```bash
+cmake -B build -DCMAKE_TOOLCHAIN_FILE="${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+cmake --build build 
+```
+
+Alternatively, you can set `CMAKE_TOOLCHAIN_FILE` as an env variable, which I usually do using [.envrc](.envrc) and [direnv](https://github.com/direnv/direnv).
+
+To build the python portion, simply set the `CMAKE_TOOLCHAIN_FILE` environment variable and run 
+```bash
+uv sync
+```
+which will build evalio from scratch and install it into the uv virtual env. Evalio can then be run with `uv run evalio <command>`. `uv` will not automatically notice changes and recompile, but will if  you run `touch pyproject.toml`. 
+
+If you'd prefer an editable (aka incremental) build, you can run
+```bash
+uv run pip install --no-build-isolation --config-settings=editable.rebuild=true -Cbuild-dir=build_pip -ve .
+```
+to install it in the current uv virtual env. If this is done, before each time you run `evalio`, `cmake --build build_pip` will be ran to compile any changes that may have occurred. See [scikit-build-core](https://scikit-build-core.readthedocs.io/en/latest/configuration.html#editable-installs) for more info.
