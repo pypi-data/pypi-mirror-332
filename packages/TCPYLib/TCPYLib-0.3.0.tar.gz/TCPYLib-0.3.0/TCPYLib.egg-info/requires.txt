@@ -1,0 +1,5 @@
+asciimatics
+customtkinter
+pillow
+requests
+rich
