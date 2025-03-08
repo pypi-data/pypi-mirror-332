@@ -1,0 +1,15 @@
+docling_serve/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docling_serve/__main__.py,sha256=8v-4Rc5XH43VxI9giLGjVpkTeNhXUSLbziqNRJ1olGI,9268
+docling_serve/app.py,sha256=xQ8Pbe_oA3rvQ77oTcRaxeKs_B-YPWQO8TrwNNSolvY,12567
+docling_serve/docling_conversion.py,sha256=UzIW62aPk_9AgE5xVjfnwkx33PWyAToP5TTI2f5qvq4,7721
+docling_serve/gradio_ui.py,sha256=c7l0wenD--c9-mx53eV-P1GnmOl9edp3m3VwVSXtNUI,20293
+docling_serve/helper_functions.py,sha256=u5wp5qtJfzAsWeY0XScj0_DDG2JKv1V4Hei2VNNmB9Y,2006
+docling_serve/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docling_serve/response_preparation.py,sha256=iuNn2TffobEx--UakPd3nb3fwTkMiV7VlN4yRro-YPE,7788
+docling_serve/settings.py,sha256=dvMhVzaOqB5nLR4jZEaV4ZM8HYmBAZxjpObBl_SLsrs,935
+docling_serve-0.5.0.dist-info/LICENSE,sha256=mBb7ErEcM8VS9OhiGHnQ2kk75HwPhr54W1Oiz3965MY,1088
+docling_serve-0.5.0.dist-info/METADATA,sha256=n5moyIL4NXu8MY5N_2_mQjWHSHblsZAkjEUmu30X_yY,18094
+docling_serve-0.5.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+docling_serve-0.5.0.dist-info/entry_points.txt,sha256=miDr-DPPm6A9PTtoaEtEnH2Ue2MIrlOXfM1BL-YYqng,62
+docling_serve-0.5.0.dist-info/top_level.txt,sha256=wPsy7_u2kLCmGFJM_siIgwQdkO2d4QEmrTVNHgQmdh4,14
+docling_serve-0.5.0.dist-info/RECORD,,
