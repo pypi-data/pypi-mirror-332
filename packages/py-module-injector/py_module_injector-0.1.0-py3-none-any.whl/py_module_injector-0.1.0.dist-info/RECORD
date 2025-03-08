@@ -1,0 +1,13 @@
+python_module/__init__.py,sha256=RK9bhOOtyE7e9wmDAey1i2CgRN2040JPEAvgmw_0L98,144
+python_module/_logger.py,sha256=kmgrsxRCzEz5idhuUhp7HoD5mRRppsK7Q7cwcMwv-pU,2210
+python_module/inject.py,sha256=rMaoewXuYSY4TdaKV7avNgJ7Htx-vKqKf3EKHihe3Pg,4201
+python_module/injector.py,sha256=Xd_U4yBJqJTm-FCKtlI2WwBvZ3pCOX196BmH6pGYENk,1069
+python_module/injector_instance.py,sha256=V3YZP1UyeHbaza6svPl0JH4YlwK5mueatYzBm8BfRQY,72
+python_module/module.py,sha256=5XY6zQEITMj-yIForYhG2vKDnl6oxELE4QyZ1R3Ia34,1774
+tests/__init__.py,sha256=-b5qGOSFsc2FQzQE5FV0-G4_Y2wIotViLxKVS4Vmbd8,18
+tests/tests_core.py,sha256=KjQenJbVoz-e3m7I_pKT-aKzjyrazD7yjcmDdKG0bco,1294
+py_module_injector-0.1.0.dist-info/METADATA,sha256=V20Aexifb1JAa3v_dtlqicevxmY2_zEBKAuwX1GIVN4,303
+py_module_injector-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+py_module_injector-0.1.0.dist-info/entry_points.txt,sha256=P6x8xDSMgLOdBz5dUfhQV6EJWsQFWttUmelu-ycixuM,62
+py_module_injector-0.1.0.dist-info/top_level.txt,sha256=UwwIU4q1GCeFTPSH-qb3Lahc-2swCLiZFMeAvV9rfSM,20
+py_module_injector-0.1.0.dist-info/RECORD,,

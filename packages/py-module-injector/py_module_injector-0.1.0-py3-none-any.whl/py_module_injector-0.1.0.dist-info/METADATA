@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: py-module-injector
+Version: 0.1.0
+Summary: Uma biblioteca de modularização em python
+Author: Cleverson Pedroso
+Author-email: cleverson212121@gmail.com
+Requires-Dist: typing-extensions
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
