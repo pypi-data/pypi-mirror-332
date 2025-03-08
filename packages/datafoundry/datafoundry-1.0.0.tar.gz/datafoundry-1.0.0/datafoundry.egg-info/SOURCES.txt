@@ -1,0 +1,10 @@
+setup.py
+datafoundry/__init__.py
+datafoundry.egg-info/PKG-INFO
+datafoundry.egg-info/SOURCES.txt
+datafoundry.egg-info/dependency_links.txt
+datafoundry.egg-info/requires.txt
+datafoundry.egg-info/top_level.txt
+datafoundry/_dynamic/__init__.py
+datafoundry/_dynamic/dataset/__init__.py
+datafoundry/_dynamic/dataset/db_a_hash.py
