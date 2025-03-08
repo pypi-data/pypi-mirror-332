@@ -1,0 +1,9 @@
+dagster_ncsa/__init__.py,sha256=LK3IG-IGEqs5yCQcYv0XTNmGPPRyHuVXRTYbvrTLi_c,332
+dagster_ncsa/_version.py,sha256=4doZCmfoWr6tIwYSrlEqsZb61BFEfqgewwSHTfyBJ7A,509
+dagster_ncsa/airtable_catalog_resource.py,sha256=v6oA8-NFCmQ77gbU0MPtDQ0Nk53VA90OKyrP8e9kVIU,2273
+dagster_ncsa/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dagster_ncsa/s3_resource_ncsa.py,sha256=IUYQz6Ys4PxHf45rseU2BugrTnMo9phdO4EEEN2x8xc,562
+dagster_ncsa-0.1rc1.dist-info/METADATA,sha256=vVWpo9g5Y9rWX2vdZOMUvgP1bZaLISeTnt0tgOEoBNw,3124
+dagster_ncsa-0.1rc1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dagster_ncsa-0.1rc1.dist-info/licenses/LICENSE,sha256=oRBTMcLMvQNshQOrVIAWk7gDfke7Fb7ssTxJPQonaXM,1469
+dagster_ncsa-0.1rc1.dist-info/RECORD,,
