@@ -1,0 +1,2 @@
+[console_scripts]
+mildmouse = mildmouse.cli:main
