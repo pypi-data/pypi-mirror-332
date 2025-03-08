@@ -1,0 +1,7 @@
+requests>=2.31.0
+sseclient>=0.0.27
+urllib3>=2.0.0
+
+[agent]
+smolagents>=1.10.0
+huggingface-hub>=0.19.0
