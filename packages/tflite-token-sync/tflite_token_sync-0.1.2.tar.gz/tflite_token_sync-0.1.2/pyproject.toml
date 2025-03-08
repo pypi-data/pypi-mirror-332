@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tflite-token-sync"
+version = "0.1.2"
+description = "A utility tool to synchronize caching tokens among multiple TensorFlow Lite models"
+authors = [{ name = "Changhun Han", email = "ehwjs1914@naver.com" }]
+readme = "README.md"
+keywords = ["TFLite", "EdgeTPU", "caching", "token", "synchronizer"]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+]
+license = { text = "MIT" }
+dependencies = ["flatbuffers"]
+
+[project.scripts]
+tflite-token-sync = "tflite_token_sync:main"
+
+[tool.setuptools]
+include-package-data = true
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests*"]
+
+[project.urls]
+"Homepage" = "https://github.com/HanChangHun/tflite-token-sync"
+"Repository" = "https://github.com/HanChangHun/tflite-token-sync"
+"Issues" = "https://github.com/HanChangHun/tflite-token-sync/issues"

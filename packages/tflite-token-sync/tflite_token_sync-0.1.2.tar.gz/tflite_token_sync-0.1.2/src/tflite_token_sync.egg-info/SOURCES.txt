@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/tflite_token_sync/__init__.py
+src/tflite_token_sync/tflite_token_sync.py
+src/tflite_token_sync.egg-info/PKG-INFO
+src/tflite_token_sync.egg-info/SOURCES.txt
+src/tflite_token_sync.egg-info/dependency_links.txt
+src/tflite_token_sync.egg-info/entry_points.txt
+src/tflite_token_sync.egg-info/requires.txt
+src/tflite_token_sync.egg-info/top_level.txt
+src/tflite_token_sync/__pycache__/__init__.cpython-39.pyc
+src/tflite_token_sync/__pycache__/tflite_token_sync.cpython-39.pyc
