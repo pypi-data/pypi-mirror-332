@@ -1,0 +1,10 @@
+bycolors/__config__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+bycolors/__init__.py,sha256=7__wfD3I9FvanMAInLvUgArm6deP0lFALEkD0oeyC0Y,156
+bycolors/by_palette.py,sha256=R5ODIsaDPd82XhssjMXVf7Z7xC30BvzxKOqN0Jqspj4,1107
+bycolors/color_class.py,sha256=IqVP8QYiwwdZw-BZ6W4BOKpxgnUaqK3mKFLsp6AtjQU,7844
+bycolors/tests/__init__.py,sha256=jQmLx9gmiQEUErzLHDxHXCfyPKrYIRzVtm-rqwkt9kc,33
+bycolors/tests/test_color_class.py,sha256=dXrNhvZzFalwdq8pIrigv5Wd05i0Ur9YN87ZS320T_M,6211
+bycolors-0.3.0.dist-info/METADATA,sha256=lvEBK_pgMfodv_q4BYQAWVSfzKrpJ5oEi7vibMAM5n4,686
+bycolors-0.3.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+bycolors-0.3.0.dist-info/top_level.txt,sha256=LnZce0v1F4qaVPyz1bbW8qfVLZ8LpeHZyaH2FbgSowE,9
+bycolors-0.3.0.dist-info/RECORD,,
