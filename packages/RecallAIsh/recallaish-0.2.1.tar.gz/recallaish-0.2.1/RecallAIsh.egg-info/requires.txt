@@ -1,0 +1,16 @@
+openai
+beautifulsoup4
+requests
+PyPDF2
+
+[mongodb]
+pymongo
+
+[pinecone]
+pinecone-client
+
+[playwright]
+playwright
+
+[qdrant]
+qdrant-client
