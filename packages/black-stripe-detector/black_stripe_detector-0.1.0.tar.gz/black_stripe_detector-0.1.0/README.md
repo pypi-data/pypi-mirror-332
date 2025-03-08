@@ -1,0 +1,44 @@
+# Black Stripe Detector
+
+A Python package to detect black stripes in images that may indicate rendering errors.
+
+## Installation
+
+```bash
+pip install black_stripe_detector
+```
+
+## Usage
+
+```python
+from black_stripe_detector import analyze_frames
+
+# Analyze a directory of images
+corrupted_frames = analyze_frames(
+    output_directory="./images", # Relative path
+    # output_directory=r"C:\my_project\images", # Absolute path
+    threshold=10,
+    stripe_threshold=0.99,
+    min_stripe_height=1,
+    debug=True
+)
+
+# Print results
+if corrupted_frames:
+    print("\nThe following defective frames were detected:")
+    for frame in corrupted_frames:
+        print(f"- Name: {frame['name']}, Path: {frame['path']}")
+else:
+    print("\nNo defective frames were detected.")
+```
+
+### Output
+
+```
+The following defective frames were detected:
+- Name: 0.png, Path: ./images\0.png
+- Name: 1.png, Path: ./images\1.png
+- Name: 2.png, Path: ./images\2.png
+- Name: 3.png, Path: ./images\3.png
+```
+

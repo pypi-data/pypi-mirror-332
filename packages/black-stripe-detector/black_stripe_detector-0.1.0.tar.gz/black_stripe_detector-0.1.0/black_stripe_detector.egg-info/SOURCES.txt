@@ -1,0 +1,9 @@
+README.md
+setup.py
+black_stripe_detector/__init__.py
+black_stripe_detector/detector.py
+black_stripe_detector.egg-info/PKG-INFO
+black_stripe_detector.egg-info/SOURCES.txt
+black_stripe_detector.egg-info/dependency_links.txt
+black_stripe_detector.egg-info/requires.txt
+black_stripe_detector.egg-info/top_level.txt
