@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: anint
+Version: 0.1.0
+Summary: Ankha's Internationalization and Localization for Python.
+Author-email: Ankhbold Batbaatar <ankhasgreens@gmail.com>
+Maintainer-email: Ankhbold Batbaatar <ankhasgreens@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/FirstlyBoldly/Anint
+Project-URL: Issues, https://github.com/FirstlyBoldly/Anint/issues
+Keywords: Ankha's Greens,Anint,I18n,Internationalization,Localization,Translation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: tox
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+
+# Anint
+Ankha's Internationalization and Localization for Python
