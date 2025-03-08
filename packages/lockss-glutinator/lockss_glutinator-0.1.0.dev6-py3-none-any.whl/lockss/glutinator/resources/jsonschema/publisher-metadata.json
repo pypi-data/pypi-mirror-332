@@ -1,0 +1,55 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "const": "publisher",
+      "title": "Kind",
+      "type": "string"
+    },
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "alternate_names": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Alternate Names"
+    },
+    "variant_names": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Variant Names"
+    }
+  },
+  "required": [
+    "kind",
+    "id",
+    "name"
+  ],
+  "title": "PublisherMetadata",
+  "type": "object"
+}
