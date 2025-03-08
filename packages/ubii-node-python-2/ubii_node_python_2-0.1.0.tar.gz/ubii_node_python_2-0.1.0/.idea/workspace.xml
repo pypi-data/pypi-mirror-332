@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e267b587-ad76-4b8c-ad03-0f46bd82a9a2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ubii-node-python-v2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ubii-node-python-v2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/.buildinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_modules/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_modules/src/TopicDataBuffer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_modules/src/TopicDataProxy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_modules/src/ubiiNetworkClient.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_modules/src/ubii_client_node.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_modules/src/ubii_service_client.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_modules/src/ubii_topicdata_client.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/modules.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.clients.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.conditions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.dataStructure.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.devices.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.general.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.processing.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.servers.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.services.request.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.services.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.sessions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.proto.topicData.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_sources/src.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/_sphinx_javascript_frameworks_compat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/badge_only.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/Roboto-Slab-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/Roboto-Slab-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/Roboto-Slab-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/Roboto-Slab-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/lato-bold-italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/lato-bold-italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/lato-bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/lato-bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/lato-normal-italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/lato-normal-italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/lato-normal.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/fonts/lato-normal.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/css/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/doctools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/documentation_options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/js/badge_only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/js/html5shiv-printshiv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/js/html5shiv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/js/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/language_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/pygments.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/searchtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/_static/sphinx_highlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/genindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/objects.inv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/py-modindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.clients.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.conditions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.dataStructure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.devices.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.general.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.processing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.servers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.services.request.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.sessions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src.proto.topicData.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ubii/TopicDataBuffer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ubii/TopicDataBuffer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ubii/TopicDataProxy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ubii/TopicDataProxy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ubii/ubiiNetworkClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ubii/ubiiNetworkClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ubii/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ubii/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ubii/ubii_client_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ubii/ubii_client_node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ubii/ubii_service_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ubii/ubii_service_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ubii/ubii_topicdata_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ubii/ubii_topicdata_client.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2c2Wh8icPghiq9RrMrUB1MWslzj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl$/Ubuntu-22.04/home/anian/PyPi uploads/ubii-node-python-v2&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e267b587-ad76-4b8c-ad03-0f46bd82a9a2" name="Changes" comment="" />
+      <created>1707310271226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707310271226</updated>
+      <workItem from="1707310276695" duration="5468000" />
+      <workItem from="1707397864796" duration="21160000" />
+      <workItem from="1707482052412" duration="6341000" />
+      <workItem from="1707825824481" duration="5616000" />
+      <workItem from="1707926379495" duration="3945000" />
+      <workItem from="1708000032237" duration="5125000" />
+      <workItem from="1708085705723" duration="4465000" />
+      <workItem from="1708174369453" duration="6298000" />
+      <workItem from="1708262688508" duration="9374000" />
+      <workItem from="1708345284185" duration="8799000" />
+      <workItem from="1708442429105" duration="11286000" />
+      <workItem from="1708467353776" duration="1188000" />
+      <workItem from="1708517647324" duration="20923000" />
+      <workItem from="1708562190593" duration="38000" />
+      <workItem from="1708639036593" duration="10205000" />
+      <workItem from="1708690321058" duration="959000" />
+      <workItem from="1708707365139" duration="10544000" />
+      <workItem from="1708731747034" duration="1250000" />
+      <workItem from="1708794135977" duration="3059000" />
+      <workItem from="1710510267405" duration="3610000" />
+      <workItem from="1710521567215" duration="60000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>src package &mdash; Ubii-Python-Node v.2 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="src" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Ubii-Python-Node v.2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">src package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-src.ubii_client_node">src.ubii_client_node module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#src.ubii_client_node.UbiiClientNode"><code class="docutils literal notranslate"><span class="pre">UbiiClientNode</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-src.TopicDataBuffer">src.TopicDataBuffer module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken"><code class="docutils literal notranslate"><span class="pre">SubscriptionToken</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionTokenTYPE"><code class="docutils literal notranslate"><span class="pre">SubscriptionTokenTYPE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#src.TopicDataBuffer.TopicDataBuffer"><code class="docutils literal notranslate"><span class="pre">TopicDataBuffer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-src.TopicDataProxy">src.TopicDataProxy module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#src.TopicDataProxy.TopicDataProxy"><code class="docutils literal notranslate"><span class="pre">TopicDataProxy</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-src.UbiiNetworkClient">src.UbiiNetworkClient module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#src.UbiiNetworkClient.UbiiNetworkClient"><code class="docutils literal notranslate"><span class="pre">UbiiNetworkClient</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-src.ubii_service_client">src.ubii_service_client module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#src.ubii_service_client.UbiiServiceClient"><code class="docutils literal notranslate"><span class="pre">UbiiServiceClient</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-src.ubii_topicdata_client">src.ubii_topicdata_client module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#src.ubii_topicdata_client.UbiiTopicDataClient"><code class="docutils literal notranslate"><span class="pre">UbiiTopicDataClient</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ubii-Python-Node v.2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">src</a></li>
+      <li class="breadcrumb-item active">src package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/src.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="src-package">
+<h1>src package<a class="headerlink" href="#src-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-src.ubii_client_node">
+<span id="src-ubii-client-node-module"></span><h2>src.ubii_client_node module<a class="headerlink" href="#module-src.ubii_client_node" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.ubii_client_node.</span></span><span class="sig-name descname"><span class="pre">UbiiClientNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pythonNodeV2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service_endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'http://localhost:8102/services/binary'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topicdata_endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ws://localhost:8104'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class represents the python client node v.2 <a class="reference external" href="https://github.com/SandroWeber/ubii-node-python-v2">https://github.com/SandroWeber/ubii-node-python-v2</a> for the UBI-Interact framework <a class="reference external" href="https://github.com/SandroWeber/ubi-interact/wiki">https://github.com/SandroWeber/ubi-interact/wiki</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>events</strong> – <p>Four Events (‘onPublishError’, ‘onReadError’, ‘onServiceCallError’, ‘onConnectionError’) for error handling, each event can be subscribed to with a callback that takes exactly one Exception as parameter. Whenever an Error occurs the associated events gets called.</p>
+<p>”Events”:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">handleExc</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+<span class="n">node</span> <span class="o">=</span> <span class="n">UbiiClientNode</span><span class="p">()</span>
+<span class="n">node</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">onConnectionError</span> <span class="o">+=</span> <span class="n">handleExc</span>
+</pre></div>
+</div>
+</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.call_service">
+<span class="sig-name descname"><span class="pre">call_service</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ServiceRequest</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Future</span></span></span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.call_service"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.call_service" title="Permalink to this definition"></a></dt>
+<dd><p>Makes a service request to the masternode.</p>
+<p>This happens asynchronous but returns a future with the ServiceReply from the masternode once finished or None if the process raised an exception.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>ServiceRequest</em>) – The ServiceRequest sent to the masternode.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The Future with the ServiceReply or with None.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Future</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.getId">
+<span class="sig-name descname"><span class="pre">getId</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.getId"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.getId" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The id the node got from the masternode if connected, None else.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str or None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.init">
+<span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.init"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.init" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.initClientSpecs">
+<span class="sig-name descname"><span class="pre">initClientSpecs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.initClientSpecs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.initClientSpecs" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.initNetwork">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">initNetwork</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.initNetwork"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.initNetwork" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.isConnected">
+<span class="sig-name descname"><span class="pre">isConnected</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.isConnected"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.isConnected" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The connection status with the masternode.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.publish">
+<span class="sig-name descname"><span class="pre">publish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TopicDataRecord</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.publish"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.publish" title="Permalink to this definition"></a></dt>
+<dd><p>Publishes the topicDataRecord in the next interval.</p>
+<p>Ads the TopicDataRecord to a list of TopicDataRecords that will be sent to the masternode in the next publish interval.
+If the list already contains a TopicDataRecord with the specified topic the TopicDataRecord in the list will be overwritten with this one.
+The process of sending the TopicDataRecord to the masternode happens asynchronous in a different thread.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>record</strong> (<em>TopicDataRecord</em>) – The TopicDataRecord to publish.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.publishImmediately">
+<span class="sig-name descname"><span class="pre">publishImmediately</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TopicDataRecord</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.publishImmediately"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.publishImmediately" title="Permalink to this definition"></a></dt>
+<dd><p>Publishes the topicDataRecord instantly.</p>
+<p>Sends the TopicDataRecord directly to the masternode.
+The process of sending the topic to the masternode happens asynchronous in a different thread.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>TopicDataRecord</em>) – The TopicDataRecord to publish.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.publishList">
+<span class="sig-name descname"><span class="pre">publishList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">recordList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TopicDataRecordList</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.publishList"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.publishList" title="Permalink to this definition"></a></dt>
+<dd><p>Publishes the elements of the TopicDataRecordList in the next interval.</p>
+<p>Ads every TopicDataRecord from the TopicDataRecordList to a list of TopicDataRecords that will be sent to the masternode in the next publish interval.
+If the list already contains a TopicDataRecord with the specified topic the TopicDataRecord in the list will be overwritten with this one.
+The process of sending the TopicDataRecords to the masternode happens asynchronous in a different thread.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>recordList</strong> (<em>TopicDataRecordList</em>) – The TopicDataRecordList with the topics to publish</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.setPublishFrequency">
+<span class="sig-name descname"><span class="pre">setPublishFrequency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.setPublishFrequency"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.setPublishFrequency" title="Permalink to this definition"></a></dt>
+<dd><p>Changes the frequency the node sends the published topicdata to the masternode.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frequency</strong> (<em>float</em>) – the time interval.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.stopNode">
+<span class="sig-name descname"><span class="pre">stopNode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.stopNode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.stopNode" title="Permalink to this definition"></a></dt>
+<dd><p>Needs to be called when the node is no longer used in any form to disconnect it from the masternode and to stop background threads.
+The disconnection process happens asynchronous in a different thread.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.subscribeRegex">
+<span class="sig-name descname"><span class="pre">subscribeRegex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a></span></span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.subscribeRegex"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.subscribeRegex" title="Permalink to this definition"></a></dt>
+<dd><p>Subscribes to a regular expression.</p>
+<p>Whenever a topicDataRecord is published at the masternode for a topic that fits this regular expression that topicDataRecord will be sent to this node and the callback passed is invoked for this topicDataRecord.
+The process to subscribe at the masternode happens asynchronous in a different thread.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>regex</strong> (<em>str</em>) – The regular expression that should be subscribed to.</p></li>
+<li><p><strong>callback</strong> (<em>Callable</em><em>[</em><em>[</em><em>TopicDataRecord</em><em>]</em><em>, </em><em>None</em><em>]</em>) – The callback that takes exactly one TopicDataRecord as parameter and returns nothing.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The SubscriptionToken that contains a unique token id, the regex, the callback, and the SubscriptionTokenTYPE.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken">SubscriptionToken</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.subscribeTopic">
+<span class="sig-name descname"><span class="pre">subscribeTopic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a></span></span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.subscribeTopic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.subscribeTopic" title="Permalink to this definition"></a></dt>
+<dd><p>Subscribes to a topic.</p>
+<p>Whenever a topicDataRecord is published at the masternode for this topic, that topicData will be sent to this nodeand the callback passed is invoked for this topicDataRecord.
+The process to subscribe at the masternode happens asynchronous in a different thread.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>topic</strong> (<em>str</em>) – The topic that should be subscribed to</p></li>
+<li><p><strong>callback</strong> – The callback that takes exactly one TopicDataRecord as parameter and returns nothing</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The SubscriptionToken that contains a unique token id, the regex, the callback, and the SubscriptionTokenTYPE.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken">SubscriptionToken</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.unsubscribe">
+<span class="sig-name descname"><span class="pre">unsubscribe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.unsubscribe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.unsubscribe" title="Permalink to this definition"></a></dt>
+<dd><p>Unsubscribes the subscription token.</p>
+<p>The callback that was passed when subscribing is no longer executed when a topicDataRecord is received for this topic.
+When there are no more subscribers for a topic at this node, the node unsubscribes at the masternode and won’t receive any published topicData.
+The callback will be unsubscribed synchronous, but the process to unsubscribe at the masternode happens asynchronous in a different thread.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>token</strong> (<a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><em>SubscriptionToken</em></a>) – The subscriptionToken that was returned when subscribing.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The success of the operation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_client_node.UbiiClientNode.waitForConnection">
+<span class="sig-name descname"><span class="pre">waitForConnection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_client_node.html#UbiiClientNode.waitForConnection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_client_node.UbiiClientNode.waitForConnection" title="Permalink to this definition"></a></dt>
+<dd><p>Pauses the current thread until the node is connected to the masternode.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-src.TopicDataBuffer">
+<span id="src-topicdatabuffer-module"></span><h2>src.TopicDataBuffer module<a class="headerlink" href="#module-src.TopicDataBuffer" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.SubscriptionToken">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.TopicDataBuffer.</span></span><span class="sig-name descname"><span class="pre">SubscriptionToken</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionTokenTYPE" title="src.TopicDataBuffer.SubscriptionTokenTYPE"><span class="pre">SubscriptionTokenTYPE</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#SubscriptionToken"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.SubscriptionToken" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.SubscriptionTokenTYPE">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.TopicDataBuffer.</span></span><span class="sig-name descname"><span class="pre">SubscriptionTokenTYPE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#SubscriptionTokenTYPE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.SubscriptionTokenTYPE" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.SubscriptionTokenTYPE.REGEX">
+<span class="sig-name descname"><span class="pre">REGEX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#src.TopicDataBuffer.SubscriptionTokenTYPE.REGEX" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.SubscriptionTokenTYPE.TOPIC">
+<span class="sig-name descname"><span class="pre">TOPIC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#src.TopicDataBuffer.SubscriptionTokenTYPE.TOPIC" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.TopicDataBuffer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.TopicDataBuffer.</span></span><span class="sig-name descname"><span class="pre">TopicDataBuffer</span></span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#TopicDataBuffer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.TopicDataBuffer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.TopicDataBuffer.generateToken">
+<span class="sig-name descname"><span class="pre">generateToken</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionTokenTYPE" title="src.TopicDataBuffer.SubscriptionTokenTYPE"><span class="pre">SubscriptionTokenTYPE</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a></span></span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#TopicDataBuffer.generateToken"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.TopicDataBuffer.generateToken" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.TopicDataBuffer.getRegexSubscriptionTokens">
+<span class="sig-name descname"><span class="pre">getRegexSubscriptionTokens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#TopicDataBuffer.getRegexSubscriptionTokens"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.TopicDataBuffer.getRegexSubscriptionTokens" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.TopicDataBuffer.getTopicSubscriptionTokens">
+<span class="sig-name descname"><span class="pre">getTopicSubscriptionTokens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#TopicDataBuffer.getTopicSubscriptionTokens"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.TopicDataBuffer.getTopicSubscriptionTokens" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.TopicDataBuffer.notifySubscribers">
+<span class="sig-name descname"><span class="pre">notifySubscribers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topicDataRecord</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#TopicDataBuffer.notifySubscribers"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.TopicDataBuffer.notifySubscribers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.TopicDataBuffer.publish">
+<span class="sig-name descname"><span class="pre">publish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topicDataRecord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TopicDataRecord</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#TopicDataBuffer.publish"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.TopicDataBuffer.publish" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.TopicDataBuffer.pull">
+<span class="sig-name descname"><span class="pre">pull</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">TopicDataRecord</span></span></span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#TopicDataBuffer.pull"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.TopicDataBuffer.pull" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.TopicDataBuffer.remove">
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#TopicDataBuffer.remove"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.TopicDataBuffer.remove" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.TopicDataBuffer.subscribeRegex">
+<span class="sig-name descname"><span class="pre">subscribeRegex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a></span></span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#TopicDataBuffer.subscribeRegex"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.TopicDataBuffer.subscribeRegex" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.TopicDataBuffer.subscribeTopic">
+<span class="sig-name descname"><span class="pre">subscribeTopic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a></span></span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#TopicDataBuffer.subscribeTopic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.TopicDataBuffer.subscribeTopic" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataBuffer.TopicDataBuffer.unsubscribe">
+<span class="sig-name descname"><span class="pre">unsubscribe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/src/TopicDataBuffer.html#TopicDataBuffer.unsubscribe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataBuffer.TopicDataBuffer.unsubscribe" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-src.TopicDataProxy">
+<span id="src-topicdataproxy-module"></span><h2>src.TopicDataProxy module<a class="headerlink" href="#module-src.TopicDataProxy" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.TopicDataProxy.TopicDataProxy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.TopicDataProxy.</span></span><span class="sig-name descname"><span class="pre">TopicDataProxy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topicDataBuffer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.TopicDataBuffer.TopicDataBuffer" title="src.TopicDataBuffer.TopicDataBuffer"><span class="pre">TopicDataBuffer</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">networkClient</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.UbiiNetworkClient.UbiiNetworkClient" title="src.UbiiNetworkClient.UbiiNetworkClient"><span class="pre">UbiiNetworkClient</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/TopicDataProxy.html#TopicDataProxy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataProxy.TopicDataProxy" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataProxy.TopicDataProxy.getRegexSubscriptionTokens">
+<span class="sig-name descname"><span class="pre">getRegexSubscriptionTokens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/src/TopicDataProxy.html#TopicDataProxy.getRegexSubscriptionTokens"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataProxy.TopicDataProxy.getRegexSubscriptionTokens" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataProxy.TopicDataProxy.getTopicSubscriptionTokens">
+<span class="sig-name descname"><span class="pre">getTopicSubscriptionTokens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/src/TopicDataProxy.html#TopicDataProxy.getTopicSubscriptionTokens"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataProxy.TopicDataProxy.getTopicSubscriptionTokens" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataProxy.TopicDataProxy.onTopicDataRecord">
+<span class="sig-name descname"><span class="pre">onTopicDataRecord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TopicDataRecord</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/TopicDataProxy.html#TopicDataProxy.onTopicDataRecord"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataProxy.TopicDataProxy.onTopicDataRecord" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataProxy.TopicDataProxy.pull">
+<span class="sig-name descname"><span class="pre">pull</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">TopicDataRecord</span></span></span><a class="reference internal" href="_modules/src/TopicDataProxy.html#TopicDataProxy.pull"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataProxy.TopicDataProxy.pull" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataProxy.TopicDataProxy.remove">
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/TopicDataProxy.html#TopicDataProxy.remove"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataProxy.TopicDataProxy.remove" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataProxy.TopicDataProxy.setPublishFrequency">
+<span class="sig-name descname"><span class="pre">setPublishFrequency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/TopicDataProxy.html#TopicDataProxy.setPublishFrequency"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataProxy.TopicDataProxy.setPublishFrequency" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataProxy.TopicDataProxy.stopNode">
+<span class="sig-name descname"><span class="pre">stopNode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/TopicDataProxy.html#TopicDataProxy.stopNode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataProxy.TopicDataProxy.stopNode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataProxy.TopicDataProxy.subscribeRegex">
+<span class="sig-name descname"><span class="pre">subscribeRegex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a></span></span><a class="reference internal" href="_modules/src/TopicDataProxy.html#TopicDataProxy.subscribeRegex"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataProxy.TopicDataProxy.subscribeRegex" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataProxy.TopicDataProxy.subscribeTopic">
+<span class="sig-name descname"><span class="pre">subscribeTopic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a></span></span><a class="reference internal" href="_modules/src/TopicDataProxy.html#TopicDataProxy.subscribeTopic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataProxy.TopicDataProxy.subscribeTopic" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.TopicDataProxy.TopicDataProxy.unsubscribe">
+<span class="sig-name descname"><span class="pre">unsubscribe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.TopicDataBuffer.SubscriptionToken" title="src.TopicDataBuffer.SubscriptionToken"><span class="pre">SubscriptionToken</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/src/TopicDataProxy.html#TopicDataProxy.unsubscribe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.TopicDataProxy.TopicDataProxy.unsubscribe" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-src.UbiiNetworkClient">
+<span id="src-ubiinetworkclient-module"></span><h2>src.UbiiNetworkClient module<a class="headerlink" href="#module-src.UbiiNetworkClient" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.UbiiNetworkClient.</span></span><span class="sig-name descname"><span class="pre">UbiiNetworkClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">serviceEndpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topicDataEndpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientSpecs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient.callService">
+<span class="sig-name descname"><span class="pre">callService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ServiceRequest</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Future</span></span></span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient.callService"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient.callService" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient.init">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient.init"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient.init" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient.publish">
+<span class="sig-name descname"><span class="pre">publish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TopicDataRecord</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient.publish"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient.publish" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient.publishImmediately">
+<span class="sig-name descname"><span class="pre">publishImmediately</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TopicDataRecord</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient.publishImmediately"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient.publishImmediately" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient.registerAsClient">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">registerAsClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Client</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Client</span></span></span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient.registerAsClient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient.registerAsClient" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient.setPublishFrequency">
+<span class="sig-name descname"><span class="pre">setPublishFrequency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient.setPublishFrequency"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient.setPublishFrequency" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient.stopNode">
+<span class="sig-name descname"><span class="pre">stopNode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient.stopNode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient.stopNode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient.subscribeRegex">
+<span class="sig-name descname"><span class="pre">subscribeRegex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient.subscribeRegex"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient.subscribeRegex" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient.subscribeTopic">
+<span class="sig-name descname"><span class="pre">subscribeTopic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient.subscribeTopic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient.subscribeTopic" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient.unsubscribe">
+<span class="sig-name descname"><span class="pre">unsubscribe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient.unsubscribe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient.unsubscribe" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.UbiiNetworkClient.UbiiNetworkClient.unsubscribeRegex">
+<span class="sig-name descname"><span class="pre">unsubscribeRegex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/UbiiNetworkClient.html#UbiiNetworkClient.unsubscribeRegex"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.UbiiNetworkClient.UbiiNetworkClient.unsubscribeRegex" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-src.ubii_service_client">
+<span id="src-ubii-service-client-module"></span><h2>src.ubii_service_client module<a class="headerlink" href="#module-src.ubii_service_client" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.ubii_service_client.UbiiServiceClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.ubii_service_client.</span></span><span class="sig-name descname"><span class="pre">UbiiServiceClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">endpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_service_client.html#UbiiServiceClient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_service_client.UbiiServiceClient" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_service_client.UbiiServiceClient.send">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">send</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ServiceRequest</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ServiceReply</span></span></span><a class="reference internal" href="_modules/src/ubii_service_client.html#UbiiServiceClient.send"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_service_client.UbiiServiceClient.send" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_service_client.UbiiServiceClient.sendProto">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sendProto</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ServiceRequest</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ServiceReply</span></span></span><a class="reference internal" href="_modules/src/ubii_service_client.html#UbiiServiceClient.sendProto"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_service_client.UbiiServiceClient.sendProto" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-src.ubii_topicdata_client">
+<span id="src-ubii-topicdata-client-module"></span><h2>src.ubii_topicdata_client module<a class="headerlink" href="#module-src.ubii_topicdata_client" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.ubii_topicdata_client.</span></span><span class="sig-name descname"><span class="pre">UbiiTopicDataClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">endpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.addRegexCallback">
+<span class="sig-name descname"><span class="pre">addRegexCallback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.addRegexCallback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.addRegexCallback" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.addTopicCallback">
+<span class="sig-name descname"><span class="pre">addTopicCallback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.addTopicCallback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.addTopicCallback" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.hasRegexCallbacks">
+<span class="sig-name descname"><span class="pre">hasRegexCallbacks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.hasRegexCallbacks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.hasRegexCallbacks" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.hasTopicDataCallbacks">
+<span class="sig-name descname"><span class="pre">hasTopicDataCallbacks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.hasTopicDataCallbacks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.hasTopicDataCallbacks" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.isSubscribed">
+<span class="sig-name descname"><span class="pre">isSubscribed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topicRegex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.isSubscribed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.isSubscribed" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.publish">
+<span class="sig-name descname"><span class="pre">publish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topicDataRecord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TopicDataRecord</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.publish"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.publish" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.removeAllRegexCallbacks">
+<span class="sig-name descname"><span class="pre">removeAllRegexCallbacks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.removeAllRegexCallbacks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.removeAllRegexCallbacks" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.removeRegexCallback">
+<span class="sig-name descname"><span class="pre">removeRegexCallback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.removeRegexCallback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.removeRegexCallback" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.removeTopicCallback">
+<span class="sig-name descname"><span class="pre">removeTopicCallback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">TopicDataRecord</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.removeTopicCallback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.removeTopicCallback" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.removeTopicDataCallbacks">
+<span class="sig-name descname"><span class="pre">removeTopicDataCallbacks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.removeTopicDataCallbacks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.removeTopicDataCallbacks" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.sendTopicData">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sendTopicData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TopicData</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.sendTopicData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.sendTopicData" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.setPublishFrequency">
+<span class="sig-name descname"><span class="pre">setPublishFrequency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.setPublishFrequency"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.setPublishFrequency" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ubii_topicdata_client.UbiiTopicDataClient.stopNode">
+<span class="sig-name descname"><span class="pre">stopNode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/ubii_topicdata_client.html#UbiiTopicDataClient.stopNode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.ubii_topicdata_client.UbiiTopicDataClient.stopNode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="src" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Anian Kalb.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

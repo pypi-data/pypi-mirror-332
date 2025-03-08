@@ -1,0 +1,21 @@
+src.proto.servers package
+=========================
+
+Submodules
+----------
+
+src.proto.servers.server\_pb2 module
+------------------------------------
+
+.. automodule:: src.proto.servers.server_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.proto.servers
+   :members:
+   :undoc-members:
+   :show-inheritance:

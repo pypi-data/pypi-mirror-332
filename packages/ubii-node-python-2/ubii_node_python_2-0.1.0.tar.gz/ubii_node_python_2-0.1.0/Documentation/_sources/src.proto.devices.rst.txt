@@ -1,0 +1,45 @@
+src.proto.devices package
+=========================
+
+Submodules
+----------
+
+src.proto.devices.component\_pb2 module
+---------------------------------------
+
+.. automodule:: src.proto.devices.component_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.devices.device\_pb2 module
+------------------------------------
+
+.. automodule:: src.proto.devices.device_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.devices.topicDemux\_pb2 module
+----------------------------------------
+
+.. automodule:: src.proto.devices.topicDemux_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.devices.topicMux\_pb2 module
+--------------------------------------
+
+.. automodule:: src.proto.devices.topicMux_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.proto.devices
+   :members:
+   :undoc-members:
+   :show-inheritance:

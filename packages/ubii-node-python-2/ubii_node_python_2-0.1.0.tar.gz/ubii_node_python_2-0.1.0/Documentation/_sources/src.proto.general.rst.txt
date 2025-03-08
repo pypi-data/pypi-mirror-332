@@ -1,0 +1,29 @@
+src.proto.general package
+=========================
+
+Submodules
+----------
+
+src.proto.general.error\_pb2 module
+-----------------------------------
+
+.. automodule:: src.proto.general.error_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.general.success\_pb2 module
+-------------------------------------
+
+.. automodule:: src.proto.general.success_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.proto.general
+   :members:
+   :undoc-members:
+   :show-inheritance:

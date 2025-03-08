@@ -1,0 +1,25 @@
+[metadata]
+name = Ubii-Python-Node-v2
+version = 0.1.4
+author = Sandro Weber, Anian Kalb
+author_email = webers@in.tum.de, anian.games@gmx.de
+description = The python client node v2 for the Ubi-Interact framework
+long_description = file: README.md, LICENSE.txt
+long_description_content_type = text/markdown
+url = https://github.com/SandroWeber/ubii-node-python-v2
+classifiers =
+    Programming Language :: Python :: 3
+
+[options]
+package_dir =
+    = src
+packages = find:
+python_requires = >=3.7
+install_requires =
+    aiohttp >= 3.7.4
+    websockets >= 11.0.3
+    Events >= 0.5
+    Ubii-Python-Protofiles >= 0.1.1
+
+[options.packages.find]
+where = src

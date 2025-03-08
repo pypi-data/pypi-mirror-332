@@ -1,0 +1,27 @@
+src.proto package
+=================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   src.proto.clients
+   src.proto.conditions
+   src.proto.dataStructure
+   src.proto.devices
+   src.proto.general
+   src.proto.processing
+   src.proto.servers
+   src.proto.services
+   src.proto.sessions
+   src.proto.topicData
+
+Module contents
+---------------
+
+.. automodule:: src.proto
+   :members:
+   :undoc-members:
+   :show-inheritance:

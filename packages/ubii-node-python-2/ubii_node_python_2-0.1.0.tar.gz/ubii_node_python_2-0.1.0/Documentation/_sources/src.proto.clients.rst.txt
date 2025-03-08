@@ -1,0 +1,21 @@
+src.proto.clients package
+=========================
+
+Submodules
+----------
+
+src.proto.clients.client\_pb2 module
+------------------------------------
+
+.. automodule:: src.proto.clients.client_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.proto.clients
+   :members:
+   :undoc-members:
+   :show-inheritance:

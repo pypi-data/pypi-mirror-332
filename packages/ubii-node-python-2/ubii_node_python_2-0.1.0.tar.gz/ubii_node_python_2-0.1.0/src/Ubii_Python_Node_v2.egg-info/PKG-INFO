@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: Ubii-Python-Node-v2
+Version: 0.1.4
+Summary: The python client node v2 for the Ubi-Interact framework
+Home-page: https://github.com/SandroWeber/ubii-node-python-v2
+Author: Sandro Weber, Anian Kalb
+Author-email: webers@in.tum.de, anian.games@gmx.de
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: aiohttp>=3.7.4
+Requires-Dist: websockets>=11.0.3
+Requires-Dist: Events>=0.5
+Requires-Dist: Ubii-Python-Protofiles>=0.1.1
+
+# Python client node v.2 for Ubi-Interact
+This is the package for the [python client node v2](https://github.com/SandroWeber/ubii-node-python-v2) for the [Ubi-Interact](https://github.com/SandroWeber/ubi-interact/wiki) framework 
+
+## Requirements and installation
+
+- Tested for:
+  - Linux and Windows
+  - Python 3.7, 3.10, 3.12
+
+### Installation with [pip](https://pypi.org/project/Ubii-Python-Node-v2/)
+```
+$ pip install Ubii-Python-Node-v2
+```
+
+
+
+## How to use 
+- Import the UbiiClientNode module and instanciate the client node 
+    ```python
+  from ubii.ubii_client_node import UbiiClientNode
+  
+  node = UbiiClientNode('pythonNodev2', 'http://localhost:8102/services/binary', 'ws://localhost:8104')
+ 
+- Use the node to make service calls, subscribe to topics, publish topic data 
+  ```python
+  request = ServiceRequest()
+  request.topic = '/services/topic_list'
+  response = self.node.call_service(request)
+  
+  
+  topicDataRecord = TopicDataRecord()
+  topicDataRecord.topic = 'testTopic'
+  node.publish(topicDataRecord)
+   
+  def printTopicDataRecord(record):
+    print(record)
+   
+  node.subscribeTopic('testTopic', printTopicDataRecord)
+  
+  
+  node.stopNode()
+  ```
+- For more information on the module check the documentation (index.html)
+
+
+## Ubii-msg-formats
+To communicate with the masternode the client node uses protocol buffers. The framework provides a number of protobuf message definitions, to update to the newest message
+definitions with [pip](https://pypi.org/project/Ubii-Python-Protofiles/) use:
+```
+$ pip install --upgrade Ubii-Python-Protofiles
+```
+
+## Testing
+
+### test the published package
+
+once:
+```
+virtualenv venv
+source venv/bin/activate (linux) OR .\venv\Scripts\Activate.ps1 (windows)
+pip install Ubii-Python-Node-v2
+```
+
+every time:
+```
+source venv/bin/activate (if not active)
+python test/test.py
+```
+
+### test local code
+
+Setup:
+```
+virtualenv venv-testsrc
+source venv-testsrc/bin/activate (linux) OR .\venv-testsrc\Scripts\Activate.ps1 (windows)
+pip install Ubii-Python-Protofiles>=0.1.1 aiohttp>=3.7.4 websockets>=11.0.3 Events>=0.5
+pip install -e .
+```
+
+```
+python ./testing/runTests.py (linux) OR python .\testing\runTests.py (windows)
+```
+
+## Bugs
+
+- There is a problem in python 3.9 and 3.10 where starting threads while the interpreter shuts down can lead to a RuntimeError: 'cannot schedule new futures after interpreter shutdown'. If this occurs one quck fix is to add a time.sleep to the end of the main file.
+BSD 3-Clause License
+
+Copyright (c) 2024, IN-FAR / Ubi-Interact, Sandro Weber (webers@in.tum.de)
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

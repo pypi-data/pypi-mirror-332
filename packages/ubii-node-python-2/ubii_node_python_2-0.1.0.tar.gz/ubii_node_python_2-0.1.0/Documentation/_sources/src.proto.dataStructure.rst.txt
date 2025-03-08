@@ -1,0 +1,173 @@
+src.proto.dataStructure package
+===============================
+
+Submodules
+----------
+
+src.proto.dataStructure.buttonEventType\_pb2 module
+---------------------------------------------------
+
+.. automodule:: src.proto.dataStructure.buttonEventType_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.color\_pb2 module
+-----------------------------------------
+
+.. automodule:: src.proto.dataStructure.color_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.handGestureType\_pb2 module
+---------------------------------------------------
+
+.. automodule:: src.proto.dataStructure.handGestureType_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.image\_pb2 module
+-----------------------------------------
+
+.. automodule:: src.proto.dataStructure.image_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.keyEvent\_pb2 module
+--------------------------------------------
+
+.. automodule:: src.proto.dataStructure.keyEvent_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.lists\_pb2 module
+-----------------------------------------
+
+.. automodule:: src.proto.dataStructure.lists_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.matrix3x2\_pb2 module
+---------------------------------------------
+
+.. automodule:: src.proto.dataStructure.matrix3x2_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.matrix4x4\_pb2 module
+---------------------------------------------
+
+.. automodule:: src.proto.dataStructure.matrix4x4_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.mouseEvent\_pb2 module
+----------------------------------------------
+
+.. automodule:: src.proto.dataStructure.mouseEvent_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.myoEvent\_pb2 module
+--------------------------------------------
+
+.. automodule:: src.proto.dataStructure.myoEvent_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.object2d\_pb2 module
+--------------------------------------------
+
+.. automodule:: src.proto.dataStructure.object2d_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.object3d\_pb2 module
+--------------------------------------------
+
+.. automodule:: src.proto.dataStructure.object3d_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.pose2d\_pb2 module
+------------------------------------------
+
+.. automodule:: src.proto.dataStructure.pose2d_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.pose3d\_pb2 module
+------------------------------------------
+
+.. automodule:: src.proto.dataStructure.pose3d_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.quaternion\_pb2 module
+----------------------------------------------
+
+.. automodule:: src.proto.dataStructure.quaternion_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.touchEvent\_pb2 module
+----------------------------------------------
+
+.. automodule:: src.proto.dataStructure.touchEvent_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.vector2\_pb2 module
+-------------------------------------------
+
+.. automodule:: src.proto.dataStructure.vector2_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.vector3\_pb2 module
+-------------------------------------------
+
+.. automodule:: src.proto.dataStructure.vector3_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.vector4\_pb2 module
+-------------------------------------------
+
+.. automodule:: src.proto.dataStructure.vector4_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.dataStructure.vector8\_pb2 module
+-------------------------------------------
+
+.. automodule:: src.proto.dataStructure.vector8_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.proto.dataStructure
+   :members:
+   :undoc-members:
+   :show-inheritance:

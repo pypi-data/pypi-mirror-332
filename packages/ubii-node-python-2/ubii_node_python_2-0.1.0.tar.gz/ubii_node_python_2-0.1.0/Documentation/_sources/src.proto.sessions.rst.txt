@@ -1,0 +1,29 @@
+src.proto.sessions package
+==========================
+
+Submodules
+----------
+
+src.proto.sessions.ioMappings\_pb2 module
+-----------------------------------------
+
+.. automodule:: src.proto.sessions.ioMappings_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.proto.sessions.session\_pb2 module
+--------------------------------------
+
+.. automodule:: src.proto.sessions.session_pb2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.proto.sessions
+   :members:
+   :undoc-members:
+   :show-inheritance:
