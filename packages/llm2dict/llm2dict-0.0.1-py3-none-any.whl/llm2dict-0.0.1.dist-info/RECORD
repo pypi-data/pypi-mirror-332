@@ -1,0 +1,10 @@
+llm2dict/__init__.py,sha256=L2uA3-L-OKtVwbNFKkrZskSbX4w1cLitsim_sm3Ur6Y,182
+llm2dict/api.py,sha256=PYVLTy5bYBe3gf2SAB16XrqSUqxMPkBijDTEdk9omKU,6085
+llm2dict/execute.py,sha256=a9tlyQasdxUxoxuX7kNOWK1d1MQ-c8Ujf5Gk2WlnOcs,3510
+llm2dict/llm2dict.py,sha256=d-fMXj12gd9T6sS7hOD0oLIiFXoGJ2z4PekIPmOtVZk,2057
+llm2dict/prompt.py,sha256=nDRGTmvUcsrPNWBxc5imNjCbli_nYDeOrSNjegZj7u0,589
+llm2dict-0.0.1.dist-info/LICENSE,sha256=y1jseZHLQyUDZNWXMPh88RF3sVlS89cp12Z4DQYKyec,1082
+llm2dict-0.0.1.dist-info/METADATA,sha256=etz1NsQczKbEtHz353nH5VUSK3NeQ20r7l7CS3LTdKU,2111
+llm2dict-0.0.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+llm2dict-0.0.1.dist-info/top_level.txt,sha256=fZ-aOlCXwAD9MbnnmFiLl8Ly7dcQFKA07oNVXoEkK3w,9
+llm2dict-0.0.1.dist-info/RECORD,,
