@@ -1,0 +1,8 @@
+ddmail_openpgp_encryptor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddmail_openpgp_encryptor/__main__.py,sha256=w5WC3Ez6ceqEARSZXvwtEawJRzbTeM3R9kfq2M3rhS0,1481
+ddmail_openpgp_encryptor/ddmail_handler.py,sha256=HVU4yRxCDyCZyoEhMys0DTYFfIVljGY8WYvx21D_YDE,10594
+ddmail_openpgp_encryptor-0.0.1.dist-info/METADATA,sha256=7Xbc5aG6J-OtwMk8H24nNxiWBf1_s8nx5PJr-_eix9k,2569
+ddmail_openpgp_encryptor-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ddmail_openpgp_encryptor-0.0.1.dist-info/entry_points.txt,sha256=Lmd25-8TeDZ3YAoBL6EqvHkmAGjmUKBECsZ3WJGfvbw,84
+ddmail_openpgp_encryptor-0.0.1.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ddmail_openpgp_encryptor-0.0.1.dist-info/RECORD,,
