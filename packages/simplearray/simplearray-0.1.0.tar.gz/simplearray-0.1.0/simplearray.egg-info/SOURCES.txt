@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+simplearray/__init__.py
+simplearray/array.py
+simplearray.egg-info/PKG-INFO
+simplearray.egg-info/SOURCES.txt
+simplearray.egg-info/dependency_links.txt
+simplearray.egg-info/requires.txt
+simplearray.egg-info/top_level.txt
