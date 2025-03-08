@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+impresso_pipelines/__init__.py
+impresso_pipelines.egg-info/PKG-INFO
+impresso_pipelines.egg-info/SOURCES.txt
+impresso_pipelines.egg-info/dependency_links.txt
+impresso_pipelines.egg-info/requires.txt
+impresso_pipelines.egg-info/top_level.txt
+impresso_pipelines/langident/__init__.py
+impresso_pipelines/langident/langident_pipeline.py
+impresso_pipelines/ocrqa/__init__.py
+impresso_pipelines/ocrqa/ocrqa_pipeline.py

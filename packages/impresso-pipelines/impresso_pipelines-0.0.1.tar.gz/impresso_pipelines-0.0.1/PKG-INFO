@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: impresso-pipelines
+Version: 0.0.1
+Summary: A custom package for language identification subpackage and ocr QA score calculation subpackage (imitating pipelines)
+Author-email: Glebs Vinarskis <gleb.vinarskis@gmail.com>
+Project-URL: Homepage, https://github.com/impresso/impresso-pipelines
+Requires-Python: >=3.7
+Requires-Dist: cython
+Requires-Dist: pybloomfiltermmap3
+Requires-Dist: huggingface_hub
+Requires-Dist: floret
