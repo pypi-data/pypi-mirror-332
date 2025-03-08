@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+duf/__init__.py
+duf/__main__.py
+duf/conftest.py
+duf.egg-info/PKG-INFO
+duf.egg-info/SOURCES.txt
+duf.egg-info/dependency_links.txt
+duf.egg-info/requires.txt
+duf.egg-info/top_level.txt
