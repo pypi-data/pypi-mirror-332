@@ -1,0 +1,2 @@
+[console_scripts]
+amthyst-generator = amthyst_generator:datapack_generator
