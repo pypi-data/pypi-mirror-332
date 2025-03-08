@@ -1,0 +1,13 @@
+thelabtyping/__init__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+thelabtyping/guards.py,sha256=ZvAI3VX50gwwbmbdB4JXb_K3ODQX2THldszVYNlh420,1083
+thelabtyping/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thelabtyping/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thelabtyping/tests/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thelabtyping/tests/core/test_guards.py,sha256=Tt4OiBrajjksnMp6Zeo-oHFlY0gsgsAyO2Hv5EwmMLQ,2144
+thelabtyping/tests/drf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thelabtyping/tests/settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thelabtyping/tests/settings/sqlite.py,sha256=zsP4GCJe7HGrIzifZ5Iz8yCefIVnELFI6VUSt92K5IM,602
+thelab_typing-0.1.0a0.dist-info/LICENSE,sha256=BtsXlpTLNFNko-dAuewRcqfh9vrcX7lU5BG8nmD7Z8U,744
+thelab_typing-0.1.0a0.dist-info/METADATA,sha256=5_fxWbfegmv0Lpb9bcB6g8PGeTRrnz5tUX5-jMq5N1U,1249
+thelab_typing-0.1.0a0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+thelab_typing-0.1.0a0.dist-info/RECORD,,
