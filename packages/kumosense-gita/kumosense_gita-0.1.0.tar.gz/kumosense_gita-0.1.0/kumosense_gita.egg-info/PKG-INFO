@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: kumosense-gita
+Version: 0.1.0
+Summary: Git commitlarni avtomatlashtirish uchun AI CLI vositasi
+Home-page: https://github.com//muhiddin0/gita
+Author: Muhiddin Kabraliev
+Author-email: contact@muhiddidnev.uz
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: g4f
+Requires-Dist: gitpython
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# AI Commit CLI
+
+AI yordamida Git commit message yozadigan CLI dastur.
+
+## O‘rnatish
+```bash
+git clone https://github.com/username/ai-commit.git
+cd ai-commit
+pip install -r requirements.txt
+
