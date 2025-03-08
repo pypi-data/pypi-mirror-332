@@ -1,0 +1,8 @@
+tdjson/__init__.py,sha256=txma-JSvc1lHSdR0UgB6CZFM7KmcIsIxb6hjAZLXYk0,174
+tdjson/tdjson.cpp,sha256=LjAXJawYy3IC3uwGqSfA7ZT9Z2ipavH9fGgJifWYhPk,913
+tdjson/tdjson_ext.abi3.so,sha256=JN5j4VxnOIx4r0WDmbvr9Gt4sLdHqSzmQnmUD_xuR1g,182097
+tdjson.libs/libtdjson-599becc1.so.1.8.46,sha256=e-bqhmtoZmV5W5E3l3PmuIhZQ-c2k0YF-ykRbt2LusY,46880145
+tdjson-1.8.46.dist-info/METADATA,sha256=wmHlFPdisKunqlwet1pJXCspuYEBMO768VMxEZoO9GA,2260
+tdjson-1.8.46.dist-info/WHEEL,sha256=V-wJyKq3tPUBb6Qwzbr3TAoL3_mHizdmqWVpTspv1As,154
+tdjson-1.8.46.dist-info/RECORD,,
+tdjson-1.8.46.dist-info/licenses/LICENSE,sha256=3jrkn9HjeTzK88qyzmN2AEDvTZiXXi1tpZflpm4o29c,1062
