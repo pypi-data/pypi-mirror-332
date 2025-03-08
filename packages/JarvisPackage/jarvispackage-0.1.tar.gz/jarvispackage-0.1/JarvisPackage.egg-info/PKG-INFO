@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: JarvisPackage
+Version: 0.1
+Summary: this is first project in python created by aman mishra
+Author: Aman
+Author-email: amanmishra3496@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
