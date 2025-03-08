@@ -1,0 +1,12 @@
+cursor_mdc_generator/__init__.py,sha256=q3iCgaljAUBHKNPYVCnVnRxJ1KWZ-SuwP8DWCOsMKsc,120
+cursor_mdc_generator/cli.py,sha256=FnkHtUGxgCRfnjmsKXOJerHmjfn-_ydNQ-cXhM5s3pU,2127
+cursor_mdc_generator/code_summarization.py,sha256=pPb3T5d5U3VpHQnA_hHueKY7nqjRl-u-KbfstQxaFfQ,17824
+cursor_mdc_generator/repo_analyzer.py,sha256=Vdg9g-kyHZTdPvJNIC4XJq78HS4MCpwedP9bLrsxouY,15355
+cursor_mdc_generator/repository_structure.py,sha256=dWA11SUVVQZxx-Q5zgmUnQknUgnONmWTAsuORYqKbnY,7968
+cursor_mdc_generator/symbolic_graph.py,sha256=bDNvVP4RWqs_ZSPCmXuy8qoOm7oi3Mkf-4ZcYgyVrsI,17256
+mdcgen-0.1.0.dist-info/LICENSE,sha256=0mOrrrS8bf8mUhZf5BI9vuLuc_g3tqZ6936moIWz0Go,1068
+mdcgen-0.1.0.dist-info/METADATA,sha256=WWv2jX-zstYrQtgmyE_rM1vZ0xmJTzGgGZa7hAIfLl8,1716
+mdcgen-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+mdcgen-0.1.0.dist-info/entry_points.txt,sha256=3Hg7f6uvKnh6wsx7xoIzl0ImTcnGohapof3z6ZnVNxU,57
+mdcgen-0.1.0.dist-info/top_level.txt,sha256=wPL1PaA796DQMLBc0ZGtGIo48vQgEyi-f4S512ka3IA,21
+mdcgen-0.1.0.dist-info/RECORD,,
