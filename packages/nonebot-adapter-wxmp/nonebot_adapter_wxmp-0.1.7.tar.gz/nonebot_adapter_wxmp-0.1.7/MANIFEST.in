@@ -1,0 +1,4 @@
+include nonebot/**
+
+exclude test/*
+exclude example/*
