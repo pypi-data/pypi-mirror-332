@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: influential_points
+Version: 1.0
+Summary: A python script for detecting influential points
+Home-page: https://github.com/REBELABS/Regression-Influential-Points-Identification-Python
+Author: Dr. REBEL-ious
+Requires-Dist: pandas
+Requires-Dist: scipy
