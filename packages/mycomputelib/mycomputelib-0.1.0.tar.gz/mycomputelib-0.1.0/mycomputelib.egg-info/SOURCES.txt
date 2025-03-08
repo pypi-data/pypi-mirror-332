@@ -1,0 +1,9 @@
+README.md
+setup.py
+mycomputelib/__init__.py
+mycomputelib/advanced.py
+mycomputelib/basic.py
+mycomputelib.egg-info/PKG-INFO
+mycomputelib.egg-info/SOURCES.txt
+mycomputelib.egg-info/dependency_links.txt
+mycomputelib.egg-info/top_level.txt
