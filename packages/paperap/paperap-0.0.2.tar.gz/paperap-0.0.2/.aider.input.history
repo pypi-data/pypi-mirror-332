@@ -1,0 +1,69 @@
+
+# 2025-03-06 13:53:56.341703
++no
+
+# 2025-03-06 13:54:27.563061
++/add src/paperap/models/abstract/model.py
+
+# 2025-03-06 13:54:40.338945
++/add tests/models/test_base.py
+
+# 2025-03-06 13:56:57.083912
++Determine what unit tests are missing from test_base.py based on the functionality in model.py and create those tests.
+
+# 2025-03-06 13:57:51.969894
++no
+
+# 2025-03-06 14:08:28.819354
++/exit
+
+# 2025-03-06 19:53:55.522367
++no
+
+# 2025-03-06 19:54:07.962260
++/add src/paperap/models/document/queryset.py
+
+# 2025-03-06 19:55:06.141727
++ Consider the following documentation from paperless ngx:
+
+# 2025-03-06 19:55:22.084430
++no
+
+# 2025-03-06 19:55:31.736485
++/add src/paperap/models/document/queryset.py
+
+# 2025-03-06 19:57:02.041078
++Consider the following documentation from paperless ngx You can filter documents by their custom field values by specifying the custom_field_query query parameter. Here are some recipes for common use cases:
++
++    Documents with a custom field "due" (date) between Aug 1, 2024 and Sept 1, 2024 (inclusive):
++
++    ?custom_field_query=["due", "range", ["2024-08-01", "2024-09-01"]]
++
++    Documents with a custom field "customer" (text) that equals "bob" (case sensitive):
++
++    ?custom_field_query=["customer", "exact", "bob"]
++
++    Documents with a custom field "answered" (boolean) set to true:
++
++    ?custom_field_query=["answered", "exact", true]
++
++    Documents with a custom field "favorite animal" (select) set to either "cat" or "dog":
++
++    ?custom_field_query=["favorite animal", "in", ["cat", "dog"]]
++
++    Documents with a custom field "address" (text) that is empty:
++
++    ?custom_field_query=["OR", ["address", "isnull", true], ["address", "exact", ""]]
++
++    Documents that don't have a field called "foo":
++
++    ?custom_field_query=["foo", "exists", false]
++
++    Documents that have document links "references" to both document 3 and 7:
++
++    ?custom_field_query=["references", "contains", [3, 7]]
++
++All field types support basic operations including exact, in, isnull, and exists. String, URL, and monetary fields support case-insensitive substring matching operations including icontains, istartswith, and iendswith. Integer, float, and date fields support arithmetic comparisons including gt (>), gte (>=), lt (<), lte (<=), and range. Lastly, document link fields support a contains operator that behaves like a "is superset of" check. ---- I have written several methods in my document queryset to make it easy to find documents based on their custom fields. Please create more methods that make using the features described in the documentation above easy.
+
+# 2025-03-06 20:16:36.058569
++/exit
