@@ -1,0 +1,6 @@
+numpy==2.2.3
+pandas==2.2.3
+psycopg2-binary==2.9.10
+shapely==2.0.7
+
+pandassta==0.0.16
