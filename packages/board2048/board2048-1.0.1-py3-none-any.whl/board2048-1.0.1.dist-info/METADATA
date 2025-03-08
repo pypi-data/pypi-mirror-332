@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: board2048
+Version: 1.0.1
+Summary: 2048 game logic in Python
+Author: Mark Kwong
+Author-email: mark_kwong@fuhsd.org
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-python
+Dynamic: summary
