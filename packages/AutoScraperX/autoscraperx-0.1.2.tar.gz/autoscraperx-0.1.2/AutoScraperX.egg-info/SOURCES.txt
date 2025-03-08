@@ -1,0 +1,11 @@
+README.md
+setup.py
+AutoScraperX/__init__.py
+AutoScraperX/common_spider.py
+AutoScraperX/utils.py
+AutoScraperX.egg-info/PKG-INFO
+AutoScraperX.egg-info/SOURCES.txt
+AutoScraperX.egg-info/dependency_links.txt
+AutoScraperX.egg-info/requires.txt
+AutoScraperX.egg-info/top_level.txt
+test/test.py
