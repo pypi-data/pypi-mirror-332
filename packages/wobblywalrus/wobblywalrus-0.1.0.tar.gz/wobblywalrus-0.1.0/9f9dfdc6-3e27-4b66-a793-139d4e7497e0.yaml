@@ -1,0 +1,19 @@
+address: 1732 Broadway Unit 101
+city: Seattle
+directions_link: https://www.google.com/maps/dir/?origin=Spring+Street+Mini+Park%2C+1506+E+Spring+St%2C+Seattle%2C+WA+98122&destination=1732+Broadway+Seattle%2C+WA+98122%2C+Seattle%2C+WA&api=1
+google_reviews_links:
+- https://www.google.com/maps/search/Capitol%20Hill%20Dental%20Group%2C%20Seattle%2C%20WA?entry=ttu
+image_search_links:
+- https://www.google.com/search?q=Capitol%20Hill%20Dental%20Group+Seattle+WA&tbm=isch
+latitude: 47.6173369
+longitude: -122.3204438
+name: Capitol Hill Dental Group
+npi: '1124768460'
+profile_image_links: []
+social_media_links: []
+state: WA
+type: practice
+uuid: 9f9dfdc6-3e27-4b66-a793-139d4e7497e0
+yelp_reviews_links:
+- https://www.yelp.com/search?find_desc=Capitol+Hill+Dental+Group&find_loc=Seattle%2C+WA
+zip_code: '98122'

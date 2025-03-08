@@ -1,0 +1,74 @@
+{
+ "businesses": [
+   {
+     "business_name": "Downtown Seattle Dentists",
+     "matched_name": "Downtown Seattle Dentists",
+     "yelp_url": "https://www.yelp.com/biz/downtown-seattle-dentists-seattle",
+     "message": "Exact business page match found",
+     "uuid": "b2d9eacb-940c-4256-98aa-66310e907df4"
+   },
+   {
+     "business_name": "3Rd & Columbia Dental",
+     "matched_name": "3rd & Columbia Dental",
+     "yelp_url": "https://www.yelp.com/biz/3rd-and-columbia-dental-seattle-3",
+     "message": "Exact business page match found",
+     "uuid": "c3115d28-4237-4fe2-825c-99bddd2a3741"
+   },
+   {
+     "business_name": "Neighborcare Health At Pacific Tower Dental",
+     "matched_name": "Neighborcare Health at Pacific Tower",
+     "yelp_url": "https://www.yelp.com/biz/neighborcare-health-at-pacific-tower-seattle",
+     "message": "Fuzzy business name match found",
+     "uuid": "d399bde8-d492-4dfa-a2da-03f2976e43ef"
+   },
+   {
+     "business_name": "2200 Westlake Dentistry",
+     "matched_name": "2200 Westlake Dentistry",
+     "yelp_url": "https://www.yelp.com/biz/2200-westlake-dentistry-seattle",
+     "message": "Exact business page match found",
+     "uuid": "795d469d-cd13-4fed-ae69-2a408786347c"
+   },
+   {
+     "business_name": "Belltown Modern Dentistry",
+     "matched_name": "Belltown Modern Dentistry",
+     "yelp_url": "https://www.yelp.com/biz/belltown-modern-dentistry-seattle",
+     "message": "Exact business page match found",
+     "uuid": "1f87ed75-672b-47a5-9197-b440deb91fba"
+   },
+   {
+     "business_name": "Slu Dental Group",
+     "matched_name": "SLU Dental Group",
+     "yelp_url": "https://www.yelp.com/biz/slu-dental-group-seattle",
+     "message": "Exact business page match found",
+     "uuid": "d5c20b65-3b1c-4dca-a0c2-fbf1cc179678"
+   },
+   {
+     "business_name": "Capitol Hill Seattle Dentist",
+     "matched_name": "Capitol Hill Seattle Dentist",
+     "yelp_url": "https://www.yelp.com/biz/capitol-hill-seattle-dentist-seattle",
+     "message": "Exact business page match found",
+     "uuid": "4e5b7ff2-40f9-4f19-a962-822b143a2cdf"
+   },
+   {
+     "business_name": "Nigel W Saw Dds Pc",
+     "matched_name": "Nigel Saw, DDS",
+     "yelp_url": "https://www.yelp.com/biz/nigel-saw-dds-seattle",
+     "message": "Fuzzy business name match found",
+     "uuid": "c14b165e-8645-409f-8639-55279b6a8f0d"
+   },
+   {
+     "business_name": "South Lake Union Dentist Office",
+     "matched_name": "South Lake Union Dentist Office",
+     "yelp_url": "https://www.yelp.com/biz/south-lake-union-dentist-office-seattle",
+     "message": "Exact business page match found",
+     "uuid": "1ddd61dd-c246-4696-9c97-21cdd9537a0d"
+   },
+   {
+     "business_name": "8 To 8 Dental Broadway",
+     "matched_name": "8 to 8 Dental - Capitol Hill",
+     "yelp_url": "https://www.yelp.com/biz/8-to-8-dental-capitol-hill-seattle-2",
+     "message": "Fuzzy business name match found",
+     "uuid": "5b741f31-4971-4cd9-853e-d81f4bcf1ac5"
+   }
+ ]
+}

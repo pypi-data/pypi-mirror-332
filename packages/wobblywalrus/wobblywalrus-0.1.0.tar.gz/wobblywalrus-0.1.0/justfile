@@ -1,0 +1,18 @@
+set shell := ["bash", "-uc"]
+
+default:
+   @just --list
+
+# Run search on batch of files
+search:
+   #!/usr/bin/env bash
+   files=($(cat batches/batch_ac.txt))
+   printf '%s\n' "${files[@]}" | xargs -I {} wobblywalrus -vvv search --no-cache {} >out.txt 2>&1
+   { 
+      cat template3.txt
+      echo
+      echo
+      cat out.txt
+   } | pbcopy
+   # mkdir -p data
+   # pbpaste >data/claude_results_$(date +%s).json

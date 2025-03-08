@@ -1,0 +1,74 @@
+{
+  "businesses": [
+    {
+      "business_name": "Revive Smiles Dentistry",
+      "matched_name": "Revive Smiles Dentistry",
+      "yelp_url": "https://www.yelp.com/biz/revive-smiles-dentistry-seattle",
+      "message": "Found exact name match",
+      "uuid": "3d2755a0-4ba6-4617-80cb-532223897016"
+    },
+    {
+      "business_name": "J Brewster Bede Dds Ps",
+      "matched_name": "Bede & Carmody General Dentistry",
+      "yelp_url": "https://www.yelp.com/biz/bede-and-carmody-general-dentistry-seattle",
+      "message": "Found fuzzy name match",
+      "uuid": "f735ed14-9579-4378-b20b-314f3df88f36"
+    },
+    {
+      "business_name": "Cindy L Tseng Dds Pllc",
+      "matched_name": "",
+      "yelp_url": "",
+      "message": "No direct Yelp business page found",
+      "uuid": "e341ca9a-df0b-47bf-b149-a10f957cd770"
+    },
+    {
+      "business_name": "Pike Place Dental",
+      "matched_name": "Pike Place Dental",
+      "yelp_url": "https://www.yelp.com/biz/pike-place-dental-seattle",
+      "message": "Found exact name match",
+      "uuid": "75996ab2-fc56-497b-8624-8e77682524d4"
+    },
+    {
+      "business_name": "3Rd & Columbia Dental",
+      "matched_name": "3rd & Columbia Dental",
+      "yelp_url": "https://www.yelp.com/biz/3rd-and-columbia-dental-seattle-3",
+      "message": "Found exact name match",
+      "uuid": "c29ba5cf-53b9-4787-9c56-caf976b9290c"
+    },
+    {
+      "business_name": "Abu & Del Rosario Pllc",
+      "matched_name": "",
+      "yelp_url": "",
+      "message": "No direct Yelp business page found",
+      "uuid": "72e35d56-ce01-4c89-ae89-abdac7a52fa6"
+    },
+    {
+      "business_name": "Dr Thomas Vo Dds",
+      "matched_name": "Vo Thomas L, DDS",
+      "yelp_url": "https://www.yelp.com/biz/vo-thomas-l-dds-seattle-2",
+      "message": "Found fuzzy name match",
+      "uuid": "7ce0c5cc-f181-489f-84cd-b36fe68dca3e"
+    },
+    {
+      "business_name": "Smiles Matters Inc",
+      "matched_name": "Smile Matters Inc., Esi Quaidoo, DDS",
+      "yelp_url": "https://www.yelp.com/biz/smile-matters-inc-esi-quaidoo-dds-seattle-3",
+      "message": "Found fuzzy name match",
+      "uuid": "adcf2aff-9f10-43d3-905d-864221a463ac"
+    },
+    {
+      "business_name": "James St Nguyen Dmd Ps",
+      "matched_name": "",
+      "yelp_url": "",
+      "message": "No direct Yelp business page found",
+      "uuid": "819e8fd9-0408-46fa-ba67-1a71b8575137"
+    },
+    {
+      "business_name": "First Hill Dental Center",
+      "matched_name": "First Hill Dental Center",
+      "yelp_url": "https://www.yelp.com/biz/first-hill-dental-center-seattle",
+      "message": "Found exact name match",
+      "uuid": "2d6093db-c509-43b4-a085-9c32ffdaeabe"
+    }
+  ]
+}

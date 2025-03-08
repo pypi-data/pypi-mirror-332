@@ -1,0 +1,67 @@
+{
+  "businesses": [
+    {
+      "business_name": "Simply Dental",
+      "matched_name": "Simply Dental",
+      "yelp_url": "https://www.yelp.com/biz/simply-dental-seattle-2",
+      "message": "Found exact name match",
+      "uuid": "2f77922a-03b8-4432-88ed-3a479a7efbec"
+    },
+    {
+      "business_name": "Dentist Downtown Seattle",
+      "matched_name": "Dentist Downtown Seattle",
+      "yelp_url": "https://www.yelp.com/biz/dentist-downtown-seattle-seattle",
+      "message": "Found exact name match",
+      "uuid": "704c29c8-afcd-48bd-9c62-b00abac1c24f"
+    },
+    {
+      "business_name": "Ichs International District Medical & Dental Clinic",
+      "matched_name": "ICHS International District Medical & Dental Clinic",
+      "yelp_url": "https://www.yelp.com/biz/ichs-international-district-medical-and-dental-clinic-seattle-2",
+      "message": "Found exact name match",
+      "uuid": "c4b32315-a2f4-49ae-9193-c6f522c59434"
+    },
+    {
+      "business_name": "Barry Kaimakis",
+      "matched_name": "Barry W. Kaimakis DDS, PS",
+      "yelp_url": "https://www.yelp.com/biz/barry-w-kaimakis-dds-ps-seattle",
+      "message": "Found fuzzy name match",
+      "uuid": "361af0e7-fde9-4560-9538-9b05e7ac59a4"
+    },
+    {
+      "business_name": "Sugandh Relan Dds Pllc",
+      "matched_name": "",
+      "yelp_url": "",
+      "message": "No direct Yelp business page found",
+      "uuid": "a72902f4-54c6-48d9-b566-0fc9f6018cd3"
+    },
+    {
+      "business_name": "Seattles Capitol Hill Dentist",
+      "matched_name": "Seattle's Capitol Hill Dentist",
+      "yelp_url": "https://www.yelp.com/biz/seattle-s-capitol-hill-dentist-seattle",
+      "message": "Found exact name match",
+      "uuid": "45879630-f839-4c4b-9149-324b6e8fea05"
+    },
+    {
+      "business_name": "Downtown Seattle Dentists",
+      "matched_name": "Downtown Seattle Dentists",
+      "yelp_url": "https://www.yelp.com/biz/downtown-seattle-dentists-seattle",
+      "message": "Found exact name match",
+      "uuid": "4c5d9c62-22d3-4433-9d3e-073b1ad1b666"
+    },
+    {
+      "business_name": "John L Starks Dds Pllc",
+      "matched_name": "John L Starks, DDS",
+      "yelp_url": "https://www.yelp.com/biz/john-l-starks-dds-seattle-2",
+      "message": "Found fuzzy name match",
+      "uuid": "d23e0435-6c1b-4273-a5ee-2f4b2fde3f9c"
+    },
+    {
+      "business_name": "Jeany J Lee Dds Ps",
+      "matched_name": "",
+      "yelp_url": "",
+      "message": "No direct Yelp business page found",
+      "uuid": "6665c7c6-f534-42fa-ad88-81619271882a"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "businesses": [
+    {
+      "business_name": "Dental@888",
+      "matched_name": "",
+      "yelp_url": "",
+      "message": "No direct Yelp business page found",
+      "uuid": "c2239cc9-2d60-45c8-affa-4dfc4e8e31c7"
+    },
+    {
+      "business_name": "Prestige Family And Cosmetic Dentistry",
+      "matched_name": "",
+      "yelp_url": "",
+      "message": "No direct Yelp business page found",
+      "uuid": "212c3ef3-cd34-4940-8482-65b0b567b49e"
+    },
+    {
+      "business_name": "Bridget Singh Dds Pllc",
+      "matched_name": "Bridget Singh, DDS",
+      "yelp_url": "https://www.yelp.com/biz/bridget-singh-dds-seattle",
+      "message": "Found fuzzy name match",
+      "uuid": "fb53c87a-c3f0-4655-976a-adde3efa8540"
+    },
+    {
+      "business_name": "Nicholas Koogler Dds Pllc",
+      "matched_name": "Cascade Integrative Dentistry",
+      "yelp_url": "https://www.yelp.com/biz/cascade-integrative-dentistry-seattle-2",
+      "message": "Found fuzzy name match",
+      "uuid": "9cafb42f-00fc-46e9-b31f-fca5f6beb240"
+    },
+    {
+      "business_name": "Dentologie Pc",
+      "matched_name": "Dentologie - South Loop",
+      "yelp_url": "https://www.yelp.com/biz/dentologie-south-loop-chicago",
+      "message": "Found fuzzy name match",
+      "uuid": "84ee8d64-1c5f-4533-915c-63700c81b7b4"
+    },
+    {
+      "business_name": "Joseph Zimmer Dds",
+      "matched_name": "Joseph Zimmer, DDS",
+      "yelp_url": "https://www.yelp.com/biz/joseph-zimmer-dds-seattle",
+      "message": "Found fuzzy name match",
+      "uuid": "a5c5ae3c-3003-4668-80d0-c046bd4f0de9"
+    },
+    {
+      "business_name": "Belltown Modern Dentistry",
+      "matched_name": "Belltown Modern Dentistry",
+      "yelp_url": "https://www.yelp.com/biz/belltown-modern-dentistry-seattle",
+      "message": "Found exact name match",
+      "uuid": "61ba40e8-0492-4632-8dd4-ae439a619e45"
+    },
+    {
+      "business_name": "5Th And Olive Dental",
+      "matched_name": "5th & Olive Dental",
+      "yelp_url": "https://www.yelp.com/biz/5th-and-olive-dental-seattle-3",
+      "message": "Found fuzzy name match",
+      "uuid": "62b6b93c-453f-4bab-adc0-f5be62d5eac6"
+    }
+  ]
+}

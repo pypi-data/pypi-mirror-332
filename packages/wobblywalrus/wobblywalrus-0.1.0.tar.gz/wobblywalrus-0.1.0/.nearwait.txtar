@@ -1,0 +1,856 @@
+-- 797fe5a3-b4f2-4c84-8699-29e9651a84f5.yaml --
+address: 527 Boren Ave N
+city: Seattle
+directions_link: https://www.google.com/maps/dir/?origin=Spring+Street+Mini+Park%2C+1506+E+Spring+St%2C+Seattle%2C+WA+98122&destination=527+Boren+Ave+N%2C+Seattle%2C+WA+98109%2C+Seattle%2C+WA&api=1
+google_reviews_links:
+- https://www.google.com/maps/search/South%20Lake%20Union%20Dentist%20Office%2C%20Seattle%2C%20WA?entry=ttu
+image_search_links:
+- https://www.google.com/search?q=South%20Lake%20Union%20Dentist%20Office+Seattle+WA&tbm=isch
+latitude: 47.6237196
+longitude: -122.3362603
+name: South Lake Union Dentist Office
+npi: '1942793526'
+profile_image_links: []
+social_media_links: []
+state: WA
+type: practice
+uuid: 797fe5a3-b4f2-4c84-8699-29e9651a84f5
+yelp_reviews_links:
+- https://www.yelp.com/search?find_desc=South+Lake+Union+Dentist+Office&find_loc=Seattle%2C+WA
+zip_code: '98109'
+-- justfile --
+set shell := ["bash", "-uc"]
+
+default:
+   @just --list
+
+# Run search on batch of files
+search:
+   #!/usr/bin/env bash
+   files=($(cat batches/batch_ac.txt))
+   printf '%s\n' "${files[@]}" | xargs -I {} wobblywalrus -vvv search --no-cache {} >out.txt 2>&1
+   { 
+      cat template3.txt
+      echo
+      echo
+      cat out.txt
+   } | pbcopy
+   # mkdir -p data
+   # pbpaste >data/claude_results_$(date +%s).json
+-- pyproject.toml --
+[project]
+name = "wobblywalrus"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Taylor Monacelli", email = "taylormonacelli@gmail.com" }]
+requires-python = ">=3.13"
+dependencies = [
+  "googlemaps>=4.10.0",
+  "platformdirs>=4.3.6",
+  "python-dotenv>=1.0.0",
+  "pyyaml>=6.0.2",
+]
+
+[project.scripts]
+wobblywalrus = "wobblywalrus.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wobblywalrus"]
+
+[tool.ruff.lint]
+select = [
+  "E",      # pycodestyle
+  "W",      # pycodestyle
+  "F",      # pyflakes
+  "I",      # isort
+  "B",      # flake8-bugbear
+  "TID252", # relative-imports rule
+]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all" # Ban all relative imports
+-- src/wobblywalrus/__init__.py --
+from wobblywalrus import search
+from wobblywalrus.cache_manager import CacheManager as cache
+from wobblywalrus.cli import main
+
+__all__ = ["main", "search", "cache"]
+-- src/wobblywalrus/cache_manager.py --
+import datetime
+import json
+import logging
+import os
+
+import wobblywalrus.config
+
+logger = logging.getLogger(__name__)
+CACHE_TTL = datetime.timedelta(days=2)
+
+
+class CacheManager:
+    def __init__(self, cache_file=wobblywalrus.config.PLACE_ID_CACHE_FILE):
+        self.cache_file = cache_file
+        logger.debug(f"Initializing place ID cache at: {self.cache_file}")
+        self.cache = self._load_cache()
+
+    def _load_cache(self):
+        try:
+            if os.path.exists(self.cache_file):
+                with open(self.cache_file, "r") as f:
+                    cache_data = json.load(f)
+                    logger.debug(f"Loaded {len(cache_data)} entries from cache")
+                    return cache_data
+            logger.debug("No existing cache file found")
+            return {}
+        except json.JSONDecodeError:
+            logger.warning(f"Error reading cache file {self.cache_file}")
+            return {}
+
+    def _save_cache(self):
+        # Create directory if it doesn't exist
+        self.cache_file.parent.mkdir(parents=True, exist_ok=True)
+        with open(self.cache_file, "w") as f:
+            json.dump(self.cache, f, indent=2)
+            logger.debug(f"Saved {len(self.cache)} entries to cache")
+
+    def get_cached_place_id(self, cache_key):
+        cache_entry = self.cache.get(cache_key)
+        if cache_entry is None:
+            return None
+        # Handle both old (string) and new (dict) formats
+        if isinstance(cache_entry, str):
+            return cache_entry
+        return cache_entry.get("place_id")
+
+    def get_cached_uuid(self, cache_key):
+        cache_entry = self.cache.get(cache_key)
+        if cache_entry is None or isinstance(cache_entry, str):
+            return None
+        return cache_entry.get("uuid")
+
+    def cache_place_id(self, cache_key, place_id, uuid=None):
+        if place_id:
+            self.cache[cache_key] = {
+                "place_id": place_id,
+                "uuid": uuid,
+                "timestamp": datetime.datetime.now().timestamp(),
+            }
+            self._save_cache()
+-- src/wobblywalrus/cli.py --
+import argparse
+import logging
+import os
+import sys
+import dotenv
+import wobblywalrus.config
+import wobblywalrus.utils
+logger = logging.getLogger(__name__)
+
+def places_command(args, api_key):
+    import wobblywalrus.yaml_to_place_id
+    cache_stats = wobblywalrus.utils.CacheStats()
+    for file_path in args.files:
+        if not os.path.exists(file_path):
+            logger.error(f"File not found - {file_path}")
+            continue
+        wobblywalrus.yaml_to_place_id.process_yaml_file(
+            file_path, api_key, cache_stats, skip_cache=args.no_cache
+        )
+    logger.debug(cache_stats.summary())
+    logger.debug(f"Using cache directory: {wobblywalrus.config.CACHE_DIR}")
+
+def search_command(args, api_key):
+    import wobblywalrus.search
+    search_engine_id = os.getenv("GOOGLE_CUSTOM_SEARCH_ENGINE_ID")
+    if not search_engine_id:
+        logger.error("GOOGLE_CUSTOM_SEARCH_ENGINE_ID environment variable not set")
+        sys.exit(1)
+    cache_stats = wobblywalrus.utils.CacheStats()
+    for file_path in args.files:
+        if not os.path.exists(file_path):
+            logger.error(f"File not found - {file_path}")
+            continue
+        file_stats = wobblywalrus.search.process_search(
+            file_path,
+            api_key,
+            search_engine_id,
+            strategy_type=args.search_type,
+            skip_cache=args.no_cache,
+            debug_json=args.debug_json,
+        )
+        if file_stats:
+            cache_stats.hits += file_stats.hits
+            cache_stats.misses += file_stats.misses
+    logger.debug(cache_stats.summary())
+    logger.debug(f"Using cache directory: {wobblywalrus.config.CACHE_DIR}")
+
+def main():
+    parser = argparse.ArgumentParser(description="Google Places API utilities")
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="count",
+        default=0,
+        help="Increase verbosity (can be used multiple times)",
+    )
+    subparsers = parser.add_subparsers(dest="command", help="Available commands")
+
+    # Places command
+    places_parser = subparsers.add_parser(
+        "places", help="Process YAML files to fetch Google Place IDs"
+    )
+    places_parser.add_argument("files", nargs="+", help="YAML file paths to process")
+    places_parser.add_argument(
+        "--no-cache", action="store_true", help="Skip cache lookups"
+    )
+
+    # Search command
+    search_parser = subparsers.add_parser(
+        "search", help="Search for business information using Google Custom Search"
+    )
+    search_parser.add_argument("files", nargs="+", help="YAML file paths to process")
+    search_parser.add_argument(
+        "--no-cache", action="store_true", help="Skip cache lookups"
+    )
+    search_parser.add_argument(
+        "--search-type",
+        choices=["yelp", "business_name", "address"],
+        default="yelp",
+        help="Type of search strategy to use",
+    )
+    search_parser.add_argument(
+        "--debug-json",
+        action="store_true",
+        help="Display raw JSON response from Google Custom Search API",
+    )
+
+    args = parser.parse_args()
+
+    if not args.command:
+        parser.print_help()
+        sys.exit(1)
+
+    wobblywalrus.utils.configure_logging(args.verbose)
+
+    dotenv.load_dotenv()
+    api_key = os.getenv("GOOGLE_MAPS_API_KEY")
+    if not api_key:
+        logger.error("GOOGLE_MAPS_API_KEY environment variable not set in .env file")
+        sys.exit(1)
+
+    if args.command == "places":
+        places_command(args, api_key)
+    elif args.command == "search":
+        search_command(args, api_key)
+
+if __name__ == "__main__":
+    main()
+-- src/wobblywalrus/config.py --
+import logging
+import pathlib
+
+import platformdirs
+
+logger = logging.getLogger(__name__)
+
+dirs = platformdirs.PlatformDirs("wobblywalrus")
+CACHE_DIR = pathlib.Path(dirs.user_cache_dir)
+PLACE_ID_CACHE_FILE = CACHE_DIR / "place_id_cache.json"
+SEARCH_CACHE_FILE = CACHE_DIR / "search_cache.json"
+-- src/wobblywalrus/get_place_id.py --
+import json
+import logging
+import urllib.parse
+import urllib.request
+
+import wobblywalrus.cache_manager
+
+cache = wobblywalrus.cache_manager.CacheManager()
+logger = logging.getLogger(__name__)
+
+
+def get_place_id_by_coordinates_and_name(
+    latitude,
+    longitude,
+    business_name,
+    api_key,
+    cache_stats,
+    uuid=None,
+    radius_meters=100,
+    skip_cache=False,
+):
+    # Check cache first
+    cache_key = f"{latitude},{longitude},{business_name}"
+    if not skip_cache:
+        cached_place_id = cache.get_cached_place_id(cache_key)
+        if cached_place_id:
+            logger.debug(f"Cache hit for {business_name}")
+            cache_stats.add_hit()
+            return cached_place_id
+
+    logger.debug(f"Cache miss for {business_name}")
+    cache_stats.add_miss()
+
+    # Use Places API Nearby Search
+    base_url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+    params = {
+        "location": f"{latitude},{longitude}",
+        "radius": radius_meters,
+        "keyword": business_name,
+        "key": api_key,
+    }
+
+    # Construct URL with parameters
+    query_string = urllib.parse.urlencode(params)
+    url = f"{base_url}?{query_string}"
+
+    logger.debug(f"Making API request for {business_name}")
+    try:
+        with urllib.request.urlopen(url) as response:
+            if response.status == 200:
+                result = json.loads(response.read().decode())
+                if result.get("results"):
+                    # Get the first result
+                    place_id = result["results"][0]["place_id"]
+                    # Cache the result if caching is enabled
+                    if not skip_cache:
+                        cache.cache_place_id(cache_key, place_id, uuid)
+                        logger.debug(
+                            f"Cached new place_id for {business_name} with UUID {uuid}"
+                        )
+                    return place_id
+                else:
+                    logger.debug(f"No results found for {business_name}")
+            else:
+                logger.debug(f"API request failed with status {response.status}")
+    except urllib.error.URLError as e:
+        logger.debug(f"API request failed: {str(e)}")
+    return None
+
+
+def get_maps_url(place_id, use_search=False):
+    if use_search:
+        return f"https://google.com/maps/search/?api=1&query=&query_place_id={place_id}"
+    return f"https://www.google.com/maps/place?q=place_id:{place_id}"
+
+
+def get_detailed_maps_url(business_name, latitude, longitude, zoom=17):
+    encoded_name = urllib.parse.quote(business_name)
+    return f"https://www.google.com/maps/place/{encoded_name}/@{latitude},{longitude},{zoom}z"
+-- src/wobblywalrus/place_service.py --
+import json
+import logging
+import urllib.parse
+import urllib.request
+
+import wobblywalrus.cache_manager
+
+cache = wobblywalrus.cache_manager.CacheManager()
+logger = logging.getLogger(__name__)
+
+
+def get_place_id_by_coordinates_and_name(
+    latitude, longitude, business_name, api_key, cache_stats, radius_meters=100
+):
+    cache_key = f"{latitude},{longitude},{business_name}"
+    cached_place_id = cache.get_cached_place_id(cache_key)
+    if cached_place_id:
+        logger.debug(f"Cache hit for {business_name}")
+        cache_stats.add_hit()
+        return cached_place_id
+
+    logger.debug(f"Cache miss for {business_name}")
+    cache_stats.add_miss()
+
+    base_url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+    params = {
+        "location": f"{latitude},{longitude}",
+        "radius": radius_meters,
+        "keyword": business_name,
+        "key": api_key,
+    }
+
+    query_string = urllib.parse.urlencode(params)
+    url = f"{base_url}?{query_string}"
+
+    logger.debug(f"Making API request for {business_name}")
+    try:
+        with urllib.request.urlopen(url) as response:
+            if response.status == 200:
+                result = json.loads(response.read().decode())
+                if result.get("results"):
+                    place_id = result["results"][0]["place_id"]
+                    cache.cache_place_id(cache_key, place_id)
+                    logger.debug(f"Cached new place_id for {business_name}")
+                    return place_id
+                else:
+                    logger.debug(f"No results found for {business_name}")
+            else:
+                logger.debug(f"API request failed with status {response.status}")
+    except urllib.error.URLError as e:
+        logger.debug(f"API request failed: {str(e)}")
+    return None
+
+
+def get_maps_url(place_id, use_search=False):
+    if use_search:
+        return f"https://google.com/maps/search/?api=1&query=&query_place_id={place_id}"
+    return f"https://www.google.com/maps/place?q=place_id:{place_id}"
+
+
+def get_detailed_maps_url(business_name, latitude, longitude, zoom=17):
+    encoded_name = urllib.parse.quote(business_name)
+    return f"https://www.google.com/maps/place/{encoded_name}/@{latitude},{longitude},{zoom}z"
+-- src/wobblywalrus/search/__init__.py --
+from wobblywalrus.search.search import process_search
+
+__all__ = ["process_search"]
+-- src/wobblywalrus/search/search.py --
+import hashlib
+import json
+import logging
+import urllib.parse
+import urllib.request
+import yaml
+import wobblywalrus.search_cache
+import wobblywalrus.utils
+from wobblywalrus.search.strategies import SearchStrategyFactory
+
+logger = logging.getLogger(__name__)
+cache = wobblywalrus.search_cache.SearchCache()
+
+def make_cache_key(params):
+    """Create deterministic cache key from search parameters"""
+    param_str = urllib.parse.urlencode(sorted(params.items()))
+    return hashlib.sha256(param_str.encode()).hexdigest()
+
+class SearchService:
+    def __init__(self, api_key: str, search_engine_id: str, strategy_type: str):
+        self.strategy = SearchStrategyFactory.create_strategy(
+            strategy_type, api_key, search_engine_id
+        )
+
+    def get_search_results(self, business_data: dict, skip_cache=False):
+        params = self.strategy.build_search_query(business_data)
+        if not skip_cache:
+            cache_key = make_cache_key(params)
+            cached_result = cache.get(cache_key)
+            if cached_result:
+                return cached_result, True  # Cache hit
+
+        base_url = "https://www.googleapis.com/customsearch/v1"
+        query_string = urllib.parse.urlencode(params)
+        url = f"{base_url}?{query_string}"
+        logger.trace("Making Custom Search API request:")
+        logger.trace(f"URL: {url}")
+        logger.trace(f"Parameters: {params}")
+
+        try:
+            req = urllib.request.Request(url)
+            with urllib.request.urlopen(req) as response:
+                if response.status == 200:
+                    data = json.loads(response.read().decode())
+                    if not skip_cache:
+                        cache_key = make_cache_key(params)
+                        cache.set(cache_key, data)
+                    return data, False  # Cache miss
+                else:
+                    logger.error(
+                        f"Search API request failed with status {response.status}"
+                    )
+                    return None, False
+        except urllib.error.HTTPError as e:
+            logger.error(f"Search API request failed: {str(e)}")
+            return None, False
+        except urllib.error.URLError as e:
+            logger.error(f"Search API request failed: {str(e)}")
+            return None, False
+
+def parse_search_results(results):
+    if not results or "items" not in results:
+        return []
+
+    parsed_results = []
+    for item in results["items"]:
+        parsed_result = {
+            "title": item.get("title", ""),
+            "snippet": item.get("snippet", ""),
+            "url": item.get("link", ""),
+            "date": item.get("pagemap", {})
+            .get("metatags", [{}])[0]
+            .get("article:published_time", ""),
+            "thumbnails": [
+                img.get("src", "")
+                for img in item.get("pagemap", {}).get("cse_thumbnail", [])
+            ],
+            "metadata": item.get("pagemap", {}).get("metatags", [{}])[0],
+        }
+        if "rating" in item.get("pagemap", {}).get("aggregaterating", [{}])[0]:
+            parsed_result["rating"] = item["pagemap"]["aggregaterating"][0]["rating"]
+        parsed_results.append(parsed_result)
+
+    return parsed_results
+
+def process_search(
+    file_path, api_key, search_engine_id, strategy_type="yelp", skip_cache=False, debug_json=False
+):
+    logger.debug(f"Processing search for file: {file_path}")
+    cache_stats = wobblywalrus.utils.CacheStats()
+
+    with open(file_path, "r") as f:
+        business_data = yaml.safe_load(f)
+
+    if not business_data.get("name"):
+        logger.error(f"Missing business name in {file_path}")
+        return
+
+    search_service = SearchService(api_key, search_engine_id, strategy_type)
+    results, is_cached = search_service.get_search_results(business_data, skip_cache)
+
+    if not results:
+        logger.error(f"No search results found for {business_data['name']}")
+        return
+
+    if is_cached:
+        cache_stats.add_hit()
+    else:
+        cache_stats.add_miss()
+
+    # Display raw JSON if debug_json flag is set
+    if debug_json:
+        logger.info(f"\nRaw JSON response for {business_data['name']}:")
+        logger.info(json.dumps(results, indent=2))
+
+    parsed_results = parse_search_results(results)
+    uuid_str = business_data.get("uuid", "N/A")
+    logger.info(f"\nSearch results for {business_data['name']} (UUID: {uuid_str}):")
+
+    for idx, result in enumerate(parsed_results, 1):
+        logger.info(f"\n--- Result {idx} ---")
+        logger.info(f"UUID: {uuid_str}")
+        logger.info(f"Title: {result['title']}")
+        logger.info(f"Description: {result['snippet']}")
+        logger.info(f"URL: {result['url']}")
+        logger.info(f"Date: {result['date']}")
+        if result.get("rating"):
+            logger.info(f"Rating: {result['rating']}")
+        if result["thumbnails"]:
+            logger.info("Thumbnails:")
+            for thumb in result["thumbnails"]:
+                logger.info(f"- {thumb}")
+
+    return cache_stats
+-- src/wobblywalrus/search/strategies.py --
+import logging
+from abc import ABC, abstractmethod
+
+logger = logging.getLogger(__name__)
+
+
+class SearchStrategy(ABC):
+    def __init__(self, api_key: str, search_engine_id: str):
+        self.api_key = api_key
+        self.search_engine_id = search_engine_id
+
+    @abstractmethod
+    def build_search_query(self, business_data: dict) -> dict:
+        """Build search parameters for the strategy"""
+        pass
+
+
+class YelpSearchStrategy(SearchStrategy):
+    def build_search_query(self, business_data: dict) -> dict:
+        return {
+            "key": self.api_key,
+            "cx": self.search_engine_id,
+            "q": f"{business_data['name']} site:yelp.com",
+            "num": 5,
+        }
+
+
+class BusinessNameSearchStrategy(SearchStrategy):
+    def build_search_query(self, business_data: dict) -> dict:
+        return {
+            "key": self.api_key,
+            "cx": self.search_engine_id,
+            "q": business_data["name"],
+            "num": 5,
+        }
+
+
+class AddressSearchStrategy(SearchStrategy):
+    def build_search_query(self, business_data: dict) -> dict:
+        name = business_data["name"]
+        addr = business_data.get("address", "")
+        city = business_data.get("city", "")
+        query = f"{name} {addr} {city}"
+        return {
+            "key": self.api_key,
+            "cx": self.search_engine_id,
+            "q": query.strip(),
+            "num": 5,
+        }
+
+
+class SearchStrategyFactory:
+    _strategies = {
+        "yelp": YelpSearchStrategy,
+        "business_name": BusinessNameSearchStrategy,
+        "address": AddressSearchStrategy,
+    }
+
+    @classmethod
+    def create_strategy(
+        cls, strategy_type: str, api_key: str, search_engine_id: str
+    ) -> SearchStrategy:
+        strategy_class = cls._strategies.get(strategy_type)
+        if not strategy_class:
+            available = list(cls._strategies.keys())
+            raise ValueError(
+                f"Unknown strategy type: {strategy_type}. Available types: {available}"
+            )
+        return strategy_class(api_key, search_engine_id)
+-- src/wobblywalrus/search_cache.py --
+import datetime
+import json
+import logging
+
+import wobblywalrus.config
+
+logger = logging.getLogger(__name__)
+
+CACHE_TTL = datetime.timedelta(days=2)
+
+
+class SearchCache:
+    def __init__(self, cache_file=wobblywalrus.config.SEARCH_CACHE_FILE):
+        self.cache_file = cache_file
+        logger.debug(f"Initializing search cache at: {self.cache_file}")
+        self.cache = self._load_cache()
+
+    def _load_cache(self):
+        try:
+            if self.cache_file.exists():
+                with self.cache_file.open("r") as f:
+                    data = json.load(f)
+                    logger.debug(f"Loaded {len(data)} entries from cache")
+                    return data
+            logger.debug("No existing cache file found")
+            return {}
+        except json.JSONDecodeError:
+            logger.warning(f"Error reading cache file {self.cache_file}")
+            return {}
+
+    def _save_cache(self):
+        # Create directory if it doesn't exist
+        self.cache_file.parent.mkdir(parents=True, exist_ok=True)
+        with self.cache_file.open("w") as f:
+            json.dump(self.cache, f, indent=2)
+            logger.debug(f"Saved {len(self.cache)} entries to cache")
+
+    def get(self, key):
+        if key not in self.cache:
+            return None
+
+        entry = self.cache[key]
+        entry_datetime = datetime.datetime.fromtimestamp(entry["timestamp"])
+        if datetime.datetime.now() - entry_datetime > CACHE_TTL:
+            del self.cache[key]
+            self._save_cache()
+            return None
+
+        return entry["data"]
+
+    def set(self, key, data):
+        self.cache[key] = {
+            "timestamp": datetime.datetime.now().timestamp(),
+            "data": data,
+        }
+        self._save_cache()
+-- src/wobblywalrus/utils.py --
+import logging
+
+# Add custom TRACE level
+TRACE_LEVEL = 5
+logging.addLevelName(TRACE_LEVEL, "TRACE")
+
+
+def trace(self, message, *args, **kwargs):
+    if self.isEnabledFor(TRACE_LEVEL):
+        self._log(TRACE_LEVEL, message, args, **kwargs)
+
+
+logging.Logger.trace = trace
+
+LOGGING_LEVELS = {
+    0: logging.WARNING,
+    1: logging.INFO,
+    2: logging.DEBUG,
+    3: TRACE_LEVEL,
+}
+
+
+def configure_logging(verbosity):
+    verbosity = min(verbosity, max(LOGGING_LEVELS.keys()))
+    level = LOGGING_LEVELS.get(verbosity, logging.WARNING)
+    logging.basicConfig(format="%(asctime)s [%(levelname)s] %(message)s", level=level)
+
+
+class CacheStats:
+    def __init__(self):
+        self.hits = 0
+        self.misses = 0
+
+    def add_hit(self):
+        self.hits += 1
+
+    def add_miss(self):
+        self.misses += 1
+
+    def summary(self):
+        total = self.hits + self.misses
+        hit_rate = (self.hits / total * 100) if total > 0 else 0
+        return f"Cache stats: {self.hits} hits, {self.misses} misses ({hit_rate:.1f}% hit rate)"  # noqa: E501
+-- src/wobblywalrus/yaml_to_place_id.py --
+import argparse
+import logging
+import os
+import sys
+
+import dotenv
+import yaml
+
+import wobblywalrus
+import wobblywalrus.get_place_id
+import wobblywalrus.utils
+
+# Add custom TRACE level
+TRACE_LEVEL = 5  # Lower than DEBUG (10)
+logging.addLevelName(TRACE_LEVEL, "TRACE")
+
+
+def trace(self, message, *args, **kwargs):
+    if self.isEnabledFor(TRACE_LEVEL):
+        self._log(TRACE_LEVEL, message, args, **kwargs)
+
+
+logging.Logger.trace = trace
+
+# Configure logging levels
+LOGGING_LEVELS = {
+    0: logging.WARNING,  # Default
+    1: logging.INFO,  # -v
+    2: logging.DEBUG,  # -vv
+    3: TRACE_LEVEL,  # -vvv
+}
+
+
+def configure_logging(verbosity):
+    # Cap verbosity to max level
+    verbosity = min(verbosity, max(LOGGING_LEVELS.keys()))
+    # Set log level based on verbosity
+    level = LOGGING_LEVELS.get(verbosity, logging.WARNING)
+    # Configure logging
+    logging.basicConfig(format="%(asctime)s [%(levelname)s] %(message)s", level=level)
+
+
+def load_yaml(file_path):
+    with open(file_path, "r") as f:
+        return yaml.safe_load(f)
+
+
+def save_yaml(file_path, data):
+    with open(file_path, "w") as f:
+        yaml.dump(data, f, sort_keys=False)
+
+
+def process_yaml_file(file_path, api_key, cache_stats, skip_cache=False):
+    logger = logging.getLogger(__name__)
+    logger.debug(f"Processing file: {file_path}")
+    data = load_yaml(file_path)
+
+    # Extract required fields
+    latitude = data.get("latitude")
+    longitude = data.get("longitude")
+    name = data.get("name", "")
+    uuid = data.get("uuid")
+
+    if not (latitude and longitude and name):
+        logger.warning(f"Missing coordinates or business name in {file_path}")
+        return
+
+    logger.debug(f"Looking up place ID for {name} at ({latitude}, {longitude})")
+
+    # Get place ID using both coordinates and business name
+    place_id = wobblywalrus.get_place_id.get_place_id_by_coordinates_and_name(
+        latitude,
+        longitude,
+        name,
+        api_key,
+        cache_stats,
+        uuid=uuid,
+        skip_cache=skip_cache,
+    )
+
+    if place_id:
+        logger.info(f"Processed: {file_path}")
+        logger.info(f"Business: {name}")
+        logger.info(f"UUID: {uuid}")
+        logger.info(f"Coordinates: ({latitude}, {longitude})")
+        logger.info(f"Place ID: {place_id}")
+        logger.info(f"Maps URL: {wobblywalrus.get_place_id.get_maps_url(place_id)}")
+
+        # Update the source YAML with the place_id if it changed
+        if data.get("google_place_id") != place_id:
+            data["google_place_id"] = place_id
+            save_yaml(file_path, data)
+            logger.debug(f"Updated {file_path} with place_id: {place_id}")
+    else:
+        logger.error(f"Failed to get place ID for {name} at {file_path}")
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Process YAML files to fetch Google Place IDs"
+    )
+    parser.add_argument("files", nargs="+", help="YAML file paths to process")
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="count",
+        default=0,
+        help="Increase verbosity (can be used multiple times)",
+    )
+    args = parser.parse_args()
+
+    # Configure logging based on verbosity
+    configure_logging(args.verbose)
+    logger = logging.getLogger(__name__)
+
+    # Load environment variables
+    dotenv.load_dotenv()
+    api_key = os.getenv("GOOGLE_MAPS_API_KEY")
+    if not api_key:
+        logger.error("GOOGLE_MAPS_API_KEY environment variable not set")
+        sys.exit(1)
+
+    cache_stats = wobblywalrus.utils.CacheStats()
+
+    # Process each file
+    for file_path in args.files:
+        if not os.path.exists(file_path):
+            logger.error(f"File not found - {file_path}")
+            continue
+        process_yaml_file(file_path, api_key, cache_stats)
+
+    # Print cache statistics
+    logger.debug(cache_stats.summary())
+
+
+if __name__ == "__main__":
+    main()
