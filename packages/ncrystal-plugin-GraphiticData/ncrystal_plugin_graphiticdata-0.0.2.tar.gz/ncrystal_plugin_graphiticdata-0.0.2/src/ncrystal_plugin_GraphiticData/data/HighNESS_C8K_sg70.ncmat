@@ -1,0 +1,112 @@
+NCMAT v7
+#
+# C8K (orthorombic, SG-70)
+#
+# Atoms per unit cell: 64xC+8xK
+#
+# Structure converted (with NCrystal.cifutils module) from:
+#
+#   CIF file: KC8_mp-28930_conventional_standard.cif
+#
+# CIF file from The Materials Project: https://next-gen.materialsproject.org/
+#
+# Reference:    
+#   Jain, A., Ong, S. P., Hautier, G., Chen, W., Richards, W. D., Dacek, 
+#   S., Cholia, S., Gunter, D., Skinner, D., Ceder, G., and Persson, K. A., 
+#   2013. “Commentary: The Materials Project: A materials genome 
+#   approach to accelerating materials innovation”. APL Materials, 1(1), 07, p. 011002.               
+#
+# WARNING: Fallback (dummy) Debye temperature values were used for 2 atoms!
+#
+# NOTICE: crystal structure was verified with spglib to be self-consistent.
+#
+@CELL
+  lengths 4.97616 8.63161 21.4411
+  angles 90 90 90
+@SPACEGROUP
+  70
+@ATOMPOSITIONS
+  C 6.59999999999e-05 .166299 .62413
+  C 6.59999999999e-05 .333701 .87587
+  C 6.59999999999e-05 .666299 .12413
+  C 6.59999999999e-05 .833701 .37587
+  C .0001015 .166316 .8749495
+  C .0001015 .333684 .6250505
+  C .0001015 .666316 .3749495
+  C .0001015 .833684 .1250505
+  C .2498985 .083684 .3750505
+  C .2498985 .416316 .1249495
+  C .2498985 .583684 .8750505
+  C .2498985 .916316 .6249495
+  C .249934 .083701 .62587
+  C .249934 .416299 .87413
+  C .249934 .583701 .12587
+  C .249934 .916299 .37413
+  C .250066 .083701 .87413
+  C .250066 .416299 .62587
+  C .250066 .583701 .37413
+  C .250066 .916299 .12587
+  C .2501015 .083684 .1249495
+  C .2501015 .416316 .3750505
+  C .2501015 .583684 .6249495
+  C .2501015 .916316 .8750505
+  C .4998985 .166316 .6250505
+  C .4998985 .333684 .8749495
+  C .4998985 .666316 .1250505
+  C .4998985 .833684 .3749495
+  C .499934 .166299 .87587
+  C .499934 .333701 .62413
+  C .499934 .666299 .37587
+  C .499934 .833701 .12413
+  C .500066 .166299 .12413
+  C .500066 .333701 .37587
+  C .500066 .666299 .62413
+  C .500066 .833701 .87587
+  C .5001015 .166316 .3749495
+  C .5001015 .333684 .1250505
+  C .5001015 .666316 .8749495
+  C .5001015 .833684 .6250505
+  C .7498985 .083684 .8750505
+  C .7498985 .416316 .6249495
+  C .7498985 .583684 .3750505
+  C .7498985 .916316 .1249495
+  C .749934 .083701 .12587
+  C .749934 .416299 .37413
+  C .749934 .583701 .62587
+  C .749934 .916299 .87413
+  C .750066 .083701 .37413
+  C .750066 .416299 .12587
+  C .750066 .583701 .87413
+  C .750066 .916299 .62587
+  C .7501015 .083684 .6249495
+  C .7501015 .416316 .8750505
+  C .7501015 .583684 .1249495
+  C .7501015 .916316 .3750505
+  C .9998985 .166316 .1250505
+  C .9998985 .333684 .3749495
+  C .9998985 .666316 .6250505
+  C .9998985 .833684 .8749495
+  C .999934 .166299 .37587
+  C .999934 .333701 .12413
+  C .999934 .666299 .87587
+  C .999934 .833701 .62413
+  K 0 0 0
+  K 0 1/2 1/2
+  K 1/4 1/4 1/4
+  K 1/4 3/4 3/4
+  K 1/2 0 1/2
+  K 1/2 1/2 0
+  K 3/4 1/4 3/4
+  K 3/4 3/4 1/4
+@DYNINFO
+  # WARNING: Using fallback Debye temperature value!
+  element C
+  fraction 8/9
+  type vdosdebye
+  debye_temp 300
+@DYNINFO
+  # WARNING: Using fallback Debye temperature value!
+  element K
+  fraction 1/9
+  type vdosdebye
+  debye_temp 300
