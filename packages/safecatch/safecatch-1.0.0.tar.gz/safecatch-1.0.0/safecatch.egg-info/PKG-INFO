@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: safecatch
+Version: 1.0.0
+Summary: A python package that allows you to handle exceptions easily
+Author-email: Ariel Rotem <ariel.rotem1000@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# safecatch
+A python package that allows you to handle exceptions easily
