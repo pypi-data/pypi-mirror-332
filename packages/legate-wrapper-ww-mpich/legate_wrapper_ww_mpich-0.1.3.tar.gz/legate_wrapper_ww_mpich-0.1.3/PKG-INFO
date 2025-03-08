@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: legate_wrapper_ww_mpich
+Version: 0.1.3
+Summary: A description of your package
+Home-page: https://github.com/yourusername/legate_wrapper
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
