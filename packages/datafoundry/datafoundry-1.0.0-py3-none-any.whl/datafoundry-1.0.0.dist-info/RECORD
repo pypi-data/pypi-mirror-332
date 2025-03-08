@@ -1,0 +1,8 @@
+datafoundry/__init__.py,sha256=Pe1BZ3O5k-B8J4o4OgdbgMnIJ_Z41KXuB9n1IYeF3Pc,29
+datafoundry/_dynamic/__init__.py,sha256=hSY9bOBDOmDlq5uxku5X9n1d-i9MSKcoM7R3bu0uKko,30
+datafoundry/_dynamic/dataset/__init__.py,sha256=PuS_R6rA6AfAsaLaMEKA1ZGOXfLO-r18232IN1MNImw,24
+datafoundry/_dynamic/dataset/db_a_hash.py,sha256=Xi7YdtXV9XOXeY6cubhHqS7PGCb36rRtt2yYrH_c4iI,891
+datafoundry-1.0.0.dist-info/METADATA,sha256=ckx-XiT0hr-n_ImxyGa4uFtGVY4t1ljuEynRt4DiDt4,803
+datafoundry-1.0.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+datafoundry-1.0.0.dist-info/top_level.txt,sha256=aMokuX6MAT0uIfnIbIwFl-ZGEGXd6_4izOw9-UV16Hc,12
+datafoundry-1.0.0.dist-info/RECORD,,
