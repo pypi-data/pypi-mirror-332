@@ -1,0 +1,10 @@
+livekit/plugins/noise_cancellation/__init__.py,sha256=Wi_t4uyFBxCvrH5Ao3owEBFuNy0h8QaaVHK1UEjNVP8,383
+livekit/plugins/noise_cancellation/plugin.py,sha256=lvmqWBW_WfMdB6vdTCgMFwyt8Nd5CsMqPMowBCViVB0,1287
+livekit/plugins/noise_cancellation/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/noise_cancellation/resources/c8.f.s.026300-1.0.0_2.1.kef,sha256=XaneopXA4ENb12zRVd3i4mSZ-EhO6CAHcTXGTdbfyBg,6319030
+livekit/plugins/noise_cancellation/resources/liblivekit_nc_plugin.so,sha256=vrhXmMxRTEDnU2Iw2cm2xsOLZS2TSbwgOEWOJLs7VXs,34631464
+livekit/plugins/noise_cancellation/resources/libonnxruntime.so,sha256=t3VCHWWjJICArUMc-QJeubSxgha5P3GbdgFgCKvl0xQ,19495640
+livekit_plugins_noise_cancellation-0.1.3.dist-info/METADATA,sha256=pNtmuB9P2-cBwaN5LsFB9cruUh_lD_N9fR4Xka7tB5A,1680
+livekit_plugins_noise_cancellation-0.1.3.dist-info/WHEEL,sha256=6tmE95pTM2ftymF7v3_LXwbxHXxRSEX2yqJPB_73KVU,109
+livekit_plugins_noise_cancellation-0.1.3.dist-info/top_level.txt,sha256=OoDok3xUmXbZRvOrfvvXB-Juu4DX79dlq188E19YHoo,8
+livekit_plugins_noise_cancellation-0.1.3.dist-info/RECORD,,
