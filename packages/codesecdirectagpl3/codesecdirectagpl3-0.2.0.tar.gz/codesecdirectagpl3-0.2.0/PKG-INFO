@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: codesecdirectagpl3
+Version: 0.2.0
+Summary: A sample Python package
+Author-email: Your Name <you@example.com>
+License: AGPL-3.0
+Project-URL: Homepage, https://github.com/james-0131-2/pycodesecdirectagpl3
+Project-URL: Repository, https://github.com/james-0131-2/pycodesecdirectagpl3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# pypack1
+it is only test purpose

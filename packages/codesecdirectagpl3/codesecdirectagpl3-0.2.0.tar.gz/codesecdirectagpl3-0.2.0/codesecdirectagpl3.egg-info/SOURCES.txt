@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+codesecdirectagpl3/__init__.py
+codesecdirectagpl3/module1.py
+codesecdirectagpl3.egg-info/PKG-INFO
+codesecdirectagpl3.egg-info/SOURCES.txt
+codesecdirectagpl3.egg-info/dependency_links.txt
+codesecdirectagpl3.egg-info/requires.txt
+codesecdirectagpl3.egg-info/top_level.txt
