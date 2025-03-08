@@ -1,0 +1,138 @@
+"""
+# usage:
+>>> from .improved_invoke import improved_task as task # noqa
+>>> @task(flags={})
+>>> def something(): ...
+"""
+
+import functools
+import typing
+from typing import Any, Callable, Iterable, Optional
+
+from invoke.context import Context
+from invoke.tasks import Task as InvokeTask
+from invoke.tasks import task as invoke_task
+from typing_extensions import Unpack
+
+from .helpers import AnyDict
+
+TaskFn: typing.TypeAlias = typing.Callable[[Context], Any] | typing.Callable[..., Any]
+
+P = typing.ParamSpec("P")
+R = typing.TypeVar("R")
+
+
+class TaskOptions(typing.TypedDict, total=False):
+    name: Optional[str]
+    aliases: Iterable[str]
+    positional: Optional[Iterable[str]]
+    optional: Iterable[str]
+    default: bool
+    auto_shortflags: bool
+    help: Optional[AnyDict]
+    pre: Optional[list[TaskFn]]
+    post: Optional[list[TaskFn]]
+    autoprint: bool
+    iterable: Optional[Iterable[str]]
+    incrementable: Optional[Iterable[str]]
+    flags: dict[str, Iterable[str]] | None
+    hookable: bool
+
+
+class TaskCallable(typing.Protocol):
+    def __call__(
+        self, **_: Unpack[TaskOptions]
+    ) -> Callable[
+        [Callable[P, R]],
+        Callable[P, R],
+    ]: ...
+
+
+class ImprovedTask(InvokeTask[TaskCallable]):
+    """
+    Improved version of Invoke Task where you can set custom flags for command line arguments.
+    This allows you to specify aliases, rename (e.g. --json for 'as_json')  and custom short flags (--exclude = -x)
+    """
+
+    _flags: dict[str, list[str]]
+
+    def __init__(
+        self,
+        body: TaskCallable,
+        name: Optional[str] = None,
+        aliases: Iterable[str] = (),
+        positional: Optional[Iterable[str]] = None,
+        optional: Iterable[str] = (),
+        default: bool = False,
+        auto_shortflags: bool = True,
+        help: Optional[AnyDict] = None,  # noqa
+        pre: Optional[list[TaskFn]] = None,
+        post: Optional[list[TaskFn]] = None,
+        autoprint: bool = False,
+        iterable: Optional[Iterable[str]] = None,
+        incrementable: Optional[Iterable[str]] = None,
+        # new:
+        flags: dict[str, Iterable[str]] | None = None,
+        hookable: bool = False,
+    ):
+        self._flags = flags or {}
+        self.hookable = hookable
+
+        super().__init__(
+            body=body,
+            name=name,
+            aliases=tuple(aliases),
+            positional=positional,
+            optional=optional,
+            default=default,
+            auto_shortflags=auto_shortflags,
+            help=help,
+            pre=pre,  # type: ignore
+            post=post,  # type: ignore
+            autoprint=autoprint,
+            iterable=iterable,
+            incrementable=incrementable,
+        )
+
+    def arg_opts(self, name: str, default: str, taken_names: Iterable[str]) -> AnyDict:
+        opts = super().arg_opts(name=name, default=default, taken_names=set(taken_names))
+
+        if flags := self._flags.get(name):
+            # todo: check taken?
+            #  -> currently, you get an error like
+            #  'ValueError: Tried to add an argument named 't' but one already exists!'
+            #  for now, you'll just have to manually set correct flags to prevent this.
+            opts["names"] = list(flags)
+
+        return opts
+
+    def _run_hooks(self, ctx: Context, *args, **kwargs):
+        import inspect
+
+        for task in find_task_across_namespaces(self.name):
+            if task is not self:
+                sig = inspect.signature(task)
+                if len(sig.parameters) > 1:  # Assuming the first parameter is always Context
+                    # e.g. def up(ctx, services)
+                    task(ctx, *args, **kwargs)
+                else:
+                    # e.g. def up(ctx)
+                    task(ctx)
+
+    def __call__(self, ctx: Context, *args, **kwargs):
+        result = super().__call__(ctx, *args, **kwargs)
+        if self.hookable:
+            self._run_hooks(ctx)
+
+        return result
+
+
+def find_task_across_namespaces(name: str) -> list[ImprovedTask]:
+    from .cli import collection
+
+    return [task for ns in collection.collections.values() if (task := ns.tasks.get(name))]
+
+
+improved_task: TaskCallable = functools.partial(invoke_task, klass=ImprovedTask)
+
+__all__ = ["ImprovedTask", "improved_task"]
