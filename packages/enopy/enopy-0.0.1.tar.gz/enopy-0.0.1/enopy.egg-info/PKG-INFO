@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: enopy
+Version: 0.0.1
+Summary: Add your description here
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: duf==0.0.8
