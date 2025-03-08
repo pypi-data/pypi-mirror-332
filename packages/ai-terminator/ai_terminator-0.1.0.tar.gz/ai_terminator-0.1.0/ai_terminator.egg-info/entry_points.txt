@@ -1,0 +1,2 @@
+[console_scripts]
+terminal-ai = terminal_ai.terminal:run_terminal
