@@ -1,0 +1,4 @@
+dist
+eikon_api_wrapper
+tests
+venv
