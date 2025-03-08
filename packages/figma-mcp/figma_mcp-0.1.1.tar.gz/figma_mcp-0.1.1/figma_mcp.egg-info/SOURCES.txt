@@ -1,0 +1,14 @@
+.env.example
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+figma_mcp/__init__.py
+figma_mcp/clean_node.py
+figma_mcp/main.py
+figma_mcp.egg-info/PKG-INFO
+figma_mcp.egg-info/SOURCES.txt
+figma_mcp.egg-info/dependency_links.txt
+figma_mcp.egg-info/entry_points.txt
+figma_mcp.egg-info/requires.txt
+figma_mcp.egg-info/top_level.txt
