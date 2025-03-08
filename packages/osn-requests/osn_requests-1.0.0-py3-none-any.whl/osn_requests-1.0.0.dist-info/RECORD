@@ -1,0 +1,9 @@
+osn_requests/__init__.py,sha256=_fz7jN7v0iJm5hqzEmGr6kJDHuR3NvWhMvTPlVbsjc4,2063
+osn_requests/proxies.py,sha256=tXGozAnjeGbOqwqW1dvKzB_3VVYzK7DfrmnaXzAQbJI,1463
+osn_requests/user_agents/__init__.py,sha256=fUcYpXudwyam8DNgyw8bLna9Yyy1b8Er_kXcISjgR7A,17664
+osn_requests/user_agents/data.py,sha256=aV0KRsqCsE6m2p7qtgg_76W1X3QDY12PsyRhRByEpcA,24879
+osn_requests/user_agents/data_types.py,sha256=6Ts-udwoC_dzp-Upv2gGqce6PHXaMsbIBHkH4jgazZQ,321
+osn_requests-1.0.0.dist-info/METADATA,sha256=cdzRS08Pw4unI0HBr3nOvgNNx0EgKmYw0090yFYMJNw,3021
+osn_requests-1.0.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+osn_requests-1.0.0.dist-info/top_level.txt,sha256=STQx82c8kyRgJ023VIFHLeeRplIX1i-z1D-MBxtVwLE,13
+osn_requests-1.0.0.dist-info/RECORD,,
