@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: ibeatles
+Version: 1.0.0
+Summary: Bragg edge strain mapping
+License: MIT
+Project-URL: homepage, https://github.com/ornlneutronimaging/iBeatles
+Requires-Python: <3.13,>=3.11
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: QtPy
+Requires-Dist: PyQt5
+Requires-Dist: h5py
+Requires-Dist: args
+Requires-Dist: Pillow
+Requires-Dist: astropy
+Requires-Dist: pyqtgraph
+Requires-Dist: scipy
+Requires-Dist: lmfit
+Requires-Dist: neutronbraggedge
+Requires-Dist: changepy
+Requires-Dist: NeuNorm
+Requires-Dist: pytest
+Requires-Dist: loguru
+Requires-Dist: tqdm
+Requires-Dist: tomli
+Requires-Dist: pydantic
+Requires-Dist: ipython
