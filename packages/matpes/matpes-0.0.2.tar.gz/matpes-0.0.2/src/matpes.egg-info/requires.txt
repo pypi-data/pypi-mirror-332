@@ -1,0 +1,4 @@
+pandas>=2
+pymongo>=4.11
+pymatgen
+tqdm
