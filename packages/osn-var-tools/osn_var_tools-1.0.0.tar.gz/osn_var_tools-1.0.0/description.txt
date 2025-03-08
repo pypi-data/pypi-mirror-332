@@ -1,0 +1,1 @@
+osn-var-tools is a Python library providing a versatile toolkit for variable manipulation, formatting, introspection, and data handling, simplifying common tasks and enhancing code clarity.
