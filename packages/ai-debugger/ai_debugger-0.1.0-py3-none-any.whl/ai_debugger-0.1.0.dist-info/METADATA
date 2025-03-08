@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: ai-debugger
+Version: 0.1.0
+Summary: AI-powered Python code debugging and analysis tool
+Author: David Carboveanu
+Keywords: debugging,static analysis,AI,code quality
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: transformers
+Requires-Dist: torch
+Requires-Dist: pyyaml
+Requires-Dist: pylint
+Requires-Dist: black
+Requires-Dist: flask
+Dynamic: author
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
