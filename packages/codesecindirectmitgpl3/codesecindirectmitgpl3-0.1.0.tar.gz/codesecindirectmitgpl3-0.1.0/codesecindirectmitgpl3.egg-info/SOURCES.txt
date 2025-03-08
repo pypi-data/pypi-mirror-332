@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+codesecindirectmitgpl3/__init__.py
+codesecindirectmitgpl3/module1.py
+codesecindirectmitgpl3.egg-info/PKG-INFO
+codesecindirectmitgpl3.egg-info/SOURCES.txt
+codesecindirectmitgpl3.egg-info/dependency_links.txt
+codesecindirectmitgpl3.egg-info/requires.txt
+codesecindirectmitgpl3.egg-info/top_level.txt
