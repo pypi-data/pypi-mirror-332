@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: neuroslides
+Version: 0.0.1
+Summary: This is a test package to reserve the name
+Home-page: https://github.com/Muhammad Saboor Islam/neuroslides
+Author: Muhammad Saboor Islam
+Author-email: muhammadsaboor119@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+This package is uploaded for name reservation only.
