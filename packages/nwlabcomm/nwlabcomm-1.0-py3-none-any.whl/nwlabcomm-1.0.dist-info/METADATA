@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: nwlabcomm
+Version: 1.0
+Summary: Client and Server Communication
+Author: Hakim Adiche
+Author-email: adiche@kfupm.edu.sa
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: ttkbootstrap
+Requires-Dist: datetime
+Requires-Dist: pyaudio
+Requires-Dist: wave
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
