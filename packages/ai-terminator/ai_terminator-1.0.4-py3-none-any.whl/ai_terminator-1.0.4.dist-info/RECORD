@@ -1,0 +1,17 @@
+terminal_ai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminal_ai/terminal.py,sha256=0I0osqMIJ_muvr78pzEHl-CgtjM44wjJl2orVFHdwh0,4003
+terminal_ai/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminal_ai/config/config.py,sha256=KYmPMWNBnH2x0om38WWHtkYY4Whj0RezPWR-6K4cuBw,48
+terminal_ai/constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminal_ai/constants/constants.py,sha256=kt2KZyX1P6gIjQr3hwXLSWewL0ImaUUoBrH6PnevIFs,252
+terminal_ai/constants/prompts.py,sha256=NWzG8H3LjHn2qZUwvCFpimnCANznYBgeI0cd3rDZWyY,4483
+terminal_ai/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminal_ai/model/inference.py,sha256=VLrTLo9406VguhST5h-sC73Wl8fb4rPLiXgAIikgXLM,2288
+terminal_ai/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminal_ai/utils/command_utils.py,sha256=8qA0t7nyfLlCGLxTo9hHAgFKOKa0oZkWKK6Iui8uP70,4214
+terminal_ai/utils/utils.py,sha256=tkW-L1j86xD0Wpq2IPxER4XPl2bXjBx1JhbfO6IBxKI,2837
+ai_terminator-1.0.4.dist-info/METADATA,sha256=jMf5ZHaxyUR_lrHc5hSWn3TBSsSgLaGAhbHNTQj6HfQ,586
+ai_terminator-1.0.4.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+ai_terminator-1.0.4.dist-info/entry_points.txt,sha256=68yTr3I8BVBvHOQj_Jm_sAf6fdJWKosEUNtfH0A_ABo,68
+ai_terminator-1.0.4.dist-info/top_level.txt,sha256=hNJJMul2UpNBsP4e79xvFxXuI00xR97StUvN6zOUL8U,12
+ai_terminator-1.0.4.dist-info/RECORD,,
