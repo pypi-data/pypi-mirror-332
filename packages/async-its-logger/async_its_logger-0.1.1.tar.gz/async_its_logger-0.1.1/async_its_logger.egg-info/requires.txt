@@ -1,0 +1,6 @@
+pymongo
+redis
+boto3
+datadog-api-client
+pyyaml
+certifi
