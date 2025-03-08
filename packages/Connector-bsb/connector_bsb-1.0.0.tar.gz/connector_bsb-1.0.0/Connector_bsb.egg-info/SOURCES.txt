@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Connector_bsb.egg-info/PKG-INFO
+Connector_bsb.egg-info/SOURCES.txt
+Connector_bsb.egg-info/dependency_links.txt
+Connector_bsb.egg-info/entry_points.txt
+Connector_bsb.egg-info/requires.txt
+Connector_bsb.egg-info/top_level.txt
