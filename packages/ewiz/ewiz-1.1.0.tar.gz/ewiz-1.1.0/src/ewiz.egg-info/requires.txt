@@ -1,0 +1,17 @@
+numpy
+h5py
+hdf5plugin
+natsort
+tqdm
+matplotlib
+opencv-python
+pillow
+scipy
+scikit-image
+tonic
+autograd-minimize
+inverse_optical_flow
+flow_vis
+roslibpy
+bagpy
+imageio-ffmpeg
