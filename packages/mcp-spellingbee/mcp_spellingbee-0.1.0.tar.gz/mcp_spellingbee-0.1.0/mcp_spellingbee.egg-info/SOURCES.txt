@@ -1,0 +1,9 @@
+README.md
+index.py
+pyproject.toml
+mcp_spellingbee.egg-info/PKG-INFO
+mcp_spellingbee.egg-info/SOURCES.txt
+mcp_spellingbee.egg-info/dependency_links.txt
+mcp_spellingbee.egg-info/entry_points.txt
+mcp_spellingbee.egg-info/requires.txt
+mcp_spellingbee.egg-info/top_level.txt
