@@ -1,0 +1,9 @@
+README.md
+setup.py
+setup_user/__init__.py
+setup_user/setup_user.py
+setup_user.egg-info/PKG-INFO
+setup_user.egg-info/SOURCES.txt
+setup_user.egg-info/dependency_links.txt
+setup_user.egg-info/entry_points.txt
+setup_user.egg-info/top_level.txt

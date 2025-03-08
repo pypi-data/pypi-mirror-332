@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: setup_user
+Version: 1.0.0
+Summary: 一键创建Linux用户并赋予sudo权限
+Home-page: https://github.com/Sweetlolc/setup_user
+Author: Sweetlolc
+Author-email: your.email@example.com
+License: MIT
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+cat > README.md << 'EOF'
+# Linux User Setup
+
+一键创建Linux用户并赋予sudo权限。
+
+## 安装
+
+```bash
+pip install git+https://github.com/Sweetlolc/setup_user.git
