@@ -1,0 +1,235 @@
+<!-- `encrustable` - basic components of Rust's type system magic
+Copyright (C) 2025 Artur Ciesielski <artur.ciesielski@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>. -->
+
+# encrustable
+
+[![pipeline status](https://gitlab.com/arcanery/python/encrustable/badges/main/pipeline.svg)](https://gitlab.com/arcanery/python/encrustable/-/commits/main)
+[![coverage report](https://gitlab.com/arcanery/python/encrustable/badges/main/coverage.svg)](https://gitlab.com/arcanery/python/encrustable/-/commits/main)
+[![latest release](https://gitlab.com/arcanery/python/encrustable/-/badges/release.svg)](https://gitlab.com/arcanery/python/encrustable/-/releases)
+
+## Introduction
+
+`encrustable` is a small project that aims to bring the very basic benefits
+of the Rust's type system to Python. With the introduction of pattern matching
+in Python 3.12 and all the benefits associated with relevant type checking
+this paradigm becomes more and more usable.
+
+Currently the main focus of `encrustable` is to port over `Option` and
+`Result` types, the very basic building blocks of Rust's type safety.
+
+## Using `encrustable`
+
+### Installation
+
+```bash
+python -m pip install encrustable
+```
+
+### Basic usage of `Option`
+
+Run the example with `python -m encrustable.examples.option`:
+
+```python
+from typing import NewType
+
+from encrustable.option import Nothing, Option, Some
+
+# we use the newtype pattern to squeeze the most ouf of our type checker
+Username = NewType("Username", str)
+PasswdFileLine = NewType("PasswdFileLine", str)
+ParsedPasswdEntry = NewType("ParsedPasswdEntry", list[str])
+ShellPath = NewType("ShellPath", str)
+
+
+# we assume the passwd file exists, is readable and consists of valid lines, so we have
+# a function that can fail in exactly one way (the user is not in the passwd file)
+# we encode this scenario as an Option
+def get_user_entry(username: Username) -> Option[PasswdFileLine]:
+    with open("/etc/passwd", "r") as passwd_file:
+        for line in passwd_file:
+            parts: list[str] = line.split(":")
+            if parts[0] == username:
+                return Some(PasswdFileLine(line.strip()))
+        return Nothing()
+
+
+# we have a regular function that cannot fail
+# assuming it receives a valid passwd file line
+def parse_user_entry(entry: PasswdFileLine) -> ParsedPasswdEntry:
+    return ParsedPasswdEntry(entry.split(":"))
+
+
+# we have another regular function that cannot fail
+# assuming it receives a valid parsed passwd entry
+def get_shell_name(parsed_entry: ParsedPasswdEntry) -> ShellPath:
+    return ShellPath(parsed_entry[6])
+
+
+# now we can combine them and we can skip any error checking midway
+# we will only check the result at the end using pattern matching
+def print_user_shell(username: Username) -> None:
+    match get_user_entry(username) | parse_user_entry | get_shell_name:
+        # the result is of the type `Option[ShellPath]`
+        case Some(s):
+            print(f"- user '{username}' has shell set to '{s}'")
+        case Nothing():
+            print(f"- user '{username}' not found in the '/etc/passwd' file")
+
+
+# execute the example for two users, "root" and "anchovies"
+if __name__ == "__main__":
+    print_user_shell(Username("root"))
+    print_user_shell(Username("anchovies"))
+```
+
+### Basic usage of `Result`
+
+Run the example with `python -m encrustable.examples.result`:
+
+```python
+import tempfile
+from dataclasses import dataclass, field
+from functools import cached_property
+from pathlib import Path
+
+from encrustable import Err, Ok, Result
+
+
+@dataclass(frozen=True, eq=True)
+class FileReadError(Exception):
+    file_name: Path
+    original_error: Exception | None = field(default=None, kw_only=True)
+
+    @cached_property
+    def original_message(self) -> str | None:
+        return str(self.original_error) if self.original_error else None
+
+
+class FileNotFound(FileReadError):
+    pass
+
+
+class FileNotReadable(FileReadError):
+    pass
+
+
+class FileEmpty(FileReadError):
+    pass
+
+
+# this function can fail in many different ways:
+#   - file does not exist
+#   - file is not readable (because of permissions)
+#   - file is empty (so no first line)
+#   - we can even have a catch-all generic exception handler if we want to
+# we encode this scenario as a Result
+def read_first_line_from_file(file_name: Path) -> Result[str, FileReadError]:
+    try:
+        with file_name.open("r") as file:
+            if (line := file.readline().strip()) == "":
+                return Err(FileEmpty(file_name))
+            return Ok(line)
+    except FileNotFoundError as e:
+        return Err(FileNotFound(file_name, original_error=e))
+    except PermissionError as e:
+        return Err(FileNotReadable(file_name, original_error=e))
+    except Exception as e:
+        return Err(FileReadError(file_name, original_error=e))
+
+
+# we have a regular function that cannot fail
+# given a valid string it will give us up to 20 characters from the beginning
+def trim_str_above_20_len(line: str) -> str:
+    return line.strip()[:20]
+
+
+# now we can combine them and we can skip any error checking midway
+# we will only check the result at the end using pattern matching
+def print_first_line_from_file(file_name: Path) -> None:
+    match read_first_line_from_file(file_name) | trim_str_above_20_len:
+        case Ok(line):
+            print(f"- First line (up to 20 chars) from '{file_name}': {line}")
+        case Err(err):
+            print(
+                f"- Could not read first line from '{str(file_name)[:20]}'\n"
+                f"  error: {repr(err)}\n"
+                f"  original error: {err.original_message}"
+            )
+
+
+# execute the example for a couple of filenames
+if __name__ == "__main__":
+    print_first_line_from_file(Path("/etc/passwd"))
+    print_first_line_from_file(Path("/does-not-exist.yaml"))
+    print_first_line_from_file(Path("/root/file.yaml"))
+    with tempfile.NamedTemporaryFile("w") as f:
+        print_first_line_from_file(Path(f.name))
+```
+
+### The `Panic` boundary
+
+The boundary between `Option`s/`Result`s and regular Python code can be force-crossed
+by using the `unwrap*` or `expect*` methods, which immediately extracts the contained
+value. This can however raise a `Panic` if used when the object state is not the one
+that's expected, so pattern matching should be the preferred way of extracting values.
+
+`Panic`s are normal Python `Exception`s and can be caught at the boundary.
+
+Run the example with `python -m encrustable.examples.panic`:
+
+```python
+from encrustable.option import Nothing, Option, Some
+from encrustable.panic import Panic
+from encrustable.result import Err, Error, Ok, Result
+
+
+def get_some(v: int) -> Option[int]:
+    return Some(v)
+
+
+def get_nothing() -> Option[int]:
+    return Nothing()
+
+
+def get_ok(v: int) -> Result[int, Error]:
+    return Ok(v)
+
+
+def get_err(e: Error) -> Result[int, Error]:
+    return Err(e)
+
+
+def try_unwrap[T, E: Error](v: Option[T] | Result[T, E]) -> None:
+    try:
+        unwrapped = v.unwrap()
+        print(f"- {repr(v)} unwrap: {repr(unwrapped)}")
+    except Panic as p:
+        print(f"- {repr(v)} unwrap: {str(p)}\n  cause: {repr(p.__cause__)}")
+
+
+def try_expect[T, E: Error](v: Option[T] | Result[T, E]) -> None:
+    try:
+        unwrapped = v.expect("no valid value")
+        print(f"- {repr(v)} expect: {repr(unwrapped)}")
+    except Panic as p:
+        print(f"- {repr(v)} expect: {str(p)}\n  cause: {repr(p.__cause__)}")
+
+
+if __name__ == "__main__":
+    for e in [get_some(1), get_nothing(), get_ok(1), get_err(Error())]:
+        for f in [try_unwrap, try_expect]:
+            f(e)
+```
