@@ -1,0 +1,71 @@
+[build-system]
+requires = [
+    "hatchling>=1.21.1",
+    "jupyterlab>=4.0.0,<5",
+    "hatch-nodejs-version>=0.3.2",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "wasm_test_widget"
+description = "A Custom Jupyter Widget Library"
+readme = "README.md"
+license = { file = "LICENSE.md" }
+requires-python = ">=3.9"
+authors = [
+    { name = "Will Usher", email = "will@luminarycloud.com" },
+]
+keywords = [
+    "IPython",
+    "Jupyter",
+    "Widgets",
+]
+dependencies = [
+    "ipywidgets>=8.0.0",
+]
+version = "0.1.0.dev0"
+
+[project.urls]
+Homepage = "https://github.com/Twinklebear/wasm_test_widget"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build]
+artifacts = [
+    "wasm_test_widget/nbextension/*",
+    "wasm_test_widget/nbextension*",
+    "wasm_test_widget/labextension/*.tgz",
+    "wasm_test_widget/labextension",
+]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"wasm_test_widget/nbextension" = "share/jupyter/nbextensions/wasm_test_widget"
+"wasm_test_widget/labextension" = "share/jupyter/labextensions/wasm_test_widget"
+"./install.json" = "share/jupyter/labextensions/wasm_test_widget/install.json"
+"./wasm_test_widget.json" = "etc/jupyter/nbconfig/notebook.d/wasm_test_widget.json"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    ".github",
+]
+
+[tool.hatch.build.hooks.jupyter-builder]
+build-function = "hatch_jupyter_builder.npm_builder"
+ensured-targets = [
+    "wasm_test_widget/nbextension/index.js",
+    "wasm_test_widget/labextension/package.json",
+]
+skip-if-exists = [
+    "wasm_test_widget/nbextension/index.js",
+    "wasm_test_widget/labextension/package.json",
+]
+dependencies = [
+    "hatch-jupyter-builder>=0.8.3",
+]
+
+[tool.hatch.build.hooks.jupyter-builder.build-kwargs]
+path = "."
+build_cmd = "build:prod"
+npm = ["jlpm"]
+
