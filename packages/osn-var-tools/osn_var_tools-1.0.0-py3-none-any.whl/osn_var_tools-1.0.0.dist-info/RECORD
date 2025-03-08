@@ -1,0 +1,12 @@
+osn_var_tools/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+osn_var_tools/format_tools.py,sha256=xqPvlpAaXNmquzJkCik1e4W0eaXue6UUkgpeg9ga8Qk,4696
+osn_var_tools/python_instances_tools.py,sha256=f4HtKXa1Pgq9xlruzF3vWH7daMLdw4VAhlL3g6XKv_k,12686
+osn_var_tools/var_utilities.py,sha256=DC46pU3PvFD783nkAcRLfpnJV_7SALYFs0uCoPc616Q,1589
+osn_var_tools/math/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+osn_var_tools/math/basic_vars.py,sha256=WcwPi6O4n-RgeLighRPLsMlU4qNk2qdhd5ihePvZOaQ,12479
+osn_var_tools/math/graph_2D.py,sha256=ALwd9zgZn8Kw0gVgYZUL5CvdLWYT5C5Ju3_36AcnsAI,12799
+osn_var_tools/math/vars.py,sha256=u-NJ3BnOmHMBVtwJFMGQHPPRRLLsgVxkFCs5JXMUa_0,14418
+osn_var_tools-1.0.0.dist-info/METADATA,sha256=fSGJpQ2cOFjkRzK1wu7Msgmvj007vVO4X7QpQHTaL2U,3401
+osn_var_tools-1.0.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+osn_var_tools-1.0.0.dist-info/top_level.txt,sha256=2NBNV5iyfQjvq4LxQ5XUl679brW4FjEG8_0eZBfjDOc,14
+osn_var_tools-1.0.0.dist-info/RECORD,,
