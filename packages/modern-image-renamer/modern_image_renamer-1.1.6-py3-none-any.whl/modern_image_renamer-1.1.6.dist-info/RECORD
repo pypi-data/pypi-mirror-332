@@ -1,0 +1,12 @@
+imagerenamer/__init__.py,sha256=SMD85bou-F-TDq1XLsb7ucam1Btu38N0x9yJKypN0Bk,222
+imagerenamer/cli.py,sha256=axh8waBFs2wNvMuOzrmkCqoMVRd0l-uJ7NG8vx_JydU,2916
+imagerenamer/core.py,sha256=1GkP2Y4MHA2iLEE53D_2UleFOJV5XjMbZDvEmvn8Ju8,6505
+imagerenamer/gui.py,sha256=HaeyTvHKlPnslA5OXgE_LvqsPcR_Jqv9ZMEtrtKPn4g,18377
+modern_image_renamer-1.1.6.data/scripts/imagerenamer-cli,sha256=jEAejIyJ-FhbhgPeQP_SPpgp2dBDF_dXgbxPw6fAOvs,83
+modern_image_renamer-1.1.6.data/scripts/imagerenamer-gui,sha256=QDUYScfzeiNavOxQNYckr2eKeZWps4Dm3XnXrYtk5bM,83
+modern_image_renamer-1.1.6.dist-info/LICENSE,sha256=cOWXHt-brWfTv5ne1WxpOpsOX7QacyUFFSN8CU2jMcM,1074
+modern_image_renamer-1.1.6.dist-info/METADATA,sha256=4EWtTZAjn8TvPG8WRu5ubXG7sCSbKkpcpb7BHIb0-40,10973
+modern_image_renamer-1.1.6.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+modern_image_renamer-1.1.6.dist-info/entry_points.txt,sha256=aNKcLPIc6S45a3rlex5jN7Cn4yhrv2OxSiDIG8vfBYE,96
+modern_image_renamer-1.1.6.dist-info/top_level.txt,sha256=pamwQrAOa4nAgRvUKxwKhWjzlJA7S0Jy9fB83PBBrv4,13
+modern_image_renamer-1.1.6.dist-info/RECORD,,
