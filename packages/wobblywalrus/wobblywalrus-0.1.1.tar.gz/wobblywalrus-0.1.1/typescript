@@ -1,0 +1,1192 @@
+Script started on Thu Feb 20 09:00:11 2025
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;mtm@taylors-MacBook-Pro-2:~/pdev/taylormonacelli/wobblywalrus]1;../wobblywalrus]7;file://taylors-MacBook-Pro-2.local/Users/mtm/pdev/taylormonacelli/wobblywalrus\[0m[27m[24m[J[01;32m➜  [33mmac[00m [36mwobblywalrus[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [33mmac[00m [36mwobblywalrus[00m [01;34mgit:([31mmaster[34m)[00m [K
+bck-i-search: _[K[A[18Crm[4m [24mtypescript[1B[32D _[A[19Cdo[24mcker rm --force ferretdb && docker[4m r[24mun -d --rm --name ferretdb -p 27017:27017 \[1B  --platform linux/amd64 \
+  -e FERRETDB_HANDLER_POSTGRESQL_AUTH_METHOD=trust \[K
+  ghcr.io/ferretdb/ferretdb-eval:2[K
+bck-i-search:  r_[K[4A[52C[30D[4m [4mr[4mm[24m[27C[24m [24mr[4B[55Dm_[4A[21C[21C                                                      [1Bbck-i-search:  rm_        [1B[K[1B[K[1B[K[4A[39C[24m [24mr[24mm[1B[K[A[59C[?1l>[?2004l[1B]2;docker rm --force ferretdb]1;dockerferretdb
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;mtm@taylors-MacBook-Pro-2:~/pdev/taylormonacelli/wobblywalrus]1;../wobblywalrus]7;file://taylors-MacBook-Pro-2.local/Users/mtm/pdev/taylormonacelli/wobblywalrus\[0m[27m[24m[J[01;32m➜  [33mmac[00m [36mwobblywalrus[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[7mdocker network create ferretdb-network[27m[38D[27md[27mo[27mc[27mk[27me[27mr[27m [27mn[27me[27mt[27mw[27mo[27mr[27mk[27m [27mc[27mr[27me[27ma[27mt[27me[27m [27mf[27me[27mr[27mr[27me[27mt[27md[27mb[27m-[27mn[27me[27mt[27mw[27mo[27mr[27mk[?1l>[?2004l
+]2;docker network create ferretdb-network]1;dockerf21902ce02cba28748a30e9579be62ae1710e75f749ea2fc78b390464c60b2cf
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;mtm@taylors-MacBook-Pro-2:~/pdev/taylormonacelli/wobblywalrus]1;../wobblywalrus]7;file://taylors-MacBook-Pro-2.local/Users/mtm/pdev/taylormonacelli/wobblywalrus\[0m[27m[24m[J[01;32m➜  [33mmac[00m [36mwobblywalrus[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[7mdocker run -d --rm --name postgres \[27m
+[7m  --network ferretdb-network \[27m[K
+[7m  -e POSTGRES_PASSWORD=password \[27m[K
+[7m  -e POSTGRES_USER=username \[27m[K
+[7m  postgres:16[27m[K[4A[20C[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27md[27m [27m-[27m-[27mr[27mm[27m [27m-[27m-[27mn[27ma[27mm[27me[27m [27mp[27mo[27ms[27mt[27mg[27mr[27me[27ms[27m [27m\[1B[27m [27m [27m-[27m-[27mn[27me[27mt[27mw[27mo[27mr[27mk[27m [27mf[27me[27mr[27mr[27me[27mt[27md[27mb[27m-[27mn[27me[27mt[27mw[27mo[27mr[27mk[27m [27m\[1B[27m [27m [27m-[27me[27m [27mP[27mO[27mS[27mT[27mG[27mR[27mE[27mS[27m_[27mP[27mA[27mS[27mS[27mW[27mO[27mR[27mD[27m=[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m [27m\[1B[27m [27m [27m-[27me[27m [27mP[27mO[27mS[27mT[27mG[27mR[27mE[27mS[27m_[27mU[27mS[27mE[27mR[27m=[27mu[27ms[27me[27mr[27mn[27ma[27mm[27me[27m [27m\[1B[27m [27m [27mp[27mo[27ms[27mt[27mg[27mr[27me[27ms[27m:[27m1[27m6[?1l>[?2004l
+]2;docker run -d --rm --name postgres --network ferretdb-network -e  -e  ]1;dockerUnable to find image 'postgres:16' locally
+16: Pulling from library/postgres
+
+[1A[2Kc29f5b76f736: Pulling fs layer [1B
+[1A[2Kc48f75705ee4: Pulling fs layer [1B
+[1A[2K37f0f01afa08: Pulling fs layer [1B
+[1A[2Kbcdc351d2177: Pulling fs layer [1B
+[1A[2K0a56f421ffcf: Pulling fs layer [1B
+[1A[2Ke2addc4ceae4: Pulling fs layer [1B
+[1A[2K34985e29ac4e: Pulling fs layer [1B
+[1A[2Ked284837e3c6: Pulling fs layer [1B
+[1A[2Kdce7ed737d87: Pulling fs layer [1B
+[1A[2K4edf6f9d6bbd: Pulling fs layer [1B
+[1A[2K9e5fea6c52a5: Pulling fs layer [1B
+[1A[2Kefd72fc59b95: Pulling fs layer [1B
+[1A[2K4618de3d69f3: Pulling fs layer [1B
+[1A[2Kb3e17255218b: Pulling fs layer [1B[9A[2Ke2addc4ceae4: Waiting [9B[8A[2K34985e29ac4e: Waiting [8B[7A[2Ked284837e3c6: Waiting [7B[6A[2Kdce7ed737d87: Waiting [6B[5A[2K4edf6f9d6bbd: Waiting [5B[4A[2K9e5fea6c52a5: Waiting [4B[3A[2Kefd72fc59b95: Waiting [3B[2A[2K4618de3d69f3: Waiting [2B[11A[2Kbcdc351d2177: Waiting [11B[1A[2Kb3e17255218b: Waiting [1B[10A[2K0a56f421ffcf: Waiting [10B[12A[2K37f0f01afa08: Downloading [>                                                  ]  46.46kB/4.534MB[12B[13A[2Kc48f75705ee4: Downloading [==================================================>]  1.169kB/1.169kB[13B[13A[2Kc48f75705ee4: Verifying Checksum [13B[13A[2Kc48f75705ee4: Download complete [13B[14A[2Kc29f5b76f736: Downloading [>                                                  ]  290.8kB/28.21MB[14B[12A[2K37f0f01afa08: Downloading [======>                                            ]    598kB/4.534MB[12B[14A[2Kc29f5b76f736: Downloading [=>                                                 ]  868.4kB/28.21MB[14B[12A[2K37f0f01afa08: Downloading [===========>                                       ]   1.04MB/4.534MB[12B[12A[2K37f0f01afa08: Downloading [=====================>                             ]  1.974MB/4.534MB[12B[14A[2Kc29f5b76f736: Downloading [==>                                                ]  1.438MB/28.21MB[14B[12A[2K37f0f01afa08: Downloading [============================>                      ]  2.564MB/4.534MB[12B[14A[2Kc29f5b76f736: Downloading [===>                                               ]  2.028MB/28.21MB[14B[12A[2K37f0f01afa08: Downloading [===================================>               ]  3.256MB/4.534MB[12B[14A[2Kc29f5b76f736: Downloading [====>                                              ]  2.617MB/28.21MB[14B[12A[2K37f0f01afa08: Downloading [============================================>      ]  4.043MB/4.534MB[12B[14A[2Kc29f5b76f736: Downloading [=====>                                             ]  3.207MB/28.21MB[14B[11A[2Kbcdc351d2177: Downloading [>                                                  ]  15.06kB/1.447MB[11B[12A[2K37f0f01afa08: Downloading [==================================================>]  4.534MB/4.534MB[12B[12A[2K37f0f01afa08: Download complete [12B[11A[2Kbcdc351d2177: Downloading [============>                                      ]  356.4kB/1.447MB[11B[14A[2Kc29f5b76f736: Downloading [======>                                            ]  3.797MB/28.21MB[14B[11A[2Kbcdc351d2177: Downloading [=====================================>             ]  1.094MB/1.447MB[11B[11A[2Kbcdc351d2177: Downloading [==========================================>        ]  1.241MB/1.447MB[11B[14A[2Kc29f5b76f736: Downloading [=======>                                           ]  4.387MB/28.21MB[14B[11A[2Kbcdc351d2177: Verifying Checksum [11B[11A[2Kbcdc351d2177: Download complete [11B[14A[2Kc29f5b76f736: Downloading [=========>                                         ]  5.267MB/28.21MB[14B[10A[2K0a56f421ffcf: Downloading [>                                                  ]  82.19kB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [==========>                                        ]  6.152MB/28.21MB[14B[10A[2K0a56f421ffcf: Downloading [====>                                              ]  761.9kB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [===========>                                       ]  6.734MB/28.21MB[14B[10A[2K0a56f421ffcf: Downloading [==========>                                        ]  1.749MB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [============>                                      ]  7.029MB/28.21MB[14B[9A[2Ke2addc4ceae4: Downloading [>                                                  ]  12.32kB/1.196MB[9B[10A[2K0a56f421ffcf: Downloading [=============>                                     ]  2.167MB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [=============>                                     ]  7.619MB/28.21MB[14B[10A[2K0a56f421ffcf: Downloading [======================>                            ]  3.666MB/8.066MB[10B[9A[2Ke2addc4ceae4: Downloading [====>                                              ]  106.8kB/1.196MB[9B[14A[2Kc29f5b76f736: Downloading [==============>                                    ]    8.2MB/28.21MB[14B[10A[2K0a56f421ffcf: Downloading [==========================>                        ]  4.321MB/8.066MB[10B[9A[2Ke2addc4ceae4: Downloading [============>                                      ]  290.8kB/1.196MB[9B[10A[2K0a56f421ffcf: Downloading [============================>                      ]  4.567MB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [===============>                                   ]  8.495MB/28.21MB[14B[9A[2Ke2addc4ceae4: Downloading [====================>                              ]  487.4kB/1.196MB[9B[14A[2Kc29f5b76f736: Downloading [===============>                                   ]  8.786MB/28.21MB[14B[9A[2Ke2addc4ceae4: Downloading [=====================>                             ]  520.2kB/1.196MB[9B[10A[2K0a56f421ffcf: Downloading [==================================>                ]  5.636MB/8.066MB[10B[9A[2Ke2addc4ceae4: Downloading [========================================>          ]  962.6kB/1.196MB[9B[10A[2K0a56f421ffcf: Downloading [======================================>            ]  6.291MB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [================>                                  ]  9.081MB/28.21MB[14B[10A[2K0a56f421ffcf: Verifying Checksum [10B[10A[2K0a56f421ffcf: Download complete [10B^C
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;mtm@taylors-MacBook-Pro-2:~/pdev/taylormonacelli/wobblywalrus]1;../wobblywalrus]7;file://taylors-MacBook-Pro-2.local/Users/mtm/pdev/taylormonacelli/wobblywalrus\[0m[27m[24m[J[01;31m➜  [33mmac[00m [36mwobblywalrus[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004hdocker run -d --rm --name postgres \
+  --network ferretdb-network \[K
+  -e POSTGRES_PASSWORD=password \[K
+  -e POSTGRES_USER=username \[K
+  postgres:16[K[?1l>[?2004l
+]2;docker run -d --rm --name postgres --network ferretdb-network -e  -e  ]1;dockerUnable to find image 'postgres:16' locally
+16: Pulling from library/postgres
+
+[1A[2Kc29f5b76f736: Pulling fs layer [1B
+[1A[2Kc48f75705ee4: Pulling fs layer [1B
+[1A[2K37f0f01afa08: Pulling fs layer [1B
+[1A[2Kbcdc351d2177: Pulling fs layer [1B
+[1A[2K0a56f421ffcf: Pulling fs layer [1B
+[1A[2Ke2addc4ceae4: Pulling fs layer [1B
+[1A[2K34985e29ac4e: Pulling fs layer [1B
+[1A[2Ked284837e3c6: Pulling fs layer [1B
+[1A[2Kdce7ed737d87: Pulling fs layer [1B
+[1A[2K4edf6f9d6bbd: Pulling fs layer [1B
+[1A[2K9e5fea6c52a5: Pulling fs layer [1B
+[1A[2Kefd72fc59b95: Pulling fs layer [1B
+[1A[2K4618de3d69f3: Pulling fs layer [1B
+[1A[2Kb3e17255218b: Pulling fs layer [1B[7A[2Ked284837e3c6: Waiting [7B[6A[2Kdce7ed737d87: Waiting [6B[5A[2K4edf6f9d6bbd: Waiting [5B[4A[2K9e5fea6c52a5: Waiting [4B[3A[2Kefd72fc59b95: Waiting [3B[2A[2K4618de3d69f3: Waiting [2B[1A[2Kb3e17255218b: Waiting [1B[11A[2Kbcdc351d2177: Waiting [11B[10A[2K0a56f421ffcf: Waiting [10B[9A[2Ke2addc4ceae4: Waiting [9B[8A[2K34985e29ac4e: Waiting [8B[12A[2K37f0f01afa08: Downloading [>                                                  ]  46.46kB/4.534MB[12B[13A[2Kc48f75705ee4: Downloading [===========================================>       ]  1.017kB/1.169kB[13B[13A[2Kc48f75705ee4: Downloading [==================================================>]  1.169kB/1.169kB[13B[13A[2Kc48f75705ee4: Verifying Checksum [13B[13A[2Kc48f75705ee4: Download complete [13B[12A[2K37f0f01afa08: Downloading [========>                                          ]  798.7kB/4.534MB[12B[12A[2K37f0f01afa08: Downloading [===================>                               ]   1.79MB/4.534MB[12B[12A[2K37f0f01afa08: Downloading [===========================>                       ]  2.486MB/4.534MB[12B[14A[2Kc29f5b76f736: Downloading [>                                                  ]  290.8kB/28.21MB[14B[12A[2K37f0f01afa08: Downloading [===============================>                   ]  2.879MB/4.534MB[12B[14A[2Kc29f5b76f736: Downloading [==>                                                ]  1.176MB/28.21MB[14B[14A[2Kc29f5b76f736: Downloading [===>                                               ]  1.749MB/28.21MB[14B[12A[2K37f0f01afa08: Downloading [====================================>              ]  3.322MB/4.534MB[12B[12A[2K37f0f01afa08: Downloading [========================================>          ]  3.666MB/4.534MB[12B[12A[2K37f0f01afa08: Downloading [========================================>          ]  3.715MB/4.534MB[12B[14A[2Kc29f5b76f736: Downloading [====>                                              ]  2.339MB/28.21MB[14B[11A[2Kbcdc351d2177: Downloading [>                                                  ]   14.7kB/1.447MB[11B[12A[2K37f0f01afa08: Downloading [=================================================> ]  4.452MB/4.534MB[12B[14A[2Kc29f5b76f736: Downloading [======>                                            ]  3.502MB/28.21MB[14B[12A[2K37f0f01afa08: Verifying Checksum [12B[12A[2K37f0f01afa08: Download complete [12B[11A[2Kbcdc351d2177: Downloading [===>                                               ]  94.69kB/1.447MB[11B[11A[2Kbcdc351d2177: Downloading [===================>                               ]  573.4kB/1.447MB[11B[14A[2Kc29f5b76f736: Downloading [=======>                                           ]  4.375MB/28.21MB[14B[11A[2Kbcdc351d2177: Downloading [==================================>                ]  1.008MB/1.447MB[11B[14A[2Kc29f5b76f736: Downloading [========>                                          ]   4.96MB/28.21MB[14B[11A[2Kbcdc351d2177: Download complete [11B[14A[2Kc29f5b76f736: Downloading [==========>                                        ]   6.14MB/28.21MB[14B[14A[2Kc29f5b76f736: Downloading [============>                                      ]  7.012MB/28.21MB[14B[14A[2Kc29f5b76f736: Downloading [=============>                                     ]  7.893MB/28.21MB[14B[10A[2K0a56f421ffcf: Downloading [>                                                  ]  82.45kB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [===============>                                   ]  8.483MB/28.21MB[14B[10A[2K0a56f421ffcf: Downloading [==>                                                ]    426kB/8.066MB[10B[10A[2K0a56f421ffcf: Downloading [=====>                                             ]  917.5kB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [================>                                  ]  9.368MB/28.21MB[14B[9A[2Ke2addc4ceae4: Downloading [>                                                  ]  12.32kB/1.196MB[9B[9A[2Ke2addc4ceae4: Downloading [=>                                                 ]  36.88kB/1.196MB[9B[10A[2K0a56f421ffcf: Downloading [========>                                          ]  1.409MB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [==================>                                ]  10.25MB/28.21MB[14B[10A[2K0a56f421ffcf: Downloading [===============>                                   ]  2.486MB/8.066MB[10B[9A[2Ke2addc4ceae4: Downloading [==>                                                ]  63.13kB/1.196MB[9B[10A[2K0a56f421ffcf: Downloading [================>                                  ]  2.732MB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [===================>                               ]  11.13MB/28.21MB[14B[9A[2Ke2addc4ceae4: Downloading [===============>                                   ]  376.8kB/1.196MB[9B[10A[2K0a56f421ffcf: Downloading [======================>                            ]  3.551MB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [====================>                              ]  11.72MB/28.21MB[14B[9A[2Ke2addc4ceae4: Downloading [=======================>                           ]  557.1kB/1.196MB[9B[10A[2K0a56f421ffcf: Downloading [===========================>                       ]  4.403MB/8.066MB[10B[9A[2Ke2addc4ceae4: Downloading [==============================================>    ]  1.106MB/1.196MB[9B[14A[2Kc29f5b76f736: Downloading [=====================>                             ]   12.3MB/28.21MB[14B[9A[2Ke2addc4ceae4: Verifying Checksum [9B[9A[2Ke2addc4ceae4: Download complete [9B[10A[2K0a56f421ffcf: Downloading [===============================>                   ]  5.059MB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [======================>                            ]  12.89MB/28.21MB[14B[10A[2K0a56f421ffcf: Downloading [===================================>               ]  5.796MB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [=======================>                           ]  13.48MB/28.21MB[14B[10A[2K0a56f421ffcf: Downloading [=======================================>           ]  6.451MB/8.066MB[10B[14A[2Kc29f5b76f736: Downloading [========================>                          ]  14.07MB/28.21MB[14B[10A[2K0a56f421ffcf: Downloading [============================================>      ]  7.188MB/8.066MB[10B[10A[2K0a56f421ffcf: Downloading [===============================================>   ]   7.68MB/8.066MB[10B[10A[2K0a56f421ffcf: Verifying Checksum [10B[10A[2K0a56f421ffcf: Download complete [10B[14A[2Kc29f5b76f736: Downloading [=========================>                         ]  14.64MB/28.21MB[14B[14A[2Kc29f5b76f736: Downloading [===========================>                       ]  15.52MB/28.21MB[14B[8A[2K34985e29ac4e: Downloading [==================================================>]     116B/116B[8B[8A[2K34985e29ac4e: Verifying Checksum [8B[8A[2K34985e29ac4e: Download complete [8B[14A[2Kc29f5b76f736: Downloading [=============================>                     ]   16.4MB/28.21MB[14B[14A[2Kc29f5b76f736: Downloading [==============================>                    ]  17.29MB/28.21MB[14B[14A[2Kc29f5b76f736: Downloading [================================>                  ]  18.17MB/28.21MB[14B[14A[2Kc29f5b76f736: Downloading [=================================>                 ]  19.06MB/28.21MB[14B[14A[2Kc29f5b76f736: Downloading [===================================>               ]  19.94MB/28.21MB[14B[7A[2Ked284837e3c6: Downloading [================>                                  ]  1.017kB/3.146kB[7B[7A[2Ked284837e3c6: Downloading [==================================================>]  3.146kB/3.146kB[7B[7A[2Ked284837e3c6: Verifying Checksum [7B[7A[2Ked284837e3c6: Download complete [7B[14A[2Kc29f5b76f736: Downloading [====================================>              ]  20.53MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [>                                                  ]  532.5kB/123.3MB[6B[14A[2Kc29f5b76f736: Downloading [=====================================>             ]  21.12MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [>                                                  ]  1.065MB/123.3MB[6B[14A[2Kc29f5b76f736: Downloading [======================================>            ]  21.71MB/28.21MB[14B[14A[2Kc29f5b76f736: Downloading [=======================================>           ]   22.3MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [>                                                  ]   2.13MB/123.3MB[6B[14A[2Kc29f5b76f736: Downloading [=========================================>         ]  23.18MB/28.21MB[14B[14A[2Kc29f5b76f736: Downloading [==========================================>        ]  23.76MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [=>                                                 ]  3.207MB/123.3MB[6B[14A[2Kc29f5b76f736: Downloading [===========================================>       ]  24.64MB/28.21MB[14B[5A[2K4edf6f9d6bbd: Downloading [======>                                            ]  1.369kB/9.915kB[5B[6A[2Kdce7ed737d87: Downloading [=>                                                 ]  3.748MB/123.3MB[6B[5A[2K4edf6f9d6bbd: Downloading [==================================================>]  9.915kB/9.915kB[5B[5A[2K4edf6f9d6bbd: Verifying Checksum [5B[5A[2K4edf6f9d6bbd: Download complete [5B[14A[2Kc29f5b76f736: Downloading [============================================>      ]  25.23MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [=>                                                 ]  4.289MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=>                                                 ]  4.829MB/123.3MB[6B[14A[2Kc29f5b76f736: Downloading [=============================================>     ]  25.82MB/28.21MB[14B[14A[2Kc29f5b76f736: Downloading [==============================================>    ]  26.12MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [==>                                                ]   5.37MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==>                                                ]  5.911MB/123.3MB[6B[14A[2Kc29f5b76f736: Downloading [===============================================>   ]  26.71MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [==>                                                ]  6.451MB/123.3MB[6B[14A[2Kc29f5b76f736: Downloading [================================================>  ]  27.29MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [==>                                                ]  6.992MB/123.3MB[6B[14A[2Kc29f5b76f736: Downloading [=================================================> ]  27.87MB/28.21MB[14B[4A[2K9e5fea6c52a5: Downloading [==================================================>]     128B/128B[4B[4A[2K9e5fea6c52a5: Verifying Checksum [4B[4A[2K9e5fea6c52a5: Download complete [4B[6A[2Kdce7ed737d87: Downloading [===>                                               ]  7.533MB/123.3MB[6B[14A[2Kc29f5b76f736: Verifying Checksum [14B[14A[2Kc29f5b76f736: Download complete [14B[14A[2Kc29f5b76f736: Extracting [>                                                  ]  294.9kB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [===>                                               ]  8.614MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [====>                                              ]  2.359MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [===>                                               ]  9.671MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [=======>                                           ]  4.424MB/28.21MB[14B[14A[2Kc29f5b76f736: Extracting [===========>                                       ]  6.488MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [====>                                              ]  10.75MB/123.3MB[6B[3A[2Kefd72fc59b95: Downloading [==================================================>]     168B/168B[3B[3A[2Kefd72fc59b95: Verifying Checksum [3B[3A[2Kefd72fc59b95: Download complete [3B[14A[2Kc29f5b76f736: Extracting [==============>                                    ]  8.258MB/28.21MB[14B[2A[2K4618de3d69f3: Downloading [=========>                                         ]  1.017kB/5.414kB[2B[2A[2K4618de3d69f3: Downloading [==================================================>]  5.414kB/5.414kB[2B[2A[2K4618de3d69f3: Verifying Checksum [2B[2A[2K4618de3d69f3: Download complete [2B[6A[2Kdce7ed737d87: Downloading [====>                                              ]  11.83MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [================>                                  ]  9.142MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [=====>                                             ]  12.91MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [=================>                                 ]  10.03MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [=====>                                             ]  13.99MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [===================>                               ]  11.21MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [======>                                            ]  15.05MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [=========================>                         ]  14.45MB/28.21MB[14B[1A[2Kb3e17255218b: Downloading [==================================================>]     185B/185B[1B[1A[2Kb3e17255218b: Verifying Checksum [1B[1A[2Kb3e17255218b: Download complete [1B[14A[2Kc29f5b76f736: Extracting [==============================>                    ]   17.4MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [======>                                            ]  16.12MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [===================================>               ]  20.05MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [======>                                            ]  17.19MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [=======================================>           ]  22.12MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [=======>                                           ]  18.26MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [=========================================>         ]  23.59MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [=======>                                           ]  19.34MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [========>                                          ]  20.42MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [==========================================>        ]  23.89MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [========>                                          ]  22.02MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [============================================>      ]  25.36MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [=========>                                         ]   23.1MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [===============================================>   ]  26.84MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [=========>                                         ]  24.18MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==========>                                        ]  25.24MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [================================================>  ]  27.13MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [==========>                                        ]  26.32MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===========>                                       ]  27.93MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===========>                                       ]     29MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [============>                                      ]  30.08MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [============>                                      ]  31.15MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=============>                                     ]  32.22MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [================================================>  ]  27.43MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [=============>                                     ]   33.3MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [=================================================> ]  28.02MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [==============>                                    ]  34.91MB/123.3MB[6B[14A[2Kc29f5b76f736: Extracting [==================================================>]  28.21MB/28.21MB[14B[6A[2Kdce7ed737d87: Downloading [==============>                                    ]  35.98MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===============>                                   ]  37.04MB/123.3MB[6B[14A[2Kc29f5b76f736: Pull complete [14B[13A[2Kc48f75705ee4: Extracting [==================================================>]  1.169kB/1.169kB[13B[13A[2Kc48f75705ee4: Extracting [==================================================>]  1.169kB/1.169kB[13B[13A[2Kc48f75705ee4: Pull complete [13B[12A[2K37f0f01afa08: Extracting [>                                                  ]  65.54kB/4.534MB[12B[6A[2Kdce7ed737d87: Downloading [===============>                                   ]  38.67MB/123.3MB[6B[12A[2K37f0f01afa08: Extracting [===============================>                   ]  2.818MB/4.534MB[12B[12A[2K37f0f01afa08: Extracting [==================================================>]  4.534MB/4.534MB[12B[6A[2Kdce7ed737d87: Downloading [================>                                  ]  40.29MB/123.3MB[6B[12A[2K37f0f01afa08: Pull complete [12B[11A[2Kbcdc351d2177: Extracting [=>                                                 ]  32.77kB/1.447MB[11B[6A[2Kdce7ed737d87: Downloading [================>                                  ]  41.36MB/123.3MB[6B[11A[2Kbcdc351d2177: Extracting [==================================================>]  1.447MB/1.447MB[11B[11A[2Kbcdc351d2177: Pull complete [11B[10A[2K0a56f421ffcf: Extracting [>                                                  ]   98.3kB/8.066MB[10B[6A[2Kdce7ed737d87: Downloading [=================>                                 ]  42.44MB/123.3MB[6B[10A[2K0a56f421ffcf: Extracting [==========>                                        ]  1.671MB/8.066MB[10B[6A[2Kdce7ed737d87: Downloading [=================>                                 ]  44.04MB/123.3MB[6B[10A[2K0a56f421ffcf: Extracting [====================>                              ]  3.342MB/8.066MB[10B[6A[2Kdce7ed737d87: Downloading [==================>                                ]  45.12MB/123.3MB[6B[10A[2K0a56f421ffcf: Extracting [==========================>                        ]  4.325MB/8.066MB[10B[6A[2Kdce7ed737d87: Downloading [==================>                                ]   46.2MB/123.3MB[6B[10A[2K0a56f421ffcf: Extracting [=============================>                     ]  4.817MB/8.066MB[10B[6A[2Kdce7ed737d87: Downloading [===================>                               ]  47.28MB/123.3MB[6B[10A[2K0a56f421ffcf: Extracting [====================================>              ]  5.898MB/8.066MB[10B[6A[2Kdce7ed737d87: Downloading [===================>                               ]  48.35MB/123.3MB[6B[10A[2K0a56f421ffcf: Extracting [===========================================>       ]   6.98MB/8.066MB[10B[10A[2K0a56f421ffcf: Extracting [==================================================>]  8.066MB/8.066MB[10B[6A[2Kdce7ed737d87: Downloading [====================>                              ]  49.97MB/123.3MB[6B[10A[2K0a56f421ffcf: Pull complete [10B[9A[2Ke2addc4ceae4: Extracting [=>                                                 ]  32.77kB/1.196MB[9B[6A[2Kdce7ed737d87: Downloading [====================>                              ]  51.05MB/123.3MB[6B[9A[2Ke2addc4ceae4: Extracting [==================================================>]  1.196MB/1.196MB[9B[9A[2Ke2addc4ceae4: Extracting [==================================================>]  1.196MB/1.196MB[9B[9A[2Ke2addc4ceae4: Pull complete [9B[8A[2K34985e29ac4e: Extracting [==================================================>]     116B/116B[8B[8A[2K34985e29ac4e: Extracting [==================================================>]     116B/116B[8B[8A[2K34985e29ac4e: Pull complete [8B[7A[2Ked284837e3c6: Extracting [==================================================>]  3.146kB/3.146kB[7B[7A[2Ked284837e3c6: Extracting [==================================================>]  3.146kB/3.146kB[7B[7A[2Ked284837e3c6: Pull complete [7B[6A[2Kdce7ed737d87: Downloading [=====================>                             ]  52.64MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [======================>                            ]  54.25MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [======================>                            ]  55.85MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=======================>                           ]  57.46MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=======================>                           ]  58.54MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [========================>                          ]  60.16MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=========================>                         ]  61.78MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=========================>                         ]  63.39MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==========================>                        ]  64.47MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==========================>                        ]  65.53MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===========================>                       ]  67.13MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===========================>                       ]  68.21MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [============================>                      ]  69.83MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [============================>                      ]   70.9MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=============================>                     ]   72.5MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=============================>                     ]  73.57MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==============================>                    ]  74.65MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==============================>                    ]  75.73MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===============================>                   ]  77.33MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===============================>                   ]   78.4MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [================================>                  ]     80MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=================================>                 ]  81.63MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=================================>                 ]  83.25MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==================================>                ]  84.33MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==================================>                ]  84.87MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==================================>                ]  85.41MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==================================>                ]  85.95MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===================================>               ]  87.02MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===================================>               ]   88.1MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [====================================>              ]  89.18MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [====================================>              ]  90.26MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=====================================>             ]  91.86MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=====================================>             ]  92.94MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [======================================>            ]  94.02MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [======================================>            ]   95.1MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=======================================>           ]   96.7MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=======================================>           ]  98.32MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [========================================>          ]  99.94MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=========================================>         ]  101.6MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=========================================>         ]  102.6MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==========================================>        ]  103.7MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==========================================>        ]  104.3MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==========================================>        ]  105.3MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===========================================>       ]  106.4MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===========================================>       ]  107.5MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [============================================>      ]  109.1MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [============================================>      ]  110.7MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=============================================>     ]  111.8MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=============================================>     ]  112.8MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==============================================>    ]  113.9MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [==============================================>    ]  115.5MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [===============================================>   ]  117.1MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [================================================>  ]  118.8MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [================================================>  ]  120.4MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=================================================> ]  121.5MB/123.3MB[6B[6A[2Kdce7ed737d87: Downloading [=================================================> ]  122.5MB/123.3MB[6B[6A[2Kdce7ed737d87: Verifying Checksum [6B[6A[2Kdce7ed737d87: Download complete [6B[6A[2Kdce7ed737d87: Extracting [>                                                  ]  557.1kB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [>                                                  ]  2.228MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [==>                                                ]  5.571MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===>                                               ]  7.799MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===>                                               ]  8.913MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===>                                               ]   9.47MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [====>                                              ]  10.58MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [====>                                              ]  12.26MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=====>                                             ]  13.93MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [======>                                            ]   15.6MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=======>                                           ]  17.27MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=======>                                           ]   19.5MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [========>                                          ]  20.61MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=========>                                         ]  22.28MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=========>                                         ]   23.4MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=========>                                         ]  24.51MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [==========>                                        ]  25.62MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===========>                                       ]   27.3MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===========>                                       ]  28.41MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [============>                                      ]  30.08MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [============>                                      ]  31.75MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=============>                                     ]  33.42MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [==============>                                    ]  36.21MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [================>                                  ]  40.11MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=================>                                 ]  43.45MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [==================>                                ]  46.79MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [====================>                              ]  50.14MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=====================>                             ]  53.48MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=======================>                           ]  56.82MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=======================>                           ]  59.05MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [========================>                          ]  61.28MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=========================>                         ]  62.95MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=========================>                         ]  64.06MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [==========================>                        ]  65.73MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===========================>                       ]   67.4MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===========================>                       ]  68.52MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [============================>                      ]  70.19MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=============================>                     ]  71.86MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [==============================>                    ]  74.09MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===============================>                   ]  76.87MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [================================>                  ]  79.66MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=================================>                 ]  83.56MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===================================>               ]  86.34MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===================================>               ]  88.01MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [====================================>              ]   90.8MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [======================================>            ]  94.14MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=======================================>           ]  98.04MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=========================================>         ]  101.9MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [==========================================>        ]  104.7MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [==========================================>        ]  105.8MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===========================================>       ]  107.5MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [============================================>      ]  109.2MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [============================================>      ]  109.7MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [============================================>      ]  110.3MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [============================================>      ]  110.9MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=============================================>     ]  112.5MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [==============================================>    ]  114.2MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [==============================================>    ]  115.9MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [===============================================>   ]  117.5MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [================================================>  ]  118.7MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [================================================>  ]  119.8MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=================================================> ]  120.9MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=================================================> ]  121.4MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=================================================> ]    122MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [=================================================> ]  122.6MB/123.3MB[6B[6A[2Kdce7ed737d87: Extracting [==================================================>]  123.3MB/123.3MB[6B[6A[2Kdce7ed737d87: Pull complete [6B[5A[2K4edf6f9d6bbd: Extracting [==================================================>]  9.915kB/9.915kB[5B[5A[2K4edf6f9d6bbd: Extracting [==================================================>]  9.915kB/9.915kB[5B[5A[2K4edf6f9d6bbd: Pull complete [5B[4A[2K9e5fea6c52a5: Extracting [==================================================>]     128B/128B[4B[4A[2K9e5fea6c52a5: Extracting [==================================================>]     128B/128B[4B[4A[2K9e5fea6c52a5: Pull complete [4B[3A[2Kefd72fc59b95: Extracting [==================================================>]     168B/168B[3B[3A[2Kefd72fc59b95: Extracting [==================================================>]     168B/168B[3B[3A[2Kefd72fc59b95: Pull complete [3B[2A[2K4618de3d69f3: Extracting [==================================================>]  5.414kB/5.414kB[2B[2A[2K4618de3d69f3: Extracting [==================================================>]  5.414kB/5.414kB[2B[2A[2K4618de3d69f3: Pull complete [2B[1A[2Kb3e17255218b: Extracting [==================================================>]     185B/185B[1B[1A[2Kb3e17255218b: Extracting [==================================================>]     185B/185B[1B[1A[2Kb3e17255218b: Pull complete [1BDigest: sha256:a35ec42526e3c522eb13b4d82eddaee875d0ac6ca9eb5cc5607e412854478c71
+Status: Downloaded newer image for postgres:16
+7d19ad659f52f34f94735368618016395fb34f00f052af57d81019d6cf12cde8
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;mtm@taylors-MacBook-Pro-2:~/pdev/taylormonacelli/wobblywalrus]1;../wobblywalrus]7;file://taylors-MacBook-Pro-2.local/Users/mtm/pdev/taylormonacelli/wobblywalrus\[0m[27m[24m[J[01;32m➜  [33mmac[00m [36mwobblywalrus[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[7mdocker run -d --rm --name ferretdb \[27m
+[7m  --network ferretdb-network \[27m[K
+[7m  -p 27017:27017 \[27m[K
+[7m  -e FERRETDB_HANDLER_POSTGRESQL_URL="postgres://username:password@postgres:5432/postgres" \[27m[K
+[7m  ghcr.io/ferretdb/ferretdb-eval:2[27m[K[4A[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27md[27m [27m-[27m-[27mr[27mm[27m [27m-[27m-[27mn[27ma[27mm[27me[27m [27mf[27me[27mr[27mr[27me[27mt[27md[27mb[27m [27m\[1B[27m [27m [27m-[27m-[27mn[27me[27mt[27mw[27mo[27mr[27mk[27m [27mf[27me[27mr[27mr[27me[27mt[27md[27mb[27m-[27mn[27me[27mt[27mw[27mo[27mr[27mk[27m [27m\[1B[27m [27m [27m-[27mp[27m [27m2[27m7[27m0[27m1[27m7[27m:[27m2[27m7[27m0[27m1[27m7[27m [27m\[1B[27m [27m [27m-[27me[27m [27mF[27mE[27mR[27mR[27mE[27mT[27mD[27mB[27m_[27mH[27mA[27mN[27mD[27mL[27mE[27mR[27m_[27mP[27mO[27mS[27mT[27mG[27mR[27mE[27mS[27mQ[27mL[27m_[27mU[27mR[27mL[27m=[27m"[27mp[27mo[27ms[27mt[27mg[27mr[27me[27ms[27m:[27m/[27m/[27mu[27ms[27me[27mr[27mn[27ma[27mm[27me[27m:[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m@[27mp[27mo[27ms[27mt[27mg[27mr[27me[27ms[27m:[27m5[27m4[27m3[27m2[27m/[27mp[27mo[27ms[27mt[27mg[27mr[27me[27ms[27m"[27m [27m\[1B[27m [27m [27mg[27mh[27mc[27mr[27m.[27mi[27mo[27m/[27mf[27me[27mr[27mr[27me[27mt[27md[27mb[27m/[27mf[27me[27mr[27mr[27me[27mt[27md[27mb[27m-[27me[27mv[27ma[27ml[27m:[27m2[?1l>[?2004l
+]2;docker run -d --rm --name ferretdb --network ferretdb-network -p 27017:27017 ]1;dockerc7ecfe20aeccab503f09bfb454c3d440f98c0cc987c362c95c07c768c313a9af
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;mtm@taylors-MacBook-Pro-2:~/pdev/taylormonacelli/wobblywalrus]1;../wobblywalrus]7;file://taylors-MacBook-Pro-2.local/Users/mtm/pdev/taylormonacelli/wobblywalrus\[0m[27m[24m[J[01;32m➜  [33mmac[00m [36mwobblywalrus[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[7mdocker exec -it ferretdb mongosh[27m[32D[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27m-[27mi[27mt[27m [27mf[27me[27mr[27mr[27me[27mt[27md[27mb[27m [27mm[27mo[27mn[27mg[27mo[27ms[27mh[?1l>[?2004l
+]2;docker exec -it ferretdb mongosh]1;docker]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	67b76009b55414cf08544ca6
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.8[0m
+Using MongoDB:		7.0.77
+[1m[33mUsing Mongosh[0m:		2.3.8
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+[1G[0J [1G[1G[0Jtest> [7Gdb.scientists.insertOne({
+[1G[0J... [5G  name: {
+[1G[0J... [5G    firstname: [32m'[39m[32mT[39m[32mh[39m[32mo[39m[32mm[39m[32ma[39m[32ms[39m[32m'[39m,
+[1G[0J... [5G    lastname: [32m'[39m[32mE[39m[32md[39m[32mi[39m[32ms[39m[32mo[39m[32mn[39m[32m'[39m
+[1G[0J... [5G  },
+[1G[0J... [5G  born: [33m1[39m[33m8[39m[33m4[39m[33m7[39m,
+[1G[0J... [5G  i[36min[39minvention: [32m'[39m[32ml[39m[32mi[39m[32mg[39m[32mh[39m[32mt[39m[32mb[39m[32mu[39m[32ml[39m[32mb[39m[32m'[39m
+[1G[0J... [5G})
+Uncaught [1m[31mMongoServerError[0m[1m[31m[Unauthorized][0m: Command insert requires authentication
+[1G[0Jtest> [7Gexit
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;mtm@taylors-MacBook-Pro-2:~/pdev/taylormonacelli/wobblywalrus]1;../wobblywalrus]7;file://taylors-MacBook-Pro-2.local/Users/mtm/pdev/taylormonacelli/wobblywalrus\[0m[27m[24m[J[01;32m➜  [33mmac[00m [36mwobblywalrus[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h
+bck-i-search: _[K[A[18Cdocker run -d --rm --name ferretdb \[1B  --network ferretdb-network \
+  -p 27017:27017 \[K
+  -e FERRETDB_HANDLER_POSTGRESQL_URL="postgres://username:password@postgres:5432/postgres" \[K
+  ghcr.io/ferretdb/ferretdb-eva[4ml[24m:2[K
+bck-i-search: l_[K[A[15C[4A[9C[4ml[4mo[24mgs[14P[10C               [1Bbck-i-search: lo_             [1B[K[1B[K[1B[K[1B[K[5A[40C[1C[4mo[4mg[24m[1B[27Dg_[A[22C[2C[4mg[4ms[24m[1B[27Ds_[A[21C       [24m [24m [24m [24m          [1B[K[A[33C[1Bbck-i-search: _[K[A[18Cdocker exec -it ferretdb[4m [24mmongosh[1B[51D _[A[41C[17Drun -d --rm --nam[24me postgres \[1B  --network ferretdb-network \[1B  -e POSTGRES_PASSWORD=password \[K[1B  -e POSTGRES_USER=username \[K[1B [4m p[24mostgres:16[K[1Bbck-i-search:  p_[K[A[16D[4A[38C[4m [4mp[4ms[24m                           [1Bbck-i-search:  ps_            [1B[K[1B[K[1B[K[1B[K[5A[39C[24m [24mp[24ms[1B[K[A[42C[?1l>[?2004l[1B]2;docker ps]1;dockerCONTAINER ID   IMAGE                              COMMAND                  CREATED              STATUS                      PORTS                                                     NAMES
+c7ecfe20aecc   ghcr.io/ferretdb/ferretdb-eval:2   "docker-entrypoint.s…"   35 seconds ago       Up 34 seconds (unhealthy)   5432/tcp, 8088/tcp, 27018/tcp, 0.0.0.0:27017->27017/tcp   ferretdb
+7d19ad659f52   postgres:16                        "docker-entrypoint.s…"   About a minute ago   Up About a minute           5432/tcp                                                  postgres
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;mtm@taylors-MacBook-Pro-2:~/pdev/taylormonacelli/wobblywalrus]1;../wobblywalrus]7;file://taylors-MacBook-Pro-2.local/Users/mtm/pdev/taylormonacelli/wobblywalrus\[0m[27m[24m[J[01;32m➜  [33mmac[00m [36mwobblywalrus[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h
+bck-i-search: _[K[A[18Cdocker run -d --rm --name ferretdb \[1B  --network ferretdb-network \
+  -p 27017:27017 \[K
+  -e FERRETDB_HANDLER_POSTGRESQL_URL="postgres://username:password@postgres:5432/postgres" \[K
+  ghcr.io/ferretdb/ferretdb-eva[4ml[24m:2[K
+bck-i-search: l_[K[A[15C[4A[9C[4ml[4mo[24mgs[14P[10C               [1Bbck-i-search: lo_             [1B[K[1B[K[1B[K[1B[K[5A[40C[1C[4mo[4mg[24m[1B[27Dg_[A[22C[2C[4mg[4ms[24m[1B[27Ds_[A[21C[24ml[24mo[24mg[24ms[1B[K[A[53C[?1l>[?2004l[1B]2;docker logs ferretdb]1;dockerThe files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/data ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... Etc/UTC
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+
+Success. You can now start the database server using:
+
+    pg_ctl -D /var/lib/postgresql/data -l logfile start
+initdb: warning: enabling "trust" authentication for local connections
+initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+
+waiting for server to start....2025-02-20 17:01:57.107 UTC [47] LOG:  starting PostgreSQL 16.6 (Debian 16.6-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-02-20 17:01:57.109 UTC [47] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-02-20 17:01:57.113 UTC [50] LOG:  database system was shut down at 2025-02-20 17:01:56 UTC
+2025-02-20 17:01:57.117 UTC [47] LOG:  database system is ready to accept connections
+ done
+server started
+
+/usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/10-preload.sh
+waiting for server to shut down...2025-02-20 17:01:57.237 UTC [47] LOG:  received fast shutdown request
+.2025-02-20 17:01:57.240 UTC [47] LOG:  aborting any active transactions
+2025-02-20 17:01:57.241 UTC [47] LOG:  background worker "logical replication launcher" (PID 53) exited with exit code 1
+2025-02-20 17:01:57.241 UTC [48] LOG:  shutting down
+2025-02-20 17:01:57.243 UTC [48] LOG:  checkpoint starting: shutdown immediate
+2025-02-20 17:01:57.249 UTC [48] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.008 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/14EA2A8, redo lsn=0/14EA2A8
+2025-02-20 17:01:57.252 UTC [47] LOG:  database system is shut down
+ done
+server stopped
+waiting for server to start....2025-02-20 17:01:57.383 UTC [63] LOG:  Initialized documentdb_core extension
+2025-02-20 17:01:57.384 UTC [63] LOG:  Initialized pg_documentdb extension
+2025-02-20 17:01:57.391 UTC [63] LOG:  starting PostgreSQL 16.6 (Debian 16.6-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-02-20 17:01:57.393 UTC [63] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-02-20 17:01:57.398 UTC [66] LOG:  database system was shut down at 2025-02-20 17:01:57 UTC
+2025-02-20 17:01:57.402 UTC [63] LOG:  database system is ready to accept connections
+2025-02-20 17:01:57.406 UTC [69] LOG:  pg_cron scheduler started
+ done
+server started
+
+/usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/20-install.sql
+psql:/docker-entrypoint-initdb.d/20-install.sql:1: NOTICE:  installing required extension "documentdb_core"
+psql:/docker-entrypoint-initdb.d/20-install.sql:1: NOTICE:  installing required extension "pg_cron"
+psql:/docker-entrypoint-initdb.d/20-install.sql:1: NOTICE:  installing required extension "tsm_system_rows"
+psql:/docker-entrypoint-initdb.d/20-install.sql:1: NOTICE:  installing required extension "vector"
+psql:/docker-entrypoint-initdb.d/20-install.sql:1: NOTICE:  installing required extension "postgis"
+psql:/docker-entrypoint-initdb.d/20-install.sql:1: NOTICE:  installing required extension "rum"
+CREATE EXTENSION
+
+
+/usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/99-start-ferretdb.sh
+
+waiting for server to shut down...2025-02-20 17:01:58.330 UTC [63] LOG:  received fast shutdown request
+.2025-02-20 17:01:58.331 UTC [63] LOG:  aborting any active transactions
+2025-02-20 17:01:58.331 UTC [69] LOG:  pg_cron scheduler shutting down
+2025-02-20 17:01:58.335 UTC [63] LOG:  background worker "pg_cron launcher" (PID 69) exited with exit code 1
+2025-02-20 17:01:58.335 UTC [63] LOG:  background worker "logical replication launcher" (PID 70) exited with exit code 1
+2025-02-20 17:01:58.335 UTC [64] LOG:  shutting down
+2025-02-20 17:01:58.336 UTC [64] LOG:  checkpoint starting: shutdown immediate
+2025-02-20 17:01:58.389 UTC [64] LOG:  checkpoint complete: wrote 1401 buffers (8.6%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.012 s, sync=0.038 s, total=0.055 s; sync files=178, longest=0.018 s, average=0.001 s; distance=12252 kB, estimate=12252 kB; lsn=0/20E14A8, redo lsn=0/20E14A8
+2025-02-20 17:01:58.394 UTC [63] LOG:  database system is shut down
+ done
+server stopped
+
+PostgreSQL init process complete; ready for start up.
+
+2025-02-20 17:01:58.447 UTC [1] LOG:  Initialized documentdb_core extension
+2025-02-20 17:01:58.449 UTC [1] LOG:  Initialized pg_documentdb extension
+2025-02-20 17:01:58.457 UTC [1] LOG:  starting PostgreSQL 16.6 (Debian 16.6-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-02-20 17:01:58.457 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2025-02-20 17:01:58.457 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2025-02-20 17:01:58.459 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-02-20 17:01:58.463 UTC [87] LOG:  database system was shut down at 2025-02-20 17:01:58 UTC
+2025-02-20 17:01:58.468 UTC [1] LOG:  database system is ready to accept connections
+2025-02-20 17:01:58.481 UTC [91] LOG:  pg_cron scheduler started
+2025-02-20T17:01:58.523Z	INFO	ferretdb/main.go:316	Starting FerretDB v2.0.0-rc.1...	{"branch":"unknown","buildEnvironment":{"-buildmode":"exe","-compiler":"gc","-cover":"true","-race":"true","-tags":"ferretdb_dev","CGO_ENABLED":"1","GOAMD64":"v1","GOARCH":"amd64","GOOS":"linux","go.version":"go1.23.5","vcs":"git","vcs.time":"2025-01-23T16:59:51Z"},"commit":"a289181298aa6b9ba81aa501fc803843ac487696","devBuild":true,"dirty":true,"package":"docker-evaluation","uuid":"b6c06f85-8cad-408c-a698-237779c05035","version":"v2.0.0-rc.1"}
+2025-02-20T17:01:58.523Z	WARN	ferretdb/main.go:242	This is a development build. The performance will be affected.
+2025-02-20T17:01:58.523Z	WARN	ferretdb/main.go:246	Debug logging enabled. The performance will be affected.
+2025-02-20T17:01:58.524Z	INFO	ferretdb/main.go:326	maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+2025-02-20T17:01:58.525Z	DEBUG	telemetry/reporter.go:128	Reporter started	{"name":"telemetry"}
+2025-02-20T17:01:58.525Z	INFO	telemetry/reporter.go:166	The telemetry state is undecided; the first report will be sent in 1h0m0s. Read more about FerretDB telemetry and how to opt out at https://beacon.ferretdb.com.	{"name":"telemetry"}
+2025-02-20T17:01:58.526Z	INFO	clientconn/listener.go:99	Listening on TCP [::]:27017...	{"name":"listener"}
+2025-02-20T17:01:58.535Z	INFO	debug/debug.go:310	Starting debug server on http://[::]:8088/debug ...	{"name":"debug"}
+2025-02-20T17:01:58.535Z	INFO	debug/debug.go:315	http://[::]:8088/debug/archive - Zip archive with debugging information	{"name":"debug"}
+2025-02-20T17:01:58.535Z	INFO	debug/debug.go:315	http://[::]:8088/debug/graphs - Visualize metrics	{"name":"debug"}
+2025-02-20T17:01:58.535Z	INFO	debug/debug.go:315	http://[::]:8088/debug/livez - Liveness probe	{"name":"debug"}
+2025-02-20T17:01:58.536Z	INFO	debug/debug.go:315	http://[::]:8088/debug/metrics - Metrics in Prometheus format	{"name":"debug"}
+2025-02-20T17:01:58.536Z	INFO	debug/debug.go:315	http://[::]:8088/debug/pprof - Runtime profiling data for pprof	{"name":"debug"}
+2025-02-20T17:01:58.536Z	INFO	debug/debug.go:315	http://[::]:8088/debug/readyz - Readiness probe	{"name":"debug"}
+2025-02-20T17:01:58.536Z	INFO	debug/debug.go:315	http://[::]:8088/debug/vars - Expvar package metrics	{"name":"debug"}
+2025-02-20T17:02:02.053Z	INFO	clientconn/listener.go:293	Connection started	{"conn":"127.0.0.1:33768 -> 127.0.0.1:27017","name":"listener"}
+2025-02-20T17:02:02.058Z	DEBUG	clientconn/conn.go:259	Request header: length:   401, id:    1, response_to:    0, opcode: OP_QUERY	{"name":"listener"}
+2025-02-20T17:02:02.058Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `Flags`: `[]`,
+  `FullCollectionName`: `admin.$cmd`,
+  `NumberToSkip`: 0,
+  `NumberToReturn`: -1,
+  `Query`: {
+    `ismaster`: 1,
+    `helloOk`: true,
+    `client`: {
+      `application`: {
+        `name`: `mongosh 2.3.8`,
+      },
+      `driver`: {
+        `name`: `nodejs|mongosh`,
+        `version`: `6.12.0|2.3.8`,
+      },
+      `platform`: `Node.js v20.18.1, LE`,
+      `os`: {
+        `name`: `linux`,
+        `architecture`: `x64`,
+        `version`: `3.10.0-327.22.2.el7.x86_64`,
+        `type`: `Linux`,
+      },
+      `env`: {
+        `container`: {
+          `runtime`: `docker`,
+        },
+      },
+    },
+    `compression`: [
+      `none`,
+    ],
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.059Z	DEBUG	clientconn/conn.go:617	Response header: length:   313, id:    1, response_to:    1, opcode: OP_REPLY	{"name":"listener"}
+2025-02-20T17:02:02.059Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `ResponseFlags`: `[]`,
+  `CursorID`: int64(0),
+  `StartingFrom`: 0,
+  `NumberReturned`: 1,
+  `Document`: {
+    `helloOk`: true,
+    `ismaster`: true,
+    `maxBsonObjectSize`: 16777216,
+    `maxMessageSizeBytes`: 48000000,
+    `maxWriteBatchSize`: 100000,
+    `localTime`: 2025-02-20T17:02:02.058Z,
+    `logicalSessionTimeoutMinutes`: 30,
+    `connectionId`: 42,
+    `minWireVersion`: 0,
+    `maxWireVersion`: 21,
+    `readOnly`: false,
+    `saslSupportedMechs`: [
+      `SCRAM-SHA-256`,
+    ],
+    `ok`: 1.0,
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.076Z	INFO	clientconn/listener.go:293	Connection started	{"conn":"127.0.0.1:33784 -> 127.0.0.1:27017","name":"listener"}
+2025-02-20T17:02:02.076Z	INFO	clientconn/listener.go:293	Connection started	{"conn":"127.0.0.1:33780 -> 127.0.0.1:27017","name":"listener"}
+2025-02-20T17:02:02.077Z	DEBUG	clientconn/conn.go:259	Request header: length:   401, id:    2, response_to:    0, opcode: OP_QUERY	{"name":"listener"}
+2025-02-20T17:02:02.077Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `Flags`: `[]`,
+  `FullCollectionName`: `admin.$cmd`,
+  `NumberToSkip`: 0,
+  `NumberToReturn`: -1,
+  `Query`: {
+    `ismaster`: 1,
+    `helloOk`: true,
+    `client`: {
+      `application`: {
+        `name`: `mongosh 2.3.8`,
+      },
+      `driver`: {
+        `name`: `nodejs|mongosh`,
+        `version`: `6.12.0|2.3.8`,
+      },
+      `platform`: `Node.js v20.18.1, LE`,
+      `os`: {
+        `name`: `linux`,
+        `architecture`: `x64`,
+        `version`: `3.10.0-327.22.2.el7.x86_64`,
+        `type`: `Linux`,
+      },
+      `env`: {
+        `container`: {
+          `runtime`: `docker`,
+        },
+      },
+    },
+    `compression`: [
+      `none`,
+    ],
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.077Z	DEBUG	clientconn/conn.go:617	Response header: length:   313, id:    1, response_to:    2, opcode: OP_REPLY	{"name":"listener"}
+2025-02-20T17:02:02.077Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `ResponseFlags`: `[]`,
+  `CursorID`: int64(0),
+  `StartingFrom`: 0,
+  `NumberReturned`: 1,
+  `Document`: {
+    `helloOk`: true,
+    `ismaster`: true,
+    `maxBsonObjectSize`: 16777216,
+    `maxMessageSizeBytes`: 48000000,
+    `maxWriteBatchSize`: 100000,
+    `localTime`: 2025-02-20T17:02:02.077Z,
+    `logicalSessionTimeoutMinutes`: 30,
+    `connectionId`: 42,
+    `minWireVersion`: 0,
+    `maxWireVersion`: 21,
+    `readOnly`: false,
+    `saslSupportedMechs`: [
+      `SCRAM-SHA-256`,
+    ],
+    `ok`: 1.0,
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.078Z	DEBUG	clientconn/conn.go:259	Request header: length:   401, id:    3, response_to:    0, opcode: OP_QUERY	{"name":"listener"}
+2025-02-20T17:02:02.078Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `Flags`: `[]`,
+  `FullCollectionName`: `admin.$cmd`,
+  `NumberToSkip`: 0,
+  `NumberToReturn`: -1,
+  `Query`: {
+    `ismaster`: 1,
+    `helloOk`: true,
+    `client`: {
+      `application`: {
+        `name`: `mongosh 2.3.8`,
+      },
+      `driver`: {
+        `name`: `nodejs|mongosh`,
+        `version`: `6.12.0|2.3.8`,
+      },
+      `platform`: `Node.js v20.18.1, LE`,
+      `os`: {
+        `name`: `linux`,
+        `architecture`: `x64`,
+        `version`: `3.10.0-327.22.2.el7.x86_64`,
+        `type`: `Linux`,
+      },
+      `env`: {
+        `container`: {
+          `runtime`: `docker`,
+        },
+      },
+    },
+    `compression`: [
+      `none`,
+    ],
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.078Z	DEBUG	clientconn/conn.go:617	Response header: length:   313, id:    1, response_to:    3, opcode: OP_REPLY	{"name":"listener"}
+2025-02-20T17:02:02.078Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `ResponseFlags`: `[]`,
+  `CursorID`: int64(0),
+  `StartingFrom`: 0,
+  `NumberReturned`: 1,
+  `Document`: {
+    `helloOk`: true,
+    `ismaster`: true,
+    `maxBsonObjectSize`: 16777216,
+    `maxMessageSizeBytes`: 48000000,
+    `maxWriteBatchSize`: 100000,
+    `localTime`: 2025-02-20T17:02:02.078Z,
+    `logicalSessionTimeoutMinutes`: 30,
+    `connectionId`: 42,
+    `minWireVersion`: 0,
+    `maxWireVersion`: 21,
+    `readOnly`: false,
+    `saslSupportedMechs`: [
+      `SCRAM-SHA-256`,
+    ],
+    `ok`: 1.0,
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.080Z	DEBUG	clientconn/conn.go:259	Request header: length:    92, id:    4, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.080Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `buildInfo`: 1,
+        `lsid`: {
+          `id`: Binary(uuid:NqPBRMCmTeCx2z82tQc1KQ==),
+        },
+        `$db`: `admin`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.081Z	DEBUG	session/registry.go:320	Session created implicitly	{"name":"handler","session_id":"36a3c144-c0a6-4de0-b1db-3f36b5073529","user_id":"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="}
+2025-02-20T17:02:02.081Z	DEBUG	clientconn/conn.go:617	Response header: length:   572, id:    2, response_to:    4, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.081Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `version`: `7.0.77`,
+        `gitVersion`: `a289181298aa6b9ba81aa501fc803843ac487696`,
+        `modules`: [],
+        `sysInfo`: `deprecated`,
+        `versionArray`: [
+          7,
+          0,
+          77,
+          0,
+        ],
+        `bits`: 64,
+        `debug`: true,
+        `maxBsonObjectSize`: 16777216,
+        `buildEnvironment`: {
+          `-buildmode`: `exe`,
+          `-compiler`: `gc`,
+          `-cover`: `true`,
+          `-race`: `true`,
+          `-tags`: `ferretdb_dev`,
+          `CGO_ENABLED`: `1`,
+          `GOAMD64`: `v1`,
+          `GOARCH`: `amd64`,
+          `GOOS`: `linux`,
+          `go.version`: `go1.23.5`,
+          `vcs`: `git`,
+          `vcs.time`: `2025-01-23T16:59:51Z`,
+        },
+        `ferretdb`: {
+          `version`: `v2.0.0-rc.1`,
+          `package`: `docker-evaluation`,
+        },
+        `ok`: 1.0,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.082Z	INFO	clientconn/listener.go:293	Connection started	{"conn":"127.0.0.1:33800 -> 127.0.0.1:27017","name":"listener"}
+2025-02-20T17:02:02.082Z	DEBUG	clientconn/conn.go:259	Request header: length:    95, id:    5, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.082Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `atlasVersion`: 1,
+        `lsid`: {
+          `id`: Binary(uuid:0LrQwLbgTJanhNa4muZs2Q==),
+        },
+        `$db`: `admin`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.083Z	WARN	clientconn/conn.go:617	Response header: length:   122, id:    2, response_to:    5, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.083Z	WARN	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `ok`: 0.0,
+        `errmsg`: `no such command: 'atlasVersion'`,
+        `code`: 59,
+        `codeName`: `CommandNotFound`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.083Z	INFO	clientconn/listener.go:293	Connection started	{"conn":"127.0.0.1:33810 -> 127.0.0.1:27017","name":"listener"}
+2025-02-20T17:02:02.084Z	DEBUG	clientconn/conn.go:259	Request header: length:   401, id:    6, response_to:    0, opcode: OP_QUERY	{"name":"listener"}
+2025-02-20T17:02:02.084Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `Flags`: `[]`,
+  `FullCollectionName`: `admin.$cmd`,
+  `NumberToSkip`: 0,
+  `NumberToReturn`: -1,
+  `Query`: {
+    `ismaster`: 1,
+    `helloOk`: true,
+    `client`: {
+      `application`: {
+        `name`: `mongosh 2.3.8`,
+      },
+      `driver`: {
+        `name`: `nodejs|mongosh`,
+        `version`: `6.12.0|2.3.8`,
+      },
+      `platform`: `Node.js v20.18.1, LE`,
+      `os`: {
+        `name`: `linux`,
+        `architecture`: `x64`,
+        `version`: `3.10.0-327.22.2.el7.x86_64`,
+        `type`: `Linux`,
+      },
+      `env`: {
+        `container`: {
+          `runtime`: `docker`,
+        },
+      },
+    },
+    `compression`: [
+      `none`,
+    ],
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.084Z	DEBUG	clientconn/conn.go:617	Response header: length:   313, id:    1, response_to:    6, opcode: OP_REPLY	{"name":"listener"}
+2025-02-20T17:02:02.084Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `ResponseFlags`: `[]`,
+  `CursorID`: int64(0),
+  `StartingFrom`: 0,
+  `NumberReturned`: 1,
+  `Document`: {
+    `helloOk`: true,
+    `ismaster`: true,
+    `maxBsonObjectSize`: 16777216,
+    `maxMessageSizeBytes`: 48000000,
+    `maxWriteBatchSize`: 100000,
+    `localTime`: 2025-02-20T17:02:02.084Z,
+    `logicalSessionTimeoutMinutes`: 30,
+    `connectionId`: 42,
+    `minWireVersion`: 0,
+    `maxWireVersion`: 21,
+    `readOnly`: false,
+    `saslSupportedMechs`: [
+      `SCRAM-SHA-256`,
+    ],
+    `ok`: 1.0,
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.088Z	DEBUG	clientconn/conn.go:259	Request header: length:   401, id:    7, response_to:    0, opcode: OP_QUERY	{"name":"listener"}
+2025-02-20T17:02:02.088Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `Flags`: `[]`,
+  `FullCollectionName`: `admin.$cmd`,
+  `NumberToSkip`: 0,
+  `NumberToReturn`: -1,
+  `Query`: {
+    `ismaster`: 1,
+    `helloOk`: true,
+    `client`: {
+      `application`: {
+        `name`: `mongosh 2.3.8`,
+      },
+      `driver`: {
+        `name`: `nodejs|mongosh`,
+        `version`: `6.12.0|2.3.8`,
+      },
+      `platform`: `Node.js v20.18.1, LE`,
+      `os`: {
+        `name`: `linux`,
+        `architecture`: `x64`,
+        `version`: `3.10.0-327.22.2.el7.x86_64`,
+        `type`: `Linux`,
+      },
+      `env`: {
+        `container`: {
+          `runtime`: `docker`,
+        },
+      },
+    },
+    `compression`: [
+      `none`,
+    ],
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.088Z	DEBUG	clientconn/conn.go:617	Response header: length:   313, id:    1, response_to:    7, opcode: OP_REPLY	{"name":"listener"}
+2025-02-20T17:02:02.088Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `ResponseFlags`: `[]`,
+  `CursorID`: int64(0),
+  `StartingFrom`: 0,
+  `NumberReturned`: 1,
+  `Document`: {
+    `helloOk`: true,
+    `ismaster`: true,
+    `maxBsonObjectSize`: 16777216,
+    `maxMessageSizeBytes`: 48000000,
+    `maxWriteBatchSize`: 100000,
+    `localTime`: 2025-02-20T17:02:02.088Z,
+    `logicalSessionTimeoutMinutes`: 30,
+    `connectionId`: 42,
+    `minWireVersion`: 0,
+    `maxWireVersion`: 21,
+    `readOnly`: false,
+    `saslSupportedMechs`: [
+      `SCRAM-SHA-256`,
+    ],
+    `ok`: 1.0,
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.089Z	DEBUG	clientconn/conn.go:259	Request header: length:   128, id:    8, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.089Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `getParameter`: 1,
+        `featureCompatibilityVersion`: 1,
+        `lsid`: {
+          `id`: Binary(uuid:NqPBRMCmTeCx2z82tQc1KQ==),
+        },
+        `$db`: `admin`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.089Z	WARN	handler/commands.go:331	checkAuthentication: no existing conversation	{"name":"handler"}
+2025-02-20T17:02:02.089Z	WARN	clientconn/conn.go:617	Response header: length:   132, id:    2, response_to:    8, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.089Z	WARN	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `ok`: 0.0,
+        `errmsg`: `Command getParameter requires authentication`,
+        `code`: 13,
+        `codeName`: `Unauthorized`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.091Z	DEBUG	clientconn/conn.go:259	Request header: length:   246, id:    9, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.091Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `aggregate`: `atlascli`,
+        `pipeline`: [
+          {
+            `$match`: {
+              `managedClusterType`: `atlasCliLocalDevCluster`,
+            },
+          },
+          {
+            `$group`: {
+              `_id`: 1,
+              `n`: {
+                `$sum`: 1,
+              },
+            },
+          },
+        ],
+        `cursor`: {},
+        `lsid`: {
+          `id`: Binary(uuid:0LrQwLbgTJanhNa4muZs2Q==),
+        },
+        `$db`: `admin`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.091Z	WARN	handler/commands.go:331	checkAuthentication: no existing conversation	{"name":"handler"}
+2025-02-20T17:02:02.091Z	WARN	clientconn/conn.go:617	Response header: length:   129, id:    2, response_to:    9, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.091Z	WARN	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `ok`: 0.0,
+        `errmsg`: `Command aggregate requires authentication`,
+        `code`: 13,
+        `codeName`: `Unauthorized`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.101Z	DEBUG	clientconn/conn.go:259	Request header: length:    87, id:   10, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.101Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `ping`: 1,
+        `lsid`: {
+          `id`: Binary(uuid:0LrQwLbgTJanhNa4muZs2Q==),
+        },
+        `$db`: `admin`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.101Z	DEBUG	session/registry.go:320	Session created implicitly	{"name":"handler","session_id":"d0bad0c0-b6e0-4c96-a784-d6b89ae66cd9","user_id":"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="}
+2025-02-20T17:02:02.110Z	DEBUG+2	runtime/asm_amd64.s:1700	Connect	{"database":"postgres","host":"127.0.0.1","name":"pool","pid":117,"port":5432,"time":7313297}
+2025-02-20T17:02:02.111Z	DEBUG+2	documentdb/pool_new.go:114	Prepare	{"alreadyPrepared":false,"name":"pool","pid":117,"sql":"SELECT version(), documentdb_api.binary_extended_version()","time":688228}
+2025-02-20T17:02:02.112Z	DEBUG+2	documentdb/pool_new.go:117	Query	{"commandTag":"SELECT 1","name":"pool","pid":117,"sql":"SELECT version(), documentdb_api.binary_extended_version()","time":1864831}
+2025-02-20T17:02:02.113Z	DEBUG+2	documentdb/pool_new.go:138	Query	{"commandTag":"SET","name":"pool","pid":117,"sql":"SET documentdb.enableUserCrud TO true","time":358172}
+2025-02-20T17:02:02.113Z	DEBUG+2	documentdb/pool_new.go:142	Query	{"commandTag":"SET","name":"pool","pid":117,"sql":"SET documentdb.maxUserLimit TO 100","time":327619}
+2025-02-20T17:02:02.114Z	DEBUG+2	documentdb/pool_new.go:146	Prepare	{"alreadyPrepared":false,"name":"pool","pid":117,"sql":"SHOW ALL","time":259474}
+2025-02-20T17:02:02.115Z	DEBUG	documentdb/pool_new.go:158	newPgxPoolCheckConn	{"client_encoding":"UTF8","name":"pool"}
+2025-02-20T17:02:02.115Z	DEBUG	documentdb/pool_new.go:158	newPgxPoolCheckConn	{"documentdb.enableUserCrud":"on","name":"pool"}
+2025-02-20T17:02:02.115Z	DEBUG	documentdb/pool_new.go:158	newPgxPoolCheckConn	{"documentdb.maxUserLimit":"100","name":"pool"}
+2025-02-20T17:02:02.116Z	DEBUG	documentdb/pool_new.go:158	newPgxPoolCheckConn	{"name":"pool","server_encoding":"UTF8"}
+2025-02-20T17:02:02.116Z	DEBUG	documentdb/pool_new.go:158	newPgxPoolCheckConn	{"name":"pool","standard_conforming_strings":"on"}
+2025-02-20T17:02:02.117Z	DEBUG+2	documentdb/pool_new.go:154	Query	{"commandTag":"SHOW","name":"pool","pid":117,"sql":"SHOW ALL","time":3334374}
+2025-02-20T17:02:02.117Z	DEBUG+2	documentdb_api/documentdb_api.go:36	Prepare	{"alreadyPrepared":false,"name":"pool","pid":117,"sql":"SELECT binary_extended_version FROM documentdb_api.binary_extended_version()","time":292690}
+2025-02-20T17:02:02.118Z	DEBUG+2	documentdb_api/documentdb_api.go:39	Query	{"commandTag":"SELECT 1","name":"pool","pid":117,"sql":"SELECT binary_extended_version FROM documentdb_api.binary_extended_version()","time":840297}
+2025-02-20T17:02:02.118Z	DEBUG	clientconn/conn.go:617	Response header: length:    38, id:    3, response_to:   10, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.118Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `ok`: 1.0,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.163Z	DEBUG	clientconn/conn.go:259	Request header: length:   105, id:   11, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.163Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `getLog`: `startupWarnings`,
+        `lsid`: {
+          `id`: Binary(uuid:0LrQwLbgTJanhNa4muZs2Q==),
+        },
+        `$db`: `admin`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.163Z	WARN	handler/commands.go:331	checkAuthentication: no existing conversation	{"name":"handler"}
+2025-02-20T17:02:02.163Z	WARN	clientconn/conn.go:617	Response header: length:   126, id:    4, response_to:   11, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.164Z	WARN	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `ok`: 0.0,
+        `errmsg`: `Command getLog requires authentication`,
+        `code`: 13,
+        `codeName`: `Unauthorized`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.164Z	DEBUG	clientconn/conn.go:259	Request header: length:    87, id:   12, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.164Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `hello`: 1,
+        `lsid`: {
+          `id`: Binary(uuid:NqPBRMCmTeCx2z82tQc1KQ==),
+        },
+        `$db`: `test`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:02.164Z	DEBUG	session/registry.go:305	Session refreshed	{"name":"handler","session_id":"36a3c144-c0a6-4de0-b1db-3f36b5073529","user_id":"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="}
+2025-02-20T17:02:02.164Z	DEBUG	clientconn/conn.go:617	Response header: length:   297, id:    3, response_to:   12, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:02.165Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `isWritablePrimary`: true,
+        `maxBsonObjectSize`: 16777216,
+        `maxMessageSizeBytes`: 48000000,
+        `maxWriteBatchSize`: 100000,
+        `localTime`: 2025-02-20T17:02:02.164Z,
+        `logicalSessionTimeoutMinutes`: 30,
+        `connectionId`: 42,
+        `minWireVersion`: 0,
+        `maxWireVersion`: 21,
+        `readOnly`: false,
+        `saslSupportedMechs`: [
+          `SCRAM-SHA-256`,
+        ],
+        `ok`: 1.0,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:04.213Z	INFO	clientconn/listener.go:293	Connection started	{"conn":"192.168.65.1:16633 -> 172.18.0.3:27017","name":"listener"}
+2025-02-20T17:02:04.214Z	DEBUG	clientconn/conn.go:259	Request header: length:   325, id:  413, response_to:    0, opcode: OP_QUERY	{"name":"listener"}
+2025-02-20T17:02:04.215Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `Flags`: `[]`,
+  `FullCollectionName`: `admin.$cmd`,
+  `NumberToSkip`: 0,
+  `NumberToReturn`: -1,
+  `Query`: {
+    `ismaster`: 1,
+    `helloOk`: true,
+    `client`: {
+      `application`: {
+        `name`: `MongoDB Compass`,
+      },
+      `driver`: {
+        `name`: `nodejs`,
+        `version`: `6.12.0`,
+      },
+      `platform`: `Node.js v20.18.1, LE`,
+      `os`: {
+        `name`: `darwin`,
+        `architecture`: `x64`,
+        `version`: `21.6.0`,
+        `type`: `Darwin`,
+      },
+    },
+    `compression`: [
+      `none`,
+    ],
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:04.215Z	DEBUG	clientconn/conn.go:617	Response header: length:   313, id:    1, response_to:  413, opcode: OP_REPLY	{"name":"listener"}
+2025-02-20T17:02:04.215Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `ResponseFlags`: `[]`,
+  `CursorID`: int64(0),
+  `StartingFrom`: 0,
+  `NumberReturned`: 1,
+  `Document`: {
+    `helloOk`: true,
+    `ismaster`: true,
+    `maxBsonObjectSize`: 16777216,
+    `maxMessageSizeBytes`: 48000000,
+    `maxWriteBatchSize`: 100000,
+    `localTime`: 2025-02-20T17:02:04.215Z,
+    `logicalSessionTimeoutMinutes`: 30,
+    `connectionId`: 42,
+    `minWireVersion`: 0,
+    `maxWireVersion`: 21,
+    `readOnly`: false,
+    `saslSupportedMechs`: [
+      `SCRAM-SHA-256`,
+    ],
+    `ok`: 1.0,
+  },
+}
+	{"name":"listener"}
+2025-02-20T17:02:10.592Z	DEBUG	clientconn/conn.go:259	Request header: length:   239, id:   13, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:10.592Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `insert`: `scientists`,
+        `documents`: [
+          {
+            `name`: {
+              `firstname`: `Thomas`,
+              `lastname`: `Edison`,
+            },
+            `born`: 1847,
+            `invention`: `lightbulb`,
+            `_id`: ObjectID(67b76012b55414cf08544ca7),
+          },
+        ],
+        `ordered`: true,
+        `lsid`: {
+          `id`: Binary(uuid:NqPBRMCmTeCx2z82tQc1KQ==),
+        },
+        `$db`: `test`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:10.592Z	WARN	handler/commands.go:331	checkAuthentication: no existing conversation	{"name":"handler"}
+2025-02-20T17:02:10.592Z	WARN	clientconn/conn.go:617	Response header: length:   126, id:    4, response_to:   13, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:10.593Z	WARN	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `ok`: 0.0,
+        `errmsg`: `Command insert requires authentication`,
+        `code`: 13,
+        `codeName`: `Unauthorized`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:12.065Z	DEBUG	clientconn/conn.go:259	Request header: length:    52, id:   14, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:12.065Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `hello`: 1,
+        `$db`: `admin`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:12.066Z	DEBUG	session/registry.go:320	Session created implicitly	{"name":"handler","session_id":"00000000-0000-0000-0000-000000000000","user_id":"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="}
+2025-02-20T17:02:12.066Z	DEBUG	clientconn/conn.go:617	Response header: length:   297, id:    2, response_to:   14, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:12.067Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `isWritablePrimary`: true,
+        `maxBsonObjectSize`: 16777216,
+        `maxMessageSizeBytes`: 48000000,
+        `maxWriteBatchSize`: 100000,
+        `localTime`: 2025-02-20T17:02:12.066Z,
+        `logicalSessionTimeoutMinutes`: 30,
+        `connectionId`: 42,
+        `minWireVersion`: 0,
+        `maxWireVersion`: 21,
+        `readOnly`: false,
+        `saslSupportedMechs`: [
+          `SCRAM-SHA-256`,
+        ],
+        `ok`: 1.0,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:14.230Z	DEBUG	clientconn/conn.go:259	Request header: length:    52, id:  414, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:14.230Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `hello`: 1,
+        `$db`: `admin`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:14.231Z	DEBUG	session/registry.go:305	Session refreshed	{"name":"handler","session_id":"00000000-0000-0000-0000-000000000000","user_id":"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="}
+2025-02-20T17:02:14.232Z	DEBUG	clientconn/conn.go:617	Response header: length:   297, id:    2, response_to:  414, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:14.232Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `isWritablePrimary`: true,
+        `maxBsonObjectSize`: 16777216,
+        `maxMessageSizeBytes`: 48000000,
+        `maxWriteBatchSize`: 100000,
+        `localTime`: 2025-02-20T17:02:14.231Z,
+        `logicalSessionTimeoutMinutes`: 30,
+        `connectionId`: 42,
+        `minWireVersion`: 0,
+        `maxWireVersion`: 21,
+        `readOnly`: false,
+        `saslSupportedMechs`: [
+          `SCRAM-SHA-256`,
+        ],
+        `ok`: 1.0,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:20.642Z	DEBUG	clientconn/conn.go:259	Request header: length:   161, id:   15, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:20.643Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `endSessions`: [
+          {
+            `id`: Binary(uuid:NqPBRMCmTeCx2z82tQc1KQ==),
+          },
+          {
+            `id`: Binary(uuid:0LrQwLbgTJanhNa4muZs2Q==),
+          },
+        ],
+        `lsid`: {
+          `id`: Binary(uuid:NqPBRMCmTeCx2z82tQc1KQ==),
+        },
+        `$db`: `admin`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:20.643Z	WARN	handler/commands.go:331	checkAuthentication: no existing conversation	{"name":"handler"}
+2025-02-20T17:02:20.643Z	WARN	clientconn/conn.go:617	Response header: length:   131, id:    5, response_to:   15, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:20.644Z	WARN	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `ok`: 0.0,
+        `errmsg`: `Command endSessions requires authentication`,
+        `code`: 13,
+        `codeName`: `Unauthorized`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:20.644Z	INFO	clientconn/listener.go:299	Connection stopped	{"conn":"127.0.0.1:33800 -> 127.0.0.1:27017","name":"listener"}
+2025-02-20T17:02:20.644Z	INFO	clientconn/listener.go:299	Connection stopped	{"conn":"127.0.0.1:33780 -> 127.0.0.1:27017","name":"listener"}
+2025-02-20T17:02:20.644Z	INFO	clientconn/listener.go:299	Connection stopped	{"conn":"127.0.0.1:33768 -> 127.0.0.1:27017","name":"listener"}
+2025-02-20T17:02:20.644Z	INFO	clientconn/listener.go:299	Connection stopped	{"conn":"127.0.0.1:33810 -> 127.0.0.1:27017","name":"listener"}
+2025-02-20T17:02:20.644Z	INFO	clientconn/listener.go:299	Connection stopped	{"conn":"127.0.0.1:33784 -> 127.0.0.1:27017","name":"listener"}
+2025-02-20T17:02:24.238Z	DEBUG	clientconn/conn.go:259	Request header: length:    52, id:  415, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:24.239Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `hello`: 1,
+        `$db`: `admin`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:24.239Z	DEBUG	session/registry.go:305	Session refreshed	{"name":"handler","session_id":"00000000-0000-0000-0000-000000000000","user_id":"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="}
+2025-02-20T17:02:24.240Z	DEBUG	clientconn/conn.go:617	Response header: length:   297, id:    3, response_to:  415, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:24.241Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `isWritablePrimary`: true,
+        `maxBsonObjectSize`: 16777216,
+        `maxMessageSizeBytes`: 48000000,
+        `maxWriteBatchSize`: 100000,
+        `localTime`: 2025-02-20T17:02:24.24Z,
+        `logicalSessionTimeoutMinutes`: 30,
+        `connectionId`: 42,
+        `minWireVersion`: 0,
+        `maxWireVersion`: 21,
+        `readOnly`: false,
+        `saslSupportedMechs`: [
+          `SCRAM-SHA-256`,
+        ],
+        `ok`: 1.0,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:34.246Z	DEBUG	clientconn/conn.go:259	Request header: length:    52, id:  416, response_to:    0, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:34.246Z	DEBUG	clientconn/conn.go:260	Request message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `hello`: 1,
+        `$db`: `admin`,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+2025-02-20T17:02:34.246Z	DEBUG	session/registry.go:305	Session refreshed	{"name":"handler","session_id":"00000000-0000-0000-0000-000000000000","user_id":"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="}
+2025-02-20T17:02:34.247Z	DEBUG	clientconn/conn.go:617	Response header: length:   297, id:    4, response_to:  416, opcode: OP_MSG	{"name":"listener"}
+2025-02-20T17:02:34.247Z	DEBUG	clientconn/conn.go:618	Response message:
+{
+  `FlagBits`: `[]`,
+  `Checksum`: int64(0),
+  `Sections`: [
+    {
+      `Kind`: 0,
+      `Document`: {
+        `isWritablePrimary`: true,
+        `maxBsonObjectSize`: 16777216,
+        `maxMessageSizeBytes`: 48000000,
+        `maxWriteBatchSize`: 100000,
+        `localTime`: 2025-02-20T17:02:34.246Z,
+        `logicalSessionTimeoutMinutes`: 30,
+        `connectionId`: 42,
+        `minWireVersion`: 0,
+        `maxWireVersion`: 21,
+        `readOnly`: false,
+        `saslSupportedMechs`: [
+          `SCRAM-SHA-256`,
+        ],
+        `ok`: 1.0,
+      },
+    },
+  ],
+}
+	{"name":"listener"}
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;mtm@taylors-MacBook-Pro-2:~/pdev/taylormonacelli/wobblywalrus]1;../wobblywalrus]7;file://taylors-MacBook-Pro-2.local/Users/mtm/pdev/taylormonacelli/wobblywalrus\[0m[27m[24m[J[01;32m➜  [33mmac[00m [36mwobblywalrus[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on Thu Feb 20 09:02:41 2025

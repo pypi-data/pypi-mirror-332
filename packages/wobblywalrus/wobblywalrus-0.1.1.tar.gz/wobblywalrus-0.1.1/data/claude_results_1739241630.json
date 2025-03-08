@@ -1,0 +1,67 @@
+{
+  "businesses": [
+    {
+      "business_name": "Seattles Capitol Hill Dentist",
+      "matched_name": "SEATTLE'S CAPITOL HILL DENTIST",
+      "yelp_url": "https://www.yelp.com/biz/seattle-s-capitol-hill-dentist-seattle",
+      "message": "Found exact name match",
+      "uuid": "059daf7b-d8b7-45a7-8185-7e398524f27d"
+    },
+    {
+      "business_name": "Ichs International District Medical & Dental Clinic",
+      "matched_name": "ICHS INTERNATIONAL DISTRICT MEDICAL & DENTAL CLINIC",
+      "yelp_url": "https://www.yelp.com/biz/ichs-international-district-medical-and-dental-clinic-seattle-2",
+      "message": "Found exact name match",
+      "uuid": "c0092598-dac0-4b10-bd7c-f6a4ec5d4b98"
+    },
+    {
+      "business_name": "Smiles On Madison",
+      "matched_name": "SMILES ON MADISON",
+      "yelp_url": "https://www.yelp.com/biz/smiles-on-madison-seattle",
+      "message": "Found exact name match",
+      "uuid": "b2be62c1-9906-46bc-9445-6f429562646b"
+    },
+    {
+      "business_name": "Neighborcare Health At Pacific Tower Dental",
+      "matched_name": "NEIGHBORCARE HEALTH AT PACIFIC TOWER",
+      "yelp_url": "https://www.yelp.com/biz/neighborcare-health-at-pacific-tower-seattle",
+      "message": "Found fuzzy name match",
+      "uuid": "910478f5-2f30-4a04-bf98-19ee35d0207e"
+    },
+    {
+      "business_name": "Madrona Family Dental",
+      "matched_name": "LOREN A TARR, DDS",
+      "yelp_url": "https://www.yelp.com/biz/loren-a-tarr-dds-seattle",
+      "message": "Found fuzzy name match (operating as Madrona Family Dentistry)",
+      "uuid": "c46a6960-885e-46d3-a2ec-0415f2ba6f4b"
+    },
+    {
+      "business_name": "Seattle Cornerstone Dental",
+      "matched_name": "SEATTLE CORNERSTONE DENTAL",
+      "yelp_url": "https://www.yelp.com/biz/seattle-cornerstone-dental-seattle-2",
+      "message": "Found exact name match",
+      "uuid": "ca53af24-39ab-4ad0-856a-798bf3832ee7"
+    },
+    {
+      "business_name": "Seattles Capitol Hill Dentist",
+      "matched_name": "SEATTLE'S CAPITOL HILL DENTIST",
+      "yelp_url": "https://www.yelp.com/biz/seattle-s-capitol-hill-dentist-seattle",
+      "message": "Found exact name match",
+      "uuid": "bda92dfa-b43d-4768-9068-6add61299220"
+    },
+    {
+      "business_name": "Dr Thomas Vo Dds",
+      "matched_name": "VO THOMAS L, DDS",
+      "yelp_url": "https://www.yelp.com/biz/vo-thomas-l-dds-seattle-2",
+      "message": "Found fuzzy name match",
+      "uuid": "aed0527b-80f6-41ca-a229-0847b4cb79ce"
+    },
+    {
+      "business_name": "Capitol Hill Dental Group",
+      "matched_name": "CAPITOL HILL DENTAL GROUP",
+      "yelp_url": "https://www.yelp.com/biz/capitol-hill-dental-group-seattle",
+      "message": "Found exact name match",
+      "uuid": "ea6239dd-92c8-40c5-8a72-6c135e2b5b90"
+    }
+  ]
+}

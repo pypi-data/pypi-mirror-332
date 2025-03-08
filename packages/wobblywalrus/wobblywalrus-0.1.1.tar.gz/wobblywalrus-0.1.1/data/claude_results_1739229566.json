@@ -1,0 +1,53 @@
+{
+  "businesses": [
+    {
+      "business_name": "Dentologie Pc",
+      "matched_name": "Dentologie - South Loop",
+      "yelp_url": "https://www.yelp.com/biz/dentologie-south-loop-chicago",
+      "message": "Found fuzzy name match",
+      "uuid": "126cfb48-93b8-4b12-b108-39df96051cf1"
+    },
+    {
+      "business_name": "First Hill Dental Center",
+      "matched_name": "First Hill Dental Center - Dr. Singh DMD",
+      "yelp_url": "https://www.yelp.com/biz/first-hill-dental-center-seattle",
+      "message": "Found exact name match",
+      "uuid": "995f54a9-214b-407b-ba02-3c2dcebe1ee4" 
+    },
+    {
+      "business_name": "David J Olson Dds Pllc",
+      "matched_name": "",
+      "yelp_url": "",
+      "message": "No direct Yelp business page found",
+      "uuid": "c5300dae-709d-4087-9d4b-e79dbcf87267"
+    },
+    {
+      "business_name": "Gateway Dental",
+      "matched_name": "Gateway Dental",
+      "yelp_url": "https://www.yelp.com/biz/gateway-dental-seattle-2",
+      "message": "Found exact name match",
+      "uuid": "088855cc-e6de-4716-b0a8-aa17e5098011"
+    },
+    {
+      "business_name": "Innovative Dentistry",
+      "matched_name": "Innovative Dentistry",
+      "yelp_url": "https://www.yelp.com/biz/innovative-dentistry-seattle-2", 
+      "message": "Found exact name match",
+      "uuid": "dae8836b-f6e6-4a6a-933a-960f4a5c24b1"
+    },
+    {
+      "business_name": "Pinnacle Dental Care",
+      "matched_name": "Pinnacle Dental Care",
+      "yelp_url": "https://www.yelp.com/biz/pinnacle-dental-care-seattle",
+      "message": "Found exact name match",
+      "uuid": "2cc56118-6a17-4f99-844f-226727b787dd"
+    },
+    {
+      "business_name": "Simply Dental",
+      "matched_name": "Simply Dental",
+      "yelp_url": "https://www.yelp.com/biz/simply-dental-seattle-2",
+      "message": "Found exact name match",
+      "uuid": "03147b31-636f-4437-a113-3d52613070bd"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+set shell := ["bash", "-uec"]
+
+[group('maint')]
+default:
+    @just --list
+
+[group('maint')]
+pre-commit:
+    pre-commit install --config .pre-commit-config.yaml
+
+[group('maint')]
+fmt:
+    #!/usr/bin/env bash
+    if ! pre-commit run --all-files; then
+        echo "First fmt attempt failed, trying again..."
+        pre-commit run --all-files
+    fi

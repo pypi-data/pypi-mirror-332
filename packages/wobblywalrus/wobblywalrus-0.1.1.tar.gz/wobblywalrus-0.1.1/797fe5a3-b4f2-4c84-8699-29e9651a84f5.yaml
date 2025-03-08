@@ -1,0 +1,19 @@
+address: 527 Boren Ave N
+city: Seattle
+directions_link: https://www.google.com/maps/dir/?origin=Spring+Street+Mini+Park%2C+1506+E+Spring+St%2C+Seattle%2C+WA+98122&destination=527+Boren+Ave+N%2C+Seattle%2C+WA+98109%2C+Seattle%2C+WA&api=1
+google_reviews_links:
+- https://www.google.com/maps/search/South%20Lake%20Union%20Dentist%20Office%2C%20Seattle%2C%20WA?entry=ttu
+image_search_links:
+- https://www.google.com/search?q=South%20Lake%20Union%20Dentist%20Office+Seattle+WA&tbm=isch
+latitude: 47.6237196
+longitude: -122.3362603
+name: South Lake Union Dentist Office
+npi: '1942793526'
+profile_image_links: []
+social_media_links: []
+state: WA
+type: practice
+uuid: 797fe5a3-b4f2-4c84-8699-29e9651a84f5
+yelp_reviews_links:
+- https://www.yelp.com/search?find_desc=South+Lake+Union+Dentist+Office&find_loc=Seattle%2C+WA
+zip_code: '98109'

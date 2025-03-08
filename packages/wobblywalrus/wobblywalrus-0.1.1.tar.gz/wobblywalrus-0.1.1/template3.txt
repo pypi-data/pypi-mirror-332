@@ -1,0 +1,103 @@
+You are tasked with processing business search results from Yelp. Your goal is to find a matching Yelp
+business page for a given business name.   Here are the search results and the business name you need to process:
+
+<search_results>
+{{SEARCH_RESULTS}}
+</search_results>
+
+<business_name>
+{{BUSINESS_NAME}}
+</business_name>
+
+Your task is to analyze these search results and find a matching Yelp business page for the
+given business name. You must follow these rules and guidelines:
+
+
+
+
+1. # Output Format
+Your final output should be a list of JSON objects with the following structure:
+
+```json
+[
+  {
+    "business_name": "Original Search Name",
+    "matched_name": "Name Found on Yelp",
+    "yelp_url": "URL of matched business",
+    "message": "Description of match type",
+    "uuid": "Original UUID"
+  }
+]
+```
+
+
+
+2. Validation Rules:
+   a. The URL must represent a direct business page, not category listings.
+   b. Invalid URL patterns include: "/search?", "find_desc=", "cflt=dentists", "find_loc=".
+   c. Ignore mentions from "People also viewed" sections.
+   d. Skip references from other dentists' pages, category listings, or search results pages.
+   e. The URL must match the pattern: "https://www.yelp.com/biz/[business-name]-[location]".
+
+3. Business Name Matching:
+   a. First, attempt an exact match.
+   b. If no exact match is found, attempt a fuzzy match using these rules:
+      - Remove punctuation
+      - Convert to lowercase
+      - Consider these as optional suffixes: "& Associates", "PLLC", "LLC", "DDS"
+      - Focus on core name components
+
+
+4. Matching Process:
+   a. Try an exact match first.
+   b. If exact match fails, attempt a fuzzy match.
+   c. If both attempts fail, return a no-match result.
+
+5. Response Formats:
+   a. No Match:
+      ```json
+      {
+        "businesses": [
+          {
+            "business_name": "Original Search Name",
+            "matched_name": "",
+            "yelp_url": "",
+            "message": "No direct Yelp business page found",
+            "uuid": "Original UUID"
+          }
+        ]
+      }
+      ```
+   b. Fuzzy Match:
+      ```json
+      {
+        "businesses": [
+          {
+            "business_name": "Original Search Name",
+            "matched_name": "Name Found on Yelp",
+            "yelp_url": "URL of matched business",
+            "message": "Found fuzzy name match",
+            "uuid": "Original UUID"
+          }
+        ]
+      }
+      ```
+
+6. Error Handling:
+   - Use an empty URL string for non-matches.
+   - Include an explanatory message.
+   - Maintain consistent JSON structure.
+
+7. Output Requirements:
+   - Your response must contain ONLY the JSON output in a fenced code block.
+   - Do not include any explanatory text, preamble, or additional context.
+   - Do not use markdown formatting.
+   - The output must be valid JSON that can be parsed.
+   - Each business should appear exactly once in results (no duplicates)
+   - Include all input businesses in output, even when no Yelp match found
+   - Results should be formatted as valid JSON following the schema defined in paste.txt
+   - Count and verify total number of unique businesses processed
+   - Remove any duplicate records while preserving unique input business records in the final output
+
+
+Process the search results according to these instructions and provide the appropriate JSON output.

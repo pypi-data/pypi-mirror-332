@@ -1,0 +1,118 @@
+I have this business
+
+address: 511 Boren Ave N Ste 100
+city: Seattle
+directions_link: https://www.google.com/maps/dir/?origin=Spring+Street+Mini+Park%2C+1506+E+Spring+St%2C+Seattle%2C+WA+98122&destination=511+Boren+Ave+N+Seattle%2C+WA+98109%2C+Seattle%2C+WA&api=1
+google_reviews_links:
+- https://www.google.com/maps/search/Downtown%20Seattle%20Dentists%2C%20Seattle%2C%20WA?entry=ttu
+image_search_links:
+- https://www.google.com/search?q=Downtown%20Seattle%20Dentists+Seattle+WA&tbm=isch
+latitude: 47.6235776
+longitude: -122.3362407
+name: Downtown Seattle Dentists
+npi: '1700555612'
+profile_image_links: []
+social_media_links: []
+state: WA
+type: practice
+uuid: f6315196-d507-4ec0-bd6f-63b7da214652
+yelp_reviews_links:
+- https://www.yelp.com/search?find_desc=Downtown+Seattle+Dentists&find_loc=Seattle%2C+WA
+zip_code: '98109'
+
+
+
+and I need to know which one of the following google searches most closely
+matches my business
+
+More specifiacally, if you did find a match, I need to know the yelp link 
+for the match.  
+
+If you find a match, then please write json blob containing:
+
+1. business name
+2. uuid
+3. yelp review url
+
+2025-02-07 05:44:50,453 [INFO] 
+Search results for Downtown Seattle Dentists:
+2025-02-07 05:44:50,453 [INFO] 
+--- Result 1 ---
+2025-02-07 05:44:50,453 [INFO] Title: DOWNTOWN SEATTLE DENTISTS - Updated February 2025 - 80 ...
+2025-02-07 05:44:50,453 [INFO] Description: Downtown Seattle Dentists · Business Summary. Licensed dental practice offers a comprehensive range of services including preventive, cosmetic, and restorative ...
+2025-02-07 05:44:50,453 [INFO] URL: https://www.yelp.com/biz/downtown-seattle-dentists-seattle
+2025-02-07 05:44:50,453 [INFO] Date: 
+2025-02-07 05:44:50,453 [INFO] Thumbnails:
+2025-02-07 05:44:50,453 [INFO] - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3vsgBMjQpn46PQXgM0PA2-sLvD4dfdYDRy-JG7iVQOlX9SbRA6sHqn0&s
+2025-02-07 05:44:50,453 [INFO] 
+--- Result 2 ---
+2025-02-07 05:44:50,454 [INFO] Title: THE BEST 10 Dentists near DOWNTOWN, SEATTLE, WA - Updated ...
+2025-02-07 05:44:50,454 [INFO] Description: Best Dentists in Seattle, WA - Seattle Smiles Dental, Seattle Dental Associates, Downtown Seattle Dentists, West Edge Dental, Seattle Specialty Dentistry, ...
+2025-02-07 05:44:50,454 [INFO] URL: https://www.yelp.com/search?cflt=dentists&find_loc=Downtown%2C+Seattle%2C+WA
+2025-02-07 05:44:50,454 [INFO] Date: 
+2025-02-07 05:44:50,454 [INFO] Thumbnails:
+2025-02-07 05:44:50,454 [INFO] - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3vsgBMjQpn46PQXgM0PA2-sLvD4dfdYDRy-JG7iVQOlX9SbRA6sHqn0&s
+2025-02-07 05:44:50,454 [INFO] 
+--- Result 3 ---
+2025-02-07 05:44:50,454 [INFO] Title: DENTIST DOWNTOWN SEATTLE - Updated February 2025 - 20 ...
+2025-02-07 05:44:50,454 [INFO] Description: DENTIST DOWNTOWN SEATTLE, 2045 Westlake Ave, Seattle, WA 98121, 20 Photos, Mon - 8:00 am - 5:00 pm, Tue - 8:00 am - 5:00 pm, Wed - 8:00 am - 5:00 pm, ...
+2025-02-07 05:44:50,454 [INFO] URL: https://www.yelp.com/biz/dentist-downtown-seattle-seattle
+2025-02-07 05:44:50,454 [INFO] Date: 
+2025-02-07 05:44:50,454 [INFO] Thumbnails:
+2025-02-07 05:44:50,454 [INFO] - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3vsgBMjQpn46PQXgM0PA2-sLvD4dfdYDRy-JG7iVQOlX9SbRA6sHqn0&s
+2025-02-07 05:44:50,454 [INFO] 
+--- Result 4 ---
+2025-02-07 05:44:50,454 [INFO] Title: SEATTLE'S DOWNTOWN DENTIST - Updated February 2025 - 14 ...
+2025-02-07 05:44:50,454 [INFO] Description: SEATTLE'S DOWNTOWN DENTIST, 428 Westlake Ave N, Seattle, WA 98109, 4 Photos, Mon - Closed, Tue - 8:00 am - 5:00 pm, Wed - 8:00 am - 5:00 pm, ...
+2025-02-07 05:44:50,454 [INFO] URL: https://www.yelp.com/biz/seattles-downtown-dentist-seattle
+2025-02-07 05:44:50,454 [INFO] Date: 
+2025-02-07 05:44:50,454 [INFO] Thumbnails:
+2025-02-07 05:44:50,454 [INFO] - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3vsgBMjQpn46PQXgM0PA2-sLvD4dfdYDRy-JG7iVQOlX9SbRA6sHqn0&s
+2025-02-07 05:44:50,454 [INFO] 
+--- Result 5 ---
+2025-02-07 05:44:50,454 [INFO] Title: THE DOWNTOWN SEATTLE DENTIST - Updated February 2025 ...
+2025-02-07 05:44:50,454 [INFO] Description: THE DOWNTOWN SEATTLE DENTIST, 511 Boren Ave N, Seattle, WA 98109, 4 Photos, Mon - 8:00 am - 5:00 pm, Tue - 8:00 am - 5:00 pm, Wed - 8:00 am - 5:00 pm, ...
+2025-02-07 05:44:50,454 [INFO] URL: https://www.yelp.com/biz/the-downtown-seattle-dentist-seattle
+2025-02-07 05:44:50,454 [INFO] Date: 
+2025-02-07 05:44:50,454 [INFO] Thumbnails:
+2025-02-07 05:44:50,454 [INFO] - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3vsgBMjQpn46PQXgM0PA2-sLvD4dfdYDRy-JG7iVQOlX9SbRA6sHqn0&s
+2025-02-07 05:44:50,454 [INFO] 
+--- Result 6 ---
+2025-02-07 05:44:50,455 [INFO] Title: THE BEST 10 Dentists in SEATTLE, WA - Updated 2025 - Yelp
+2025-02-07 05:44:50,455 [INFO] Description: Best Dentists in Seattle, WA - Da Vinci Dental, Seattle SmileWorks, Urban Smiles Family Dentistry, Seattle Smiles Company, Roosevelt Dental Center, Floss, ...
+2025-02-07 05:44:50,455 [INFO] URL: https://www.yelp.com/search?cflt=dentists&find_loc=Seattle%2C+WA
+2025-02-07 05:44:50,455 [INFO] Date: 
+2025-02-07 05:44:50,455 [INFO] Thumbnails:
+2025-02-07 05:44:50,455 [INFO] - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3vsgBMjQpn46PQXgM0PA2-sLvD4dfdYDRy-JG7iVQOlX9SbRA6sHqn0&s
+2025-02-07 05:44:50,455 [INFO] 
+--- Result 7 ---
+2025-02-07 05:44:50,455 [INFO] Title: SEATTLE SOUND DENTAL - Updated February 2025 - 15 Photos ...
+2025-02-07 05:44:50,455 [INFO] Description: “Dr Tanner and his team are professional, courteous and caring and have always done an excellent job!” Mentioned in 21 reviews. Read more highlights. Tips - ...
+2025-02-07 05:44:50,455 [INFO] URL: https://www.yelp.com/biz/seattle-sound-dental-seattle-3
+2025-02-07 05:44:50,455 [INFO] Date: 
+2025-02-07 05:44:50,455 [INFO] Thumbnails:
+2025-02-07 05:44:50,455 [INFO] - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3vsgBMjQpn46PQXgM0PA2-sLvD4dfdYDRy-JG7iVQOlX9SbRA6sHqn0&s
+2025-02-07 05:44:50,455 [INFO] 
+--- Result 8 ---
+2025-02-07 05:44:50,455 [INFO] Title: KATHY A CURTIS, DDS - DOWNTOWN DENTISTRY - Updated ...
+2025-02-07 05:44:50,455 [INFO] Description: KATHY A CURTIS, DDS - DOWNTOWN DENTISTRY, 925 4th Ave, Ste 410, Seattle, WA 98104, Mon - 8:00 am - 5:00 pm, Tue - 8:00 am - 5:00 pm, Wed - 8:00 am - 5:00 pm ...
+2025-02-07 05:44:50,455 [INFO] URL: https://www.yelp.com/biz/kathy-a-curtis-dds-downtown-dentistry-seattle
+2025-02-07 05:44:50,455 [INFO] Date: 
+2025-02-07 05:44:50,455 [INFO] Thumbnails:
+2025-02-07 05:44:50,455 [INFO] - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3vsgBMjQpn46PQXgM0PA2-sLvD4dfdYDRy-JG7iVQOlX9SbRA6sHqn0&s
+2025-02-07 05:44:50,455 [INFO] 
+--- Result 9 ---
+2025-02-07 05:44:50,455 [INFO] Title: SEATTLE CORNERSTONE DENTAL - Updated February 2025 ...
+2025-02-07 05:44:50,455 [INFO] Description: I've never had dental work cause me as many problems as the crown I had put in at cornerstone. I've lots track of the number of times it's fallen out.
+2025-02-07 05:44:50,455 [INFO] URL: https://www.yelp.com/biz/seattle-cornerstone-dental-seattle-2
+2025-02-07 05:44:50,455 [INFO] Date: 
+2025-02-07 05:44:50,455 [INFO] Thumbnails:
+2025-02-07 05:44:50,455 [INFO] - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3vsgBMjQpn46PQXgM0PA2-sLvD4dfdYDRy-JG7iVQOlX9SbRA6sHqn0&s
+2025-02-07 05:44:50,455 [INFO] 
+--- Result 10 ---
+2025-02-07 05:44:50,455 [INFO] Title: GATEWAY DENTAL - Updated February 2025 - 12 Photos & 86 ...
+2025-02-07 05:44:50,455 [INFO] Description: Gateway Dental · Business Summary. Contemporary dental practice established in 1992, providing comprehensive dental care in downtown Seattle. · 999 3rd Ave. Plaza ...
+2025-02-07 05:44:50,455 [INFO] URL: https://www.yelp.com/biz/gateway-dental-seattle-2
+2025-02-07 05:44:50,456 [INFO] Date: 
+2025-02-07 05:44:50,456 [INFO] Thumbnails:
+2025-02-07 05:44:50,456 [INFO] - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3vsgBMjQpn46PQXgM0PA2-sLvD4dfdYDRy-JG7iVQOlX9SbRA6sHqn0&s
