@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+all_libs/__init__.py
+all_libs/file1.txt
+all_libs/file2.txt
+all_libs/file3.txt
+all_libs/file4.txt
+all_libs/file5.txt
+yagamiioit.egg-info/PKG-INFO
+yagamiioit.egg-info/SOURCES.txt
+yagamiioit.egg-info/dependency_links.txt
+yagamiioit.egg-info/top_level.txt
