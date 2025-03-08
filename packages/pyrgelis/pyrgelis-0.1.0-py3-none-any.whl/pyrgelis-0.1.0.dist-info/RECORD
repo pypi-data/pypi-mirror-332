@@ -1,0 +1,10 @@
+pyrgelis/__init__.py,sha256=0YjK_rEQFiz6q23KLhCvkMIhd_OgClQ95QAybRPv4r4,484
+pyrgelis/cli.py,sha256=GT1fZHxK3SLEIkpIeUdopnH6IEHBExppzEaTiLDXvE0,2852
+pyrgelis/game.py,sha256=k_nVqhuZ5RcDZut6w6dDdqy4PseiGoHmhQWNSmZBIV8,17872
+pyrgelis/rgeli.py,sha256=CF-mFxHIQ4RkfNgV1-peBp5igB-vUt-wCxTehVgRBlM,4805
+pyrgelis-0.1.0.dist-info/LICENSE,sha256=s5kLJjdAp9Iu4bquFKzVwC6sgYc_J9eou9NTOCAaPQ8,1075
+pyrgelis-0.1.0.dist-info/METADATA,sha256=_Xg5JiTXA8wJznKQPSyIUZRhXTrb6qHxJW4JrIClRNc,4571
+pyrgelis-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+pyrgelis-0.1.0.dist-info/entry_points.txt,sha256=nhtLZBzNjEScvLqp87ErmwKTf1fXp7PaAVWMT4kEHOw,47
+pyrgelis-0.1.0.dist-info/top_level.txt,sha256=BcYBnYH7SYmNfY4FZ43N4yaGtXv_q8j0vM-T0UE-wZo,9
+pyrgelis-0.1.0.dist-info/RECORD,,
