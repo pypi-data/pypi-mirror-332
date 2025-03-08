@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: Connector_bsb
+Version: 1.0.0
+Summary: টেলিগ্রাম বটের সাথে সংযোগ ও শেয়ার করার জন্য একটি উন্নতমানের প্যাকেজ
+Home-page: https://github.com/BlackSpammerBd/BOT-FLY
+Author: Shawpon Sp
+Author-email: shawponsp6@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-telegram-bot>=13.0
+
+# BOT-FLY
+Powerful 💪 Python Package Connect Your Device 📱 Telegram Bot Access Token ☠️
+# Connector_bsb
+
+Connector_bsb একটি উন্নতমানের পাইথন প্যাকেজ যা টেলিগ্রাম বটের সাথে সংযোগ এবং শেয়ার করার জন্য তৈরি। এতে রয়েছে:
+
+- ব্যাপক লগিং (স্ট্রিম ও ফাইল ভিত্তিক)
+- উন্নত ত্রুটি হ্যান্ডেলিং
+- নিরাপদ ও ব্যবহারকারী-বান্ধব CLI
+- ইউনিট টেস্ট সমর্থন
+
+## ইনস্টলেশন
+
+```bash
+pip install Connector_bsb
