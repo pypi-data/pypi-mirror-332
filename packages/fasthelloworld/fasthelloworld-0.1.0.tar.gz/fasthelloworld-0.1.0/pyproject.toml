@@ -1,0 +1,18 @@
+[project]
+name = "fasthelloworld"
+version = "0.1.0"
+description = "My First OpenSource Python Pkg For Testing Only"
+authors = [
+    {name = "dahuzi",email = "dahuzihaidao@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard] (>=0.115.11,<0.116.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

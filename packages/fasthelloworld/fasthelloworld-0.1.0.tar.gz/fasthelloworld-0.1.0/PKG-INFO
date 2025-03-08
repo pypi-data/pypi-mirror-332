@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: fasthelloworld
+Version: 0.1.0
+Summary: My First OpenSource Python Pkg For Testing Only
+License: MIT
+Author: dahuzi
+Author-email: dahuzihaidao@gmail.com
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fastapi[standard] (>=0.115.11,<0.116.0)
+Description-Content-Type: text/markdown
+
+poetry init
+poetry add fastapi[standard]
+poetry config pypi-token.pypi pypi-AgENdGVzdC 
+poetry publish --build
+ 
+
+
