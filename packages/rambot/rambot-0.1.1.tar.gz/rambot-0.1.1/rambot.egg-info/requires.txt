@@ -1,0 +1,6 @@
+botasaurus
+sqlalchemy
+loguru
+pydantic-settings
+pydantic
+wheel
