@@ -1,0 +1,89 @@
+{
+    "device_automation": {
+        "action_type": {
+            "toggle": "Preklopi {entity_name}",
+            "turn_off": "Izklopi {entity_name}",
+            "turn_on": "Vklopi {entity_name}"
+        },
+        "condition_type": {
+            "is_off": "{entity_name} je izklopljen",
+            "is_on": "{entity_name} je vklopljen"
+        },
+        "trigger_type": {
+            "changed_states": "{entity_name} je bil vklopljen ali izklopljen",
+            "turned_off": "{entity_name} je bil izklopljen",
+            "turned_on": "{entity_name} je bil vklopljen"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "name": "Daljinec",
+            "state": {
+                "off": "Izklopljeno",
+                "on": "Vklopljeno"
+            }
+        }
+    },
+    "services": {
+        "delete_command": {
+            "fields": {
+                "command": {
+                    "name": "Ukaz"
+                },
+                "device": {
+                    "name": "Naprava"
+                }
+            },
+            "name": "Izbri\u0161i ukaz"
+        },
+        "learn_command": {
+            "fields": {
+                "command": {
+                    "name": "Ukaz"
+                },
+                "command_type": {
+                    "name": "Vrsta ukaza"
+                },
+                "device": {
+                    "name": "Naprava"
+                }
+            },
+            "name": "Nau\u010di se ukaz"
+        },
+        "send_command": {
+            "fields": {
+                "command": {
+                    "name": "Ukaz"
+                },
+                "delay_secs": {
+                    "name": "Zamik v sekundah"
+                },
+                "device": {
+                    "name": "Naprava"
+                },
+                "num_repeats": {
+                    "name": "Ponovitve"
+                }
+            },
+            "name": "Po\u0161lji ukaz"
+        },
+        "toggle": {
+            "description": "Po\u0161lje ukaz za preklop",
+            "name": "Preklopi"
+        },
+        "turn_off": {
+            "description": "Po\u0161lje ukaz za izklop",
+            "name": "Izklopi"
+        },
+        "turn_on": {
+            "description": "Po\u0161lje ukaz za vklop",
+            "fields": {
+                "activity": {
+                    "name": "Aktivnost"
+                }
+            },
+            "name": "Vklopi"
+        }
+    },
+    "title": "Daljinec"
+}

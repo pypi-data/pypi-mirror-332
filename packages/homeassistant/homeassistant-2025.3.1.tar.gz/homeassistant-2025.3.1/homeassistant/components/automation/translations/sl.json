@@ -1,0 +1,46 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "Izklopljeno",
+                "on": "Vklopljeno"
+            },
+            "state_attributes": {
+                "current": {
+                    "name": "Avtomatizacije v teku"
+                },
+                "max": {
+                    "name": "Najve\u010dje \u0161tevilo zagnanih avtomatizacij"
+                },
+                "mode": {
+                    "name": "Na\u010din delovanja"
+                }
+            }
+        }
+    },
+    "services": {
+        "reload": {
+            "name": "Ponovno nalo\u017ei"
+        },
+        "toggle": {
+            "name": "Preklopi"
+        },
+        "trigger": {
+            "description": "Spro\u017ei akcije avtomatizacije.",
+            "fields": {
+                "skip_condition": {
+                    "description": "Dolo\u010da, ali bodo pogoji presko\u010deni ali ne.",
+                    "name": "Presko\u010di pogoje"
+                }
+            },
+            "name": "Spro\u017eilec"
+        },
+        "turn_off": {
+            "name": "Izklopi"
+        },
+        "turn_on": {
+            "name": "Vklopi"
+        }
+    },
+    "title": "Avtomatizacija"
+}
