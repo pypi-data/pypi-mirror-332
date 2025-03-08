@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: llm-utility-pack
+Version: 1.2
+Author: Carlo Moro
+Author-email: Carlo Moro <cnmoro@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cloudpickle
+Requires-Dist: pytz
+Requires-Dist: ollama
+Requires-Dist: requests
+Requires-Dist: aiohttp
+Requires-Dist: asyncio
+Requires-Dist: lmdb
+Requires-Dist: markdown
+Requires-Dist: fasttext
+Requires-Dist: deskew
+Requires-Dist: semantic-compressor
+Requires-Dist: PyMuPDF
+Requires-Dist: pytesseract
+Requires-Dist: opencv-python-headless
+Requires-Dist: scikit-image
+Requires-Dist: Pillow
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: faiss-cpu
+Requires-Dist: numpy
+Requires-Dist: thefuzz[speedup]
+Requires-Dist: strive-ranker
+Requires-Dist: shortuuid
+Requires-Dist: prophet
+Requires-Dist: prince
+Requires-Dist: scipy
+Requires-Dist: onnxruntime
+Requires-Dist: tokenizers
+Requires-Dist: tqdm
+Requires-Dist: chonkie==0.5.1
+Requires-Dist: pymongo
+
+Repositório com decorators e funções úteis
+
