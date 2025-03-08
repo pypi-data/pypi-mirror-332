@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: avachain
+Version: 0.0.1
+Summary: A very light weight library to create and run agent with tools, with any LLM supported openai spec, Claude, Mistral.
+Author: Pranshu Ranjan
+Author-email: pranshuranjan@pathor.in
+Maintainer: Salo Soja Edwin
+Maintainer-email: salosoja@pathor.in
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+Requires-Dist: mistralai==0.4.2
+Requires-Dist: anthropic
+Requires-Dist: semantic-text-splitter
+Requires-Dist: tokenizers
+Requires-Dist: openai
+Requires-Dist: print_color
+
+A longer description, possibly with usage examples
