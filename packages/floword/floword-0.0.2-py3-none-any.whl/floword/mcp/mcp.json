@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "toolbox": {
+      "args": [
+        "mcp-toolbox@latest",
+        "stdio"
+      ],
+      "command": "uvx",
+      "env": {
+        "FIGMA_API_KEY": ""
+      }
+    }
+  }
+}
