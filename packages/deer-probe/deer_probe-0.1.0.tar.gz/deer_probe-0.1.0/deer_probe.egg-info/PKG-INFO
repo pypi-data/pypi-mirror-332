@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: deer-probe
+Version: 0.1.0
+Summary: DEER is an encoder-based knowledge graph completion (KGC) model that uses embedding vectors from generative language models for few-shot learning. It retains in-context learning while ensuring efficient large-scale inference without fine-tuning. DEER excels at predicting new relation types in small KGs and aligns with LAMA for knowledge probing, making it a scalable tool for evaluating factual knowledge in PLMs.
+Author-email: tj-coding <jinno.tomoyuki.jx3@naist.ac.uk>
+License: MIT
+Project-URL: Homepage, https://github.com/TJ-coding/deer
+Project-URL: Repository, https://github.com/TJ-coding/deer
+Project-URL: Issues, https://github.com/TJ-coding/deer/issues
+Requires-Python: >=3.8
+Requires-Dist: beartype
+Requires-Dist: typer
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: transformers
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"

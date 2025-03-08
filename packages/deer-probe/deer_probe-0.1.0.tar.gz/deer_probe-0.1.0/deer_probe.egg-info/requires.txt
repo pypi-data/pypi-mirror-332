@@ -1,0 +1,10 @@
+beartype
+typer
+tqdm
+torch
+transformers
+
+[dev]
+pytest
+black
+flake8
