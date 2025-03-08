@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* Fix introspect url and bearer auth header
