@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: codesecdirectmpl2
+Version: 0.2.0
+Summary: A sample Python package
+Author-email: Your Name <you@example.com>
+License: MPL-2.0
+Project-URL: Homepage, https://github.com/james-0131-2/pycodesecdirectmpl2
+Project-URL: Repository, https://github.com/james-0131-2/pycodesecdirectmpl2
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# pypack1
+it is only test purpose
