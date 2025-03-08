@@ -1,0 +1,34 @@
+TODO
+
+## Refactoring of redirections is needed
+
+bug #34: redirections are not kept while offline
+https://todo.sr.ht/~lioploum/offpunk/34
+bug #41:  Redirects should be handled in netcache, not offpunk 
+https://todo.sr.ht/~lioploum/offpunk/41
+
+## Refactoring of errors is needed
+
+bug #30:  Netcache: gemini status 4 and 5 should not emit a full traceback 
+https://todo.sr.ht/~lioploum/offpunk/30
+bug #3: Error pages are stored in the cache  
+https://todo.sr.ht/~lioploum/offpunk/3
+
+
+## Cache Triming
+
+We need work on a model that keep the cache within certain limit by removing older, inaccessed elements which are not linked to anything in lists.
+
+## HTML rendering
+
+Better rendering of tables using ASCII tables
+
+
+## Misc:
+
+bug #42: IDN handling 
+https://todo.sr.ht/~lioploum/offpunk/42
+
+
+
+
