@@ -1,0 +1,33 @@
+[project]
+name = "sei-json-rpc"
+version = "0.1.2"
+description = ""
+authors = [
+    { name = "ever", email = "everettr1024@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.13,<4"
+dependencies = [
+    "httpx (>=0.28.1,<0.29.0)",
+    "pytest (>=8.3.4,<9.0.0)",
+    "pytest-asyncio (>=0.25.3,<0.26.0)",
+    "web3 (>=7.8.0,<8.0.0)",
+    "tenacity (>=9.0.0,<10.0.0)",
+    "deepdiff (>=8.2.0,<9.0.0)",
+    "loguru (>=0.7.3,<0.8.0)",
+    "pyyaml (>=6.0.2,<7.0.0)",
+    "py-solc-x (>=2.0.3,<3.0.0)",
+    "types-pyyaml (>=6.0.12.20241230,<7.0.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+packages = [
+    { include = "sei_json_rpc" }
+]
+exclude = ["config/**", "docs/**", "logs/**", "client/**"]
