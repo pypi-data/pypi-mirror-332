@@ -1,0 +1,9 @@
+simvue_connector/__init__.py,sha256=5HPiWrTb6d0T4ibL80tjH_kG6tfh9Xej5DQzyrMkkJE,198
+simvue_connector/connector.py,sha256=Ez94h-K5vD7UoTkTcGDWe0GnYVkDJxKp_JWRqQkbfyA,5638
+simvue_connector/extras/__init__.py,sha256=yEK5vnlluMFG5w-h-YwRw6z26I5sdJC4JEvYkphqaeA,82
+simvue_connector/extras/common.py,sha256=NKpsV2IIjGbFVsHtrGB65l-tDRnd04rd_RvVd-w4W50,678
+simvue_connector/extras/create_command.py,sha256=JER193l8nO_4dvsjMMPBfmiLP6YRXOnTTWX9jvTwXZI,1765
+simvue_connector-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+simvue_connector-1.0.0.dist-info/METADATA,sha256=ke2XosMJlIncVR0yoKkwnVAGY6SUKGN2dSpbVdOLR8E,8244
+simvue_connector-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+simvue_connector-1.0.0.dist-info/RECORD,,
