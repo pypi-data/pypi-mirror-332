@@ -1,0 +1,11 @@
+requests
+python-dotenv
+
+[dev]
+bumpver>=2023.1129
+pytest>8.3.3
+
+[streamlit]
+streamlit
+plotly
+pandas
