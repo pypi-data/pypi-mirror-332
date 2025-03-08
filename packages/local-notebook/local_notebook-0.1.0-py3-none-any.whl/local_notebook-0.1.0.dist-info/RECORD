@@ -1,0 +1,17 @@
+local_notebooklm/__init__.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+local_notebooklm/config.py,sha256=aq9E_F24VG8owu-VHl91HgNKAIJN41ZBdtBIYA3fxIM,854
+local_notebooklm/processor.py,sha256=HAmHx91yBq5-sEIyODN5Fm4E4b9t9EM6u8sXgldrRAQ,4726
+local_notebooklm/server.py,sha256=J8Ewz-0qrZs9-BP6n6eBCA7tfQO8SdYpap134jkAiLg,9388
+local_notebooklm/start.py,sha256=QhdFtqV91DLO1FTbUyAMydqPip6JKiZenee9uVUTv8Q,1985
+local_notebooklm/version.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+local_notebooklm/steps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+local_notebooklm/steps/helpers.py,sha256=jL0Tk_4v-IOkmcdghJzPFU0G3DUQUqwE84DP38WkGsc,3239
+local_notebooklm/steps/prompts.py,sha256=Fq0dqzdJGTdltHouPeECoUnlEHvJsE461RkM2AzWtN0,12923
+local_notebooklm/steps/step1.py,sha256=qApz9cQGmib6ROQWfBeUtrJvHwkElz3pwZTXLkDBYGw,6300
+local_notebooklm/steps/step2.py,sha256=6eeRHp2RBHluLBkTOYWYVyotXw6MhIBDOj8WRcbZspk,3678
+local_notebooklm/steps/step3.py,sha256=H3kJrzwE3Wxihr17XDwIdmEuaD-sQezC72kPO8lVr2M,3908
+local_notebooklm/steps/step4.py,sha256=5h2fOFlR4MkEPZw8zvqLNwRZZ83UgQJBaHU8HQCtqio,4235
+local_notebook-0.1.0.dist-info/METADATA,sha256=HU4vEgT1zwoLTaQL1cqyj7-7Dm7Sf5jDsxomAq8nnkw,10296
+local_notebook-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+local_notebook-0.1.0.dist-info/top_level.txt,sha256=p25eFNSvNWIr5b6oLdkXS8wankKUR97KO7wiFZr6e74,17
+local_notebook-0.1.0.dist-info/RECORD,,
