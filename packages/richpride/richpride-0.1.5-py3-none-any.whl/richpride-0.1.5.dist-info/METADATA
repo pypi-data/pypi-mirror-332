@@ -1,0 +1,135 @@
+Metadata-Version: 2.2
+Name: richpride
+Version: 0.1.5
+Summary: A collection of pride flag emojis for use with the Rich library.
+Author-email: SafeyX3 <bytesarecool@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 SafeyX3
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/pypa/richpride
+Project-URL: Issues, https://github.com/pypa/richpride/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich>=10.0
+
+# richpride
+
+A collection of pride flag emojis for use with the Rich library.
+
+## Installation
+
+To install the `richpride` package, use pip:
+
+```bash
+pip install richpride
+```
+
+## Usage
+
+To use the `richpride` package, simply import the module into your code, and all available flags will work.
+
+Here’s an example of how to use the flags:
+
+```python
+import richpride
+from rich import print
+
+# Print the trans flag in block form
+print(":trans_flag_block:")
+
+# Print the pride flag in block form
+print(":pride_flag_block:")
+
+# You can use other flags in the same way!
+# Example: :nonbinary_flag_block:, :genderfluid_flag_block:, etc.
+```
+
+To list all currently available flags, use the `list_flags()` function:
+
+```python
+import richpride
+
+# List all available flags
+richpride.list_flags()
+# For trans_flag_ascii, it will be printed as :trans_flag_ascii:
+```
+
+To list all currently available flags in emoji form, use the `list_emojis()` function:
+
+```python
+import richpride
+
+# List all available flags as emojis
+richpride.list_emojis()
+# For trans_flag_ascii, it will be printed as [💙💗🤍💗💙]
+```
+
+### Flags Available:
+
+-   `:trans_flag:`
+-   `:trans_flag_alt:`
+-   `:trans_flag_ascii:`
+-   `:trans_flag_ascii_alt:`
+-   `:trans_flag_block:`
+-   `:trans_flag_block_alt:`
+-   `:pride_flag:`
+-   `:pride_flag_alt:`
+-   `:pride_flag_ascii:`
+-   `:pride_flag_ascii_alt:`
+-   `:pride_flag_block:`
+-   `:pride_flag_block_alt:`
+-   `:nonbinary_flag_ascii:`
+-   `:nonbinary_flag_ascii_alt:`
+-   `:nonbinary_flag_block:`
+-   `:nonbinary_flag_block_alt:`
+-   `:genderfluid_flag_ascii:`
+-   `:genderfluid_flag_ascii_alt:`
+-   `:genderfluid_flag_block:`
+-   `:genderfluid_flag_block_alt:`
+-   `:pansexual_flag_ascii:`
+-   `:pansexual_flag_ascii_alt:`
+-   `:pansexual_flag_block:`
+-   `:pansexual_flag_block_alt:`
+-   `:asexual_flag_ascii:`
+-   `:asexual_flag_ascii_alt:`
+-   `:asexual_flag_block:`
+-   `:asexual_flag_block_alt:`
+-   `:bisexual_flag_ascii:`
+-   `:bisexual_flag_ascii_alt:`
+-   `:bisexual_flag_block:`
+-   `:bisexual_flag_block_alt:`
+-   `:lesbian_flag_ascii:`
+-   `:lesbian_flag_ascii_alt:`
+-   `:lesbian_flag_block:`
+-   `:lesbian_flag_block_alt:`
+-   `:agender_flag_ascii:`
+-   `:agender_flag_ascii_alt:`
+-   `:agender_flag_block:`
+-   `:agender_flag_block_alt:`
+-   `:genderqueer_flag_ascii:`
+-   `:genderqueer_flag_ascii_alt:`
+-   `:genderqueer_flag_block:`
+-   `:genderqueer_flag_block_alt:`
