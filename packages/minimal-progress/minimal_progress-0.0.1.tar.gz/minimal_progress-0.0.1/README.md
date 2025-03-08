@@ -1,0 +1,24 @@
+# Minimal Progress
+
+A console progress UI library for python.
+
+Visually presenting how long something is taking to the user is better than leaving them in the dark.
+
+# Usage
+
+The interface is very simple. You just make a Progress object and call update() and pass it a percentage value.
+
+```py
+from minimal import Progress
+import time
+
+# Program Main
+processed = 0
+total = 50
+
+pg = Progress()
+while processed != total:
+    processed += 1
+    pg.update(processed / total)
+    time.sleep(.1)
+```
