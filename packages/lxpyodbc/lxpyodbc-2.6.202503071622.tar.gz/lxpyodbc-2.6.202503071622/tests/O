@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.3.4, pluggy-1.5.0
+rootdir: /home/forsyth/lx/git1/pyodbc
+configfile: pyproject.toml
+collected 38 items
+
+lx_test.py ......................................                        [100%]
+
+============================== 38 passed in 2.67s ==============================

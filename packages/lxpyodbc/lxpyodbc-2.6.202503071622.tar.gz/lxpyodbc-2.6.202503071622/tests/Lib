@@ -1,0 +1,1 @@
+fn t {pytest --color^'=no' lx_test.py}
