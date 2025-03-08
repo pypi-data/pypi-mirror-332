@@ -1,0 +1,13 @@
+encrustable/__init__.py,sha256=1ep259ZZsXZOEe6IbxxXh3IxwSvywv--3VGThT5kyEs,1005
+encrustable/examples/__init__.py,sha256=FeJ1br00obOJNTiDj4EM4Dw1UP_GdwBDBc1HUElrcgs,764
+encrustable/examples/option.py,sha256=u9wLGPn_sV8perCFn5EtKqj_7BycQKLqSqKhwqR2M3o,2716
+encrustable/examples/panic.py,sha256=8mXwfDXh95wN0o2neXXp_q--_NlRqoA6I2VxAVbVRvQ,1805
+encrustable/examples/result.py,sha256=fQTpe2shWgItnJ55GAMvJGVucw5eAhQnw_68A6bkeig,3339
+encrustable/option.py,sha256=Fmwt6SVxeNy3tOz8kzmMt1AQKmx9ufF8KQNr_84n5ME,10885
+encrustable/panic.py,sha256=_VUVO9TshIuB9wFUddPuhTJWooNBc_-_5xC32JErKX8,1325
+encrustable/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+encrustable/result.py,sha256=jcLu1Rbw464YbvmyYOL_zEDFMVe39lR1Is3bcPpszmg,10479
+encrustable-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+encrustable-0.1.0.dist-info/METADATA,sha256=aP8eGsCqqQRZtwmLNw9iJTyyOKgvOM6rYjJl-mkGfsk,8925
+encrustable-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+encrustable-0.1.0.dist-info/RECORD,,
