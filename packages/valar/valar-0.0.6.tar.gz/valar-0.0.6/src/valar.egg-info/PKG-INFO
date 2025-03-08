@@ -1,0 +1,35 @@
+Metadata-Version: 2.2
+Name: valar
+Version: 0.0.6
+Summary: valar for morghulis
+Author: LYP
+Author-email: liuyinpeng@buaa.edu.cn
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: channels==3.0.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+valar for morghulis
+
+# prepare
+```
+python -m pip install --upgrade pip
+pip install --upgrade build
+pip install twine
+```
+
+# publish
+```
+rm -r dist
+python -m build
+twine check dist/*
+twine upload dist/*
+```
+
