@@ -1,0 +1,178 @@
+Metadata-Version: 2.1
+Name: evrmore-rpc
+Version: 3.3.0
+Summary: A high-performance Python wrapper for Evrmore blockchain RPC commands with a seamless API
+Home-page: https://manticore.technology
+Author: Manticore Technologies
+Author-email: dev@manticore.technology
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/manticoretechnologies/evrmore-rpc/issues
+Project-URL: Source, https://github.com/manticoretechnologies/evrmore-rpc
+Project-URL: Documentation, https://manticoretechnologies.github.io/evrmore-rpc/
+Keywords: evrmore blockchain cryptocurrency rpc json-rpc async seamless-api
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: requests>=2.28.0
+Requires-Dist: rich>=12.0.0
+Provides-Extra: dev
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.18.0; extra == "dev"
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+
+# Evrmore RPC Client
+
+[![PyPI version](https://img.shields.io/pypi/v/evrmore-rpc.svg)](https://pypi.org/project/evrmore-rpc/)
+[![Python versions](https://img.shields.io/pypi/pyversions/evrmore-rpc.svg)](https://pypi.org/project/evrmore-rpc/)
+[![License](https://img.shields.io/github/license/manticoretechnologies/evrmore-rpc.svg)](https://github.com/manticoretechnologies/evrmore-rpc/blob/main/LICENSE)
+[![Tests](https://github.com/manticoretechnologies/evrmore-rpc/workflows/Python%20Package/badge.svg)](https://github.com/manticoretechnologies/evrmore-rpc/actions)
+
+A Python client for interacting with the Evrmore blockchain via RPC, featuring a seamless API that works in both synchronous and asynchronous contexts.
+
+## Key Features
+
+- **Seamless API**: Use the same API in both synchronous and asynchronous code
+- **Automatic Context Detection**: Client automatically adapts to sync or async usage
+- **Comprehensive Type Hints**: Better IDE integration and code completion
+- **Support for All Evrmore RPC Commands**: Complete coverage of the Evrmore API
+- **ZMQ Support**: Real-time blockchain notifications via ZMQ
+- **Resource Management**: Proper cleanup without requiring context managers
+- **High Performance**: Optimized for speed and efficiency
+
+## Installation
+
+```bash
+pip3 install evrmore-rpc
+```
+
+## Basic Usage
+
+```python
+from evrmore_rpc import EvrmoreClient
+
+# Create a client
+client = EvrmoreClient()
+
+# Use synchronously
+info = client.getblockchaininfo()
+print(f"Chain: {info['chain']}, Blocks: {info['blocks']}")
+
+# Use asynchronously
+import asyncio
+
+async def main():
+    info = await client.getblockchaininfo()
+    print(f"Chain: {info['chain']}, Blocks: {info['blocks']}")
+    
+    # Clean up when done
+    await client.close()
+
+asyncio.run(main())
+```
+
+## Running Examples
+
+The repository includes several examples demonstrating different aspects of the library. You can run them using the `run_examples.py` script:
+
+```bash
+# List available examples
+python3 scripts/run_examples.py --list
+
+# Run a basic example
+python3 scripts/run_examples.py super_simple.py
+
+# Run an advanced example
+python3 scripts/run_examples.py asset_monitor/monitor.py
+```
+
+### Basic Examples
+
+- `super_simple.py`: The simplest example showing the core functionality of the seamless API.
+- `seamless_api.py`: A more comprehensive example demonstrating the seamless API in various scenarios.
+- `simple_auto_detect.py`: Shows how the client automatically detects whether it's being used in a synchronous or asynchronous context.
+
+### Advanced Examples
+
+- `asset_monitor/monitor.py`: Real-time monitoring of asset creation and transfers.
+- `blockchain_explorer/explorer.py`: Simple blockchain explorer implementation.
+- `network_monitor/monitor.py`: Monitor network health and peer connections.
+- `wallet_tracker/tracker.py`: Track wallet balances and transactions.
+- `asset_swap/simple_swap.py`: Simple asset swap platform.
+
+## Configuration
+
+The client can be configured in several ways:
+
+```python
+# Using constructor parameters
+client = EvrmoreClient(
+    rpcuser="your_username",
+    rpcpassword="your_password",
+    rpchost="localhost",
+    rpcport=8819,
+)
+
+# Using environment variables
+# EVRMORE_RPC_USER, EVRMORE_RPC_PASSWORD, EVRMORE_RPC_HOST, EVRMORE_RPC_PORT
+
+# Using evrmore.conf
+# The client will automatically look for evrmore.conf in the default location
+```
+
+## ZMQ Support
+
+The library includes support for ZMQ notifications from the Evrmore node:
+
+```python
+from evrmore_rpc.zmq import EvrmoreZMQClient, ZMQTopic
+
+# Create a ZMQ client
+zmq_client = EvrmoreZMQClient()
+
+# Register handlers for different topics
+@zmq_client.on(ZMQTopic.HASH_BLOCK)
+async def handle_block(notification):
+    print(f"New block: {notification.hex}")
+
+@zmq_client.on(ZMQTopic.HASH_TX)
+async def handle_transaction(notification):
+    print(f"New transaction: {notification.hex}")
+
+# Start the client
+await zmq_client.start()
+
+# Stop the client when done
+await zmq_client.stop()
+```
+
+## Documentation
+
+Full documentation is available at [https://manticoretechnologies.github.io/evrmore-rpc/](https://manticoretechnologies.github.io/evrmore-rpc/).
+
+## Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a list of changes in each release.
+
