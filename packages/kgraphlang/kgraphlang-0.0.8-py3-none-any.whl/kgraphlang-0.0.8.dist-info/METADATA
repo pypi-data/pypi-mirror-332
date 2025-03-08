@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: kgraphlang
+Version: 0.0.8
+Summary: KGraph Lang
+Home-page: https://github.com/vital-ai/kgraphinfer
+Author: Marc Hadfield
+Author-email: marc@vital.ai
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SPARQLWrapper
+Requires-Dist: isodate
+Requires-Dist: numpy
+Requires-Dist: hnswlib
+Requires-Dist: lark>=1.2.2
+Requires-Dist: vital-ai-vitalsigns>=0.1.27
+Requires-Dist: vital-ai-domain>=0.1.7
+Requires-Dist: vital-logic>=0.1.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# kgraphinfer
