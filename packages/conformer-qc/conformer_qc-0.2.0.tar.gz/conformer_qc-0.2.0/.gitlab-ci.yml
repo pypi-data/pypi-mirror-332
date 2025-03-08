@@ -1,0 +1,38 @@
+##
+## Copyright 2018-2025 Fragment Contributors
+## SPDX-License-Identifier: Apache-2.0
+##
+image: condaforge/miniforge3
+
+before_script:
+  # Ray is incompatible with Python 3.12
+  - mamba create -y --name deploy "python >= 3.10, < 3.13" xtb-python uv
+  - mamba run -n deploy uv pip install .[test,docs]
+  - mamba run -n deploy pip freeze
+
+unit-tests:
+  stage: test
+  script:
+    - mamba run -n deploy pytest --junitxml test_report.xml .
+    - mamba run -n deploy ruff check .
+    - mamba run -n deploy python deploy/check_license.py
+  rules:
+    - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+  artifacts:
+    when: always
+    paths:
+      - test_report.xml
+    reports:
+      junit: test_report.xml
+
+pages:
+  stage: deploy
+  script:
+    - mamba run -n deploy sphinx-build -b html docs public
+  artifacts:
+    paths:
+      - public
+  rules:
+    # This rule makes it so that your website is published and updated only when
+    # you push to the default branch of your repository (e.g. "master" or "main").
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
