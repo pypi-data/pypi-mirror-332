@@ -1,0 +1,10 @@
+README.md
+setup.py
+droidsentinel/__init__.py
+droidsentinel/main.py
+droidsentinel.egg-info/PKG-INFO
+droidsentinel.egg-info/SOURCES.txt
+droidsentinel.egg-info/dependency_links.txt
+droidsentinel.egg-info/entry_points.txt
+droidsentinel.egg-info/requires.txt
+droidsentinel.egg-info/top_level.txt
