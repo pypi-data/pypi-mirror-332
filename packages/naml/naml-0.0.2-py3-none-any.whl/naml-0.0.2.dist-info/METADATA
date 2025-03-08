@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: naml
+Version: 0.0.2
+Summary: Not Another Machine Learning library (better name pending)
+Home-page: https://github.com/mos9527/naml
+Author: mos9527
+Author-email: greats3an@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib==3.10.1
+Requires-Dist: numpy==2.2.3
+Requires-Dist: scipy==1.15.2
+Requires-Dist: sympy==1.13.1
+Requires-Dist: torch==2.6.0
+Requires-Dist: torchaudio==2.6.0
+Requires-Dist: torchvision==0.21.0
+Requires-Dist: tqdm
+
+Not Another Machine Learning library
+---
+Graphing and visualization tools for PyTorch (Hence the name!)
+
+# Installation
+```bash
+pip install naml
+```
+
+# References
+- https://zh-v2.d2l.ai/
