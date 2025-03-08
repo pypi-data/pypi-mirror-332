@@ -1,0 +1,3 @@
+[console_scripts]
+letmedoit = letmedoit.main:main
+lmdi = letmedoit.main:main
