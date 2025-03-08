@@ -1,0 +1,352 @@
+Metadata-Version: 2.1
+Name: sensorylab-smeller
+Version: 0.1.6
+Summary: Python library for Neuroair device control
+Home-page: http://10.10.0.20:3000/SensoryLAB/smeller
+Author: SensoryLAB
+Author-email: fox@sensorylab.ru
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: future>=1.0.0
+Requires-Dist: iso8601>=2.1.0
+Requires-Dist: pybluez2>=0.46
+Requires-Dist: pyserial>=3.5
+Requires-Dist: PyYAML>=6.0.2
+Provides-Extra: gui
+Requires-Dist: PyQt6; extra == "gui"
+Requires-Dist: PyQtGraph; extra == "gui"
+
+# Smeller: Python Library for Neuroair Device Control
+
+[![PyPI version](https://badge.fury.io/py/smeller.svg)](https://badge.fury.io/py/smeller)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Documentation Status](https://readthedocs.org/projects/smeller-python-lib/badge/?version=latest)](https://smeller-python-lib.readthedocs.io/en/latest/?badge=latest)
+[![Tests](https://github.com/yourusername/smeller-python-lib/actions/workflows/test.yml/badge.svg)](https://github.com/yourusername/smeller-python-lib/actions/workflows/test.yml)
+
+## Описание
+
+`Smeller` – это Python библиотека, разработанная для **управления устройствами Neuroair**. Она предоставляет полный набор инструментов для **взаимодействия с устройством через последовательный порт (Serial) или Bluetooth, позволяя разработчикам интегрировать управление Neuroair в свои приложения.**
+
+**Основные возможности:**
+
+* **Управление каналами:**  Настройка параметров каналов, включение/выключение, активация/деактивация.
+* **Арома контроль:** Управление ароматическими каналами, настройка параметров, включение/выключение, активация/деактивация.
+* **Управление генератором:** Контроль мощности и логики работы генератора.
+* **Разнообразные команды:** Поддержка широкого спектра команд для настройки и управления различными функциями устройства, включая watchdog, Bluetooth имя, режимы работы (MOD), вентилятор, и многое другое.
+* **Гибкость подключения:** Поддержка подключения через Serial порт и Bluetooth для **управления устройством**.
+* **Асинхронная архитектура:**  Использование асинхронности для обеспечения неблокирующей работы и отзывчивости вашего приложения, особенно при работе с GUI.
+* **Событийно-ориентированная модель:**  Основана на событиях для удобного взаимодействия между компонентами вашего приложения и библиотекой `smeller`.
+* **Надежная обработка ошибок:**  Комплексная система обработки ошибок и исключений для стабильной работы и информативных сообщений об ошибках.
+* **Чистый и тестируемый код:**  Разработана в соответствии с лучшими практиками Python, с акцентом на читаемость, модульность и тестируемость.
+* **Логирование:** Встроенная система логирования для отслеживания работы библиотеки и облегчения отладки.
+
+**Технологический стек:**
+
+* **Python 3.10+:**
+* **PySerial:** Обеспечивает надежное и эффективное взаимодействие с устройством через последовательный порт.
+* **Bluetooth (bluetooth/pybluez):**  (Опционально) Для беспроводного подключения (если поддерживается устройством).
+* **threading и asyncio:** Используются для многопоточности и асинхронных операций, обеспечивая неблокирующий интерфейс.
+* **logging:** Встроенная система логирования для отслеживания работы библиотеки.
+
+## Установка
+
+Для установки библиотеки `smeller` используйте `pip`:
+
+```bash
+pip install sensorylab-smeller
+```
+**Предварительные требования:**
+
+* **Python 3.10 или выше:** Убедитесь, что у вас установлена подходящая версия Python.
+* **PySerial:**  Устанавливается автоматически как зависимость.
+
+## Интеграция в ваше приложение
+
+### 1. Импорт необходимых модулей
+
+В вашем Python скрипте импортируйте классы из библиотеки `smeller`:
+
+```bash
+from smeller.config import DeviceConfig
+from smeller.controllers.device_controller import DeviceController
+from smeller.communication.factory import create_communication
+from smeller.utils.events import EventHandler
+import asyncio
+import logging
+```
+### 2. Настройка логирования (рекомендуется)
+
+Настройте логирование для отслеживания работы библиотеки и отладки:
+```bash
+logging.basicConfig(level=logging.DEBUG) # Или logging.INFO для менее подробного вывода
+```
+### 3. Инициализация компонентов
+
+Создайте экземпляры `DeviceConfig`, `EventHandler`, и `DeviceController`:
+```bash
+config = DeviceConfig() # Можно настроить параметры в DeviceConfig, если необходимо
+event_handler = EventHandler()
+communication = create_communication(config, 'serial') # Или 'bluetooth' для Bluetooth подключения
+controller = DeviceController(communication, config, event_handler)
+```
+
+
+### 4. Подключение к устройству
+
+
+### Перечисление доступных COM-port устройств
+Вы можете использовать `COMPortManager` из библиотеки `smeller` для получения списка доступных Serial портов.
+
+```bash
+from smeller.utils.manager import COMPortManager
+
+def list_serial_ports():
+    port_manager = COMPortManager()
+    available_ports = port_manager.get_com_ports()
+    if available_ports:
+        print("Доступные Serial порты:")
+        for port_info in available_ports:
+            print(f"  - Порт: {port_info.device}, Описание: {port_info.description}, HWID: {port_info.hwid}")
+    else:
+        print("Serial порты не найдены.")
+
+# ... в вашем asyncio main() или в отдельной функции ...
+list_serial_ports()
+```
+
+**Bluetooth подключение (если поддерживается устройством):**
+
+Для Bluetooth подключения библиотека `smeller` предоставляет возможность поиска и перечисления доступных устройств Neuroair. Вы можете использовать `BluetoothDeviceController` для обнаружения устройств и получения информации о них.
+
+Пример кода для поиска и списка Bluetooth устройств:
+
+```bash
+import asyncio
+import logging
+from smeller.communication.bluetooth_com import BluetoothDeviceController # Импорт контроллера Bluetooth
+
+logging.basicConfig(level=logging.DEBUG)
+
+async def list_bluetooth_devices():
+    bt_controller = BluetoothDeviceController()
+    print("Начинаем поиск Bluetooth устройств...")
+    devices = await bt_controller.discover_devices()
+    if devices:
+        print("Найденные Bluetooth устройства:")
+        for device_info in devices:
+            print(f"  - Имя: {device_info.name}, MAC: {device_info.mac}, COM-порт: {device_info.com_port}, Сопряжено: {device_info.is_paired}")
+        return devices
+    else:
+        print("Bluetooth устройства не найдены.")
+        return []
+
+async def main():
+    available_devices = await list_bluetooth_devices() # Получаем список устройств
+
+    if not available_devices:
+        print("Невозможно подключиться: Bluetooth устройства не найдены.")
+        return
+
+    # Даем пользователю выбрать устройство (пример - можно сделать GUI выбор)
+    selected_device = available_devices[0] # По умолчанию - первое устройство
+    print(f"Попытка подключения к устройству: {selected_device.name} ({selected_device.mac}), COM-порт: {selected_device.com_port}")
+
+    # ... дальнейший код подключения с использованием controller.connect(connection_type='bluetooth', device_info=selected_device) ...
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+> для Bluetooth discovery требуется, чтобы Bluetooth на компьютере был включен и устройство Neuroair было в режиме обнаружения (если это необходимо для вашей модели устройства).
+>Используйте асинхронный метод `controller.connect()` для установки соединения. Укажите COM-порт для Serial подключения или MAC-адрес для Bluetooth (если необходимо).
+
+**Serial подключение:**
+```bash
+async def main():
+    # ... инициализация компонентов как в шаге 3 ...
+
+    com_port = "COM3" # Замените на ваш COM-порт
+    if await controller.connect(com_port=com_port):
+        print(f"Успешно подключено к {com_port}")
+        # Дальнейшая работа с устройством
+    else:
+        print("Не удалось подключиться к устройству.")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+### 5. Отправка команд и обработка ответов
+
+Используйте методы `DeviceController` для отправки команд.  Большинство методов соответствуют командам устройства и возвращают разобранный ответ в виде списка строк.
+
+**Пример: Получение справки (команда 'h')**
+```bash
+async def main():
+    # ... инициализация и подключение ...
+
+    if controller.is_connected():
+        help_response = await controller.get_help()
+        if help_response:
+            print("Ответ на команду 'help':")
+            for line in help_response:
+                print(line)
+        else:
+            print("Ошибка при выполнении команды 'help'.")
+
+    await controller.disconnect() # Важно не забывать отключаться
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+**Пример: Установка параметров канала 1 (команда 'p')**
+```bash
+async def main():
+    # ... инициализация и подключение ...
+
+    if controller.is_connected():
+        channel_params_response = await controller.set_channel_parameters(channel=1, on_tick=100, off_tick=50)
+        if channel_params_response:
+            print("Ответ на команду 'set_channel_parameters':", channel_params_response)
+        else:
+            print("Ошибка при выполнении команды 'set_channel_parameters'.")
+
+    await controller.disconnect()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+### 6. Подписка на события (опционально, но рекомендуется)
+
+Библиотека `smeller` использует систему событий для уведомления о различных состояниях и ответах устройства. Вы можете подписаться на события, чтобы реагировать на них в вашем приложении.
+
+**Пример подписки на события 'device_connected', 'device_disconnected', и 'error':**
+```bash
+async def on_device_connected(event):
+    print(f"Устройство подключено! Данные события: {event.data}")
+
+async def on_device_disconnected(event):
+    print("Устройство отключено.")
+
+async def on_error(event):
+    print(f"Произошла ошибка: {event.data}")
+
+async def main():
+    # ... инициализация компонентов ...
+
+    event_handler.subscribe("device_connected", on_device_connected)
+    event_handler.subscribe("device_disconnected", on_device_disconnected)
+    event_handler.subscribe("error", on_error)
+
+    # ... подключение и работа с устройством ...
+
+    event_handler.unsubscribe("device_connected", on_device_connected) # Отписка, когда больше не нужно
+    event_handler.unsubscribe("device_disconnected", on_device_disconnected)
+    event_handler.unsubscribe("error", on_error)
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+## Режимы работы устройства (Neuroair)
+
+* **Режим управления каналами:**  Включает команды для настройки параметров отдельных каналов, их включения/выключения и активации/деактивации. Позволяет контролировать интенсивность и длительность стимуляции через каждый канал.
+* **Режим арома контроля:**  Управляет ароматическими каналами, позволяя настраивать параметры ароматов, включать/выключать и активировать/деактивировать их.
+* **Режим управления генератором:**  Позволяет контролировать питание и логику работы генератора, влияя на общую работу устройства.
+* **Режим конфигурации:**  Включает команды для настройки общих параметров устройства, таких как watchdog таймер, Bluetooth имя, и режимы работы (MOD).
+* **Режим отладки и диагностики:**  Содержит команды для получения отладочной информации (debug, htop, i2c_list, crGetI, reboot_log, test).
+
+## Доступные команды
+
+Библиотека `smeller` предоставляет методы для отправки следующих команд устройству Neuroair:
+| Команда (метод Python) | Описание | Синтаксис команды устройства | Параметры метода Python | Возвращаемый ответ |
+| --------------------------------------- | -------------------------------------------------------------- | ---------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| `get_help()` | Запрос справки по командам | `h` | Нет | `List[str]` - Список строк справки |
+| `set_channel_parameters(channel, on_tick, off_tick, **kwargs)` | Установка параметров канала | `p <channel> <on_tick> <off_tick> [kwargs]` | `channel: int`, `on_tick: int`, `off_tick: int`, `kwargs: Dict[str, Any]` (доп. параметры) | `List[str]` - Ответ устройства (например, `['OK']`) |
+| `restart()` | Перезагрузка устройства | `restart` | Нет | `List[str]` - Ответ устройства |
+| `set_aroma_parameters(idAroma, onTick, offTick, **kwargs)` | Установка параметров арома канала | `cp <idAroma> <onTick> <offTick> [kwargs]` | `idAroma: int`, `onTick: int`, `offTick: int`, `kwargs: Dict[str, Optional[int]]` | `List[str]` - Ответ устройства |
+| `aroma_on(idAroma, mod=None)` | Включить арома канал | `ce <idAroma> [mod]` | `idAroma: int`, `mod: Optional[int]` | `List[str]` - Ответ устройства |
+| `aroma_off(idAroma, mod=None)` | Выключить арома канал | `cd <idAroma> [mod]` | `idAroma: int`, `mod: Optional[int]` | `List[str]` - Ответ устройства |
+| `aroma_enable(idAroma, mod=None)` | Активировать арома канал | `cS <idAroma> [mod]` | `idAroma: int`, `mod: Optional[int]` | `List[str]` - Ответ устройства |
+| `aroma_disable(idAroma, mod=None)` | Деактивировать арома канал | `cs <idAroma> [mod]` | `idAroma: int`, `mod: Optional[int]` | `List[str]` - Ответ устройства |
+| `set_generator_power(state)` | Установить состояние питания генератора (0/1) | `g <state>` | `state: int (0 или 1)` | `List[str]` - Ответ устройства |
+| `set_generator_logic(state)` | Установить логическое состояние генератора (0/1) | `G <state>` | `state: int (0 или 1)` | `List[str]` - Ответ устройства |
+| `channel_on(n_channel, mod=None)` | Включить канал | `e <n_channel> [mod]` | `n_channel: int`, `mod: Optional[int]` | `List[str]` - Ответ устройства |
+| `channel_off(n_channel, mod=None)` | Выключить канал | `d <n_channel> [mod]` | `n_channel: int`, `mod: Optional[int]` | `List[str]` - Ответ устройства |
+| `channel_enable(n_channel, mod=None)` | Активировать канал | `S <n_channel> [mod]` | `n_channel: int`, `mod: Optional[int]` | `List[str]` - Ответ устройства |
+| `channel_disable(n_channel, mod=None)` | Деактивировать канал | `s <n_channel> [mod]` | `n_channel: int`, `mod: Optional[int]` | `List[str]` - Ответ устройства |
+| `reset_channels()` | Сбросить все каналы | `r` | Нет | `List[str]` - Ответ устройства |
+| `test_channels(delay=5000, onTick=500, offTick=2000)` | Запустить тестовый режим каналов | `test <delay> <onTick> <offTick>` | `delay: int`, `onTick: int`, `offTick: int` | `List[str]` - Ответ устройства |
+| `set_watchdog(n_channel, watchdog)` | Установить watchdog таймер для канала | `W <n_channel> <watchdog>` | `n_channel: int`, `watchdog: int` | `List[str]` - Ответ устройства |
+| `set_bluetooth_name(bluetoothName)` | Установить имя Bluetooth устройства | `btn <bluetoothName>` | `bluetoothName: str` (макс. 16 символов) | `List[str]` - Ответ устройства |
+| `reboot_log(n)` | Получить логи перезагрузки | `reboot_log <n>` | `n: int` | `List[str]` - Лог перезагрузки |
+| `set_mod(mod, n_channel=None)` | Установить режим работы (MOD) для устройства или канала | `set_mod [n_channel] <mod>` | `mod: int`, `n_channel: Optional[int]` | `List[str]` - Ответ устройства |
+| `get_mod(n_channel=None)` | Получить режим работы (MOD) для устройства или канала | `get_mod [n_channel]` | `n_channel: Optional[int]` | `List[str]` - Ответ устройства |
+| `i2c_list()` | Получить список I2C устройств | `i2c_list` | Нет | `List[str]` - Список I2C устройств |
+| `set_wifi(SSID, password)` | Настроить WiFi подключение | `set_wifi <SSID> <password>` | `SSID: str` (макс. 32 символа), `password: str` (макс. 63 символа) | `List[str]` - Ответ устройства |
+| `htop()` | Получить информацию о процессах (htop) | `htop` | Нет | `List[str]` - Вывод команды htop |
+| `set_mqtt_sub(MQTT_SUB)` | Установить MQTT topic для подписки | `setMqttSub <MQTT_SUB>` | `MQTT_SUB: str` | `List[str]` - Ответ устройства |
+| `cr_get_info()` | Получить информацию CR | `crGetI` | Нет | `List[str]` - Информация CR |
+| `reset_channel_parameters()` | Сбросить параметры всех каналов | `R` | Нет | `List[str]` - Ответ устройства |
+| `reset_parameters_for_mod(flag, mod=None)` | Сбросить параметры для режима MOD | `Rs [mod] <flag>` | `flag: int (0 или 1)`, `mod: Optional[int]` | `List[str]` - Ответ устройства |
+| `reinit_status(mod=None)` | Реинициализировать статус | `Rg [mod]` | `mod: Optional[int]` | `List[str]` - Ответ устройства |
+| `set_fan(pwmMax)` | Установить максимальную PWM для вентилятора | `f <pwmMax>` | `pwmMax: int` | `List[str]` - Ответ устройства |
+| `set_fan_config(pwmMax, pwmMin, pwmMode, period)` | Установить конфигурацию вентилятора | `x <pwmMax> <pwmMin> <pwmMode> <period>` | `pwmMax: int`, `pwmMin: int`, `pwmMode: int`, `period: int` | `List[str]` - Ответ устройства |
+| `debug()` | Включить режим отладки | `debug` | Нет | `List[str]` - Ответ устройства |
+
+## Статус разработки и известные ограничения
+
+На данный момент библиотека `smeller` находится в активной разработке.  Некоторые функции могут быть еще не полностью реализованы или находиться в стадии тестирования.
+
+**Временно отключенные или разрабатываемые функции:**
+
+* **Команды, связанные с расширенными функциями мониторинга и диагностики:**  Некоторые команды, такие как, `reset_parameters_for_mod`, `reinit_status`, `set_mod (on chanel)`, `get_mod (on chanel)` могут быть временно отключены или работать нестабильно.  Их функциональность будет дорабатываться в следующих версиях библиотеки.
+* **Bluetooth подключение:**  Функциональность Bluetooth подключения может быть ограничена и находится на стадии тестирования. Рекомендуется использовать Serial подключение для наиболее стабильной работы.
+* **Полная документация:**  Полная документация по всем функциям и классам библиотеки находится в процессе создания.
+
+**Известные ограничения:**
+
+* **Обработка ошибок ответов:** В текущей версии библиотеки реализована базовая обработка ошибок, но в будущем планируется ее расширение для более детального анализа ответов устройства и предоставления более информативных сообщений об ошибках.
+* **Совместимость устройств:** Библиотека разрабатывалась для определенной модели Neuroair устройства. Совместимость с другими моделями Neuroair не гарантируется и требует дополнительного тестирования.
+
+## Вклад в разработку
+
+Приветствуются любые вклады в развитие библиотеки `smeller`! Если вы хотите помочь, вы можете:
+
+* Сообщать об ошибках и предложениях по улучшению.
+* Предлагать исправления кода (pull requests).
+* Улучшать документацию.
+* Расширять функциональность библиотеки.
+
+## Лицензия
+
+Распространяется под лицензией ***.  Смотрите файл [LICENSE](LICENSE) для получения подробной информации.
+
+## Контакты
+
+Для связи и вопросов по библиотеке `smeller` вы можете использовать:
+
+* [Ссылка на ваш репозиторий GitTea Issues] (для сообщений об ошибках и предложений)
+* fox@sensorylab.ru
+
+---
+
+**Спасибо за использование библиотеки `smeller`!**
+**Что нужно сделать дальше:**
+
+1. **Заполнить описание режимов работы устройства.**  Подумайте, какие режимы реально есть или можно выделить из функциональности команд. Если режимов как таковых нет, можно просто описать функциональные блоки.
+2. **Проверьте таблицу команд на точность и полноту.** Убедитесь, что все команды и параметры описаны правильно, и таблица легко читается.
+3. **В секции "Статус разработки" точно перечислите команды, которые сейчас не работают.**  Основывайтесь на результатах ваших тестов.
+4. **Создайте файлы LICENSE и README.md** в корне вашего проекта и скопируйте это содержимое в README.md.
+5. **Подготовьте проект к публикации на PyPI.**  Вам потребуется файл `setup.py` или `pyproject.toml` для описания пакета.
+6. **Зарегистрируйтесь на PyPI** и опубликуйте пакет командой `python setup.py sdist bdist_wheel upload` (или аналогичной, в зависимости от вашего setup-файла).
+
+```
+https://pypi.org/project/smeller/0.1.0/
+```
+
