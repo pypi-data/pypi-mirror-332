@@ -1,0 +1,11 @@
+mcpandroidbuild/__init__.py,sha256=dQBOA8LEEZktIcHBuF4Is3khWYfAinl4JMLVKI0xdLY,182
+mcpandroidbuild/__main__.py,sha256=QP9wKJQYPHhXWaA-j8JqGfiB63D-YPv1QrUVgq2odXM,72
+mcpandroidbuild/build.sh,sha256=hhZ3MwolzXb_VQ9ItKaSMdYPqTNVCaO5nhTIU-V8e5U,38
+mcpandroidbuild/instrumentedTest.sh,sha256=KaLW4-lAevJw6m3xh7Ajm6L6ZPqnH91n3P2Z0zkolCs,1422
+mcpandroidbuild/server.py,sha256=gkaMcX2RmjpNnnDAbvX9G--lxLS9dAdhqsFDhfoyl04,2728
+mcpandroidbuild/test.sh,sha256=uZJyQklsCNy4c4J92PkWJ4LwR23vWEBVE822UMIRNiU,37
+mcpandroidbuild-0.10.0.dist-info/METADATA,sha256=LEX6Z__0yhUOwyEnxlfQk5b03cSsyZmno81k4qE0F4A,2456
+mcpandroidbuild-0.10.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcpandroidbuild-0.10.0.dist-info/entry_points.txt,sha256=DyuSxZJ39qU0LEKszRKnKJq1rFXsQa2b4b0vA7fLp6E,57
+mcpandroidbuild-0.10.0.dist-info/licenses/LICENSE,sha256=x5_Sz6SjIQ8ba0GaPJ1MprGyBXFmsy7YP7Ja2B4S4aE,1051
+mcpandroidbuild-0.10.0.dist-info/RECORD,,
