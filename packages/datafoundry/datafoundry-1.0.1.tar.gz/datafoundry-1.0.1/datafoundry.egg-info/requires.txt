@@ -1,0 +1,7 @@
+pandas>=2.2.3
+psycopg2-binary>=2.9.10
+mysql-connector-python>=9.2.0
+mysqlclient>=2.2.7
+sqlalchemy>=2.0.38
+trino>=0.333.0
+pyspark>=3.5.1
