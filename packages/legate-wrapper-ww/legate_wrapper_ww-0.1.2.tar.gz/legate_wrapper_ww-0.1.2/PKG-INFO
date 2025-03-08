@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: legate_wrapper_ww
+Version: 0.1.2
+Summary: A description of your package
+Home-page: https://github.com/yourusername/legate_wrapper
+Author: Your Name
+Author-email: your.email@example.com
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
