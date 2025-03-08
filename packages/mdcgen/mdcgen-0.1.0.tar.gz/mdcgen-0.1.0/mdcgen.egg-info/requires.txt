@@ -1,0 +1,9 @@
+matplotlib
+networkx
+gitpython
+pygraphviz
+pydantic
+astroid
+openai
+instructor
+click
