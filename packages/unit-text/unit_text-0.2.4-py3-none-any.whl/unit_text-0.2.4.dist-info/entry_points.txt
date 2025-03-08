@@ -1,0 +1,2 @@
+[console_scripts]
+unit-text = unit_text:app
