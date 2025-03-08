@@ -1,0 +1,68 @@
+{
+    "device_automation": {
+        "trigger_type": {
+            "turned_off": "{entity_name} je posodobljen"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "Posodobljeno",
+                "on": "Na voljo je posodobitev"
+            },
+            "state_attributes": {
+                "auto_update": {
+                    "name": "Avtomatska posodobitev",
+                    "state": {
+                        "false": "Ne",
+                        "true": "Da"
+                    }
+                },
+                "in_progress": {
+                    "name": "Poteka",
+                    "state": {
+                        "false": "Ne",
+                        "true": "Da"
+                    }
+                },
+                "installed_version": {
+                    "name": "Name\u0161\u010dena verzija"
+                },
+                "latest_version": {
+                    "name": "Zadnja verzija"
+                },
+                "release_url": {
+                    "name": "URL izdaje"
+                },
+                "skipped_version": {
+                    "name": "Presko\u010dena razli\u010dica"
+                },
+                "title": {
+                    "name": "Naslov"
+                }
+            }
+        },
+        "firmware": {
+            "name": "Vdelana programska oprema"
+        }
+    },
+    "services": {
+        "clear_skipped": {
+            "description": "Odstrani oznako presko\u010dene razli\u010dice iz posodobitve.",
+            "name": "Po\u010disti presko\u010deno posodobitev"
+        },
+        "install": {
+            "description": "Namesti posodobitev za napravo ali storitev",
+            "fields": {
+                "version": {
+                    "name": "Razli\u010dica"
+                }
+            },
+            "name": "Namesti posodobitev"
+        },
+        "skip": {
+            "description": "Trenutno razpolo\u017eljivo posodobitev ozna\u010di kot presko\u010deno.",
+            "name": "Presko\u010di posodobitev"
+        }
+    }
+}
