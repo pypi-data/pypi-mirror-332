@@ -1,0 +1,2 @@
+[console_scripts]
+spellingbee_mcp = spellingbee_mcp.index:main
