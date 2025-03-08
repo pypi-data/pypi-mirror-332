@@ -1,0 +1,9 @@
+pytubefix
+requests
+ffmpy
+mutagen
+tabulate
+tqdm
+appdirs
+rich
+setuptools
