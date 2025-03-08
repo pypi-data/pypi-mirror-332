@@ -1,0 +1,15 @@
+file_watch_diagnostics/__init__.py,sha256=M-6L2hCoePaK0n-Da9DxsGfV4NpLkMO6mOGxxt7Rchc,103
+file_watch_diagnostics/cli/__init__.py,sha256=WjrEY1MNCvj-ohID09gn_KJVY5jAeDtzS0oYJbR3ffU,46
+file_watch_diagnostics/cli/diagnostics.py,sha256=b8sZca-b82sCBeawSySZVT2e7U2mU0o1xOc9lhVc5FI,1205
+file_watch_diagnostics/cli/quick_check.py,sha256=sS0wXUkAw2dXmXwWIYYYXXmyRYSfhXH6rO05lqn3Aac,8227
+file_watch_diagnostics/diagnostics.py,sha256=fPm4_7zFVkTH6xRuAa0pyYMuQpCy8yWNREnWVIsIxm8,13070
+file_watch_diagnostics/utils/__init__.py,sha256=T2gYs0tFLUwixLBm_9TCcBCDiEbuqlrJ0nnHYYRCblM,54
+file_watch_diagnostics/utils/event_monitor.py,sha256=Q26b0ES07U0S7u8LWdmB4e1Ko5qq9B89cBHVDXzrVfU,8634
+file_watch_diagnostics/utils/logging_utils.py,sha256=z6gFPFgKAAmlpG3H7Yh-Ke3uNS6zCEuiTEzU6_yCjro,3094
+file_watch_diagnostics/utils/system_limits.py,sha256=8OLBlbMjK2E53ehLG8miLAbiC8-DfuhoETwWc6Nxu0w,4733
+file_watch_diagnostics/utils/watch_test.py,sha256=qgvspT73W2c40hQpY-YReWe9qDTN5YEiUOMmubu4kvQ,10295
+file_watch_diagnostics-0.1.0.dist-info/LICENSE,sha256=u6_aqEx4xWIfRO5T9-sEETIRWx_Gz28K1zuB_7JBQ_Q,1066
+file_watch_diagnostics-0.1.0.dist-info/METADATA,sha256=Fml4P0iVZjnmD1OHfe5-yxr18b3KBR-b4DCW6ERsEZI,7430
+file_watch_diagnostics-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+file_watch_diagnostics-0.1.0.dist-info/entry_points.txt,sha256=Ia0nN1X37nnNig0mjFGrUlf2QdVs14pj7DW02xH6l-c,142
+file_watch_diagnostics-0.1.0.dist-info/RECORD,,

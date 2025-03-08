@@ -1,0 +1,4 @@
+[console_scripts]
+file-watch-diagnostics=file_watch_diagnostics.cli.diagnostics:main
+quick-check=file_watch_diagnostics.cli.quick_check:main
+
