@@ -1,0 +1,11 @@
+shreddit_cli/__init__.py,sha256=hY8ZDV7JmO_YtFJHAAScuuRCkbRXsRCqqCWM-DeV9rQ,585
+shreddit_cli/app.py,sha256=Bjux26mwzL7c--sA6kifHb0krnI9Sw-AWk_1k6fwy4o,2780
+shreddit_cli/praw.ini.example,sha256=pMbdD1VejHA6wOC16JYo5xKniuMc9qvr-ocuzfZxWEg,194
+shreddit_cli/shredder.py,sha256=fGDZ5vbN3UuuDI6QIffIPFEsRwRMSOceykfhNNOKbik,8200
+shreddit_cli/shreddit.yml.example,sha256=qOj_AV9r_6r1WcBw_9P2yyBZ3Gyn2SPACCJgweCHJpw,2562
+shreddit_cli/util.py,sha256=MdmET3IiZ9oPfiLz6_uEytlA0rXW9_682pziqDGbNZ4,1320
+shreddit_cli-0.1.0a0.dist-info/METADATA,sha256=Uyi4P2eV3hKFlk_eFP0pQ0BVBFp_YYw-5ezT9uAz4lo,7175
+shreddit_cli-0.1.0a0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+shreddit_cli-0.1.0a0.dist-info/entry_points.txt,sha256=822w9JHBlQTsq9QS-Ohc2Wk5j_Lp8iBUxUb1gqEaEGA,51
+shreddit_cli-0.1.0a0.dist-info/licenses/LICENSE,sha256=pkRlzoYNbvRwHOR2GgfLoUtybj4OtUb11NmFwmOb5Gk,1119
+shreddit_cli-0.1.0a0.dist-info/RECORD,,
