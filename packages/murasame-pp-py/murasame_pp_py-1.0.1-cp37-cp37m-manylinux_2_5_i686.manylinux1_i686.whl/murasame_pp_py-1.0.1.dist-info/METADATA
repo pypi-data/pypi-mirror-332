@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: murasame-pp-py
+Version: 1.0.1
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: osu! difficulty and pp calculation for all modes
+Keywords: osu,pp,stars,performance,difficulty
+Author: Max Ohn <ohn.m@hotmail.de>, tsunyoku <tsunyoku@gmail.com>, namakemono-san <contact@nmkmn.moe>
+Author-email: Max Ohn <ohn.m@hotmail.de>, tsunyoku <tsunyoku@gmail.com>, namakemono-san <contact@nmkmn.moe>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# murasame-pp-py
+
