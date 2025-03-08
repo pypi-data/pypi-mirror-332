@@ -1,0 +1,20 @@
+[project]
+name = "llama-index-workflow"
+version = "0.1.0"
+description = "Lightweight fork of LlamaIndex's workflow module, offering powerful event-driven orchestration without the full llama-index-core dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "deprecated>=1.2.18",
+    "pydantic>=2.10.6",
+    "wrapt>=1.17.2",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.25.3",
+    "ruff>=0.9.9",
+    "types-deprecated>=1.2.15.20250304",
+]
