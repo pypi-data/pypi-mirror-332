@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/partial_span_processor/__init__.py
+src/partial_span_processor.egg-info/PKG-INFO
+src/partial_span_processor.egg-info/SOURCES.txt
+src/partial_span_processor.egg-info/dependency_links.txt
+src/partial_span_processor.egg-info/requires.txt
+src/partial_span_processor.egg-info/top_level.txt
