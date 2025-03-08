@@ -1,0 +1,6 @@
+setup.py
+nwlabcomm.egg-info/PKG-INFO
+nwlabcomm.egg-info/SOURCES.txt
+nwlabcomm.egg-info/dependency_links.txt
+nwlabcomm.egg-info/requires.txt
+nwlabcomm.egg-info/top_level.txt

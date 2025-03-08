@@ -1,0 +1,4 @@
+ttkbootstrap
+datetime
+pyaudio
+wave
