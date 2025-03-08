@@ -1,0 +1,16 @@
+syngular/__init__.py,sha256=9LRpqgyG1_b6wSo2T5Bm809C-99CBDreZ0LDeQdlotE,502
+syngular/field.py,sha256=kGvDS0wYvesWdAdek-Iic3ljBdi3k82Cyf1KUYN_Jpw,6049
+syngular/ideal.py,sha256=38GG3KI0ib9y4zRiJwbPiV_0sjlGg7sYNrOfmFFeicc,16949
+syngular/ideal_algorithms.py,sha256=2CuNc2hU3TEdsTBk02uvcoIvpPCDYIjGbOJN4b59-Wk,14074
+syngular/polynomial.py,sha256=SMnON-6vW3mQc6WzFNZm2s1JCT0YF1vb5HYj-yucQvg,13222
+syngular/qring.py,sha256=idrLvpBzkaYiBVkJaNojI4A4y2BnRyDTpxVwBgUd0uc,567
+syngular/ring.py,sha256=_q0e-E_oAAx3ItvVL0OupY_64pbu375RtCLZYWdRznA,2364
+syngular/settings.py,sha256=3p2btkeEKCBZSrk_HKIbPj-N9wvmWZ1H-nyO-EbMhJQ,857
+syngular/tools.py,sha256=4EO3b-GWqx8nOdRQTgs4PJ8Vo8c_wz769Ko1tuCnOz4,4488
+syngular/variety.py,sha256=erill_XiGGtakCTR7_1o8_ysCVH8TmNoVxoEetJU6Io,22197
+syngular/version.py,sha256=qBs4HqYsPn6yUHWEuCN4rGUC05gABbl800d8LBd8h9w,22
+syngular-0.4.1.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+syngular-0.4.1.dist-info/METADATA,sha256=TMz9cS0guw59EuOKuIkr2O3HKKbmZuoKZH6NDzFMsv8,6842
+syngular-0.4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+syngular-0.4.1.dist-info/top_level.txt,sha256=EAxQn18fD9BMMA9NoiMwsd46aYKjcbbjHQxwAHQmlVw,9
+syngular-0.4.1.dist-info/RECORD,,
