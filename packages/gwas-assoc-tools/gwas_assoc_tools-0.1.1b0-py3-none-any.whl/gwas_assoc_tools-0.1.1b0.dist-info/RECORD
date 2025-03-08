@@ -1,0 +1,11 @@
+gwas_assoc/__init__.py,sha256=PEL_9XO-5CBcph-Z4Efr9UG-_lZg60NLXKzcFjdt9hw,66
+gwas_assoc/cli.py,sha256=I-3mL1xt9BjKSFXDOuR0D9xEwdFdrGigjithYCqi7n0,1966
+gwas_assoc/commands/__init__.py,sha256=iVuDY0qr5nH1pSBBgU7o7RgMGTW7kJi9yoQx35jBQhI,58
+gwas_assoc/commands/validate.py,sha256=pURvr30jRoJI4_9RM-zpUAKefDfzcSyuAetsPw0RdZ8,21035
+gwas_assoc/utils/__init__.py,sha256=UPXEir5VCQC85KpD9uJsYI1jmBBGMw__O-ffYYW1I8k,64
+gwas_assoc/utils/console.py,sha256=EVY9G2FZ-wMt0m29hDCk4Mz5i9QIP7IZn6lEA4bvFCs,3082
+gwas_assoc_tools-0.1.1b0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gwas_assoc_tools-0.1.1b0.dist-info/METADATA,sha256=Cx7WOSx5vJO1nBqIkWhdCl8g9Io-TqPxcjco6ebAVLU,2389
+gwas_assoc_tools-0.1.1b0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+gwas_assoc_tools-0.1.1b0.dist-info/entry_points.txt,sha256=iiNZdFZgsIPPA0TD52wLDOHoVjPkg7DHFleuHAilx9E,49
+gwas_assoc_tools-0.1.1b0.dist-info/RECORD,,
