@@ -1,0 +1,4 @@
+INFO     [agent] 🛠️  Action 1/1: {"open_tab":{"url":"https://www.reddit.com"}}
+DEBUG    [browser_use] --get_next_action Execution time: 4.10 seconds
+DEBUG    [browser_use] --act Execution time: 0.00 seconds
+INFO     [controller] [DEV] Executing action open_tab with params {'url': 'https://www.reddit.com'}

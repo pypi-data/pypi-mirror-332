@@ -1,0 +1,4 @@
+INFO     [agent] 🎯 Next goal: Accept cookies and enter search term 'browser-use'.
+INFO     [agent] 🛠️  Action 1/2: {"click_element":{"index":0}}
+INFO     [agent] 🛠️  Action 2/2: {"input_text":{"index":4,"text":"browser-use"}}
+DEBUG    [browser_use] --get_next_action Execution time: 5.67 seconds
