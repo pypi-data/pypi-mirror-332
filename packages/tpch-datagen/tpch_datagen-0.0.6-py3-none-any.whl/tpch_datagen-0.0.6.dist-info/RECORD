@@ -1,0 +1,11 @@
+tpch_datagen/__init__.py,sha256=QiiYsv0kcJaB8wCWyT-FnI2b6be87HA-CrrIUn8LQhg,22
+tpch_datagen/config.py,sha256=9MS8rE47koH5DKgn3ZtevpeIaIot27-7yyleiBV6JqE,172
+tpch_datagen/datagen.py,sha256=UWRVoP13rvsi7SevcGpGU-UojrJm0ag6xjTtP0UoGP4,9843
+tpch_datagen/logger.py,sha256=30Mv3FLrJVK1w53hySueGRzO_xOfjOXbeGV7FBJGhGE,351
+tpch_datagen/utils.py,sha256=7TxBTxZhw9yA7EXztVjcAtVXi7MwWqj5uDjs6GjMv0c,70
+tpch_datagen-0.0.6.dist-info/LICENSE,sha256=Yrw2u_ELQZYVoppZewaKaYdy0AjL7CS4BHvq9xmdRqg,554
+tpch_datagen-0.0.6.dist-info/METADATA,sha256=395QoDmwjIytGiVyjkWqxoCCTV8KJ0Bo1lC3HST2pIM,6030
+tpch_datagen-0.0.6.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+tpch_datagen-0.0.6.dist-info/entry_points.txt,sha256=d7CPagIDeUNqukl5cE9XYtZWZynhmQte8QUZTfmKNtU,68
+tpch_datagen-0.0.6.dist-info/top_level.txt,sha256=BtdyKXgcawVJ-QB61lc_xIGy1jf2vMxiUs6OhDu94_0,13
+tpch_datagen-0.0.6.dist-info/RECORD,,
