@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pynomogram-explainer
+Version: 1.0.0
+Summary: Drawing the nomogram with python, and explain the model with nomogram-drived data
+Home-page: https://github.com/liuyp2080/pynomogram-explainer
+Author: Jeffery Liu
+Author-email: liuyp2080@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: statsmodels
+Requires-Dist: bokeh
+Requires-Dist: plotly
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+linear algrism (logistic regression and COX ) is still a popular algorims in clinical model building.
+the linear algorism has a pre-condition is linear relationship exsiting between variables.
+if linear algorism work well in a data, which prove this pre-condition is right,so you can use this packages to explain the prediction of the linear model with  gloable and partial method.
+
+it was said that the linear model has self-explain properity, that is using the beta or OR to demonstrate the contribution of the variable to the prediciton, but it's partially not the truth. according to the definition of gloabal explaination of model.
