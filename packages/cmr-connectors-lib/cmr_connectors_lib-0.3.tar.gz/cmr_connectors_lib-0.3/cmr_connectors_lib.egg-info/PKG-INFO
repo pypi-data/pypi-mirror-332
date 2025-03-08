@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cmr-connectors-lib
+Version: 0.3
+Summary: CMR Connectors Library
+Author: Soufiane
+Author-email: soufiane.amghar@berexia.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## CMR Connectors Library
+This library returns connectors to use in your projects from different databases.
+
+
+## Push to pypi
+```bash
+pip install wheel
+python setup.py sdist bdist_wheel
+pip install twine
+twine upload dist/*
+```
+
+## Requirements
+
+This package requires the following dependencies: "pymssql","pyodbc","psycopg2","sqlalchemy","cx_oracle"

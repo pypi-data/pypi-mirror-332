@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cmr_connectors_lib/__init__.py
+cmr_connectors_lib/connectors_factory.py
+cmr_connectors_lib.egg-info/PKG-INFO
+cmr_connectors_lib.egg-info/SOURCES.txt
+cmr_connectors_lib.egg-info/dependency_links.txt
+cmr_connectors_lib.egg-info/requires.txt
+cmr_connectors_lib.egg-info/top_level.txt
