@@ -1,0 +1,22 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "credar"
+version = "0.0.6"
+description = "free google results"
+authors = [ "Kammari Santhosh",]
+readme = "README.md"
+license = "MIT License"
+repository = "https://github.com/santhosh/"
+keywords = [ "",]
+include = []
+[[tool.poetry.packages]]
+include = "aider"
+
+[tool.poetry.scripts]
+credar-cli = "aider.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
