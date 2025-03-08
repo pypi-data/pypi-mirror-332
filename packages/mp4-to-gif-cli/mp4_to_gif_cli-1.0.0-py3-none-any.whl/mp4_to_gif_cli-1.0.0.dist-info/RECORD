@@ -1,0 +1,8 @@
+mp4_to_gif/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mp4_to_gif/cli.py,sha256=7a7n5wMCbRSSK-8U2PkqdJQOShxO7C9ajj6DU5CAw7A,507
+mp4_to_gif/converter.py,sha256=8I4OduZ9HA07yGM98dtVu8spuX8iRMKPYtwDUJuKUHk,1416
+mp4_to_gif_cli-1.0.0.dist-info/METADATA,sha256=POTrZC2E-LjdduCuPBw2F17T0nnzd5TMZ9AyqwqtRds,386
+mp4_to_gif_cli-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+mp4_to_gif_cli-1.0.0.dist-info/entry_points.txt,sha256=kfWUGVvDuHKNR0GUaozp4Ad89Pq68o4Af7VJ2TKPNG4,51
+mp4_to_gif_cli-1.0.0.dist-info/top_level.txt,sha256=V2e5nJN56kmA0xDlqZ-6j19myGncwFwWP_OwP82fn2E,11
+mp4_to_gif_cli-1.0.0.dist-info/RECORD,,

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mp4-to-gif-cli
+Version: 1.0.0
+Summary: A CLI tool to convert MP4 to GIF with size optimization
+Home-page: https://github.com/shahidhussain07/mp4-to-gif
+Author: Shahid Hussain
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: moviepy
+
