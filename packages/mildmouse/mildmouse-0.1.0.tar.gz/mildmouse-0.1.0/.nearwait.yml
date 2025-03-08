@@ -1,0 +1,14 @@
+filelist:
+# - .nearwait.txtar
+# - .python-version
+# - README.md
+# - mildmouse.code-workspace
+- pyproject.toml
+- src/mildmouse/__init__.py
+- src/mildmouse/cache.py
+- src/mildmouse/cli.py
+- src/mildmouse/config.py
+- src/mildmouse/exceptions.py
+- src/mildmouse/formatter.py
+- src/mildmouse/search.py
+# - uv.lock
