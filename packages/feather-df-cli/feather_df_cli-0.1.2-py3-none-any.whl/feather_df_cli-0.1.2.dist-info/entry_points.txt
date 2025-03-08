@@ -1,0 +1,2 @@
+[console_scripts]
+feather-cli = feather_df_cli.cli:main
