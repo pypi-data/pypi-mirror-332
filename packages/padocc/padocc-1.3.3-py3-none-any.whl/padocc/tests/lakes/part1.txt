@@ -1,0 +1,2 @@
+/neodc/esacci/lakes/data/lake_products/L3S/v2.1/merged_product/1992/09/ESACCI-LAKES-L3S-LK_PRODUCTS-MERGED-19920926-fv2.1.0.nc
+/neodc/esacci/lakes/data/lake_products/L3S/v2.1/merged_product/1992/09/ESACCI-LAKES-L3S-LK_PRODUCTS-MERGED-19920927-fv2.1.0.nc
