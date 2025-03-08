@@ -1,0 +1,11 @@
+codet/__init__.py,sha256=rDhrMC_fMUXsNfhis9LnU7U7NjwEDVfiUb9Fmq-PSnU,85
+codet/cli.py,sha256=arKpvUtZPThkm8cHoD0IckkpYFRpMd6phLdpkI2Eyso,1195
+codet/utils.py,sha256=kFrahcbpB9aSBlhGX7ns0zSCo6CbPBYFifsc1H75sKk,2344
+tests/__init__.py,sha256=2Sn_nPsrU9uUSH3NWFCbDNXI0wlx9j8E-U6t1i2WeaQ,18
+tests/test_utils.py,sha256=USOrNg1ZJcDpwzgk6xvF69fxlg1H4B3CRoq2ic27GnY,2802
+codet-0.1.0.dist-info/LICENSE,sha256=niL3YSMREUKcnqeX5sXdVZdnJ1yZW9gZC4qEzMFIeME,1066
+codet-0.1.0.dist-info/METADATA,sha256=8DBXZ5EKcY2XxkmzSLuI4SwLEJDHOaO26OBiE35TNK0,1636
+codet-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+codet-0.1.0.dist-info/entry_points.txt,sha256=sGsY5A-er12LQsL3NE5a_jHvMwvPcypdYiO2gAQT9JY,41
+codet-0.1.0.dist-info/top_level.txt,sha256=DgosIsyzOpV60mIwK2cLwOBRsXDG-ZnnrugAIDJ1ZTQ,12
+codet-0.1.0.dist-info/RECORD,,
