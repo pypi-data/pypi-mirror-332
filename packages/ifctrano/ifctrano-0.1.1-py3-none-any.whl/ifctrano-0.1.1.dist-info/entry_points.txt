@@ -1,0 +1,3 @@
+[console_scripts]
+trano=ifctrano.main:app
+

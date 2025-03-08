@@ -1,0 +1,12 @@
+ifctrano/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ifctrano/base.py,sha256=vwWmzOTnMpE5rmnIti7QeG92Z_rpk-9nIrl7I9Or1cA,4971
+ifctrano/bounding_box.py,sha256=_cvS6G6RaNKCFIE3gaQO-bQTKOxIvn0xDZ4rKSCL5T4,8390
+ifctrano/building.py,sha256=0RCxlupyPl7c7d1F-JVL0mjDGpB7MPYVpoDuXFI0AeE,1940
+ifctrano/exceptions.py,sha256=_kntVIsqEvz3zxtJd8RougQRXEwjF5avarmGB-mig1w,228
+ifctrano/main.py,sha256=97Uh8JgjoeeeZ3VMP1_STpDH23mOlW2M9oo9gwECLPE,1411
+ifctrano/space_boundary.py,sha256=PkBiLPT26-Us7emyjqNUjKDL4GWMxfQQnHYOgRhelEI,5175
+ifctrano-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ifctrano-0.1.1.dist-info/METADATA,sha256=OYwwmC64VDyLF1N2W1T4Gys9pDuVGlkVigRsAi-5mv0,2879
+ifctrano-0.1.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+ifctrano-0.1.1.dist-info/entry_points.txt,sha256=lHxD6pcOuPxITBoWjE35s4f6Dy7tzPa48ffuI-ehb2M,43
+ifctrano-0.1.1.dist-info/RECORD,,
