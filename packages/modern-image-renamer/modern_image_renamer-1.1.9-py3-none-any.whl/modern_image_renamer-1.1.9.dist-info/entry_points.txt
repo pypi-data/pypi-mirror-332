@@ -1,0 +1,3 @@
+[console_scripts]
+imagerenamer = imagerenamer.cli:main
+imagerenamer-gui = imagerenamer.gui:main
