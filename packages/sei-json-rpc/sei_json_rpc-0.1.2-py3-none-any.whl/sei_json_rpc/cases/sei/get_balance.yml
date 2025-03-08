@@ -1,0 +1,15 @@
+test_cases:
+  # ---------------------------
+  # get_balance 正常场景
+  # ---------------------------
+  - description: "正常场景 - 最新区块的余额查询（默认区块标识符）"
+    method_name: "get_balance"
+    params: ["0x8cc799ef9710A15AB100Df947D24Fa6A6105c902"]
+
+  - description: "正常场景 - 指定区块号的余额查询"
+    method_name: "get_balance"
+    params: ["0x8cc799ef9710A15AB100Df947D24Fa6A6105c902", "latest"]
+
+  - description: "正常场景 - 指定区块哈希的余额查询"
+    method_name: "get_balance"
+    params: ["0x8cc799ef9710A15AB100Df947D24Fa6A6105c902", "0xccfab70cf488ac38b0e29c06c1792ecb112f2d00581fd28ac59977018c2bb425"]

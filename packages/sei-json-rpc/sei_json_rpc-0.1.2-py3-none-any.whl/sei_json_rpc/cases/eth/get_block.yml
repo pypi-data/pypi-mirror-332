@@ -1,0 +1,98 @@
+test_cases:
+  # ---------------------------
+  # 正常场景 - block_identifier 类型
+  # ---------------------------
+  - description: "正常场景 - 最新区块查询(latest)"
+    method_name: "get_block"
+    kwargs: { block_identifier: "latest" }
+
+  - description: "正常场景 - 最新区块查询(earliest)"
+    method_name: "get_block"
+    kwargs: { block_identifier: "earliest" }
+
+  - description: "正常场景 - 最新区块查询(pending)"
+    method_name: "get_block"
+    kwargs: { block_identifier: "pending" }
+
+  - description: "正常场景 - 最新区块查询(safe)"
+    method_name: "get_block"
+    kwargs: { block_identifier: "safe" }
+
+  - description: "正常场景 - 预定义标签(finalized)"
+    method_name: "get_block"
+    kwargs: { block_identifier: "finalized" }
+
+  - description: "正常场景 - 通过区块号查询"
+    method_name: "get_block"
+    kwargs: { block_identifier: 123456 }
+
+  - description: "正常场景 - 通过区块哈希查询"
+    method_name: "get_block"
+    kwargs:
+      block_identifier: "0xa211bf380c441b894b3c7b8268215fc2606e2ae2e7a4f9f70a207ec0bfce6e60"
+
+  # ---------------------------
+  # 正常场景 - full_transactions 参数
+  # ---------------------------
+  - description: "正常场景 - 完整交易数据（true）"
+    method_name: "get_block"
+    kwargs:
+      block_identifier: "latest"
+      full_transactions: true
+
+  # ---------------------------
+  # 异常场景
+  # ---------------------------
+  - description: "异常场景 - 不存在的区块号"
+    method_name: "get_block"
+    kwargs: { block_identifier: 99999999 }
+    expected_error: "not found"
+
+  - description: "异常场景 - 无效区块哈希长度"
+    method_name: "get_block"
+    kwargs: { block_identifier: "0xGGG" }
+    expected_error: 'ERROR: Value did not match any of the recognized block identifiers: 0xGGG'
+
+  - description: "异常场景 - 错误类型参数（列表类型）"
+    method_name: "get_block"
+    kwargs: { block_identifier: [ 123 ] }
+    expected_error: 'ERROR: unrecognized block reference: [123]'
+
+  - description: "异常场景 - 无效预定义标签"
+    method_name: "get_block"
+    kwargs: { block_identifier: "invalid_tag" }
+    expected_error: 'ERROR: Value did not match any of the recognized block identifiers: invalid_tag'
+
+  # ---------------------------
+  # 边界场景
+  # ---------------------------
+  - description: "边界场景 - 创世区块查询"
+    method_name: "get_block"
+    kwargs: { block_identifier: 0 }
+
+
+  - description: "边界场景 - 超大数据块（10000+交易）"
+    method_name: "get_block"
+    kwargs:
+      block_identifier: "21973539"
+      full_transactions: true
+
+  - description: "边界场景 - 超大区块号（2^64）"
+    method_name: "get_block"
+    kwargs: { block_identifier: 18446744073709551615 }
+    expected_error: "ERROR: {'code': -32600, 'data': {'number': 'value is too large'}, 'message': 'value is too large'}"
+
+  # ---------------------------
+  # 参数组合场景
+  # ---------------------------
+  - description: "参数组合 - 区块哈希+完整交易"
+    method_name: "get_block"
+    kwargs:
+      block_identifier: "0x6450f458c01f6a4b09cc46aca367d77e0bc76f426208fd2691159abdf124d8dd"
+      full_transactions: true
+
+  - description: "参数组合 - 区块号+精简交易"
+    method_name: "get_block"
+    kwargs:
+      block_identifier: 123456
+      full_transactions: false
