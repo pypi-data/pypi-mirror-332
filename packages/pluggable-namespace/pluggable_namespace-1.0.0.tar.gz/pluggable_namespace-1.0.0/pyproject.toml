@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools", "wheel", "Cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pluggable-namespace"
+version = "1.0.0"
+description = "Pluggable namespaces"
+readme = "README.rst"
+authors = [
+    {name = "Tyler Levy Conde", email = "yonstib@gmail.com"},
+]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: Apache Software License",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "aioconsole",
+    "aiofiles",
+    "aiologger",
+    "argparse",
+    "PyYaml",
+]
+dynamic = ["optional-dependencies"]
+
+[project.scripts]
+hub = "hub.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
+
+[tool.pytest.ini_options]
+testpaths = "test"
+addopts = "--tb native --full-trace --color=yes -vv"
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.cython-lint]
+max-line-length = 120
