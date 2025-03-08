@@ -1,0 +1,2 @@
+[pymt.plugins]
+SoilData = pymt_soilgrids.bmi:SoilData
