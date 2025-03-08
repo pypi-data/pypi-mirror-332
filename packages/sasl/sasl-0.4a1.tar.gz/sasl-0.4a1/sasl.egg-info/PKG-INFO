@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sasl
+Version: 0.4a1
+Summary: Cyrus-SASL bindings for Python
+Home-page: http://github.com/cloudera/python-sasl
+Maintainer: Todd Lipcon
+Maintainer-email: todd@cloudera.com
+License: Apache License, Version 2.0
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+Requires-Dist: six
