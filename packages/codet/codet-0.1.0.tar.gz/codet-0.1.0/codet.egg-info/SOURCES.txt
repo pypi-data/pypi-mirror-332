@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+codet/__init__.py
+codet/cli.py
+codet/utils.py
+codet.egg-info/PKG-INFO
+codet.egg-info/SOURCES.txt
+codet.egg-info/dependency_links.txt
+codet.egg-info/entry_points.txt
+codet.egg-info/requires.txt
+codet.egg-info/top_level.txt
+tests/__init__.py
+tests/test_utils.py
