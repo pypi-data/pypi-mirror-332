@@ -1,0 +1,7 @@
+llmutil/__init__.py,sha256=3VF05KffPQQuB8MEGKEFKNlSlPz6KbI5EHYgxvZamRA,236
+llmutil/llm.py,sha256=Cszs3Rvbt8ZhOa3CGFXFM7SfOgf8nNG5OWJ_sINtJPM,936
+llmutil/schema.py,sha256=q0DDJ-4Z7jQaJNYNEfhN30hoT1MG12_VQ2UYkeiJY4o,1859
+bfg_llmutil-0.1.0.dist-info/METADATA,sha256=GiU33Wg1b_yU-kGW4FJMdpZrHJQfzdeC15WpF1MFmo4,1083
+bfg_llmutil-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bfg_llmutil-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bfg_llmutil-0.1.0.dist-info/RECORD,,
