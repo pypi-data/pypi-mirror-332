@@ -1,0 +1,9 @@
+__init__.py
+setup.py
+Package/__init__.py
+Package/exemple.py
+PackageTag.egg-info/PKG-INFO
+PackageTag.egg-info/SOURCES.txt
+PackageTag.egg-info/dependency_links.txt
+PackageTag.egg-info/requires.txt
+PackageTag.egg-info/top_level.txt
