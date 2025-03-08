@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.py
+ANGIE3Dpy/__init__.py
+ANGIE3Dpy/fluxE.py
+ANGIE3Dpy.egg-info/PKG-INFO
+ANGIE3Dpy.egg-info/SOURCES.txt
+ANGIE3Dpy.egg-info/dependency_links.txt
+ANGIE3Dpy.egg-info/requires.txt
+ANGIE3Dpy.egg-info/top_level.txt
