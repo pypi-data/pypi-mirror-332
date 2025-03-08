@@ -1,0 +1,9 @@
+rlic-0.3.2.dist-info/METADATA,sha256=Z2pyVTKhgdVr6LP0BV1SGnUKvpmjJYZjYWHyTWm_Zg0,4653
+rlic-0.3.2.dist-info/WHEEL,sha256=7i3kT51faNtabvksQ6c95axGmX09r84hG9KJEu4eq5Y,104
+rlic/_typing.py,sha256=b1UXzYNhLH9dXpAAt26UQtpPJRYcd9ZjDB-a9wIwtkQ,730
+rlic/_core.pyi,sha256=cZWmFMb3RoUtTrp7NTQ_PuE0zIbQwdvH0f7PSMAm1jk,576
+rlic/__init__.py,sha256=LPj4RzIa62y6dyn6ZuVFzmLYBVEVNGfmse3rPPP2WSk,110
+rlic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rlic/_lib.py,sha256=Js38yOb7mnmOC7yCTrTUsPtZ3Hou4IkMo-syJpQbAdk,6060
+rlic/_core.abi3.so,sha256=6YO7evdJ1uJs1BgNo0sMwfR3Lt8iBBuai6vpyEZMt0s,530660
+rlic-0.3.2.dist-info/RECORD,,
