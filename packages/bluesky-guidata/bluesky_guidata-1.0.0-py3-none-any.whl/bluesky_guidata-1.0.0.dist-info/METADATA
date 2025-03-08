@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: bluesky-guidata
+Version: 1.0.0
+Summary: Resources for the BlueSky Open ATM Simulator GUI
+Project-URL: Homepage, https://github.com/TUDelft-CNS-ATM/bluesky
+Project-URL: Issues, https://github.com/TUDelft-CNS-ATM/bluesky/issues
+Author-email: Joost Ellerbroek <j.ellerbroek@tudelft.nl>, Jacco Hoekstra <j.m.hoekstra@tudelft.nl>
+Keywords: ATM,aircraft,aviation,simulation,transport
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
