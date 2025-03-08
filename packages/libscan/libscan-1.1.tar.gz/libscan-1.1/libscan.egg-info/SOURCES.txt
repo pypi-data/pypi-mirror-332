@@ -1,0 +1,11 @@
+README.md
+setup.py
+libscan/__init__.py
+libscan/cli.py
+libscan/scanner.py
+libscan.egg-info/PKG-INFO
+libscan.egg-info/SOURCES.txt
+libscan.egg-info/dependency_links.txt
+libscan.egg-info/entry_points.txt
+libscan.egg-info/requires.txt
+libscan.egg-info/top_level.txt
