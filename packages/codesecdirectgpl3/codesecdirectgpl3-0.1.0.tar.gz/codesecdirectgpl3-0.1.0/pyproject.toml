@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codesecdirectgpl3"  # 你的包名
+version = "0.1.0"
+description = "A sample Python package"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+license = { text = "GPL-3.0" }
+dependencies = [
+    "requests",
+]
+readme = "README.md"
+requires-python = ">=3.7"
+[project.urls]
+Homepage = "https://github.com/james-0131-2/pycodesecdirectgpl3"
+Repository = "https://github.com/james-0131-2/pycodesecdirectgpl3"
