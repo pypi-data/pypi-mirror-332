@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+board2048/__init__.py
+board2048/board.py
+board2048/board2048.py
+board2048.egg-info/PKG-INFO
+board2048.egg-info/SOURCES.txt
+board2048.egg-info/dependency_links.txt
+board2048.egg-info/top_level.txt
+board2048.egg-info/zip-safe
