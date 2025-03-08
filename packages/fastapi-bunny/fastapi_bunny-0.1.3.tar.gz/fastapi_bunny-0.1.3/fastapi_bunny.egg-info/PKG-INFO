@@ -1,0 +1,63 @@
+Metadata-Version: 2.2
+Name: fastapi_bunny
+Version: 0.1.3
+Summary: A package to generate FastAPI boilerplate based on user input
+Home-page: https://github.com/pranayvartak/fastapi_bunny
+Author: Pranay Vartak
+Author-email: iamvartak@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: pymongo
+Requires-Dist: pydantic
+Requires-Dist: uvicorn[standard]
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## fastapi_bunny
+
+A Python package to generate FastAPI boilerplate with MongoDB integration.
+
+🚀 Installation
+
+pip install fastapi_bunny
+🔥 Usage
+
+Run the following command:
+
+fastapi_bunny
+You'll be prompted to enter your project details, and a FastAPI boilerplate will be generated automatically.
+
+✨ Features
+
+✅ Generates a FastAPI project structure
+✅ MongoDB integration with PyMongo
+✅ REST API with CRUD operations
+✅ Dynamic model generation based on user input
+✅ Auto-install missing dependencies (fastapi, pymongo, pydantic, uvicorn)
+✅ Option to start the FastAPI server automatically
+
+🎯 How to Run
+
+Once your project is created, you can navigate to the project folder and start the server:
+
+cd your_project_name
+uvicorn main:app --reload
+If you choose to run it immediately, the package will start the server automatically.
+
+👨‍💻 Credits
+
+Author: Pranay Dnyaneshwar Vartak
+📸 Instagram: @thebunnystark
+🏢 Company: CSociety
+
