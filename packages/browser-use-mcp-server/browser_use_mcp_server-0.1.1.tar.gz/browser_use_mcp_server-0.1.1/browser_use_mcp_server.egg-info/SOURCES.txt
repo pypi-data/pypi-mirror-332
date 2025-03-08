@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+browser_use_mcp_server.egg-info/PKG-INFO
+browser_use_mcp_server.egg-info/SOURCES.txt
+browser_use_mcp_server.egg-info/dependency_links.txt
+browser_use_mcp_server.egg-info/requires.txt
+browser_use_mcp_server.egg-info/top_level.txt
+server/__init__.py
+server/__main__.py
+server/server.py
