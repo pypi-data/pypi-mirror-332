@@ -1,0 +1,5 @@
+[console_scripts]
+airflow-install = libarf.airflow.manager.install:install_airflow
+airflow-start = libarf.airflow.manager.start:start_airflow
+airflow-stop = libarf.airflow.manager.stop:stop_airflow
+liberty-airflow = libarf.main:main
