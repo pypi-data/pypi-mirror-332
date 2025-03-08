@@ -1,0 +1,9 @@
+mpcorbfile/__init__.py,sha256=hQzKn0QtgbHsys6oxPdmjbuYPqSY641QVbEVsNFmNcc,266
+mpcorbfile/cli.py,sha256=npNDe_5YO9eAmyl8ORq3NLjEohmzKyFBKTZs1uQSZ88,337
+mpcorbfile/mpcorbfile.py,sha256=2xg2QZtCQrQk5J_LdKUlj11rQWB9OCX7dHr0uwa44M8,26360
+mpcorbfile-1.0.0.dist-info/AUTHORS.rst,sha256=3WdD0dmXibc9wHZ7ktxiwNWGnAwF0-i4yM4tS5wFj_Y,156
+mpcorbfile-1.0.0.dist-info/LICENSE,sha256=8v3VN7b6XxxgfyfDybL8BSAXI1gkobAcQcVJY2eqJJo,1068
+mpcorbfile-1.0.0.dist-info/METADATA,sha256=ZT2bug24XRs46AE2f2hj4Lgm1vfb4QwXAIJ56j_rkts,2106
+mpcorbfile-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+mpcorbfile-1.0.0.dist-info/entry_points.txt,sha256=7qNQRn0xvvwrNlE2L2I07dTivwNxE6AmZUF1TjPorO8,59
+mpcorbfile-1.0.0.dist-info/RECORD,,
