@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: embost
+Version: 1.0.0
+Summary: Font embossing module
+Author-email: Aymen MW <aymenmw@proton.me>
+Description-Content-Type: text/x-rst
+License-Expression: MIT
+License-File: LICENSE
+
+Fonts Embossing Module
