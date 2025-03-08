@@ -1,0 +1,121 @@
+# LLM Tools Hub
+
+LLM Tools Hub allows developers to instantly integrate external tools and services into their LLM AI applications. This project excels at handling function calling by automatically generating JSON schemas from Python type annotations and seamlessly bridging LLMs with external APIs.
+
+## Features
+
+- **Decorator-based tool registration:** Simply decorate your functions to register them as tools.
+- **Automatic JSON schema generation:** Extracts function parameter types and descriptions from Python type hints and docstrings.
+- **Flexible integration with LLM function calling:** The library only processes function calls—developers remain in full control of invoking the OpenAI API.
+- **Reusable conversation history:** Continue conversations across multiple interactions by providing your own message history.
+- **Batch registration of tools:** Use `register_tools()` to register a list of functions at once.
+
+## Installation
+
+Install via pip (once published to PyPI):
+
+```bash
+pip install llm-tools-hub
+```
+
+Alternatively, clone the repository and install locally:
+
+```bash
+git clone https://github.com/yourusername/llm-tools-hub.git
+cd llm-tools-hub
+pip install .
+```
+
+## Usage Example
+
+Below is a complete example demonstrating how to register two tools—a function to calculate the sum of two numbers and another to retrieve an exchange rate—and then process function calls from an LLM response.
+
+```python
+from llm_tools_hub import ToolRegistry, action
+from typing import Annotated
+import openai
+import json
+
+@action(toolname="calculate_sum", requires=["math"])
+def calculate_sum(
+    a: Annotated[int, "First number"],
+    b: Annotated[int, "Second number"]
+) -> int:
+    """
+    Calculate the sum of two numbers.
+    """
+    return a + b
+
+@action(toolname="get_exchange_rate", requires=[])
+def get_exchange_rate(
+    base_currency: Annotated[str, "Base currency. e.g. USD"],
+    target_currency: Annotated[str, "Target currency. e.g. JPY"],
+    date: Annotated[str, "Date in YYYY-MM-DD format"] = "latest"
+) -> float:
+    """
+    Get the exchange rate between two currencies.
+    """
+    import requests
+    url = f"https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@{date}/v1/currencies/{base_currency.lower()}.json"
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        return data.get(base_currency.lower(), {}).get(target_currency.lower(), None)
+    else:
+        raise Exception(f"Error fetching exchange rate: {response.status_code}")
+
+# Create the registry (we use 'tools' for professionalism)
+tools = ToolRegistry()
+tools.register_tools([calculate_sum, get_exchange_rate])
+
+# Define your conversation history (can be extended/reused)
+messages = [
+    {"role": "user", "content": "How much is 1 USD in JPY? And what is 50 + 75?"}
+]
+
+# Developer calls OpenAI with their own parameters, including the function schemas:
+openai.api_key = '<your key>'
+response = openai.ChatCompletion.create(
+    model="gpt-4o-mini",
+    messages=messages,
+    functions=tools.get_openai_functions(),
+    function_call="auto",
+)
+
+# Process the LLM response to execute function calls using the embedded method:
+tool_messages = tools.run_llm_functions_calls(response=response)
+
+# Developer integrates the tool responses into the conversation:
+messages.extend(tool_messages)
+
+# Now, the developer can call OpenAI again with the updated conversation history:
+second_response = openai.ChatCompletion.create(
+    model="gpt-4o-mini",
+    messages=messages
+)
+print("Final LLM response:", second_response["choices"][0]["message"].get("content", ""))
+```
+
+## API Overview
+
+- **ToolRegistry**  
+  - `register_tool(func: Callable)`: Registers a single function as a tool.  
+  - `register_tools(funcs: List[Callable])`: Batch-registers multiple functions.  
+  - `get_openai_functions() -> List[Dict[str, Any]]`: Returns the list of registered tools in the OpenAI function calling format (with JSON schema generated automatically).  
+  - `call_tool(tool_name: str, arguments: Dict[str, Any]) -> str`: Calls the registered tool with the provided arguments and returns its result as a string.  
+  - `run_llm_functions_calls(response: Dict[str, Any]) -> List[Dict[str, Any]]`: Processes an LLM response to execute any function calls, returning a list of function messages (with role `"function"`) that can be added to the conversation history.
+
+- **@action decorator**  
+  Decorates a function to register it as a tool, automatically extracting its name, description (from the docstring), and generating a JSON schema for its parameters using Python type hints.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your changes with clear commit messages.
+4. Open a pull request describing your changes.
+
+## License
+
+This project is licensed under the MIT License.
