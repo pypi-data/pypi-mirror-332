@@ -1,0 +1,13 @@
+poetry_monoranger_plugin/__init__.py,sha256=KSBQZ1tw5m2LrDC5K8HZ0ARwIK3hC9RJ5BWsZOa4G1I,45
+poetry_monoranger_plugin/config.py,sha256=cDygI_E5ZQ4MlaT4oFMC5pYmW4NyY2sxV1gCWYQEoZM,2264
+poetry_monoranger_plugin/export_modifier.py,sha256=NQmBLpI-MPuwB353t4U3UQOa234DDrB672PE5NoVdz4,7957
+poetry_monoranger_plugin/lock_modifier.py,sha256=_86VcwQOOi_JJBnt6AsVx3FM1e4c62RK4kr-M91HVj4,2860
+poetry_monoranger_plugin/monorepo_adder.py,sha256=hYO8qVxKC6Nd53fN0LYiC1h2f5NBzWRW7sr5RnHtCEA,7053
+poetry_monoranger_plugin/path_dep_pinner.py,sha256=Ap235N_qjf_str-WFYSz-75Ba0VqY-4pPgDMmkRxcoM,6569
+poetry_monoranger_plugin/plugin.py,sha256=-lluljjgXlFNFL9vtDJhlHYGfWM0PYMIlyCIz2csMlY,5933
+poetry_monoranger_plugin/venv_modifier.py,sha256=97ek33Gcl2IW4KdyclGZcZzkUG6QcU7qIugjILVh-3U,4068
+poetry_monoranger_plugin-0.4.1.dist-info/LICENSE,sha256=cyt-LySFMfuNopOLjOVGUoronsZYU9iXjI289z-uOKs,11349
+poetry_monoranger_plugin-0.4.1.dist-info/METADATA,sha256=B9PIvYGTHE3nkJHOPXVL9F4uHWZ9mLsUPOyriMBS-30,6410
+poetry_monoranger_plugin-0.4.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+poetry_monoranger_plugin-0.4.1.dist-info/entry_points.txt,sha256=pz2lwgqrETYsaTFRIOOgJrgQ-1y5F0PJi0AIpCYc_ls,83
+poetry_monoranger_plugin-0.4.1.dist-info/RECORD,,
