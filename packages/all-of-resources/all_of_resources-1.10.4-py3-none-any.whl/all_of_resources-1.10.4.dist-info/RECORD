@@ -1,0 +1,14 @@
+aor/__main__.py,sha256=51Zt9ka8zQlFgEe_hXDYS8oXOgGHm5kda2AhKqWJdjg,308
+aor/core.py,sha256=SvShBM5n7jm69Xa4ozkvQsJd6sJEqbXAf3buruogmLU,5519
+aor/fletgui.py,sha256=W3n217x08QQ5gX1J1m6dbYriu733r09T5XhwzfEXLiI,6081
+aor/main.py,sha256=W3n217x08QQ5gX1J1m6dbYriu733r09T5XhwzfEXLiI,6081
+aor/tkgui.py,sha256=ZXQAmM6TfefHSx_zs95PDZC0WN1qlR7LCSwxrvd4LIE,7544
+aor/version.py,sha256=cdeYsGetVJIGBZ6y4_ivZONL1AxwqWMLdBpg6ilJ3z4,16
+aor/assets/icon.png,sha256=4yMGrIacbB7WcguFnRJOnKVzBo3g7u7CRVXx5HM8NZE,18004
+all_of_resources-1.10.4.dist-info/LICENSE.md,sha256=GO6LKF-clQSYEvXaNaOeRSykszhnbD-QQf7U51Fs79g,7667
+all_of_resources-1.10.4.dist-info/LICENSE.让我们说中文.md,sha256=zISBtYLgSu_vm4IjjSwHfCc7zimieBrWaqB-IvpQwJ0,7263
+all_of_resources-1.10.4.dist-info/METADATA,sha256=UNgbM6CGbKnHSwY7m90GsWi2w7H9m4it1jj_ZtUVxog,2131
+all_of_resources-1.10.4.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+all_of_resources-1.10.4.dist-info/entry_points.txt,sha256=ReyzEl0FNPuPhrYS_tBnjEfaD37GdJAG6gh8CkZpyPY,60
+all_of_resources-1.10.4.dist-info/top_level.txt,sha256=b106mTjE94HX-ZZ5mYoDOsC92pbru6ueDv6IQ8ydD4E,4
+all_of_resources-1.10.4.dist-info/RECORD,,
