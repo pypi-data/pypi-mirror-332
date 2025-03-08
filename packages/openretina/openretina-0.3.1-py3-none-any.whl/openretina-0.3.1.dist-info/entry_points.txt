@@ -1,0 +1,2 @@
+[console_scripts]
+openretina = openretina.cli.openretina_main:main
