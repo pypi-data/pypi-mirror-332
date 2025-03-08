@@ -1,0 +1,14 @@
+cli/db_utils.py,sha256=KCnwLeZOQjthmgZQ_rzUQj80mhSnPMcbKA0ZeRjjtW0,2480
+cli/lazy_imports.py,sha256=HcyBmOn5bSK7yy6P_tPWDY6tWnbE4wQeFLP-iDCDTQw,172
+cli/main.py,sha256=yShTUkiS6MSeRVYxB2p954jyOlAkuJyypQG0l1jIDa0,11529
+cli/main_extend.py,sha256=kcJsAyAvV5fc6E0WEuusx4hTZeA_UNUIvbUMjL46bB0,721
+cli/utils.py,sha256=e9Gqj-hQsxmdRVv-wO-BegNURTaW20vFICdLS3PB6Xg,4124
+core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/chat.py,sha256=ueYaWvrYhjp-hJdPE1EmBmB4y94O8mH9MCcnx7mJJQI,3186
+core/config.py,sha256=b1ic5qzoYomgTROaFMxiYvGjbU0Nke83kqfizzsLu9Y,946
+core/prompt.py,sha256=l7NQDDm8UVsLHObxqprhueG2snBOGXeyEl3GRtBGK44,744
+llm_to_cli-0.1.4.dist-info/LICENSE,sha256=8Gw1Qy8oWDEx3s0tvfTPe62TxV71N8spuUtIGHvjzXw,1070
+llm_to_cli-0.1.4.dist-info/METADATA,sha256=SRNgQDP2CJhSm57JnKr8PGL-HEyLwFCLcLSssXbQF6M,2605
+llm_to_cli-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llm_to_cli-0.1.4.dist-info/entry_points.txt,sha256=7Mpi7B6q3oG4GmBrcV3WIk9glCfKp4x27BmTXjg-yVE,40
+llm_to_cli-0.1.4.dist-info/RECORD,,
