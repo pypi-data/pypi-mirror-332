@@ -1,0 +1,36 @@
+#output:
+#  count: 5
+#  time_field: timestamp
+#  console_event_format: "{name}: {body}"
+#type: object
+#properties:
+#  timestamp:
+#    type: timestamp
+#    start: 1735689600
+#    expression: random(0, 5) + this(1).timestamp
+#  name:
+#    type: choice
+#    items:
+#      - John
+#      - Jane
+#  sensor:
+#    type: integer
+
+output:
+  count: 10
+objects:
+  my_name1:
+    output:
+      format: json
+    type: string
+  new_name:
+    output:
+      format: xml
+      collection: true
+    type: object
+    properties:
+      attribute:
+        type: integer
+        xml_attr: true
+      content:
+        type: name
