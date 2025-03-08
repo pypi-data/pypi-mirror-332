@@ -1,0 +1,6 @@
+transformers
+torch
+pyyaml
+pylint
+black
+flask
