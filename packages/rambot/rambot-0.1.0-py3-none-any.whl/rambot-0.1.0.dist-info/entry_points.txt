@@ -1,0 +1,2 @@
+[console_scripts]
+rambot = rambot.main:main
