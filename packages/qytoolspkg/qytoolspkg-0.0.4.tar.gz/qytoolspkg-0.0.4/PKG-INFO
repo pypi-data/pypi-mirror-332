@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: qytoolspkg
+Version: 0.0.4
+Summary: qytoolspkg is a package for data processing and data analysis.
+Home-page: https://github.com/lookingout96/qytoolspkg
+Author: lookingout
+Author-email: lookingout96@163.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.19
+Description-Content-Type: text/markdown
+Requires-Dist: addressparser>=0.2.4
+Requires-Dist: altair>=5.4.0
+Requires-Dist: arch
+Requires-Dist: geopy>=2.4.0
+Requires-Dist: jieba>=0.42.1
+Requires-Dist: matplotlib>=3.7.2
+Requires-Dist: mysql-connector-python>=9.0.0
+Requires-Dist: networkx>=2.8.8
+Requires-Dist: numpy>=1.23.0
+Requires-Dist: openpyxl>=3.0.10
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: levenshtein
+Requires-Dist: louvain
+Requires-Dist: requests>=2.32.3
+Requires-Dist: rpy2>=3.5.17
+Requires-Dist: scikit_learn>=1.3.0
+Requires-Dist: scipy>=1.5.3
+Requires-Dist: statsmodels>=0.14.0
+Requires-Dist: stringtools>=3.0.1
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: xpinyin>=0.7.6
+Requires-Dist: dotenv>=0.9.9
+Requires-Dist: community
+
+v0.0.5
