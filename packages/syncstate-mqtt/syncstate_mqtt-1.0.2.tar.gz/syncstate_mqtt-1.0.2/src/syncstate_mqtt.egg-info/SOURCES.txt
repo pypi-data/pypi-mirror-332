@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+examples/simple_usage.py
+src/syncstate_mqtt/__init__.py
+src/syncstate_mqtt/_version.py
+src/syncstate_mqtt.egg-info/PKG-INFO
+src/syncstate_mqtt.egg-info/SOURCES.txt
+src/syncstate_mqtt.egg-info/dependency_links.txt
+src/syncstate_mqtt.egg-info/requires.txt
+src/syncstate_mqtt.egg-info/top_level.txt
