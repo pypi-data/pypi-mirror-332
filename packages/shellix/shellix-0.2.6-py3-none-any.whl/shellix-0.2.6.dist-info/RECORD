@@ -1,0 +1,12 @@
+shellix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shellix/__main__.py,sha256=VcyMuz4I1gvGp7gjkBJwTifYRmtQDuDZFvA6YokfTR8,414
+shellix/ai_core.py,sha256=2YcDdVZwEyXG2v7w9aOWB8rg7xuvGQSn4n2F2BTAFq4,3566
+shellix/credentials_loader.py,sha256=kSFzCbxE_sjtKdxcu3M-iJGSTxtVBBqMjCqPYSd89iw,1454
+shellix/memory.py,sha256=dgmAL-OaYLp3VkqBEwRqSkT4LLG_9_HFDyKd9rKQ7LU,455
+shellix/shell_tool.py,sha256=wtYN4S-1QSU7FfSHLs-sXc9KWuBiQjBqiWDYcldDi4M,2574
+shellix/write_tool.py,sha256=2nVKyVWzpu15Npci-sfHhYowC05RIE2-BeqcEZn-gjc,2052
+shellix-0.2.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+shellix-0.2.6.dist-info/METADATA,sha256=QnIhQG2w-bnpSXlKHoO6Pgu9RcBOppZ6OAkUyQ7hTYw,3362
+shellix-0.2.6.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+shellix-0.2.6.dist-info/entry_points.txt,sha256=zRnDkLLBKAXYgYdVlE32zOmpq9Z2O9hbRHVNK8KSuTU,74
+shellix-0.2.6.dist-info/RECORD,,
