@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwasm_test_widget=self.webpackChunkwasm_test_widget||[]).push([[509],{509:(e,s,t)=>{t.r(s),t.d(s,{WasmWidgetModel:()=>a.WasmWidgetModel,WasmWidgetView:()=>a.WasmWidgetView});var a=t(726)}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwasm_test_widget=self.webpackChunkwasm_test_widget||[]).push([[122],{122:(e,t,s)=>{s.r(t),s.d(t,{default:()=>u});var i=s(513),a=s(726),r=s(797);const u={id:"wasm_test_widget:plugin",requires:[i.IJupyterWidgetRegistry],activate:function(e,t){t.registerWidget({name:r.p,version:r.e,exports:a})},autoStart:!0}}}]);
