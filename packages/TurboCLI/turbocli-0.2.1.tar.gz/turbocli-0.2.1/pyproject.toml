@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "TurboCLI"
+version = "0.2.1"
+description = "A simple Python package for CLI tools"
+authors = ["Juho Jokisalo <xboxj2012@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/TheDoubleMix/cli"
+repository = "https://github.com/TheDoubleMix/cli"
+
+[tool.poetry.dev-dependencies]
+tox = "^4.24.1"
+virtualenv = "20.27.1"
+pytest = "^7.0"
+pylint = "^2.14"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+
+[tool.poetry.classifiers]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[build-system]
+requires = ["poetry>=1.0.0"] 
+build-backend = "poetry.masonry.api"
