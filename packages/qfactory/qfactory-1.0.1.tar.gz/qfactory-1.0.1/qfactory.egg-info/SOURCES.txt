@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+qfactory/__init__.py
+qfactory/core.py
+qfactory.egg-info/PKG-INFO
+qfactory.egg-info/SOURCES.txt
+qfactory.egg-info/dependency_links.txt
+qfactory.egg-info/requires.txt
+qfactory.egg-info/top_level.txt
