@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: searegion-detection
+Version: 0.0.4
+Summary: Package for searegion detection.
+Project-URL: Homepage, https://github.com/nvdsteen/searegion-detection
+Project-URL: Issues, https://github.com/nvdsteen/searegion-detection/issues
+Author: nvds
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: numpy==2.2.3
+Requires-Dist: pandas==2.2.3
+Requires-Dist: pandassta==0.0.16
+Requires-Dist: psycopg2-binary==2.9.10
+Requires-Dist: shapely==2.0.7
+Description-Content-Type: text/markdown
+
+# Searegion-detection
+
+package used for detecting searegions from coordinates using seavox database.
