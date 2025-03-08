@@ -1,0 +1,8 @@
+lan_host_communication/__init__.py,sha256=8vuPy1Tq3H8Zma8JWnkW5-ftuE9R8v7SkjyX_LaRZug,90
+lan_host_communication/client.py,sha256=bWpn1lC0r_5j5R8AZWACjII5Zk8WuESdNtDac57GJyU,469
+lan_host_communication/server.py,sha256=DD4ZN-HulKifrUkRjHIOF6vUqqZdWIQe7fgydV0dO3E,837
+lan_communication-1.0.dist-info/LICENSE,sha256=i4iCwcVda8HdeCEqdjz84Ftc8k81o1Mbm8TlPFSrBOM,233
+lan_communication-1.0.dist-info/METADATA,sha256=tG5RirIMThx73oX2TirPSR3N8iaiqqZ6Qgb1qccYwjI,782
+lan_communication-1.0.dist-info/WHEEL,sha256=nn6H5-ilmfVryoAQl3ZQ2l8SH5imPWFpm1A5FgEuFV4,91
+lan_communication-1.0.dist-info/top_level.txt,sha256=78RWxweor5yWD7H2-boqdEjAlI_1hmgFK40-BlU32us,23
+lan_communication-1.0.dist-info/RECORD,,
