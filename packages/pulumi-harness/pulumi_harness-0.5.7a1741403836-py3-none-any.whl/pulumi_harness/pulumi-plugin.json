@@ -1,0 +1,6 @@
+{
+  "resource": true,
+  "name": "harness",
+  "version": "0.5.7-alpha.1741403836",
+  "server": "github://api.github.com/pulumi"
+}
