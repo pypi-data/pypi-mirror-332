@@ -1,0 +1,9 @@
+gdpython/__init__.py,sha256=eaTS0X1gonxpdR7mj7aokijLvce6iy6I9PP-Brja28M,308
+gdpython/core.py,sha256=UCLYpvOCxbMF7a8c9JZgR67KK7k8kGN4ijtni0Va0Nw,7969
+gdpython/game.py,sha256=uZRaaVth0swH7UvbpiCQVbJKJF8ZU9Ey9dp2Yl9e5eQ,807
+gdpython/objects.py,sha256=2ns1xG66W53XTGvswxqHH8rpG9mLFArv9a0TF5ZXcWo,6832
+gdpython-0.1.0.dist-info/LICENSE,sha256=Rb4b3FJ3owB4vkQlRu0-4jHVwqtZkmZiT1rQ7SBV0Ns,1069
+gdpython-0.1.0.dist-info/METADATA,sha256=7bU8Hh_3MowysZvS55uaPBoGcVgeVdiwJPM-HRh8nZ4,1763
+gdpython-0.1.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+gdpython-0.1.0.dist-info/top_level.txt,sha256=mybFoj9u_DQSDHJUXhCzGevLzC2_GL7VfvNRFONxZMs,9
+gdpython-0.1.0.dist-info/RECORD,,
