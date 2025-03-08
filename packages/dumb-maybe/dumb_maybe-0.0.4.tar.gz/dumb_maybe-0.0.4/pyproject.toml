@@ -1,0 +1,22 @@
+[project]
+name = "dumb-maybe"
+version = "0.0.4"
+authors = [
+  { name="Marcus Harrison", email="marcus@harrisonland.co.uk" },
+]
+description = "A Very Dumb Maybe Type"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+license-files = ["LICEN[CS]E*"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.urls]
+Homepage = "https://github.com/TheMadman/dumb-maybe"
