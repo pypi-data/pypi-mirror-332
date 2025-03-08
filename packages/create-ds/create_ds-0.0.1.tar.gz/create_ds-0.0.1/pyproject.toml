@@ -1,0 +1,74 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "create-ds"
+version = "0.0.1"
+description = "Python tool to create folders and files structure for DataScience project"
+authors = [{ name = "Bartek", email = "szymik.bartek@gmail.com" }]
+keywords = ["data science", "project structure", "automation"]
+readme = "README.md"
+license = "Beerware"
+requires-python = ">=3.13"
+dependencies = [
+    "rich>=13.9.4",
+    "typer>=0.15.2",
+]
+
+[tool.flit.module]
+name = "src"
+
+[project.scripts]
+create_ds = "src.commands:app"
+
+[project.urls]
+Home = "https://github.com/BartekSzymik/create-ds-projects"
+
+[dependency-groups]
+dev = [
+    "flit>=3.11.0",
+    "mypy>=1.15.0",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.9.9",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "tests",
+    "conftest",
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "smoke: business core tests",
+]
+addopts = [
+    "-ra -q",
+    "--cov=.",
+    "--cov-report",
+    "term-missing:skip-covered",
+    "--cov-fail-under=80"
+]
+
+[tool.coverage.run]
+omit = [
+    "*/tests/*.py",
+    "conftest/*"
+]
+
+[tool.mypy]
+disallow_untyped_defs = true
+disallow_untyped_calls = true
+disallow_incomplete_defs = true
+disallow_subclassing_any = true
+warn_return_any = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+no_implicit_optional = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
