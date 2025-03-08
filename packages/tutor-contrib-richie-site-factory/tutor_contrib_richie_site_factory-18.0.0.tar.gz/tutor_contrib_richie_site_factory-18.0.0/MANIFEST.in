@@ -1,0 +1,2 @@
+recursive-include tutorrichiesitefactory/patches *
+recursive-include tutorrichiesitefactory/templates *
