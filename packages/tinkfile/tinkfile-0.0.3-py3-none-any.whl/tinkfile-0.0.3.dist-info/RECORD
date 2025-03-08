@@ -1,0 +1,8 @@
+tinkfile/__init__.py,sha256=wtFQJXxk_ryGAINtFP9wHt8-aEISj7hT63CV5_TYcOE,4952
+tinkfile/tar.py,sha256=VBSgMy110qzeVyQ-rxLZno63zpYuwUPhQEldC0S6ltI,2073
+tinkfile/zstd.py,sha256=ntr1AIjRVjk9woipS2NFfnfUu_d7JL2CKDTuGA3jf2g,3745
+tinkfile-0.0.3.dist-info/METADATA,sha256=ACxG9IwR_pf0FTkDnHXBzChc9tQIbkxuPgAjySyVLHs,6864
+tinkfile-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+tinkfile-0.0.3.dist-info/entry_points.txt,sha256=UhsQ_Erqbl99JsgutXcX0c42XVlW2RKTla2uapEQQjU,49
+tinkfile-0.0.3.dist-info/licenses/LICENSE,sha256=6_0WB4pAdQuiNhzKWWk7ZAkmhTHRBERgWaNPa-YnnxE,1074
+tinkfile-0.0.3.dist-info/RECORD,,
