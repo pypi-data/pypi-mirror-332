@@ -1,0 +1,8 @@
+setup.py
+DataAnalysis/Home.py
+DataAnalysis/__init__.py
+DataAnalysis/app.py
+data_ann.egg-info/PKG-INFO
+data_ann.egg-info/SOURCES.txt
+data_ann.egg-info/dependency_links.txt
+data_ann.egg-info/top_level.txt
