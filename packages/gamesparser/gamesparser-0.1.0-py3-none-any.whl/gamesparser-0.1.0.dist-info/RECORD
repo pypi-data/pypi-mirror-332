@@ -1,0 +1,7 @@
+gamesparser/__init__.py,sha256=1v-y-vcz4mHN-BtzU2xKSamXDsrYB6BRt4mGAAGwb2Y,174
+gamesparser/models.py,sha256=aFmWiVPfZS3NsHlJcdww2Fr6DE00CdR4TSKA0gf2SwU,990
+gamesparser/psn.py,sha256=4yO4fmuB-enxcUQSZ4qBYvDMV_LWdmG6TB25sqjTIw8,4996
+gamesparser/xbox.py,sha256=HDgxBMb-VCJ5tnoGDvy3WqxzJqwKfri8xDu-FbJTPFE,6814
+gamesparser-0.1.0.dist-info/METADATA,sha256=vnXMPztfBZ8ykqZZOtWI8A_DMZFeeaDsRiUCR2vXn-g,690
+gamesparser-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+gamesparser-0.1.0.dist-info/RECORD,,
