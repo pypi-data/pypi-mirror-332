@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: codesecindirectmitgpl3
+Version: 0.1.0
+Summary: A sample Python package
+Author-email: Your Name <you@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/james-0131-2/pycodesecindirectmitgpl3
+Project-URL: Repository, https://github.com/james-0131-2/pycodesecindirectmitgpl3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: codesecdirectgpl3
+
+# pypack1
+it is only test purpose
