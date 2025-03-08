@@ -1,0 +1,10 @@
+py_slvs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_slvs/_slvs.so,sha256=b-Fk80O_MtAJC4x_2Xyh9TWQlkSvBinieDZ3QqJSqCM,891553
+py_slvs/slvs.py,sha256=Nkgk60z8ps3ksrgsv2_9NpdlinrlrhFfQ__qAfT8KzI,23782
+py_slvs.libs/libgcc_s-887de51c.so.1,sha256=RNCpguSD0HdFtlL1g8NK7PFi5CjUceWeO3d0Hf_dMQ0,218145
+py_slvs.libs/libstdc++-d6415257.so.6.0.33,sha256=meIiZn0YlC5otOd-KKSYWFNdlouafStLQyPhNs_zcYQ,3597909
+py_slvs-1.0.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+py_slvs-1.0.6.dist-info/METADATA,sha256=0hht0SBb5dsr7v_EmIM1ho7KOFlvsEY4btX8umyAqYM,1115
+py_slvs-1.0.6.dist-info/WHEEL,sha256=mcyF9ufffPsdGKbinqvAKWoqgfzCzebVkCbqdqlYTS0,104
+py_slvs-1.0.6.dist-info/top_level.txt,sha256=ExQaSNEnlFfOx83vuPyt4wHTIAdHysMOLYxwQUiy1_8,8
+py_slvs-1.0.6.dist-info/RECORD,,
