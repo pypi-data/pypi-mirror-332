@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: simul
+Version: 0.0.1
+Summary: A Python library for parallelism and parallelism analysis
+Author: Tejas Narayanan
+License: MIT
+Project-URL: Homepage, https://github.com/tnarayanan/simul
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
