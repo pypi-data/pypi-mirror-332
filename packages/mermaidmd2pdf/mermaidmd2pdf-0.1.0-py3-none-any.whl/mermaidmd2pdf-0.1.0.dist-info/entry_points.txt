@@ -1,0 +1,2 @@
+[console_scripts]
+mermaidmd2pdf = mermaidmd2pdf.cli:main
