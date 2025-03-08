@@ -1,0 +1,6 @@
+setup.py
+nonebot_plugin_group_insight.egg-info/PKG-INFO
+nonebot_plugin_group_insight.egg-info/SOURCES.txt
+nonebot_plugin_group_insight.egg-info/dependency_links.txt
+nonebot_plugin_group_insight.egg-info/requires.txt
+nonebot_plugin_group_insight.egg-info/top_level.txt

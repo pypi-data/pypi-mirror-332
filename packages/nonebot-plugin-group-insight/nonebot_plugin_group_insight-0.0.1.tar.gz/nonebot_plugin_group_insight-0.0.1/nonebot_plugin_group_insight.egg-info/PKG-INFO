@@ -1,0 +1,118 @@
+Metadata-Version: 2.2
+Name: nonebot-plugin-group-insight
+Version: 0.0.1
+Summary: NoneBot2 插件：群聊消息统计与排行榜
+Author: wohaokunr
+Author-email: wohaokunr@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: nonebot2
+Requires-Dist: nonebot-plugin-apscheduler
+Requires-Dist: sqlalchemy
+Requires-Dist: aiosqlite
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+---
+
+# NoneBot2 插件：群聊消息统计与排行榜(好困困)
+
+## 简介
+`nonebot-plugin-group-insight` 是一个基于 [NoneBot2](https://nonebot.dev/) 的插件，用于统计群聊消息并生成排行榜。通过该插件，您可以轻松了解群成员的活跃情况，并根据统计数据进行互动。
+
+---
+
+## 功能特性
+- **消息统计**：自动记录群聊消息，支持按用户、时间段等维度统计。
+- **排行榜展示**：生成群成员活跃度排行榜，支持多种排序方式。
+- **定时任务**：通过 `apscheduler` 定时更新统计数据。
+- **数据存储**：使用 `SQLAlchemy` 和 `aiosqlite` 存储数据，确保高效与可靠。
+
+---
+
+## 安装方法
+
+### 方法一：通过 pip 安装
+```bash
+pip install nonebot-plugin-group-insight
+```
+
+
+### 方法二：手动安装
+1. 克隆本仓库到本地：
+   ```bash
+   git clone https://github.com/your-repo/nonebot-plugin-group-insight.git
+   ```
+
+2. 将插件目录放入您的 NoneBot2 项目 `src/plugins` 文件夹中。
+3. 在 `pyproject.toml` 或 `nonebot` 配置文件中加载插件：
+   ```toml
+   plugins = ["nonebot_plugin_group_insight"]
+   ```
+
+
+---
+
+## 使用说明
+
+### 命令列表
+- **查看排行榜**：
+  ```
+  /排行榜
+  ```
+
+- **查看个人统计**：
+  ```
+  /我的统计
+  ```
+
+- **刷新统计数据**（管理员）：
+  ```
+  /刷新统计
+  ```
+
+
+### 配置项
+在 `nonebot` 配置文件中添加以下配置项以自定义插件行为：
+```python
+# 统计消息的时间范围（单位：天）
+GROUP_INSIGHT_DAYS = 7
+
+# 排行榜显示的最大人数
+GROUP_INSIGHT_TOP_LIMIT = 10
+```
+
+
+---
+
+## 贡献指南
+欢迎为本项目贡献代码或提出建议！以下是参与贡献的步骤：
+1. Fork 本仓库。
+2. 创建您的分支 (`git checkout -b feature/your-feature`)。
+3. 提交更改 (`git commit -am 'Add some feature'`)。
+4. 推送分支 (`git push origin feature/your-feature`)。
+5. 提交 Pull Request。
+
+---
+
+## 致谢
+感谢 [NoneBot2](https://nonebot.dev/) 提供的强大框架支持，以及所有为本项目提供帮助的开发者和用户。
+
+---
+
+## 许可证
+本项目采用 [MIT License](LICENSE) 开源协议。
+
+---
+
+如果您有其他需求或需要进一步调整内容，请随时告诉我！
