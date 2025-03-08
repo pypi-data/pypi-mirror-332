@@ -1,0 +1,46 @@
+# This workflow will install Puv, run tests and lint the code using a variety of Python versions.
+
+name: CI Build
+
+on:
+  push:
+    branches: '**'
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ${{ fromJson(vars.PYTHON_VERSIONS) }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Lint with ruff
+        run: |
+          # Stop the build if the ruff check fails, except for line length check (E501)
+          uv run ruff check --ignore=E501
+          # Show line length violation warnings
+          uv run ruff check --exit-zero
+
+      - name: Run tests
+        run: |
+          uv run pytest --cov
+
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v5
+        if: matrix.python-version == vars.PYTHON_LATEST_VERSION
+        with:
+          token: '${{ secrets.CODECOV_TOKEN }}'
+          disable_telem: true
