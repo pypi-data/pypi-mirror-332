@@ -1,0 +1,10 @@
+openapi2callables-0.1.0.dist-info/METADATA,sha256=xVGJh9phKYcPMBpzR1JawAbflVYqvcxfKMRZ2Qe3J64,9025
+openapi2callables-0.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+openapi2callables-0.1.0.dist-info/entry_points.txt,sha256=jM40up5QejAUs2wX_PM9mqgSeq1xo2lY13NvEJLQqHA,80
+openapi2callables-0.1.0.dist-info/licenses/LICENSE,sha256=u6J2kAKMMaqvq80oseDPkZaWiipGdwEa-NcCiNaxRrM,1072
+openapi2callables/__init__.py,sha256=8dSpt_b81ejY1_bX8f4Porc8tZnahKFOV1R0dgOGpy8,294
+openapi2callables/cli.py,sha256=KAb7yRiCTAD-AkACoax1A264TsJ1dE5kpev8m-CAJMY,772
+openapi2callables/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openapi2callables/parse.py,sha256=HYPUpggUjxomiRK_Ott_LCehfIiL4Sra3ghqaQhrmMo,7009
+openapi2callables/server.py,sha256=fpFTGecK4o2KNcDNvAAEKGvN5_ge5AQ6fyDI-HspWV4,2258
+openapi2callables-0.1.0.dist-info/RECORD,,
