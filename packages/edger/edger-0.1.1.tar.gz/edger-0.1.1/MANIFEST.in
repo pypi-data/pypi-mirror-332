@@ -1,0 +1,8 @@
+include README.md
+include edger/data/edger.ico
+include edger/config.ini
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude *.so
+global-exclude .*.swp
+global-exclude .DS_Store
