@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: cuml_rfext
+Version: 0.0.5
+Summary: Extension to add feature_importances_ to CUML's RandomForestClassifier and RandomForestRegressor
+Home-page: https://github.com/carlvoller/cuml_rfext
+Author: Carl Voller
+Author-email: carl@carlvoller.is
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: cuml-cu12
+Requires-Dist: pylibraft-cu12
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
