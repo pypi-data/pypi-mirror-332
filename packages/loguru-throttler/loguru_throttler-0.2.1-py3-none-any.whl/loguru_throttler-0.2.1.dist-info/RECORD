@@ -1,0 +1,9 @@
+loguru_throttler/__init__.py,sha256=75X5PVq6yTUN3xGgOrCw5lpSmMIaMIk2kkP8ZLpKQLM,215
+loguru_throttler/throttler.py,sha256=sEBuV3YP2oQHj98W4XyiODGw6RJb_N6_8qHGWphnQkU,7855
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_throttler.py,sha256=_KW_THOhMLWXta8qQNPjSV7av-4kKE3W2MUbNVgqck0,7359
+loguru_throttler-0.2.1.dist-info/LICENSE,sha256=-Xq0UzdB-VKXG9NmFgYIDeFsqMBV6MdmXAVsVCWeNCY,1079
+loguru_throttler-0.2.1.dist-info/METADATA,sha256=iJH8do7fwM0BW-J0k7-E8SJclyKnsgFwmeDtw-Vczlk,9272
+loguru_throttler-0.2.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+loguru_throttler-0.2.1.dist-info/top_level.txt,sha256=NZ7EtMvMIWAENtBR4lIXTUe3kCB51eYNQcIcu2w72Bg,23
+loguru_throttler-0.2.1.dist-info/RECORD,,
