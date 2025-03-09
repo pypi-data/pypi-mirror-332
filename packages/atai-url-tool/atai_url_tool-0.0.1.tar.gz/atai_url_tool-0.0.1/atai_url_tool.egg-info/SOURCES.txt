@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+atai_url_tool/__init__.py
+atai_url_tool/cli.py
+atai_url_tool/headers.py
+atai_url_tool.egg-info/PKG-INFO
+atai_url_tool.egg-info/SOURCES.txt
+atai_url_tool.egg-info/dependency_links.txt
+atai_url_tool.egg-info/entry_points.txt
+atai_url_tool.egg-info/requires.txt
+atai_url_tool.egg-info/top_level.txt

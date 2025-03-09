@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atai-url-tool"
+version = "0.0.1"
+description = "A CLI tool to check a URL's content type and map it to a simplified type."
+readme = "README.md"
+authors = [
+  { name = "AtomGradient", email = "alex@atomgradient.com" }
+]
+urls = { Homepage = "https://github.com/AtomGradient/atai-url-tool" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+requires-python = ">=3.6"
+dependencies = [
+  "playwright"
+]
+
+[project.scripts]
+atai-url-tool = "atai_url_tool.cli:main"
