@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/crimson/tracer/__init__.py
+src/crimson/tracer/filter.py
+src/crimson/tracer/json.py
+src/crimson/tracer/node.py
+src/crimson/tracer/tracer.py
+src/crimson/tracer/example/script.py
+src/crimson_tracer.egg-info/PKG-INFO
+src/crimson_tracer.egg-info/SOURCES.txt
+src/crimson_tracer.egg-info/dependency_links.txt
+src/crimson_tracer.egg-info/requires.txt
+src/crimson_tracer.egg-info/top_level.txt
