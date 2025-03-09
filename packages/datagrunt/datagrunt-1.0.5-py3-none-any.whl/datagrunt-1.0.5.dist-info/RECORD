@@ -1,0 +1,16 @@
+datagrunt/__init__.py,sha256=qr5hMOkliun482REN__wrV1U55n3R1Mae8PHLgUvLh4,1133
+datagrunt/core/__init__.py,sha256=Wnq-SqI0WViiEAXxTZfhigP2JlM8HBGlOy1p9P7yYoY,741
+datagrunt/core/csvcomponents.py,sha256=fOlFYTEd7ITIv3ZHdMvTz0nHZsrJayimzQ7ZH87NZTQ,11719
+datagrunt/core/databases.py,sha256=yo8ILK9dtj8zusrM8HgoA5s629b-ghGRp2HumvJS4eE,1702
+datagrunt/core/engines.py,sha256=kyqfR8ACmsaYuRSvjdrGZB1gqVCjVLDaHzy4Pwf_A6A,16055
+datagrunt/core/factories.py,sha256=7_xkCyiQq7Ieip24FxKdzcwbCQALYJ7p6g1QL8DDh2o,2385
+datagrunt/core/fileproperties.py,sha256=ynYNaiq6bvkskc-6RGhqxKb3PTgN8qSuXzn0n37bExg,7398
+datagrunt/core/queries.py,sha256=tPro8pDTokhSw28DiWsUKDs906CMJIL5l8KzunKDZAo,7468
+datagrunt/csvfiles/__init__.py,sha256=c1ln_c1jBaqmMSa-4f40gpLIlxFQylKX-Bf_6nYU85E,317
+datagrunt/csvfiles/csvreader.py,sha256=hpsuplsRnO3vxvGqfd_ti9OoWzCtzsJxkkqzk-L19pI,3492
+datagrunt/csvfiles/csvwriter.py,sha256=2JwSfstpL75Ye3NpxV-MGUU9dfOsfLnjzsOOCFO2g40,2950
+datagrunt-1.0.5.dist-info/LICENSE,sha256=qY7AmIOAwE05aVD7siEo8-2HOUz5WYUEhxbX0Ts9fyg,1069
+datagrunt-1.0.5.dist-info/METADATA,sha256=mwa4D-LM5p_l5lESDOQbUhSuwO9AoRVRPQPDLROMIJM,9250
+datagrunt-1.0.5.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+datagrunt-1.0.5.dist-info/top_level.txt,sha256=kVGx0P9sIaw_RegsAR94f7fyE4Um4ayE5vf_aTImMoE,10
+datagrunt-1.0.5.dist-info/RECORD,,
