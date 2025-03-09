@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/valkey_dict/__init__.py
+src/valkey_dict/core.py
+src/valkey_dict/py.typed
+src/valkey_dict/python_dict.py
+src/valkey_dict/type_management.py
+src/valkey_dict.egg-info/PKG-INFO
+src/valkey_dict.egg-info/SOURCES.txt
+src/valkey_dict.egg-info/dependency_links.txt
+src/valkey_dict.egg-info/requires.txt
+src/valkey_dict.egg-info/top_level.txt
