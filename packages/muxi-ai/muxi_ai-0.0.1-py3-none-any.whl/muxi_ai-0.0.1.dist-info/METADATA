@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: muxi-ai
+Version: 0.0.1
+Summary: An extensible framework for building AI agents (WIP)
+Home-page: https://github.com/ranaroussi/muxi
+Author: Ran Aroussi
+Author-email: ran@automaze.io
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# MUXI
+
+This is a placeholder package to reserve the name on PyPI for future development.
+
+## Description
+
+Python package for building AI agents.
