@@ -1,0 +1,12 @@
+ComboundFileParser.py
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ComboundFileParser.egg-info/PKG-INFO
+ComboundFileParser.egg-info/SOURCES.txt
+ComboundFileParser.egg-info/dependency_links.txt
+ComboundFileParser.egg-info/entry_points.txt
+ComboundFileParser.egg-info/top_level.txt

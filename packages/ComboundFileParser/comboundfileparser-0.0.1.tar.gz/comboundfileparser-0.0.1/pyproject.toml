@@ -1,0 +1,51 @@
+# [build-system]
+# requires = ["setuptools"]
+# build-backend = "setuptools.build_meta"
+
+[project]
+name = "ComboundFileParser"
+version = "0.0.1"
+dependencies = []
+authors = [
+    {name = "Maurice Lambert", email = "mauricelambert434@gmail.com"},
+]
+maintainers = [
+    {name = "Maurice Lambert", email = "mauricelambert434@gmail.com"},
+]
+description = 'This module implements a Compound file parser (file format used by OLE and base file format for macros, msi, msg, doc, xls...)'
+readme = {file = "README.md", content-type = "text/markdown"}
+# url = "https://github.com/mauricelambert/ComboundFileParser"
+# download-url = "https://mauricelambert.github.io/info/python/security/ComboundFileParser.pyz"
+classifiers = [
+    "Topic :: System",
+    "Topic :: Security",
+    'Operating System :: POSIX',
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Intended Audience :: Developers",
+    'Operating System :: MacOS :: MacOS X',
+    "Programming Language :: Python :: 3.8",
+    'Operating System :: Microsoft :: Windows',
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+keywords = ['OLE', 'CompoundFile', 'Parser', 'microsoft', 'macros', 'msi', 'msg', 'mail', 'doc', 'xls']
+license = {text = "GPL-3.0 License"}
+requires-python = ">=3.8"
+
+[project.scripts]
+ComboundFileParser = "ComboundFileParser:main"
+
+[project.urls]
+"Github" = "https://github.com/mauricelambert/ComboundFileParser"
+"Documentation" = "https://mauricelambert.github.io/info/python/security/ComboundFileParser.html"
+
+[tool.setuptools]
+include-package-data = true
+platforms = ['Windows', 'Linux', "MacOS"]
+py-modules = ['ComboundFileParser']
+packages = []
+script-files = []
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
