@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: nomogram-explainer
+Version: 1.0.0
+Summary: Drawing the nomogram with python, and explain the model with nomogram-drived data
+Home-page: https://github.com/liuyp2080/pynomogram-explainer
+Author: Jeffery Liu
+Author-email: liuyp2080@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: statsmodels
+Requires-Dist: bokeh
+Requires-Dist: plotly
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+Linear algorithms, such as logistic regression and Cox regression, remain popular in clinical model building. A prerequisite for these linear algorithms is the existence of a linear relationship among variables. When a linear algorithm performs well on a dataset, it validates this prerequisite. Consequently, relevant packages can be utilized to explain the predictions of the linear model through global and local methods.
+
+It is often claimed that linear models possess self - explanatory properties, using coefficients like beta or odds ratios (OR) to show the contribution of variables to the prediction. However, this is not entirely accurate. From the perspective of global model explanation, beta values or ORs are not comparable across variables. Thus, it is impossible to determine which variable is more important. Regarding local model explanation, the indicator should reflect the current contribution of case - specific values to the case - specific prediction. But beta or OR values are consistent across cases and cannot capture differences between different cases. In conclusion, beta or OR values cannot be regarded as a proper explanation of the linear model.
+
+The nomogram algorithm is suitable for explaining linear models, yet this functionality has not been fully incorporated. Therefore, this package was developed to address this need. Two types of values are employed to explain the model globally and locally. One is the metadata, which is the product of beta values and variables, and the other is the nomogram score. 
+
+1. function introduction
+
+# preprare the data 
+
+
+# golable explaination 
+
+
+# partial explaination
