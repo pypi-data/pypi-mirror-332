@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dnawave"
+version = "0.1.0"
+authors = [
+    {name = "DNAWave", email = "support@dnawave.io"},
+]
+description = "Official Python client for the DNAWave API"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "requests>=2.25.0",
+    "urllib3>=1.26.0",
+]
