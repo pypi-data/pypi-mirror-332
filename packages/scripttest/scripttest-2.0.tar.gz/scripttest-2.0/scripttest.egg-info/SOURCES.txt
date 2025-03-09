@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+scripttest.py
+setup.py
+scripttest.egg-info/PKG-INFO
+scripttest.egg-info/SOURCES.txt
+scripttest.egg-info/dependency_links.txt
+scripttest.egg-info/top_level.txt
+scripttest.egg-info/zip-safe
+tests/__init__.py
+tests/a_script.py
+tests/test_string.py
+tests/test_testscript.py
