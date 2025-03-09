@@ -1,0 +1,2 @@
+[console_scripts]
+box2d-testbed = box2d_testbed:main
