@@ -1,0 +1,11 @@
+botable/__init__.py,sha256=yVE4963LKh2N2kIJnbMulmi41nrNlC0i-DgVKlZtPDU,115
+botable/__main__.py,sha256=yxaJCMdGITjLTr4Q8Rk3yoXuewVL3pn5w2GWg-ggRMY,2921
+botable/common.py,sha256=rl1xi-cDh1okKaP8sbjXI8bQpPQvwm5Hvudd6ad6SLM,1856
+botable/play.py,sha256=aWK5eHkMpmsErVIW0A0_ndGKeiMktL_0sO0fuYscM2w,4294
+botable/record.py,sha256=p0Zwmr7PVzhBfZfssNUbN9_0DKVqlzh_jD8sURJU6Fw,3515
+botable-0.0.9rc0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+botable-0.0.9rc0.dist-info/METADATA,sha256=GkauYtjEC_7gWgubdeVA7Cc4XCASgvfZl7441MI5kp8,1807
+botable-0.0.9rc0.dist-info/WHEEL,sha256=EaM1zKIUYa7rQnxGiOCGhzJABRwy4WO57rWMR3_tj4I,91
+botable-0.0.9rc0.dist-info/entry_points.txt,sha256=Bhfa9oGV5OYE08P169F2hAkmKXr6c3qHZkAGLjKPhq0,50
+botable-0.0.9rc0.dist-info/top_level.txt,sha256=LbjDFV2g_qnwkxAd2IbOsjSEKe4rgUJ3XBvcMOKAHGE,8
+botable-0.0.9rc0.dist-info/RECORD,,
