@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: radius-ai-agent-sdk-adapter-langchain
+Version: 0.0.1
+Summary: Radius adapter for LangChain
+Author-email: Matt Dionis <matt.dionis@radiustechnologysystems.com>
+Project-URL: Homepage, https://github.com/radiustechsystems/ai-agent-toolkit
+Project-URL: Bug Tracker, https://github.com/radiustechsystems/ai-agent-toolkit/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Radius AI Agent SDK Adapter for LangChain
+
+  Name reservation for the Radius adapter for LangChain package.
+  Full package coming soon.
