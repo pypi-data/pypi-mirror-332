@@ -1,0 +1,9 @@
+easy_transformers_finetune/__init__.py,sha256=wUdkEp9CHE3BxlLMGneRca3mPnBjLrrpd9r2BjdUA6I,206
+easy_transformers_finetune/evaluation.py,sha256=U3wf_hC9nB7IdYPvkMLYRracp4kII0D5ipzZndCzqf0,289
+easy_transformers_finetune/finetune.py,sha256=APSj1Hg0_fltZsd2NRnba7ZZdQ_Ht2MHKlIAbUZeQq4,1437
+easy_transformers_finetune/utils.py,sha256=KdTzPfcgUVV6azizz46DEG9ZFjpLFZlgEcg4AK2DXWc,1814
+easy_transformers_finetune-0.1.0.dist-info/LICENSE.txt,sha256=h5tGOf68_YkZWmRCYtwZG0u5MfY-Fwr408j4dJwD1mE,1081
+easy_transformers_finetune-0.1.0.dist-info/METADATA,sha256=zYgEfcHmjQDj92nS9abOnXXUvasUUSvlthQb-yGpH6s,5629
+easy_transformers_finetune-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+easy_transformers_finetune-0.1.0.dist-info/top_level.txt,sha256=SDdGVT4OlCjongQ3p0XQvAXYsRxnjqEYeW1fFVSdnVw,27
+easy_transformers_finetune-0.1.0.dist-info/RECORD,,
