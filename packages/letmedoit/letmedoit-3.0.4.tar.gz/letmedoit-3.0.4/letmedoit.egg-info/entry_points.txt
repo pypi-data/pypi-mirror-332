@@ -1,0 +1,5 @@
+[console_scripts]
+letmedoit = letmedoit.main:main
+letmedoitlite = letmedoit.main:lite
+lmdi = letmedoit.main:main
+lmdil = letmedoit.main:lite
