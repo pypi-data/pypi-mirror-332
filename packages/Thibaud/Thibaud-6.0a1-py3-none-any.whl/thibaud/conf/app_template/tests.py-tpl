@@ -1,0 +1,3 @@
+from thibaud.test import TestCase
+
+# Create your tests here.

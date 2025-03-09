@@ -1,0 +1,2 @@
+[console_scripts]
+thibaud-admin = thibaud.core.management:execute_from_command_line
