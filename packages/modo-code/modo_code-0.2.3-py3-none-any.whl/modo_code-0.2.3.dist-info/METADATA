@@ -1,0 +1,85 @@
+Metadata-Version: 2.3
+Name: modo-code
+Version: 0.2.3
+Summary: Modo code assistant client
+Author: mohamad171
+Author-email: mohamadmohamadi249@gmail.com
+Requires-Python: >=3.9,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: json5 (==0.10.0)
+Requires-Dist: llama-index (==0.12.19)
+Requires-Dist: llama-index-packs-code-hierarchy (==0.4.1)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: shellingham (==1.4.0)
+Requires-Dist: tree-sitter-languages (==1.10.2)
+Requires-Dist: typer (==0.15.2)
+Description-Content-Type: text/markdown
+
+Modo code assistant client **Beta**
+
+
+## Overview
+
+This project provides a command-line interface for managing projects within a system called Modo Code. Users can initialize projects, ask questions 
+related to those projects, and receive AI-generated responses.
+
+## Features
+
+- **Initialize a Project**: Users can create a new project with a specified name and programming language.
+- **Ask Questions**: Once a project is initialized, users can pose questions related to their projects and receive AI-generated responses.
+
+## Supported Languages
+``` Python - C# - Typescript - Javascript - Go ```
+
+
+## Installation
+
+
+1. **Install modo:**
+
+   ```bash
+   pip install modo-code
+   ```
+
+2. **Authenticate with Modo Code:**
+   Run the following command to log in:
+
+   ```bash
+   modo login
+   ```
+
+   * IF you need credential to try it contact me: mohamadmohamadi249@gmail.com
+
+## Usage
+
+1. **Initialize a Project:**
+
+   Run the following command at root of project to start the project initialization process:
+
+   ```bash
+   modo init
+   ```
+
+   Follow the prompts to provide the project name and language.
+
+2. **Ask a Question:**
+
+   After initializing a project, you can ask questions like this:
+
+   ```bash
+   modo ask_question
+   ```
+
+## Contributing
+
+If you'd like to contribute to the project, please fork the repository and submit a pull request with your proposed changes.
+
+## License
+
+This project is licensed under the MIT License
+
