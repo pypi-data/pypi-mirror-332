@@ -1,0 +1,5 @@
+httpx_aiohttp_transport/__init__.py,sha256=Bpexb5UXveFFVfPIpy3hmJolNOMnYizWNaz7D0tyWvA,7349
+httpx_aiohttptransport-0.2.0.dist-info/LICENSE,sha256=iI_ojUUAll53cDhqU2cp2ywg5sOhcaPlKwfpuXNkACI,1075
+httpx_aiohttptransport-0.2.0.dist-info/METADATA,sha256=rbcU3GLNL1mciJvOhf5VPnZR4BrbYi9Ie1V2rQPNlQ0,2162
+httpx_aiohttptransport-0.2.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+httpx_aiohttptransport-0.2.0.dist-info/RECORD,,
