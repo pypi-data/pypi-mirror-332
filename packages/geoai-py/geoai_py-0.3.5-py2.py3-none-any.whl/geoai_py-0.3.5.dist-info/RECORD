@@ -1,0 +1,13 @@
+geoai/__init__.py,sha256=hZW6Fvb463-wq7iWzdssC41ErmU2G7st8ObOjmJfPd8,923
+geoai/download.py,sha256=4GiDmLrp2wKslgfm507WeZrwOdYcMekgQXxWGbl5cBw,13094
+geoai/extract.py,sha256=fyueuGWqL8vd9NqNyIWtxSFhbBSMUGCCkxySTR4xjy4,91467
+geoai/geoai.py,sha256=7sbZ2LCZXaO0Io4Y7UH5tcQMFZH-sjYu_NENRKfyL5o,64
+geoai/preprocess.py,sha256=ddUZUZ2fLNjzSIpXby7-MszM16GZt_gE9BMX4jdUZMw,119217
+geoai/segmentation.py,sha256=Vcymnhwl_xikt4v9x8CYJq_vId9R1gB7-YzLfwg-F9M,11372
+geoai/utils.py,sha256=cLBKrpXiYxFZWVR73ql0gHnt-78vSCvX7NPetvnTU4U,191690
+geoai_py-0.3.5.dist-info/LICENSE,sha256=vN2L5U7cZ6ZkOHFmc8WiGlsogWsZc5dllMeNxnKVOZg,1070
+geoai_py-0.3.5.dist-info/METADATA,sha256=HYWbzmYKYhO0FoIsrY0HGWRYGgpUKKL46Yixh_h0b2c,6059
+geoai_py-0.3.5.dist-info/WHEEL,sha256=rF4EZyR2XVS6irmOHQIJx2SUqXLZKRMUrjsg8UwN-XQ,109
+geoai_py-0.3.5.dist-info/entry_points.txt,sha256=uGp3Az3HURIsRHP9v-ys0hIbUuBBNUfXv6VbYHIXeg4,41
+geoai_py-0.3.5.dist-info/top_level.txt,sha256=1YkCUWu-ii-0qIex7kbwAvfei-gos9ycyDyUCJPNWHY,6
+geoai_py-0.3.5.dist-info/RECORD,,
