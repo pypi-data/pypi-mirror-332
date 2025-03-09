@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+l2data_feeder/__init__.py
+l2data_feeder/slice_feeder.py
+l2data_feeder.egg-info/PKG-INFO
+l2data_feeder.egg-info/SOURCES.txt
+l2data_feeder.egg-info/dependency_links.txt
+l2data_feeder.egg-info/requires.txt
+l2data_feeder.egg-info/top_level.txt
