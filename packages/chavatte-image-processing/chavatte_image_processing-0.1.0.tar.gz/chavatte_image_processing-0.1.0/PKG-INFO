@@ -1,0 +1,60 @@
+Metadata-Version: 2.2
+Name: chavatte_image_processing
+Version: 0.1.0
+Summary: Biblioteca para processamento de imagens
+Home-page: https://github.com/chavatte/LAB-SUZANO-PYTHON-DEVELOPER/blob/main/projects/LAB-04/README.md
+Author: João Carlos Chavatte
+Author-email: chavatte@duck.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# image_processing
+
+## Description
+
+The package `image_processing` is used to:
+
+Processing:
+- Histogram matching
+- Structural similarity
+- Resize image
+
+Utils:
+- Read image
+- Save image
+- Plot image
+- Plot result
+- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install `image_processing`
+
+```bash
+pip install image_processing
+```
+
+## Usage
+
+```python
+from package_name.module1_name import file1_name
+file1_name.my_function()
+```
+
+## Author
+João Carlos Chavatte
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
