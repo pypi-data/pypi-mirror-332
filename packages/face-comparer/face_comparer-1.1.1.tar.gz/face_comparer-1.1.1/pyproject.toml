@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "face-comparer"
+version = "1.1.1"
+description = "A Python module for face comparison using face_recognition and Base64 conversion."
+authors = [{ name = "Sharjeel Baig", email = "dr.sharjeel.6@gmail.com" }]
+dependencies = [
+    "face_recognition",
+    "numpy",
+    "pillow"
+]
