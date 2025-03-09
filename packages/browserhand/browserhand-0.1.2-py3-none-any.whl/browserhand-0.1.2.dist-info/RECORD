@@ -1,0 +1,13 @@
+browserhand/__init__.py,sha256=KBRrpX13MB8938vPTDzsZhz5GsGXcOv1QasldXVPYqw,220
+browserhand/actions.py,sha256=73WlvBNlw0yiwn14EydwzSTTvQeMWifB8zSP6jpvDr4,5399
+browserhand/cli.py,sha256=FnauiJELtosH5kugpPHpvzWV-lc9T4EuMtJEWpzRupc,3241
+browserhand/code_executor.py,sha256=PJ1lvs32YNHXQTSeeT1pbUlAXviaSmII6aOxmP549Zc,4232
+browserhand/core.py,sha256=LUnYP_5Pr4H_JoqrBAXHmuTSPWigqlS7WmDdXTl_bFc,7178
+browserhand/extractors.py,sha256=C7_VljUpLbZdv9-6t5K9udYHP74ZrH3jkBnQm2MkULc,3598
+browserhand/page_observer.py,sha256=e_8PA3HfLm6AwUgX5KNnC9GOyZfJFnECPAljVJa_gCc,6387
+browserhand/prompts.py,sha256=cI9-G4-N0Ud1ovA9uZ-xooWDtYLdYt-9VnBRdmu1gbA,849
+browserhand-0.1.2.dist-info/METADATA,sha256=76p0E4WTjn-ogY2Ja8BID2pMj2lGys37roVoaDq9NrQ,4150
+browserhand-0.1.2.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+browserhand-0.1.2.dist-info/entry_points.txt,sha256=oQHbMOWw0WF-I_AQVpD_q7MQkXcdqrGcbXRU8dXpAm4,53
+browserhand-0.1.2.dist-info/top_level.txt,sha256=H4m88n4BGgEYLOpBzZeMtX-GwS1lDa_l8j7fPgJg-5U,12
+browserhand-0.1.2.dist-info/RECORD,,
