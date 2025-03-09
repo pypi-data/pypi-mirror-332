@@ -1,0 +1,11 @@
+literate_python/__init__.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+literate_python/__main__.py,sha256=u_ZdrCtQy7wupckgrsbDGKpysOVT18RG9DbcZnQiepU,43
+literate_python/inspector.py,sha256=ga5hDIcHkfSToTP4vubm-gcFSDaVJUA0v3hRvAYUUPY,3238
+literate_python/loader.py,sha256=-x2Joc-IoHkRUrlrTBHrNEtym8UtQpzHEg5j_0a-mGg,2295
+literate_python/sections.py,sha256=SkCw_pk-UXQqze4vwHNUOlMp5jUGPE9il0hUAktfT0Q,4327
+literate_python/server.py,sha256=HhcQFALqwXtWW_cf-UJ7P-IfSnIUzQrwbcwJifdW4u0,6857
+literate_python/tests/test_server.py,sha256=eaoRAKUZx-vVGXOjnBvmCSMB7wmoX-5Z6DMeeNN9swE,33
+literate_python-0.0.5.dist-info/LICENSE,sha256=w3xqlpqGvN7OHsGSASkNmVtpDkkYdB95uOdQn-dM1mo,1067
+literate_python-0.0.5.dist-info/METADATA,sha256=8flHkoCD91v2wv42IVfCsb-kkUBaG10WqnfbOnp-lJM,2089
+literate_python-0.0.5.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+literate_python-0.0.5.dist-info/RECORD,,
