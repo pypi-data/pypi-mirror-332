@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: angent
+Version: 0.1.0.dev1
+Summary: Add your description here
+Author-email: Gus <jianbaiye@outlook.com>
+Requires-Python: >=3.11
+Requires-Dist: drive-flow>=0.0.1
+Requires-Dist: openai>=1.65.4
