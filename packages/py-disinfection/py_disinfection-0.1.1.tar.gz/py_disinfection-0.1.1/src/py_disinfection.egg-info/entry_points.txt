@@ -1,0 +1,2 @@
+[console_scripts]
+disinfect = py_disinfection.cli:app

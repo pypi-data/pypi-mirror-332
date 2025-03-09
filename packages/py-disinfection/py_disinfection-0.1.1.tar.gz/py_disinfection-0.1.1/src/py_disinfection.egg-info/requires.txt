@@ -1,0 +1,12 @@
+typer
+rich
+pydantic>=2.0
+
+[dev]
+coverage
+mypy
+pytest
+pytest-cov
+ruff
+twine
+types-pydantic
