@@ -1,0 +1,2 @@
+[console_scripts]
+my1-world = test_atml:hello_world
