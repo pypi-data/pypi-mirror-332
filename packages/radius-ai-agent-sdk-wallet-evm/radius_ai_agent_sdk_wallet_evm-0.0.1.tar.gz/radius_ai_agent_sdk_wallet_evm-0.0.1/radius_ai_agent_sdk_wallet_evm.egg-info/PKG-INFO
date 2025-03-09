@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: radius-ai-agent-sdk-wallet-evm
+Version: 0.0.1
+Summary: Radius AI Agent SDK EVM wallet implementation
+Author-email: Matt Dionis <matt.dionis@radiustechnologysystems.com>
+Project-URL: Homepage, https://github.com/radiustechsystems/ai-agent-toolkit
+Project-URL: Bug Tracker, https://github.com/radiustechsystems/ai-agent-toolkit/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Radius AI Agent SDK Wallet EVM
+
+  Name reservation for the Radius AI Agent SDK EVM wallet implementation package.
+  Full package coming soon.

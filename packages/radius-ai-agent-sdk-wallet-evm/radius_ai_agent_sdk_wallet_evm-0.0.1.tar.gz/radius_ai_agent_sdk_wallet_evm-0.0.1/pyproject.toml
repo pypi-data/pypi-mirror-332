@@ -1,0 +1,23 @@
+[build-system]
+  requires = ["setuptools>=61.0"]
+  build-backend = "setuptools.build_meta"
+
+  [project]
+  name = "radius-ai-agent-sdk-wallet-evm"
+  version = "0.0.1"
+  authors = [
+      {name = "Matt Dionis", email = "matt.dionis@radiustechnologysystems.com"},
+  ]
+  description = "Radius AI Agent SDK EVM wallet implementation"
+  readme = "README.md"
+  requires-python = ">=3.10"
+  classifiers = [
+      "Development Status :: 3 - Alpha",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: 3",
+  ]
+
+  [project.urls]
+  "Homepage" = "https://github.com/radiustechsystems/ai-agent-toolkit"
+  "Bug Tracker" = "https://github.com/radiustechsystems/ai-agent-toolkit/issues"
