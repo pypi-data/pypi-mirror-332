@@ -1,0 +1,10 @@
+allow_agent/__init__.py,sha256=gdQRXkDF8nvU7ThwaDrdooTQ3P1NFaPfHHkFAL3tyWE,9459
+allow_agent/init_models.py,sha256=djWUKpttsllFFXyoSgD1zhHSy8t6P-ctDgNU3r-oTAc,1361
+allow_agent/safety.py,sha256=tBCtphaC79qZrp9Plh65qZSQf1gmurrBQU_jy4LCxes,2652
+allow_agent/test_allowagent.py,sha256=EseWuODb8sSUNDOvDkz-b-4yoxpAkwf_MzB8-nI4fOg,1514
+allow_agent-1.1.0.dist-info/LICENSE,sha256=UUKeQPspWTBCfeI_xwhCeoa367F5yP-P1L6A_G5I_gQ,1068
+allow_agent-1.1.0.dist-info/METADATA,sha256=vNjH3rPECS3_bM_GuSgMOkOOgrlFidPEClKAt-UMffg,3790
+allow_agent-1.1.0.dist-info/WHEEL,sha256=EaM1zKIUYa7rQnxGiOCGhzJABRwy4WO57rWMR3_tj4I,91
+allow_agent-1.1.0.dist-info/entry_points.txt,sha256=6sZW-0zAGlXD1VeW-1HQqYQd64ILvlzykzuIFfZQipU,73
+allow_agent-1.1.0.dist-info/top_level.txt,sha256=Qqh0bNx1hX5DoAXMoSPdoQjAHo_XHerQxGfN_vrCpjY,12
+allow_agent-1.1.0.dist-info/RECORD,,
