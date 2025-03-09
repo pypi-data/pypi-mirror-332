@@ -1,0 +1,11 @@
+numpy
+scikit-learn
+ipython
+
+[dev]
+pytest
+black
+flake8
+
+[xgboost]
+xgboost>=1.0.0
