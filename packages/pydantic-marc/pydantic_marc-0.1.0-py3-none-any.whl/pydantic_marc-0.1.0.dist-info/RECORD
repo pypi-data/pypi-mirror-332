@@ -1,0 +1,10 @@
+pydantic_marc/__init__.py,sha256=CBnbIywA2q66ApGHMMitno4AXSsjcbiKwEEW8kDsBxk,103
+pydantic_marc/errors.py,sha256=zRnlqmkVs1X_m0gnvbaWFPIBxc3I53Q4PECSVfN5Zgc,6282
+pydantic_marc/fields.py,sha256=7DvNCz3ha_dEXHLH_OikJzYfapcPtDRCTvCtmMRQV-E,6891
+pydantic_marc/models.py,sha256=hMAGOx0zSLXUah5xdalRJknkoPbJ1mKQbCoil9o8cYI,3062
+pydantic_marc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_marc/rules.py,sha256=mIcJkCe0qAPBMv6P0hTIs5AYWI70AA4_5AUzPr0urFg,125325
+pydantic_marc/validators.py,sha256=5h22DY29ooK6YhFH9nCF0CSJoEYh2Q5q-ssD4UNNRGk,10952
+pydantic_marc-0.1.0.dist-info/METADATA,sha256=-Dt5DviF7H-pSxcLVqupVMiJAuen4RfK5wOlAOj6ymI,6506
+pydantic_marc-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pydantic_marc-0.1.0.dist-info/RECORD,,
