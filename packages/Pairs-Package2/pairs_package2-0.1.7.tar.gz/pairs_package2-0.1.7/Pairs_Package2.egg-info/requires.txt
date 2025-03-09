@@ -1,0 +1,7 @@
+pandas
+pandas_datareader
+alpaca-trade-api
+numpy
+python-dotenv
+setuptools
+statsmodels
