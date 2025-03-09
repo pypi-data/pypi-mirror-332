@@ -1,0 +1,6 @@
+setup.py
+WebInter.egg-info/PKG-INFO
+WebInter.egg-info/SOURCES.txt
+WebInter.egg-info/dependency_links.txt
+WebInter.egg-info/entry_points.txt
+WebInter.egg-info/top_level.txt
