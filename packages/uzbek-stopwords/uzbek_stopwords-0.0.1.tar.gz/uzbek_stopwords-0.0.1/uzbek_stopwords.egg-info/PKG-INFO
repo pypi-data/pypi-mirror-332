@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: uzbek-stopwords
+Version: 0.0.1
+Summary: A list of Uzbek stopwords for the Uzbek language
+Home-page: https://github.com/nurbekkmu/uzbek_stopwords
+Author: Nurbek Suvonov
+Author-email: nurbekkmu@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Uzbek Stopwords
+
+A Python package providing a list of stopwords in the Uzbek language, useful for natural language processing (NLP) tasks like text cleaning, tokenization, and analysis.
+
+## Installation
+
+You can install this package using pip once it’s published on PyPI:
+
+```bash
+pip install uzbek-stopwords

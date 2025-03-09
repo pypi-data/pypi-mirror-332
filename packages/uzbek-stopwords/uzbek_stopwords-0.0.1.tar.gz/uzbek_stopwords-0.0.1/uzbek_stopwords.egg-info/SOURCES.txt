@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+uzbek_stopwords/__init__.py
+uzbek_stopwords.egg-info/PKG-INFO
+uzbek_stopwords.egg-info/SOURCES.txt
+uzbek_stopwords.egg-info/dependency_links.txt
+uzbek_stopwords.egg-info/top_level.txt
