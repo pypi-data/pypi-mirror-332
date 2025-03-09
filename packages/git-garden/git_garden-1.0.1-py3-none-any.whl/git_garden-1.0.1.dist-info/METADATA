@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: git-garden
+Version: 1.0.1
+Requires-Python: >=3.10
+Provides-Extra: dev
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pydoclint; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'dev'
+Requires-Dist: tox; extra == 'dev'
