@@ -1,0 +1,8 @@
+src/pycord_rest/__init__.py,sha256=c6zBM6bM_7NWbjzlJ6GxIyWbtH98QJrzi_PDvKdlzCk,212
+src/pycord_rest/_version.py,sha256=ypYjg1lOKm-KjhEwqwSB8XPrSuAfnfK8hSDDWtD6VoA,513
+src/pycord_rest/app.py,sha256=ef5Seb5GFAUbVgGAUaMyzsHCqHpslMKApeakeheyCCo,10502
+src/pycord_rest/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycord_rest_bot-0.1.0a2.dist-info/METADATA,sha256=ENv0uOXqbU7tyYVInuNN1zPtHJeGT-URaKnVoXTd4gs,5149
+pycord_rest_bot-0.1.0a2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pycord_rest_bot-0.1.0a2.dist-info/licenses/LICENSE,sha256=XiXiX6IrqSWb6ICytZIdLl6gqjJqHz8ABd7QZ_jveGc,1064
+pycord_rest_bot-0.1.0a2.dist-info/RECORD,,
