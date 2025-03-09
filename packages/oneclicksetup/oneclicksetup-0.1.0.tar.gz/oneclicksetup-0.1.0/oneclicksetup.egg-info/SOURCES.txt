@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+oneclicksetup/__init__.py
+oneclicksetup/cli.py
+oneclicksetup/env_utils.py
+oneclicksetup.egg-info/PKG-INFO
+oneclicksetup.egg-info/SOURCES.txt
+oneclicksetup.egg-info/dependency_links.txt
+oneclicksetup.egg-info/entry_points.txt
+oneclicksetup.egg-info/requires.txt
+oneclicksetup.egg-info/top_level.txt

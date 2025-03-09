@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: oneclicksetup
+Version: 0.1.0
+Summary: A one-click environment setup CLI.
+Author-email: Your Name <you@example.com>
+Keywords: cli,devops,setup
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv==0.21.0
+
+# OneClickSetup
+
+A Python-based "One-Click Environment Setup CLI" that:
+
+1. Installs system dependencies (Ubuntu/macOS).
+2. Sets up SSH keys (if needed).
+3. Logs progress for easy debugging.
+
+## Installation
+
+```bash
+pip install oneclicksetup
