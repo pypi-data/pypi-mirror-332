@@ -1,0 +1,2 @@
+[console_scripts]
+mysetup = oneclicksetup.cli:main
