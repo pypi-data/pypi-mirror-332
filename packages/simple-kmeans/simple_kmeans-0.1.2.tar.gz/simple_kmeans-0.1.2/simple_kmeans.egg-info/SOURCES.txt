@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+simple_kmeans/__init__.py
+simple_kmeans/kmeans.py
+simple_kmeans.egg-info/PKG-INFO
+simple_kmeans.egg-info/SOURCES.txt
+simple_kmeans.egg-info/dependency_links.txt
+simple_kmeans.egg-info/requires.txt
+simple_kmeans.egg-info/top_level.txt
