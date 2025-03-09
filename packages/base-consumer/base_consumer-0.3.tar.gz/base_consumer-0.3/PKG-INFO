@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: base-consumer
+Version: 0.3
+Description-Content-Type: text/markdown
+Requires-Dist: confluent_kafka
+
+### Base Consumer
+The base consumer is a class that is used to create a consumer that will consume messages from a Kafka topic. It is a base class that should be inherited by a consumer class that will implement the consume method. The consume method is the method that will be called when a message is consumed from the Kafka topic. The base consumer class provides the functionality to connect to the Kafka broker and consume messages from a Kafka topic.
+
+#### Usage
+To create a consumer that will consume messages from a Kafka topic, you need to create a class that inherits from the base consumer class and implement the consume method. The consume method should take a message as an argument and process the message. The base consumer class provides the functionality to connect to the Kafka broker and consume messages from a Kafka topic.
+
+```python
+import os
+
+import requests
+
+from base_consumer import BaseKafkaConsumer
+
+class EmailConsumer(BaseKafkaConsumer):
+    def __init__(self):
+        # Initialize the consumer with the topic and group_id
+        super().__init__(
+            broker_url="kafka:9092",
+            topic="email", 
+            group_id="email-consumer", 
+            log_file="email_consumer.log"
+        )
+        log_level = os.environ.get("LOG_LEVEL", "INFO")
+        self.set_logger_level(log_level) # if not set, default is INFO
+
+    def process_message(self, message: dict):
+        # Process the message
+        print(message)
+        # Send the email
+        requests.post("http://email-service:5000/send_email", json=message)
+
+
+if __name__ == "__main__":
+    consumer = EmailConsumer()
+    consumer.consume()
+```
+
+In the example above, we create a consumer that will consume messages from the `email` topic. The consumer class inherits from the `BaseKafkaConsumer` class and implements the `process_message` method to process the message. The `process_message` method prints the message and sends an email using an HTTP request to the `email-service` service.
