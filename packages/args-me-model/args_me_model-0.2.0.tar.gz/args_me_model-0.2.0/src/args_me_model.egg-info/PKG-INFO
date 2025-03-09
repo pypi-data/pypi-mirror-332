@@ -1,0 +1,74 @@
+Metadata-Version: 2.2
+Name: args-me-model
+Version: 0.2.0
+Summary: Data model for the args.me argument search engine
+Author: Johannes Kiesel
+Maintainer: Johannes Kiesel
+License: MIT License
+        
+        Copyright (c) 2025 Webis
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/webis-de/args-me-model
+Project-URL: Bug Reports, https://github.com/webis-de/args-me-model/issues
+Project-URL: Source, https://github.com/webis-de/args-me-model
+Keywords: argumentation
+Requires-Python: >=3.10
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: pydantic>=2.10.6
+
+# args-me-model
+Data model for args.me.
+
+```python
+from args_me_model import Claim, Source
+
+# Creating claims
+claim1 = Claim.from_source(
+        Source(
+            name="common-knowledge",
+            text="Blue is scattered more than other colors"
+        )
+    )
+claim2 = Claim.from_source(
+        Source(
+            name="common-knowledge",
+            text="The sky is blue"
+        ),
+        support = [[claim1]] # list of linked support
+    )
+claim3 = Claim.from_source(
+        Source(
+            name="uncommon-knowledge",
+            text="The sky is not blue"
+        )
+    )
+claim1.counter = claim3.id
+claim3.counter = claim1.id
+
+# Writing claims to a file
+Claim.write_ndjson([claim1, claim2, claim3], "myclaim.ndjson")
+
+# Iterating over claims from a file
+for claim in Claim.read_ndjson("myclaim.ndjson"):
+    print(claim.text)
+```
+
