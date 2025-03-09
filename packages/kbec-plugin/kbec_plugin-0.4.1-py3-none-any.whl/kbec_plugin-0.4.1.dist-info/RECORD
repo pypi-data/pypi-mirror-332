@@ -1,0 +1,9 @@
+kbec_plugin/__init__.py,sha256=iFWKEyKe_26nuHBzid_KQfTHUpUWRIJ7b6EVxNaQp1A,88
+kbec_plugin/kbec_config.py,sha256=Xtq6J9dNHSeORmc7rmkzrQKDlYLoCoxutb4nE6LLYp4,1011
+kbec_plugin/kbec_plugin.py,sha256=TuvcZg05d3VqbWLLfypnOwYY7wgmBchtpUblsCFkL0I,2972
+kbec_plugin/kbec_plugin_external.py,sha256=-DJtnXtOX0h4WOou1A50CYkCbVrvePfemF-scaMkB9E,249
+kbec_plugin-0.4.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+kbec_plugin-0.4.1.dist-info/METADATA,sha256=7CLqffQtcQGZTOteAYXK77i9TqxOEfDu7aDQ1hlnsVE,854
+kbec_plugin-0.4.1.dist-info/WHEEL,sha256=EaM1zKIUYa7rQnxGiOCGhzJABRwy4WO57rWMR3_tj4I,91
+kbec_plugin-0.4.1.dist-info/top_level.txt,sha256=NAN9jZBHOQ5O0yDojFYLH7gTercUsn5SKKsVzgPKC64,12
+kbec_plugin-0.4.1.dist-info/RECORD,,
