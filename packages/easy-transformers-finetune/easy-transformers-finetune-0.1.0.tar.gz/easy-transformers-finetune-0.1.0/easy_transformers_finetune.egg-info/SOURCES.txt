@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+easy_transformers_finetune/__init__.py
+easy_transformers_finetune/evaluation.py
+easy_transformers_finetune/finetune.py
+easy_transformers_finetune/utils.py
+easy_transformers_finetune.egg-info/PKG-INFO
+easy_transformers_finetune.egg-info/SOURCES.txt
+easy_transformers_finetune.egg-info/dependency_links.txt
+easy_transformers_finetune.egg-info/requires.txt
+easy_transformers_finetune.egg-info/top_level.txt
+tests/test_evaluation.py
+tests/test_finetune.py
