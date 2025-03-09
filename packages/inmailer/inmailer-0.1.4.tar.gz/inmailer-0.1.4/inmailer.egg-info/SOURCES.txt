@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+inmailer/__init__.py
+inmailer/core.py
+inmailer.egg-info/PKG-INFO
+inmailer.egg-info/SOURCES.txt
+inmailer.egg-info/dependency_links.txt
+inmailer.egg-info/requires.txt
+inmailer.egg-info/top_level.txt
