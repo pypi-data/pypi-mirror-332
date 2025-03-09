@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.0.4
+-----
+
+* Added different launch nodes for element, core and custom installation (#22)
