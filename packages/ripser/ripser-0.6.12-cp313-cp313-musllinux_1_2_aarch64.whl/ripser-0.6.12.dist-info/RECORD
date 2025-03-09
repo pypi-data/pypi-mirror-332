@@ -1,0 +1,15 @@
+pyRipser.cpython-313-aarch64-linux-musl.so,sha256=_bwzW1OEnYm02O7lADLPQti6mklVFF1qO1UXs9eKQJg,2367985
+ripser/__init__.py,sha256=2KVSr14Bkq53HCLX5aGTiXe4ifHTd3RfO9q1gPfi5nM,57
+ripser/_version.py,sha256=BiHX3cx1Sxf_7bbaqe6YlxTuYuhLff-1I6bjwW92Vik,23
+ripser/pyRips.pxd,sha256=4UU3fDpUUuzOGoeYiDX5Dcc6MXJwNHUiCkBN-2ugMiE,957
+ripser/pyRipser.cpp,sha256=-XP0J_uMSdGZ5XIpSlMddQWzEZRG7ZBKF0T5qN4ETLY,445198
+ripser/pyRipser.pyx,sha256=Liosvn4W00UCTGPgZj9gW_4Ca83fwRZfXY9zjMweFwU,841
+ripser/ripser.cpp,sha256=I40Fikq_h3ElBs69u2isN0Uj05sIF7fZGxHFiGTvTTY,46174
+ripser/ripser.py,sha256=Yrjoi69ogL3etd4sqCA_nFTzyLKvmCRajp7JqPtG1E8,23489
+ripser.libs/libgcc_s-69c45f16.so.1,sha256=BOFjRP57t9LgRNNAnFVK5VHmrp5UU-p5NcfcZ10dnd4,201673
+ripser.libs/libstdc++-1f1a71be.so.6.0.33,sha256=sURAhanafc8tH6FGDqPKz7dsPGNb0Aym8vBo6UbJ3Ok,3650097
+ripser-0.6.12.dist-info/LICENSE.txt,sha256=ISBm22LJk-Fc4fnTkMUwNdjETsHHib0AuRoqmPCqHPw,1193
+ripser-0.6.12.dist-info/METADATA,sha256=32rhS5F-y6UlQp2ASAE7C40OH-xB8aV7bwlC8lHCuZo,8658
+ripser-0.6.12.dist-info/WHEEL,sha256=6jy7chC-AtDfJgg--mMSvqMOayNXBgQtnWUcVyDbTzk,113
+ripser-0.6.12.dist-info/top_level.txt,sha256=KyXYJan1pYokhD9K-usZAnF6T8ApuC0xM3MtMU83LSo,16
+ripser-0.6.12.dist-info/RECORD,,
