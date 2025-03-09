@@ -1,0 +1,8 @@
+README.md
+setup.py
+flightdeck.egg-info/PKG-INFO
+flightdeck.egg-info/SOURCES.txt
+flightdeck.egg-info/dependency_links.txt
+flightdeck.egg-info/entry_points.txt
+flightdeck.egg-info/requires.txt
+flightdeck.egg-info/top_level.txt
