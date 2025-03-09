@@ -1,0 +1,10 @@
+fastapi_scaf/__init__.py,sha256=W2HAR_fotU8jdc1bPmjv6NE38LPLzezx1y3I7wcq33k,119
+fastapi_scaf/__main__.py,sha256=gyu9tIgQHnS1WWNU9ggUklvUr4gonCd8LkHsTMogDQk,10531
+fastapi_scaf/_api_tpl.json,sha256=GcDgEeey3b2DUAWx_2vymYHVmdJSELYHKkfn_xhjIvE,5510
+fastapi_scaf/_project_tpl.json,sha256=dJI3Vm34in6Ueetpx2_ANviWX4kREVRrTk85HdNHdlk,64366
+fastapi_scaf-1.4.6.dist-info/LICENSE,sha256=A5H6q7zd1QrL3iVs1KLsBOG0ImV-t9PpPspM4x-4Ea8,1069
+fastapi_scaf-1.4.6.dist-info/METADATA,sha256=AU9M8MmVWKCJjwHfzQlW1urw80smtAiLcLhrMnLIs44,3337
+fastapi_scaf-1.4.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fastapi_scaf-1.4.6.dist-info/entry_points.txt,sha256=EYXPS-cEkHEEBh39v2v7Tz_8jlpNUHuOPSmkCO-DE1k,60
+fastapi_scaf-1.4.6.dist-info/top_level.txt,sha256=XpcKG44kdEQZ-dhbDAPt-bzmoKKnwhuHlgkyE3kx6XE,13
+fastapi_scaf-1.4.6.dist-info/RECORD,,
