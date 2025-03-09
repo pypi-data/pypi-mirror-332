@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: tamil_stemmer-advanced-0.1.2
+Version: 0.1.2
+Summary: A simple Tamil word stemmer
+Author: Pavithra Harini Sivakumar
+Author-email: pavitra040604@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Tamil
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+# TamilStemmer
+A lightweight and optimized Tamil word stemmer for NLP applications.
+
+## Installation
+```sh
+pip install tamil_stemmer

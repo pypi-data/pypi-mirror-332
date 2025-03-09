@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+tamil_stemmer/__init__.py
+tamil_stemmer/stemmer.py
+tamil_stemmer_advanced_0.1.2.egg-info/PKG-INFO
+tamil_stemmer_advanced_0.1.2.egg-info/SOURCES.txt
+tamil_stemmer_advanced_0.1.2.egg-info/dependency_links.txt
+tamil_stemmer_advanced_0.1.2.egg-info/top_level.txt
