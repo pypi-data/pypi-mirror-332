@@ -1,0 +1,17 @@
+[project]
+name = "agentset_chunker"
+version = "1.0.1"
+description = "agentset chunker"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-core>=0.3.41",
+    "loguru>=0.7.3",
+    "requests>=2.32.3",
+    "tqdm>=4.67.1",
+    "unstructured[csv,doc,docx,md,pdf]>=0.16.23",
+]
+
+[build-system]
+requires = ['setuptools>=75']
+build-backend = 'setuptools.build_meta'
