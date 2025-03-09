@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+simplemaths/__init__.py
+simplemaths.egg-info/PKG-INFO
+simplemaths.egg-info/SOURCES.txt
+simplemaths.egg-info/dependency_links.txt
+simplemaths.egg-info/top_level.txt
