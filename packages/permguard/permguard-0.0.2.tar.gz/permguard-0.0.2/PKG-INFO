@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: permguard
+Version: 0.0.2
+Summary: Permguard Python SDK (Authorization Check) - https://www.permguard.com
+Project-URL: Documentation, https://www.permguard.com
+Project-URL: Source, https://github.com/permguard/permguard
+Author-email: "Nitro Agility S.r.l." <opensource@permguard.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+License-File: NOTICE.md
+Keywords: Nitro Agility S.r.l.,Permguard
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: deepdiff~=8.0.1
+Requires-Dist: grpcio~=1.70.0
+Requires-Dist: pydantic~=2.10.6
+Requires-Dist: pytz~=2023.3
+Requires-Dist: tzlocal~=4.3
+Description-Content-Type: text/markdown
+
+# Permguard Python SDK
+
+[![GitHub License](https://img.shields.io/github/license/permguard/permguard-python)](https://github.com/permguard/permguard-python?tab=Apache-2.0-1-ov-file#readme)
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/permguard)](https://x.com/intent/follow?original_referer=https%3A%2F%2Fdeveloper.x.com%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5ETwitterDev&screen_name=Permguard)
+
+[![Documentation](https://img.shields.io/website?label=Docs&url=https%3A%2F%2Fwww.permguard.com%2F)](https://www.permguard.com/)
+[![Build, test and publish the artifacts](https://github.com/permguard/permguard-python/actions/workflows/permguard-python-ci.yml/badge.svg)](https://github.com/permguard/permguard-python/actions/workflows/permguard-python-ci.yml)
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/permguard/permguard-assets/main/pink-txt//1line.svg" class="center" width="400px" height="auto"/>
+</p>
+
+**Permguard** is an Open Source ZTAuth* Provider for cloud-native, edge, and multi-tenant apps, decoupled from application code and leveraging `Policy-as-Code` for centralized, scalable permission management.
+
+This repository implements the Permguard Python SDK (Authorization Check).
+
+Created by [Nitro Agility](https://www.nitroagility.com/).
