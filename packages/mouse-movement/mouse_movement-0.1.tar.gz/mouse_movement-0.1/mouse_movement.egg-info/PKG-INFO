@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: mouse-movement
+Version: 0.1
+Summary: A library for controlling mouse and keyboard via ctypes on Windows
+Home-page: https://github.com/yourusername/mouse-movement
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+
+### 4. License
+Itâ€™s also a good idea to include a `LICENSE` file (such as MIT or GPL) that specifies the terms of usage and distribution.
+
+### 5. Publishing
+Once everything is ready, you can publish your package on [PyPI](https://pypi.org/), which allows anyone to install your package using pip.
+
+If you haven't already set up a PyPI account, you can create one at [https://pypi.org/account/register/](https://pypi.org/account/register/). Then you can use `twine` to upload your package:
+
+1. Install Twine if you donâ€™t have it:
