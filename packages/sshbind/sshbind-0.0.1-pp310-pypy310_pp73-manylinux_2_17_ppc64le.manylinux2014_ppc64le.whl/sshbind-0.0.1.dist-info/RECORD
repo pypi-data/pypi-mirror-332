@@ -1,0 +1,6 @@
+sshbind-0.0.1.dist-info/METADATA,sha256=6qY8LP2YN-sKbZHGrwn3PCYnw_5E1dqLwRWMJbV45WE,4971
+sshbind-0.0.1.dist-info/WHEEL,sha256=GXjuCKU9dAmo0Vsu9CZvOR3aVdWX_rvpwuHKmH0-pSE,138
+sshbind-0.0.1.dist-info/licenses/LICENSE,sha256=BraOYRI-xxYIZ-B30zZATr8fCnLcbG7VeVG2yKGG-VY,1063
+sshbind/__init__.py,sha256=f6AQTjygEs09APlyKpxlqdhCpdLZhF2jjl-88TKMjIc,1108
+sshbind/_lib_sshbind_wrapper.pypy310-pp73-ppc_64-linux-gnu.so,sha256=A5nH6lHvOr4IUBG9fX54zBQtagg7nnAYTW_FwroBxLs,6229480
+sshbind-0.0.1.dist-info/RECORD,,
