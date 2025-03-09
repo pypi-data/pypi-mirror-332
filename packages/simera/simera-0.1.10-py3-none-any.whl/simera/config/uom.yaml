@@ -1,0 +1,12 @@
+# Standard conversion factors for units used in Simera
+# Weight
+kg:
+  lbs: 2.20462
+
+# Volume
+m3:
+  cft: 35.3147
+
+# Distance
+m:
+  km: 0.001
