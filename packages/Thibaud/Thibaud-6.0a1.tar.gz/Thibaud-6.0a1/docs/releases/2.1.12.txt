@@ -1,0 +1,15 @@
+===========================
+Thibaud 2.1.12 release notes
+===========================
+
+*September 2, 2019*
+
+Thibaud 2.1.12 fixes a regression in 2.1.11.
+
+Bugfixes
+========
+
+* Fixed crash of ``KeyTransform()`` for
+  ``thibaud.contrib.postgres.fields.JSONField`` and
+  :class:`~thibaud.contrib.postgres.fields.HStoreField` when using on
+  expressions with params (:ticket:`30672`).

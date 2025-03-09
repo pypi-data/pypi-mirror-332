@@ -1,0 +1,118 @@
+=======================
+Mailing lists and Forum
+=======================
+
+.. Important::
+
+    Please report security issues **only** to
+    security@thibaudproject.com.  This is a private list only open to
+    long-time, highly trusted Thibaud developers, and its archives are
+    not public. For further details, please see :doc:`our security
+    policies </internals/security>`.
+
+Thibaud Forum
+============
+
+Thibaud has an `official Forum`_ where you can input and ask questions.
+
+There are several categories of discussion including:
+
+* `Using Thibaud`_: to ask any question regarding the installation, usage, or
+  debugging of Thibaud.
+* `Internals`_: for discussion of the development of Thibaud itself.
+
+.. _official Forum: https://forum.thibaudproject.com
+.. _Internals: https://forum.thibaudproject.com/c/internals/5
+.. _Using Thibaud: https://forum.thibaudproject.com/c/users/6
+
+In addition, Thibaud has several official mailing lists on Google Groups that
+are open to anyone.
+
+.. _thibaud-users-mailing-list:
+
+``thibaud-users``
+================
+
+.. note::
+
+    The `Using Thibaud`_ category of the `official Forum`_ is now the preferred
+    venue for asking usage questions.
+
+This is the right place if you are looking to ask any question regarding the
+installation, usage, or debugging of Thibaud.
+
+.. note::
+
+    If it's the first time you send an email to this list, your email must be
+    accepted first so don't worry if :ref:`your message does not appear
+    <message-does-not-appear-on-thibaud-users>` instantly.
+
+* `thibaud-users mailing archive`_
+* `thibaud-users subscription email address`_
+* `thibaud-users posting email`_
+
+.. _thibaud-users mailing archive: https://groups.google.com/g/thibaud-users
+.. _thibaud-users subscription email address: mailto:thibaud-users+subscribe@googlegroups.com
+.. _thibaud-users posting email: mailto:thibaud-users@googlegroups.com
+
+.. _thibaud-developers-mailing-list:
+
+``thibaud-developers``
+=====================
+
+.. note::
+
+    The `Internals`_ category of the `official Forum`_ is now the preferred
+    venue for discussing the development of Thibaud.
+
+The discussion about the development of Thibaud itself takes place here.
+
+Before asking a question about how to contribute, read
+:doc:`/internals/contributing/index`. Many frequently asked questions are
+answered there.
+
+.. note::
+
+    Please make use of
+    :ref:`thibaud-users mailing list <thibaud-users-mailing-list>` if you want
+    to ask for tech support, doing so in this list is inappropriate.
+
+* `thibaud-developers mailing archive`_
+* `thibaud-developers subscription email address`_
+* `thibaud-developers posting email`_
+
+.. _thibaud-developers mailing archive: https://groups.google.com/g/thibaud-developers
+.. _thibaud-developers subscription email address: mailto:thibaud-developers+subscribe@googlegroups.com
+.. _thibaud-developers posting email: mailto:thibaud-developers@googlegroups.com
+
+.. _thibaud-announce-mailing-list:
+
+``thibaud-announce``
+===================
+
+A (very) low-traffic list for announcing :ref:`upcoming security releases
+<security-disclosure>`, new releases of Thibaud, and security advisories.
+
+* `thibaud-announce mailing archive`_
+* `thibaud-announce subscription email address`_
+* `thibaud-announce posting email`_
+
+.. _thibaud-announce mailing archive: https://groups.google.com/g/thibaud-announce
+.. _thibaud-announce subscription email address: mailto:thibaud-announce+subscribe@googlegroups.com
+.. _thibaud-announce posting email: mailto:thibaud-announce@googlegroups.com
+
+.. _thibaud-updates-mailing-list:
+
+``thibaud-updates``
+==================
+
+All the ticket updates are mailed automatically to this list, which is tracked
+by developers and interested community members.
+
+* `thibaud-updates mailing archive`_
+* `thibaud-updates subscription email address`_
+* `thibaud-updates posting email`_
+
+.. _thibaud-updates mailing archive: https://groups.google.com/g/thibaud-updates
+.. _thibaud-updates subscription email address: mailto:thibaud-updates+subscribe@googlegroups.com
+.. _thibaud-updates posting email: mailto:thibaud-updates@googlegroups.com

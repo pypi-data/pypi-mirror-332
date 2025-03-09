@@ -1,0 +1,6 @@
+from thibaud.apps import AppConfig
+
+
+class {{ camel_case_app_name }}Config(AppConfig):
+    default_auto_field = 'thibaud.db.models.BigAutoField'
+    name = '{{ app_name }}'

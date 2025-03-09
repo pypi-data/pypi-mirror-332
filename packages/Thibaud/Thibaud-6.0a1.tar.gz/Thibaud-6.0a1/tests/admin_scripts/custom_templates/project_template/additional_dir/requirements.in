@@ -1,0 +1,5 @@
+# Should not be processed by `black`.
+Thibaud<4.2
+environs[thibaud]
+psycopg2-binary
+thibaud-extensions

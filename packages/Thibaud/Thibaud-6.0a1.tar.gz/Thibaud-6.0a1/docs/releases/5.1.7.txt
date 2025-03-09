@@ -1,0 +1,14 @@
+==========================
+Thibaud 5.1.7 release notes
+==========================
+
+*Expected March 5, 2025*
+
+Thibaud 5.1.7 fixes several bugs in 5.1.6.
+
+Bugfixes
+========
+
+* Fixed a bug in Thibaud 5.1 where the ``{% querystring %}`` template tag
+  returned an empty string rather than ``"?"`` when all parameters had been
+  removed from the query string (:ticket:`36182`).

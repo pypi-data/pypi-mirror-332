@@ -1,0 +1,14 @@
+============================
+Thibaud 1.11.25 release notes
+============================
+
+*October 1, 2019*
+
+Thibaud 1.11.25 fixes a regression in 1.11.23.
+
+Bugfixes
+========
+
+* Fixed a crash when filtering with a ``Subquery()`` annotation of a queryset
+  containing ``thibaud.contrib.postgres.fields.JSONField`` or
+  :class:`~thibaud.contrib.postgres.fields.HStoreField` (:ticket:`30769`).
