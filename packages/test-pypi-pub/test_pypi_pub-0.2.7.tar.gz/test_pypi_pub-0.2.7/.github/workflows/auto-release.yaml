@@ -1,0 +1,118 @@
+name: auto-release
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+        
+      - name: Get version from pyproject.toml
+        id: get_version
+        run: |
+          VERSION=$(grep -oP '^version = "\K[^"]+' pyproject.toml)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          
+          # Extract major.minor.patch version components and pre-release tags
+          MAJOR=$(echo $VERSION | cut -d. -f1)
+          MINOR=$(echo $VERSION | cut -d. -f2)
+          PATCH_FULL=$(echo $VERSION | cut -d. -f3-)
+          
+          # Extract patch number and potential pre-release tag
+          PATCH=$(echo $PATCH_FULL | grep -oP '^\d+')
+          
+          # Check if there's a pre-release tag (alpha, beta, etc)
+          if [[ "$PATCH_FULL" =~ .*-.* ]]; then
+            PRERELEASE=$(echo $PATCH_FULL | grep -oP '\-.*$')
+          else
+            PRERELEASE=""
+          fi
+          
+          echo "MAJOR=$MAJOR" >> $GITHUB_ENV
+          echo "MINOR=$MINOR" >> $GITHUB_ENV
+          echo "PATCH=$PATCH" >> $GITHUB_ENV
+          echo "PRERELEASE=$PRERELEASE" >> $GITHUB_ENV
+          
+          # Ensure version tag doesn't end with a period
+          VERSION_TAG="v$MAJOR.$MINOR.$PATCH$PRERELEASE"
+          VERSION_TAG=$(echo "$VERSION_TAG" | sed 's/\.$//')
+          echo "VERSION_TAG=$VERSION_TAG" >> $GITHUB_ENV
+          
+      - name: Check if new version
+        id: check_version
+        run: |
+          LATEST_TAG=$(gh release list --limit 1 | awk '{print $1}')
+          
+          if [ -z "$LATEST_TAG" ]; then
+            echo "is_higher=true" >> $GITHUB_OUTPUT
+          else
+            LATEST_VERSION=${LATEST_TAG#v}
+            
+            # Compare versions using sort -V
+            if [ "$VERSION" != "$LATEST_VERSION" ] && [ "$(printf '%s\n%s\n' "$LATEST_VERSION" "$VERSION" | sort -V | tail -n1)" = "$VERSION" ]; then
+              echo "is_higher=true" >> $GITHUB_OUTPUT
+            else
+              echo "is_higher=false" >> $GITHUB_OUTPUT
+            fi
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Extract release notes
+        id: extract_changelog
+        if: steps.check_version.outputs.is_higher == 'true'
+        run: |
+          # Create version pattern to match in changelog
+          VERSION_TAG="${{ env.VERSION_TAG }}"
+          
+          if [ -f "CHANGELOG.md" ]; then
+            # Find the current version line in changelog
+            START_LINE=$(grep -n "^# $VERSION_TAG" CHANGELOG.md | head -n 1 | cut -d: -f1)
+            
+            if [ -z "$START_LINE" ]; then
+              # Try without the 'v' prefix
+              VERSION_NO_V="${VERSION_TAG#v}"
+              START_LINE=$(grep -n "^# v$VERSION_NO_V" CHANGELOG.md | head -n 1 | cut -d: -f1)
+            fi
+            
+            if [ -n "$START_LINE" ]; then
+              # Find the next section with single # symbol
+              NEXT_SECTION=$(tail -n +$((START_LINE + 1)) CHANGELOG.md | grep -n "^# " | head -n 1 | cut -d: -f1)
+              
+              if [ -z "$NEXT_SECTION" ]; then
+                # Skip the header line (START_LINE) and include all remaining content
+                CHANGELOG_CONTENT=$(tail -n +$((START_LINE + 1)) CHANGELOG.md)
+              else
+                # Skip the header line and include content until next section
+                CHANGELOG_CONTENT=$(tail -n +$((START_LINE + 1)) CHANGELOG.md | head -n $((NEXT_SECTION - 1)))
+              fi
+              
+              # Save the changelog content
+              echo "$CHANGELOG_CONTENT" > changelog_content.md
+            else
+              echo "No changelog entry found for version $VERSION_TAG" > changelog_content.md
+              echo "Please ensure your changelog has entries formatted as '# vX.Y.Z' or with appropriate pre-release tags" >> changelog_content.md
+            fi
+          else
+            echo "CHANGELOG.md file not found" > changelog_content.md
+          fi
+      
+      - name: Create release
+        if: steps.check_version.outputs.is_higher == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.VERSION_TAG }}
+          name: ${{ env.VERSION_TAG }}
+          body_path: changelog_content.md
+          draft: false
+          prerelease: ${{ contains(env.PRERELEASE, 'alpha') || contains(env.PRERELEASE, 'beta') }}
+          token: ${{ secrets.GITHUB_TOKEN }}
