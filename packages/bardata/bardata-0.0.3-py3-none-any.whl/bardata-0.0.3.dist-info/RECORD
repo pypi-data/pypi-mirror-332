@@ -1,0 +1,13 @@
+bardata/__init__.py,sha256=ruoWGWZ7OFPbBfLjvCtqaqeOS7R0domYBLIjGANmSuw,127
+bardata/dates.py,sha256=QlikLH98CX-einov335DdnJq6s8g8l6VSnHCkVLzMXY,3506
+bardata/errors.py,sha256=K2haIIHR4CKcnabYUZJHRn4-zVk4-ZiNS3d-kH4B1HU,97
+bardata/freqs.py,sha256=SWhN2fRGPRd3WDDs4lG9LV65sWzpVnE2DMJnb6bqn1o,1612
+bardata/model.py,sha256=pPMXt7EjFmBhx3yLRQCf_fiaNDTaubGVP_cL2Tadv7I,394
+bardata/prices.py,sha256=yNjPTpX_5Qes-8HA_698QMCPFvwVSNH82Un4Iaa2Os4,5082
+bardata/sample.py,sha256=UOuZF-k6ae7GPeNHR_fNOxluS5UhO0UcJ_tEczN6N3o,3902
+bardata/utils.py,sha256=3t9W_s3dWu8TUyrl4-Y0Lpx4iem9RJzvqrz0Ktvn62s,3140
+bardata-0.0.3.dist-info/METADATA,sha256=sN8lGU-Q0PW2GtUlvYWpFn3PbJUDm5Miinhz6SOwZvA,1441
+bardata-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bardata-0.0.3.dist-info/entry_points.txt,sha256=7zei60UM60sL3T3k6FPGI-_NtQ1NwxjDaIHzGzlBn7I,54
+bardata-0.0.3.dist-info/licenses/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+bardata-0.0.3.dist-info/RECORD,,
