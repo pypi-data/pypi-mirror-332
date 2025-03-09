@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+masto/__init__.py
+masto/masto.py
+masto.egg-info/PKG-INFO
+masto.egg-info/SOURCES.txt
+masto.egg-info/dependency_links.txt
+masto.egg-info/entry_points.txt
+masto.egg-info/requires.txt
+masto.egg-info/top_level.txt
