@@ -1,0 +1,3669 @@
+import rp
+rp.pip_import('textual')
+rp.pip_import('textual','textual[syntax]')
+rp.pip_import('rich')
+rp.pip_import('numpy')
+
+# torch_hooks module and pytorch_module_explorer are kept separate
+# but pytorch_module_explorer can display forward_stats if present
+
+# No time formatting needed
+
+def format_shape(shape):
+    """Format a shape tuple consistently with proper multiplication symbols"""
+    return "×".join(str(dim) for dim in shape) if shape else ""
+
+
+def format_param_count(count):
+    """Format parameter count as human-readable (e.g., 1.7M, 5.4B)
+    
+    Args:
+        count: Number of parameters
+        
+    Returns:
+        str: Formatted parameter count with K, M, or B suffix
+    """
+    if count < 1000:
+        return f"{count}"
+    elif count < 1_000_000:
+        return f"{count/1000:.1f}K"
+    elif count < 1_000_000_000:
+        return f"{count/1_000_000:.1f}M"
+    else:
+        return f"{count/1_000_000_000:.1f}B"
+
+
+def format_time(seconds):
+    """Format time duration in a human-readable format
+    
+    Args:
+        seconds: Time in seconds
+        
+    Returns:
+        str: Formatted time with appropriate units (ns, μs, ms, s, min)
+    """
+    if seconds < 1e-6:  # Less than 1 microsecond
+        # Show nanoseconds for very small times
+        ns = seconds * 1e9
+        return f"{ns:.1f}ns"
+    elif seconds < 1e-3:  # Less than 1 millisecond
+        # Show microseconds
+        us = seconds * 1e6
+        return f"{us:.2f}μs"
+    elif seconds < 1.0:  # Less than 1 second
+        # Show milliseconds
+        ms = seconds * 1e3
+        return f"{ms:.2f}ms"
+    elif seconds < 60.0:  # Less than 1 minute
+        # Show seconds with higher precision for smaller values
+        if seconds < 10.0:
+            return f"{seconds:.4f}s"
+        else:
+            return f"{seconds:.2f}s"
+    else:  # Minutes or more
+        minutes = seconds / 60.0
+        if minutes < 60.0:  # Less than 1 hour
+            return f"{minutes:.1f}min"
+        else:
+            hours = minutes / 60.0
+            return f"{hours:.1f}h"
+
+
+def format_percentage(percent):
+    """Format a percentage value with adaptive precision
+    
+    Args:
+        percent: Percentage value (0-100)
+        
+    Returns:
+        str: Formatted percentage with appropriate precision
+    """
+    # Handle zero or negative values
+    if percent <= 0:
+        return "0%"
+        
+    # Handle tiny values
+    if percent < 0.01:
+        return "0.01%"  # Show very small values with minimum precision
+    elif percent < 0.1:
+        return f"{percent:.3f}%"
+    elif percent < 1:
+        return f"{percent:.2f}%"
+    elif percent < 10:
+        return f"{percent:.1f}%"
+    else:
+        return f"{int(percent)}%"
+
+
+def get_torch_dtype_size(dtype):
+    """Get the size in bytes of a torch dtype.
+    
+    Args:
+        dtype: PyTorch data type
+        
+    Returns:
+        int: Size in bytes of each element with the given dtype
+    """
+    if dtype == torch.float32:
+        return 4
+    elif dtype == torch.float16 or dtype == torch.bfloat16:
+        return 2
+    elif dtype == torch.int64 or dtype == torch.double:
+        return 8
+    elif dtype == torch.int32 or dtype == torch.float:
+        return 4
+    elif dtype == torch.int16:
+        return 2
+    elif dtype == torch.int8 or dtype == torch.uint8 or dtype == torch.bool:
+        return 1
+    else:
+        # Default fallback, most common case is float32 (4 bytes)
+        return 4
+
+
+def format_torch_dtype(dtype):
+    """Format torch dtype to a clean string without the torch. prefix
+    
+    Args:
+        dtype: PyTorch data type
+        
+    Returns:
+        str: Clean string representation of the dtype
+    """
+    # Convert to string and remove torch. prefix if present
+    dtype_str = str(dtype)
+    if "torch." in dtype_str:
+        return dtype_str.split("torch.")[-1]
+    return dtype_str
+
+
+def get_module_param_attr(module, attr):
+    """General function to get a parameter attribute from a module
+    
+    Args:
+        module: PyTorch module to check
+        attr: Name of the attribute to extract from parameters
+        
+    Returns:
+        str: Formatted attribute value, or empty string if not available
+    """
+    if not module:
+        return ""
+        
+    try:
+        # First check if module has the attribute directly
+        if hasattr(module, attr):
+            attr_value = getattr(module, attr)
+            # For device attribute, return as string
+            if attr == 'device':
+                return str(attr_value)
+            # For dtype and other attributes, format as needed
+            return format_torch_dtype(attr_value)
+        
+        # If no direct attribute, check parameters
+        attr_values = set()
+        
+        # Check all parameters
+        for param in module.parameters():
+            if hasattr(param, attr):
+                # For device, just get the string representation
+                if attr == 'device':
+                    attr_values.add(str(getattr(param, attr)))
+                else: 
+                    attr_values.add(str(getattr(param, attr)))
+
+        # If we found values, format them appropriately
+        if len(attr_values) == 1:
+            value = attr_values.pop()
+            # For device, return directly
+            if attr == 'device':
+                return value
+            # For other attributes, format as torch dtype
+            return format_torch_dtype(value)
+        elif len(attr_values) > 1:
+            # For device, use the format_devices helper
+            if attr == 'device':
+                return format_devices(attr_values)
+            # For other attributes, show as mixed
+            return f"(mixed {attr}s)"
+        
+    except Exception as e:
+        # If any error occurs, don't show anything
+        return f"(error getting {attr})"
+
+def get_module_dtype(module):
+    """Determine the dtype of a PyTorch module
+    
+    Args:
+        module: PyTorch module to check
+        
+    Returns:
+        str: Formatted dtype string, "(mixed dtypes)", or empty string if no params
+    """
+    return get_module_param_attr(module, 'dtype')
+
+
+def basic_syntax_highlighting(text, default_style=""):
+    """Apply basic Python syntax highlighting to text using rich markup
+    
+    Args:
+        text: Text to highlight
+        default_style: Base style to apply to non-highlighted parts (optional)
+        
+    Returns:
+        str: Text with rich markup for syntax highlighting
+    """
+    import re
+    
+    # Save the passed text
+    original_text = text
+    
+    # Skip highlighting if empty
+    if not text:
+        return text
+    
+    try:
+        # Add base style if provided
+        if default_style:
+            base_open = f"[{default_style}]"
+            base_close = f"[/{default_style}]"
+            text = f"{base_open}{text}{base_close}"
+        
+        # Highlight numbers in green (including scientific notation like 1e-05)
+        text = re.sub(r'(\d+\.?\d*(?:[eE][-+]?\d+)?|\.\d+(?:[eE][-+]?\d+)?)', r'[#66cc66]\1[/#66cc66]', text)
+        
+        # Highlight True, False, and None in blue
+        text = re.sub(r'\b(True|False|None)\b', r'[#6699ff]\1[/#6699ff]', text)
+        
+        # Highlight strings in orange
+        text = re.sub(r'(\'[^\']*\')', r'[#ff9966]\1[/#ff9966]', text)
+        text = re.sub(r'(\"[^\"]*\")', r'[#ff9966]\1[/#ff9966]', text)
+        
+        return text
+    except Exception:
+        # If any error occurs during highlighting, return the original text
+        # with the default style if provided
+        if default_style:
+            return f"[{default_style}]{original_text}[/{default_style}]"
+        return original_text
+
+
+def has_forward_stats(module_node):
+    """Check if a module node has valid forward stats
+    
+    Args:
+        module_node: The module node to check
+        
+    Returns:
+        bool: True if the node has forward stats, False otherwise
+    """
+    # Extra check to debug why some modules might not show forward stats
+    if module_node.module and hasattr(module_node.module, "forward_stats"):
+        # If we have a module and forward_stats attribute, but it evaluates to False,
+        # it could be an empty list or None
+        stats = module_node.module.forward_stats
+        return bool(stats)  # Convert to bool to handle empty lists, None, etc.
+    
+    return False
+
+
+def get_latest_forward_stats(module_node):
+    """Get the most recent forward stats for a module if they exist
+    
+    Args:
+        module_node: The module node to check
+        
+    Returns:
+        object: The most recent forward stats or None if unavailable
+    """
+    if has_forward_stats(module_node):
+        return module_node.module.forward_stats[-1]
+    return None
+
+def get_total_runtime(module_node):
+    """Get the sum of all runtimes across all forward passes
+    
+    Args:
+        module_node: The module node to check
+        
+    Returns:
+        float: Total runtime in seconds across all recorded passes
+    """
+    if has_forward_stats(module_node):
+        total = 0.0
+        # Sum up runtime from all recorded stats
+        for stats in module_node.module.forward_stats:
+            if hasattr(stats, "runtime"):
+                total += stats.runtime
+        return total
+    return 0.0
+
+
+def calculate_tensor_memory_size(tensor):
+    """Calculate memory size of a tensor in bytes
+    
+    Args:
+        tensor: PyTorch tensor
+        
+    Returns:
+        int: Memory size in bytes
+    """
+    return tensor.numel() * get_torch_dtype_size(tensor.dtype)
+
+
+def calculate_memory_from_shape(shape, dtype):
+    """Calculate memory size in bytes from shape and dtype
+    
+    Args:
+        shape: Tuple of dimensions
+        dtype: PyTorch data type
+        
+    Returns:
+        int: Memory size in bytes
+    """
+    # Calculate number of elements from shape
+    if not shape:
+        return 0
+        
+    num_elements = 1
+    for dim in shape:
+        num_elements *= dim
+        
+    # Get bytes per element based on dtype
+    bytes_per_element = get_torch_dtype_size(dtype)
+    
+    # Return total size
+    return num_elements * bytes_per_element
+
+
+def extract_tensor_dtype(tensor_or_container, prefix="dtype"):
+    """Extract dtype from a tensor or the first tensor in a container
+    
+    Args:
+        tensor_or_container: PyTorch tensor or container of tensors
+        prefix: Prefix to use in the formatted output (default: "dtype")
+        
+    Returns:
+        str: Formatted dtype string or empty string if no tensor found
+    """
+    try:
+        if isinstance(tensor_or_container, torch.Tensor):
+            return f"{prefix}={format_torch_dtype(tensor_or_container.dtype)}"
+        elif isinstance(tensor_or_container, (list, tuple)) and len(tensor_or_container) > 0:
+            for item in tensor_or_container:
+                if isinstance(item, torch.Tensor):
+                    return f"{prefix}={format_torch_dtype(item.dtype)}"
+    except:
+        pass
+    return ""
+
+
+class NodeLabelComponent:
+    """Base class for node label components"""
+    # Default component metadata - to be overridden by subclasses
+    display_name = "Base Component"
+    description = "Base component description"
+    example = "example"  # Example text to show in the label manager
+    shortcut_key = None  # Keyboard shortcut (if any)
+    style = ""  # Default style (empty)
+    prefix = ""  # Text before styled content
+    suffix = " "  # Text after styled content (default: space)
+    
+    def __init__(self, active=True):
+        self.active = active
+        # Initialize a storage for component-specific data
+        self._cached_data = {}
+        
+    def toggle_active(self):
+        """Toggle the active state of this component"""
+        self.active = not self.active
+        return self.active
+        
+    def get_label(self, module_node):
+        """Get this component's contribution to the node label, if active"""
+        if not self.active:
+            return ""
+        text = self._get_text(module_node)
+        if not text:
+            return ""
+        if not self.style:
+            return f"{self.prefix}{text}{self.suffix}"
+        return f"{self.prefix}[{self.style}]{text}[/{self.style}]{self.suffix}"
+    
+    def get_width(self, module_node):
+        """Get the display width of this component's contribution"""
+        if not self.active:
+            return 0
+        text = self._get_text(module_node)
+        if not text:
+            return 0
+        # Return the length of the plain text (without style markup) plus prefix and suffix
+        return len(self.prefix) + len(text) + len(self.suffix)
+        
+    def _get_text(self, module_node):
+        """Get the plain text content (to be overridden)"""
+        raise NotImplementedError("Subclasses must implement _get_text")
+
+
+class DeviceLabelComponent(NodeLabelComponent):
+    """Component for displaying device information"""
+    display_name = "Device Information"
+    description = "Shows which device (CPU/GPU) the module is on"
+    example = "cuda:0"
+    shortcut_key = "d"
+    style = "bold #9966ff"  # Purple
+    
+    def _get_text(self, module_node):
+        """Get the device information using our helper function"""
+        if not module_node.module:
+            return ""
+        
+        # Use the new helper function that properly handles device attributes
+        return get_module_device(module_node.module)
+
+
+class SizeLabelComponent(NodeLabelComponent):
+    """Component for displaying module size"""
+    display_name = "Paramaters Memory"
+    description = "Shows the total memory size of the module's parameters"
+    example = "1.2MB"
+    shortcut_key = "b"
+    style = "#44cc88"  # Green-teal (not bold)
+    
+    def _get_text(self, module_node):
+        if module_node.size_bytes > 0:
+            return rp.human_readable_file_size(module_node.size_bytes)
+        return ""
+
+
+class ForwardStatsComponent(NodeLabelComponent):
+    """Base class for all forward stats components"""
+    display_name = "Forward Statistics"
+    description = "Base class for components showing forward pass statistics"
+    example = "Stats"
+    shortcut_key = "f"
+    style = "bold #ffcc00"  # Golden yellow
+
+
+class ForwardInputShapeComponent(ForwardStatsComponent):
+    """Component for displaying forward pass input shape"""
+    display_name = "Input Shape"
+    description = "Shows the shape of input tensors passing through this module"
+    example = "in=2×320×64×64"
+    shortcut_key = "f"
+    style = "italic #eecc00"  # Slightly darker yellow for input (italic)
+    
+    def _get_text(self, module_node):
+        stats = get_latest_forward_stats(module_node)
+        if not stats:
+            return ""
+            
+        # Add input shape if available
+        if hasattr(stats, "in_shape"):
+            input_shape_str = format_shape(stats.in_shape)
+            return f"in={input_shape_str}"
+        return ""
+
+
+class ForwardInputMemorySizeComponent(ForwardStatsComponent):
+    """Component for displaying input tensor memory size"""
+    display_name = "Input Memory Size"
+    description = "Shows the memory size of input tensors passing through this module"
+    example = "in_mem=1.2MB"
+    shortcut_key = None
+    style = "italic #ccaa33"  # Darker yellow for input memory (italic)
+    
+    def _get_text(self, module_node):
+        try:
+            stats = get_latest_forward_stats(module_node)
+            if not stats:
+                return ""
+                
+            total_size = 0
+            dtype = None
+                
+            # Method 1: Calculate from actual tensor if available
+            if hasattr(stats, "in_tensor") and stats.in_tensor is not None:
+                if isinstance(stats.in_tensor, torch.Tensor):
+                    total_size = calculate_tensor_memory_size(stats.in_tensor)
+                    dtype = stats.in_tensor.dtype
+                elif isinstance(stats.in_tensor, (list, tuple)) and len(stats.in_tensor) > 0:
+                    # Handle case where input is a list/tuple of tensors
+                    for item in stats.in_tensor:
+                        if isinstance(item, torch.Tensor):
+                            total_size += calculate_tensor_memory_size(item)
+                            if dtype is None:
+                                dtype = item.dtype
+            
+            # Method 2: Calculate from shape and dtype if available
+            if total_size == 0 and hasattr(stats, "in_shape") and stats.in_shape:
+                # Try to find dtype - default to float32 if not found
+                if not dtype:
+                    if hasattr(stats, "in_dtype"):
+                        dtype = stats.in_dtype
+                    else:
+                        # Default to float32 if no dtype info available
+                        import torch
+                        dtype = torch.float32
+                        
+                # Calculate from shape
+                total_size = calculate_memory_from_shape(stats.in_shape, dtype)
+                
+            # Return formatted size if we calculated something
+            if total_size > 0:
+                return f"in_mem={rp.human_readable_file_size(total_size)}"
+                
+            return ""
+        except Exception as e:
+            # If any error occurs, display it
+            return f"in_mem_err: {str(e)}"
+
+
+class ForwardOutputShapeComponent(ForwardStatsComponent):
+    """Component for displaying forward pass output shape"""
+    display_name = "Output Shape"
+    description = "Shows the shape of output tensors produced by this module"
+    example = "out=2×320×64×64"
+    shortcut_key = "f"
+    style = "#ddbb00"  # Slightly darker yellow for output (not italic)
+    
+    def _get_text(self, module_node):
+        stats = get_latest_forward_stats(module_node)
+        if not stats:
+            return ""
+            
+        # Add output shape if available
+        if hasattr(stats, "out_shape"):
+            output_shape_str = format_shape(stats.out_shape)
+            return f"out={output_shape_str}"
+        return ""
+
+
+class ForwardOutputMemorySizeComponent(ForwardStatsComponent):
+    """Component for displaying output tensor memory size"""
+    display_name = "Output Memory Size"
+    description = "Shows the memory size of output tensors produced by this module"
+    example = "out_mem=1.2MB"
+    shortcut_key = None
+    style = "#bbaa33"  # Darker yellow for output memory (not italic)
+    
+    def _get_text(self, module_node):
+        try:
+            stats = get_latest_forward_stats(module_node)
+            if not stats:
+                return ""
+                
+            total_size = 0
+            dtype = None
+                
+            # Method 1: Calculate from actual tensor if available
+            if hasattr(stats, "out_tensor") and stats.out_tensor is not None:
+                if isinstance(stats.out_tensor, torch.Tensor):
+                    total_size = calculate_tensor_memory_size(stats.out_tensor)
+                    dtype = stats.out_tensor.dtype
+                elif isinstance(stats.out_tensor, (list, tuple)) and len(stats.out_tensor) > 0:
+                    # Handle case where output is a list/tuple of tensors
+                    for item in stats.out_tensor:
+                        if isinstance(item, torch.Tensor):
+                            total_size += calculate_tensor_memory_size(item)
+                            if dtype is None:
+                                dtype = item.dtype
+            
+            # Method 2: Calculate from shape and dtype if available
+            if total_size == 0 and hasattr(stats, "out_shape") and stats.out_shape:
+                # Try to find dtype - default to float32 if not found
+                if not dtype:
+                    if hasattr(stats, "out_dtype"):
+                        dtype = stats.out_dtype
+                    else:
+                        # Default to float32 if no dtype info available
+                        import torch
+                        dtype = torch.float32
+                        
+                # Calculate from shape
+                total_size = calculate_memory_from_shape(stats.out_shape, dtype)
+                
+            # Return formatted size if we calculated something
+            if total_size > 0:
+                return f"out_mem={rp.human_readable_file_size(total_size)}"
+                
+            return ""
+        except Exception as e:
+            # If any error occurs, display it
+            return f"out_mem_err: {str(e)}"
+
+
+class ForwardCallCountComponent(ForwardStatsComponent):
+    """Component for displaying forward pass call count"""
+    display_name = "Call Count"
+    description = "Shows how many times this module has been called"
+    example = "(5 calls)"
+    shortcut_key = "f"
+    style = "italic #ffaa00"  # Amber yellow for call count (italic, not bold)
+    
+    def _get_text(self, module_node):
+        if has_forward_stats(module_node):
+            # Always include call count, even if just one call
+            calls = len(module_node.module.forward_stats)
+            suffix = "call" if calls == 1 else "calls"
+            return f"({calls} {suffix})"
+        return ""
+
+
+class ForwardRuntimeComponent(ForwardStatsComponent):
+    """Component for displaying self runtime of forward pass"""
+    display_name = "Total Self Runtime"
+    description = "Shows the cumulative runtime of this module alone, not including children, across all forward passes"
+    example = "self: 0.0123s"
+    shortcut_key = None  # No shortcut key, use Label manager
+    style = "bold #ff9966"  # Orange for runtime
+    
+    def _get_text(self, module_node):
+        # Get sum of all runtimes
+        total_runtime = get_total_runtime(module_node)
+        if total_runtime <= 0:
+            return ""
+            
+        # Only show if significant (more than 1 microsecond)
+        if total_runtime < 0.000001:
+            return ""
+            
+        # Use the formatter helper function
+        return f"self: {format_time(total_runtime)}"
+
+
+class AvgSelfRuntimeComponent(ForwardStatsComponent):
+    """Component for displaying average self runtime per call"""
+    display_name = "Average Self Runtime"
+    description = "Shows the average runtime of this module alone, not including children, per forward pass"
+    example = "avg_self: 1.5ms"
+    shortcut_key = None
+    style = "bold #ff8855"  # Lighter orange for avg runtime
+    
+    def _get_text(self, module_node):
+        # Get total runtime
+        total_runtime = get_total_runtime(module_node)
+        if total_runtime <= 0:
+            return ""
+            
+        # Get number of calls
+        if not has_forward_stats(module_node):
+            return ""
+            
+        call_count = len(module_node.module.forward_stats)
+        if call_count <= 0:
+            return ""
+            
+        # Calculate average runtime
+        avg_runtime = total_runtime / call_count
+        
+        # Only show if significant (more than 1 microsecond)
+        if avg_runtime < 0.000001:
+            return ""
+            
+        # Format the result
+        return f"avg_self: {format_time(avg_runtime)}"
+
+
+def get_module_total_runtime(module):
+    """Helper function to calculate total runtime for a module and its children recursively
+    
+    Args:
+        module: The PyTorch module to calculate runtime for
+        
+    Returns:
+        float: Total runtime in seconds
+    """
+    if not module:
+        return 0.0
+        
+    # Start with own runtime
+    total = 0.0
+    if hasattr(module, "forward_stats") and module.forward_stats:
+        # Sum up runtime from all stats records
+        for stats in module.forward_stats:
+            if hasattr(stats, "runtime"):
+                total += stats.runtime
+    
+    # Add runtime from all children recursively
+    for child_name, child_module in module._modules.items():
+        if child_module is not None:
+            total += get_module_total_runtime(child_module)
+            
+    return total
+
+
+class TotalRuntimeComponent(ForwardStatsComponent):
+    """Component for displaying total runtime including children"""
+    display_name = "Total Runtime"
+    description = "Shows the total runtime spent in this module and all its children"
+    example = "123ms"
+    shortcut_key = None  # No shortcut key, use Label manager
+    style = "bold #ff6633"  # Darker orange for total runtime
+    
+    def _get_text(self, module_node):
+        if not module_node.module:
+            return ""
+            
+        # Use cached value if available
+        node_id = id(module_node.module)
+        if node_id in self._cached_data:
+            return self._cached_data[node_id]
+            
+        # Calculate runtime for this module and its children using the helper function
+        this_runtime = get_module_total_runtime(module_node.module)
+        
+        # Skip if runtime is too small
+        if this_runtime <= 0.000001:  # Skip if less than 1 microsecond
+            return ""
+            
+        # Format time
+        time_str = format_time(this_runtime)
+        
+        # Format and cache the result
+        formatted = f"{time_str}"
+        self._cached_data[node_id] = formatted
+        return formatted
+
+
+class AvgTotalRuntimeComponent(ForwardStatsComponent):
+    """Component for displaying average total runtime per call"""
+    display_name = "Average Total Runtime"
+    description = "Shows the average total runtime of this module and all its children per forward pass"
+    example = "avg: 3.2ms"
+    shortcut_key = None
+    style = "bold #ff4422"  # Even darker orange for avg total runtime
+    
+    def _get_text(self, module_node):
+        if not module_node.module or not has_forward_stats(module_node):
+            return ""
+            
+        # Get number of calls
+        call_count = len(module_node.module.forward_stats)
+        if call_count <= 0:
+            return ""
+            
+        # Use cached value if available
+        node_id = id(module_node.module)
+        if node_id in self._cached_data:
+            return self._cached_data[node_id]
+        
+        # Use the shared helper function to calculate total runtime
+        total_runtime = get_module_total_runtime(module_node.module)
+            
+        # Skip if runtime is too small
+        if total_runtime < 0.000001:
+            return ""
+            
+        # Calculate average
+        avg_runtime = total_runtime / call_count
+        
+        # Format the result
+        formatted = f"avg: {format_time(avg_runtime)}"
+        self._cached_data[node_id] = formatted
+        return formatted
+    
+    def _find_tree_from_node(self, module_node):
+        """Find the tree this node belongs to"""
+        # Access app directly
+        app = self._get_app()
+        if not app:
+            return None
+            
+        # Try to find the tree
+        try:
+            tree = app.query_one("#tree-pane > Tree")
+            return tree
+        except:
+            return None
+            
+    def _get_app(self):
+        """Get the Textual app instance"""
+        # This is a bit of a hack but should work
+        import textual.app
+        try:
+            return textual.app.App.get_running_app()
+        except:
+            return None
+    
+    def _get_total_runtime_recursively(self, module):
+        """Calculate the total runtime of this module and all its children recursively"""
+        if not module:
+            return 0.0
+            
+        # Start with own runtime
+        total = 0.0
+        if hasattr(module, "forward_stats") and module.forward_stats:
+            # Sum up runtime from all stats records
+            for stats in module.forward_stats:
+                if hasattr(stats, "runtime"):
+                    total += stats.runtime
+        
+        # Add runtime from all children recursively
+        for child_name, child_module in module._modules.items():
+            if child_module is not None:
+                total += self._get_total_runtime_recursively(child_module)
+                
+        return total
+
+
+class ModuleNameComponent(NodeLabelComponent):
+    """Component for displaying the module name"""
+    display_name = "Module Name"
+    description = "Shows the module's name"
+    example = "(conv_in)"
+    shortcut_key = None  # Always on, no toggle
+    style = "bold #ff66aa"  # Pink
+    suffix = ": "
+    
+    def __init__(self):
+        # Module name is always active - it's the primary identifier
+        super().__init__(active=True)
+        
+    def toggle_active(self):
+        """Module name can't be toggled off"""
+        return True
+        
+    def _get_text(self, module_node):
+        if module_node.name:
+            return f"({module_node.name})"
+        return ""
+
+
+class ModuleTypeBaseComponent(NodeLabelComponent):
+    """Base class for module type components"""
+    display_name = "Module Args"
+    description = "Shows the module's class name and constructor args"
+    example = "Conv2d(320, 4, kernel_size=3)"
+    shortcut_key = None
+    
+    def __init__(self):
+        # Module type components are always active
+        super().__init__(active=True)
+        
+    def toggle_active(self):
+        """Module type can't be toggled off"""
+        return True
+
+
+class ModuleTypeNameComponent(ModuleTypeBaseComponent):
+    """Component for displaying the module class name"""
+    style = "bold #00aaff"  # Bold bright blue
+    suffix = ""  # No space between type name and args
+    
+    def _get_text(self, module_node):
+        return module_node.module_type
+
+
+class ModuleTypeArgsComponent(ModuleTypeBaseComponent):
+    """Component for displaying the module arguments"""
+    style = "italic #0088cc"  # Base style for non-highlighted parts
+    
+    def __init__(self):
+        super().__init__()
+        # Store the highlighted version of the last args string for display
+        self._highlighted_args = {}  # Dictionary: module_node -> highlighted args
+    
+    def _get_text(self, module_node):
+        if not module_node.extra_info:
+            return ""
+        
+        # For width calculation, always return plain text
+        # This ensures proper alignment even with markup
+        plain_text = f"({module_node.extra_info})"
+        
+        # Calculate the highlighted version for display
+        highlighted = self._highlight_args(module_node.extra_info)
+        
+        # Store the highlighted version for get_label to use
+        self._highlighted_args[module_node] = f"({highlighted})"
+        
+        # For get_width calculations, return the plain text
+        # This ensures proper width calculation for alignment
+        return plain_text
+        
+    def get_label(self, module_node):
+        """Override get_label to use highlighted version after width calc"""
+        if not self.active:
+            return ""
+            
+        # Get the plain text first (triggers _get_text)
+        plain = self._get_text(module_node)
+        if not plain:
+            return ""
+            
+        # Get the highlighted version that was stored
+        highlighted = self._highlighted_args.get(module_node, plain)
+        
+        # Use the highlighted version for display but original for width
+        return f"{self.prefix}[{self.style}]{highlighted}[/{self.style}]{self.suffix}"
+    
+    def _highlight_args(self, args_text):
+        """Highlight arguments with distinct colors"""
+        import re
+        
+        # Process the string character by character
+        pos = 0
+        result = ""
+        
+        # Define patterns
+        param_pattern = r'([a-zA-Z_][a-zA-Z0-9_]*)='  # Parameter names like in_features=
+        number_pattern = r'(\d+\.?\d*(?:[eE][-+]?\d+)?)'  # Numbers like 1280 or 1e-5
+        bool_pattern = r'\b(True|False|None)\b'  # Boolean values
+        
+        while pos < len(args_text):
+            # Check for parameter names
+            param_match = re.match(param_pattern, args_text[pos:])
+            if param_match:
+                # Parameter name in default blue
+                result += param_match.group(1) + "="
+                pos += len(param_match.group())
+                continue
+                
+            # Check for numbers - use a blue-green like before
+            number_match = re.match(number_pattern, args_text[pos:])
+            if number_match:
+                result += f"[#55aacc]{number_match.group(1)}[/#55aacc]"
+                pos += len(number_match.group())
+                continue
+                
+            # Check for booleans - use bright blue like before
+            bool_match = re.match(bool_pattern, args_text[pos:])
+            if bool_match:
+                result += f"[#6699ff]{bool_match.group(1)}[/#6699ff]"
+                pos += len(bool_match.group())
+                continue
+                
+            # Default - add character as is
+            result += args_text[pos]
+            pos += 1
+            
+        return result
+
+
+class ParamShapesComponent(NodeLabelComponent):
+    """Component for displaying parameter shapes"""
+    display_name = "Parameter Shapes"
+    description = "Shows the shapes of module parameters like weight and bias tensors"
+    example = "weight: 4×320×3×3, bias: 4"
+    shortcut_key = "t"
+    style = "italic #66dd33"  # Light green (italic instead of bold)
+    prefix = " | "
+    suffix = ""
+    
+    def _get_text(self, module_node):
+        return module_node.state_dict_info if module_node.state_dict_info else ""
+
+
+class ParamCountComponent(NodeLabelComponent):
+    """Component for displaying parameter count"""
+    display_name = "Parameter Count"
+    description = "Shows the number of parameters in the module including all children"
+    example = "1.7M"
+    shortcut_key = "p"
+    style = "#ff8c00"  # Dark orange (not bold)
+    suffix = " "
+    
+    def _get_text(self, module_node):
+        # Get parameter count from module_node's param_count property
+        if hasattr(module_node, 'param_count') and module_node.param_count > 0:
+            # Format the parameter count in a human-readable way
+            return format_param_count(module_node.param_count)
+        return ""
+
+
+class OwnParamsComponent(NodeLabelComponent):
+    """Component for displaying own parameter count (excluding children)"""
+    display_name = "Own Params"
+    description = "Shows the number of parameters in this module only (excluding children) - only displayed when different from total Parameter Count (which means the module has children with parameters)"
+    example = "1.7M"
+    shortcut_key = None  # No keyboard shortcut
+    style = "bold yellow"
+    suffix = " "
+    
+    def _get_text(self, module_node):
+        if not module_node.module:
+            return ""
+            
+        # Get total parameter count from module_node
+        total_params = module_node.param_count if hasattr(module_node, 'param_count') else 0
+        
+        # Calculate own parameters (excluding children)
+        own_params = 0
+        try:
+            # Get parameters directly owned by this module
+            for param in module_node.module._parameters.values():
+                if param is not None:
+                    own_params += param.numel()
+        except Exception:
+            # If there's an error, return empty
+            return ""
+            
+        # Only show if we have parameters AND it's different from total count
+        # (which means this module has child modules with parameters)
+        if own_params > 0 and own_params != total_params:
+            return format_param_count(own_params)
+        return ""
+
+
+class OwnVRAMComponent(NodeLabelComponent):
+    """Component for displaying own VRAM usage (excluding children)"""
+    display_name = "Own VRAM"
+    description = "Shows the memory used by this module's parameters only (excluding children) - only displayed when different from total memory usage (which means the module has children with parameters)"
+    example = "1.2MB"
+    shortcut_key = None  # No keyboard shortcut
+    style = "bold green"
+    suffix = " "
+    
+    def _get_text(self, module_node):
+        if not module_node.module:
+            return ""
+            
+        # Get total memory usage
+        total_size_bytes = module_node.size_bytes if hasattr(module_node, 'size_bytes') else 0
+            
+        # Calculate own memory usage (excluding children)
+        own_size_bytes = 0
+        try:
+            # Get parameters directly owned by this module
+            for param in module_node.module._parameters.values():
+                if param is not None:
+                    # Use calculate_memory_from_shape for consistent behavior
+                    own_size_bytes += calculate_memory_from_shape(param.shape, param.dtype)
+        except Exception:
+            # If there's an error, return empty
+            return ""
+            
+        # Only show if we have memory usage AND it's different from total memory
+        # (which means this module has child modules with parameters)
+        if own_size_bytes > 0 and own_size_bytes != total_size_bytes:
+            return rp.human_readable_file_size(own_size_bytes)
+        return ""
+
+
+class InputDTypeComponent(ForwardStatsComponent):
+    """Component for displaying input tensor dtype"""
+    display_name = "Input DType"
+    description = "Shows the data type of input tensors passing through this module"
+    example = "in_dtype=float32"
+    shortcut_key = None  # No keyboard shortcut
+    style = "cyan"
+    
+    def _get_text(self, module_node):
+        stats = get_latest_forward_stats(module_node)
+        if not stats:
+            return ""
+            
+        # Add input dtype if available
+        if hasattr(stats, "in_tensor") and stats.in_tensor is not None:
+            return extract_tensor_dtype(stats.in_tensor, "in_dtype")
+        return ""
+
+
+class OutputDTypeComponent(ForwardStatsComponent):
+    """Component for displaying output tensor dtype"""
+    display_name = "Output DType"
+    description = "Shows the data type of output tensors produced by this module"
+    example = "out_dtype=float32"
+    shortcut_key = None  # No keyboard shortcut
+    style = "cyan"
+    
+    def _get_text(self, module_node):
+        stats = get_latest_forward_stats(module_node)
+        if not stats:
+            return ""
+            
+        # Add output dtype if available
+        if hasattr(stats, "out_tensor") and stats.out_tensor is not None:
+            return extract_tensor_dtype(stats.out_tensor, "out_dtype")
+        return ""
+
+
+class ModuleDTypeComponent(NodeLabelComponent):
+    """Component for displaying module dtype"""
+    display_name = "DType"
+    description = "Shows the dtype of the module's parameters (omitted if no parameters)"
+    example = "float32"
+    shortcut_key = None  # No keyboard shortcut
+    style = "italic #33bbee"  # Bright blue-cyan in italic (not bold)
+    
+    def _get_text(self, module_node):
+        if not module_node.module:
+            return ""
+            
+        # Use the helper function to get the dtype
+        return get_module_dtype(module_node.module)
+
+
+class AlignmentComponent(NodeLabelComponent):
+    """Component for aligning sibling nodes vertically"""
+    display_name = "Alignment"
+    description = "Aligns sibling nodes vertically by adding whitespace"
+    example = ""
+    shortcut_key = "A"
+    prefix = ""
+    suffix = ""
+    
+    def _get_text(self, module_node):
+        """Alignment component is special - it returns padding to align with siblings"""
+        # Actual alignment calculation is done in ModuleNode.get_label()
+        # This just returns an empty string as the text itself
+        return ""
+
+from textual.app import App, ComposeResult
+from textual.widgets import Tree, Footer, Static, Button, Switch, ListView, Label, ListItem, MarkdownViewer
+from textual.binding import Binding
+from textual.containers import Horizontal, Vertical, Container, ScrollableContainer
+from textual.widgets._text_area import TextArea
+from textual.reactive import reactive
+from textual._text_area_theme import TextAreaTheme
+from textual.screen import ModalScreen
+from typing import Dict, Optional, Any, List, Tuple
+import torch
+from rich.text import Text
+from rich.pretty import Pretty
+from rich.console import Console
+from rich.style import Style
+from io import StringIO
+import inspect
+import numpy as np
+import os
+import pathlib
+import tempfile
+
+
+class HJKLTree(Tree):
+    """A Tree subclass that adds hjkl vim-style navigation"""
+    
+    BINDINGS = [
+        # Add vim-style navigation
+        Binding("j", "cursor_down", "Down", show=False),
+        Binding("k", "cursor_up", "Up", show=False),
+        Binding("h", "cursor_left", "Left", show=False),
+        Binding("l", "cursor_right", "Right", show=False),
+    ]
+    
+    # All other Tree functionality remains the same
+
+
+class HJKLListView(ListView):
+    """A ListView subclass that adds hjkl vim-style navigation"""
+    
+    BINDINGS = [
+        # Add vim-style navigation
+        Binding("j", "cursor_down", "Down", show=False),
+        Binding("k", "cursor_up", "Up", show=False),
+        # Add toggle with space/enter
+        Binding("space", "toggle_selected", "Toggle", show=False),
+        Binding("enter", "toggle_selected", "Toggle", show=False),
+        # Pass through panel keys
+        Binding("a", "pass_through_a", "", show=False),
+        Binding("i", "pass_through_i", "", show=False),
+    ]
+    
+    def action_toggle_selected(self) -> None:
+        """Toggle the currently highlighted component"""
+        # Get the currently highlighted item
+        if self.highlighted_child is not None and isinstance(self.highlighted_child, ComponentListItem):
+            # Activate the item's toggle method
+            self.highlighted_child.toggle_switch()
+            
+    def action_pass_through_a(self) -> None:
+        """Pass through 'a' key to toggle attributes panel"""
+        # Get parent app and call its toggle_attrs_panel action
+        self.app.action_toggle_attrs_panel()
+        
+    def action_pass_through_i(self) -> None:
+        """Pass through 'i' key to toggle code panel"""
+        # Get parent app and call its toggle_code_panel action
+        self.app.action_toggle_code_panel()
+
+
+class HelpScreen(ModalScreen):
+    """Help screen with scrollable markdown documentation"""
+    
+    BINDINGS = [
+        Binding("escape", "app.pop_screen", "Close", show=True),
+        Binding("q", "app.pop_screen", "Close", show=False),
+        Binding("enter", "app.pop_screen", "Close", show=False),
+    ]
+    
+    CSS = """
+    HelpScreen {
+        align: center middle;
+    }
+    
+    #help-container {
+        width: 90%;
+        height: 90%;
+        background: #1a1a1a;
+        border: solid #444444;
+        padding: 0;
+        margin: 2 4;
+    }
+    
+    #help-title-bar {
+        height: auto;
+        background: #333333;
+        color: #ffffff;
+        border-bottom: solid #444444;
+        layout: horizontal;
+    }
+    
+    #help-title {
+        width: 1fr;
+        text-align: center;
+        padding: 1;
+        text-style: bold;
+    }
+    
+    Button {
+        margin: 1 2;
+    }
+    
+    /* MarkdownViewer specifics */
+    MarkdownViewer {
+        background: #1a1a1a;
+        color: #ffffff;
+    }
+    
+    Horizontal > VerticalScroll {
+        width: 24;
+    }
+    
+    .markdown-body {
+        color: #ffffff;
+    }
+    
+    .header {
+        margin: 1 0 0 2;
+        text-style: bold;
+    }
+    
+    #close-button {
+        background: #992222;
+        color: #ffffff;
+        min-width: 9;
+        width: 9;
+        height: 3;
+        content-align: center middle;
+        text-style: bold;
+    }
+    
+    #close-button:hover {
+        background: #cc3333;
+    }
+    
+    /* Ensure table of contents is visible */
+    .markdown-navigation {
+        background: #222222;
+        color: #dddddd;
+        padding: 1;
+        border-right: solid #444444;
+    }
+    
+    /* TOC links are styled separately */
+    .toc-link {
+        color: #dddddd;
+    }
+    
+    .toc-link:hover {
+        color: #ffffff;
+        text-style: underline;
+    }
+    """
+    
+    # Define a fallback help text as a class attribute for guaranteed availability
+    FALLBACK_HELP = """
+# PyTorch Module Explorer
+
+An interactive TUI for exploring PyTorch models
+
+## Key Controls
+
+### Navigation
+- Arrow keys or hjkl: Navigate tree
+- Space: Toggle node fold/unfold
+- Enter: Expand selected node
+
+### Display Options
+- f: Toggle forward statistics (runtime tensor shapes, requires forward pass)
+- t: Toggle parameter shapes 
+- b: Toggle memory usage display
+- p: Toggle parameter counts
+- d: Toggle device information
+- A: Toggle node alignment
+
+### Panels
+- c: Toggle code panel
+- a: Toggle attributes panel
+- L: Toggle label customization
+- <: Expand the rightmost sidepanel width
+- >: Contract the rightmost sidepanel width
+
+### Folding
+- z: Fold/unfold the selected node and all its descendants
+- Z: Fold/unfold all nodes in the entire tree
+- s: Fold/unfold immediate sibling nodes (same level only)
+- S: Fold/unfold all sibling nodes and their descendants
+- o: Fold/unfold all nodes of the same class type globally
+- O: Fold/unfold all nodes of the same class type and their descendants
+
+Press ESC or Enter to close this help window.
+"""
+
+    def compose(self) -> ComposeResult:
+        with Container(id="help-container"):
+            with Horizontal(id="help-title-bar"):
+                yield Static("RP: Explore Torch Module Documentation", id="help-title")
+                yield Button("CLOSE", id="close-button")
+            
+            # Get the markdown content
+            content = self._get_help_markdown()
+            
+            # Use MarkdownViewer with direct markdown content - no error handling,
+            # if it fails then let it crash properly
+            from textual.widgets import MarkdownViewer
+            yield MarkdownViewer(markdown=content, show_table_of_contents=True)
+    
+    def on_button_pressed(self, event) -> None:
+        """Handle button presses"""
+        if event.button.id == "close-button":
+            self.app.pop_screen()
+            
+    # Let Textual handle all the scrolling and clicking behavior natively
+            
+    # No on_mount needed - we're using a direct content approach in compose
+            
+    # Removed old method (replaced by _create_and_load_doc)
+    
+    # Use class variable to cache the help markdown content
+    _help_markdown_content = None
+    
+    def _get_help_markdown(self):
+        """Get the markdown help content (memoized)"""
+        # Return cached content if we already loaded it
+        if HelpScreen._help_markdown_content is not None:
+            return HelpScreen._help_markdown_content
+        
+        # Simple approach: the file is in the same directory as this file
+        module_dir = os.path.dirname(os.path.abspath(__file__))
+        doc_path = os.path.join(module_dir, "pytorch_module_explorer_doc.md")
+        
+        # Read the file - let it crash if there's a problem
+        with open(doc_path, 'r', encoding='utf-8') as f:
+            HelpScreen._help_markdown_content = f.read()
+            
+        return HelpScreen._help_markdown_content
+
+
+
+
+class AttributeTree:
+    """Helper class to build and manage attribute trees"""
+    
+    def __init__(self, tree_widget: HJKLTree):
+        """Initialize with a tree widget
+        
+        Args:
+            tree_widget: The HJKLTree widget to populate
+        """
+        self.tree = tree_widget
+    
+    def clear(self):
+        """Clear the tree"""
+        self.tree.clear()
+    
+    def set_title(self, title: str):
+        """Set the title of the tree
+        
+        Args:
+            title: Title to display
+        """
+        self.tree.root.label = title
+    
+    def expand_root(self):
+        """Expand the root node"""
+        self.tree.root.expand()
+    
+    def is_simple_type(self, value):
+        """Check if a value is a simple type (should be a leaf node)
+        
+        Args:
+            value: The value to check
+            
+        Returns:
+            bool: True if value is a simple type
+        """
+        return (value is None or 
+                isinstance(value, (bool, int, float, str)) or
+                (isinstance(value, (list, tuple)) and len(value) == 0) or
+                (isinstance(value, dict) and len(value) == 0))
+    
+    def format_value(self, value):
+        """Format a value for display in the attributes tree with Python syntax highlighting
+        
+        Args:
+            value: The value to format
+            
+        Returns:
+            str: Formatted value with rich markup for Python syntax highlighting
+        """
+        MAX_STR_LENGTH = 100  # Maximum length for string display
+        
+        try:
+            if value is None:
+                return "[blue bold]None[/blue bold]"  # Python None is typically blue
+            elif isinstance(value, bool):
+                return f"[blue bold]{value}[/blue bold]"  # Python booleans are typically blue like keywords
+            elif isinstance(value, int):
+                return f"[#b5cea8]{value}[/#b5cea8]"  # VS Code number color
+            elif isinstance(value, float):
+                return f"[#b5cea8]{value}[/#b5cea8]"  # VS Code number color
+            elif isinstance(value, str):
+                try:
+                    if len(value) > MAX_STR_LENGTH:
+                        truncated = value[:MAX_STR_LENGTH] + "..."
+                        return f"[#ce9178]\"{truncated}\"[/#ce9178]"  # VS Code string color
+                    else:
+                        return f"[#ce9178]\"{value}\"[/#ce9178]"  # VS Code string color
+                except Exception as e:
+                    return f"[red]<Error accessing string: {str(e)}>[/red]"
+            elif isinstance(value, (list, tuple)):
+                try:
+                    type_name = type(value).__name__
+                    if len(value) > 5:
+                        return f"[#4ec9b0]{type_name}[/#4ec9b0] [#dddddd]with {len(value)} items[/#dddddd]"
+                    else:
+                        # Format collection with proper Python syntax highlighting
+                        if isinstance(value, list):
+                            items = []
+                            for item in value:
+                                items.append(self.format_value(item))
+                            return f"[#dddddd][[/#dddddd]{', '.join(items)}[#dddddd]][/#dddddd]"
+                        elif isinstance(value, tuple):
+                            items = []
+                            for item in value:
+                                items.append(self.format_value(item))
+                            return f"[#dddddd]([/#dddddd]{', '.join(items)}[#dddddd])[/#dddddd]"
+                except Exception as e:
+                    return f"[#4ec9b0]{type(value).__name__}[/#4ec9b0] [red]<Error: {str(e)}>[/red]"
+            elif isinstance(value, dict):
+                try:
+                    if len(value) == 0:
+                        return "[#dddddd]{}[/#dddddd]"
+                    return f"[#4ec9b0]dict[/#4ec9b0] [#dddddd]with {len(value)} keys[/#dddddd]"
+                except Exception as e:
+                    return f"[#4ec9b0]dict[/#4ec9b0] [red]<Error: {str(e)}>[/red]"
+            elif isinstance(value, torch.Tensor):
+                try:
+                    shape_str = format_shape(value.shape)
+                    return f"[#4ec9b0]Tensor[/#4ec9b0] [#dddddd]shape={shape_str}, dtype={value.dtype}[/#dddddd]"
+                except Exception as e:
+                    return f"[#4ec9b0]Tensor[/#4ec9b0] [red]<Error accessing properties: {str(e)}>[/red]"
+            else:
+                # For other types, use type color for class name
+                return f"[#4ec9b0]{type(value).__name__}[/#4ec9b0]"
+        except Exception as e:
+            return f"[red]<Error formatting value: {str(e)}>[/red]"
+    
+    def add_attributes_recursively(self, parent_node, obj, max_depth=3, current_depth=0):
+        """Recursively add attributes to a node
+        
+        Args:
+            parent_node: The tree node to add attributes to
+            obj: The object to extract attributes from
+            max_depth: Maximum recursion depth to prevent infinite loops
+            current_depth: Current recursion depth
+        """
+        if current_depth >= max_depth:
+            parent_node.add("[dim][italic]... (max depth reached)[/dim][/italic]")
+            return
+            
+        # Get all attributes that don't start with underscore
+        attrs = {}
+        try:
+            if hasattr(obj, "__dict__") and obj.__dict__:
+                # Add from __dict__ first (instance attributes)
+                for name, value in obj.__dict__.items():
+                    if not name.startswith('_') and not callable(value):
+                        attrs[name] = value
+            
+            # Then add from dir() (includes properties, etc.)
+            for name in dir(obj):
+                if name not in attrs and not name.startswith('_'):
+                    try:
+                        value = getattr(obj, name)
+                        # Skip methods and built-in functions
+                        if not callable(value):
+                            attrs[name] = value
+                    except Exception as e:
+                        attrs[name] = f"Error: {str(e)}"
+        except Exception as e:
+            parent_node.add(f"[red]<Error accessing attributes: {str(e)}>[/red]")
+            return
+        
+        # Sort attributes by name
+        for name in sorted(attrs.keys()):
+            value = attrs[name]
+            # Format attribute name in bold cyan (VS Code style for property names)
+            node_label = f"[bold #569cd6]{name}[/bold #569cd6]: {self.format_value(value)}"
+            
+            # Check if this is a simple type (leaf node) or complex type (expandable)
+            is_leaf = self.is_simple_type(value)
+            
+            # Add node to the parent
+            attr_node = parent_node.add(node_label)
+            
+            # Set expandability based on type
+            attr_node._allow_expand = not is_leaf
+            
+            # Only add children for complex types
+            if not is_leaf:
+                if isinstance(value, dict) and len(value) > 0:
+                    for k, v in sorted(value.items()):
+                        # Format dictionary keys also in bold cyan
+                        key_str = str(k) if not isinstance(k, str) else k
+                        child_label = f"[bold #569cd6]{key_str}[/bold #569cd6]: {self.format_value(v)}"
+                        child_node = attr_node.add(child_label)
+                        child_node._allow_expand = not self.is_simple_type(v)
+                        
+                        # Recursively add attributes if it's a complex type
+                        if not self.is_simple_type(v):
+                            self.add_attributes_recursively(child_node, v, max_depth, current_depth + 1)
+                        
+                elif isinstance(value, (list, tuple)) and len(value) > 0 and len(value) <= 20:
+                    for i, item in enumerate(value):
+                        # Format indices in bold number color
+                        child_label = f"[bold #b5cea8]{i}[/bold #b5cea8]: {self.format_value(item)}"
+                        child_node = attr_node.add(child_label)
+                        child_node._allow_expand = not self.is_simple_type(item)
+                        
+                        # Recursively add attributes if it's a complex type
+                        if not self.is_simple_type(item):
+                            self.add_attributes_recursively(child_node, item, max_depth, current_depth + 1)
+                
+                elif hasattr(value, "__dict__") or len(dir(value)) > 0:
+                    try:
+                        # Recursively add attributes
+                        self.add_attributes_recursively(attr_node, value, max_depth, current_depth + 1)
+                    except Exception as e:
+                        attr_node.add(f"[red]<Error accessing attributes: {str(e)}>[/red]")
+    
+    def build_for_object(self, obj):
+        """Build the attribute tree for an object
+        
+        Args:
+            obj: The object to build the tree for
+        """
+        self.clear()
+        self.set_title(f"Attributes of {obj.__class__.__name__}")
+        self.add_attributes_recursively(self.tree.root, obj)
+        self.expand_root()
+
+
+def get_module_device(module):
+    """Determine the device of a PyTorch module
+    
+    Args:
+        module: PyTorch module to check
+        
+    Returns:
+        str: Device string, or empty string if no params
+    """
+    return get_module_param_attr(module, 'device')
+
+
+def format_devices(devices):
+    """Format a set of device strings in a clean, concise way
+    
+    Args:
+        devices: Set of device strings
+        
+    Returns:
+        str: Formatted device string
+    """
+    if not devices:
+        return ""
+        
+    # Convert all to strings
+    devices = set(map(str, devices))
+    
+    # Condense down any combination of cuda:1, cuda:2, cuda:3 to cuda:1,2,3
+    cuda_labels = set()
+    cuda_devices = set(x for x in devices if x.startswith('cuda:'))
+    if cuda_devices:
+        cuda_numbers = ','.join(sorted(x.strip('cuda:') for x in cuda_devices))
+        cuda_labels |= {f'cuda:{cuda_numbers}'}
+
+    other_devices = devices - cuda_devices
+    other_labels = set(map(str, other_devices))
+
+    return '/'.join(sorted(other_labels | cuda_labels))
+
+
+def get_module_device_label(module):
+    """Get the device label for a module
+    
+    Args:
+        module: PyTorch module to check
+        
+    Returns:
+        str: Formatted device label (e.g., 'cuda:0' or 'cpu')
+    """
+    if module is None:
+        return ''
+
+    if hasattr(module, 'device'):
+        return str(module.device)
+        
+    try:
+        # Get devices from all parameters
+        devices = set(x.device for x in module.parameters())
+        return format_devices(devices)
+    except Exception:
+        # Fallback to get_module_device for any errors
+        return get_module_device(module)
+        
+
+
+    
+
+
+
+
+
+
+
+
+
+class ModuleNode:
+    """Node representing a PyTorch module"""
+    # Define component classes with their default active states
+    # Ordered by how they appear in the label
+    component_classes = [
+        (AlignmentComponent, False),  # Alignment first in the list
+        (DeviceLabelComponent, False),
+        (SizeLabelComponent, True),
+        (ParamCountComponent, False),  # Parameter count hidden by default
+        (ModuleDTypeComponent, False), # Set module dtype to off by default
+        (ForwardInputShapeComponent, False),
+        (ForwardOutputShapeComponent, False),
+        (ForwardInputMemorySizeComponent, False),  # Input tensor memory size off by default
+        (ForwardOutputMemorySizeComponent, False),  # Output tensor memory size off by default
+        (ForwardCallCountComponent, False), # Call count off by default
+        (ForwardRuntimeComponent, False),   # Self runtime off by default
+        (AvgSelfRuntimeComponent, False),   # Average self runtime off by default
+        (TotalRuntimeComponent, True),      # Total runtime component enabled by default
+        (AvgTotalRuntimeComponent, False),  # Average total runtime off by default
+        (ModuleNameComponent, None),  # None means use default constructor
+        (ModuleTypeNameComponent, None),  # None means use default constructor
+        (ModuleTypeArgsComponent, None),  # None means use default constructor
+        (ParamShapesComponent, True)
+    ]
+    
+    def __init__(self, name: str, module_type: str, extra_info: str = "", state_dict_info: str = "", 
+                 module=None, size_bytes: int = 0, param_count: int = 0):
+        self.name = name
+        self.module_type = module_type
+        self.extra_info = extra_info
+        self.state_dict_info = state_dict_info
+        self.module = module
+        self.size_bytes = size_bytes
+        self.param_count = param_count
+        # Use the new function directly - no need to cache it
+        # Device info will be retrieved dynamically through the device component
+        self.device_label = ""
+        
+        # Initialize label components in the order they'll be displayed
+        self.label_components = []
+        for component_class, default_active in self.component_classes:
+            # Special case for components with custom constructors
+            if default_active is None:
+                component = component_class()  # Use default constructor 
+            else:
+                component = component_class(active=default_active)
+            self.label_components.append(component)
+    
+    # Component look-up helper methods
+    def get_component(self, component_class):
+        """Get a component of a specific class"""
+        for component in self.label_components:
+            if isinstance(component, component_class):
+                return component
+        return None
+
+    def is_alignment_active(self):
+        """Check if alignment is active"""
+        alignment_component = self.get_component(AlignmentComponent)
+        return alignment_component and alignment_component.active
+
+    def get_label(self, alignment_data=None) -> str:
+        """Get the display label for this node with optional alignment"""
+        # Check if alignment is active
+        alignment_active = self.is_alignment_active()
+        
+        # Handle recursive call when alignment is active but no data is provided yet
+        if alignment_active and alignment_data is None:
+            alignment_component = self.get_component(AlignmentComponent)
+            alignment_component.active = False  # Temporarily disable
+            label = self.get_label()  # Get unaligned label
+            alignment_component.active = True   # Re-enable
+            return label
+        
+        # Initialize label parts list
+        label_parts = []
+        
+        # Handle standard (non-aligned) case
+        if not alignment_active or not alignment_data:
+            # Just concatenate active non-alignment components
+            for component in self.label_components:
+                if not isinstance(component, AlignmentComponent):
+                    label_parts.append(component.get_label(self))
+            return "".join(label_parts)
+            
+        # Handle alignment case - extract alignment data
+        component_widths = alignment_data.get("component_widths", {})
+        alignment_positions = alignment_data.get("positions", [])
+        has_expandable_children = alignment_data.get("has_expandable_children", {})
+        current_node = alignment_data.get("current_node")
+        
+        # Add alignment prefix for nodes without children
+        if current_node and not has_expandable_children.get(current_node, False):
+            label_parts.append("[#5F5F5F]┆ [/#5F5F5F]")
+        
+        # Process all components in order by position
+        for i in alignment_positions:
+            # Skip invalid positions
+            if i >= len(self.label_components):
+                continue
+            
+            component = self.label_components[i]
+            
+            # Skip alignment component itself
+            if isinstance(component, AlignmentComponent):
+                continue
+            
+            # Get maximum width for this component position
+            max_width = component_widths.get(i, 0)
+            
+            # Handle inactive or empty components
+            if not component.active or not component._get_text(self):
+                if max_width > 0:
+                    label_parts.append(" " * max_width)
+                continue
+            
+            # Get component text and add padding
+            component_text = component.get_label(self)
+            width = component.get_width(self)
+            padding = max_width - width
+            
+            if padding > 0:
+                component_text += " " * padding
+                
+            label_parts.append(component_text)
+            
+        return "".join(label_parts)
+
+class ComponentState:
+    """Class to manage state for a component type with callbacks for UI updates"""
+    
+    def __init__(self, component_class, default_active=False):
+        self.component_class = component_class
+        self.active = default_active
+        self.display_name = component_class.display_name
+        self.example = component_class.example
+        self.style = component_class.style
+        self.shortcut_key = component_class.shortcut_key
+        # Callbacks to update UI when state changes
+        self.ui_callbacks = []
+        
+    def add_callback(self, callback):
+        """Add a callback to be called when state changes
+        
+        Args:
+            callback: Function that takes a boolean for the new state
+        """
+        self.ui_callbacks.append(callback)
+        
+    def toggle(self):
+        """Toggle the active state and notify callbacks"""
+        self.active = not self.active
+        self._notify_callbacks()
+        return self.active
+        
+    def set_active(self, active):
+        """Set the active state directly and notify callbacks"""
+        self.active = active
+        self._notify_callbacks()
+        return self.active
+        
+    def _notify_callbacks(self):
+        """Notify all callbacks about state change"""
+        for callback in self.ui_callbacks:
+            callback(self.active)
+        
+    @property
+    def status_text(self):
+        """Get the formatted status text"""
+        return "ON" if self.active else "OFF"
+        
+    @property 
+    def status_style(self):
+        """Get the style for status text"""
+        return "green" if self.active else "red"
+        
+    @property
+    def formatted_example(self):
+        """Get the formatted example text"""
+        if self.style:
+            return f"[{self.style}]{self.example}[/{self.style}]"
+        return self.example
+        
+    @property
+    def shortcut_text(self):
+        """Get the formatted shortcut text"""
+        if self.shortcut_key:
+            return f"(Key: {self.shortcut_key})"
+        return ""
+        
+    @property
+    def button_text(self):
+        """Get the complete formatted button text"""
+        return f"[{self.status_style}]{self.status_text}[/{self.status_style}] {self.display_name}: {self.formatted_example} {self.shortcut_text}"
+        
+
+from textual.widgets import ListItem
+
+class ComponentListItem(ListItem):
+    """Component list item with state sync"""
+    
+    def __init__(self, component_state):
+        super().__init__()
+        self.component_state = component_state
+        # Register a callback to update our UI when state changes
+        self.component_state.add_callback(self.update_switch)
+    
+    def compose(self) -> ComposeResult:
+        """Create a toggle with colored text and description"""
+        # Container for the whole item with switch and text content
+        with Horizontal(classes="top-row"):
+            # Switch on left
+            yield Switch(
+                value=self.component_state.active, 
+                id=f"switch-{self.component_state.component_class.__name__}",
+                disabled=True,  # This prevents tab focus
+                classes="component-switch"
+            )
+            with Vertical(classes="item-container"):
+                # Top row with switch and labels
+                    
+                    # Shortcut in dimmed color
+                    shortcut = self.component_state.shortcut_key
+                    shortcut_text = f"[#888888]({shortcut})[/#888888] " if shortcut else ""
+                    
+                    # Name in bold white
+                    name = f"[bold white]{self.component_state.display_name}[/bold white] "
+                    
+                    # Example in original styling
+                    example = self.component_state.formatted_example
+                    
+                    # Combined label with tight height
+                    yield Label(f"{shortcut_text}{name}{example}", classes="component-label")
+                
+                    # Description in italic gray on the second row
+                    desc = self.component_state.component_class.description
+                    yield Label(f"[italic #888888]{desc}[/italic #888888]", classes="component-description")
+    
+    def on_click(self) -> None:
+        """Toggle component when clicked"""
+        self.toggle_switch()
+    
+    def toggle_switch(self) -> None:
+        """Toggle the component state - this updates both the model and UI"""
+        # Use the app's toggle_component method to ensure consistency
+        app = self.app
+        component_name = self.component_state.component_class.__name__
+        app.toggle_component(component_name)
+        
+    def update_switch(self, is_active) -> None:
+        """Update switch UI to match state - called from callback"""
+        # Direct UI update without changing state
+        switch = self.query_one(Switch)
+        if switch.value != is_active:
+            switch.value = is_active
+
+
+
+def build_parent_map(model):
+    """Build a mapping from modules to their parent modules
+    
+    Instead of modifying modules directly (which can cause issues with PyTorch's
+    custom __setattr__), this builds a dictionary mapping each module to its parent.
+    
+    Args:
+        model: The PyTorch model to process
+        
+    Returns:
+        dict: A mapping from modules to their parent modules
+    """
+    # Dictionary to store parent relationships
+    parent_map = {}
+    
+    # Process modules recursively
+    def process_children(module, parent=None):
+        # Store parent relationship in the dictionary
+        parent_map[module] = parent
+        
+        # Process all children
+        for name, child in module.named_children():
+            process_children(child, module)
+    
+    # Start from the root with no parent
+    process_children(model, None)
+    
+    # Store the parent map as a class variable on ModelTreeViewer
+    ModelTreeViewer.parent_map = parent_map
+    
+    return parent_map
+
+
+class ModelTreeViewer(App):
+    """Textual app to display a PyTorch model structure as a tree with folding"""
+    # Store the model for direct access by components
+    model = None
+    # Store parent mapping
+    parent_map = {}
+    
+    CSS = """
+    #main-container {
+        layout: horizontal;
+        height: 100%;
+    }
+    
+    #label-manager {
+        width: 25%;
+        min-width: 30;
+        height: 100%;
+        border-right: solid gray;
+        display: none;
+    }
+
+    #label-manager-title {
+        height: auto;
+        padding: 1;
+        background: #333333;
+        color: #ffffff;
+        text-align: center;
+        text-style: bold;
+    }
+    
+    HJKLListView {
+        width: 100%;
+        height: 1fr;
+        border: none;
+        overflow-y: auto; /* Show scrollbar only when needed */
+    }
+    
+    /* Component list styling */
+    .component-item {
+        padding: 0;
+        height: 5; /* Make each item exactly 5 rows tall */
+    }
+    
+    /* Position switch on left, label on right */
+    .component-switch {
+        margin-right: 1;
+        width: auto;
+        # height: 1;
+    }
+    
+    .component-label {
+        width: 1fr; /* Take remaining space */
+        height: 1;
+        content-align: left middle;
+    }
+    
+    .item-container {
+        margin: 0;
+        padding: 0;
+        height: 5;
+    }
+    
+    .top-row {
+        height: 5;
+        margin: 1 0 1 0;
+        padding: 0;
+    }
+    
+    .component-description {
+        height: 2;
+        width: 100%;
+        margin-left: 5; /* Align with the text above, not with the switch */
+    }
+    
+    /* Make disabled switches appear fully opaque */
+    Switch:disabled {
+        opacity: 100%;
+        text-opacity: 100%;
+    }
+    
+    #label-instructions {
+        height: auto;
+        padding: 1;
+        background: #222222;
+        color: #999999;
+        text-align: center;
+        text-style: italic;
+    }
+    
+    #tree-pane {
+        width: 40%;
+        height: 100%;
+        border-right: solid gray;
+    }
+    
+    #editor-pane {
+        width: 60%;
+        height: 100%;
+        layout: vertical;
+    }
+    
+    #code-title {
+        height: auto;
+        padding: 1;
+        border-bottom: solid gray;
+        background: #333333;
+        color: #ffffff;
+        text-align: center;
+        text-style: bold;
+    }
+    
+    #code-editor {
+        height: 2fr;
+        width: 100%;
+        border-bottom: solid gray;
+    }
+    
+    #attrs-title {
+        height: auto;
+        padding: 1;
+        border-bottom: solid gray;
+        background: #333333;
+        color: #ffffff;
+        text-align: center;
+        text-style: bold;
+    }
+    
+    #attrs-pane {
+        height: 1fr;
+        width: 100%;
+        overflow-y: auto;
+    }
+    
+    Tree {
+        width: 100%;
+        height: 100%;
+        overflow-x: auto;  /* Allow horizontal scrolling */
+    }
+    
+    TextArea {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .param-shape {
+        color: #5fd700;
+        text-style: italic;
+    }
+    
+    .device-info {
+        color: #d787ff;
+        text-style: bold;
+    }
+    
+    .bright_yellow {
+        color: #ffff00;
+        text-style: italic;
+    }
+    
+    Tree > .tree--cursor {
+        background: #3a3a3a;
+        color: #ffffff;
+    }
+    """
+    
+    BINDINGS = [
+        
+        # Panel options
+        Binding("L", "toggle_label_manager", "Labels"),
+        Binding("<", "expand_right_panel", " "),
+        Binding("c", "toggle_code_panel", "Code"),
+        Binding("a", "toggle_attrs_panel", "Attr "),
+        Binding(">", "contract_right_panel", " "),
+
+        # Tree operations
+        Binding("z", "toggle_subtree", "Fold Subtree "),
+        Binding("Z", "toggle_all_folds", "Fold All "),
+        Binding("s", "toggle_siblings", " /"),
+        Binding("S", "toggle_all_siblings", "Fold Siblings"),
+        Binding("o", "toggle_same_class", " /"),
+        Binding("O", "toggle_all_same_class", "Fold by Class"),
+        
+        # Display options - individual toggles
+        Binding("A", "toggle_alignment", "Align"),  # Capital A for alignment
+        Binding("t", "toggle_param_shapes", ""),
+        Binding("b", "toggle_size", ""),
+        Binding("p", "toggle_param_count", ""),
+        Binding("d", "toggle_device", ""),
+        Binding("f", "toggle_forward_stats", ""),
+        
+        # Help
+        Binding("?", "show_help", "Help"),
+    ]
+    
+    def __init__(self, model=None):
+        super().__init__()
+        # Store model at class level for easy access by components
+        ModelTreeViewer.model = model
+        # Also store at instance level
+        self.model = model
+        
+        # Build parent mapping for all modules
+        if model:
+            build_parent_map(model)
+        
+        # Cache node_data for each tree node
+        self.node_data: Dict[Any, ModuleNode] = {}
+        
+        # Flag to track if code panel is visible
+        self.code_panel_visible = True
+        
+        # Flag to track if attributes panel is visible
+        self.attrs_panel_visible = True
+        
+        # Flag to track if label manager is visible
+        self.label_manager_visible = False
+        
+        # Right panel width tracking
+        self.right_panel_width = 60  # Default percentage
+        self.min_right_panel_width = 5   # Minimum percentage (reduced to 5%)
+        self.max_right_panel_width = 80  # Maximum percentage
+        self.right_panel_step = 5     # Percentage to increase/decrease by
+        
+        # Flag to prevent recursive updates between UI and components
+        self._updating_from_selection = False
+        
+        # Use a built-in theme for the editor
+        self.editor_theme = TextAreaTheme.get_builtin_theme("vscode_dark")
+        
+        # Extract component classes and their default states from ModuleNode
+        # This ensures we're using exactly the same components that are used in the nodes
+        self.component_classes = []
+        component_defaults = {}
+        
+        for component_class, default_active in ModuleNode.component_classes:
+            # For classes with no default specified, use their constructor default
+            if default_active is None:
+                component_obj = component_class()
+                default_active = component_obj.active
+            
+            # Add to our lists
+            self.component_classes.append(component_class)
+            component_defaults[component_class] = default_active
+        
+        # Create a class map for faster lookup
+        self.component_class_map = {cls.__name__: cls for cls in self.component_classes}
+        
+        # Initialize component states with default values
+        self.component_states = {}
+        
+        # Create ComponentState objects for each component type
+        for component_class, default_active in component_defaults.items():
+            # Enable TotalRuntimeComponent by default for better visibility
+            if component_class.__name__ == "TotalRuntimeComponent":
+                default_active = True
+                
+            self.component_states[component_class.__name__] = ComponentState(
+                component_class, default_active
+            )
+    
+    def compose(self) -> ComposeResult:
+        """Compose the UI with label manager, tree view, and editor panes"""
+        with Horizontal(id="main-container"):
+            # Label manager panel (initially hidden)
+            with Container(id="label-manager"):
+                yield Static("Labels Customization", id="label-manager-title")
+                yield Static("Choose what you want to see!\nClick below or use keyboard shortcuts", id="label-instructions")
+                # Buttons will be added in init_label_manager
+            
+            # Tree view pane
+            with Static(id="tree-pane"):
+                yield HJKLTree("Model Structure")
+            
+            # Right pane with code editor and attributes
+            with Static(id="editor-pane"):
+                # Create a static widget to display the file path
+                yield Static("", id="code-title")
+                # Code editor in a container to control height
+                with Static(id="code-editor"):
+                    editor = TextArea(
+                        language="python", 
+                        read_only=True, 
+                        show_line_numbers=True
+                    )
+                    # We'll register the theme after the widget is mounted
+                    yield editor
+                
+                # Attributes section
+                yield Static("Attributes: No Object Selected", id="attrs-title")
+                with Static(id="attrs-pane"):
+                    yield HJKLTree("No Object Selected")
+                
+        yield Footer()
+    
+    def on_mount(self) -> None:
+        """Set up the UI when app is mounted"""
+        # Set up the model tree
+        tree = self.query_one("#tree-pane > HJKLTree")
+        tree.root.expand()
+        
+        # Register theme with editor
+        editor = self.query_one("#code-editor > TextArea")
+        if self.editor_theme:
+            editor.register_theme(self.editor_theme)
+            editor.theme = "vscode_dark"
+        
+        # Initialize attributes tree
+        attrs_tree = self.query_one("#attrs-pane > HJKLTree")
+        attrs_tree.root.expand()
+        
+        # Initialize label manager
+        self.init_label_manager()
+        
+        # Initialize panel layout
+        self.update_panel_layout()
+        
+        # Populate the tree if we have a model
+        if self.model:
+            self.populate_tree(self.model, tree.root)
+            
+            # Show code and attributes for root model upon startup
+            self.update_editor_with_module(self.model)
+            
+        # Focus on the tree by default
+        tree.focus()
+        
+    def init_label_manager(self):
+        """Initialize the label manager with HJKLListView and component items"""
+        # Get label manager container
+        label_container = self.query_one("#label-manager")
+        
+        # Clear any existing components
+        children_to_remove = [child for child in label_container.children 
+                              if isinstance(child, (ListView, HJKLListView, Container)) or 
+                              (hasattr(child, "id") and child.id == "component-list")]
+        for child in children_to_remove:
+            label_container.remove(child)
+        
+        # Create a ListView with hjkl support
+        list_view = HJKLListView(id="component-list")
+        label_container.mount(list_view)
+        
+        # Add component list items
+        for component_class in self.component_classes:
+            # Get the component state for this class
+            component_state = self.component_states[component_class.__name__]
+            
+            # Create a list item for this component
+            list_item = ComponentListItem(component_state)
+            list_item.add_class("component-item")
+            
+            # Add to list view
+            list_view.append(list_item)
+    
+    def calculate_module_stats(self, module):
+        """Calculate the size and parameter count of a module based on its state_dict tensors
+        
+        Returns:
+            tuple: (size_in_bytes, param_count)
+        """
+        total_size = 0
+        param_count = 0
+        try:
+            state_dict = module.state_dict()
+            for param_name, tensor in state_dict.items():
+                if isinstance(tensor, torch.Tensor):
+                    # Count parameters (elements in the tensor)
+                    num_elements = tensor.numel()
+                    param_count += num_elements
+                    
+                    # Calculate tensor size using the helper function
+                    # We use calculate_memory_from_shape which is more general
+                    total_size += calculate_memory_from_shape(tensor.shape, tensor.dtype)
+        except Exception as e:
+            # If there's an error calculating stats, return zeros
+            return 0, 0
+            
+        return total_size, int(param_count)
+        
+    def populate_tree(self, module, tree_node):
+        """Recursively populate tree from PyTorch module"""
+        module_name = module._get_name()
+        extra_info = module.extra_repr()
+        
+        # Calculate the module size and parameter count
+        module_size, param_count = self.calculate_module_stats(module)
+        
+        # Get state dict info for leaf modules (no children)
+        state_dict_info = ""
+        if not module._modules:  # This is a leaf module
+            try:
+                # Get state dict and format tensor shapes
+                params = list(module.state_dict().items())
+                if params:
+                    shapes = []
+                    for param_name, tensor in params:
+                        if isinstance(tensor, torch.Tensor):
+                            shape_str = f"{param_name}: {format_shape(tensor.shape)}"
+                            shapes.append(shape_str)
+                    state_dict_info = ", ".join(shapes)
+            except Exception as e:
+                state_dict_info = f"Error: {str(e)}"
+        
+        # Create or get the parent node data
+        if tree_node == self.query_one(Tree).root:
+            node_name = ""
+        else:
+            node_label = str(tree_node.label)
+            if ":" in node_label:
+                node_name = node_label.split(":")[0].strip("() ")
+            else:
+                node_name = node_label
+        
+        node_data = ModuleNode(name=node_name, module_type=module_name, 
+                              extra_info=extra_info, state_dict_info=state_dict_info, 
+                              module=module, size_bytes=module_size, param_count=param_count)
+        self.node_data[tree_node] = node_data
+        
+        # Set node display text
+        tree_node.label = node_data.get_label()
+        
+        # Add all child modules
+        has_children = bool(module._modules)
+        
+        # Set whether this node can be expanded
+        tree_node.allow_expand = has_children
+        
+        # Add all child modules
+        for key, child_module in module._modules.items():
+            # Apply consistent formatting with yellow module name and syntax-colored code
+            module_part = f"[bold yellow]({key})[/bold yellow]: "
+            # Use cyan for the class name (typical Python syntax highlighting)
+            code_part = f"[cyan]{child_module._get_name()}[/cyan]"
+            formatted_label = module_part + code_part
+            
+            child_node = tree_node.add(formatted_label)
+            self.populate_tree(child_module, child_node)
+    
+    def on_tree_node_selected(self, event) -> None:
+        """Handle tree node selection to update the editor and attributes tree"""
+        # Check if the selected node is from the main model tree by checking if it's in our node_data
+        node = event.node
+        if node in self.node_data:
+            module = self.node_data[node].module
+            if module is not None:
+                self.update_editor_with_module(module)
+    
+    # Removed format_value - now part of AttributeTree class
+    
+    # Remove the moved methods - now they're in AttributeTree class
+    
+    def format_python_attribute_path(self, path_parts):
+        """Format a list of path parts into a valid Python attribute path
+        
+        Converts sequences like ["transformer_blocks", "8", "attn1"] into
+        proper Python syntax: "transformer_blocks[8].attn1"
+        
+        Args:
+            path_parts: List of path components
+            
+        Returns:
+            str: Properly formatted Python attribute path
+        """
+        processed_parts = []
+        i = 0
+        while i < len(path_parts):
+            part = path_parts[i]
+            
+            # Check if this part is followed by a numeric index
+            if i + 1 < len(path_parts) and path_parts[i + 1].isdigit():
+                # This part should have an index
+                index_part = path_parts[i + 1]
+                processed_parts.append(f"{part}[{index_part}]")
+                i += 2  # Skip the next part since we've incorporated it
+            else:
+                # Regular part (may be a digit or a name)
+                processed_parts.append(part)
+                i += 1
+        
+        # Join processed parts with dots
+        return ".".join(processed_parts)
+    
+    def get_module_path(self, module):
+        """Get a properly formatted Python path to a module in the model structure
+        
+        Args:
+            module: The module to get a path for
+            
+        Returns:
+            str: Python-style path to the module (e.g., "model.layers[0].attention")
+        """
+        # Try to find the node for this module
+        for node, node_data in self.node_data.items():
+            if node_data.module is module:
+                # Build the path from this node up to the root
+                path_parts = []
+                current = node
+                
+                while current and current != self.query_one("#tree-pane > Tree").root:
+                    # Get the node name - it's in parentheses in the label
+                    label = str(current.label)
+                    if "(" in label and ")" in label:
+                        name = label.split("(")[1].split(")")[0]
+                        path_parts.insert(0, name)
+                    current = current.parent
+                
+                # Format the path parts into proper Python attribute notation
+                if path_parts:
+                    return self.format_python_attribute_path(path_parts)
+        
+        # If we can't find a path, return the class name
+        return module.__class__.__name__
+    
+    def build_attributes_tree(self, obj):
+        """Build a tree of attributes for the given object"""
+        attrs_tree = self.query_one("#attrs-pane > Tree")
+        attrs_title = self.query_one("#attrs-title")
+        
+        # Get the full path to the object
+        path = self.get_module_path(obj)
+        
+        # Update the attributes title directly
+        attrs_title.update(f"Attributes: {path}".replace('[',r'\[').replace(']',r']'))
+        
+        # Create and use the AttributeTree helper class
+        attribute_tree = AttributeTree(attrs_tree)
+        attribute_tree.build_for_object(obj)
+                
+    def update_editor_with_module(self, module) -> None:
+        """Update the editor with module source code and attributes"""
+        editor = self.query_one("#code-editor > TextArea")
+        code_title = self.query_one("#code-title")
+        
+        try:
+            # Get source code for the module class
+            source = inspect.getsource(module.__class__)
+            line_number = inspect.getsourcelines(module.__class__)[1]
+            
+            # Get file path information if available
+            try:
+                file_path = inspect.getfile(module.__class__)
+            except (TypeError, OSError):
+                file_path = "Unknown file path"
+            
+            # Update the title with the file path
+            code_title.update(f"{file_path}")
+            
+            # Set the content in the editor
+            editor.text = source
+            
+            # Move cursor to the class definition line
+            editor.move_cursor((line_number-1, 0))
+            
+        except (TypeError, OSError) as e:
+            # Handle case where source isn't available (built-in modules, etc.)
+            code_title.update(f"{module.__class__.__name__}")
+            editor.text = f"# Source code not available for {module.__class__.__name__}\n# {str(e)}"
+        
+        # Build the attributes tree
+        self.build_attributes_tree(module)
+    
+    def action_focused_panel_down(self) -> None:
+        """Move down in the currently focused panel"""
+        # If the focused widget is a component list item
+        if isinstance(self.focused, ComponentListItem):
+            # Get all component items
+            component_items = list(self.query(ComponentListItem))
+            if not component_items:
+                return
+                
+            # Find the currently focused item
+            focused_index = component_items.index(self.focused)
+            
+            # Move focus to the next item
+            if focused_index < len(component_items) - 1:
+                # Focus the next item
+                component_items[focused_index + 1].focus()
+        
+        # If the tree has focus, use its cursor movement
+        elif self.focused and "#tree-pane" in str(self.focused.css_id_selector):
+            tree = self.query_one(Tree)
+            tree.action_cursor_down()
+        
+        # If the attribute tree has focus
+        elif self.focused and "#attrs-pane" in str(self.focused.css_id_selector):
+            # Handle attribute tree navigation if needed
+            attrs_tree = self.query_one("#attrs-pane > Tree")
+            attrs_tree.action_cursor_down()
+            
+    def action_focused_panel_up(self) -> None:
+        """Move up in the currently focused panel"""
+        # If the focused widget is a component list item
+        if isinstance(self.focused, ComponentListItem):
+            # Get all component items
+            component_items = list(self.query(ComponentListItem))
+            if not component_items:
+                return
+                
+            # Find the currently focused item
+            focused_index = component_items.index(self.focused)
+            
+            # Move focus to the previous item
+            if focused_index > 0:
+                # Focus the previous item
+                component_items[focused_index - 1].focus()
+        
+        # If the tree has focus, use its cursor movement
+        elif self.focused and "#tree-pane" in str(self.focused.css_id_selector):
+            tree = self.query_one(Tree)
+            tree.action_cursor_up()
+            
+        # If the attribute tree has focus
+        elif self.focused and "#attrs-pane" in str(self.focused.css_id_selector):
+            # Handle attribute tree navigation if needed
+            attrs_tree = self.query_one("#attrs-pane > Tree")
+            attrs_tree.action_cursor_up()
+            
+    def action_focused_panel_left(self) -> None:
+        """Handle left movement in the focused panel"""
+        # If the tree has focus, use tree's left action (collapse)
+        if self.focused and "#tree-pane" in str(self.focused.css_id_selector):
+            tree = self.query_one(Tree)
+            node = tree.cursor_node
+            if node and node.is_expanded:
+                node.collapse()  # Use node.collapse() directly
+            elif node and node.parent:
+                tree.select_node(node.parent)
+                tree.scroll_to_node(node.parent)
+        
+        # If the attribute tree has focus
+        elif self.focused and "#attrs-pane" in str(self.focused.css_id_selector):
+            attrs_tree = self.query_one("#attrs-pane > Tree")
+            node = attrs_tree.cursor_node
+            if node and node.is_expanded:
+                node.collapse()
+            elif node and node.parent:
+                attrs_tree.select_node(node.parent)
+                attrs_tree.scroll_to_node(node.parent)
+                
+    def action_focused_panel_right(self) -> None:
+        """Handle right movement in the focused panel"""
+        # If the tree has focus, use tree's right action (expand)
+        if self.focused and "#tree-pane" in str(self.focused.css_id_selector):
+            tree = self.query_one(Tree)
+            node = tree.cursor_node
+            if node and not node.is_expanded and node.allow_expand:
+                node.expand()  # Use node.expand() directly
+            elif node:
+                # When pressing right on a selected node, update the editor
+                if node in self.node_data and self.node_data[node].module:
+                    self.update_editor_with_module(self.node_data[node].module)
+        
+        # If the attribute tree has focus
+        elif self.focused and "#attrs-pane" in str(self.focused.css_id_selector):
+            attrs_tree = self.query_one("#attrs-pane > Tree")
+            node = attrs_tree.cursor_node
+            if node and not node.is_expanded and node.allow_expand:
+                node.expand()
+    
+    def action_toggle_focused(self) -> None:
+        """Toggle the currently focused component or tree node"""
+        # If a component item is focused, toggle its switch
+        if self.focused and isinstance(self.focused, ComponentListItem):
+            self.focused.toggle_switch()
+            return
+            
+        # Otherwise, toggle the tree node
+        self.action_toggle_node()
+    
+    def action_focus_next_pane(self) -> None:
+        """Focus the next major pane in the application"""
+        # Define the order of panes to cycle through
+        panes = []
+        
+        # Only include visible panes
+        if self.label_manager_visible:
+            panes.append("label-manager")
+        
+        panes.append("tree-pane")
+        
+        if self.code_panel_visible:
+            panes.append("code-editor")
+            
+        if self.attrs_panel_visible:
+            panes.append("attrs-pane")
+            
+        # Find the currently focused pane
+        current_index = -1
+        current_id = None
+        
+        if self.focused:
+            # Check if we're in a component list item (label manager)
+            if isinstance(self.focused, ComponentListItem):
+                current_id = "label-manager"
+            else:
+                # Check based on ID
+                for pane_id in panes:
+                    if pane_id in str(self.focused.css_id_selector):
+                        current_id = pane_id
+                        break
+        
+        # Find the index of the current pane
+        if current_id:
+            try:
+                current_index = panes.index(current_id)
+            except ValueError:
+                current_index = -1
+        
+        # Focus the next pane
+        if current_index >= 0 and len(panes) > 0:
+            next_index = (current_index + 1) % len(panes)
+            next_id = panes[next_index]
+            
+            # Focus the appropriate widget in the next pane
+            if next_id == "label-manager":
+                items = list(self.query(ComponentListItem))
+                if items:
+                    items[0].focus()
+            elif next_id == "tree-pane":
+                tree = self.query_one(Tree)
+                tree.focus()
+            elif next_id == "code-editor":
+                editor = self.query_one("#code-editor > TextArea")
+                editor.focus()
+            elif next_id == "attrs-pane":
+                attrs_tree = self.query_one("#attrs-pane > Tree")
+                attrs_tree.focus()
+        else:
+            # Default to first pane if nothing was focused
+            if panes:
+                first_id = panes[0]
+                if first_id == "label-manager":
+                    items = list(self.query(ComponentListItem))
+                    if items:
+                        items[0].focus()
+                elif first_id == "tree-pane":
+                    tree = self.query_one(Tree)
+                    tree.focus()
+    
+    def action_focus_prev_pane(self) -> None:
+        """Focus the previous major pane in the application"""
+        # Define the order of panes to cycle through
+        panes = []
+        
+        # Only include visible panes
+        if self.label_manager_visible:
+            panes.append("label-manager")
+        
+        panes.append("tree-pane")
+        
+        if self.code_panel_visible:
+            panes.append("code-editor")
+            
+        if self.attrs_panel_visible:
+            panes.append("attrs-pane")
+            
+        # Find the currently focused pane
+        current_index = -1
+        current_id = None
+        
+        if self.focused:
+            # Check if we're in a component list item (label manager)
+            if isinstance(self.focused, ComponentListItem):
+                current_id = "label-manager"
+            else:
+                # Check based on ID
+                for pane_id in panes:
+                    if pane_id in str(self.focused.css_id_selector):
+                        current_id = pane_id
+                        break
+        
+        # Find the index of the current pane
+        if current_id:
+            try:
+                current_index = panes.index(current_id)
+            except ValueError:
+                current_index = -1
+        
+        # Focus the previous pane
+        if current_index >= 0 and len(panes) > 0:
+            prev_index = (current_index - 1) % len(panes)
+            prev_id = panes[prev_index]
+            
+            # Focus the appropriate widget in the previous pane
+            if prev_id == "label-manager":
+                items = list(self.query(ComponentListItem))
+                if items:
+                    items[0].focus()
+            elif prev_id == "tree-pane":
+                tree = self.query_one(Tree)
+                tree.focus()
+            elif prev_id == "code-editor":
+                editor = self.query_one("#code-editor > TextArea")
+                editor.focus()
+            elif prev_id == "attrs-pane":
+                attrs_tree = self.query_one("#attrs-pane > Tree")
+                attrs_tree.focus()
+        else:
+            # Default to last pane if nothing was focused
+            if panes:
+                last_id = panes[-1]
+                if last_id == "label-manager":
+                    items = list(self.query(ComponentListItem))
+                    if items:
+                        items[0].focus()
+                elif last_id == "tree-pane":
+                    tree = self.query_one(Tree)
+                    tree.focus()
+    
+    def action_page_up(self) -> None:
+        """Handle Page Up key to scroll the code editor up"""
+        # Check if code panel is visible
+        if self.code_panel_visible:
+            editor = self.query_one("#code-editor > TextArea")
+            # Scroll up a page
+            editor.scroll_page_up()
+    
+    def action_page_down(self) -> None:
+        """Handle Page Down key to scroll the code editor down"""
+        # Check if code panel is visible
+        if self.code_panel_visible:
+            editor = self.query_one("#code-editor > TextArea")
+            # Scroll down a page
+            editor.scroll_page_down()
+    
+    def get_node_path(self, node):
+        """Get a clean path representation for a node
+        
+        Args:
+            node: The tree node
+            
+        Returns:
+            str: A formatted module path (e.g., "down_blocks[3].attention")
+        """
+        if node not in self.node_data:
+            return str(node.label)
+            
+        module_node = self.node_data[node]
+            
+        # Find the hierarchy of node names from root to this node
+        path_parts = []
+        current = node
+        
+        while current and current.parent and current != self.query_one(Tree).root:
+            if current in self.node_data:
+                data = self.node_data[current]
+                if data.name:
+                    path_parts.insert(0, data.name)
+            current = current.parent
+            
+        # Join the path parts with dots
+        if path_parts:
+            return ".".join(path_parts)
+        else:
+            # Fallback to module type if no path available
+            return module_node.module_type
+    
+    def toggle_node_state(self, node, expand: Optional[bool] = None) -> bool:
+        """Toggle or set a node's expand/collapse state
+        
+        Args:
+            node: The tree node to toggle
+            expand: If True, expand; if False, collapse; if None, toggle current state
+            
+        Returns:
+            True if action was performed, False otherwise
+        """
+        if not node:
+            return False
+            
+        # For nodes that don't allow expansion (leaf nodes), we still want to
+        # count them as processed for sibling operations
+        if not node.allow_expand:
+            return True
+            
+        if expand is None:
+            # Toggle current state
+            if node.is_expanded:
+                node.collapse()
+                return True
+            elif node.allow_expand:
+                node.expand()
+                return True
+        elif expand and not node.is_expanded and node.allow_expand:
+            node.expand()
+            return True
+        elif not expand and node.is_expanded:
+            node.collapse()
+            return True
+            
+        return False
+    
+    def action_toggle_node(self) -> None:
+        """Toggle expand/collapse of selected node"""
+        tree = self.query_one(Tree)
+        self.toggle_node_state(tree.cursor_node)
+    
+    def toggle_nodes_by_criteria(self, start_node, expand: Optional[bool], 
+                            filter_func=None, is_recursive=True, scope_name=None):
+        """Generic helper to toggle nodes based on criteria
+        
+        Args:
+            start_node: The node to start processing from
+            expand: If True, expand nodes; if False, collapse nodes
+            filter_func: Optional function that takes a node and returns True if it should be processed
+            is_recursive: If True, process node's descendants; if False, only immediate children
+            scope_name: Name of the scope for notification (e.g., "subtree", "siblings", "global")
+                        If None, no notification is shown but count is still returned
+            
+        Returns:
+            int: Number of nodes processed
+        """
+        if not start_node:
+            return 0
+            
+        count = 0
+        action = "Expanded" if expand else "Collapsed"
+        node_path = self.get_node_path(start_node) if scope_name else ""
+        
+        def process_node(node, depth=0):
+            nonlocal count
+            
+            # Apply filter if provided
+            should_process = filter_func(node) if filter_func else True
+            
+            # Process the node if it passes the filter
+            if should_process and self.toggle_node_state(node, expand):
+                count += 1
+                
+            # Process children if recursive
+            if is_recursive:
+                for child in node.children:
+                    process_node(child, depth + 1)
+            elif depth == 0:  # Only process immediate children in non-recursive mode
+                for child in node.children:
+                    if should_process and self.toggle_node_state(child, expand):
+                        count += 1
+        
+        # Start processing
+        process_node(start_node)
+        
+        # Only show notification if scope_name is provided and count > 0
+        if scope_name and count > 0:
+            if node_path:
+                self.notify(f"{action} {count} nodes in {scope_name} of {node_path}")
+            else:
+                self.notify(f"{action} {count} nodes in {scope_name}")
+                
+        # Always return the count
+        return count
+        
+    def process_nodes_recursively(self, start_node, expand: Optional[bool], subtree_only: bool = False) -> int:
+        """Process nodes recursively to expand or collapse them
+        
+        Args:
+            start_node: The node to start processing from
+            expand: If True, expand nodes; if False, collapse nodes
+            subtree_only: If True, only process the subtree under start_node
+            
+        Returns:
+            Number of nodes processed
+        """
+        # Use the generic helper with recursive mode
+        return self.toggle_nodes_by_criteria(
+            start_node, 
+            expand, 
+            is_recursive=True, 
+            scope_name=None  # Don't show notification since caller will handle it
+        )
+    
+    def action_toggle_subtree(self) -> None:
+        """Toggle fold/unfold the entire subtree under the selected node"""
+        tree = self.query_one(Tree)
+        
+        # Get the currently selected node
+        selected_node = tree.cursor_node
+        if not selected_node:
+            return
+            
+        # Special case for root node - always keep it expanded
+        is_root = (selected_node == tree.root)
+            
+        # Check if the selected node is expanded or any of its descendants are expanded
+        any_expanded = selected_node.is_expanded
+        
+        def check_if_any_expanded(node):
+            nonlocal any_expanded
+            # Check if this node is expanded
+            if node.is_expanded:
+                any_expanded = True
+                return True  # Stop traversal once we find an expanded node
+                
+            # Check children
+            for child in node.children:
+                if check_if_any_expanded(child):
+                    return True
+            return False
+        
+        # Check if any nodes in the subtree are expanded - only if the selected node itself is expanded
+        if selected_node.is_expanded:
+            for child in selected_node.children:
+                if check_if_any_expanded(child):
+                    break
+                    
+        # Decide whether to expand or collapse
+        # If anything is expanded, collapse everything
+        # If nothing is expanded, expand everything
+        expand = not any_expanded
+        
+        # First handle the selected node itself
+        if expand and not selected_node.is_expanded:
+            selected_node.expand()  # Expand this node
+        elif not expand and selected_node.is_expanded and not is_root:
+            selected_node.collapse()  # Collapse this node, but not if it's the root
+            # No need to process children if we've collapsed the parent
+            action = "Collapsed"
+            node_path = self.get_node_path(selected_node)
+            self.notify(f"{action} subtree of {node_path}")
+            return
+            
+        # Process all descendants only if we're expanding or if we have an expanded node
+        # with children we need to collapse
+        if expand or (selected_node.is_expanded and len(selected_node.children) > 0):
+            count = self.toggle_nodes_by_criteria(
+                selected_node,
+                expand,
+                is_recursive=True,
+                scope_name=None  # No notification, we'll handle it
+            )
+            
+            # If this is the root node and we collapsed everything, re-expand root
+            if not expand and is_root:
+                selected_node.expand()
+            
+            # Show notification with count
+            action = "Expanded" if expand else "Collapsed"
+            node_path = self.get_node_path(selected_node)
+            if count > 0:
+                self.notify(f"{action} {count} nodes in subtree of {node_path}")
+    
+    def action_toggle_all_folds(self) -> None:
+        """Toggle all nodes - collapse all if any are expanded, otherwise expand all"""
+        tree = self.query_one(Tree)
+        
+        # Check if any nodes are expanded (excluding the root node)
+        any_expanded = False
+        
+        def check_if_any_expanded(node):
+            nonlocal any_expanded
+            # Skip the root node itself in the check
+            if node != tree.root and node.is_expanded:
+                any_expanded = True
+                return True  # Stop traversal once we find an expanded node
+            for child in node.children:
+                if check_if_any_expanded(child):
+                    return True
+            return False
+        
+        check_if_any_expanded(tree.root)
+        
+        # If any nodes are expanded, collapse all, otherwise expand all
+        # Always keep the root expanded
+        expand = not any_expanded
+        
+        # Make sure the root stays expanded
+        if tree.root and not tree.root.is_expanded:
+            tree.root.expand()
+            
+        # Determine operation message
+        action = "Expanded" if expand else "Collapsed"
+        
+        # Track node count for notification
+        total_count = 0
+            
+        # Process children of root node to avoid modifying root itself
+        for child in tree.root.children:
+            # If we're collapsing, handle each child node directly first
+            if not expand and child.is_expanded:
+                child.collapse()
+                total_count += 1
+                
+            # Process the subtrees recursively - only if needed
+            if expand or (not expand and any_expanded):
+                count = self.toggle_nodes_by_criteria(
+                    child,
+                    expand,
+                    is_recursive=True,
+                    scope_name=None  # No individual notifications
+                )
+                total_count += count
+                
+        # Always ensure the root is expanded, even after collapsing everything
+        if tree.root:
+            tree.root.expand()
+                
+        # Single notification for the entire operation
+        self.notify(f"{action} {total_count} nodes globally")
+    
+    def action_toggle_siblings(self) -> None:
+        """Toggle immediate sibling nodes at the same level as the cursor node"""
+        tree = self.query_one(Tree)
+        if not tree.cursor_node or not tree.cursor_node.parent:
+            return
+            
+        parent = tree.cursor_node.parent
+        current_node = tree.cursor_node
+        
+        # Determine toggle direction based on node type
+        if current_node.allow_expand:
+            # For expandable nodes, use their current state
+            expand = not current_node.is_expanded
+        else:
+            # For leaf nodes (not expandable), check siblings to determine direction
+            # Default to expanding if there's no expandable sibling
+            expand = True
+            for sibling in parent.children:
+                if sibling.allow_expand:
+                    expand = not sibling.is_expanded
+                    break
+        
+        # Toggle all siblings directly - simpler and more reliable
+        count = 0
+        for sibling in parent.children:
+            if self.toggle_node_state(sibling, expand):
+                count += 1
+                
+        # Show notification
+        action = "Expanded" if expand else "Collapsed"
+        parent_path = self.get_node_path(parent)
+        self.notify(f"{action} {count} siblings under {parent_path}")
+        
+    def action_toggle_all_siblings(self) -> None:
+        """Toggle all sibling nodes recursively (including their descendants)"""
+        tree = self.query_one(Tree)
+        if not tree.cursor_node or not tree.cursor_node.parent:
+            return
+            
+        parent = tree.cursor_node.parent
+        current_node = tree.cursor_node
+        
+        # Determine toggle direction based on node type
+        if current_node.allow_expand:
+            # For expandable nodes, use their current state
+            expand = not current_node.is_expanded
+        else:
+            # For leaf nodes (not expandable), check siblings to determine direction
+            # Default to expanding if there's no expandable sibling
+            expand = True
+            for sibling in parent.children:
+                if sibling.allow_expand:
+                    expand = not sibling.is_expanded
+                    break
+        
+        # Track total count across all siblings
+        total_count = 0
+                    
+        # For each sibling, toggle it and its descendants
+        for sibling in parent.children:
+            count = self.toggle_nodes_by_criteria(
+                sibling,
+                expand,
+                is_recursive=True,
+                scope_name=None  # No individual notifications
+            )
+            total_count += count
+            
+        # Show a single notification with the total count
+        if total_count > 0:
+            action = "Expanded" if expand else "Collapsed"
+            parent_path = self.get_node_path(parent)
+            self.notify(f"{action} {total_count} nodes under {parent_path} recursively")
+        
+    
+    def action_toggle_same_class(self) -> None:
+        """Toggle all nodes of the same class type globally (non-recursive)"""
+        tree = self.query_one(Tree)
+        if not tree.cursor_node or tree.cursor_node not in self.node_data:
+            return
+            
+        current_node = tree.cursor_node
+        target_module_type = self.node_data[current_node].module_type
+        
+        # Toggle based on current node's state
+        expand = not current_node.is_expanded
+        
+        # Create a filter function for the same class type
+        def is_same_class(node):
+            return node in self.node_data and self.node_data[node].module_type == target_module_type
+            
+        # Toggle all nodes of the same type in the entire tree (just the nodes, not their children)
+        global_toggle_count = 0
+        
+        # Apply to all nodes in the tree - only matching nodes will be affected
+        # Start with the root's children to retain the original behavior
+        for child in tree.root.children:
+            count = self.toggle_nodes_by_criteria(
+                child,
+                expand,
+                filter_func=is_same_class,
+                is_recursive=True,  # We search recursively but only toggle matching nodes
+                scope_name=None  # No notification per child, we'll do a single one
+            )
+            global_toggle_count += count
+        
+        # Show a single global notification
+        action = "Expanded" if expand else "Collapsed"
+        self.notify(f"{action} {global_toggle_count} nodes of class {target_module_type} globally")
+        
+    def action_toggle_all_same_class(self) -> None:
+        """Toggle all nodes of the same class type and their descendants"""
+        tree = self.query_one(Tree)
+        if not tree.cursor_node or tree.cursor_node not in self.node_data:
+            return
+            
+        current_node = tree.cursor_node
+        target_module_type = self.node_data[current_node].module_type
+        
+        # Toggle based on current node's state
+        expand = not current_node.is_expanded
+        
+        # Find all nodes of the target type
+        matching_nodes = []
+        
+        def find_matching_nodes(node):
+            # Check if this node matches
+            if node in self.node_data and self.node_data[node].module_type == target_module_type:
+                matching_nodes.append(node)
+            
+            # Search in children regardless
+            for child in node.children:
+                find_matching_nodes(child)
+        
+        # Find all the matching nodes
+        for child in tree.root.children:
+            find_matching_nodes(child)
+        
+        # Track total affected nodes
+        total_nodes_affected = 0
+        
+        # Toggle each matching node and its entire subtree
+        for node in matching_nodes:
+            # Toggle the node and its entire subtree
+            count = self.toggle_nodes_by_criteria(
+                node,
+                expand,
+                is_recursive=True,  # Toggle the entire subtree for each matching node
+                scope_name=None  # No individual notifications
+            )
+            total_nodes_affected += count
+            
+        # Show a single notification with counts of both matching nodes and total affected
+        action = "Expanded" if expand else "Collapsed"
+        if len(matching_nodes) > 0:
+            self.notify(f"{action} {len(matching_nodes)} {target_module_type} modules with {total_nodes_affected} total nodes")
+    
+    def update_all_node_labels(self) -> None:
+        """Update all node labels in the tree"""
+        tree = self.query_one(Tree)
+        
+        # Check if alignment is active
+        any_aligned = any(
+            node_data.is_alignment_active() 
+            for node_data in self.node_data.values()
+        )
+        
+        if any_aligned:
+            # Use the alignment-aware update
+            self.update_aligned_node_labels()
+        else:
+            # Regular update without alignment
+            def update_node_label(node):
+                if node in self.node_data:
+                    node.label = self.node_data[node].get_label()
+                for child in node.children:
+                    update_node_label(child)
+            
+            update_node_label(tree.root)
+    
+    def calculate_aligned_labels(self, parent_node):
+        """Calculate alignment for a group of sibling nodes
+        
+        Args:
+            parent_node: The parent node whose children will be aligned
+            
+        Returns:
+            dict: Alignment data for the siblings
+        """
+        # Skip if parent has no children
+        if not parent_node.children:
+            return None
+            
+        # Get all children that are in our node_data
+        children = [child for child in parent_node.children if child in self.node_data]
+        if not children:
+            return None
+            
+        # Initialize data structures
+        component_widths = {}
+        active_component_positions = set()
+        has_expandable_children = {}
+        
+        # First pass: track active components and expandable status
+        for child in children:
+            # Mark nodes with children
+            has_expandable_children[child] = (len(child.children) > 0)
+            
+            # Find active components
+            node_data = self.node_data[child]
+            for i, component in enumerate(node_data.label_components):
+                if (isinstance(component, AlignmentComponent) or 
+                    not component.active or 
+                    not component._get_text(node_data)):
+                    continue
+                
+                # Remember this position
+                active_component_positions.add(i)
+        
+        # Second pass: calculate max widths
+        alignment_positions = sorted(active_component_positions)
+        
+        for child in children:
+            node_data = self.node_data[child]
+            for i in alignment_positions:
+                if i >= len(node_data.label_components):
+                    continue
+                
+                component = node_data.label_components[i]
+                if not component.active:
+                    continue
+                
+                # Calculate width and update max
+                width = component.get_width(node_data)
+                if width > 0:
+                    component_widths[i] = max(component_widths.get(i, 0), width)
+        
+        return {
+            "component_widths": component_widths,
+            "positions": alignment_positions,
+            "has_expandable_children": has_expandable_children
+        }
+    
+    def update_aligned_node_labels(self):
+        """Update node labels with alignment between siblings"""
+        tree = self.query_one(Tree)
+        
+        def update_node_group(parent_node):
+            # Calculate alignment data for this parent's children
+            alignment_data = self.calculate_aligned_labels(parent_node)
+            
+            # Update each child with alignment data
+            for child in parent_node.children:
+                if child in self.node_data:
+                    # Add the current node to the alignment_data for identifying in get_label
+                    if alignment_data:
+                        alignment_data["current_node"] = child
+                    child.label = self.node_data[child].get_label(alignment_data)
+                    
+                # Recursively process child's children
+                update_node_group(child)
+        
+        # Start from root (but don't align root itself)
+        update_node_group(tree.root)
+    
+    def apply_component_state(self, component_name):
+        """Apply the component state to all component instances
+        
+        Args:
+            component_name: The name of the component class to update
+        """
+        if component_name not in self.component_states:
+            return
+            
+        component_state = self.component_states[component_name]
+        is_active = component_state.active
+        
+        # Get the component class from the class map
+        component_class = self._get_component_class_by_name(component_name)  
+        if not component_class:
+            return
+            
+        # Apply to all matching components in the tree
+        for node, node_data in self.node_data.items():
+            for component in node_data.label_components:
+                if isinstance(component, component_class):
+                    component.active = is_active
+    
+    def _toggle_component_class(self, component_class):
+        """Internal helper to toggle a component class and its subclasses
+        
+        Args:
+            component_class: The component class to toggle
+        """
+        # Get the component state
+        component_name = component_class.__name__
+        if component_name not in self.component_states:
+            self.notify(f"No components of this type found")
+            return
+            
+        # Toggle the state
+        component_state = self.component_states[component_name]
+        component_state.toggle()
+        
+        # Apply the new state to all components in the tree
+        self.apply_component_state(component_name)
+        
+        # Update UI and notify user
+        self.update_all_node_labels()
+        
+        # Update the switch in the corresponding component list item
+        if self.label_manager_visible:
+            try:
+                # Find the component list item for this component
+                item = self.query_one(f"#item-{component_name}")
+                if item:
+                    # Focus the item (which will also update its appearance)
+                    item.focus()
+                    
+                    # Update the switch value
+                    switch = item.query_one(Switch)
+                    if switch:
+                        switch.value = component_state.active
+            except Exception:
+                # Just continue if there's an error - no need to bind the exception
+                pass
+            
+        status = "Showing" if component_state.active else "Hiding"
+        self.notify(f"{status} {component_state.display_name}")
+    
+    def action_toggle_param_shapes(self) -> None:
+        """Toggle parameter shapes display"""
+        self.toggle_component("ParamShapesComponent")
+        
+    def action_toggle_size(self) -> None:
+        """Toggle size display"""
+        self.toggle_component("SizeLabelComponent")
+    
+    def action_toggle_param_count(self) -> None:
+        """Toggle parameter count display"""
+        self.toggle_component("ParamCountComponent")
+        
+    def action_toggle_device(self) -> None:
+        """Toggle device display"""
+        self.toggle_component("DeviceLabelComponent")
+        
+    def action_toggle_input_shape(self) -> None:
+        """Toggle input shape display"""
+        self.toggle_component("ForwardInputShapeComponent")
+        
+    def action_toggle_output_shape(self) -> None:
+        """Toggle output shape display"""
+        self.toggle_component("ForwardOutputShapeComponent")
+        
+    def action_toggle_call_count(self) -> None:
+        """Toggle call count display"""
+        self.toggle_component("ForwardCallCountComponent")
+    
+    def _get_component_class_by_name(self, class_name):
+        """Get component class by name from the class map
+        
+        Args:
+            class_name: Name of the component class
+            
+        Returns:
+            The component class or None if not found
+        """
+        return self.component_class_map.get(class_name)
+
+    def action_toggle_forward_stats(self) -> None:
+        """Toggle all forward stats components at once"""
+        # Get all forward stats component states
+        forward_components = [
+            "ForwardInputShapeComponent",
+            "ForwardOutputShapeComponent", 
+            "ForwardCallCountComponent"
+        ]
+        
+        # Find any active component to determine direction
+        any_active = False
+        for name in forward_components:
+            if name in self.component_states and self.component_states[name].active:
+                any_active = True
+                break
+                
+        # Set all components to the opposite state
+        new_state = not any_active
+        
+        # Toggle each component - callbacks will handle UI updates
+        for name in forward_components:
+            if name in self.component_states:
+                # Set the state directly without toggling
+                self.component_states[name].set_active(new_state)
+                # Apply to actual components in the tree nodes
+                self.apply_component_state(name)
+        
+        # Update tree display
+        self.update_all_node_labels()
+        
+        # Show notification
+        status = "Showing" if new_state else "Hiding"
+        self.notify(f"{status} all forward stats")
+    
+    def action_toggle_alignment(self) -> None:
+        """Toggle node label alignment for siblings"""
+        self.toggle_component("AlignmentComponent")
+        
+        # Update UI with alignment
+        self.update_all_node_labels()
+        
+    def action_toggle_attrs_panel(self) -> None:
+        """Toggle visibility of the attributes panel"""
+        # Get attributes pane and code editor
+        attrs_pane = self.query_one("#attrs-pane")
+        attrs_title = self.query_one("#attrs-title")
+        code_editor = self.query_one("#code-editor")
+        
+        # Toggle attributes panel visibility flag
+        self.attrs_panel_visible = not self.attrs_panel_visible
+        
+        # If label manager is open, ensure the editor pane is visible when enabling attrs panel
+        if self.label_manager_visible and self.attrs_panel_visible:
+            editor_pane = self.query_one("#editor-pane")
+            editor_pane.display = True
+        
+        # Update layout based on which panels are visible
+        self.update_panel_layout()
+    
+    def action_toggle_code_panel(self) -> None:
+        """Toggle visibility of the code panel"""
+        # Toggle code panel visibility flag
+        self.code_panel_visible = not self.code_panel_visible
+        
+        # If label manager is open, ensure the editor pane is visible when enabling code panel
+        if self.label_manager_visible and self.code_panel_visible:
+            editor_pane = self.query_one("#editor-pane")
+            editor_pane.display = True
+        
+        # Update layout based on which panels are visible
+        self.update_panel_layout()
+        
+    
+    
+    def toggle_component(self, component_name):
+        """Toggle a component by name - central method for all component toggling
+        
+        Args:
+            component_name: Name of the component class
+        """
+        if component_name not in self.component_states:
+            return
+            
+        # Toggle the state - this will trigger UI callbacks automatically
+        component_state = self.component_states[component_name]
+        component_state.toggle()
+        
+        # Update component in tree nodes
+        self.apply_component_state(component_name)
+        
+        # Update tree display
+        self.update_all_node_labels()
+        
+        # Show notification
+        status = "Showing" if component_state.active else "Hiding"
+        self.notify(f"{status} {component_state.display_name}")
+    
+    def action_toggle_label_manager(self) -> None:
+        """Toggle the label manager panel"""
+        # Toggle visibility state
+        previous_state = self.label_manager_visible
+        self.label_manager_visible = not previous_state
+        
+        # Update the UI
+        self.update_panel_layout()
+        
+        # Set focus based on the action
+        if self.label_manager_visible:
+            # If we just turned on the label manager, focus the list view
+            list_view = self.query_one("#component-list")
+            if list_view:
+                list_view.focus()
+                
+                # Then try to focus the first item specifically
+                self.call_after_refresh(self._focus_first_component_item)
+        elif previous_state:
+            # If we just turned off the label manager, focus the tree
+            tree = self.query_one("#tree-pane > HJKLTree")
+            tree.focus()
+            
+    def action_show_help(self) -> None:
+        """Show the help documentation modal dialog"""
+        self.push_screen(HelpScreen())
+            
+    def _focus_first_component_item(self):
+        """Helper method to focus the first component item after UI refresh"""
+        try:
+            items = list(self.query(ComponentListItem))
+            if items and len(items) > 0:
+                items[0].focus()
+        except Exception:
+            # Silently fail if there's an issue focusing
+            pass
+    
+    def action_expand_right_panel(self) -> None:
+        """Expand the right panel (editor pane) by increasing its width"""
+        if not self.code_panel_visible and not self.attrs_panel_visible:
+            # Right panel is not even visible
+            return
+            
+        # Increase width by step size
+        self.right_panel_width = min(self.right_panel_width + self.right_panel_step, self.max_right_panel_width)
+        
+        # Update layout
+        self.update_panel_layout()
+        
+    def action_contract_right_panel(self) -> None:
+        """Contract the right panel (editor pane) by decreasing its width"""
+        if not self.code_panel_visible and not self.attrs_panel_visible:
+            # Right panel is not even visible
+            return
+            
+        # Decrease width by step size
+        self.right_panel_width = max(self.right_panel_width - self.right_panel_step, self.min_right_panel_width)
+        
+        # Update layout
+        self.update_panel_layout()
+        
+    def update_panel_layout(self) -> None:
+        """Update the layout based on which panels are visible"""
+        # Get all the relevant panes
+        label_manager = self.query_one("#label-manager")
+        editor_pane = self.query_one("#editor-pane")
+        tree_pane = self.query_one("#tree-pane")
+        code_editor = self.query_one("#code-editor")
+        attrs_pane = self.query_one("#attrs-pane")
+        attrs_title = self.query_one("#attrs-title")
+        
+        # Handle label manager visibility
+        if self.label_manager_visible:
+            label_manager.display = True
+            tree_pane.styles.width = "30%"
+            
+            # Check if either right panel should be visible
+            if self.code_panel_visible or self.attrs_panel_visible:
+                editor_pane.display = True
+                editor_pane.styles.width = "45%"
+            else:
+                editor_pane.display = False
+                tree_pane.styles.width = "75%"
+        else:
+            label_manager.display = False
+            
+            # Handle visibility of the right panel
+            if not self.code_panel_visible and not self.attrs_panel_visible:
+                # Hide the entire right panel
+                editor_pane.display = False
+                tree_pane.styles.width = "100%"
+                return
+            
+            # Show the right panel with the current width
+            editor_pane.display = True
+            editor_pane.styles.width = f"{self.right_panel_width}%"
+            tree_pane.styles.width = f"{100 - self.right_panel_width}%"
+        
+        # Handle code editor visibility
+        if self.code_panel_visible:
+            code_editor.display = True
+            if self.attrs_panel_visible:
+                # Both panels visible
+                code_editor.styles.height = "2fr"
+            else:
+                # Only code panel visible
+                code_editor.styles.height = "1fr"
+        else:
+            code_editor.display = False
+        
+        # Handle attributes panel visibility
+        if self.attrs_panel_visible:
+            attrs_pane.display = True
+            attrs_title.display = True
+            attrs_pane.styles.height = "1fr"
+        else:
+            attrs_pane.display = False
+            attrs_title.display = False
+
+
+
+def explore_module(module):
+    """Start the interactive module explorer"""
+    app = ModelTreeViewer(module)
+    app.run()
+
+
+def explore_torch_module_with_stats(module, *args, **kwargs):
+    """
+    Run a forward pass and then explore the module. If torch_hooks has been used
+    to collect forward_stats, they will be displayed when pressing 'f'.
+    
+    Usage example:
+        import torch
+        import rp
+        from rp.libs.torch_hooks import stats_collection
+        from rp.libs.pytorch_module_explorer import explore_torch_module_with_stats
+        
+        # Create your model
+        model = torch.nn.Sequential(
+            torch.nn.Linear(10, 20),
+            torch.nn.ReLU(),
+            torch.nn.Linear(20, 1)
+        )
+        
+        # Create sample input data
+        x = torch.randn(32, 10)
+        
+        # Method 1: Use explore_torch_module_with_stats directly
+        # This simply runs a forward pass and then explores the module
+        explore_torch_module_with_stats(model, x)
+        
+        # Method 2: Collect stats with torch_hooks first
+        # This attaches hooks to collect stats during the forward pass
+        with rp.libs.torch_hooks.stats_collection(model):
+            model(x)
+        # Then explore the module with the collected stats
+        explore_module(model)
+    """
+    # Check if we were given input data
+    if len(args) > 0:
+        # Run a forward pass (no stats collection on its own)
+        module(*args, **kwargs)
+    
+    # Now explore the module (will show forward_stats if they exist)
+    explore_module(module)
+
+
+if __name__ == "__main__":
+    # Load the model
+    import diffusers
+    model = diffusers.CogVideoXTransformer3DModel()
+    
+    # Run the interactive explorer
+    explore_module(model)
