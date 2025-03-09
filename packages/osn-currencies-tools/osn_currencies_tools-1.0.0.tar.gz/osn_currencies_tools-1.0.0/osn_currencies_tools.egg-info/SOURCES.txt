@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+description.txt
+long_description.md
+requirements.txt
+setup.py
+osn_currencies_tools/__init__.py
+osn_currencies_tools/currency_live.py
+osn_currencies_tools/data.py
+osn_currencies_tools/errors.py
+osn_currencies_tools/exchange_rate.py
+osn_currencies_tools/open_exchange_rates.py
+osn_currencies_tools.egg-info/PKG-INFO
+osn_currencies_tools.egg-info/SOURCES.txt
+osn_currencies_tools.egg-info/dependency_links.txt
+osn_currencies_tools.egg-info/requires.txt
+osn_currencies_tools.egg-info/top_level.txt

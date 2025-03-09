@@ -1,0 +1,102 @@
+# osn-currencies-tools: A Python Library for Currency Exchange
+
+osn-currencies-tools provides a set of tools for fetching and converting currency exchange rates. It includes functionalities to retrieve live exchange rates from currencylive.com and exchangerate-api.com, as well as via the Open Exchange Rates API.  The library handles currency conversion and provides exception handling for invalid currency codes and failed API requests.
+
+## Key Features:
+
+*   **Multiple Exchange Rate Sources:** Supports fetching exchange rates from currencylive.com, exchangerate-api.com, and Open Exchange Rates API.
+*   **Currency Conversion:**  Allows easy conversion between different currencies.
+*   **Error Handling:** Provides custom exceptions for handling invalid currency codes and API errors.
+*   **Currency Tag Validation:** Validates currency tags against a predefined list.
+*   **Simple API:** Offers a clean and intuitive API for currency exchange operations.
+
+## Installation:
+
+* **With pip:**
+    ```bash
+    pip install osn-currencies-tools
+    ```
+
+* **With git:**
+    ```bash
+    pip install git+https://github.com/oddshellnick/osn-currencies-tools.git
+    ```
+
+## API Reference:
+
+*   **currency_live:**  Fetches live exchange rates from currencylive.com.
+    *   `get_exchange_rate(from_currency_tag: str, to_currency_tag: str) -> float`: Retrieves the exchange rate between two currencies.
+    *   `exchange_currency(currency_amount: float, from_currency_tag: str, to_currency_tag: str) -> float`:  Converts an amount from one currency to another.
+
+*   **exchange_rate:** Fetches exchange rates from exchangerate-api.com.
+    *   `get_exchange_rate(api_key: str, from_currency_tag: str, to_currency_tag: str) -> float`: Retrieves the exchange rate between two currencies.
+    *   `exchange_currency(api_key: str, currency_amount: float, from_currency_tag: str, to_currency_tag: str) -> float`:  Converts an amount from one currency to another.
+
+*   **open_exchange_rates:** Fetches exchange rates from Open Exchange Rates API.
+    *   `get_exchange_rate(app_id: str, from_currency_tag: str, to_currency_tag: str) -> float`: Retrieves the exchange rate between two currencies.
+    *   `exchange_currency(app_id: str, currency_amount: float, from_currency_tag: str, to_currency_tag: str) -> float`:  Converts an amount from one currency to another.
+
+*   **data:** Contains currency tags and symbols.
+    *   `CurrenciesTags`: A dataclass containing currency abbreviations for all countries.
+    *   `CurrenciesSymbols`: A dataclass containing currency symbols for all countries.
+    *   `tag_to_symbol`: A dictionary mapping currency tags to symbols.
+
+*   **errors:** Defines custom exception classes.
+    *   `ExchangeRateNotFoundError`: Raised when an exchange rate is not found.
+    *   `CurrencyTagNotFoundError`: Raised when a currency abbreviation is not found.
+
+## Usage Examples:
+
+**Using currencylive.com:**
+
+```python
+from osn_currencies_tools.currency_live import get_exchange_rate, exchange_currency
+
+try:
+    rate = get_exchange_rate("USD", "EUR")
+    print(f"Exchange rate USD to EUR: {rate}")
+
+    converted_amount = exchange_currency(100, "USD", "EUR")
+    print(f"100 USD in EUR: {converted_amount}")
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+
+**Using exchangerate-api.com:**
+
+```python
+from osn_currencies_tools.exchange_rate import get_exchange_rate, exchange_currency
+
+api_key = "YOUR_API_KEY"  # Replace with your actual API key
+
+try:
+    rate = get_exchange_rate(api_key, "USD", "EUR")
+    print(f"Exchange rate USD to EUR: {rate}")
+
+    converted_amount = exchange_currency(api_key, 100, "USD", "EUR")
+    print(f"100 USD in EUR: {converted_amount}")
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+
+**Using Open Exchange Rates API:**
+
+```python
+from osn_currencies_tools.open_exchange_rates import get_exchange_rate, exchange_currency
+
+app_id = "YOUR_APP_ID"  # Replace with your actual App ID
+
+try:
+    rate = get_exchange_rate(app_id, "USD", "EUR")
+    print(f"Exchange rate USD to EUR: {rate}")
+
+    converted_amount = exchange_currency(app_id, 100, "USD", "EUR")
+    print(f"100 USD in EUR: {converted_amount}")
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+
+
+## Future Notes:
+
+osn-currencies-tools is under active development. Planned future enhancements include support for more exchange rate APIs and caching of exchange rates to reduce API calls. Contributions and suggestions for new features are welcome! Feel free to open issues or submit pull requests on the project's repository.
