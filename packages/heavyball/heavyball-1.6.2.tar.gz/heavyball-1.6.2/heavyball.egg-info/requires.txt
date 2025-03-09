@@ -1,0 +1,7 @@
+opt-einsum>=3.0.0
+torch>=2.0.0
+
+[dev]
+pre-commit
+pytest
+ruff
