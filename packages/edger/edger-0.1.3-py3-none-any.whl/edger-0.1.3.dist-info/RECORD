@@ -1,0 +1,15 @@
+edger/__init__.py,sha256=MC9sz1z6Aoco0nzeKwEcUEUrMVb5iS3t3zRoKFlK6iE,393
+edger/config.ini,sha256=H5yAfNJhLw5ClyR_wPKI8NCW3n7ictw1fTaFj427BPA,237
+edger/config.py,sha256=0tYY3TzxwI7bIINq9Cc535wBaZsRNqz2RyFA-p0jaD0,2894
+edger/config_gui.py,sha256=S9RZmPQVb7Mlvq8z0UpCNikCbah44ckA49bb612_P98,8827
+edger/edger.py,sha256=E3R8nf4bv209PB3QJFPtaIHJjxBKW7IirOnsBHt3e1g,13210
+edger/jiggler.py,sha256=qsG0sgq-BrdHtL32EamQGJj8LDAg4fBMSynepjytRGg,3412
+edger/log.py,sha256=Qr3dx7Qwqv3qOLzeS4mJoNQYuTBOUljHTC0xebLQ_X4,485
+edger/utils.py,sha256=FoNlTEppAmEgTdEvEvpUEBU25Q2bY5juUQZIXuWQT-4,8203
+edger/data/edger.ico,sha256=1rAehL0zN69qfQaakuKQb-MGbnhfvcdvvXFBgyzvZFU,2662
+edger-0.1.3.dist-info/LICENSE,sha256=DCaUY7pT__3fuV26Jo-rY_s79E1QVNlLih7bwJ2ES_M,1069
+edger-0.1.3.dist-info/METADATA,sha256=4UdJaDSG7KTeNbjQp_JN42ATJlAud66AO8xBjcYcxqw,6360
+edger-0.1.3.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+edger-0.1.3.dist-info/entry_points.txt,sha256=n08M2p5BEzE-yJpj9y2gWfXzg_wfQa6oP48igyMRogI,37
+edger-0.1.3.dist-info/top_level.txt,sha256=NdEGinCtSRF_JYWMbNFp4f-48q8W7JFekWP1Y7Ycu1I,6
+edger-0.1.3.dist-info/RECORD,,
