@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+bingcnsearch/__init__.py
+bingcnsearch/user_agents.py
+bingcnsearch_python.egg-info/PKG-INFO
+bingcnsearch_python.egg-info/SOURCES.txt
+bingcnsearch_python.egg-info/dependency_links.txt
+bingcnsearch_python.egg-info/requires.txt
+bingcnsearch_python.egg-info/top_level.txt
