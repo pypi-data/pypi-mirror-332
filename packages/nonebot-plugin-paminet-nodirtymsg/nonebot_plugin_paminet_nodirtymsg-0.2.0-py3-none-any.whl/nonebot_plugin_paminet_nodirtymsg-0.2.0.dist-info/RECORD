@@ -1,0 +1,12 @@
+nonebot_plugin_paminet_nodirtymsg/__init__.py,sha256=BzNniTFczpK_qZeZ8TE9JmEN6HaPEVFLXiyzYwiI_i8,680
+nonebot_plugin_paminet_nodirtymsg/config.py,sha256=fEOv-MHW78ATnG1uGEyBb52hJe4_IQ7pftZlYtY3e-c,830
+nonebot_plugin_paminet_nodirtymsg/filter.py,sha256=2QhhyxRMX0-PwFgIaQE_dJnB2kgyotzGi0fyF0B4V2s,1069
+nonebot_plugin_paminet_nodirtymsg/handler.py,sha256=GWmEqIPLOsd8lRjHuuhAb2kwxS81E90wnc5UxX5m808,1444
+nonebot_plugin_paminet_nodirtymsg/loader.py,sha256=ky1ucziTPL9BjRsy1JJEBsbzVJLfiy_xyHS-dBatpso,1701
+nonebot_plugin_paminet_nodirtymsg/data/badwords.json,sha256=CyNA_o7BkV_2kPkepTrT3zLEmVdyQfjezRFhT6gONhE,4358
+nonebot_plugin_paminet_nodirtymsg-0.2.0.dist-info/LICENSE,sha256=-k_blbdoZpiK8LKzpjkNEfBCMvSFpFDXGTs0_m1GjUQ,1064
+nonebot_plugin_paminet_nodirtymsg-0.2.0.dist-info/METADATA,sha256=yISEppj-gN8T4MW9iA_nH8cbk-Nln4bI5Hil8UEiqBo,4734
+nonebot_plugin_paminet_nodirtymsg-0.2.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+nonebot_plugin_paminet_nodirtymsg-0.2.0.dist-info/entry_points.txt,sha256=r6rQXMRdaktvUgj5uKQV2A6zdGpJPtqS75wng_WSYpY,73
+nonebot_plugin_paminet_nodirtymsg-0.2.0.dist-info/top_level.txt,sha256=eL0n0FXSAkfscFTk5tgT30UiTQuCiL2wVYS5wiUzVkk,34
+nonebot_plugin_paminet_nodirtymsg-0.2.0.dist-info/RECORD,,
