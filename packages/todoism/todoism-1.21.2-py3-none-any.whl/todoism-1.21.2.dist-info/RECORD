@@ -1,0 +1,16 @@
+todoism/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+todoism/category.py,sha256=KVJ9s7iUOoj0z3e7rKCVEvr7hjhH_2siz1IzZju8L9E,3409
+todoism/cli.py,sha256=i1ewCS4H-VTeRygrQ1wyjs95SPsaAd3KXBmbKj0pvPI,1063
+todoism/command.py,sha256=Pgkke9zseX1d0bwXshQ1JcndQpoVEXRiz4Zd6pz3wlg,16864
+todoism/edit.py,sha256=kJrlxXoUssbk59Cmb62Lt29c56kLpZpPzVITFffui54,35366
+todoism/main.py,sha256=8SIbp_g-w6ywjYEDnAp0vx82gC8wRvth2fDgZmz479o,43832
+todoism/navigate.py,sha256=i6Ko0Gc7x9K07EQF2utqafR4iz1yhOWsxBl38_iz_pc,7139
+todoism/print.py,sha256=MWEt7uE8leUEZE4O3Rd-87kEfNj4hHNKzUyU5d_bb5w,25721
+todoism/settings.py,sha256=g4RIvxLkmL7SqJbTsvE8g6O_OtgukgdN3GkegC_oznY,2524
+todoism/task.py,sha256=tV6i73fC1FZYe9wXfOJOkfVrICBMXa4Ouku5JssRg3g,4410
+todoism-1.21.2.dist-info/LICENSE,sha256=QlcgK5a3NWWIPRaoLeuanUF5H3A4lDTLxpH9UZhWZNM,1077
+todoism-1.21.2.dist-info/METADATA,sha256=24npBSM88-IsTlZFpd7np_ockqg1FYSu8GcsGXRBXFU,4261
+todoism-1.21.2.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+todoism-1.21.2.dist-info/entry_points.txt,sha256=UrCIS-xFnmWXlfUmF-lh8frFw-mc8ea9elmEFgK_IXc,69
+todoism-1.21.2.dist-info/top_level.txt,sha256=iltc_757YUxjdKmgmdg5cdFq-vjkhsRp5OTYpl9UQko,8
+todoism-1.21.2.dist-info/RECORD,,
