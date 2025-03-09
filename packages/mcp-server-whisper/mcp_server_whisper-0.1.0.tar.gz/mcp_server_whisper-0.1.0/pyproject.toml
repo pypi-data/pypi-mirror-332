@@ -1,0 +1,59 @@
+[project]
+name = "mcp-server-whisper"
+version = "0.1.0"
+description = "An MCP server for transcribing audio files using OpenAI Whisper and GPT-4o"
+authors = [
+    {name = "Richie Caputo", email = "rcaputo3@tjclp.com"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10,<3.12"  # pydub breaks in Python 3.12
+dependencies = [
+    "aiofiles",
+    "dotenv",
+    "ffmpeg-python",
+    "mcp[cli]",
+    "openai",
+    "pydub",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/arcaputo3/mcp-server-whisper"
+"Bug Tracker" = "https://github.com/arcaputo3/mcp-server-whisper/issues"
+
+[project.scripts]
+server = "mcp_server_whisper.server:main"
+
+[dependency-groups]
+dev = [
+    "mypy",
+    "pre-commit",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "ruff",
+    "types-aiofiles",
+]
+
+[tool.ruff]
+line-length = 120
+lint.select = ["E", "F", "I", "D", "W"]
+lint.fixable = ["I", "E", "W"]
+
+[tool.pydocstyle]
+convention = "google"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+filterwarnings = [
+    "ignore:Unused async fixture loop scope:pytest.PytestWarning"
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_server_whisper"]
