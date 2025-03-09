@@ -1,0 +1,194 @@
+Metadata-Version: 2.4
+Name: creduse
+Version: 0.1.4
+Summary: Python SDK for Creduse
+Author-email: Creduse <support@creduse.com>
+License: MIT License
+Requires-Python: >=3.13
+Requires-Dist: hatch>=1.14.0
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: pydantic>=2.10.6
+Description-Content-Type: text/markdown
+
+# Creduse SDK
+
+A Python SDK for interacting with the Creduse credit management API. This SDK allows you to manage credits for end users with operations like adding, subtracting, and checking credit balances.
+
+## Installation
+
+```bash
+pip install creduse
+```
+
+## Authentication
+
+The SDK requires an API key for authentication. To get an API key, login to the [Creduse](https://creduse.com) dashboard and navigate to the API keys section.
+
+You can provide the API key in two ways:
+
+1. Pass it directly when initializing the client:
+
+```python
+from creduse import CreduseClient
+
+client = CreduseClient(api_key="your-api-key")
+```
+
+2. Set it as an environment variable:
+
+```bash
+export CREDUSE_API_KEY="your-api-key"
+```
+
+```python
+from creduse import CreduseClient
+
+client = CreduseClient()  # Will use CREDUSE_API_KEY from environment
+```
+
+## Usage
+
+The SDK provides both synchronous and asynchronous clients for interacting with the Creduse API.
+
+### Synchronous Client
+
+```python
+from creduse import CreduseClient
+from uuid import UUID
+
+# Initialize the client
+client = CreduseClient(api_key="your-api-key")
+
+# Add credits for an end user
+end_user_id = UUID("12345678-1234-5678-1234-567812345678")
+add_result = client.add(
+    end_user_id=end_user_id,
+    amount=100,            # Number of credits to add
+    validity_days=31       # How long the credits are valid for (default: 31)
+)
+
+# Subtract credits from an end user
+subtract_result = client.subtract(
+    end_user_id=end_user_id,
+    amount=50              # Number of credits to subtract
+)
+
+# Start a credit cycle for an end user
+start_cycle_result = client.start_cycle(
+    end_user_id=end_user_id,
+    amount=1000,           # Number of credits for the cycle
+    validity_days=31       # How long the cycle is valid for (default: 31)
+)
+
+# Stop a credit cycle for an end user
+stop_cycle_result = client.stop_cycle(
+    end_user_id=end_user_id
+)
+
+# Check the active balance for an end user
+balance = client.get_balance(
+    end_user_id=end_user_id
+)
+print(f"Current balance: {balance.active_balance}")
+```
+
+### Asynchronous Client
+
+```python
+import asyncio
+from creduse import AsyncCreduseClient
+from uuid import UUID
+
+async def manage_credits():
+    # Initialize the async client
+    client = AsyncCreduseClient(api_key="your-api-key")
+    
+    # Add credits for an end user
+    end_user_id = UUID("12345678-1234-5678-1234-567812345678")
+    add_result = await client.add(
+        end_user_id=end_user_id,
+        amount=100,
+        validity_days=31
+    )
+    
+    # Subtract credits
+    subtract_result = await client.subtract(
+        end_user_id=end_user_id,
+        amount=50
+    )
+    
+    # Check balance
+    balance = await client.get_balance(
+        end_user_id=end_user_id
+    )
+    print(f"Current balance: {balance.active_balance}")
+
+# Run the async function
+asyncio.run(manage_credits())
+```
+
+## API Reference
+
+### CreduseClient / AsyncCreduseClient
+
+Both clients provide the same methods, with the async client using `async/await` syntax.
+
+#### `add(end_user_id, amount, validity_days=31)`
+
+Add credits to an end user's account.
+
+- `end_user_id`: UUID4 - The unique identifier for the end user
+- `amount`: int - The number of credits to add (must be positive)
+- `validity_days`: int - How long the credits are valid for (must be positive)
+
+Returns: `AddCreditModel`
+
+#### `subtract(end_user_id, amount)`
+
+Subtract credits from an end user's account.
+
+- `end_user_id`: UUID4 - The unique identifier for the end user
+- `amount`: int - The number of credits to subtract (must be positive)
+
+Returns: `SubtractCreditModel`
+
+#### `start_cycle(end_user_id, amount, validity_days=31)`
+
+Start a new credit cycle for an end user.
+
+- `end_user_id`: UUID4 - The unique identifier for the end user
+- `amount`: int - The number of credits for the cycle (must be positive)
+- `validity_days`: int - How long the cycle is valid for (must be positive)
+
+Returns: `StartCycleModel` / `CycleModelResponse`
+
+#### `stop_cycle(end_user_id)`
+
+Stop an active credit cycle for an end user.
+
+- `end_user_id`: UUID4 - The unique identifier for the end user
+
+Returns: `StopCycleModel` / `CycleModelResponse`
+
+#### `get_balance(end_user_id)`
+
+Get the current active balance for an end user.
+
+- `end_user_id`: UUID4 - The unique identifier for the end user
+
+Returns: `ActiveBalance`
+
+## Error Handling
+
+The SDK validates input parameters and will raise appropriate exceptions:
+
+- `ValueError`: Raised when invalid parameters are provided (e.g., negative amounts)
+- `TypeError`: Raised when parameters are of the wrong type
+
+API errors will be propagated from the underlying HTTP client.
+
+
+## License
+
+MIT License
+
