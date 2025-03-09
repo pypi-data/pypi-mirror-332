@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+pyproject.toml
+setup.py
+kvq/KVQ.py
+kvq/__init__.py
+kvq/test.py
+kvq.egg-info/PKG-INFO
+kvq.egg-info/SOURCES.txt
+kvq.egg-info/dependency_links.txt
+kvq.egg-info/requires.txt
+kvq.egg-info/top_level.txt
