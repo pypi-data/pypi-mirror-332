@@ -1,0 +1,13 @@
+README.md
+setup.py
+bullscatch_backtest/__init__.py
+bullscatch_backtest/config.py
+bullscatch_backtest/main.py
+bullscatch_backtest/query_executer.py
+bullscatch_backtest/spot_fetch.py
+bullscatch_backtest/tablename_fetcher.py
+bullscatch_backtest/test.py
+bullscatch_backtester.egg-info/PKG-INFO
+bullscatch_backtester.egg-info/SOURCES.txt
+bullscatch_backtester.egg-info/dependency_links.txt
+bullscatch_backtester.egg-info/top_level.txt
