@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: hellojp
+Version: 0.0.1
+Summary: Example PyPI package
+Author: JPBS
+Author-email: jbuusao@jgmail.com
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
