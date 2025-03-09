@@ -1,0 +1,14 @@
+pydantic_ai_mlx_lm/__init__.py,sha256=PD5Cf3Msnvd6t9dy5dfJlafnaSxB3t6aYFFkJCOXlXA,119
+pydantic_ai_mlx_lm/agent_model.py,sha256=fd6zwph9Tu-QR6McKVVBNoKNAnRieDg7pgcs4v66f5Q,6881
+pydantic_ai_mlx_lm/model.py,sha256=ovzNxtdsDpHIN0UmTZpmzcGfpkgvTWYl00SxJDWij5k,2673
+pydantic_ai_mlx_lm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_ai_mlx_lm/response.py,sha256=oxpUNkTa-VNEd-Aqzp1JzxM2o2RCFFt7J_caWUXCflo,1449
+pydantic_ai_mlx_lm/stream.py,sha256=UDpr_s89xcBcauEgG70bhOqC4zFKwfGBqHEMHgJkNtg,1395
+pydantic_ai_mlx_lm/utils.py,sha256=vAVz4Px7W0ZDSbvXIEXEY0Nna2X32zZuba5nBOdA-Lc,750
+pydantic_ai_providers/__init__.py,sha256=0XJndTXnkE-bGpEEJr85E5B-n1ZQrea7XSJiXEMRD3s,148
+pydantic_ai_providers/lm_studio.py,sha256=6_XjujCVwfpUF8Yk82lQoMxi6nOEEvxFMdocXpTAwZ4,1760
+pydantic_ai_providers/openrouter.py,sha256=YpeTX7OXYtdSqnPmJerYRMVJIA6NtUwLSVhbpCws0-E,1905
+pydantic_ai_providers/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_ai_mlx-0.2.4.dist-info/METADATA,sha256=5qsqdnkJ8J-mbh2ctTbuHAi-W59nyaVyR-8RiOuie6A,3041
+pydantic_ai_mlx-0.2.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pydantic_ai_mlx-0.2.4.dist-info/RECORD,,
