@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: matek
+Version: 0.1.4
+Summary: Matek for the 3rd grade
+Home-page: 
+Author: Csaba Saranszky
+Author-email: alt@256.hu
+License: GPL
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+Matek - for the 3rd grade
+
+= Install =
+
+To install the package type simply
+
+pip install matek
+
+with the desired version.
+
+= Setup =
+
+No setup is required at the moment. Install the requirements.txt by typing
+
+pip install -r requirements.txt
+
+and that's all.
+
+= How to use =
+
+./osszeadas_kivonas.py
+
+./szorzas.py
+
+= Info =
+
+This package is designed for helping learning some of the key elements
+of the 3rd grade in the hungarian education including
+- add
+- substract
+- multiplication
