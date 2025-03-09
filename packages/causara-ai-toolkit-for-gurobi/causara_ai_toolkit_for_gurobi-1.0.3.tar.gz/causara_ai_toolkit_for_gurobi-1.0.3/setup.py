@@ -1,0 +1,47 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="causara_ai_toolkit_for_gurobi",
+    version="1.0.3",
+    author="causara UG",
+    author_email="support@causara.com",
+    description="This package provides several AI-features for building and working with Gurobi optimization models.\n"
+                "The currently supported features are:\n"
+                "   (1) Learning a Gurobi model from historical / synthetic data\n"
+                "   (2) Converting a plain Python function into a Gurobi model\n"
+                "   (3) Post-processing Gurobi results with Python functions\n"
+                "   (4) AI-Interface for end-users of Gurobi models (e.g. no-code modifications using natural language)\n"
+                "   (5) Finetuning a Gurobi Model on real-world data\n",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://www.causara.com",
+    packages=find_packages(),
+    license="Proprietary",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: Other/Proprietary License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.9, <3.13",
+    install_requires=[
+        "torch",
+        "bcrypt",
+        "numpy<2",
+        "scipy",
+        "gurobipy",
+        "pandas",
+        "openpyxl",
+        "reportlab",
+        "psutil",
+        "sympy",
+        "tqdm",
+        "pywebview",
+        "cefpython3",
+        "rdkit",
+        "matplotlib",
+        "folium",
+        "pyshortcuts",
+        "orjson",
+        "pyyaml"
+    ],
+)
