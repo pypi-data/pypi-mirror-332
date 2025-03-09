@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+pySWATPlus/FileReader.py
+pySWATPlus/PymooBestSolution.py
+pySWATPlus/SWATProblem.py
+pySWATPlus/SWATProblemMultimodel.py
+pySWATPlus/TxtinoutReader.py
+pySWATPlus/__init__.py
+pySWATPlus.egg-info/PKG-INFO
+pySWATPlus.egg-info/SOURCES.txt
+pySWATPlus.egg-info/dependency_links.txt
+pySWATPlus.egg-info/top_level.txt
