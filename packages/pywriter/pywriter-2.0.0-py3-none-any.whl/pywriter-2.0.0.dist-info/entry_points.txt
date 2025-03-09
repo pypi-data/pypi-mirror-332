@@ -1,0 +1,2 @@
+[console_scripts]
+pywriter = pywriter.__main__:get_version
