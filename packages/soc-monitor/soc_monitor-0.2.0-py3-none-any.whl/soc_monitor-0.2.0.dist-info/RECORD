@@ -1,0 +1,9 @@
+soc_monitor/__init__.py,sha256=P3VdWLAcuc0cRj8kPWfmJyB8h6NnrWf25mOCVZprfvM,93
+soc_monitor/cli.py,sha256=VxuC0lFaZojjinYrytUcugMltK9Qn2k7mHOA_nNIaag,1275
+soc_monitor/server.py,sha256=l2C0ow4eBh3OiqnkgABpJ4hNWLmAPjNO18RdKtWmLMk,3751
+soc_monitor/utils.py,sha256=7qjWAVGP5S40HhnUC3G47tdaxa7BWWIXiRTFC1qdRvU,8331
+soc_monitor-0.2.0.dist-info/METADATA,sha256=MO7Il_9qfmSs66BIXqJNANxkq0hPJ3VvU9gqmxPnqTA,4827
+soc_monitor-0.2.0.dist-info/WHEEL,sha256=EaM1zKIUYa7rQnxGiOCGhzJABRwy4WO57rWMR3_tj4I,91
+soc_monitor-0.2.0.dist-info/entry_points.txt,sha256=CJHVT00cCdlvieJCT7JP6tmBZSmXrZuHgz-2s1kDTFo,53
+soc_monitor-0.2.0.dist-info/top_level.txt,sha256=-ji7O9azmNwFPLGhGNYXbyjCjJNMzZ4oLgiIouxhV9Q,12
+soc_monitor-0.2.0.dist-info/RECORD,,
