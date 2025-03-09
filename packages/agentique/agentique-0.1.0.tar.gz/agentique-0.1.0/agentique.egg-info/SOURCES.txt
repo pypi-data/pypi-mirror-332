@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+agentique/__init__.py
+agentique/agent_communication.py
+agentique/agent_core.py
+agentique/agent_registry.py
+agentique/client.py
+agentique/exceptions.py
+agentique/game_ai.py
+agentique/logging_config.py
+agentique/models.py
+agentique/tool_registry.py
+agentique.egg-info/PKG-INFO
+agentique.egg-info/SOURCES.txt
+agentique.egg-info/dependency_links.txt
+agentique.egg-info/requires.txt
+agentique.egg-info/top_level.txt
