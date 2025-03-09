@@ -1,0 +1,12 @@
+gamma/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gamma/datasets.py,sha256=7JmZUw5sg6V5K3QIp52mjlAJyJnNuVVpLVRTcF_5KK8,851
+gamma/loss.py,sha256=S1iPRzL9ocJy3joNnXMrglPHdzmcaI8jBAnUU8Y_5oA,2554
+gamma/modules.py,sha256=YiHKAtewPRwJ0ugpfny6zrQ0kDYreMTAj4O6r7wwEmU,4516
+gamma/optim.py,sha256=V_d5yMV9z9XWvy9tENHnaQRU_nSApDlZm_KL-9fRdnM,1506
+gamma/pipeline.py,sha256=yn6UA3PhmJliwWyufVp0ibGjkMLXOerC6Ci0_Y2KN1o,185
+gamma/plot.py,sha256=qVAER1jwPkTwzM9yJ4lSOarr4_pnrsMERUVP1qu2dE4,1102
+gamma/trainer.py,sha256=3DdKfbwCCtd1QHjv5EQFP0N_PqnQeZbE7S0od7hPxJ8,4416
+torch_gamma-0.0.4.dist-info/METADATA,sha256=Z56wY9AVhY-aeFYyWEO-mhJjN9rge5202oVirbyoM74,515
+torch_gamma-0.0.4.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+torch_gamma-0.0.4.dist-info/top_level.txt,sha256=rppjBqIFQXr93RQxbMHQ1eBKmPG-EIZdzmQ5Je4HDOI,6
+torch_gamma-0.0.4.dist-info/RECORD,,
