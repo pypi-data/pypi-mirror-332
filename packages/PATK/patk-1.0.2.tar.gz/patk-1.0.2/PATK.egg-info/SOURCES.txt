@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+PATK/__init__.py
+PATK.egg-info/PKG-INFO
+PATK.egg-info/SOURCES.txt
+PATK.egg-info/dependency_links.txt
+PATK.egg-info/top_level.txt
