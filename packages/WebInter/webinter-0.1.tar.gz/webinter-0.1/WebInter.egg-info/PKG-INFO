@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: WebInter
+Version: 0.1
+Summary: A fast and minimalistic Python web framework with no external dependencies
+Author: Jason Schmitz
