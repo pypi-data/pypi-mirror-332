@@ -1,0 +1,10 @@
+python-fasthtml
+monsterUI
+claudette
+openai-whisper
+python-dotenv
+fewsats
+
+[dev]
+nbdev
+jupyter

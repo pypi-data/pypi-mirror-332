@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+agora_l402/__init__.py
+agora_l402/_modidx.py
+agora_l402/core.py
+agora_l402.egg-info/PKG-INFO
+agora_l402.egg-info/SOURCES.txt
+agora_l402.egg-info/dependency_links.txt
+agora_l402.egg-info/entry_points.txt
+agora_l402.egg-info/not-zip-safe
+agora_l402.egg-info/requires.txt
+agora_l402.egg-info/top_level.txt
