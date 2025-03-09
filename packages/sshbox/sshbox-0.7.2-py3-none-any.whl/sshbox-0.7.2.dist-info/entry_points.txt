@@ -1,0 +1,2 @@
+[console_scripts]
+sshbox = sshbox.main:cli
