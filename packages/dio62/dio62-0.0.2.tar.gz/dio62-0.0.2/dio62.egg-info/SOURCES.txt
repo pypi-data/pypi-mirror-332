@@ -1,0 +1,8 @@
+dio62.py
+license.txt
+pyproject.toml
+dio62.egg-info/PKG-INFO
+dio62.egg-info/SOURCES.txt
+dio62.egg-info/dependency_links.txt
+dio62.egg-info/requires.txt
+dio62.egg-info/top_level.txt
