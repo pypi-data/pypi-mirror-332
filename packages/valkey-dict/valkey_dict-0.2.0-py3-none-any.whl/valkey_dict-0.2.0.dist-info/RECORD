@@ -1,0 +1,9 @@
+valkey_dict/__init__.py,sha256=EGEOfpxAbxFWgxOZv6kWGkQ9P_cO0ToL62bMk8-UA60,550
+valkey_dict/core.py,sha256=Lppnlet4ZkVOSD1IyHarGu35jrGiiQMh_JLkFSNdQmc,37133
+valkey_dict/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+valkey_dict/python_dict.py,sha256=8QuqMf_XosrncKeNCx8kKgaYZ1C2ps8x8Hm6SVcq82k,12884
+valkey_dict/type_management.py,sha256=hdMgwU_D6KxbRQyKr63Wq8LDg2aOau8hxXAwm5R8Dps,7708
+valkey_dict-0.2.0.dist-info/METADATA,sha256=OY0ziHHIxwqajNutoAjlRUSRkKXlQ_u7BdbZX9uw5aU,18950
+valkey_dict-0.2.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+valkey_dict-0.2.0.dist-info/top_level.txt,sha256=I5czKk8Q4L0XFiTlFPLLw3ETw_-Pxdaf7GpFXPw9Apc,12
+valkey_dict-0.2.0.dist-info/RECORD,,
