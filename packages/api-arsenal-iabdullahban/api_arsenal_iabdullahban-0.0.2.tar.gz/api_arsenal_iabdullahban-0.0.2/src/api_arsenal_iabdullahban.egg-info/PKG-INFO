@@ -1,0 +1,96 @@
+Metadata-Version: 2.2
+Name: api_arsenal_iabdullahban
+Version: 0.0.2
+Summary: This library was developed to simplify handling HTTP requests, logging responses, and deriving statistics from them. It provides tools for testing and monitoring the performance of endpoints and generating detailed reports on successful and non-successful responses.
+Author-email: Abdullah Al-Shehri <iabdullahban@gmail.com>
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# API Arsenal
+
+![Python Version](https://img.shields.io/badge/python-3.x-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+
+## Description
+
+This library was developed to simplify handling HTTP requests, logging responses, and deriving statistics from them. It provides tools for testing and monitoring the performance of endpoints and generating detailed reports on successful and non-successful responses.
+
+## Core Features
+
+#### HTTP Request Handling:
+
+- Log HTTP responses into an array for further analysis.
+- Check if a response is successful (status code 2xx).
+
+#### Response Statistics:
+
+- Calculate minimum, maximum, and average response times.
+- Display statistics about all logged responses.
+
+#### Logging:
+
+- Securely log usernames and passwords to a file using encryption.
+- Log response statistics to a file.
+
+#### Response Printing:
+
+- Print detailed information about a response, including the response body.
+- Print brief information about a response (status code, elapsed time, etc.).
+- Print all logged responses with details.
+- Print only successful responses with details.
+- Print only non-successful responses with details.
+
+#### Utility Functions:
+
+- Generate random usernames, passwords, letters, numbers, and symbols for testing.
+
+#### History Logging:
+
+- Display a history of logged credentials.
+- Display a history of logged statistics.”
+
+## Installation
+
+To install the library, you can use `pip`:
+
+`pip install api-arsenal`
+
+## Usage
+
+### Simple Example
+
+`from api_arsenal import api_arsenal import requests  # Create a utility object utility = api_arsenal()  # Send an HTTP request response = requests.get('https://api.example.com/data') utility.push_response(response, 'Example Endpoint')  # Print statistics utility.print_stats()`
+
+### More Examples
+
+`# Print all responses with details utility.print_all_detailed()  # Print only successful responses utility.print_successful_detailed_only()  # Log credentials to a file utility.log_user_credentials_in_file(comments='Test User')`
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+If you have any questions or inquiries, you can contact me via email.
+iabdullahban@gmail.com

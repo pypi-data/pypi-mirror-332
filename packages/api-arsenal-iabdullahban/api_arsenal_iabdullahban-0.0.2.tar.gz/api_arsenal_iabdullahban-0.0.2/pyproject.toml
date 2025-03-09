@@ -1,0 +1,14 @@
+[project]
+name = "api_arsenal_iabdullahban"
+version = "0.0.2"
+authors = [
+  { name="Abdullah Al-Shehri", email="iabdullahban@gmail.com" },
+]
+description = "This library was developed to simplify handling HTTP requests, logging responses, and deriving statistics from them. It provides tools for testing and monitoring the performance of endpoints and generating detailed reports on successful and non-successful responses."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE" }
