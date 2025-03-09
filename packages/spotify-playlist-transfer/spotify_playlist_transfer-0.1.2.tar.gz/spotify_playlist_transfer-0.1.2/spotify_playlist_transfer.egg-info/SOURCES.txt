@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+spotify_playlist_transfer/__init__.py
+spotify_playlist_transfer/cli.py
+spotify_playlist_transfer/utils.py
+spotify_playlist_transfer.egg-info/PKG-INFO
+spotify_playlist_transfer.egg-info/SOURCES.txt
+spotify_playlist_transfer.egg-info/dependency_links.txt
+spotify_playlist_transfer.egg-info/entry_points.txt
+spotify_playlist_transfer.egg-info/requires.txt
+spotify_playlist_transfer.egg-info/top_level.txt
+spotify_playlist_transfer/tests/__init__.py
+spotify_playlist_transfer/tests/conftest.py
+spotify_playlist_transfer/tests/test_cli.py
+spotify_playlist_transfer/tests/test_utils.py

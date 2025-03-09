@@ -1,0 +1,2 @@
+[console_scripts]
+spotify-transfer = spotify_playlist_transfer.cli:app
