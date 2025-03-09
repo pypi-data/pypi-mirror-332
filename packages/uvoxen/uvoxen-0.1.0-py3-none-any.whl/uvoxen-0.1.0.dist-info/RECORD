@@ -1,0 +1,16 @@
+uvoxen/__init__.py,sha256=Owtz0029OUT8mufr_GfPITjTqF3ClCZtCPNK7G5DzPw,170
+uvoxen/__main__.py,sha256=gzWMBGBytQ2tqpWGDkU_8mSI8tBnQQwu-xCkDihcxjg,10297
+uvoxen/defs.py,sha256=0sbVSq86FGi7ghmNQ3woeLTgm57XedvL3hXtZIySCP4,1247
+uvoxen/expand_tox_vars.py,sha256=2aIXQp9f4QSgwktESTNAjzEBJ4nhozStTt15y3UfPZ0,9861
+uvoxen/parse.py,sha256=kQ88T3ExPlAKXRkBLdAmf7uIxChyaN3wkjZs2ijL4FY,10909
+uvoxen/util.py,sha256=V0nzBI7Boi3RjBl1Pq1hK-TQKbRw27vCpXCRoIVujn0,1427
+uvoxen/run/__init__.py,sha256=eIXNmmb3KHheFaxSUptw4Vj4XLnZzcB66SaE-kTvHtw,158
+uvoxen/run/base.py,sha256=SHbEEoseoj5k68buHdHpYQZt0mfnOE6ocjXD7rf2vSA,5693
+uvoxen/run/req.py,sha256=abvRy4ID3LJAf7nFV4KRRzODTEz2UHp5oAcVmKHzCuA,2093
+uvoxen/run/tox.py,sha256=d8V7FafHfvXjxGF63nMi5dZu5oD3beGg0vnJVCT7RKE,4998
+uvoxen/run/uv.py,sha256=3Le2T1toYPhG2kgDb7jcY4eK0p-LIQZEhS50LRUBQA0,3371
+uvoxen-0.1.0.dist-info/METADATA,sha256=JpaU4Y1p72Eqb-bz6k6skUl6y0mQtSqdwI9AjTbd_8g,5164
+uvoxen-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+uvoxen-0.1.0.dist-info/entry_points.txt,sha256=hQnSfOFffPqgnuIi5VrjuBmIPXhYIzCUZvg4oJlxMNE,48
+uvoxen-0.1.0.dist-info/licenses/LICENSES/BSD-2-Clause.txt,sha256=8y-ztBehlBZ8-tBoIj_JdbqWxZYFE6EPZqPChyCuwd8,1267
+uvoxen-0.1.0.dist-info/RECORD,,
