@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: wptherml
+Version: 1.1.1
+Author: Foley Lab
+Author-email: jfoley19@uncc.edu
+License: LGPLv3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A python package for modeling light-matter interactions!
