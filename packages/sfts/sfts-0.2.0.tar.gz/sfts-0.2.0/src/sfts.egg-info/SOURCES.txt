@@ -1,0 +1,17 @@
+.gitignore
+LICENSE.md
+README.md
+pyproject.toml
+.github/workflows/python-publish.yml
+examples/bns_inspiral.py
+examples/linear_chirp.py
+src/sfts/__init__.py
+src/sfts/ansaetze.py
+src/sfts/iphenot.py
+src/sfts/kernels.py
+src/sfts/taylor_t3.py
+src/sfts.egg-info/PKG-INFO
+src/sfts.egg-info/SOURCES.txt
+src/sfts.egg-info/dependency_links.txt
+src/sfts.egg-info/requires.txt
+src/sfts.egg-info/top_level.txt

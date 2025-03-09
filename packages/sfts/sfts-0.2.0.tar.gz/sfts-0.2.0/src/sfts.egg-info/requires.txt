@@ -1,0 +1,5 @@
+jax
+jaxopt
+
+[cuda]
+jax[cuda12]
