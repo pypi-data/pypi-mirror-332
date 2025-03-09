@@ -1,0 +1,8 @@
+xllamacpp-0.1.9.dist-info/RECORD,,
+xllamacpp-0.1.9.dist-info/LICENSE,sha256=ftv2Kk0HfS22HNtY1g5h2tbH9wR2R8LfTQ27EPCKwpw,1072
+xllamacpp-0.1.9.dist-info/WHEEL,sha256=bUOGQpoygIMT2Vohxv31-TOf36h73xbs64E4LnMnZuw,110
+xllamacpp-0.1.9.dist-info/top_level.txt,sha256=Lu5vLPOlGYHI7Ox8hVqa-ys-gg-cULIAj4bfqNm5SY8,10
+xllamacpp-0.1.9.dist-info/METADATA,sha256=72cRFroh45IQD8mL4QSfT4K5QZVubV5vYhqI4tTqRFU,6624
+xllamacpp/_version.py,sha256=DUB1EQux5P7tBjrhdL5woXYYcm4DSJXSte1hDcRWx8U,497
+xllamacpp/__init__.py,sha256=mm1nSIGpKqKV1k0Xn4fZCXwGohMXbp0BEyuPnveFP7Y,98
+xllamacpp/xllamacpp.cpython-310-darwin.so,sha256=Tjg6tZM6botAP6YDddeaMRF924rgeW1YU6o5dqTsc5E,5020680
