@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+encode_decode/__init__.py
+encode_decode/encoder_decoder.py
+encode_decode_shahed.egg-info/PKG-INFO
+encode_decode_shahed.egg-info/SOURCES.txt
+encode_decode_shahed.egg-info/dependency_links.txt
+encode_decode_shahed.egg-info/top_level.txt
