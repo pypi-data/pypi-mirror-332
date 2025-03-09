@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: dycw-utilities
+Version: 0.97.0
+Author-email: Derek Wan <d.wan@icloud.com>
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: typing-extensions<4.13,>=4.12.2
+Description-Content-Type: text/markdown
+
+[![PyPI version](https://badge.fury.io/py/dycw-utilities.svg)](https://badge.fury.io/py/dycw-utilities)
+
+# `dycw-utilities`
+
+[All the Python functions I don't want to write twice.](https://github.com/nvim-lua/plenary.nvim)
+
+## Installation
+
+- `pip install dycw-utilities`
+
+or with [extras](https://github.com/dycw/python-utilities/blob/master/pyproject.toml).
