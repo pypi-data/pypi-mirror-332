@@ -1,0 +1,7 @@
+statsmodels
+bokeh
+plotly
+pandas
+numpy
+scikit-learn
+lifelines
