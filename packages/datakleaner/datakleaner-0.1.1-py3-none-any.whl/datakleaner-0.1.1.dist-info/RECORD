@@ -1,0 +1,11 @@
+datakleaner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datakleaner/diagnosis.py,sha256=lWWfkPRSLuGTAhJAq8-qy4-KzhS4ZP9DO-RNSztg-gE,3039
+datakleaner/duplicates.py,sha256=wS6yoGW2F6nUV-WfNN9AU1R35I3jVKRvjLXfQgNNRXs,1424
+datakleaner/missing_data.py,sha256=3ZTmtTPbahpa2wSNyrwmxIa2sVoa4J-jW5jILHZSkAY,1800
+datakleaner/outliers.py,sha256=Mligu6j97YJGGY1ZsHzTN4aMDKWnnqDNbecH_okGMYI,4148
+datakleaner-0.1.1.dist-info/LICENCE,sha256=4KtMmwvgrNkXFrKQj3tGxViv1qqf6PR09tShpGSidgA,10962
+datakleaner-0.1.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+datakleaner-0.1.1.dist-info/METADATA,sha256=1EKOba_9N0lG5K2CcPZPcK1eSB3yHVPf6mLF_LUvUbA,7100
+datakleaner-0.1.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+datakleaner-0.1.1.dist-info/top_level.txt,sha256=5BKNE0LMUw7g31IQGfCodejtTkV62M8lqVzRe0f7MjU,12
+datakleaner-0.1.1.dist-info/RECORD,,
