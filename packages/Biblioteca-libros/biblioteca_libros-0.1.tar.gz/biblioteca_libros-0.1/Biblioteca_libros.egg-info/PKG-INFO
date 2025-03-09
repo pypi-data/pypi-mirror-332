@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: Biblioteca_libros
+Version: 0.1
+Summary: Una biblioteca para gestionar libros y autores
+Home-page: https://github.com/cris9822/Biblioteca_libros
+Author: Cristhian Freire, Angelo Pila
+Author-email: cfreire.estud@ispade.edu.ec, apila.estud@ispade.edu.ec
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: summary
