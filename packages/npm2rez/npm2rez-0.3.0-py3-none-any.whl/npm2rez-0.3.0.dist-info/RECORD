@@ -1,0 +1,9 @@
+npm2rez/__init__.py,sha256=9XACSFa6HYfA2J8Pbr1Oq2VHRhEtQucwjV8XkTzqfVQ,116
+npm2rez/__main__.py,sha256=zwbRM_Yrpt-ZJJIxwvOpKsY8cFRaF6c_CHZIXyp74tA,143
+npm2rez/cli.py,sha256=6FySFofyF_RaCiMW2dlpzvoUoaS1VCU8N2vBf9axYQc,3141
+npm2rez/core.py,sha256=bWjr8IeiRjeYYnmp7lprk8bqtiMwFAFnoTyrmZ7N4AY,14006
+npm2rez-0.3.0.dist-info/LICENSE,sha256=tJf0Pz8q_65AjEkm3872K1cl4jGil28vJO5Ko_LhUqc,1060
+npm2rez-0.3.0.dist-info/METADATA,sha256=fEX_loDGtXUF-pvzktk0O3Mhqzfggtr5XXpuluecrt0,3744
+npm2rez-0.3.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+npm2rez-0.3.0.dist-info/entry_points.txt,sha256=igsqmzgEjsaSP6MsUAE6KZcL0gonI0_odj26RrO9lHI,44
+npm2rez-0.3.0.dist-info/RECORD,,

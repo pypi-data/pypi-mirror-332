@@ -1,0 +1,3 @@
+[console_scripts]
+npm2rez=npm2rez.cli:main
+
