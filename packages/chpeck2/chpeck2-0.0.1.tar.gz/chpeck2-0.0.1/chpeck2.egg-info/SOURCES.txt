@@ -1,0 +1,8 @@
+LICENSE.txt
+chpeck2.py
+pyproject.toml
+chpeck2.egg-info/PKG-INFO
+chpeck2.egg-info/SOURCES.txt
+chpeck2.egg-info/dependency_links.txt
+chpeck2.egg-info/requires.txt
+chpeck2.egg-info/top_level.txt

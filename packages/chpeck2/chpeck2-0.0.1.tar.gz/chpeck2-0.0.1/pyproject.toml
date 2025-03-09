@@ -1,0 +1,18 @@
+[project]
+name = "chpeck2"
+version = "0.0.1"
+authors = [
+    {name = "Anonymous"}
+]
+description = "Unknown description. Just a piece of garbage."
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+license = {file = "LICENSE.txt"}
+dependencies = [
+    "requests>=2.32.3",
+    "bs4>=4.13.3",
+    "pandas>=2.2.3"
+]
