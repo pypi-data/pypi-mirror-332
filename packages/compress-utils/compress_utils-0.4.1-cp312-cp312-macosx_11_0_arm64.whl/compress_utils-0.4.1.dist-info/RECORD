@@ -1,0 +1,9 @@
+compress_utils-0.4.1.dist-info/RECORD,,
+compress_utils-0.4.1.dist-info/LICENSE,sha256=VXeBrnHyA64f34lmCZ8TR96pgC8RYCOjy7PhwQNJBhI,1071
+compress_utils-0.4.1.dist-info/WHEEL,sha256=ZS7y10ytkxhffVeSlhIIghIkAl9u4JvPYPG5SYA6Zjo,131
+compress_utils-0.4.1.dist-info/top_level.txt,sha256=CsEj6e5_D5cxPrkMLXGEaGWulo010N5eRBIvCVENdEo,15
+compress_utils-0.4.1.dist-info/METADATA,sha256=uGopXNO7_lovosU0X5JiXa8i8U7nXvwimp__CNpriUY,6447
+compress_utils-0.4.1.data/data/pyproject.toml,sha256=vInx1slQfQiQ7sjRkACo89kaMh4b7pKYX1nYndD1IJE,667
+compress_utils-0.4.1.data/data/README.md,sha256=XcxXRunlyg3k65e0CG7fYx6CXpz943UZ_MHH4CKndJw,2253
+compress_utils/__init__.py,sha256=noDy4EgA15sTRqBqQWW3mPiOCxA0N74WKdq88Wl9vQU,86
+compress_utils/compress_utils_py.cpython-312-darwin.so,sha256=mbFrBatEwiuGTzg0b8DqiHm6hqrJU-dLpgTn7j6ubvY,1806728
