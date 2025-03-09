@@ -1,0 +1,2 @@
+[console_scripts]
+columns-gpt = columns_gpt.cli:main
