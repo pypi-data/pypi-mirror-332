@@ -1,0 +1,17 @@
+[package]
+name = "xoryaml"
+version = "0.1.0"
+edition = "2021"
+authors = ["jessekv"]
+
+[lib]
+name = "xoryaml"
+crate-type = ["cdylib"]
+
+[features]
+abi3 = ["pyo3/abi3-py39"]
+
+[dependencies]
+yaml-rust2 = "0.10"
+pyo3 = { version = "0.23.5", features = ["extension-module"] }
+speedate = "0.15.0"

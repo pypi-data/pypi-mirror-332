@@ -1,0 +1,33 @@
+[build-system]
+requires = ["maturin~=1.8.2", "wheel"]
+build-backend = "maturin"
+
+[project]
+name = "xoryaml"
+description = "yaml serializer and deserializer backed by yaml_rust2"
+readme = "README.md"
+requires-python = ">=3.9,<4"
+license = { text = "MIT" }
+keywords = []
+authors = [{ name = "jessekv" }]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Development Status :: 3 - Alpha",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Typing :: Typed",
+]
+optional-dependencies.test = ["pytest", "tzdata"]
+optional-dependencies.bench = ["pyyaml", "pytest-benchmark", "xoryaml[test]"]
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://github.com/jessekv/xoryaml"
+repository = "https://github.com/jessekv/xoryaml"
