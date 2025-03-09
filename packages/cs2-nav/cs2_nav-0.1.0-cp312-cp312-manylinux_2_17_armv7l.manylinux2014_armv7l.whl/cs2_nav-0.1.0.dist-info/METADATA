@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: cs2_nav
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Package to produce CS2 meeting point plots.
+Keywords: CS2,Visualization
+Author: Jan-Eric <janericnitschke@gmail.com
+Author-email: Jan-Eric <janericnitschke@gmail.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/JanEricNitschke/cs2_meeting_points
+
+TODO
+
