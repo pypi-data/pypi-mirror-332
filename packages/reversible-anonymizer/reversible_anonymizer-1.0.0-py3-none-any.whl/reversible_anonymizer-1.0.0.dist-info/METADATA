@@ -1,0 +1,145 @@
+Metadata-Version: 2.2
+Name: reversible-anonymizer
+Version: 1.0.0
+Summary: Enterprise-grade reversible anonymization using Google Cloud DLP
+Home-page: https://github.com/ainaomotayo/reversible-anonymizer
+Author: Omotayo Aina
+Author-email: Omotayo Aina <ainaomotayo@secureaiguard.com>
+Project-URL: Homepage, https://github.com/ainaomotayo/reversible-anonymizer
+Project-URL: Bug Tracker, https://github.com/ainaomotayo/reversible-anonymizer/issues
+Project-URL: Documentation, https://reversible-anonymizer.readthedocs.io/
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: faker>=8.0.0
+Requires-Dist: google-cloud-dlp>=3.0.0
+Requires-Dist: google-cloud-firestore>=2.0.0
+Requires-Dist: google-cloud-service-usage>=1.0.0
+Requires-Dist: cryptography>=38.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=3.0.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: isort>=5.10.0; extra == "dev"
+Requires-Dist: mypy>=0.950; extra == "dev"
+Requires-Dist: flake8>=4.0.0; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx>=4.0.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=1.0.0; extra == "docs"
+Requires-Dist: myst-parser>=0.18.0; extra == "docs"
+
+# Reversible Anonymizer
+
+A Python package for reversible text anonymization using Google Cloud services.
+
+## Installation
+
+```bash```
+pip install reversible-anonymizer
+## Prerequisites
+### Google Cloud project with the following services enabled:
+#### Cloud DLP API (dlp.googleapis.com)
+##### Cloud Firestore API (firestore.googleapis.com)
+##### AI Platform API (aiplatform.googleapis.com)
+##### Google Cloud credentials configured
+## Usage
+from reversible_anonymizer import ReversibleAnonymizer
+
+# Initialize with default settings
+anonymizer = ReversibleAnonymizer(project="your-project-id")
+
+# Or customize the settings
+anonymizer = ReversibleAnonymizer(
+    project="your-project-id",
+    info_types=[
+        {"name": "PERSON_NAME"},
+        {"name": "EMAIL_ADDRESS"}
+    ],
+    collection_name="custom_mappings",
+    location="us-central1"
+)
+
+# Anonymize text
+original_text = "Hello, my name is John Doe"
+anonymized_text = anonymizer.anonymize(original_text)
+print(f"Anonymized: {anonymized_text}")
+
+# De-anonymize text
+original_text = anonymizer.deanonymize(anonymized_text)
+print(f"De-anonymized: {original_text}")
+
+## Error Handling
+The package provides custom exceptions:
+
+ServiceNotEnabledError: Raised when required Google Cloud services are not enabled
+AnonymizationError: Raised when anonymization fails
+DeAnonymizationError: Raised when de-anonymization fails
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+
+4. Create a test file:
+
+`tests/test_anonymizer.py`:
+```python
+import pytest
+from reversible_anonymizer import ReversibleAnonymizer
+from reversible_anonymizer.exceptions import ServiceNotEnabledError
+
+def test_anonymizer_initialization():
+    with pytest.raises(ServiceNotEnabledError):
+        ReversibleAnonymizer("invalid-project")
+
+def test_custom_info_types():
+    anonymizer = ReversibleAnonymizer(
+        "your-project-id",
+        info_types=[{"name": "EMAIL_ADDRESS"}],
+        check_services=False
+    )
+    assert anonymizer.info_types == [{"name": "EMAIL_ADDRESS"}]
+
+# Add more tests as needed
+To use the package:
+
+Install the package:
+pip install reversible-anonymizer
+Use in your code:
+from reversible_anonymizer import ReversibleAnonymizer
+
+try:
+    # Initialize with custom settings
+    anonymizer = ReversibleAnonymizer(
+        project="your-project-id",
+        info_types=[
+            {"name": "PERSON_NAME"},
+            {"name": "EMAIL_ADDRESS"},
+            {"name": "PHONE_NUMBER"}
+        ],
+        collection_name="custom_mappings"
+    )
+
+    # Anonymize text
+    original_text = "Hello, my name is John Doe. Call me at 123-456-7890"
+    anonymized_text = anonymizer.anonymize(original_text)
+    print(f"Anonymized: {anonymized_text}")
+
+    # De-anonymize text
+    original_text = anonymizer.deanonymize(anonymized_text)
+    print(f"De-anonymized: {original_text}")
+
+except Exception as e:
+    print(f"Error: {str(e)}")
