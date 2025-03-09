@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: leapyearmodule
+Version: 0.1.0
+Summary: A module to determine leap years and classify years as AD or BC
+Home-page: https://github.com/yourusername/leapyearmodule
+Author: Om Satyawan Pathak
+Author-email: omsatyawanpathakwebdevelopment@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# LeapYearModule
+A simple Python module to determine if a year is a leap year and classify years as AD (Anno Domini) or BC (Before Christ). Bulit by Om Satyawan Pathak.
+
+## Installation
+You can install `leapyearmodule` using pip:
+
+```bash
+pip install leapyearmodule
