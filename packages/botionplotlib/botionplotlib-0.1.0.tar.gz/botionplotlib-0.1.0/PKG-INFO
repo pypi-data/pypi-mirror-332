@@ -1,0 +1,46 @@
+Metadata-Version: 2.2
+Name: botionplotlib
+Version: 0.1.0
+Summary: A beautiful and functional redesign of matplotlib defaults
+Home-page: https://github.com/abenstirling/botionplotlib
+Author: Ben Stirling
+Author-email: ben@abenstirling.com
+Project-URL: Bug Tracker, https://github.com/abenstirling/botionplotlib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: pillow>=8.0.0
+
+
+# botionplotlib
+### Perfect Python Plotting
+---
+Simple install, no dependencies, just python. 
+
+```pip install botionplotlib```
+
+Just do `import botionplotlib` at the top of your script and it will apply the style to all your plots.
+
+Examples: 
+![botionplotlib example](./botionplotlib_output/3d_surface_plot.png)
+![botionplotlib example](./botionplotlib_output/animation.gif)
+![botionplotlib example](./botionplotlib_output/bar_plot.png)
+![botionplotlib example](./botionplotlib_output/line_plot.png)
+![botionplotlib example](./botionplotlib_output/scatter_plot.png)
+![botionplotlib example](./botionplotlib_output/pie_chart.png)
+
+
+### How I Built it 
+```
+python -m build
+```
+```
+python -m twine upload dist/*
+```
