@@ -1,0 +1,3 @@
+[console_scripts]
+modo=modo_code.main:app
+
