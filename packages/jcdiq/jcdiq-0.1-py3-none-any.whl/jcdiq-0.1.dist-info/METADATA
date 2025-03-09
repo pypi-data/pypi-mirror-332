@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: jcdiq
+Version: 0.1
+Summary: jcdiq project for python
+Home-page: https://jiachengnet.com/example
+Author: jiacheng
+Author-email: libo@jiachengnet.com
+License: Commercial
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
