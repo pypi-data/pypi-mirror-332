@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-playwright-scraper = mcp_playwright_scraper:main
