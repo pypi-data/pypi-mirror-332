@@ -1,0 +1,9 @@
+nbdesk/tracing.py,sha256=qRk348IDqbS-B14VTi1Xzrcrt6MLKJaGUYiq0eBW7kE,3478
+nbdesk/widgets/__init__.py,sha256=lmzUzLqfBXTdPpAoujZ2yaXTfqG0ZOPEnksFbgyEk4I,112
+nbdesk/widgets/output.py,sha256=NySIgovcuQ3KJvWGLh899BR6Kqii-9Ps1PnNzJL405I,1241
+nbdesk/widgets/results.py,sha256=MvjSQyrBfhwurmgf5MjveHCss_zaEw3JRy_u4hinRaI,1290
+nbdesk/widgets/worker.py,sha256=z-kq4kRQPnZD_5iC7yOIQZTPOPXxMeZ_0p9WXcVKGMw,1876
+nbdesk-0.0.1.dist-info/METADATA,sha256=Rispf3NbZriFL7bggOTk571bADBLvUBodpGZOYls46g,586
+nbdesk-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+nbdesk-0.0.1.dist-info/licenses/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+nbdesk-0.0.1.dist-info/RECORD,,

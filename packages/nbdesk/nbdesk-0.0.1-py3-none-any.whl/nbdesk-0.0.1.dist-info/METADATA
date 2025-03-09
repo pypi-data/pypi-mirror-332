@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: nbdesk
+Version: 0.0.1
+Summary: Jupyter Notebook Desktop Utilties
+Author-email: Furechan <furechan@xsmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: desktop,notebook,utility
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: ipykernel>=6.29.5
+Requires-Dist: ipywidgets>=8.1.5
+Description-Content-Type: text/markdown
+
+# Jupyter Notebook Desktop Utilities
+
+
