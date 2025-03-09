@@ -1,0 +1,14 @@
+pydantic_ai_lm_studio/__init__.py,sha256=OQFdCJ3vK2ybhAVl_jYe7SSEVzZqqpt7rhD2VyERhrg,69
+pydantic_ai_lm_studio/model.py,sha256=pZQjEly_Ve5DRdLiUDbPQ7aTomXppUWAbyLeyGjYE0Y,1050
+pydantic_ai_lm_studio/provider.py,sha256=6_XjujCVwfpUF8Yk82lQoMxi6nOEEvxFMdocXpTAwZ4,1760
+pydantic_ai_lm_studio/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_ai_mlx_lm/__init__.py,sha256=PD5Cf3Msnvd6t9dy5dfJlafnaSxB3t6aYFFkJCOXlXA,119
+pydantic_ai_mlx_lm/agent_model.py,sha256=fd6zwph9Tu-QR6McKVVBNoKNAnRieDg7pgcs4v66f5Q,6881
+pydantic_ai_mlx_lm/model.py,sha256=ovzNxtdsDpHIN0UmTZpmzcGfpkgvTWYl00SxJDWij5k,2673
+pydantic_ai_mlx_lm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_ai_mlx_lm/response.py,sha256=oxpUNkTa-VNEd-Aqzp1JzxM2o2RCFFt7J_caWUXCflo,1449
+pydantic_ai_mlx_lm/stream.py,sha256=UDpr_s89xcBcauEgG70bhOqC4zFKwfGBqHEMHgJkNtg,1395
+pydantic_ai_mlx_lm/utils.py,sha256=vAVz4Px7W0ZDSbvXIEXEY0Nna2X32zZuba5nBOdA-Lc,750
+pydantic_ai_mlx-0.2.3.dist-info/METADATA,sha256=nGqniWvtCoisVFKygM-uGMoDsK316nEF4JExschK5LE,3041
+pydantic_ai_mlx-0.2.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pydantic_ai_mlx-0.2.3.dist-info/RECORD,,
