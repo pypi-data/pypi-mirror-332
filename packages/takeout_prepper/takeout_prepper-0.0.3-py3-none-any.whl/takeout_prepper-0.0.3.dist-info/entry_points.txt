@@ -1,0 +1,5 @@
+[console_scripts]
+prep-google-calendar=takeout_prepper.calendar:main
+prep-google-photos=takeout_prepper.photos:main
+prep-google-tasks=takeout_prepper.tasks:main
+

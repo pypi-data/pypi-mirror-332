@@ -1,0 +1,9 @@
+takeout_prepper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+takeout_prepper/calendar.py,sha256=I9tPNkpnTp1PIG3eV98SCQLuwyfWKlOnH5_QbkDRKMg,1379
+takeout_prepper/parsing.py,sha256=Hkt-FVy8SLvDnaxYZrIEkmIXlPdU-XOuDFfsdOcbboM,144
+takeout_prepper/photos.py,sha256=vhsFx41Q2fW-el0B43-Bphf4tbRf-MPI99uZLouH4Ek,14816
+takeout_prepper/tasks.py,sha256=b13ZWZgmtwVG1uuDa4Pu3o4LjVg61P2wgzoRDH4GBn0,2132
+takeout_prepper-0.0.3.dist-info/METADATA,sha256=J6CAbfPpIcUy74bEu2tlBOWUCI_yXG08v6_H1cAiDHI,3871
+takeout_prepper-0.0.3.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+takeout_prepper-0.0.3.dist-info/entry_points.txt,sha256=5oQthOPIg5yrDz9at4Zqac8AqQc9V1k8wehid3nu5vM,162
+takeout_prepper-0.0.3.dist-info/RECORD,,
