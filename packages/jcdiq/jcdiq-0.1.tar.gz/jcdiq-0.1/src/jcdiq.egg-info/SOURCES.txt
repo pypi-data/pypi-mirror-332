@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/jcdiq/__init__.py
+src/jcdiq/hello_world.py
+src/jcdiq.egg-info/PKG-INFO
+src/jcdiq.egg-info/SOURCES.txt
+src/jcdiq.egg-info/dependency_links.txt
+src/jcdiq.egg-info/requires.txt
+src/jcdiq.egg-info/top_level.txt
+tests/test_hello_world.py
