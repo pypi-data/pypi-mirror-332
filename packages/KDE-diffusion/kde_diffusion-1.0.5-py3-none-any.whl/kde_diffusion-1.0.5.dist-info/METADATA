@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: KDE-diffusion
+Version: 1.0.5
+Summary: Kernel density estimation via diffusion in 1d and 2d
+Keywords: kernel density estimation,statistics
+Author: John Hennig
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
+License-Expression: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Intended Audience :: Science/Research
+License-File: license.txt
+Requires-Dist: NumPy
+Requires-Dist: SciPy
+Requires-Dist: Sphinx ; extra == "docs"
+Requires-Dist: Furo ; extra == "docs"
+Requires-Dist: MyST-parser ; extra == "docs"
+Requires-Dist: CommonMark ; extra == "docs"
+Project-URL: Documentation, https://kde-diffusion.readthedocs.io
+Project-URL: Source, https://github.com/john-hen/kde-diffusion
+Provides-Extra: docs
+
+﻿*Kernel density estimation via diffusion in 1d and 2d*
+
+Provides the fast, adaptive kernel density estimator based on linear
+diffusion processes for one-dimensional and two-dimensional input data
+as outlined in the [2010 paper by Botev et al.][paper] The reference
+implementation for [1d] and [2d], in Matlab, was provided by the paper's
+first author, Zdravko Botev. This is a re-implementation in Python,
+with added test coverage.
+
+Find the full [documentation on Read-the-Docs][docs].
+
+[paper]: https://dx.doi.org/10.1214/10-AOS799
+[1d]:    https://mathworks.com/matlabcentral/fileexchange/14034
+[2d]:    https://mathworks.com/matlabcentral/fileexchange/17204
+[docs]:  https://kde-diffusion.readthedocs.io
+
