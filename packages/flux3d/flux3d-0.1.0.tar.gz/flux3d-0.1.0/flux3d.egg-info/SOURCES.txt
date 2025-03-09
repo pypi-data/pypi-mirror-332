@@ -1,0 +1,6 @@
+pyproject.toml
+flux3d.egg-info/PKG-INFO
+flux3d.egg-info/SOURCES.txt
+flux3d.egg-info/dependency_links.txt
+flux3d.egg-info/requires.txt
+flux3d.egg-info/top_level.txt

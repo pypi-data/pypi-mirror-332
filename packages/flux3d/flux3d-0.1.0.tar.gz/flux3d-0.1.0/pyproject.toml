@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flux3d"
+version = "0.1.0"
+description = "Panda3d engine"
+readme = "README.md"
+authors = [{name = "Nikita Kogut", email = "kogut7740@gmail.com"}]
+license = {text = "MIT"}
+dependencies = [
+    "panda3d",
+    "colorama",
+    "random",
+    "tkinter"
+]

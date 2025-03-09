@@ -1,0 +1,4 @@
+panda3d
+colorama
+random
+tkinter
