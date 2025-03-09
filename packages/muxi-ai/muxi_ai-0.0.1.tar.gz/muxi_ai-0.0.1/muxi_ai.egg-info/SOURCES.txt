@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+muxi/__init__.py
+muxi_ai.egg-info/PKG-INFO
+muxi_ai.egg-info/SOURCES.txt
+muxi_ai.egg-info/dependency_links.txt
+muxi_ai.egg-info/top_level.txt
