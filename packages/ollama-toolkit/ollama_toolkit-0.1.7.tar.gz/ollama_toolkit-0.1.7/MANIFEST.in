@@ -1,0 +1,14 @@
+# Include necessary package files
+include README.md
+include LICENSE
+include pyproject.toml
+include setup.py
+include *.py
+recursive-include utils *.py
+recursive-include tools *.py
+recursive-include tests *.py
+recursive-include examples *.py
+recursive-include docs *.md
+
+# Exclude developer-specific files
+exclude .gitignore

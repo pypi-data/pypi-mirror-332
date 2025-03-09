@@ -1,0 +1,12 @@
+requests
+aiohttp
+colorama
+pytest
+
+[dev]
+black
+flake8
+mypy
+pytest-cov
+sphinx
+twine
