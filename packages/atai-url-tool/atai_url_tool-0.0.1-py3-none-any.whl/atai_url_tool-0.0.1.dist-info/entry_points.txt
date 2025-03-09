@@ -1,0 +1,2 @@
+[console_scripts]
+atai-url-tool = atai_url_tool.cli:main
