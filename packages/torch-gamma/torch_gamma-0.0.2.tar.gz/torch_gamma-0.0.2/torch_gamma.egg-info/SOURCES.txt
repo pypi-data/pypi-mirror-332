@@ -1,0 +1,13 @@
+README.md
+setup.py
+gamma/Modules.py
+gamma/__init__.py
+gamma/datasets.py
+gamma/modules.py
+gamma/pipeline.py
+gamma/trainer.py
+torch_gamma.egg-info/PKG-INFO
+torch_gamma.egg-info/SOURCES.txt
+torch_gamma.egg-info/dependency_links.txt
+torch_gamma.egg-info/requires.txt
+torch_gamma.egg-info/top_level.txt
