@@ -1,0 +1,143 @@
+Metadata-Version: 2.2
+Name: mullvadshal
+Version: 1.0.0
+Summary: Mullvadshål is utomated server-hopping for Mullvad VPN for WireGuard and Linux
+Home-page: https://github.com/Addvilz/mullvadshal
+Download-URL: https://github.com/Addvilz/mullvadshal
+Author: Addvilz
+Author-email: mrtreinis@gmail.com
+License: Apache 2.0
+Platform: UNIX
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Requires-Dist: cryptography>=43.0.3
+Requires-Dist: argparse
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: license
+Dynamic: platform
+Dynamic: requires-dist
+Dynamic: summary
+
+# Mullvadshål
+
+Mullvadshål (`mullvadshal`) is an automated server-hopping tool for **Mullvad VPN** using **WireGuard** on Linux. It allows you to automatically switch to different Mullvad servers at scheduled intervals, enhancing security and privacy.
+
+## Features
+- **Automated Server Updates:** Fetches the latest Mullvad WireGuard server list.
+- **Periodic Server Hopping:** Switches to a random Mullvad server to reduce tracking.
+- **Configurable Network Modes:** Supports IPv4, IPv6, and dual-stack configurations.
+- **Persistent Configuration:** Stores WireGuard settings securely.
+- **Lightweight & CLI-Based:** Ideal for cron jobs and automation.
+
+## Installation
+Ensure you have Python and WireGuard installed:
+
+```sh
+pip install mullvadshal
+```
+
+Or install manually by cloning the repository:
+
+```sh
+git clone https://github.com/Addvilz/mullvadshal.git
+cd mullvadshal
+pip install .
+```
+
+## Usage
+### Authenticate with Mullvad
+Before using the tool, authenticate your WireGuard interface with your Mullvad account:
+
+```sh
+mullvadshal auth
+```
+This will prompt for your **Mullvad account number**.
+
+### Update Mullvad Server List
+To fetch the latest Mullvad WireGuard servers, run:
+
+```sh
+mullvadshal update --filter se,de,fi
+```
+This command filters servers by **Sweden (SE), Germany (DE), and Finland (FI)**.
+You can also specify a location, like `se-got`.
+
+### Perform a Server Hop
+To switch to a new random server:
+
+```sh
+mullvadshal jump [--sudo]
+```
+**Warning:** Jumping servers disrupts your network connection momentarily.
+Jump command should generally be either run as root, or with no password sudoers configured.
+
+## Automating with Cron
+To automate server updates and jumps:
+
+1. Open your crontab:
+   ```sh
+   crontab -e
+   ```
+2. Add the following lines:
+   ```sh
+   # Update server list daily at 3 AM
+   0 3 * * * mullvadshal update --filter se,de,fi
+
+   # Jump to a new server every hour
+   0 * * * * mullvadshal jump
+   ```
+
+## Troubleshooting
+
+**Ensure `wg-quick` is installed on your system:**
+
+For **Debian/Ubuntu-based distributions (APT package manager):**
+```bash
+sudo apt update && sudo apt install -y wireguard-tools
+```
+
+For **RHEL/CentOS/Fedora-based distributions (RPM package manager):**
+```bash
+sudo dnf install -y wireguard-tools   # For Fedora, RHEL 8+, and CentOS 8+
+sudo yum install -y wireguard-tools   # For older RHEL/CentOS versions
+```
+
+For **Arch Linux and Manjaro (Pacman package manager):**
+```bash
+sudo pacman -S wireguard-tools
+```
+
+For **OpenSUSE (Zypper package manager):**
+```bash
+sudo zypper install -y wireguard-tools
+```
+
+- Run with `--debug` to get detailed error messages.
+- If an error occurs during `jump`, verify that the WireGuard interface is correctly configured.
+
+## License
+Mullvadshål is licensed under the Apache License Version 2.0
+
+## Contributing
+Pull requests and bug reports are welcome. Please submit issues on [GitHub](https://github.com/Addvilz/mullvadshal).
+
+
+## Disclaimer
+
+**Mullvadshål** is an independent project and is **not affiliated with, endorsed by, or associated with Mullvad VPN AB**. All trademarks, service marks, and company names belong to their respective owners.
+
+This software is provided "as is," without any warranties or guarantees. The authors are not responsible for any misuse, legal issues, or damages resulting from the use of this project. Use at your own risk and ensure compliance with applicable laws and regulations.
