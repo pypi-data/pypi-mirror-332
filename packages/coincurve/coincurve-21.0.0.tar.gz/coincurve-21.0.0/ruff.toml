@@ -1,0 +1,12 @@
+extend = "ruff_defaults.toml"
+
+[format]
+preview = true
+
+[lint]
+preview = true
+
+[lint.extend-per-file-ignores]
+# Implicit namespace packages
+"cm_library_c_binding/build.py" = ["INP001"]
+"cm_library_cffi_headers/compose_cffi_headers.py" = ["INP001"]
