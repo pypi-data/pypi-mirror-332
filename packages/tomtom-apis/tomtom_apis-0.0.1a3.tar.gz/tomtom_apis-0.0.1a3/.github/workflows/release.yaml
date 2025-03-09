@@ -1,0 +1,58 @@
+name: Release
+
+on: # yamllint disable-line rule:truthy
+  push:
+    tags:
+      - "v*.*.*"
+
+env:
+  DEFAULT_PYTHON: "3.13"
+  DEFAULT_NODE: "22"
+
+jobs:
+  release:
+    name: Release to PyPI
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/tomtom-apis
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - name: Check out code from GitHub
+        uses: actions/checkout@v4
+
+      - name: Setup environment
+        uses: ./.github/actions/setup-env
+        with:
+          python-version: ${{ env.DEFAULT_PYTHON }}
+          node-version: ${{ env.DEFAULT_NODE }}
+
+      - name: Set version from tag
+        run: |
+          version="${{ github.ref_name }}"
+          version=${version#v}
+          uvx --from=toml-cli toml set --toml-path=pyproject.toml project.version "$version"
+
+      - name: Build project
+        run: uv build
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+
+      - name: Setup app
+        id: app
+        uses: ./.github/actions/setup-app
+        with:
+          app-id: ${{ secrets.PR2D2_APP_ID }}
+          private-key: ${{ secrets.PR2D2_APP_PRIVATE_KEY }}
+
+      - name: Make Github release
+        uses: softprops/action-gh-release@v2
+        with:
+          token: ${{ steps.app.outputs.token }}
+          generate_release_notes: true
+          files: |
+            dist/*.tar.gz
+            dist/*.whl
