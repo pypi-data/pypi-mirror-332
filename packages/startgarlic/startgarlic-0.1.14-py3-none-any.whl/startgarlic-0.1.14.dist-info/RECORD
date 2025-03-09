@@ -1,0 +1,26 @@
+startgarlic/__init__.py,sha256=pH42tQbRM7WBGyQXaFQKF-PiajoFmq0Kvc1FU7CKU90,569
+startgarlic/cli.py,sha256=7WJ-gRatyYo_OmDsHUPezm5s7iWqLRQeuuXVh0uFOdY,801
+startgarlic/core copy 2.py,sha256=wDlCqcmkoBaY5YHIJSDuSR6zjJsLaGppTKbvNfqA6WU,4844
+startgarlic/core copy 3.py,sha256=9swuZG5vievXNfTTO3gaInHiIcE8xCUxsJGUw98cW4M,5057
+startgarlic/core copy.py,sha256=6EmyFf5N5v6r1IYttls40I8rmrOG9tgdFg652r3f7Zs,5330
+startgarlic/core.py,sha256=SVjnZ4hE6F0-UdkGMFTYBpfuF1kVv3phLpHaN5ZO9MY,5338
+startgarlic/redirect_service.py,sha256=yZpSRyYdNvQ-e-L8iICkPXWcwHx5tHSi1yNcFzarAYE,3288
+startgarlic/utils/__init__.py,sha256=xEl7mOTOAZ-jd69LAUhaRW0RoXVe7E8rTdx6X_uGmkA,583
+startgarlic/utils/analytics.py,sha256=3ZIScIpbLWhCblR_OpDrnjKGCdc0rwXuSaRdAAMSigk,2688
+startgarlic/utils/auction copy 2.py,sha256=kNUtvbqjco1-LK1eJ8DYGDaIPhBThrO7LgPoi_DhNjU,2918
+startgarlic/utils/auction copy.py,sha256=oXmLl2FgFdXpJV1_otzJUhwlpeG_q1XDmbh0Onc9vgU,2853
+startgarlic/utils/auction.py,sha256=7BxvAxZ0dUE6EbqV5_5xqyR4MlF5An6osugp6xEA03U,2820
+startgarlic/utils/config.py,sha256=HSvnwfQJTyaMJRs1QilENs6EaZ91mr2UhWWsd4fF3LA,483
+startgarlic/utils/database copy.py,sha256=MLB71KbcO_WJpxpVW87G7dcYex60C_aUQw4XDA-WZbo,11706
+startgarlic/utils/database.py,sha256=dkUaIKnjFOGN4not7C2fnKhf3B3uUTiWvOz1FGKip4Y,29188
+startgarlic/utils/embeddings copy.py,sha256=QENqvYqKnX2VRJch2kKnUau9UJnhThWbCto-sGjQ2y4,3286
+startgarlic/utils/embeddings.py,sha256=bkg7VqNGQbeSxqmLoE_3g6ZF_MIR07XrIn9Jk0iaFpM,3604
+startgarlic/utils/logging_config.py,sha256=fHwJM_zLxjBVqZalcbTiIVk6p2xIsZoJwO4sNK75n5Y,557
+startgarlic/utils/prompts copy 2.py,sha256=u68S3ZpUFdeHwuLb3lgPWddIZ-_-qYVBLI60ODLR9rM,2651
+startgarlic/utils/prompts copy.py,sha256=wYiCCOqFT8KNS1U0kVHf22AsKRpxG51abtN84VWnkZs,1810
+startgarlic/utils/prompts.py,sha256=D9YhatyuKrPUs-ZrRM-TszOUAI2KFEN8cdLez1zO5tY,3506
+startgarlic-0.1.14.dist-info/METADATA,sha256=V5g8WM2NOY35RO9wIa4wbOvq3nv8xdPDpsFUGEcyynI,2457
+startgarlic-0.1.14.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+startgarlic-0.1.14.dist-info/entry_points.txt,sha256=ecmEf4OA3pJrMsQ4N7QpX11FSIQCIpsqFz9slzb1Wy8,53
+startgarlic-0.1.14.dist-info/top_level.txt,sha256=hMbU2lgm0hzvXCgm5Lqq3_qikOyjo-vcwDItY7aFiXk,12
+startgarlic-0.1.14.dist-info/RECORD,,
