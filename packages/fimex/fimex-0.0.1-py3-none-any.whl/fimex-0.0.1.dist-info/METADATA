@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: fimex
+Version: 0.0.1
+Summary: Fimex enhances Flask, providing a smoother, more efficient development experience for building maintainable web applications.
+Home-page: https://github.com/mononobi/fimex
+License: BSD 3-Clause
+Keywords: package,python,flask,fimex,application-framework,rest-api,dependency-injection,ioc
+Author: mono
+Author-email: 5990186+mononobi@users.noreply.github.com
+Requires-Python: >=3.10
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: balerin (>=0.1.4,<0.2.0)
+Requires-Dist: flask (>=3.1.0,<3.2.0)
+Project-URL: Documentation, https://github.com/mononobi/fimex
+Project-URL: Issues, https://github.com/mononobi/fimex/issues
+Project-URL: Repository, https://github.com/mononobi/fimex
+Description-Content-Type: text/markdown
+
+# Flask Improved Experience
+
+Fimex enhances Flask, providing a smoother, more efficient development experience 
+for building maintainable web applications.
+
