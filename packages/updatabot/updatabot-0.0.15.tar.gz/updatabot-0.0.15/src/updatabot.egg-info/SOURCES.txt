@@ -1,0 +1,16 @@
+LICENCE
+README.md
+pyproject.toml
+src/updatabot/__init__.py
+src/updatabot/load_url.py
+src/updatabot/logger.py
+src/updatabot/save.py
+src/updatabot.egg-info/PKG-INFO
+src/updatabot.egg-info/SOURCES.txt
+src/updatabot.egg-info/dependency_links.txt
+src/updatabot.egg-info/requires.txt
+src/updatabot.egg-info/top_level.txt
+src/updatabot/ons/__init__.py
+src/updatabot/ons/load.py
+src/updatabot/ons/schema/ds_root.py
+src/updatabot/ons/schema/ds_version.py
