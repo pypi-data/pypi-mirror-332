@@ -1,0 +1,10 @@
+setup.py
+src/CredentialManager/__init__.py
+src/CredentialManager/main.py
+src/CredentialManager.egg-info/PKG-INFO
+src/CredentialManager.egg-info/SOURCES.txt
+src/CredentialManager.egg-info/dependency_links.txt
+src/CredentialManager.egg-info/requires.txt
+src/CredentialManager.egg-info/top_level.txt
+tests/test_all.py
+tests/test_template.py

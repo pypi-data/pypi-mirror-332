@@ -1,0 +1,7 @@
+maskpass>=0.3.7
+pycryptodome>=3.21.0
+
+[dev]
+setuptools>=75.8.2
+twine>=4.0.2
+wheel>=0.45.1

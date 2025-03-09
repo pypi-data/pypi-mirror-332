@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: CredentialManager
+Version: 0.0.3
+Summary: Allows User to encrypt/decrypt credential information
+Home-page: https://github.com/windowstweeker/CredentialManager
+Author: windowstweeker
+Author-email: 
+License: GNU GPLv3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: maskpass>=0.3.7
+Requires-Dist: pycryptodome>=3.21.0
+Provides-Extra: dev
+Requires-Dist: setuptools>=75.8.2; extra == "dev"
+Requires-Dist: twine>=4.0.2; extra == "dev"
+Requires-Dist: wheel>=0.45.1; extra == "dev"
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# CredentialManager
