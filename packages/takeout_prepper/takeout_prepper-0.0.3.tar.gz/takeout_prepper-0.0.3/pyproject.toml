@@ -1,0 +1,37 @@
+[project]
+name = "takeout_prepper"
+version = "0.0.3"
+description = "Prepares Google Takeout exports for ingestion into other tools and fixes small issues"
+authors = [
+    {name = "majesticmagpie"}
+]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pyexiftool (>=0.5.6,<0.6.0)",
+    "tzlocal (>=5.3,<6.0)",
+    "python-magic (>=0.4.27,<0.5.0)",
+    "pillow (>=11.1.0,<12.0.0)"
+]
+
+[tool.poetry.scripts]
+prep-google-calendar = "takeout_prepper.calendar:main"
+prep-google-tasks = "takeout_prepper.tasks:main"
+prep-google-photos = "takeout_prepper.photos:main"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.6"
+mypy = "^1.15.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.mypy.overrides]]
+module = ["exiftool.*"]
+follow_untyped_imports = true
