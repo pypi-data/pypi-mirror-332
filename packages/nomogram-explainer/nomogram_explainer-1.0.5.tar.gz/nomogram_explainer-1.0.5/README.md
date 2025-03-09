@@ -1,0 +1,259 @@
+# introduction
+Linear algorithms, such as logistic regression and Cox regression, remain popular in clinical model building. A prerequisite for these linear algorithms is the existence of a linear relationship among variables. When a linear algorithm performs well on a dataset, it validates this prerequisite. Consequently, relevant packages can be utilized to explain the predictions of the linear model through global and local methods.
+
+It is often claimed that linear models possess self - explanatory properties, using coefficients like beta or odds ratios (OR) to show the contribution of variables to the prediction. However, this is not entirely accurate. From the perspective of global model explanation, beta values or ORs are not comparable across variables. Thus, it is impossible to determine which variable is more important. Regarding local model explanation, the indicator should reflect the current contribution of case - specific values to the case - specific prediction. But beta or OR values are consistent across cases and cannot capture differences between different cases. In conclusion, beta or OR values cannot be regarded as a proper explanation of the linear model.
+
+The nomogram algorithm is suitable for explaining linear models, yet this functionality has not been fully incorporated. Therefore, this package was developed to address this need. Two types of values are employed to explain the model globally and locally. One is the metadata, which is the product of beta values and variables, and the other is the nomogram score. 
+
+# methods
+1. preprare the data of logistic regression 
+### Function Overview
+The `prepare_nomogram_data_logistic` function is designed to prepare data for plotting a nomogram in the context of a logistic regression model. It takes in a dataset and performs a series of operations to encode categorical variables, fit a logistic regression model, and calculate necessary data for constructing the nomogram.
+
+### Parameters
+- **`data`**: A pandas DataFrame containing the raw data. This should include all the variables relevant to the analysis, including both categorical and continuous variables, as well as the event variable.
+- **`categorical_columns`**: A list of column names in the `data` DataFrame that represent categorical variables. These columns will be one - hot encoded to prepare the data for the logistic regression model.
+- **`event_column`**: The name of the column in the `data` DataFrame that represents the binary event variable. This variable will be used as the response variable in the logistic regression model.
+- **`variable_columns`**: A list of column names in the `data` DataFrame that represent the predictor variables (both categorical and continuous) to be included in the logistic regression model.
+
+### Functionality
+1. **Data Selection and Encoding**: It first selects the relevant predictor variables from the input data and one - hot encodes the categorical variables. This results in a new DataFrame with encoded variables.
+2. **Event Variable Encoding**: The binary event variable is encoded using `LabelEncoder` to ensure it is in a suitable format for the logistic regression model.
+3. **Model Fitting**: A logistic regression model is fitted using the `statsmodels` library. The formula for the model is constructed based on the encoded predictor variables and the event variable.
+4. **Parameter Extraction**: The parameters of the fitted logistic regression model are extracted. These parameters are used to calculate the linear combination of the variables (xbeta) for each data point.
+5. **Score Calculation**: For each variable, the minimum and maximum values of the linear combination (xbeta) are calculated. A score is then computed for each variable by normalizing the xbeta values to a scale of 0 - 100.
+6. **Return Values**: The function returns four DataFrames:
+    - **`data_label`**: A DataFrame containing the original predictor variables.
+    - **`meta_df`**: A DataFrame containing the linear combination (xbeta) values for each variable and the intercept for each data point.
+    - **`score_df`**: A DataFrame containing the normalized scores for each variable for each data point.
+    - **`params_df`**: A DataFrame containing the coefficients of the logistic regression model, the minimum xbeta values, and the maximum distance used for normalization.
+
+### Example Usage
+```python
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder
+import statsmodels.formula.api as smf
+import numpy as np
+
+# Assume data is a pandas DataFrame
+data = pd.read_csv('your_data.csv')
+categorical_columns = ['cat_col1', 'cat_col2']
+event_column = 'event'
+variable_columns = ['var1', 'var2', 'cat_col1', 'cat_col2']
+
+data_label, meta_df, score_df, params_df = prepare_nomogram_data_logistic(data, categorical_columns, event_column, variable_columns)
+```
+
+This function provides a convenient way to prepare data for nomogram plotting in a logistic regression setting, enabling users to visualize the contribution of each variable to the predicted probability of an event. 
+
+2.prepare the data of coxph
+
+### Function Overview
+The `prepare_nomogram_data_cox` function is designed to prepare data for nomogram plotting in the context of a Cox proportional hazards regression model. It takes a pandas DataFrame containing relevant data and performs a series of operations to encode categorical variables, fit a Cox model, and calculate necessary data for constructing the nomogram.
+
+### Parameters
+- **`data`**: A pandas DataFrame that holds the raw data. This DataFrame should include all the necessary columns for the analysis, such as categorical variables, continuous variables, the survival time column, and the event occurrence column.
+- **`categorical_columns`**: A list of column names within the `data` DataFrame that represent categorical variables. These columns will undergo one - hot encoding to make the data suitable for the Cox model.
+- **`event_column`**: The name of the column in the `data` DataFrame that indicates whether an event has occurred. This is a binary variable used in the Cox proportional hazards model.
+- **`time_column`**: The name of the column in the `data` DataFrame that represents the survival time. It is used as the duration variable in the Cox model.
+- **`variable_columns`**: A list of column names in the `data` DataFrame that represent the independent variables (predictors) to be included in the Cox model.
+
+### Functionality
+1. **Data Selection and Encoding**: The function first selects the relevant independent variables from the input data and then performs one - hot encoding on the categorical variables. This results in a new DataFrame with encoded variables.
+2. **Adding Survival and Event Columns**: The survival time and event occurrence columns from the original data are added to the encoded DataFrame.
+3. **Model Fitting**: A Cox proportional hazards regression model is fitted using the `CoxPHFitter` class from the `lifelines` library. The model is fit with the specified duration and event columns.
+4. **Parameter Extraction**: The parameters of the fitted Cox model are extracted. These parameters are used to calculate the linear combination of the variables for each data point.
+5. **Linear Combination Calculation**: For each variable, the linear combination values are computed by multiplying the variable values by their corresponding coefficients.
+6. **Score Calculation**: The maximum distance between the minimum and maximum linear combination values across all variables is calculated. Then, scores are computed for each variable by normalizing the linear combination values to a scale of 0 - 100.
+7. **Return Values**: The function returns six objects:
+    - **`data_label`**: A DataFrame containing the original independent variables.
+    - **`meta_df`**: A DataFrame containing the linear combination values for each variable for each data point.
+    - **`score_df`**: A DataFrame containing the normalized scores for each variable for each data point.
+    - **`params_df`**: A DataFrame containing the coefficients of the Cox model, the minimum linear combination values, and the maximum distance used for normalization.
+    - **`cph`**: The fitted `CoxPHFitter` object, which can be used for further analysis or prediction.
+    - **`data_onehot`**: The DataFrame with one - hot encoded variables, along with the survival time and event columns.
+
+### Example Usage
+```python
+import pandas as pd
+from lifelines import CoxPHFitter
+import numpy as np
+
+# Assume data is a pandas DataFrame
+data = pd.read_csv('your_data.csv')
+categorical_columns = ['cat_col1', 'cat_col2']
+event_column = 'event'
+time_column = 'survival_time'
+variable_columns = ['var1', 'var2', 'cat_col1', 'cat_col2']
+
+data_label, meta_df, score_df, params_df, cph, data_onehot = prepare_nomogram_data_cox(data, categorical_columns, event_column, time_column, variable_columns)
+```
+
+This function provides a convenient way to prepare data for nomogram plotting in a Cox proportional hazards regression setting, allowing users to visualize the impact of each variable on the survival probability. 
+
+3. post processing 
+
+### Function Overview
+The `postprocess` function is designed to perform post - processing operations on the `meta_df` and `score_df` DataFrames. It can handle different scenarios depending on whether the data is related to a Cox proportional hazards model (`cox=True`) or a logistic - like model (`cox=False`).
+
+### Parameters
+- **`meta_df`**: A pandas DataFrame that typically contains the linear combination values of variables for each data point.
+- **`score_df`**: A pandas DataFrame that usually holds the normalized scores of variables for each data point.
+- **`ununion_cols`**: An optional list of column names that represent the un - united categorical columns. If provided, these columns will be reunited.
+- **`reunion_cols`**: An optional list of column names that represent the reunited categorical columns. It is used in conjunction with `ununion_cols` for the reunification process.
+- **`cox`**: A boolean flag indicating whether the data is related to a Cox proportional hazards model. If `True`, the function will perform Cox - specific post - processing; if `False`, it will perform logistic - like post - processing.
+- **`specific_times`**: An optional list of specific time points. This parameter is only used when `cox=True` and is used to calculate the cumulative hazard and survival probabilities at these time points.
+- **`cox_model`**: An instance of a fitted Cox proportional hazards model. It is required when `cox=True` to calculate the cumulative hazard and survival probabilities.
+- **`data_onehot_cox`**: A pandas DataFrame containing the one - hot encoded data for the Cox model. It is needed when `cox=True` to calculate the cumulative hazard and survival probabilities.
+
+### Functionality
+#### Cox Model Scenario (`cox=True`)
+1. **Column Reunification**: If `ununion_cols` is provided, the `_reunite_categorical_columns` function is called to reunite the categorical columns in both `meta_df` and `score_df`.
+2. **Total Calculation**: The sum of each row in `meta_df` and `score_df` is calculated and stored in a new column named `total`.
+3. **Probability Calculation**: For each time point in `specific_times`, the cumulative hazard and survival probabilities are calculated using the `cox_model` and `data_onehot_cox`. These probabilities are then added to both `meta_df` and `score_df` with column names indicating the corresponding time points.
+
+#### Non - Cox Model Scenario (`cox=False`)
+1. **Column Reunification**: Similar to the Cox model scenario, if `ununion_cols` is provided, the categorical columns in `meta_df` and `score_df` are reunited.
+2. **Total and Probability Calculation**: The sum of each row in `meta_df` and `score_df` is calculated and stored in a new column named `total`. The probability is calculated using the logistic function based on the `total` values in `meta_df`, and these probabilities are added to both `meta_df` and `score_df`.
+
+### Return Values
+The function returns a tuple of two DataFrames:
+- **`meta_df`**: The post - processed DataFrame containing the linear combination values, total scores, and relevant probabilities.
+- **`score_df`**: The post - processed DataFrame containing the normalized scores, total scores, and relevant probabilities.
+
+This function provides a flexible way to perform post - processing on the data, making it suitable for different types of models and analysis requirements. 
+
+4. prepare the data of case 
+
+### Function Overview
+The `calculate_case_score` function is designed to calculate scores and relevant probabilities for a given case based on model parameters. It can handle scenarios for both Cox proportional hazards models (`cox = True`) and other models (presumably logistic - like, when `cox = False`).
+
+### Parameters
+- **`params_df`**: A pandas DataFrame that contains model parameters such as coefficients (`coefficient`), minimum xbeta values (`min_xbeta`), and maximum distance (`max_distance`). These parameters are used to compute scores for the case data.
+- **`case_data`**: An optional dictionary representing a single case's data. Each key - value pair corresponds to a variable name and its value for the case. If not provided, a default case data dictionary is used.
+- **`ununion_cols`**: An optional list of column names. If provided, it is used in the process of reuniting categorical columns in the `params_df` DataFrame.
+- **`reunion_cols`**: An optional list of column names that is used in conjunction with `ununion_cols` for the reunification of categorical columns in the `params_df` DataFrame.
+- **`cox`**: A boolean flag. If `True`, the function performs calculations specific to a Cox proportional hazards model. If `False`, it performs calculations suitable for other models, likely logistic - based models.
+- **`cox_model`**: An instance of a fitted Cox proportional hazards model. This is required when `cox = True` to calculate cumulative hazard and survival probabilities for the case.
+- **`specific_times`**: An optional list of specific time points. This parameter is only relevant when `cox = True` and is used to calculate the cumulative hazard and survival probabilities at these specific times for the case.
+
+### Functionality
+#### Cox Model Scenario (`cox = True`)
+1. **DataFrame Creation**: The `case_data` dictionary is converted into a pandas DataFrame (`case_data_df`) with a single row.
+2. **Case - Specific Parameter Calculation**: For each parameter in `params_df`, the function determines the corresponding value for the case (`case_value`), calculates the product of the coefficient and the case value (`case_xbeta`), and then computes a score (`case_score`) based on the minimum xbeta value and the maximum distance.
+3. **Column Reunification**: If `ununion_cols` is provided, the categorical columns in `params_df` are reunited.
+4. **Total Score and Probability Calculation**: The sum of `case_xbeta` and `case_score` values are calculated and added to the `case_data` dictionary as `total_xbeta` and `total_score` respectively. For each time point in `specific_times`, the cumulative hazard and survival probabilities for the case are calculated using the `cox_model` and added to the `case_data` dictionary.
+
+#### Non - Cox Model Scenario (`cox = False`)
+1. **Intercept Inclusion**: An `Intercept` term with a value of 1 is added to the `case_data` dictionary to account for the intercept in the model.
+2. **Case - Specific Parameter Calculation**: Similar to the Cox model scenario, the function calculates `case_value`, `case_xbeta`, and `case_score` for each parameter in `params_df`.
+3. **Column Reunification**: If `ununion_cols` is provided, the categorical columns in `params_df` are reunited.
+4. **Total Score and Probability Calculation**: The sum of `case_xbeta` and `case_score` values are calculated and added to the `case_data` dictionary as `total_xbeta` and `total_score` respectively. The probability for the case is calculated using the logistic function based on the `total_xbeta` value and added to the `case_data` dictionary.
+
+### Return Values
+The function returns a tuple containing two elements:
+- **`params_df`**: The `params_df` DataFrame with additional columns (`case_value`, `case_xbeta`, `case_score`) calculated for the case, and potentially with reunited categorical columns if applicable.
+- **`case_data`**: The `case_data` dictionary updated with calculated values such as `total_xbeta`, `total_score`, and relevant probabilities depending on the model type.
+
+This function provides a comprehensive way to evaluate a single case using pre - calculated model parameters, making it useful for applications such as predicting outcomes for individual patients or scenarios in medical or statistical modeling. 
+
+5. plotting nomogram
+
+### Function Overview
+The `plot_nomogram` function is designed to generate a nomogram plot using Plotly. A nomogram is a graphical representation that allows users to estimate the probability of an event based on multiple input variables. This function can handle both Cox proportional hazards models and non - Cox models, and it provides customization options for color themes, symbol themes, and other visual aspects.
+
+### Parameters
+- **`score_df`**: A pandas DataFrame containing the scores for each variable and the total score.
+- **`data_label`**: A pandas DataFrame with the original data labels.
+- **`meta_df`**: A pandas DataFrame with the linear combination values for each variable.
+- **`params_df_case`**: A pandas DataFrame with case - specific parameters.
+- **`prob_range`**: An optional list of probability values. If not provided, a default list `[0, 0.1, 0.3, 0.5, 0.6, 0.7, 0.8, 0.9, 1]` is used.
+- **`case_data`**: An optional dictionary representing a single case's data. If provided, it will be used to mark the case on the nomogram.
+- **`cox`**: A boolean flag indicating whether the nomogram is based on a Cox proportional hazards model. If `True`, the function will plot risk and survival probabilities at specific times.
+- **`specific_times`**: An optional list of specific time points. This parameter is only relevant when `cox = True` and is used to calculate and plot the cumulative hazard and survival probabilities at these times.
+- **`cox_model`**: An instance of a fitted Cox proportional hazards model. It is required when `cox = True` to calculate cumulative hazard and survival probabilities.
+- **`continuous_step_scale`**: A dictionary specifying the step scale for continuous variables. The default is `{0: 3, 1: 2, 2: 1, 'total': 1.5}`.
+- **`space_between_lines`**: The space between the lines in the nomogram. The default value is 3.
+- **`fig_width`**: The width of the generated figure. The default value is 800.
+- **`fig_height`**: The height of the generated figure. The default value is 600.
+- **`color_theme`**: The color theme for the nomogram. Available themes are `'classic'`, `'CNS'`, `'dark'`, and `'cool'`. The default is `'classic'`.
+- **`symbol_theme`**: The symbol theme for the nomogram. Available themes are `'classic'`, `'CNS'`, and `'cool'`. The default is `'classic'`.
+
+### Functionality
+1. **Theme Selection**: The function first defines different color and symbol themes. It then selects the appropriate color and symbol sets based on the `color_theme` and `symbol_theme` parameters.
+2. **Figure Initialization**: A Plotly figure with a 3 - row, 2 - column subplot layout is created. The axes ranges and visibility are adjusted according to the input data and parameters.
+3. **100 - Point Scale Drawing**: A 100 - point scale is drawn at the top of the nomogram, including major and minor ticks and data labels.
+4. **Variable Plotting**: For each variable in `data_label`, the function plots the variable's score scale, labels, and the case marker (if `case_data` is provided). Different plotting methods are used for continuous and categorical variables.
+5. **Total Score Plotting**: The total score scale and labels are drawn at the bottom of the nomogram, along with the case marker (if `case_data` is provided).
+6. **Probability Plotting**:
+    - If `cox = True`, the function calculates and plots the risk probabilities at the specific times provided in `specific_times`.
+    - If `cox = False`, the function calculates and plots the probability scale based on the `probability` column in `score_df`.
+
+### Return Value
+The function returns a Plotly figure object (`fig`) that represents the generated nomogram. This figure can be further customized, saved, or displayed using Plotly's built - in functions.
+
+This function provides a flexible and customizable way to create nomogram plots for different types of models, making it useful for visualizing the relationship between input variables and the probability of an event. 
+
+6. global explaination
+### Function Overview
+The `plot_horizontal_bar_chart_of_averages` function is designed to generate a horizontal bar chart that displays the average values of columns in a given Pandas DataFrame. It provides several customization options, such as the chart title, axis labels, sorting order, and margins, allowing users to create a tailored visualization.
+
+### Parameters
+- **`data_frame`**: A Pandas DataFrame containing the data for which the average values will be calculated and visualized, you can choose the meta_df or the score_df.
+- **`title`**: A string representing the title of the bar chart. The default value is "Important Summary".
+- **`x_axis_label`**: A string representing the label for the x - axis. The default value is 'Average Value'.
+- **`y_axis_label`**: A string representing the label for the y - axis. The default value is 'Variables'.
+- **`width`**: An integer specifying the width of the bar chart in pixels. The default value is 800.
+- **`sort_ascending`**: A boolean flag indicating whether the bars should be sorted in ascending order based on the absolute values of the averages. If `True`, the bars will be sorted in ascending order; if `False`, in descending order. The default value is `True`.
+- **`margin_left`**: A float representing the left margin to be added to the minimum x - value of the chart. The default value is 0.1.
+- **`margin_right`**: A float representing the right margin to be added to the maximum x - value of the chart. The default value is 0.5.
+
+### Functionality
+1. **Average Calculation**: The function first identifies all columns in the `data_frame` and calculates their average values.
+2. **Sorting**: The calculated average values are sorted either in ascending or descending order based on the `sort_ascending` parameter. The sorting is done on the absolute values of the averages.
+3. **Data Preparation**: A `ColumnDataSource` object is created to hold the necessary data for the plot, including the variable names, rounded average values, and colors (using the `Category20` color palette).
+4. **Chart Creation**: A Bokeh `figure` object is initialized with the specified title, axis labels, toolbar tools, width, and x - and y - axis ranges. The x - axis range is adjusted by adding the specified margins to the minimum and maximum average values.
+5. **Bar Chart Addition**: Horizontal bars are added to the plot using the `hbar` method. Each bar represents a variable, and its length corresponds to the average value of that variable.
+6. **Label Addition**: The average values are added as labels next to each bar using the `LabelSet` class.
+7. **Chart Display**: The final bar chart is displayed using the `show` function.
+
+### Return Value
+The function does not return a value. It directly displays the generated horizontal bar chart using Bokeh's `show` function.
+This function provides a convenient way to visualize the average values of columns in a DataFrame, making it easier to compare the relative importance or magnitude of different variables. 
+
+
+7. partial explaination
+### Function Overview
+The `plot_waterfall_chart` function is designed to generate a waterfall chart that visualizes the cumulative changes in scores or meta - values. A waterfall chart is useful for understanding how individual components contribute to an overall total. The function can handle both Cox proportional hazards model scenarios and non - Cox model scenarios, and it provides several customization options for the chart's appearance.
+
+### Parameters
+- **`params_df_case`**: A Pandas DataFrame containing case - specific parameters such as `case_score` and `case_xbeta`.
+- **`title`**: A string representing the title of the waterfall chart. The default value is 'Waterfall Chart'.
+- **`type`**: A string indicating whether to plot the 'score' or'meta' values. The default value is'score'.
+- **`x_axis_label`**: A string representing the label for the x - axis. The default value is "数值".
+- **`y_axis_label`**: A string representing the label for the y - axis. The default value is "项目".
+- **`width`**: An integer specifying the width of the chart in pixels. The default value is 800.
+- **`cox`**: A boolean flag indicating whether the data is related to a Cox proportional hazards model. If `True`, the function will use Cox - specific starting values and calculations.
+- **`cox_model`**: An instance of a fitted Cox proportional hazards model. It is required when `cox = True` and `type ='meta'` to obtain the baseline hazard value.
+- **`margin_left`**: A float representing the left margin to be added to the minimum x - value of the chart. The default value is 0.2.
+- **`margin_right`**: A float representing the right margin to be added to the maximum x - value of the chart. The default value is 3.
+
+### Functionality
+1. **Starting Value and Changes Calculation**:
+    - **Cox Model Scenario (`cox = True`)**:
+        - If `type ='score'`, the starting value is set to 0, and the changes are taken from the `case_score` column in `params_df_case`.
+        - If `type ='meta'`, the starting value is the baseline hazard value from the `cox_model`, and the changes are taken from the `case_xbeta` column in `params_df_case`.
+    - **Non - Cox Model Scenario (`cox = False`)**:
+        - If `type ='score'`, the starting value is the `case_score` of the 'Intercept' in `params_df_case`, and the changes are the `case_score` values excluding the 'Intercept'.
+        - If `type ='meta'`, the starting value is the `case_xbeta` of the 'Intercept' in `params_df_case`, and the changes are the `case_xbeta` values excluding the 'Intercept'.
+2. **Cumulative Value Calculation**: The cumulative values are calculated by summing the starting value and the individual changes.
+3. **Data Preparation**: A dictionary `data` is created to hold the necessary data for the plot, including the y - positions, left and right boundaries of the bars, colors, labels, and change values. The colors are set to 'blue' for the starting and ending bars and 'green' or'red' for positive or negative changes, respectively.
+4. **Chart Creation**: A Bokeh `figure` object is initialized with the specified title, axis labels, width, toolbar tools, and x - axis range. The x - axis range is adjusted by adding the specified margins to the minimum and maximum x - values.
+5. **Bar Chart Addition**: Horizontal bars are added to the plot using the `hbar` method. Each bar represents an individual component or the total, and its length corresponds to the change or cumulative value.
+6. **Label Addition**: Two sets of labels are added to the plot. One set displays the item names (e.g., '起始', variable names, '最终'), and the other set displays the change values.
+7. **Chart Display**: The final waterfall chart is displayed using the `show` function.
+
+### Return Value
+The function does not return a value. It directly displays the generated waterfall chart using Bokeh's `show` function.
+
+This function provides a convenient way to visualize the cumulative impact of different components on a total value, making it useful for analyzing the contribution of individual variables in a model. 

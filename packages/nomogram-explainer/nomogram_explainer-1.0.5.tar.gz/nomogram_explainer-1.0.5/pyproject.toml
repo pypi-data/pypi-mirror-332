@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+# 包的名称
+name = "nomogram-explainer"
+# 包的版本
+version = "1.0.5"
+# 作者信息
+authors = [
+    { name = "Jeffery Liu", email = "liuyp2080@gmail.com" },
+]
+# 包的简短描述
+description = "Drawing the nomogram with python, and explain the model with nomogram-drived data"
+# 长描述内容
+readme = "README.md"
+# 长描述内容类型
+#long-description-content-type = "text/markdown"
+# 项目的 URL
+#urls = { Homepage = "https://github.com/liuyp2080/pynomogram-explainer" }
+# 许可证
+license = { text = "MIT" }
+# 包的依赖项
+dependencies = [
+    "statsmodels",
+    "bokeh",
+    "plotly",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "lifelines"
+]
+# 支持的 Python 版本
+requires-python = ">=3.10"
+# 项目分类器
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
