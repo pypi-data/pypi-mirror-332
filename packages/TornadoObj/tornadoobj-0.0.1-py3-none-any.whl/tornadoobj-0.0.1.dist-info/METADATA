@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: TornadoObj
+Version: 0.0.1
+Summary: Tornado
+Author-email: Denis Minka <minka.denis@gmail.com>
+License-File: LICENSE.txt
+Requires-Dist: speeedy
