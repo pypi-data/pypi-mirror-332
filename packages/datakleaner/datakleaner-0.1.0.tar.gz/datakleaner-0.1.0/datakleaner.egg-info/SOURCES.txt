@@ -1,0 +1,17 @@
+LICENCE
+README.md
+pyproject.toml
+datakleaner/__init__.py
+datakleaner/diagnosis.py
+datakleaner/duplicates.py
+datakleaner/missing_data.py
+datakleaner/outliers.py
+datakleaner.egg-info/PKG-INFO
+datakleaner.egg-info/SOURCES.txt
+datakleaner.egg-info/dependency_links.txt
+datakleaner.egg-info/requires.txt
+datakleaner.egg-info/top_level.txt
+tests/test_diagnosis.py
+tests/test_duplicates.py
+tests/test_missing_data.py
+tests/test_outliers.py
