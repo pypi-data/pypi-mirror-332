@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: streamlit-extent
+Version: 0.1.0
+Summary: Расширение для Streamlit, добавляющее дополнительные компоненты и функции
+Author: Voronov Andrey
+Author-email: Vorona@email.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit>=1.22.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
