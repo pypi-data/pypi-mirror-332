@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: updatabot
+Version: 0.0.13
+Summary: Datascript library for https://updatabot.com
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, https://github.com/updatabot/python-updatabot
+Project-URL: Issues, https://github.com/updatabot/python-updatabot/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: pandas==2.2.3
+Requires-Dist: requests==2.32.2
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: xlrd==2.0.1
+Requires-Dist: openpyxl==3.1.5
+Requires-Dist: pydantic==2.10.6
+Requires-Dist: pydantic_core==2.27.2
+Requires-Dist: email_validator==2.2.0
+
+# Updatabot
+
+This package is in active development.

@@ -1,0 +1,13 @@
+updatabot/__init__.py,sha256=sVhQcWIJ1XPDoYq5iqDklTfYuBA6wACY9UlroCJd2Pg,148
+updatabot/load_url.py,sha256=2KdeCHVYLUujGE4jf7c1y7H00OFNdqQD3sgq6j6Pez8,5925
+updatabot/logger.py,sha256=GTg-lj98yn_g18sHBeYuV7gkGGPAoOPokzL1q6zezdU,331
+updatabot/save.py,sha256=GvGfn0yGbQassOZcZcvsFSquEIjsQuClEzca8YztA-Y,1320
+updatabot/ons/__init__.py,sha256=IEAFJ36WJ8ZJ4L9NXwNfW9ezzLy8aegNXIALtOuYIy8,43
+updatabot/ons/load.py,sha256=sci2_xC5fsKXt9qQBov-lBaevZTp-j0iniL5v90-atk,1660
+updatabot/ons/schema/ds_root.py,sha256=okc_fW2dsTHjT4qDr1l9siYIWWAARP6a-wGEAdQTq2U,3128
+updatabot/ons/schema/ds_version.py,sha256=pMAZTUH_VzhiOlcGRbUAjRMdEzI2QRqh7jJ278kYPq4,4606
+updatabot-0.0.13.dist-info/LICENCE,sha256=i4btP_uv843fJ1u6vvDow6wdBaghKasgClmVoaJ1yOI,1070
+updatabot-0.0.13.dist-info/METADATA,sha256=SfSb6Kmf0z1CvfahCe7-ebvgHYR91Yq28yxrQqvhiVw,847
+updatabot-0.0.13.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+updatabot-0.0.13.dist-info/top_level.txt,sha256=ID3aCcGHvdL0nQeA89dujaBLqRdQmCqFSpVK95CRAWE,10
+updatabot-0.0.13.dist-info/RECORD,,
