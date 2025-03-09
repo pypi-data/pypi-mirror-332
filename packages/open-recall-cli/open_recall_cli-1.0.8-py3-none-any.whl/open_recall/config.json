@@ -1,0 +1,7 @@
+{
+  "app": {
+    "port": 8742,
+    "host": "localhost",
+    "debug": false
+  }
+}
