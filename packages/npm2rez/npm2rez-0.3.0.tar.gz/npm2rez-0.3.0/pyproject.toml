@@ -1,0 +1,64 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "npm2rez"
+version = "0.3.0"
+description = "Convert npm packages to rez packages"
+authors = ["longhao <hal.long@outlook.com>"]
+readme = "README.md"
+packages = [{include = "npm2rez"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+click = "^8.1.8"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.7.0"
+nox = "^2023.4.22"
+virtualenv = "<20.27.0"
+pytest = "^7.0.0"
+pytest-cov = "^4.1.0"
+pytest-mock = "^3.11.1"
+ruff = "^0.9.0"
+isort = "^5.12.0"
+pre-commit = "^3.5.0"
+autoflake = "^2.2.1"
+
+[tool.poetry.scripts]
+npm2rez = "npm2rez.cli:main"
+
+[tool.poetry.urls]
+Homepage = "https://github.com/loonghao/npm2rez"
+Issues = "https://github.com/loonghao/npm2rez/issues"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.3.0"
+tag_format = "$version"
+version_files = [
+    "pyproject.toml:version",
+    "npm2rez/__init__.py"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+
+# 确保 isort 配置与 ruff.lint.isort 配置一致
+[tool.isort]
+known_first_party = ["npm2rez"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4"]
+ignore = ["E203"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["npm2rez"]
