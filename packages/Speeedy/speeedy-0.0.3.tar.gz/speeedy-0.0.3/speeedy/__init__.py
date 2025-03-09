@@ -1,0 +1,2 @@
+
+from .speeedy import Speeedy
