@@ -1,0 +1,126 @@
+Metadata-Version: 2.2
+Name: dldna
+Version: 0.1.1
+Summary: Deep Learning DNA: Surviving Architectures and Profound Principles
+Home-page: https://github.com/Quantum-Intelligence-Frontier/dldna
+Author: Seon Yong Park
+Author-email: baida21@naver.com
+License: CC BY-NC 4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.22
+Requires-Dist: pandas>=1.5
+Requires-Dist: matplotlib>=3.5
+Requires-Dist: scikit-learn>=1.0
+Requires-Dist: scipy>=1.8
+Requires-Dist: transformers>=4.30
+Requires-Dist: datasets>=2.10
+Requires-Dist: tqdm>=4.60
+Requires-Dist: pillow>=9.0
+Requires-Dist: opencv-python>=4.5
+Requires-Dist: tensorboard>=2.8
+Requires-Dist: torch>=1.13
+Requires-Dist: torchvision>=0.14
+Requires-Dist: torchaudio>=0.13
+Provides-Extra: visualization
+Requires-Dist: manim; extra == "visualization"
+Provides-Extra: dev
+Requires-Dist: jupyter>=1.0.0; extra == "dev"
+Requires-Dist: notebook>=6.5.0; extra == "dev"
+Requires-Dist: ipykernel>=6.29.0; extra == "dev"
+Requires-Dist: ipywidgets>=8.1.0; extra == "dev"
+Requires-Dist: seaborn; extra == "dev"
+Requires-Dist: torchinfo; extra == "dev"
+Requires-Dist: seaborn_image; extra == "dev"
+Requires-Dist: pyhessian; extra == "dev"
+Requires-Dist: gudhi; extra == "dev"
+Requires-Dist: PyWavelets; extra == "dev"
+Requires-Dist: bayesian-optimization; extra == "dev"
+Requires-Dist: botorch; extra == "dev"
+Requires-Dist: sentencepiece; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+
+# Deep Learning DNA: Surviving Architectures and Profound Principles
+
+[![PyPI version](https://badge.fury.io/py/dldna.svg)](https://badge.fury.io/py/dldna)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+**A journey into the core technologies and key architectures of deep learning.**
+
+This package, `dldna`, provides code and resources accompanying the book "Deep Learning DNA: Surviving Architectures and Profound Principles". It delves into the essential techniques and pivotal architectures that have shaped the field of deep learning, offering a practical, hands-on complement to the book's conceptual explanations.
+
+**Key Features:**
+
+*   **Code Examples:**  Explore implementations of fundamental deep learning concepts and architectures.
+*   **Focus on Efficiency:**  Learn how to build and train models with an emphasis on computational efficiency.
+*   **Accompanying Material:**  This package is designed to be used alongside the book "Deep Learning DNA", providing interactive code to enhance your learning experience.
+
+**Installation:**
+
+```bash
+pip install dldna
+```
+**Optional Dependencies**
+```
+pip install dldna[visualization] # Install with manim
+pip install dldna[dev]  # Install with development tools
+```
+
+**Requirements:**
+
+*   Python >= 3.7
+*   NumPy >= 1.22
+*   Pandas >= 1.5
+*   Matplotlib >= 3.5
+*   scikit-learn >= 1.0
+*   SciPy >= 1.8
+*   Transformers >= 4.30
+*   Datasets >= 2.10
+*   tqdm >= 4.60
+*   Pillow >= 9.0
+*   OpenCV-Python >= 4.5
+*   TensorBoard >= 2.8
+*   PyTorch >= 1.13
+*   torchvision >= 0.14
+*   torchaudio >= 0.13
+*   (Optional) Manim (for visualization)
+
+**Usage:**
+
+```python
+# Example usage (replace with a simple, illustrative example)
+import dldna
+
+# ... your code here ...
+
+print(dldna.__version__)  # Check the installed version
+```
+
+**License:**
+
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License - see the [LICENSE](LICENSE) file for details.
+
+**For more information, including the full book content and detailed explanations, please visit the GitHub repository:**
+
+[https://github.com/Quantum-Intelligence-Frontier/dldna](https://github.com/Quantum-Intelligence-Frontier/dldna)
+
+**Contact:**
+For inquiries, please contact: baida21@naver.com
+
