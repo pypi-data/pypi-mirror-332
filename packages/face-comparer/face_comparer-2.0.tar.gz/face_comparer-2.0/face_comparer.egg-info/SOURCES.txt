@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+face_comparer/__init__.py
+face_comparer/face_comparer.py
+face_comparer.egg-info/PKG-INFO
+face_comparer.egg-info/SOURCES.txt
+face_comparer.egg-info/dependency_links.txt
+face_comparer.egg-info/requires.txt
+face_comparer.egg-info/top_level.txt
