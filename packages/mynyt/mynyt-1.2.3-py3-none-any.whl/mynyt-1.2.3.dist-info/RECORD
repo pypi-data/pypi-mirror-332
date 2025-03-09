@@ -1,0 +1,9 @@
+mynyt/MyNYT.py,sha256=8C7uJ_EW9mvpt9goUzbBrjaRgtcva6rPOIC9-TD5Yzo,9762
+mynyt/Wordle.py,sha256=FFS66DDqm4qQ4DeBlEns-xS66QkHDX5WU3KcEtUCkWs,4939
+mynyt/__init__.py,sha256=19zLLZG94Z5Y817kaq7WY342n7sTN8fLUbDlW4Bql0Y,68
+mynyt/data/possible_guesses.txt,sha256=p4mM0g82aG1MW0Ps4ibDbrQacB3zbaNb0Y4hr0HP6tQ,89129
+mynyt/data/possible_words.txt,sha256=UgmzX4I_i4DwQE-GO9gN8G1qlmxusQFtafOLrcbu1dA,13889
+mynyt-1.2.3.dist-info/METADATA,sha256=HJAbqMxIbq2ErglsW9uSOVYUkTj3JrEbZy_WXOt8cEw,8961
+mynyt-1.2.3.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+mynyt-1.2.3.dist-info/top_level.txt,sha256=f5WRkR3UaiKmi8-_cD67tLTCr7v0JfPVhb6ZIea767Q,6
+mynyt-1.2.3.dist-info/RECORD,,
