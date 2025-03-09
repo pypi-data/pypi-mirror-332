@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+VCry.egg-info/PKG-INFO
+VCry.egg-info/SOURCES.txt
+VCry.egg-info/dependency_links.txt
+VCry.egg-info/top_level.txt
