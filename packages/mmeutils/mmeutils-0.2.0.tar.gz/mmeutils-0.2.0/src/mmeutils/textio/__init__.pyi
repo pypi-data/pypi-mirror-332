@@ -1,0 +1,3 @@
+__all__ = ['strip_rich_tags']
+
+def strip_rich_tags(text: str) -> str: ...
