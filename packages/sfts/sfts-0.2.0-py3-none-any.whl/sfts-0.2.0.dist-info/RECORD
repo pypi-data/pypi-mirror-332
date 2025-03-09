@@ -1,0 +1,10 @@
+sfts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sfts/ansaetze.py,sha256=2YXeTlje3ZH7xXf6Fn1vVhVlQTaPJIL-aa7M2u3Cors,19780
+sfts/iphenot.py,sha256=MydzlpkiqlREnRCBxX843wJ8Z_MQLT2o_9kkOCjiEW0,6775
+sfts/kernels.py,sha256=bWGtPP179kAh7XO2T77AadYd-31h25fNhYvv1M7cYhE,603
+sfts/taylor_t3.py,sha256=ZXq_EwzCjqCHij9cSF_vNnIqHrAtJuPjb89OM1yeNaw,7781
+sfts-0.2.0.dist-info/LICENSE.md,sha256=s7XspbfXGlEYvHU3b6kPuMjEGI4drSJ9IsOKnLnQ99E,1072
+sfts-0.2.0.dist-info/METADATA,sha256=c0i1qGer0d-6qrVlB2B9FH0KKAkiLPAI8aKrOkk39UM,4249
+sfts-0.2.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+sfts-0.2.0.dist-info/top_level.txt,sha256=kP65sFOgQoUXx5u3jOmctUcyrnM330DQTCS2a7Tc-cs,5
+sfts-0.2.0.dist-info/RECORD,,
