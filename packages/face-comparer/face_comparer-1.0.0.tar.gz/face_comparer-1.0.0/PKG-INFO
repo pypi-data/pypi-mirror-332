@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: face-comparer
+Version: 1.0.0
+Summary: A Python module for face comparison using face_recognition and Base64 conversion.
+Author-email: Sharjeel Baig <dr.sharjeel.6@gmail.com>
+Requires-Dist: face_recognition
+Requires-Dist: numpy
+Requires-Dist: pillow
