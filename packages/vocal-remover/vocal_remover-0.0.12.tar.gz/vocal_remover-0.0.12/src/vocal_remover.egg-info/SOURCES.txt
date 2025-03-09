@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/vocal-remover/__init__.py
+src/vocal-remover/dataset.py
+src/vocal-remover/layers.py
+src/vocal-remover/model.py
+src/vocal-remover/nets.py
+src/vocal-remover/spec_utils.py
+src/vocal-remover/utils.py
+src/vocal_remover.egg-info/PKG-INFO
+src/vocal_remover.egg-info/SOURCES.txt
+src/vocal_remover.egg-info/dependency_links.txt
+src/vocal_remover.egg-info/requires.txt
+src/vocal_remover.egg-info/top_level.txt

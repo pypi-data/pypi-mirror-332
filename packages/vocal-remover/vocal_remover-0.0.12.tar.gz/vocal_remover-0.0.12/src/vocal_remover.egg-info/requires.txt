@@ -1,0 +1,7 @@
+librosa
+matplotlib
+opencv_python
+resampy
+tqdm
+numpy
+huggingface_hub
