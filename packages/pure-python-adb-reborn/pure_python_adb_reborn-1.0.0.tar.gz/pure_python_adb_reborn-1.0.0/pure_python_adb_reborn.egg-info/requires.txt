@@ -1,0 +1,5 @@
+Exscript
+aiofiles>=0.4.0
+pytest[dev]
+black[dev]
+ruff[dev]
