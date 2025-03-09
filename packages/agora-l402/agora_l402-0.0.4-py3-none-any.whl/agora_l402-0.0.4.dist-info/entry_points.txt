@@ -1,0 +1,5 @@
+[console_scripts]
+agora-mcp = agora_l402.mcp.main:main
+
+[nbdev]
+agora_l402 = agora_l402._modidx:d
