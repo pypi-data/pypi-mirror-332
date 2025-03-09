@@ -1,0 +1,17 @@
+llm_chat_term/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_chat_term/app.py,sha256=tmsGz56xKAAKrZW8ddKYLBpiSAzBNiip8s-VQysgwt4,3881
+llm_chat_term/chat_selector.py,sha256=WiWpvs616kWkawofhYwNPKfiWDeZNtQUZbOiKls2Sc8,1954
+llm_chat_term/chat_ui.py,sha256=1Y8fznN5HDdel_xsMg30R68CSlMwSsoY5Fq_5midGyw,6703
+llm_chat_term/config.py,sha256=6cZ5b1bDTYc2yR2utEIkiGzxsslH869_aVotxyx6RUE,3223
+llm_chat_term/db.py,sha256=wh10igc6PLb3PDod3Mu4UK_2Ji1wc7TNf3zRKuAEebc,4898
+llm_chat_term/exceptions.py,sha256=nLN5zXrejrCcgcaVrrLgwL1lQbA7tPYT8w-hBUyHw-0,41
+llm_chat_term/help.py,sha256=o0ITgmfFfKKU7Y90LJ2xUyH5oKp_Lb9DupPSui2ZNHQ,1966
+llm_chat_term/llm_client.py,sha256=___hG3vwtjA9upeCikJ2Nkwa_ASWcJm3NZA_HZlIf68,6144
+llm_chat_term/model_selector.py,sha256=SvGLUKdrg-TLhYqB9UlyVUkmiZlkbElUDZzv9ECUiJw,378
+llm_chat_term/prompt_menu.py,sha256=aaQ-rWn-6equFk9FbD6Pyw026VcK2QGMNk7fggAbx2k,2336
+llm_chat_term/read_file.py,sha256=f9sGaJaDJzbonlrcffrZe6I_cn50u994URsl8ztXTLI,1606
+llm_chat_term/utils.py,sha256=_aP0cOraZs-Gjgbt6obWAUDv24xm-yeLQQI3c-ZH5FE,578
+llm_chat_term-0.1.5.dist-info/METADATA,sha256=Lgi7J8FNg_tiz0sHOtE88e5W3Ryc_4YtQLz5sYNXG9E,3187
+llm_chat_term-0.1.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+llm_chat_term-0.1.5.dist-info/entry_points.txt,sha256=UKZwtI3NDKiUn31xaR6DJJrw13Rv55F4b1tjZSeTrbs,57
+llm_chat_term-0.1.5.dist-info/RECORD,,
