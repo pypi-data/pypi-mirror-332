@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: pyopenhardwaremonitor
+Version: 0.2.4
+Summary: A python3 library to communicate with an Open Hardware Monitor remote server
+Home-page: https://github.com/lazytarget/pyOpenHardwareMonitor
+Author: Peter Åslund
+Author-email: peter@peteraslund.me
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.11.0
+License-File: LICENSE.md
+Requires-Dist: aiohttp>=3.0.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
