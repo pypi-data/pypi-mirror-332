@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: RubAmin
+Version: 0.1.4
+Summary: t.me/Unique_Amin78
+Author: Unique Amin
+License-File: LICENSE
+Requires-Dist: pycryptodome
+Requires-Dist: pillow
+Requires-Dist: aiohttp
+Requires-Dist: websocket-client
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
