@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SeerGPT"
+version = "0.0.2"
+authors = [
+  { name="Sarthak Shah", email="shahsarthakw@gmail.com" },
+]
+description = "SeerGPT: AI-powered Tarot Readings"
+readme = "README.txt"
+requires-python = ">=3.8"
+license = {text = "GPL-3.0-or-later"}
+dependencies = [
+  "flet",
+  "requests",
+]
+
+[tool.setuptools.package-data]
+"SeerGPT.assets" = ["*.png"]
+
+[project.scripts]
+SeerGPT = "SeerGPT.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/matchcase/SeerGPT"
+Issues = "https://github.com/matchcase/SeerGPT/issues"

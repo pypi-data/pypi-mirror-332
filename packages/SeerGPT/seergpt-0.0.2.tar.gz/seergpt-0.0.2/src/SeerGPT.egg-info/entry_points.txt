@@ -1,0 +1,2 @@
+[console_scripts]
+SeerGPT = SeerGPT.__main__:main
