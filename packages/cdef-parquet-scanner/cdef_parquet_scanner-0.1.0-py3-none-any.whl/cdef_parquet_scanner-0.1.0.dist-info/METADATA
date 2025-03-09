@@ -1,0 +1,54 @@
+Metadata-Version: 2.4
+Name: cdef-parquet-scanner
+Version: 0.1.0
+Summary: Tool for scanning and analyzing Parquet schema structures
+Project-URL: Homepage, https://github.com/tkragholm/cdef-parquet-scanner
+Project-URL: Bug Tracker, https://github.com/tkragholm/cdef-parquet-scanner/issues
+Author-email: Tobias Kragholm <tkragholm@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pyarrow>=10.0.0
+Description-Content-Type: text/markdown
+
+# CDEF Parquet Scanner
+
+A tool for scanning Parquet files, analyzing their schema structures, and generating reports about schema patterns and data characteristics.
+
+## Features
+
+- Scans directories recursively for Parquet files
+- Groups files by schema similarity
+- Analyzes column characteristics (types, compression, cardinality)
+- Detects potentially sensitive columns with high cardinality
+- Generates detailed reports on schema patterns
+
+## Installation
+
+```bash
+pip install cdef-parquet-scanner
+```
+
+## Usage
+
+```bash
+# As a module
+python -m cdef_parquet_scanner.schema <directory_path> [output_file]
+
+# As a command-line tool
+cdef-parquet-scanner <directory_path> [output_file]
+```
+
+If no output file is specified, the report will be saved as `parquet_schema_report.txt` in the current directory.
+
+## Example
+
+```bash
+cdef-parquet-scanner /path/to/data/directory report.txt
+```
+
+## License
+
+MIT

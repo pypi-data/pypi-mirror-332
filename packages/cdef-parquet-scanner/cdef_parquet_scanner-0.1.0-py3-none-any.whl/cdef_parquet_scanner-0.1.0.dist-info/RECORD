@@ -1,0 +1,7 @@
+cdef_parquet_scanner/__init__.py,sha256=Mlx4JhYt_E6A3d077rIAyONx8aDORoqBLXAUmK4cvFk,100
+cdef_parquet_scanner/schema.py,sha256=EDLIqrbyTlM6Av-EBj12IWmIN3zZ3HoGRWz8mdeGG0g,13758
+cdef_parquet_scanner-0.1.0.dist-info/METADATA,sha256=4D3C7S5rwZx5ftOo2AT2c0ttfHUHb-sOL3iQD04MSSg,1504
+cdef_parquet_scanner-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cdef_parquet_scanner-0.1.0.dist-info/entry_points.txt,sha256=Kw_CFaEOyAbnVcgJoBcwnynBL83YlEhN5ul7depRcJY,74
+cdef_parquet_scanner-0.1.0.dist-info/licenses/LICENSE,sha256=x7gNXv8WVK9FeWTY45R3xQWpbVp5B-RpdBBeKwu8NGw,1071
+cdef_parquet_scanner-0.1.0.dist-info/RECORD,,

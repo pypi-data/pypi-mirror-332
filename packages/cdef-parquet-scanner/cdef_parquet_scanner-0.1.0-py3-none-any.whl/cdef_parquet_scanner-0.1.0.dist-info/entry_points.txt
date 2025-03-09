@@ -1,0 +1,2 @@
+[console_scripts]
+cdef-parquet-scanner = cdef_parquet_scanner.schema:main
