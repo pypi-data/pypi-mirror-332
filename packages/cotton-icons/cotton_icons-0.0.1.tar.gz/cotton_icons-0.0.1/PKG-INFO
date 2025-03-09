@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: cotton-icons
+Version: 0.0.1
+Summary: Icons integration for django-cotton, starting with Heroicons
+License: MIT
+Keywords: django,cotton,heroicons,svg,icons
+Author: William Abbott
+Author-email: willabb83@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: django-cotton
+Project-URL: Documentation, https://github.com/wrabit/cotton-icons#readme
+Project-URL: Homepage, https://github.com/wrabit/cotton-icons
+Project-URL: Repository, https://github.com/wrabit/cotton-icons
+Description-Content-Type: text/markdown
+
+# cotton-icons
+Icon components for popular packs (starting with Heroicons)
+
