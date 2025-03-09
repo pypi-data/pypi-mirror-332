@@ -1,0 +1,12 @@
+tree_sitter_ocamllex/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_ocamllex/binding.c,sha256=8b8wlOG5fSZQf6XaTM1UfnEBTgwIasWFG-jTIH4bbUI,640
+tree_sitter_ocamllex/__init__.py,sha256=0mc9UP5HbxhVHT-8CeTSvk-02HGDiQvdhICx_JfrKuU,91
+tree_sitter_ocamllex/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_ocamllex/_binding.abi3.so,sha256=hoKTPrkYetgnIgFpq6X7lFXFaeXyurmcKncg_SZYzws,70640
+tree_sitter_ocamllex/queries/highlights.scm,sha256=-0kclm8RVL-oMc7bZ3SXovFxv8XRMnNWtJHr-2jBuzg,692
+tree_sitter_ocamllex/queries/injections.scm,sha256=mGRMBqipvr3PeYJsvH7rNs3KZmGS3XTyJWiBrwgNv5E,65
+tree_sitter_ocamllex-0.24.0.dist-info/RECORD,,
+tree_sitter_ocamllex-0.24.0.dist-info/LICENSE,sha256=tAwYsBIKfeYrEVKhixcqPUwWDV9FQ4uIR1_SAEmplzs,1063
+tree_sitter_ocamllex-0.24.0.dist-info/WHEEL,sha256=tqLvxTiz_tqdFU0Aepk51Kr_sGSAZ0kRASpkJEFPeHU,134
+tree_sitter_ocamllex-0.24.0.dist-info/top_level.txt,sha256=ciuRxL1EnSFHCXK6dqN8OoCx8xZRuY1KxcuFj2vTkyI,30
+tree_sitter_ocamllex-0.24.0.dist-info/METADATA,sha256=KMj4zOSfU0TYYAEiyj547mZrld7c-7KDdgvPW6vbWvg,1573
