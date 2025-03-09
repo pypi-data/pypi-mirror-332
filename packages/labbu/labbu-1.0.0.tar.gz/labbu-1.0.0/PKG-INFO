@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: labbu
+Version: 1.0.0
+Summary: Tool to make contextual editing of HTK-style lab files more intuitive and user friendly.
+Author: tigermeat
+Author-email: mrtigermeat@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-python
+Dynamic: summary
