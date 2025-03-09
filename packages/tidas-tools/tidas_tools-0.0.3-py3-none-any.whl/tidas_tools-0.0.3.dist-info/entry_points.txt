@@ -1,0 +1,4 @@
+[console_scripts]
+tidas-convert=tidas_tools.convert_cli:main
+tidas-validate=tidas_tools.validate_cli:main
+
