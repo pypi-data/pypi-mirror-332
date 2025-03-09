@@ -1,0 +1,9 @@
+README.md
+setup.py
+razer/__init__.py
+razer/razer.py
+razer/razer_nt.py
+razer.egg-info/PKG-INFO
+razer.egg-info/SOURCES.txt
+razer.egg-info/dependency_links.txt
+razer.egg-info/top_level.txt
