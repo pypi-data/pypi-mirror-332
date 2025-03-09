@@ -1,0 +1,2 @@
+[console_scripts]
+flightdeck = main:main
