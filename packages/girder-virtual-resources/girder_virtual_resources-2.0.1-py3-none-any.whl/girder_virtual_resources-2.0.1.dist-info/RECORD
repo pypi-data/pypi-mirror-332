@@ -1,0 +1,12 @@
+girder_virtual_resources/__init__.py,sha256=biYubp4glBGvzwLL4BrMyh5yE-ahsiwt_FIJBLzGbJI,1381
+girder_virtual_resources/rest/__init__.py,sha256=cYIzWLHEag8w29BBUqdhIeKlXxMOibVmTxC1zfTHEY4,8242
+girder_virtual_resources/rest/virtual_file.py,sha256=IPRazPervnYHL3zCQTXp_ufmovS1Ee4u-LmknkNkKGQ,9026
+girder_virtual_resources/rest/virtual_folder.py,sha256=Z-prT7FsrW4nv9XMFs9rsLTsY46fBvI9szJhHLGGh6g,10481
+girder_virtual_resources/rest/virtual_item.py,sha256=eTFtn0p2uz24L4zC_Xi0bB87YrOioLMRYoEx56OX9Ts,7321
+girder_virtual_resources/rest/virtual_resource.py,sha256=i8ZGEs_Da9a_fP61N9SGe2T_3BesA5s6QkPrPLTuXmE,10045
+girder_virtual_resources-2.0.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+girder_virtual_resources-2.0.1.dist-info/METADATA,sha256=g775gV9olc21sh3-YBickacMuShlx-457_BinyR290Q,1918
+girder_virtual_resources-2.0.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+girder_virtual_resources-2.0.1.dist-info/entry_points.txt,sha256=NErPaqp5FbYGjW6AniCt7UjqDdHDu9jNW2MzcvqilR0,84
+girder_virtual_resources-2.0.1.dist-info/top_level.txt,sha256=SReWor58k8bW1AsAoKJ_p9YrNsHMYM7vckwvWs-03EA,25
+girder_virtual_resources-2.0.1.dist-info/RECORD,,
