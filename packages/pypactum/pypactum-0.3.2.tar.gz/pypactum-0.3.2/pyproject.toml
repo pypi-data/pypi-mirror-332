@@ -1,0 +1,47 @@
+[project]
+name = "pypactum"
+version = "0.3.2"
+requires-python = ">= 3.13"
+readme = "README.md"
+dependencies = []
+authors = [{ name = "Jan Möller" }]
+description = "Checkable contracts for python"
+license = { file = "LICENSE" }
+keywords = ["contract", "assertion", "correctness", "documentation", "precondition", "postcondition", "function"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Documentation",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13"
+]
+
+[project.urls]
+Homepage = "https://github.com/jan-moeller/pactum"
+Documentation = "https://github.com/jan-moeller/pactum/blob/main/README.md"
+Repository = "https://github.com/jan-moeller/pactum.git"
+Issues = "https://github.com/jan-moeller/pactum/issues"
+
+[project.optional-dependencies]
+tests = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["docs*", "tests*"]
+
+[tool.black]
+target-version = ["py313"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
