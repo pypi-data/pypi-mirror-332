@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: jiacheng-dgp-dpf
+Version: 0.1
+Summary: 嘉诚信息数据治理平台
+Home-page: https://jiachengnet.com/example
+Author: 嘉诚信息
+Author-email: libo@jiachengnet.com
+License: Commercial
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# 嘉诚信息数据治理平台
+
+## 数据处理框架
+
+嘉诚信息数据治理平台-数据处理框架，是基于 Python 语言全新开发的一套分布式数据处理框架。
