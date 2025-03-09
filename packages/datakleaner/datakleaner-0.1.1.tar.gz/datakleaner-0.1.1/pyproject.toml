@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datakleaner"
+version = "0.1.1"
+description = "An open-source Python package for checking and handling missing data, duplicates, and outliers in datasets."
+readme = "README.md"
+authors = [
+    { name = "David Ahonsu", email = "olivetahonsu@gmail.com" }
+]
+license = { text = "Apache-2.0" }
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "scipy"
+]
+requires-python = ">=3.0"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Operating System :: OS Independent",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Other Audience"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+
+[project.urls]
+Homepage = "https://github.com/olivetahonsu/datakleaner"
+Repository = "https://github.com/olivetahonsu/datakleaner.git"
+Issues = "https://github.com/olivetahonsu/datakleaner/issues"
