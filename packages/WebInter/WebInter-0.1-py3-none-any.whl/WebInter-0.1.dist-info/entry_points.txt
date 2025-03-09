@@ -1,0 +1,2 @@
+[console_scripts]
+webinter = webinter.__main__:main
