@@ -1,0 +1,14 @@
+MANIFEST.in
+README
+setup.py
+matek/__init__.py
+matek/osszeadas_kivonas.py
+matek/szorzas.py
+matek.egg-info/PKG-INFO
+matek.egg-info/SOURCES.txt
+matek.egg-info/dependency_links.txt
+matek.egg-info/entry_points.txt
+matek.egg-info/not-zip-safe
+matek.egg-info/requires.txt
+matek.egg-info/top_level.txt
+matek/tests/test_multiplication.py

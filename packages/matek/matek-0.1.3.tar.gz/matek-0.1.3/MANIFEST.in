@@ -1,0 +1,2 @@
+include matek/*.py
+include matek/tests/*.py
