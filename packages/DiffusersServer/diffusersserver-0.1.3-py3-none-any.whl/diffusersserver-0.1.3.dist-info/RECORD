@@ -1,0 +1,9 @@
+DiffusersServer/Pipelines.py,sha256=sdEW4m9mSfW-QEdOTrrfIJ_HazVj8JTU4aw-SJWHMgc,5336
+DiffusersServer/VideoPipelines.py,sha256=wiX4KgsiULh0-u4f74UmmLy-K302KJfl_lwvAmHOGxw,1730
+DiffusersServer/__init__.py,sha256=L_mZ7tQ5nSz3KyAb3-cELRcFteHw-q0HvT5oPjwb7sw,119
+DiffusersServer/create_server.py,sha256=RgnFMor4-MIsualGRrI2PLaxIOO9_RpgdrAm-3LEDOU,1126
+DiffusersServer/server.py,sha256=kXzuaQOLZRGmT79bVD-nUE6uTVEYulBAd1Wl6ceanwM,9805
+DiffusersServer/waitress_server.py,sha256=FF2JRSe1cmBVZJ7TIlDSwsPkaX3F9kw9j61Xi85AdhM,2617
+diffusersserver-0.1.3.dist-info/METADATA,sha256=ib7TRcsYnG-kmCMaQDUx-xq0y0-rLIpcE56CDDPQmw4,447
+diffusersserver-0.1.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+diffusersserver-0.1.3.dist-info/RECORD,,
