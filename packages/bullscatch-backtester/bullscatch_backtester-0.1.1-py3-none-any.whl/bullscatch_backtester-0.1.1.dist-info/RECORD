@@ -1,0 +1,11 @@
+bullscatch_backtest/__init__.py,sha256=NfiU9ZovWfNZj7VWLMz9s5h12pL7q1zgRa2N2InckEM,199
+bullscatch_backtest/config.py,sha256=knKqEwCQ6aAHc63rNy__maoxrirQ0XWbZ5ndwyuLjsU,182
+bullscatch_backtest/main.py,sha256=zTPRjkNmpykTkZMzdvkHB-9876IzpOqgpSmSL4txB_w,3621
+bullscatch_backtest/query_executer.py,sha256=ymMHPEsg5_pnEdxHYDZnYsD2iN8-zKxtH0OEPRiiwCM,1622
+bullscatch_backtest/spot_fetch.py,sha256=okQg0Q29tImBJVIkIBP8vIKvKIzZo99uSsqrCyX4GuA,2107
+bullscatch_backtest/tablename_fetcher.py,sha256=WDnfS2eLGA89psK82-y6Acy5syq4DZmm3zt6zCLp-bU,2037
+bullscatch_backtest/test.py,sha256=ejeVxyv2x_hmglsfB4_c0Vo1KOW1lB6eCAYWqWqoQ0I,1592
+bullscatch_backtester-0.1.1.dist-info/METADATA,sha256=wPUmJQOMinCc3Yt36cWxQqCGPXlph_Q6ybIDNGsJOeU,485
+bullscatch_backtester-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bullscatch_backtester-0.1.1.dist-info/top_level.txt,sha256=MAspyFPUee641FoiJZI7DJjmeZKmzwl9d_AM_Uzf_x8,20
+bullscatch_backtester-0.1.1.dist-info/RECORD,,
