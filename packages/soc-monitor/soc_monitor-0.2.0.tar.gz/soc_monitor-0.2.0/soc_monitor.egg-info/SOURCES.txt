@@ -1,0 +1,12 @@
+README.md
+setup.py
+soc_monitor/__init__.py
+soc_monitor/cli.py
+soc_monitor/server.py
+soc_monitor/utils.py
+soc_monitor.egg-info/PKG-INFO
+soc_monitor.egg-info/SOURCES.txt
+soc_monitor.egg-info/dependency_links.txt
+soc_monitor.egg-info/entry_points.txt
+soc_monitor.egg-info/requires.txt
+soc_monitor.egg-info/top_level.txt

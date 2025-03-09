@@ -1,0 +1,157 @@
+Metadata-Version: 2.2
+Name: soc_monitor
+Version: 0.2.0
+Summary: A comprehensive system monitoring tool powered by FastAPI.
+Home-page: https://github.com/Shreyashs98/soc-monitor
+Author: Shreyas H S
+Author-email: s09082003@gmail.com
+Keywords: system monitoring fastapi uvicorn psutil speedtest-cli
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Monitoring
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: FastAPI
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: psutil
+Requires-Dist: speedtest-cli
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+Below is an example of a complete **README.md** file for your package:
+
+```markdown
+# Soc Monitor
+
+Soc Monitor is a comprehensive system monitoring tool built with FastAPI. It provides real-time metrics about your system's CPU usage, memory usage, disk usage, network speed, and more. Designed to be cross-platform, Soc Monitor works on Windows, Linux, and macOS.
+
+## Features
+
+- **Real-Time Metrics Streaming**
+  - **CPU:** Overall usage and per-core usage.
+  - **Memory:** System memory usage.
+  - **Disk:** Disk usage across mounted partitions.
+  - **Network:** Download/upload speeds and ping using speedtest-cli.
+- **Top Processes Monitoring**
+  - Top processes by CPU usage.
+  - Top processes by memory usage.
+  - Top processes by network connections.
+- **WiFi Details**
+  - Retrieve WiFi SSID and signal strength (with platform-specific logic for Windows, Linux, and macOS).
+- **Detailed Process Information**
+  - Platform-specific process details (using PowerShell on Windows, and Linux/macOS utilities).
+- **CLI Tool**
+  - Start the monitoring server with a single command.
+- **API Endpoints**
+  - Exposes endpoints for metrics streaming (`/metrics`) and process details (`/process`).
+- **Interactive API Documentation**
+  - Auto-generated Swagger UI and ReDoc docs when the server is running.
+
+## Installation
+
+Soc Monitor is available on PyPI. Install it using pip:
+
+```bash
+pip install soc_monitor
+```
+
+## Usage
+
+After installation, you can start the server using the command-line interface:
+
+```bash
+soc-monitor
+```
+
+By default, the server runs on `http://0.0.0.0:8123`. The following endpoints are available:
+
+- **Streaming Metrics:**  
+  `GET /metrics` – Streams real-time system metrics as Server-Sent Events (SSE).
+
+- **Process Details:**  
+  `GET /process` – Returns detailed process information in JSON format.
+
+## API Documentation
+
+When the server is running, you can access the interactive API documentation at:
+
+- **Swagger UI:** [http://localhost:8123/docs](http://localhost:8123/docs)
+- **ReDoc:** [http://localhost:8123/redoc](http://localhost:8123/redoc)
+
+## Configuration
+
+Soc Monitor automatically detects your operating system and adjusts its behavior accordingly. No additional configuration is required for basic usage.
+
+## Development
+
+To contribute to Soc Monitor or run it locally from the source, follow these steps:
+
+1. **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/Shreyashs98/soc-monitor.git
+    cd soc-monitor
+    ```
+
+2. **Create and Activate a Virtual Environment:**
+
+    ```bash
+    python -m venv venv
+    # On Linux/macOS:
+    source venv/bin/activate
+    # On Windows:
+    venv\Scripts\activate
+    ```
+
+3. **Install Development Dependencies:**
+
+    ```bash
+    pip install -e .
+    ```
+
+4. **Run the Development Server:**
+
+    ```bash
+    soc-monitor
+    ```
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:  
+   `git checkout -b feature/YourFeature`
+3. Commit your changes and push your branch.
+4. Open a pull request describing your changes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Author
+
+**Shreyas H S**  
+Email: [s09082003@gmail.com](mailto:s09082003@gmail.com)  
+GitHub: [Shreyashs98](https://github.com/Shreyashs98)
+
+## Acknowledgments
+
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [Uvicorn](https://www.uvicorn.org/)
+- [psutil](https://github.com/giampaolo/psutil)
+- [speedtest-cli](https://github.com/sivel/speedtest-cli)
+```
