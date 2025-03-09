@@ -1,0 +1,69 @@
+[project]
+name = "eseas"
+version = "0.1.12"
+description = """eseas is a Python package that serves as a wrapper for the jwsacruncher Java package.
+This tool allows users to process Demetra workspace XML files, create batch files, execute them,
+and collect the desired outputs into individual Excel files."""
+authors = [{ name = "Sermet Pekin", email = "sermet.pekin@gmail.com" }]
+license = { text = "EUPL-1.2" }
+readme = "README.md"
+keywords = ["seasonal adjustment", "data processing", "jwsacruncher", "Demetra"]
+requires-python = ">=3.9"
+dependencies = [
+    "evdspy>=1.1.41",
+]
+
+[project.urls]
+Repository = "https://github.com/SermetPekin/eseas-repo"
+Documentation = "https://eseas-repo.readthedocs.io/en/latest/home.html"
+
+[tool.setuptools.packages]
+find = { where = ["."] }
+
+[tool.setuptools]
+license-files = ["LICENSE"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "pytest>=8.3.4",
+    "ruff>=0.9.6",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "eseas/**/*.py",
+    "README.md",
+    "LICENSE",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["eseas"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.envs.default]
+dependencies = [
+    "pytest>=8.3.4",
+    "ruff>=0.9.6",
+    "sphinx>=7.4.7",
+    "sphinx-book-theme>=1.1.3",
+    "tox>=4.24.1",
+]
+
+[tool.hatch.envs.dev]
+dependencies = [
+    "pytest>=8.3.4",
+    "ruff>=0.9.6",
+    "sphinx>=7.4.7",
+    "sphinx-book-theme>=1.1.3",
+    "tox>=4.24.1",
+]
