@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+anyfox.egg-info/PKG-INFO
+anyfox.egg-info/SOURCES.txt
+anyfox.egg-info/dependency_links.txt
+anyfox.egg-info/top_level.txt
+anyfox/../anyfox.pth
