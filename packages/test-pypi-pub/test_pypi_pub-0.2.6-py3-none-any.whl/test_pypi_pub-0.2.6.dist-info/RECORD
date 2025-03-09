@@ -1,0 +1,5 @@
+test_pypi_pub/__init__.py,sha256=8TBlWFmE7o-0Hdj3V7UnjREaMYC8SyZYKG4JjJ8kPWs,59
+test_pypi_pub-0.2.6.dist-info/METADATA,sha256=8nb1AE1IdcJcJZ6k9fpd7wGTshWt53Wv-0fCqdjbPtQ,116
+test_pypi_pub-0.2.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+test_pypi_pub-0.2.6.dist-info/entry_points.txt,sha256=rNjpSs5MO8XshtSC0EUzVvkmb4SUDpCf349eUFcyRws,50
+test_pypi_pub-0.2.6.dist-info/RECORD,,

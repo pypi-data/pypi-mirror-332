@@ -1,0 +1,2 @@
+[console_scripts]
+testpytest = test_pypi_pub:main
