@@ -1,0 +1,12 @@
+tinyvecdb-0.2.2.data/purelib/tinyvec/__init__.py,sha256=XCKtrDfeWBXkhdAAidx6RzZDKkntAhKTMUbfNXf212w,343
+tinyvecdb-0.2.2.data/purelib/tinyvec/client.py,sha256=x0G7MrfDf97W_ZvVzzKl-SOP1muS0SA6MDpdzIbvDno,13553
+tinyvecdb-0.2.2.data/purelib/tinyvec/models.py,sha256=aTKba19oYohIxW86fasdU5ZihRtkgP8Z_7sNqPkWodU,556
+tinyvecdb-0.2.2.data/purelib/tinyvec/types.py,sha256=e6fppgKjuj93yPKWlVxM6R9VIQuA1Wn-MlRpCBMO-zs,123
+tinyvecdb-0.2.2.data/purelib/tinyvec/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinyvecdb-0.2.2.data/purelib/tinyvec/core/ctypes_bindings.py,sha256=fNMh5Ok0-ru9-AXJPYuQp-SqH-k6H16KSIJ9Hr8DRO8,3532
+tinyvecdb-0.2.2.data/purelib/tinyvec/core/tinyveclib.dll,sha256=p3FBsWlhQEzz-2mkExlpw4YtQWB0lG2pKIxQW-ruhAI,1467206
+tinyvecdb-0.2.2.data/purelib/tinyvec/core/utils.py,sha256=IqtIz8l_yc61zwXveNN245HVcvv5KOQ0U4EswRxwWKE,3211
+tinyvecdb-0.2.2.dist-info/METADATA,sha256=6-pI1lfkrLXgtL0PebySbzi2S0fOLfR1KFW5DqAvnmM,11479
+tinyvecdb-0.2.2.dist-info/WHEEL,sha256=dlSwLP_SaVpRiz5krjpfbY5nfB4YKbij8PFo8Ggnql0,98
+tinyvecdb-0.2.2.dist-info/top_level.txt,sha256=vE_L4uCL2Ai1_tAzKTc0jiupo0-TC8Jt9NWlnvNqISQ,8
+tinyvecdb-0.2.2.dist-info/RECORD,,
