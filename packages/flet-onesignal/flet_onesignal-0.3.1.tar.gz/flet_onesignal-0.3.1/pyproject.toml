@@ -1,0 +1,47 @@
+[project]
+name = "flet-onesignal"
+version = "0.3.1"
+description = "Flutter OneSignal package integration for Python Flet."
+readme = "README.md"
+authors = [
+    { name = "brunobrown", email = "brunobrown.86@gmail.com" }
+]
+
+requires-python = ">=3.9"
+dependencies = [
+    "flet>=0.26.0",
+]
+
+classifiers = [
+    "Topic :: Software Development :: Debuggers",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Natural Language :: Portuguese (Brazilian)",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.12"
+]
+
+[project.urls]
+Homepage = "https://github.com/brunobrown/flet-onesignal"
+#Documentation = ""
+Repository = "https://github.com/brunobrown/flet-onesignal"
+Issues = "https://github.com/brunobrown/flet-onesignal/issues"
+
+[tool.uv]
+dev-dependencies = [
+    "flet[all]>=0.26.0",
+]
+
+[tool.setuptools]
+#packages = ["flet_onesignal"]
+#package-dir = {"" = "src"}
+license-files = []
+
+[tool.setuptools.package-data]
+"flutter.flet_onesignal" = ["**/*"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
