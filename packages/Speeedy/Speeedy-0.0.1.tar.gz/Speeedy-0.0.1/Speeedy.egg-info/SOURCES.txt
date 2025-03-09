@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+Speeedy.egg-info/PKG-INFO
+Speeedy.egg-info/SOURCES.txt
+Speeedy.egg-info/dependency_links.txt
+Speeedy.egg-info/top_level.txt
+speeedy/__init__.py
+speeedy/speeedy.py

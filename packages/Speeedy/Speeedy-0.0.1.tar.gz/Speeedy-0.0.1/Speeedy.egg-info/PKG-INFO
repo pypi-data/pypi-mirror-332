@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Speeedy
+Version: 0.0.1
+Summary: Speeedy
+Home-page: https://github.com/vblacksquare/Speedy
+Download-URL: https://github.com/vblacksquare/Speedy/archive/refs/tags/release.tar.gz
+Author: Denis Minka
+Author-email: Denis Minka <minka.denis@gmail.com>
+License: MIT
+Keywords: util,speed,counter
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.txt
