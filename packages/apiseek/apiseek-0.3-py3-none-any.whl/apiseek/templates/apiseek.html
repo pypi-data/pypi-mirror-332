@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}APISEEK Dashboard{% endblock %}
+
+{% block header %}APISEEK Ver. 0.2{% endblock %}
+
+{% block content %}
+  {% for endpoint, data in stats.items() %}
+    <div class="api-box bg-gray-800 rounded-lg p-6 mb-8 shadow-lg border-l-4 border-blue-500 transition-transform transform hover:scale-105 animate-fadeInScale">
+      <!-- Endpoint title -->
+      <div class="api-title text-2xl font-semibold mb-4 text-blue-400">{{ endpoint }}</div>
+      
+      <!-- Overall basic stats -->
+      <div class="stats-summary grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+        <div class="stat text-lg">Total Requests: <span class="font-bold text-green-300">{{ data.requests }}</span></div>
+        <div class="stat text-lg">Successful: <span class="font-bold text-green-300">{{ data.successful }}</span></div>
+        <div class="stat text-lg">Failed: <span class="font-bold text-red-400">{{ data.failed }}</span></div>
+      </div>
+      
+      <!-- Display available HTTP methods (always visible) -->
+      {% if data.by_method %}
+        <div class="mb-4">
+          {% for method, mdata in data.by_method.items() %}
+            <div class="method-header text-xl font-medium border-b border-gray-700 py-1">{{ method }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      
+      <!-- Toggle button for more details -->
+      <button class="toggle-btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors mb-4" onclick="toggleDetails(this)">Show More Details</button>
+      
+      <!-- Hidden details section -->
+      <div class="details hidden bg-gray-700 rounded p-4">
+        <!-- Overall response time metrics -->
+        <div class="stats-summary grid grid-cols-1 sm:grid-cols-4 gap-4 mb-4">
+          <div class="stat text-sm">Avg Response: <span class="font-bold text-yellow-300">{{ data.response_stats.avg if data.response_stats.avg is not none else "N/A" }}</span> sec</div>
+          <div class="stat text-sm">Min Response: <span class="font-bold text-yellow-300">{{ data.response_stats.min if data.response_stats.min is not none else "N/A" }}</span> sec</div>
+          <div class="stat text-sm">Max Response: <span class="font-bold text-yellow-300">{{ data.response_stats.max if data.response_stats.max is not none else "N/A" }}</span> sec</div>
+          <div class="stat text-sm">Median Response: <span class="font-bold text-yellow-300">{{ data.response_stats.median if data.response_stats.median is not none else "N/A" }}</span> sec</div>
+        </div>
+        
+        <!-- Per-method detailed metrics -->
+        {% if data.by_method %}
+          {% for method, mdata in data.by_method.items() %}
+            {% if mdata.recent %}
+              <div class="stats-summary grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="stat text-sm">Most Recent Call:</div>
+                <div class="stat text-sm">Timestamp: <span class="font-bold text-yellow-300">{{ mdata.recent.timestamp }}</span></div>
+                <div class="stat text-sm">Response Time: <span class="font-bold text-yellow-300">{{ mdata.recent.response_time }}</span> sec</div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}
