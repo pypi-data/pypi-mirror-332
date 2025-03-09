@@ -1,0 +1,2 @@
+[sopel.plugins]
+itcrowd = sopel_itcrowd.plugin

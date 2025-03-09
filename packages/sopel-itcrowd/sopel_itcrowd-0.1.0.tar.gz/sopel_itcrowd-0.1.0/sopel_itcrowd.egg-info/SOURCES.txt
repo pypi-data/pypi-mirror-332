@@ -1,0 +1,13 @@
+COPYING
+MANIFEST.in
+NEWS
+README.md
+pyproject.toml
+sopel_itcrowd/__init__.py
+sopel_itcrowd/plugin.py
+sopel_itcrowd.egg-info/PKG-INFO
+sopel_itcrowd.egg-info/SOURCES.txt
+sopel_itcrowd.egg-info/dependency_links.txt
+sopel_itcrowd.egg-info/entry_points.txt
+sopel_itcrowd.egg-info/requires.txt
+sopel_itcrowd.egg-info/top_level.txt
