@@ -1,0 +1,63 @@
+[tool.poetry]
+name = 'fimex'
+version = '0.0.1'
+description = 'Fimex enhances Flask, providing a smoother, more efficient development experience for building maintainable web applications.'
+license = 'BSD 3-Clause'
+readme = 'README.md'
+homepage = 'https://github.com/mononobi/fimex'
+repository = 'https://github.com/mononobi/fimex'
+documentation = 'https://github.com/mononobi/fimex'
+scripts = {}
+urls = { "Issues" = 'https://github.com/mononobi/fimex/issues' }
+packages =[
+    { include = 'fimex', from = 'src' },
+]
+authors = [
+    'mono <5990186+mononobi@users.noreply.github.com>',
+]
+keywords = [
+    'package',
+    'python',
+    'flask',
+    'fimex',
+    'application-framework',
+    'rest-api',
+    'dependency-injection',
+    'ioc',
+]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Web Environment',
+    'Framework :: Flask',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+    'Topic :: Internet :: WWW/HTTP :: WSGI',
+    'Topic :: Internet :: WWW/HTTP :: WSGI :: Application',
+    'Topic :: Software Development :: Libraries :: Application Frameworks',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Typing :: Typed',
+]
+
+[tool.poetry.dependencies]
+python = '>=3.10'
+flask = '~3.1.0'
+balerin = '~0.1.4'
+
+[tool.poetry.group.lint.dependencies]
+ruff = '~0.9.10'
+
+[tool.poetry.group.test.dependencies]
+pytest = '~8.3.5'
+pytest-cov = '~6.0.0'
+
+[build-system]
+requires = ['poetry-core']
+build-backend = 'poetry.core.masonry.api'
