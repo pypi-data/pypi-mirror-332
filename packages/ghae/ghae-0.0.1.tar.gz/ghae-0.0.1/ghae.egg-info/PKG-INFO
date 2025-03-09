@@ -1,0 +1,76 @@
+Metadata-Version: 2.2
+Name: ghae
+Version: 0.0.1
+Summary: This library detects the responses to erroneous requests to the GitHub API. An exception signals these errors.
+Home-page: https://github.com/GRV96/ghae
+Author: Guyllaume Rousseau
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+## FRANÇAIS
+
+Cette bibliothèque détecte les réponses aux requêtes erronées à l'API de
+GitHub. Une exception signale ces erreurs.
+
+### Contenu
+
+L'exception `GitHubApiError` peut être levée quand une réponse de l'API de
+GitHub indique que la requête était erronée. Ses propriétés sont les suivantes.
+
+* `message`: le message d'erreur.
+* `doc_url`: l'URL de la documentation de l'erreur.
+* `status`: le code du statut de la réponse.
+* `req_url`: l'URL de la requête erronée.
+
+La fonction `detect_github_api_error` examine les données provenant de l'API de
+GitHub et lève `GitHubApiError` si elles résultent d'une requête erronée. Les
+données doivent être un objet produit par la lecture du contenu de la réponse,
+qui est en JSON.
+
+L'utilisateur ne devrait pas lever `GitHubApiError` lui-même et plutôt se fier
+à `detect_github_api_error`.
+
+Pour plus d'informations, consultez la documentation et la démo dans le dépôt
+de code source.
+
+## ENGLISH
+
+This library detects the responses to erroneous requests to the GitHub API. An
+exception signals these errors.
+
+### Content
+
+Exception `GitHubApiError` can be raised when a response from the GitHub API
+indicates that the request was erroneous. Its properties are the following.
+
+* `message`: the error message.
+* `doc_url`: the URL to the error's documentation.
+* `status`: the response's status code.
+* `req_url`: the erroneous request's URL.
+
+Function `detect_github_api_error` examines data from the GitHub API and raises
+a `GitHubApiError` if it is the result of an erroneous request. The data must
+be an object returned by the parsing of the response's content, which is in
+JSON.
+
+The user should not raise a `GitHubApiError` themself and instead rely on
+`detect_github_api_error`.
+
+For more information, consult the documentation and the demo in the source code
+repository.
