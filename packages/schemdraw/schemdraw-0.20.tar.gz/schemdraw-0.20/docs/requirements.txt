@@ -1,0 +1,6 @@
+pyparsing
+matplotlib
+ipykernel
+jupyter_sphinx
+cairosvg
+sphinxcontrib-svg2pdfconverter[cairosvg]
