@@ -1,0 +1,2 @@
+include streamlit_extent/lib/*  # Пример для включения папки lib внутри пакета
+recursive-include streamlit_extent/lib *.*  # Рекурсивное включение
