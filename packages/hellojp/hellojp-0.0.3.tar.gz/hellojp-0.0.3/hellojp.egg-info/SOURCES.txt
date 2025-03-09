@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+hellojp/__init__.py
+hellojp/main.py
+hellojp.egg-info/PKG-INFO
+hellojp.egg-info/SOURCES.txt
+hellojp.egg-info/dependency_links.txt
+hellojp.egg-info/entry_points.txt
+hellojp.egg-info/requires.txt
+hellojp.egg-info/top_level.txt
