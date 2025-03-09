@@ -1,0 +1,10 @@
+gamma/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gamma/datasets.py,sha256=7JmZUw5sg6V5K3QIp52mjlAJyJnNuVVpLVRTcF_5KK8,851
+gamma/modules.py,sha256=6e46tRllVqUe6YiOvNlrrgt-MedHqV5YQDm0gvOSIq8,4553
+gamma/pipeline.py,sha256=yn6UA3PhmJliwWyufVp0ibGjkMLXOerC6Ci0_Y2KN1o,185
+gamma/plot.py,sha256=qVAER1jwPkTwzM9yJ4lSOarr4_pnrsMERUVP1qu2dE4,1102
+gamma/trainer.py,sha256=BcNwrbfi943KuYxz6fpGJfiEXnK75BcExoPNr-mly54,3291
+torch_gamma-0.0.3.dist-info/METADATA,sha256=GitUulJT4jJEqigEnjqhP4I0YTaLAOCYcPxTfrvxZ9U,515
+torch_gamma-0.0.3.dist-info/WHEEL,sha256=5U-5D1CS1IlCq2UZGreCPlzbpvhviDLR_iCQyI6CTvY,91
+torch_gamma-0.0.3.dist-info/top_level.txt,sha256=rppjBqIFQXr93RQxbMHQ1eBKmPG-EIZdzmQ5Je4HDOI,6
+torch_gamma-0.0.3.dist-info/RECORD,,
