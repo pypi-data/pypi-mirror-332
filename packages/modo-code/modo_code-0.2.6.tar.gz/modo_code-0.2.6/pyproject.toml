@@ -1,0 +1,34 @@
+[project]
+name = "modo-code"
+version = "0.2.6"
+description = "Modo code assistant client"
+authors = [
+    {name = "mohamad171",email = "mohamadmohamadi249@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "typer (==0.15.2)",
+    "colorama (==0.4.4)",
+    "shellingham (==1.4.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "tree-sitter-languages (==1.10.2)",
+    "llama-index (==0.12.19)",
+    "json5 (==0.10.0)",
+    "llama-index-packs-code-hierarchy (==0.4.1)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+modo = "modo_code.main:app"
+
+
+[tool.poetry]
+packages = [
+    { include = "modo_code" }
+]
