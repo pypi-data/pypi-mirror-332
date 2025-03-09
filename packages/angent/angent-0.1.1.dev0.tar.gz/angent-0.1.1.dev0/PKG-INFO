@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: angent
+Version: 0.1.1.dev0
+Summary: Educational Multi-Agent Scaffold
+Author-email: Gus <contact@memobase.io>
+Requires-Python: >=3.11
+Requires-Dist: drive-flow>=0.0.1
+Requires-Dist: openai>=1.65.4
