@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gitbinding/Git.py
+gitbinding/__init__.py
+gitbinding/py.typed
+gitbinding.egg-info/PKG-INFO
+gitbinding.egg-info/SOURCES.txt
+gitbinding.egg-info/dependency_links.txt
+gitbinding.egg-info/requires.txt
+gitbinding.egg-info/top_level.txt
