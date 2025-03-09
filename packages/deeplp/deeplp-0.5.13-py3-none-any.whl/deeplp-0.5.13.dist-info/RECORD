@@ -1,0 +1,12 @@
+deeplp/__init__.py,sha256=77qta9-O-JyNnipjSlrdSrIotJSSe0dAkEVbeIQqqWg,100
+deeplp/main.py,sha256=BE7OByOfIHkMX12eJQ9TiV4k2ioHS_fLZCRO1dB1gvM,3731
+deeplp/models.py,sha256=hspCPiUAjKjdro4qNakSVtCwtsGxWh4BHKt9H3ZDU1g,15896
+deeplp/ode.py,sha256=SUpG1JMFcUstUWkd86o8ouZxoxGbQ6xdfPMMgNX2fhs,6220
+deeplp/problems.py,sha256=Gwcr8bc-kuAddKtkLF-DrNwuNB0fygGK7k11pdb9lsY,3613
+deeplp/solvers.py,sha256=Iy2UNNwd20UGBTzpySWm2h7z7ak5Nr8KBRU5lKK0Sgg,1342
+deeplp/train.py,sha256=rWTThWeySU_WhdcaSAFNdquimhHQLPyGkCW_1mnUhe4,5450
+deeplp/utils.py,sha256=8ddEVqrbe2wTFHfOp2347Usr3kBWVo8ptS3q8ymp_7U,3942
+deeplp-0.5.13.dist-info/entry_points.txt,sha256=An_6Co2pq2Nii06t8QfVZdaCgEyQqHggIwBb661Yu_o,45
+deeplp-0.5.13.dist-info/METADATA,sha256=LNP5d-_KLn9cdduxukcAq_H7keQiLsjVRghRpjiRr6Q,3719
+deeplp-0.5.13.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+deeplp-0.5.13.dist-info/RECORD,,
