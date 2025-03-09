@@ -1,0 +1,17 @@
+.idea
+__pycache__
+*.png
+.cache
+dist
+*.egg-info
+.repo
+.pytest_cache
+*.pyc
+venv
+.venv
+test_result.xml
+.python-version
+test_result_async.xml
+.venv/
+build/
+*.orig
