@@ -1,0 +1,28 @@
+types:
+  - pack.mcmeta
+  - tick.json / tick.mcfunction
+  - load.json / load.mcfunction
+  - namespace folders
+  - minecraft folders
+
+folders:
+  - advancement
+  - banner_pattern
+  - chat_type
+  - damage_type
+  - dimension_type
+  - enchantment
+  - enchantment_provider
+  - function
+  - instrument
+  - jukebox_song
+  - loot_table
+  - painting_variant
+  - recipe
+  - structure
+  - tags
+  - trial_spawner
+  - trim_material
+  - trim_pattern
+  - wolf_variant
+  - worldgen
