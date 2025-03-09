@@ -1,0 +1,2 @@
+[console_scripts]
+autiobooks = autiobooks.autiobooks:main

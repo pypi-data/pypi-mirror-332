@@ -1,0 +1,12 @@
+autiobooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autiobooks/__main__.py,sha256=mv7XMSwS5NDAuZHzHBj1YuB1u88qSa39We_Q3L_VRrI,68
+autiobooks/autiobooks.py,sha256=HOc-7mxtjR0HO7i_S-ZaF3KY_IC1GCZoJ0UZ-TYM9Gg,13770
+autiobooks/engine.py,sha256=o5Pxr9O7ngOWmDw3zOtoWDak0MSMvI52dfvlYpzBs4E,8027
+autiobooks/post_install.py,sha256=_NKXO3W3qjVd-eVbulXjZxVjE-J7uUBgBykCjSIRlUo,637
+autiobooks/voices_lang.py,sha256=FQ_U-QxAEdFwkg3oVV1uejOaqVXj_lTmc4j4UxbCPwc,2233
+autiobooks-1.1.0.dist-info/LICENSE,sha256=Z81Nx1P9UwJ5r8CyOqgYvsd2YR4IxjoZBAvW_jiZ_Dw,2181
+autiobooks-1.1.0.dist-info/METADATA,sha256=eP-lcV3smHy0x6GUHbpCNj8LiFH4Bgaz-jIABtYmido,3262
+autiobooks-1.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+autiobooks-1.1.0.dist-info/entry_points.txt,sha256=_b-iIauznP2Y5u1T3XcXgHGbJqbqu-NGxtnZAVkO0Jg,58
+autiobooks-1.1.0.dist-info/top_level.txt,sha256=UMDtP2P7qQrVE1ho8dRIG11ufxZF9ussNcTd1Ifh-Dk,11
+autiobooks-1.1.0.dist-info/RECORD,,
