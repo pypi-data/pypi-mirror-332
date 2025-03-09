@@ -1,0 +1,15 @@
+filenav/__init__.py,sha256=W8urW5BMaynJzkdLCc8-rSqjHluHfgePejddAj12ZBU,337
+filenav/entrypoint.py,sha256=ZfJ8F0tSs6aTldVr6U9zKFdSnmvn4zu-XbqW3YMD0Ck,62
+filenav/main.py,sha256=3aJGQXDnS2Bi3hCJ9qezdtvldTu9U1lKfAjUak_aABc,536
+filenav/api/__init__.py,sha256=_lbgRVMp4l7AmlYQwE1zDkOIWYtMUiK3MR8WaqqXWVg,91
+filenav/api/file.py,sha256=2urPGUQJYFOBtm6F8WV5lS-9AzSekLIOOMwoawI9QHM,193
+filenav/api/item.py,sha256=2paYPRQg-Ewy9OpuxhCkgNcANik6J6jTgJXl_gvnHcg,1405
+filenav/api/thumbnail.py,sha256=LvOu0wzylJsxurVvvHbAGQApf-VcrJzjGVEvYBkUSks,1065
+filenav/frontend-dist/index.html,sha256=o6oYHtmO2tg1kBX_oGJ0uo57WMV5K3op0hBrOC7d0oU,601
+filenav/frontend-dist/assets/favicon-mtvwWgEY.ico,sha256=DnJqOB_Vx-5-V5YPnqX_ajVAcQVd0HG_EwBSrVqJnj0,15086
+filenav/frontend-dist/assets/index-Bl5x9hwi.js,sha256=9kiaOZSmZlwqfMc1W1NPVDJ5KpLJeUzBgn7cqkvzZwQ,43516
+filenav/frontend-dist/assets/index-C76hOdUF.css,sha256=re8jajjHSAfpAU0cmwLFgS2U3lFe2i6f95EPyWIUXPw,21208
+filenav-0.0.4.dist-info/METADATA,sha256=9m4nbK5VGeeZKdBPR73lYJfMC6lRUqe-r9W_10b39dk,181
+filenav-0.0.4.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+filenav-0.0.4.dist-info/entry_points.txt,sha256=BXms6lheMu-oQ_F8NCniwWX_X_VD5H9T-qzAzK3ZvtU,40
+filenav-0.0.4.dist-info/RECORD,,
