@@ -1,0 +1,11 @@
+PL:
+  fullname: Poland
+  region1: EUR
+  region2: CEE
+  latitude: 50.5039
+  longitude: 4.4699
+  zip_official: 99-999
+  zip_regex_official: ^\d{2}-\d{3}$
+  zip_model: 99999
+  zip_regex_model: ^\d{5}$
+

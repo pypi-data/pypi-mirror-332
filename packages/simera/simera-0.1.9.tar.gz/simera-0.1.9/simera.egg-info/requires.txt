@@ -1,0 +1,4 @@
+pandas>=2.2.3
+openpyxl
+python-calamine>=0.3.1
+pyyaml>=6.0.2
