@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+cppvalidate/__init__.py
+cppvalidate/cppvalidate.py
+cppvalidate.egg-info/PKG-INFO
+cppvalidate.egg-info/SOURCES.txt
+cppvalidate.egg-info/dependency_links.txt
+cppvalidate.egg-info/top_level.txt
