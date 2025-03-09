@@ -1,0 +1,50 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+authors = [{ name = "Cariad Eccleston", email = "cariad@cariad.earth" }]
+dependencies = ["lstr (>=1.0,<2.0)"]
+description = "Extract plain text and front matter from Markdown documents"
+dynamic = ["classifiers", "version"]
+keywords = ["markdown", "text"]
+license = { text = "MIT" }
+name = "boringmd"
+readme = "README.md"
+requires-python = "~=3.9"
+
+[project.scripts]
+boringmd = "boringmd.__main__:cli_entry"
+
+[project.urls]
+homepage = "https://github.com/cariad/boringmd"
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry]
+classifiers = [
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Markup :: Markdown",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+version = "1.2.0-alpha.0"
+
+[tool.poetry.group.dev.dependencies]
+black = ">=25.0,<26.0"
+flake8 = ">=7.0,<8.0"
+isort = ">=6.0,<7.0"
+mypy = ">=1.0,<2.0"
+pytest = ">=8.0,<9.0"
+pytest-cov = ">=6.0,<7.0"
+yamllint = ">=1.0,<2.0"
+
+[tool.pytest.ini_options]
+addopts = "--cov=boringmd --cov-branch --cov-report=html --cov-report=term-missing:skip-covered --cov-report=xml --no-cov-on-fail"
+log_cli = 1
+log_cli_level = "DEBUG"
+testpaths = "tests"
