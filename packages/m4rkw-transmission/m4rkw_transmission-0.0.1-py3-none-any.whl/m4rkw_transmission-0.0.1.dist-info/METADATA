@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: m4rkw-transmission
+Version: 0.0.1
+Summary: db
+Author-email: Your Name <your@email.com>
+Description-Content-Type: text/markdown
+Requires-Dist: requests
