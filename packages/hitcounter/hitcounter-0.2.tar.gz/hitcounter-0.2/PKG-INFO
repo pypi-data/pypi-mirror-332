@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hitcounter
+Version: 0.2
+Summary: A simple AWS CDK construct for counting hits
+Author: MigHerm
+Author-email: miguelangel.hermar410@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: aws-cdk-lib
+Requires-Dist: constructs
+
+# HitCounter
+
+A simple AWS CDK construct for counting hits.
+
+## Installation
+
+```bash
+pip install hitcounter

@@ -1,0 +1,9 @@
+README.md
+setup.py
+hitcounter/__init__.py
+hitcounter/hitcounter.py
+hitcounter.egg-info/PKG-INFO
+hitcounter.egg-info/SOURCES.txt
+hitcounter.egg-info/dependency_links.txt
+hitcounter.egg-info/requires.txt
+hitcounter.egg-info/top_level.txt
