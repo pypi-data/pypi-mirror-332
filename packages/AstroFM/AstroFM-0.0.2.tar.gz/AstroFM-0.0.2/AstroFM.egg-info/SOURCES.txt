@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+AstroFM.egg-info/PKG-INFO
+AstroFM.egg-info/SOURCES.txt
+AstroFM.egg-info/dependency_links.txt
+AstroFM.egg-info/requires.txt
+AstroFM.egg-info/top_level.txt
+astrofm/__init__.py
+astrofm/main.py
