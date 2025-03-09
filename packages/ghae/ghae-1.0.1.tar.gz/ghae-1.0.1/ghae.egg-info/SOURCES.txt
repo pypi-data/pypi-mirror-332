@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ghae/__init__.py
+ghae/api_error_detection.py
+ghae/github_api_error.py
+ghae.egg-info/PKG-INFO
+ghae.egg-info/SOURCES.txt
+ghae.egg-info/dependency_links.txt
+ghae.egg-info/top_level.txt
+tests/test_error_detection.py
