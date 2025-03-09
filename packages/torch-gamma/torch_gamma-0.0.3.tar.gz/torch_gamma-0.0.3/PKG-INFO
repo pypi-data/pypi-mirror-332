@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: torch-gamma
+Version: 0.0.3
+Summary: PyTorch γ is a high level library inspired by Ruby
+Home-page: https://github.com/KevinZonda/pytorch-gamma
+Author: KevinZonda
+Author-email: realkevin@tutanota.com
+Keywords: pytorch,machine learning
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
