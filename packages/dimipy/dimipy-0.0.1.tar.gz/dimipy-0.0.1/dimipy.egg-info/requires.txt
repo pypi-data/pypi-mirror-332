@@ -1,0 +1,5 @@
+termcolor
+
+[dev]
+termcolor
+ipython
