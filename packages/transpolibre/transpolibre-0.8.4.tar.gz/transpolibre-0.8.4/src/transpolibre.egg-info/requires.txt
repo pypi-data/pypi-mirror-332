@@ -1,0 +1,16 @@
+libretranslatepy
+polib
+pycountry
+python-dotenv
+requests
+
+[dev]
+black
+sphinx
+sphinx-autobuild
+sphinx-autodoc-typehints
+sphinx-intl
+sphinx-notfound-page
+sphinx-rtd-theme
+sphinxcontrib-markdown
+twine

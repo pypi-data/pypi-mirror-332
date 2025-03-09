@@ -1,0 +1,138 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 12:55-0700\n"
+"PO-Revision-Date: 2025-03-08 12:55-0700\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/transpolibre/transpolibre.py:22
+msgid "Translate PO files with LibreTranslate"
+msgstr "Traducir archivos PO con LibreTranslate"
+
+#: src/transpolibre/transpolibre.py:27
+msgid "LibreTranslate API key"
+msgstr "LibreTranslate Clave de API"
+
+#: src/transpolibre/transpolibre.py:34
+msgid "Debugging"
+msgstr "Debugging"
+
+#: src/transpolibre/transpolibre.py:41
+msgid "PO file to translate"
+msgstr "Archivo PO para traducir"
+
+#: src/transpolibre/transpolibre.py:48
+msgid "List available languages"
+msgstr "Lista de idiomas disponibles"
+
+#: src/transpolibre/transpolibre.py:55
+msgid "Overwrite existing translations"
+msgstr "Sobreescribir las traducciones existentes"
+
+#: src/transpolibre/transpolibre.py:62
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "Fuente Idioma ISO 639 código (Default en)"
+
+#: src/transpolibre/transpolibre.py:70
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "Target Language ISO 639 code (Default es)"
+
+#: src/transpolibre/transpolibre.py:78
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (Default http://127.0.0.1:8000)"
+
+#: src/transpolibre/transpolibre.py:86
+msgid "Increase output verbosity"
+msgstr "Aumentar la verbosidad de salida"
+
+#: src/transpolibre/transpolibre.py:94
+msgid "Show version"
+msgstr "Mostrar versión"
+
+#: src/transpolibre/transpolibre.py:112
+msgid "Error: unknown language code: "
+msgstr "Error: código de idioma desconocido:"
+
+#: src/transpolibre/transpolibre.py:121
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "El archivo PO especificado no existe o no es un archivo:"
+
+#: src/transpolibre/transpolibre.py:124
+msgid "Read PO file: "
+msgstr "Leer archivo PO:"
+
+#: src/transpolibre/transpolibre.py:136
+msgid "Original:    "
+msgstr "Original: INGLÉS"
+
+#: src/transpolibre/transpolibre.py:137 src/transpolibre/transpolibre.py:188
+msgid "Translation: "
+msgstr "Traducción:"
+
+#: src/transpolibre/transpolibre.py:164
+msgid "Translating link text: "
+msgstr "Traductor texto del enlace:"
+
+#: src/transpolibre/transpolibre.py:172
+msgid "URL detected"
+msgstr "URL detectada"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "Email detected"
+msgstr "Correo electrónico detectado"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "No URL or Email detected"
+msgstr "No hay URL o email detectado"
+
+#: src/transpolibre/transpolibre.py:183
+msgid "LibreTranslate URL: "
+msgstr "LibreTranslate URL:"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "API Key: "
+msgstr "API Key:"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "None"
+msgstr "Ninguno"
+
+#: src/transpolibre/transpolibre.py:185
+msgid "Translating: "
+msgstr "Traductor:"
+
+#: src/transpolibre/transpolibre.py:186
+msgid "Source ISO 639: "
+msgstr "Fuente ISO 639:"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "Target ISO 639: "
+msgstr "Meta ISO 639:"
+
+#: src/transpolibre/transpolibre.py:201
+msgid "Language: "
+msgstr "Idioma:"
+
+#: src/transpolibre/transpolibre.py:202
+msgid "Code: "
+msgstr "Código:"
+
+#: src/transpolibre/transpolibre.py:203
+msgid "Targets: "
+msgstr "Metas:"
+
+#: src/transpolibre/transpolibre.py:239
+msgid "Error: file is required."
+msgstr "Error: se requiere un archivo."

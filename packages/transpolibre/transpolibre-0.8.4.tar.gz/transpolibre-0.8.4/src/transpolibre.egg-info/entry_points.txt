@@ -1,0 +1,2 @@
+[console_scripts]
+transpolibre = transpolibre.transpolibre:main
