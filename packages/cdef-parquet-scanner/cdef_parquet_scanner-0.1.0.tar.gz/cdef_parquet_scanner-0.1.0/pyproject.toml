@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cdef-parquet-scanner"
+version = "0.1.0"
+authors = [
+    {name = "Tobias Kragholm", email = "tkragholm@gmail.com"},
+]
+description = "Tool for scanning and analyzing Parquet schema structures"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pyarrow>=10.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tkragholm/cdef-parquet-scanner"
+"Bug Tracker" = "https://github.com/tkragholm/cdef-parquet-scanner/issues"
+
+[project.scripts]
+cdef-parquet-scanner = "cdef_parquet_scanner.schema:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cdef_parquet_scanner"]
