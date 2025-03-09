@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+databooster.egg-info/PKG-INFO
+databooster.egg-info/SOURCES.txt
+databooster.egg-info/dependency_links.txt
+databooster.egg-info/requires.txt
+databooster.egg-info/top_level.txt
