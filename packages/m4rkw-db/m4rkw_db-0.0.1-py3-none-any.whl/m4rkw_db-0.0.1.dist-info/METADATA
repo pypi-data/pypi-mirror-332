@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: m4rkw-db
+Version: 0.0.1
+Summary: db
+Home-page: https://www.python.org/sigs/distutils-sig/
+Author: Mark
+Author-email: Your Name <your@email.com>
+Description-Content-Type: text/markdown
+Requires-Dist: mysqlclient
+Dynamic: author
+Dynamic: home-page
