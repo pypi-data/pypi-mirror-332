@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+beancounttriodos/__init__.py
+beancounttriodos/importer.py
+beancounttriodos.egg-info/PKG-INFO
+beancounttriodos.egg-info/SOURCES.txt
+beancounttriodos.egg-info/dependency_links.txt
+beancounttriodos.egg-info/requires.txt
+beancounttriodos.egg-info/top_level.txt
