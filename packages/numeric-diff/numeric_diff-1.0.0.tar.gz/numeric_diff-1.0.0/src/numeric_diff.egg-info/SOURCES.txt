@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/numeric_diff/__init__.py
+src/numeric_diff/first_second_numeric_diff.py
+src/numeric_diff.egg-info/PKG-INFO
+src/numeric_diff.egg-info/SOURCES.txt
+src/numeric_diff.egg-info/dependency_links.txt
+src/numeric_diff.egg-info/top_level.txt

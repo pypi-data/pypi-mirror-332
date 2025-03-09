@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numeric_diff"
+version = "1.0.0"
+authors = [	
+	{name = "Juan David Amaya Carreño", email = "jd.amaya20@uniandes.edu.co"}
+	]
+description = "This Python package containts functions that do numeric differentiation."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+
+	"Programming Language :: Python :: 3",
+	"Operating System :: Microsoft :: Windows",
+	"License :: OSI Approved :: MIT License"
+
+]
