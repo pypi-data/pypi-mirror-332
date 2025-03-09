@@ -1,0 +1,18 @@
+set positional-arguments
+
+default:
+  just --list
+
+test:
+  nox
+
+light-test *args:
+  cd {{ justfile_directory()/"tests" }} && uv run pytest -s "$@"
+
+light-test-on-changes *args:
+  cd {{ justfile_directory() }} && watchexec -e py just light-test -- "$@"
+
+publish:
+  rm dist -rf
+  uv build
+  uv publish
