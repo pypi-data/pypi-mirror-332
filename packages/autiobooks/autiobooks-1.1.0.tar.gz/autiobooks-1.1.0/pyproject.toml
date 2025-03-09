@@ -1,0 +1,33 @@
+[project]
+name = "autiobooks"
+version = "1.1.0"
+description = "Automatically convert epubs to audiobooks"
+
+readme = "README.md"
+requires-python = ">=3.10,<3.13" # librosa/llvmlite have no support for python > 3.12
+dependencies = [
+    "pillow (>=10.0.0)",
+    "tk (>=0.1.0)",
+    "kokoro (>=0.7.9,<0.8.0)",
+    "ebooklib (>=0.18,<0.19)",
+    "soundfile (>=0.13.1,<0.14.0)",
+    "pygame (>=2.0.1,<3.0.0)",
+    "bs4 (>=0.0.2,<0.0.3)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://github.com/plusuncold/autiobooks"
+Documentation = "https://github.com/plusuncold/autiobooks"
+Repository = "https://github.com/plusuncold/autiobooks"
+Issues = "https://github.com/plusuncold/autiobooks/issues"
+
+[project.scripts]
+autiobooks = "autiobooks.autiobooks:main"
+
+[tool.poetry.scripts]
+autiobooks-post-install = "autiobooks.post_install:install"
