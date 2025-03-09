@@ -1,0 +1,10 @@
+gmimtools/__init__.py,sha256=xhlHVrt2ZR1vyno5zWoFqcdiVZMgiUc1R9ihxIfSChs,281
+gmimtools/gmim.c,sha256=QCpzWlzIq8Y_-uIGs-yyn5PqqW7Pg2c4LgFLpEuRJME,1272386
+gmimtools/gmim.cp312-win_amd64.pyd,sha256=JWOswJDf6HtF3TbU2dK2-2H61AL5_7M_KCQQpr4cWyQ,194560
+gmimtools/gmim.pyx,sha256=dLSGKabzuv9wYA4iwjuKMyqZT3jlu70Uz9Fxyo55Ak8,10558
+gmimtools/gmimtools.py,sha256=M4G2O0U4Z5i6S5RYkHv9QT2ne2CrKYJXMPtSDfgX61s,1239
+gmimtools-0.2.0.dist-info/LICENSE,sha256=O0si6I1miWXWkvwmKVYdjIPh-LxIvf8NkJ3vBdotOuA,1122
+gmimtools-0.2.0.dist-info/METADATA,sha256=IZgbNGHyiVqhZ2QtM1sAqmy6CS6LLd3KcR-Q65rZhMo,3201
+gmimtools-0.2.0.dist-info/WHEEL,sha256=pB9yfXB--TOqt3NavBY4eny3wCbU6BScoyET6D46Gwg,101
+gmimtools-0.2.0.dist-info/top_level.txt,sha256=5BNe8-HFSMdji7mZz0MyQGxAsE874rIMDYyMisK87xA,10
+gmimtools-0.2.0.dist-info/RECORD,,
