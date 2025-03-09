@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: nerimity
+Version: 1.2.1
+License-File: LICENSE.TXT
+Requires-Dist: aiohttp>=3.11.13
+Requires-Dist: websockets>=15.0.1
+Requires-Dist: requests>=2.32.3
+Dynamic: requires-dist
