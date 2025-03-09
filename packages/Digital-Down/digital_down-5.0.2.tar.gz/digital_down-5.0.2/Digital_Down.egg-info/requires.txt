@@ -1,0 +1,8 @@
+numpy
+scipy
+soundfile
+opencv-python
+moviepy
+pydub
+pygame
+mido
