@@ -1,0 +1,8 @@
+config
+dist
+docs
+node_modules
+public
+pypi
+tmp
+tokeo

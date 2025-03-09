@@ -1,0 +1,11 @@
+### The {{ app_name }} Development Configuration Secrets
+### Secrets will be merged into Application Configuration
+### This files should not be checked into source repos
+---
+
+#####################################
+
+dramatiq:
+
+  ### connection url to rabbitmq server
+  rabbitmq_url: amqp://test:test@localhost:5672/test
