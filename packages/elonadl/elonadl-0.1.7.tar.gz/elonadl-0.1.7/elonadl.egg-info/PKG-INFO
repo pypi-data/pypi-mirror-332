@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: elonadl
+Version: 0.1.7
+Summary: ElonaPlusCGXDownload
+Author: vichmartins
+Requires-Python: >=3.10
+Requires-Dist: pywin32
+Requires-Dist: requests
+Requires-Dist: winshell
+Dynamic: author
+Dynamic: description
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Quick script to download and setup Elona+CGX
