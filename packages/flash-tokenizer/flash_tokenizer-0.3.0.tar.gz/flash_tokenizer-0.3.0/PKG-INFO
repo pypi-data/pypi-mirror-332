@@ -1,0 +1,45 @@
+Metadata-Version: 2.2
+Name: flash-tokenizer
+Version: 0.3.0
+Summary: FlashBertTokenizer implementation with C++ backend
+Author-Email: spring <springnode@gmail.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Homepage, https://github.com/springkim/flash-tokenizer
+Project-URL: Issues, https://github.com/springkim/flash-tokenizer/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# flash-tokenizer
+
+Flash BERT tokenizer implementation with C++ backend.
+
+## Installation
+
+```bash
+pip install flash-tokenizer
+```
+
+```bash
+git clone https://github.com/springkim/flash-tokenizer.git
+cd flash-tokenizer
+pip install .
+```
+
+## Usage
+
+```python
+from flash_tokenizer import FlashBertTokenizer
+tokenizer = FlashBertTokenizer("path/to/vocab.txt", do_lower_case=True)
+# Tokenize text
+ids = tokenizer("Hello, world!")
+print(ids)
+```
