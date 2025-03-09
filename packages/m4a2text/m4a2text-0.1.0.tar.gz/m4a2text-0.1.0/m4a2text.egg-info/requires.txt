@@ -1,0 +1,2 @@
+ffmpeg-python
+azure-cognitiveservices-speech
