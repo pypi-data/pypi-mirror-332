@@ -1,0 +1,12 @@
+[project]
+name = "angent"
+version = "0.1.0.dev1"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Gus", email = "jianbaiye@outlook.com" }]
+requires-python = ">=3.11"
+dependencies = ["drive-flow>=0.0.1", "openai>=1.65.4"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
