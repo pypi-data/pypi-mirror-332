@@ -1,0 +1,8 @@
+trame-client
+
+[dev]
+pre-commit
+ruff
+
+[test]
+pytest
