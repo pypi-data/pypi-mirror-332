@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bindings/python/tree_sitter_ocamllex/__init__.py
+bindings/python/tree_sitter_ocamllex/__init__.pyi
+bindings/python/tree_sitter_ocamllex/binding.c
+bindings/python/tree_sitter_ocamllex/py.typed
+bindings/python/tree_sitter_ocamllex.egg-info/PKG-INFO
+bindings/python/tree_sitter_ocamllex.egg-info/SOURCES.txt
+bindings/python/tree_sitter_ocamllex.egg-info/dependency_links.txt
+bindings/python/tree_sitter_ocamllex.egg-info/not-zip-safe
+bindings/python/tree_sitter_ocamllex.egg-info/requires.txt
+bindings/python/tree_sitter_ocamllex.egg-info/top_level.txt
+src/parser.c
+src/scanner.c
