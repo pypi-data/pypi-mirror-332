@@ -1,0 +1,212 @@
+# LM Studio Wrapper
+
+[![PyPI version](https://badge.fury.io/py/lmstudio-wrapper.svg)](https://badge.fury.io/py/lmstudio-wrapper)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A Python client that provides a seamless interface to LM Studio's OpenAI-compatible API, enabling easy integration of local large language models into your applications.
+
+## 🌟 Features
+
+- **🔄 Streaming Support**: Real-time token-by-token generation for responsive UIs
+- **💬 Chat Completions**: OpenAI-compatible chat interface with support for multiple message roles
+- **📝 Text Generation**: Traditional completion API for non-chat applications
+- **📹 Video Analysis**: Specialized methods for video content summarization and note generation
+- **🔢 Embeddings**: Vector embedding generation for semantic search and text analysis
+- **🔍 Model Discovery**: Easily list and select from available local models
+- **⚡ Performance**: Optimized for local inference with minimal latency
+- **🛠️ Customization**: Fine-grained control over generation parameters
+
+## 📦 Installation
+
+### From PyPI
+```bash
+pip install lmstudio-wrapper
+```
+
+### From source
+```bash
+git clone https://github.com/harshitkumar9030/lmstudio-client
+cd lmstudio-client
+pip install -e .
+```
+
+## 🚀 Quick Start
+
+```python
+from lmstudio_wrapper import LMStudioClient
+
+# Initialize client
+client = LMStudioClient(base_url="http://localhost:1234/v1")
+
+# Simple chat completion
+response = client.chat_completion([
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "What are the benefits of local LLMs?"}
+])
+print(response)
+```
+
+## 📚 Usage Examples
+
+### Chat Completions
+
+```python
+from lmstudio_wrapper import LMStudioClient
+
+client = LMStudioClient()
+
+# Standard completion
+messages = [
+    {"role": "system", "content": "You are a technical expert."},
+    {"role": "user", "content": "Explain how transformers work in NLP"}
+]
+response = client.chat_completion(messages, temperature=0.7)
+print(response)
+
+# With streaming
+def print_token(token):
+    print(token, end="", flush=True)
+
+# Stream tokens as they're generated
+for _ in client.chat_completion(messages, stream=True, callback=print_token):
+    pass
+```
+
+### Text Generation
+
+```python
+# Direct text completion (non-chat)
+prompt = "Write a poem about artificial intelligence:"
+response = client.generate_text(prompt, max_tokens=500)
+print(response)
+```
+
+### Video Analysis
+
+```python
+# Prepare video information
+video_info = {
+    'filename': 'tech_lecture.mp4',
+    'total_duration': 1200.0,
+    'scenes_detected': 5,
+    'scenes': [
+        {'scene_index': 0, 'start_time': 0.0, 'end_time': 240.0, 'text_content': 'Introduction to machine learning concepts'},
+        {'scene_index': 1, 'start_time': 240.0, 'end_time': 480.0, 'text_content': 'Neural network architectures explained'},
+        {'scene_index': 2, 'start_time': 480.0, 'end_time': 720.0, 'text_content': 'Training methodologies and best practices'},
+        {'scene_index': 3, 'start_time': 720.0, 'end_time': 960.0, 'text_content': 'Real-world applications and case studies'},
+        {'scene_index': 4, 'start_time': 960.0, 'end_time': 1200.0, 'text_content': 'Future trends and conclusion'}
+    ]
+}
+
+# Generate detailed summary
+summary = client.generate_summary(video_info)
+print(summary)
+
+# Generate structured notes
+notes = client.generate_notes(video_info)
+print(notes)
+```
+
+### Working with Embeddings
+
+```python
+# Generate embeddings for semantic search
+texts = [
+    "What is machine learning?",
+    "How do neural networks work?",
+    "What are transformers in NLP?"
+]
+
+embeddings = client.get_embeddings(texts)
+print(f"Generated {len(embeddings)} embeddings with {len(embeddings[0])} dimensions each")
+```
+
+### Exploring Available Models
+
+```python
+# List all models available in LM Studio
+models = client.list_models()
+print("Available models:")
+for model in models.get("data", []):
+    print(f"- {model.get('id')}")
+```
+
+## 📋 API Reference
+
+### LMStudioClient
+
+```python
+LMStudioClient(api_key=None, base_url="http://localhost:1234/v1")
+```
+
+- `api_key`: Optional API key (not required for local LM Studio servers)
+- `base_url`: URL of the LM Studio API server
+
+### Methods
+
+#### Chat Completions
+
+```python
+chat_completion(messages, model=None, max_tokens=2048, temperature=0.7, stream=False, callback=None)
+```
+
+#### Text Generation
+
+```python
+generate_text(prompt, model=None, max_tokens=2048, temperature=0.7, stream=False, callback=None)
+```
+
+#### Video Analysis
+
+```python
+generate_summary(video_info, stream=False, callback=None)
+generate_notes(processed_data, stream=False, callback=None)
+```
+
+#### Embeddings
+
+```python
+get_embeddings(input_text)
+```
+
+#### Model Management
+
+```python
+list_models()
+```
+
+## 🔧 Configuration
+
+The client adapts to your LM Studio server configuration:
+
+- **Local Inference**: Works seamlessly with the default LM Studio server
+- **Custom Endpoints**: Supports custom server URLs and ports
+- **Model Selection**: Can target specific models loaded in LM Studio
+- **Generation Parameters**: Full control over temperature, max tokens, etc.
+
+## ⚠️ Error Handling
+
+```python
+from lmstudio_wrapper.exceptions import LMStudioAPIError, LMStudioInvalidResponseError, LMStudioRequestError
+
+try:
+    response = client.chat_completion(messages)
+except LMStudioRequestError as e:
+    print(f"Network error: {e}")
+except LMStudioInvalidResponseError as e:
+    print(f"Invalid response: {e}")
+except LMStudioAPIError as e:
+    print(f"API error: {e}")
+```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## 📣 Acknowledgments
+
+- This library is designed for use with [LM Studio](https://lmstudio.ai/), a powerful tool for running local LLMs
