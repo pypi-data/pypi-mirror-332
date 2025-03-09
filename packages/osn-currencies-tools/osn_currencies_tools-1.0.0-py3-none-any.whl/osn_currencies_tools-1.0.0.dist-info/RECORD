@@ -1,0 +1,10 @@
+osn_currencies_tools/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+osn_currencies_tools/currency_live.py,sha256=z6R1t9n165NPpG1_1TaUnZk4CNnqUZyytaY-kvJTayc,2668
+osn_currencies_tools/data.py,sha256=pVV9mCQAEEjOLA2sb7fROt4v2Ng8kwom4J3-SB5ja5s,8100
+osn_currencies_tools/errors.py,sha256=PesV72SW2mOkmS6tfCc2Kb0LNNKt_quLU1QYRHp5BSQ,794
+osn_currencies_tools/exchange_rate.py,sha256=ynlhttKSyczV1tkePpXv7DZZCd193yuE6cOMRDIUFi8,2735
+osn_currencies_tools/open_exchange_rates.py,sha256=NX6Sb-WbIDTV_Mg-6zejhMf8Re6P07FmMFK34YgZ5pY,2383
+osn_currencies_tools-1.0.0.dist-info/METADATA,sha256=CiuI-DzTA07WY1LNgKOfGZmiv9-SwBwKe9voqa3ULgI,5153
+osn_currencies_tools-1.0.0.dist-info/WHEEL,sha256=EaM1zKIUYa7rQnxGiOCGhzJABRwy4WO57rWMR3_tj4I,91
+osn_currencies_tools-1.0.0.dist-info/top_level.txt,sha256=XkW6gEeNl31znzxpI2lg6JseD4y22RCHQhPzSXQszds,21
+osn_currencies_tools-1.0.0.dist-info/RECORD,,
