@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+anybinding/Bind.py
+anybinding/__init__.py
+anybinding/py.typed
+anybinding.egg-info/PKG-INFO
+anybinding.egg-info/SOURCES.txt
+anybinding.egg-info/dependency_links.txt
+anybinding.egg-info/top_level.txt
