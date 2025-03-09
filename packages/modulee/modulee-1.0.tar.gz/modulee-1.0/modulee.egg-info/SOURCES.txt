@@ -1,0 +1,7 @@
+README.txt
+modulee.py
+setup.py
+modulee.egg-info/PKG-INFO
+modulee.egg-info/SOURCES.txt
+modulee.egg-info/dependency_links.txt
+modulee.egg-info/top_level.txt
