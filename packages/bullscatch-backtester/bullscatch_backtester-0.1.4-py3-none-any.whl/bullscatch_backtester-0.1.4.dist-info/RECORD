@@ -1,0 +1,10 @@
+bullscatch_backtest/__init__.py,sha256=c5wsnS6PDNISfmRtZ73PHmK0Gup0e_A9Z2ame5lrGn0,119
+bullscatch_backtest/config.py,sha256=knKqEwCQ6aAHc63rNy__maoxrirQ0XWbZ5ndwyuLjsU,182
+bullscatch_backtest/expiry_list_spa.py,sha256=2arYvLwMvtQzk72h5nNKP4dOveaLSaZhn4ZI_6nKRGI,9112
+bullscatch_backtest/option_chain_spa.py,sha256=_myn22C9VQOl_krvaFKzgcsS7wQRuPEHlHgpsXPVmnM,4138
+bullscatch_backtest/spot_fetch_spa.py,sha256=tYj6g_yvRdi5rSdzUYvignF7vPvuexJQUE8l96TtRjM,3141
+bullscatch_backtest/test.py,sha256=WMjHdn6uCAUUfjJLKJ__VxHpzX2hMNZ58yNRGZtsXLs,1220
+bullscatch_backtester-0.1.4.dist-info/METADATA,sha256=dtYHzZBvxIcJkUj8cIjLkg6VeEV1l4LXl0Doz4HZuAg,485
+bullscatch_backtester-0.1.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bullscatch_backtester-0.1.4.dist-info/top_level.txt,sha256=MAspyFPUee641FoiJZI7DJjmeZKmzwl9d_AM_Uzf_x8,20
+bullscatch_backtester-0.1.4.dist-info/RECORD,,
