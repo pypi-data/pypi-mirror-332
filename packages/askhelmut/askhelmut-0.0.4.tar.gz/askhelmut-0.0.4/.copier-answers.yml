@@ -1,0 +1,20 @@
+_commit: v0.3.3
+_src_path: gh:helmut-hoffer-von-ankershoffen/oe-python-template
+author_email: helmuthva@googlemail.com
+author_github_username: helmut-hoffer-von-ankershoffen
+author_name: Helmut Hoffer von Ankershoffen
+docker_io_image_name: askhelmut
+docker_io_owner: helmuthva
+github_repository_name: askhelmut
+github_repository_owner: helmut-hoffer-von-ankershoffen
+github_repository_url_https: https://github.com/helmut-hoffer-von-ankershoffen/askhelmut
+github_repository_url_ssh: git@github.com:helmut-hoffer-von-ankershoffen/askhelmut.git
+org_email: helmuthva@googlemail.com
+org_name: Helmut Hoffer von Ankershoffen
+project_description: Exploration.
+project_icon: 🤖
+project_name: askhelmut
+pypi_distribution_name: askhelmut
+readthedocs_project_key: askhelmut
+sonarqube_key: helmut-hoffer-von-ankershoffen_askhelmut
+streamlit_project_key: askhelmut
