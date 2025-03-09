@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+face_cropping/__init__.py
+face_cropping/cropping.py
+face_cropping/cropping_68show.py
+face_cropping.egg-info/PKG-INFO
+face_cropping.egg-info/SOURCES.txt
+face_cropping.egg-info/dependency_links.txt
+face_cropping.egg-info/requires.txt
+face_cropping.egg-info/top_level.txt
