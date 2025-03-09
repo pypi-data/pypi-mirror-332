@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+geochemseek/__init__.py
+geochemseek.egg-info/PKG-INFO
+geochemseek.egg-info/SOURCES.txt
+geochemseek.egg-info/dependency_links.txt
+geochemseek.egg-info/top_level.txt
