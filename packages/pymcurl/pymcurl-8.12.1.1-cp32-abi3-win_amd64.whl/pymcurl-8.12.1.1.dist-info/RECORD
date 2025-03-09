@@ -1,0 +1,14 @@
+_libcurl_cffi.pyd,sha256=p056MrZRMHuKAZMkU7hQ1dYCDvXy2ZgD5WvHT0sfPcA,220160
+mcurl/cacert.pem,sha256=UKYnfsaRE_AMX9RfCei5eks-MtqjXTqVqzATelU4bO8,233263
+mcurl/gen.py,sha256=bDQAwRY3QKGDsF1GgvFj6D-3LB8e_4LeJc2auc7xb8g,10536
+mcurl/__init__.py,sha256=diY9Ol_1I9IdsA8RwClYJZv0pg-Z3c7cuMahhxWhlvQ,47728
+pymcurl-8.12.1.1.data/platlib/.load-order-pymcurl-8.12.1.1,sha256=Sr8p9cXru662F5MWyfhyiov8MKp7TnXLO1a9Um2tEII,140
+pymcurl-8.12.1.1.data/platlib/libcurl-4-9f416db8fb9411094279cb305513617c.dll,sha256=62nY4nYDmqMJd21JIPEFXZVQOfAWFXWRLUsvARcfeCs,1052021
+pymcurl-8.12.1.1.data/platlib/libnghttp2-14-097da51cb9e2de4b89c78acebbe1f756.dll,sha256=vI4Hi5hhYv-qDhmlMV7MBv9Z6iFWcL1hfMOD4JIBQgw,889837
+pymcurl-8.12.1.1.data/platlib/libz-edf5872f1e2fdfd4314029ee40eada20.dll,sha256=_Lei-gyLYMHZfvu-3zWdy8DqDzJxYx8yzwI0_IvZidI,205709
+pymcurl-8.12.1.1.dist-info/DELVEWHEEL,sha256=qC6fLESgI3fN_uhG0mbCWmbjxMaMRe9ly26Yo48DToc,677
+pymcurl-8.12.1.1.dist-info/LICENSE.txt,sha256=0rsU6W6ypSW_UVOQZySKij7CAFuDBfPjOhq80gnPLUA,1101
+pymcurl-8.12.1.1.dist-info/METADATA,sha256=6J3uX2lT0QjiAFWjt-OtKT51lF3wndNuGfUZsVugjrc,10969
+pymcurl-8.12.1.1.dist-info/RECORD,,
+pymcurl-8.12.1.1.dist-info/top_level.txt,sha256=MKJtvJf3euFZ761SPSscZNYulsy-eP1Zb__JhW2Hf2c,20
+pymcurl-8.12.1.1.dist-info/WHEEL,sha256=aDILY2mGC-FliUwTKFLwDBgnmMjrloAZu_-Cf0B7_YQ,99
