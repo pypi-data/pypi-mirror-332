@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: simplemaths
+Version: 0.0.5
+Author: Babloo Kumar
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+
+<h1>simplemaths</h1> An example Python project to build a wheel distribution and upload to PyPI
