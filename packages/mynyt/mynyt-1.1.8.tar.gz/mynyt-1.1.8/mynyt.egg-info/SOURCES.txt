@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+mynyt/MyNYT.py
+mynyt/WordGuess.py
+mynyt/__init__.py
+mynyt.egg-info/PKG-INFO
+mynyt.egg-info/SOURCES.txt
+mynyt.egg-info/dependency_links.txt
+mynyt.egg-info/requires.txt
+mynyt.egg-info/top_level.txt
+mynyt/data/possible_guesses.txt
+mynyt/data/possible_words.txt
