@@ -1,0 +1,9 @@
+jax_bigvgan/__init__.py,sha256=eAUYh-4V0clAz7Y6SR3KOhbzSxhUTR-O_Qcw7YD1KeI,51
+jax_bigvgan/convert.py,sha256=Ec0G0h1Hc8JrAciPmH41o2vmA2ou_pvgqJ4whHDaJ2w,2472
+jax_bigvgan/infer.py,sha256=KJ-Nb63FWjdHHNollXazUxe73mNv5KU_tfrd_6Hs6Eg,4691
+jax_bigvgan/models.py,sha256=SX3p0Uji391yt4YdltyP2sEmX0HXH34hMyMlOaU_Quw,17595
+jax_bigvgan/util.py,sha256=oucHQ__SRXsnaxRg3hB-6_p0RzfFdcBZXKCNUGREE2I,1016
+jax_bigvgan-0.0.1.dist-info/METADATA,sha256=izSJLek7taXfGdTuo_AUHFJergDEk4YOS3nm5O374So,971
+jax_bigvgan-0.0.1.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+jax_bigvgan-0.0.1.dist-info/top_level.txt,sha256=ha1W6z1ruAKDMoF7JuihyVfwCrMD53MhEjxKX1r9zok,12
+jax_bigvgan-0.0.1.dist-info/RECORD,,
