@@ -1,0 +1,7 @@
+README.md
+lacky.py
+pyproject.toml
+lacky.egg-info/PKG-INFO
+lacky.egg-info/SOURCES.txt
+lacky.egg-info/dependency_links.txt
+lacky.egg-info/top_level.txt
