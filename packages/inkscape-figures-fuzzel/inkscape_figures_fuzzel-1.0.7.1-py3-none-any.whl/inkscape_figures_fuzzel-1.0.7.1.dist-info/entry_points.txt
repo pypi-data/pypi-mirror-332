@@ -1,0 +1,2 @@
+[console_scripts]
+inkscape-figures = inkscape_figures_fuzzel:cli
