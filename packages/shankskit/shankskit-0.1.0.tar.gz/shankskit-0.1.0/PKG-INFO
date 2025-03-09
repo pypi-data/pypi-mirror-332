@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: shankskit
+Version: 0.1.0
+Summary: A brief description of your library
+Home-page: https://github.com/ShashankRaoCoding/shankskit
+Author: Shashank Rao
+Author-email: your.email@example.com
+License: LGPL-3.0-or-later
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Disclaimer 
+Use at your own risk. This is meant for personal use, or use by those who know what they're doing with it. Nothing should break, but no guarantees are given. Neither the software, nor the author, are liable for any damages resulting from the use of the code here. 
+
+# shankskit
+A personal python library of miscellaneous but useful functions 
