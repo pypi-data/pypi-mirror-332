@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+booleanDictFilter.egg-info/PKG-INFO
+booleanDictFilter.egg-info/SOURCES.txt
+booleanDictFilter.egg-info/dependency_links.txt
+booleanDictFilter.egg-info/top_level.txt
