@@ -1,0 +1,108 @@
+{
+    "name": "get_dags",
+    "description": "get_dags",
+    "input_schema": {
+        "properties": {
+            "limit": {
+                "anyOf": [
+                    {
+                        "type": "integer"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
+                "default": null,
+                "title": "Limit"
+            },
+            "offset": {
+                "anyOf": [
+                    {
+                        "type": "integer"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
+                "default": null,
+                "title": "Offset"
+            },
+            "order_by": {
+                "anyOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
+                "default": null,
+                "title": "Order By"
+            },
+            "tags": {
+                "anyOf": [
+                    {
+                        "items": {},
+                        "type": "array"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
+                "default": null,
+                "title": "Tags"
+            },
+            "only_active": {
+                "anyOf": [
+                    {
+                        "type": "boolean"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
+                "default": null,
+                "title": "Only Active"
+            },
+            "paused": {
+                "anyOf": [
+                    {
+                        "type": "boolean"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
+                "default": null,
+                "title": "Paused"
+            },
+            "fields": {
+                "anyOf": [
+                    {
+                        "items": {},
+                        "type": "array"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
+                "default": null,
+                "title": "Fields"
+            },
+            "dag_id_pattern": {
+                "anyOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ],
+                "default": null,
+                "title": "Dag Id Pattern"
+            }
+        },
+        "title": "get_dags_input",
+        "type": "object"
+    }
+}

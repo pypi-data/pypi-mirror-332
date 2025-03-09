@@ -1,0 +1,5 @@
+Before you edit codes. Explain what you want to do and seek approval on the planned changes.
+Be more collaborative than autonomous.
+If I ask you to edit one file then just edit one file.
+Before editing files do a git diff and see the current changes and retrospect if changes are useless then revert.
+Never leave garbage codes.
