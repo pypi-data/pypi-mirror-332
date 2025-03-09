@@ -1,0 +1,30 @@
+[project]
+name = "unfat"
+version = "0.0.8"
+description = "Extract datasets from models and train slimmer LoRAs on them"
+authors = [
+    {name = "@reissbaker"}
+]
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["finetune", "LoRA", "llm"]
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "tqdm (>=4.67.1,<5.0.0)",
+    "datasets (>=3.2.0,<4.0.0)",
+    "aiohttp (>=3.11.11,<4.0.0)",
+    "pylint (>=3.3.4,<4.0.0)",
+    "mypy (>=1.14.1,<2.0.0)",
+    "pyyaml (>=6.0.2,<7.0.0)",
+    "together (>=1.4.1,<2.0.0)",
+]
+
+
+[tool.uv]
+default-groups = []
+
+[tool.setuptools]
+packages = ["unfat"]
+
+[tool.mypy]
+disable_error_code = ["import-untyped"]
