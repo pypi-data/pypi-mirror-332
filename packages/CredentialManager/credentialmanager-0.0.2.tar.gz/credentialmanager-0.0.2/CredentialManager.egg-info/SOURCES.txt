@@ -1,0 +1,11 @@
+README.md
+setup.py
+CredentialManager/__init__.py
+CredentialManager/main.py
+CredentialManager.egg-info/PKG-INFO
+CredentialManager.egg-info/SOURCES.txt
+CredentialManager.egg-info/dependency_links.txt
+CredentialManager.egg-info/requires.txt
+CredentialManager.egg-info/top_level.txt
+tests/test_all.py
+tests/test_template.py
