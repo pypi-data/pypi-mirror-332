@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: netbox-better-templates
+Version: 1.0.1
+Summary: Adds some functionality to netbox templates and config render.
+Home-page: https://github.com/radin-system/netbox-better-templates
+Author: Radin System
+Author-email: technical@rsto.ir
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: summary
