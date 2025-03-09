@@ -1,0 +1,13 @@
+CONTRIBUTING.rst
+HISTORY.rst
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+pymofa.egg-info/PKG-INFO
+pymofa.egg-info/SOURCES.txt
+pymofa.egg-info/dependency_links.txt
+pymofa.egg-info/entry_points.txt
+pymofa.egg-info/not-zip-safe
+pymofa.egg-info/requires.txt
+pymofa.egg-info/top_level.txt
