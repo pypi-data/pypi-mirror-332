@@ -1,0 +1,6 @@
+setup.py
+base_consumer.egg-info/PKG-INFO
+base_consumer.egg-info/SOURCES.txt
+base_consumer.egg-info/dependency_links.txt
+base_consumer.egg-info/requires.txt
+base_consumer.egg-info/top_level.txt
