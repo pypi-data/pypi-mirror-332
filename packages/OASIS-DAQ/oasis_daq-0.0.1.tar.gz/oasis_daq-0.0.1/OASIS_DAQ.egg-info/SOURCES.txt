@@ -1,0 +1,8 @@
+LICENSE.txt
+pyproject.toml
+setup.cfg
+OASIS_DAQ.egg-info/PKG-INFO
+OASIS_DAQ.egg-info/SOURCES.txt
+OASIS_DAQ.egg-info/dependency_links.txt
+OASIS_DAQ.egg-info/requires.txt
+OASIS_DAQ.egg-info/top_level.txt
