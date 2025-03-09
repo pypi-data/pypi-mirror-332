@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+BooleanDictFilter/BooleanDictFilter.py
+BooleanDictFilter/__init__.py
+booleanDictFilter.egg-info/PKG-INFO
+booleanDictFilter.egg-info/SOURCES.txt
+booleanDictFilter.egg-info/dependency_links.txt
+booleanDictFilter.egg-info/top_level.txt
