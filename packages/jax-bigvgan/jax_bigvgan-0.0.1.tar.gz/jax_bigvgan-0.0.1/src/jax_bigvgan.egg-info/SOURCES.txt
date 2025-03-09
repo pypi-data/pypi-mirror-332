@@ -1,0 +1,11 @@
+pyproject.toml
+src/jax_bigvgan/__init__.py
+src/jax_bigvgan/convert.py
+src/jax_bigvgan/infer.py
+src/jax_bigvgan/models.py
+src/jax_bigvgan/util.py
+src/jax_bigvgan.egg-info/PKG-INFO
+src/jax_bigvgan.egg-info/SOURCES.txt
+src/jax_bigvgan.egg-info/dependency_links.txt
+src/jax_bigvgan.egg-info/requires.txt
+src/jax_bigvgan.egg-info/top_level.txt
