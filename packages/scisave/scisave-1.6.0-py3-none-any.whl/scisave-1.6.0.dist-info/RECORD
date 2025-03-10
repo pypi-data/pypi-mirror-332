@@ -1,0 +1,12 @@
+scisave/__init__.py,sha256=Ti4Veh52Ugk-DdDsyQf70mjbR5C_sUUii3wmKUd9GvU,490
+scisave/ext_json.py,sha256=uAKb5zVulU0oeazgLaK2CXZ0N5K68DwFrB1tz9-kTog,6526
+scisave/ext_msgpack.py,sha256=DCySE4cT9vV8K-Dj9iS6Do-YeLbiniT2KmL_CIbTq54,4867
+scisave/ext_schema.py,sha256=tYTwnk0VtdSgrQGlIE89P6sD7n9rKd8e3UgjDCYwmi8,1967
+scisave/ext_yaml.py,sha256=xyJnHqkoY7E2iytXz_IDS_A-p3psiwCSRj37mSx0LSI,9961
+scisave/scisave.py,sha256=JbfUaBYfk7DztbbspLQ4mk2ok76LXOZo_Iu1Y6k_Iwc,6279
+scisave/version.txt,sha256=ViNosgpkvpVlG7gka3Qg9_zlVTjf-Zmu-qeGYqFNDTk,5
+scisave-1.6.0.dist-info/LICENSE.txt,sha256=jOq61RqaltHGqROljvWch9PbeG5ee8sChTfZjIazUrs,1303
+scisave-1.6.0.dist-info/METADATA,sha256=LWwarZEVL8pbfCT5WsaZTqTuZ3x1_rMzlMjXpgs-r6c,4842
+scisave-1.6.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+scisave-1.6.0.dist-info/top_level.txt,sha256=UEBVfpz6oMwHMqG82wii2uhJeIOY-k-Z5_yyuX2OmH8,8
+scisave-1.6.0.dist-info/RECORD,,
