@@ -1,0 +1,104 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "ksvg_restyle"
+dynamic = [ "version" ]
+requires-python = ">=3.12,<4.0"
+description = "A CLI tool to apply Plasma Color Schemes to SVG widgets"
+license = { text = "LGPL-2.1-or-later" }
+readme = "README.md"
+authors = [
+    { name = "oniko94", email = "onikolaiev94@outlook.com" },
+]
+maintainers = [
+    { name = "oniko94", email = "onikolaiev94@outlook.com" },
+]
+keywords = [ "cli", "kde", "svg", "color", "widget", "theme", "plasma" ]
+
+[project.urls]
+repository = "https://github.com/squalorware/KSVG_Restyle"
+
+[project.scripts]
+ksvg_restyle = "ksvg_restyle.__main__:__main__"
+
+[tool.poetry]
+version = "0.1.7"
+requires-poetry = ">=2.0"
+
+[tool.poetry.dependencies]
+click = "^8.1.8"
+lxml = "^5.3.0"
+jinja2 = "^3.1.5"
+
+[tool.poetry.group.dev.dependencies]
+pyupgrade = "^3.19.1"
+pyproject-pyupgrade = "^0.1.1"
+flake8-bandit = "^4.1.1"
+flake8-print = "^5.0.0"
+flake8-builtins = "^2.5.0"
+flake8-eradicate = "^1.5.0"
+pep8-naming = "^0.14.1"
+flake8-debugger = "^4.1.2"
+flake8-type-checking = "^3.0.0"
+flake8-bugbear = "^24.12.12"
+flake8-quotes = "^3.4.0"
+black = "^25.1.0"
+isort = "^6.0.0"
+flake8-pyproject = "^1.2.3"
+flake8 = "^7.1.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+colorama = "^0.4.6"
+coloredlogs = "^15.0.1"
+
+[tool.black]
+line-length = 80
+target-version = ["py312"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+version_scheme = "semver"
+version_provider = "poetry"
+version_files = [
+    "pyproject.toml:version"
+]
+update_changelog_on_bump = true
+major_version_zero = true
+
+[tool.flake8]
+max-line-length = 80
+count = true
+show-source = true
+statistics = true
+inline-quotes = "double"
+ignore = ["B009", "B010", "W503"]
+select = ["E9", "F63", "F7", "F82"]
+per-file-ignores = ["tests/*: S101"]
+extend_exclude = [".venv", ".github"]
+
+[tool.isort]
+profile = "black"
+line_length = 80
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+addopts = "--junitxml junit/test-results.xml --cov-report xml:coverage.xml --cov ksvg_restyle"
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "[%(levelname)s]: %(message)s"
+minversion = "6.0"
+filterwarnings = "ignore"
+norecursedirs = ["docs", "build"]
+cache_dir = "/tmp/pytest_cache"
+
+[tool.pyupgrade]
+py312-plus = true
