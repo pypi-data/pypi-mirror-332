@@ -1,0 +1,24 @@
+[project]
+name = "fast_bi_dbt_runner"
+version = "0.0.0"  # or use a dynamic version
+description = "Private Python library for managing dbt DAGs."
+authors = [
+    { name = "Fast.Bi", email = "support@fast.bi" }
+]
+maintainers = [
+    { name = "Fast.Bi", email = "administrator@fast.bi" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = []
+requires-python = ">=3.8"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
