@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69.2.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py2cy"
+version = "0.0.1"
+authors = [{ name="Vaira Muthu Thangavel", email="vairamuthu.thangavel@gmail.com" },]
+description = "A package to convert Python code to Cython for Security and Obfuscation"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+  "Cython>=3.0.2"
+]
+keywords = ["cython","encryption", "conversion", "security", "obfuscation", "code protection",  
+        "anti-reverse engineering", "code integrity", "cythonize", "privacy", 
+        "intellectual property", "secure code", "software protection",  
+        "anti-tampering", "transpiler",  "application security", "deployment"]
+
+[project.scripts]
+py2cy = "py2cy.invoke:main"
+
+[project.urls]
+Homepage = "https://github.com/armeggaddon/py2cy"
+Repository = "https://github.com/armeggaddon/py2cy.git"
+
