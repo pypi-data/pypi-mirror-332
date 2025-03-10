@@ -1,0 +1,66 @@
+Metadata-Version: 2.4
+Name: pytcl-eda
+Version: 0.1.1
+Summary: PyTCL allows control EDA tools directly from Python that use TCL
+Project-URL: Homepage, https://gitlab.com/tymonx/pytcl
+Project-URL: Source, https://gitlab.com/tymonx/pytcl.git
+Project-URL: Issues, https://gitlab.com/tymonx/pytcl/-/issues
+Project-URL: Documentation, https://gitlab.com/tymonx/pytcl/-/blob/HEAD/README.md
+Author-email: Tymoteusz Blazejczyk <tymoteusz.blazejczyk@tymonx.com>
+License: Apache-2.0
+Keywords: altera,asic,cadence,eda,flow,fpga,hdl,modelsim,python,quartus,questa,rtl,script,scripting,siemens,synopsys,systemverilog,tcl,vcs,verilog,vhdl,vivado,xcelium,xilinx
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Tcl
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Provides-Extra: lint
+Requires-Dist: pyright; extra == 'lint'
+Requires-Dist: ruff; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Description-Content-Type: text/markdown
+
+---
+SPDX-FileCopyrightText: 2025 Tymoteusz Blazejczyk <tymoteusz.blazejczyk@tymonx.com>
+SPDX-License-Identifier: Apache-2.0
+---
+
+# PyTCL
+
+**PyTCL** allows control EDA tools directly from **Python** that use **TCL**.
+
+## Examples
+
+Creating new Vivado project:
+
+```python
+from pathlib import Path
+from pytcl import Vivado
+
+def main() -> None:
+    """Create new Vivado project."""
+    project_dir: Path = Path.cwd() / "my-awesome-project"
+
+    with Vivado() as vivado:
+        vivado.create_project(project_dir.name, project_dir)
+        vivado.close_project()
+
+if __name__ == "__main__":
+    main()
+```
