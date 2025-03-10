@@ -1,0 +1,8 @@
+FlaskDiscordAuth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FlaskDiscordAuth/discord_auth.py,sha256=vK_LAOCZrHvQnNKE6B0931q3uRIkhqvrwdnFMibP9Mc,2265
+FlaskDiscordAuth/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FlaskDiscordAuth/tests/test_discord_auth.py,sha256=JUQtb2RWDL-nF6aQPG0ZosjChPXjyEDvtvqqPXX3YXE,2509
+flaskdiscordauth-0.1.0.dist-info/METADATA,sha256=ymPgREfWtT58iSiSgxBY9CVYcQVLuxhA_8EqH4YA_0I,8681
+flaskdiscordauth-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+flaskdiscordauth-0.1.0.dist-info/licenses/LICENSE,sha256=lvvIkvjnIhkBIYnSGe3_UIt3uPDEWcthURuMP8NBvLs,1085
+flaskdiscordauth-0.1.0.dist-info/RECORD,,
