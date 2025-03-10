@@ -1,0 +1,13 @@
+aioamqp-stubs/__init__.pyi,sha256=wpbSNcwc3jxE2O9MHFS02ufM1CNE4WLKJ6a44TjrsrA,932
+aioamqp-stubs/channel.pyi,sha256=fpmfEbVDK9y1ffi2LiqaEfI6bIlEshVJqi7gRzXBr2Y,10264
+aioamqp-stubs/constants.pyi,sha256=vBJjTItxaSPo7STHDnxEhBzW9LnUpBNMr5vwxOJYC4o,1920
+aioamqp-stubs/envelope.pyi,sha256=XX15wT3TQ2HNvTOM5kd0lrEvPtv4vgX2qlWYqws_m0I,642
+aioamqp-stubs/exceptions.pyi,sha256=sy7sldVYK_hZWdzMxDoKJMAgkmwhA3s7S_vUrUxHz2g,700
+aioamqp-stubs/frame.pyi,sha256=A6P7H7oYp52IMX7p5PTa-Ry9DOPZELGPboWdkqbVVN0,469
+aioamqp-stubs/properties.pyi,sha256=nWZ4pbWP5T4u6YBRDRIs3CvRsB24CuSh376OVoQ9bKs,1352
+aioamqp-stubs/protocol.pyi,sha256=h5cwqoJZOJ9kguN1iNA6YjrR4N9l7uQhhhsMwBtdGxI,5090
+aioamqp-stubs/version.pyi,sha256=hvsCuCrm6ZWg1PmeA4CedpoZZZ-2dLY1To4Y-PLh2GQ,38
+aioamqp_stubs-0.15.dist-info/LICENSE,sha256=zL4AK-3tVldErVFVtcgkNrkDaGpRHaYiKMHUrHMdqX4,1067
+aioamqp_stubs-0.15.dist-info/METADATA,sha256=22W2YE51q0OA3GaxQ5KpmHxbCV-9czqgq-YVvXF0PTw,1407
+aioamqp_stubs-0.15.dist-info/WHEEL,sha256=7dDg4QLnNKTvwIDR9Ac8jJaAmBC_owJrckbC0jjThyA,88
+aioamqp_stubs-0.15.dist-info/RECORD,,
