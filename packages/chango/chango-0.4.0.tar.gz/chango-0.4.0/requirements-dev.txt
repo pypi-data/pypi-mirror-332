@@ -1,0 +1,6 @@
+-e .
+pre-commit
+pytest~=8.3
+pytest-cov
+build
+-r docs/requirements-docs.txt
