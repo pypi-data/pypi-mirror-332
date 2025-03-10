@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "litecoinpy"
+version = "0.1.0"
+description = "An asynchronous API wrapper for Litecoin"
+authors = ["hularuns <159131400+hularuns@users.noreply.github.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "litecoinpy", from = "src" },
+    { include = "tests" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.11.13"
+asyncio = "^3.4.3"
+pytest = "^8.3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://github.com/hularuns/litecoinpy"
+Issues = "https://github.com/hularuns/litecoinpy"

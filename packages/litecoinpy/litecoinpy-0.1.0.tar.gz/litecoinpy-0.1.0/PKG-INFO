@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: litecoinpy
+Version: 0.1.0
+Summary: An asynchronous API wrapper for Litecoin
+Author: hularuns
+Author-email: 159131400+hularuns@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.11.13,<4.0.0)
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: pytest (>=8.3.5,<9.0.0)
+Description-Content-Type: text/markdown
+
+# Litecoin API Wrapper
+A simple asynchronous litecoin wrapper
