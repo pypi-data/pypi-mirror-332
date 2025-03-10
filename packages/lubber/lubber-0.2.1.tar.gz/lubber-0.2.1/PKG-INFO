@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: lubber
+Version: 0.2.1
+Summary: Command line tool for building sm64coopdx mods
+License: MIT
+Author: jayden
+Author-email: 46307433+kermeow@users.noreply.github.com
+Requires-Python: >=3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: fancy-dataclass (>=0.8.1,<0.9.0)
+Requires-Dist: numpy (>=2.2.3,<3.0.0)
+Requires-Dist: pygithub (>=2.6.1,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Requires-Dist: semver (>=3.0.4,<4.0.0)
+Requires-Dist: typer (>=0.15.2,<0.16.0)
+Project-URL: Issues, https://github.com/kermeow/lubber/issues
+Project-URL: Repository, https://github.com/kermeow/lubber.git
+Description-Content-Type: text/markdown
+
+# Lubber
+
+Lubber helps you build sm64coopdx mods.
