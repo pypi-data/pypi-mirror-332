@@ -1,0 +1,74 @@
+"""
+Python module generated from Java source file org.bukkit.material.Sandstone
+
+Java source file obtained from artifact spigot-api version 1.17.1-R0.1-20211121.234319-104
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from org.bukkit import Material
+from org.bukkit import SandstoneType
+from org.bukkit.material import *
+from typing import Any, Callable, Iterable, Tuple
+
+
+class Sandstone(MaterialData):
+    """
+    Represents the different types of sandstone.
+
+    Deprecated
+    - all usage of MaterialData is deprecated and subject to removal.
+    Use org.bukkit.block.data.BlockData.
+    """
+
+    def __init__(self):
+        ...
+
+
+    def __init__(self, type: "SandstoneType"):
+        ...
+
+
+    def __init__(self, type: "Material"):
+        ...
+
+
+    def __init__(self, type: "Material", data: int):
+        """
+        Arguments
+        - type: the type
+        - data: the raw data value
+
+        Deprecated
+        - Magic value
+        """
+        ...
+
+
+    def getType(self) -> "SandstoneType":
+        """
+        Gets the current type of this sandstone
+
+        Returns
+        - SandstoneType of this sandstone
+        """
+        ...
+
+
+    def setType(self, type: "SandstoneType") -> None:
+        """
+        Sets the type of this sandstone
+
+        Arguments
+        - type: New type of this sandstone
+        """
+        ...
+
+
+    def toString(self) -> str:
+        ...
+
+
+    def clone(self) -> "Sandstone":
+        ...
