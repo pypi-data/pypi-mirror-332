@@ -1,0 +1,11 @@
+README.md
+setup.py
+KSDates/__init__.py
+KSDates/calculos.py
+KSDates/fechas.py
+KSDates.egg-info/PKG-INFO
+KSDates.egg-info/SOURCES.txt
+KSDates.egg-info/dependency_links.txt
+KSDates.egg-info/top_level.txt
+tests/test_calculos.py
+tests/test_fechas.py
