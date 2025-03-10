@@ -1,0 +1,2 @@
+[console_scripts]
+ratisbona_palette_cli = ratisbona_utils.colors.__main__:main
