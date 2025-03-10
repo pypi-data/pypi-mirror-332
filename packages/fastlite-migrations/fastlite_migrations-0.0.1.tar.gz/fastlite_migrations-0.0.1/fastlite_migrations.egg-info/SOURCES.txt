@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+fastlite_migrations/__init__.py
+fastlite_migrations/_modidx.py
+fastlite_migrations/core.py
+fastlite_migrations.egg-info/PKG-INFO
+fastlite_migrations.egg-info/SOURCES.txt
+fastlite_migrations.egg-info/dependency_links.txt
+fastlite_migrations.egg-info/entry_points.txt
+fastlite_migrations.egg-info/not-zip-safe
+fastlite_migrations.egg-info/requires.txt
+fastlite_migrations.egg-info/top_level.txt
