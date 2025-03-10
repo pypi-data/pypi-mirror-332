@@ -1,0 +1,47 @@
+Metadata-Version: 2.3
+Name: arbor-ai
+Version: 0.1.2
+Summary: A framework for fine-tuning and managing language models
+License: MIT
+Keywords: machine learning,fine-tuning,language models
+Author: Noah Ziems
+Author-email: nziems2@nd.edu
+Requires-Python: >=3.13
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click
+Requires-Dist: fastapi
+Requires-Dist: peft (>=0.14.0,<0.15.0)
+Requires-Dist: pydantic-settings (>=2.8.1,<3.0.0)
+Requires-Dist: python-multipart (>=0.0.20,<0.0.21)
+Requires-Dist: torch (>=2.6.0,<3.0.0)
+Requires-Dist: transformers (>=4.49.0,<5.0.0)
+Requires-Dist: trl (>=0.15.2,<0.16.0)
+Requires-Dist: uvicorn
+Project-URL: Repository, https://github.com/arbor-ai/arbor
+Description-Content-Type: text/markdown
+
+# Arbor AI
+
+## Setup
+
+```bash
+poetry install
+```
+
+```bash
+poetry run arbor serve
+```
+
+## Uploading Data
+
+```bash
+curl -X POST "http://localhost:8000/api/files" -F "file=@training_data.jsonl"
+```
+
