@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: example_package_unnamed73533
+Version: 0.0.1
+Summary: cba
+Author: unnamed7353
+Author-email: unnamed7353@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
+
+chess battle advanced
