@@ -1,0 +1,54 @@
+Metadata-Version: 2.3
+Name: aioamqp-stubs
+Version: 0.15
+Summary: Stubs for aioamqp
+License: MIT
+Keywords: aioamqp,typing,types,stubs,mypy
+Author: guitvcer
+Author-email: abdrakhman.galaxy.s2@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: aioamqp (>=0.15.0,<0.16.0)
+Project-URL: Repository, https://github.com/guitvcer/aioamqp-stubs
+Description-Content-Type: text/markdown
+
+# aioamqp-stubs
+Stubs for [aioamqp](https://github.com/Polyconseil/aioamqp).
+
+## Usage
+Just install and that's all!
+```bash
+pip install aioamqp-stubs
+```
+
+## Development
+### Tests
+1. Install [tox](https://github.com/tox-dev/tox).
+2. Run tox
+```bash
+tox -p
+```
+
+### pre-commit
+There's [pre-commit](https://github.com/pre-commit/pre-commit) configured.
+```bash
+poetry install
+poetry run pre-commit install
+```
+
+### Build
+Use [poetry](https://github.com/python-poetry/poetry) for building.
+```bash
+poetry build
+poetry publish
+```
+
