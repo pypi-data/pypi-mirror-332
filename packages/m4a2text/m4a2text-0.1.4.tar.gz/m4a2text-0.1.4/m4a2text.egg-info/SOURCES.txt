@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+m4a2text/__init__.py
+m4a2text/m4a2text.py
+m4a2text.egg-info/PKG-INFO
+m4a2text.egg-info/SOURCES.txt
+m4a2text.egg-info/dependency_links.txt
+m4a2text.egg-info/entry_points.txt
+m4a2text.egg-info/requires.txt
+m4a2text.egg-info/top_level.txt
