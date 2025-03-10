@@ -1,0 +1,10 @@
+crimson/folder_system/__init__.py,sha256=9gCQkGhRumjkztxHWGLG-aD5ARI9QdPItdqqdhLcZNg,389
+crimson/folder_system/delete.py,sha256=n52lIf4Mpx7SSd-nAzL8Ui_Wz5-ZHWXJVeftedrsZIo,510
+crimson/folder_system/filter.py,sha256=881hXH28nROS1VRZ9OfebCPhrNmkpdyQTWKYEfg_Za4,841
+crimson/folder_system/path.py,sha256=BjXF0zj0dyZc7wAUo0BmawWoaB7Q31bYZyXTFaIpLoo,240
+crimson/folder_system/search.py,sha256=gGc6_Ko-gyzK5Bvsl2pNObFkfCTr9xxtXrLNHXDGcok,1296
+crimson_folder_system-0.1.4.dist-info/LICENSE,sha256=NAak_CnMzIX1nKL0QMNQzLO3acKR6tIJ1ErfKSeFkv4,1067
+crimson_folder_system-0.1.4.dist-info/METADATA,sha256=hqXVrZm_NPL_6WoaBn56PYjomUipFn-264RXwy_KZr8,3211
+crimson_folder_system-0.1.4.dist-info/WHEEL,sha256=EaM1zKIUYa7rQnxGiOCGhzJABRwy4WO57rWMR3_tj4I,91
+crimson_folder_system-0.1.4.dist-info/top_level.txt,sha256=UjHBjSiQhr7eEWh0dB9e3WZ617y7vLEywXhGYfnzbw8,8
+crimson_folder_system-0.1.4.dist-info/RECORD,,
