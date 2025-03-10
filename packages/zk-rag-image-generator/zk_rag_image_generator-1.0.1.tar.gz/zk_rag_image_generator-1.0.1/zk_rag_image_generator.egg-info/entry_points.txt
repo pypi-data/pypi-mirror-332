@@ -1,0 +1,2 @@
+[zk_rag_plugins]
+image_generator = image_generator:GenerageImage
