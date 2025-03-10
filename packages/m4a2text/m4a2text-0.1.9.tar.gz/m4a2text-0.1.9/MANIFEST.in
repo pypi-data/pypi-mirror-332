@@ -1,0 +1,2 @@
+include m4a2text/__init__.py
+include m4a2text/core.py
