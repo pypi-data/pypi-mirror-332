@@ -1,0 +1,9 @@
+corefolio/__init__.py,sha256=vC6teHKCcNSzWkVvWdzBK3p4UeoUQdMTh_1ay8-CV9Q,245
+corefolio/constraints.py,sha256=gHoK6_LxbWqRKzU_QEizzEQvM2Hfqwdc0pQlj51wKGI,366
+corefolio/optimizer.py,sha256=Tvw9yFYbgTMRuLnt9F6LluyDTia9MUktgpPnGdzbNxI,1479
+corefolio/universe.py,sha256=oCUUK_W_1yB1F5MoI9Uwn0QAb-e7GjGIaRKiilg-MaY,932
+corefolio-0.1.0.dist-info/LICENSE,sha256=l3rzkZzvPDLuZ5jbM5FOp__Ph_F5-PkzHMYWPxexUlQ,1094
+corefolio-0.1.0.dist-info/METADATA,sha256=Vs4gpoMKkiA6Sp4Um0fgmhE6WOrZPbBQubQ2SVCOzoA,2616
+corefolio-0.1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+corefolio-0.1.0.dist-info/top_level.txt,sha256=anrCGHIg_TPiEHfl0y_WV16_L8JQq2U75dR2bpCorqg,10
+corefolio-0.1.0.dist-info/RECORD,,
