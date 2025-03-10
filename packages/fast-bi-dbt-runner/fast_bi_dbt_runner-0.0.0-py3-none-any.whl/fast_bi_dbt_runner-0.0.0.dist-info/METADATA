@@ -1,0 +1,23 @@
+Metadata-Version: 2.2
+Name: fast_bi_dbt_runner
+Version: 0.0.0
+Summary: Private Python library for managing dbt DAGs.
+Home-page: https://gitlab.fast.bi/infrastructure/bi-platform-pypi-packages/fast_bi_dbt_runner
+Author: Fast.Bi
+Author-email: "Fast.Bi" <support@fast.bi>
+Maintainer: Fast.Bi
+Maintainer-email: "Fast.Bi" <administrator@fast.bi>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: home-page
+Dynamic: maintainer
+Dynamic: requires-python
+
+# fast_bi_dbt_runner
+
+
