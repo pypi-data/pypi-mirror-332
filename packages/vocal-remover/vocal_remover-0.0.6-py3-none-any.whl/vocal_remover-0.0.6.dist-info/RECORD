@@ -1,0 +1,12 @@
+vocal_remover/__init__.py,sha256=eMB4psNtDAZnyaT9U1PW5576_flFclSgTuLqa9tbit8,28
+vocal_remover/dataset.py,sha256=5VuVRxUh_FbfOPYsCTSVTLYR2x4MrYhxH1wZYBv3ifE,8812
+vocal_remover/layers.py,sha256=x1C5UTh3jF20QKEaTNOpflmXpKQOnj7Im01DubGikoY,4173
+vocal_remover/model.py,sha256=bdTXQq1BcBUQhhwv65X_f0cToF2AFV8A_yUfi8mP1aU,5265
+vocal_remover/nets.py,sha256=MXE8ZjZCVr1eRz1_BRNJy_-xZg1nrlxuTzBOLa3joZk,4529
+vocal_remover/spec_utils.py,sha256=7EOM1iWUxZA5MToKcn7Yndx9hRui0lqEQsH28p4Usjs,6143
+vocal_remover/utils.py,sha256=SJugr_MMIDndiu6r6FLZkmOJJhOUhY4aRdBz5-i9e9U,678
+vocal_remover-0.0.6.dist-info/LICENSE,sha256=BZBGZC9lsqSoL7wCaZUywQBERwmGG4ZeLLpe6FgSzNY,1087
+vocal_remover-0.0.6.dist-info/METADATA,sha256=jja_ak2Mu_fzNwRzMdCcz6SuBaeonIdF9ZxXESko4cw,3390
+vocal_remover-0.0.6.dist-info/WHEEL,sha256=EaM1zKIUYa7rQnxGiOCGhzJABRwy4WO57rWMR3_tj4I,91
+vocal_remover-0.0.6.dist-info/top_level.txt,sha256=JRiD7QD5LNKqM89qUs-8VYY90suwPmNDsSsv2slW4JY,14
+vocal_remover-0.0.6.dist-info/RECORD,,
