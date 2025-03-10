@@ -1,0 +1,4 @@
+[console_scripts]
+get-papers-list=pubmed_paper_fetcher.fetch_papers:main
+pubmed-paper-fetcher=pubmed_paper_fetcher.cli:app
+
