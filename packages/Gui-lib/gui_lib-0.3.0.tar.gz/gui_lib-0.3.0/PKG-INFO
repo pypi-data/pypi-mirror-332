@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: Gui_lib
+Version: 0.3.0
+Summary: A simple GUI library similar to tkinter
+Author: OUBStudios
+Author-email: oubdocs.main@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-python
+Dynamic: summary
