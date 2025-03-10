@@ -1,0 +1,8 @@
+README.md
+setup.py
+my_app/__init__.py
+my_app/example.py
+sdfgsdfgsdfgsdfgsdfgsehdfghjdfg.egg-info/PKG-INFO
+sdfgsdfgsdfgsdfgsdfgsehdfghjdfg.egg-info/SOURCES.txt
+sdfgsdfgsdfgsdfgsdfgsehdfghjdfg.egg-info/dependency_links.txt
+sdfgsdfgsdfgsdfgsdfgsehdfghjdfg.egg-info/top_level.txt
