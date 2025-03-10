@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "args-me-model"
+description = "Data model for the args.me argument search engine"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+keywords = [ "argumentation" ]
+authors = [
+  { name = "Johannes Kiesel" }
+]
+maintainers = [
+  { name = "Johannes Kiesel" }
+]
+dynamic = ["version", "readme", "dependencies"]
+
+
+[project.urls]
+"Homepage" = "https://github.com/webis-de/args-me-model"
+"Bug Reports" = "https://github.com/webis-de/args-me-model/issues"
+"Source" = "https://github.com/webis-de/args-me-model"
+
+
+[tool.setuptools.dynamic]
+version = {attr = "args_me_model.__version__"}
+readme = {file = "README.md", content-type = "text/plain"}
+dependencies = {file = "requirements.txt"}
+
+
