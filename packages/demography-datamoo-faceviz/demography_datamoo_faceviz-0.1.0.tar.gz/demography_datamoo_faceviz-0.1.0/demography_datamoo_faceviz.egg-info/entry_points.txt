@@ -1,0 +1,3 @@
+[console_scripts]
+detect-gender = gender_detection.main:run_detection
+

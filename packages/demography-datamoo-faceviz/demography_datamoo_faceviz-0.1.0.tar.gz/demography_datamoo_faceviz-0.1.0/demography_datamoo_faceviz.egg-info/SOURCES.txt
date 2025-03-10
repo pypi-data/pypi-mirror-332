@@ -1,0 +1,8 @@
+README.md
+setup.py
+demography_datamoo_faceviz.egg-info/PKG-INFO
+demography_datamoo_faceviz.egg-info/SOURCES.txt
+demography_datamoo_faceviz.egg-info/dependency_links.txt
+demography_datamoo_faceviz.egg-info/entry_points.txt
+demography_datamoo_faceviz.egg-info/requires.txt
+demography_datamoo_faceviz.egg-info/top_level.txt

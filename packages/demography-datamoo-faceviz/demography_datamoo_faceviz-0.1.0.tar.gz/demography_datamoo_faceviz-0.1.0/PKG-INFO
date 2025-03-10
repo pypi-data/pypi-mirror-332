@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: demography_datamoo_faceviz
+Version: 0.1.0
+Summary: Age and Gender detection using PyQt UI
+Home-page: https://bitbucket.org/datamoo-projects/age-gender-detection/src/main/
+Author: Datamoo
+Author-email: sunitha.a@datamoo.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+AGE AND GENDER DETECTION USING PYQT UI
+ This is a simple demograaphy detection using PyQt UI. It uses the deepface model to detect the age and gender of the person. The model is trained on the dataset.
+
+
