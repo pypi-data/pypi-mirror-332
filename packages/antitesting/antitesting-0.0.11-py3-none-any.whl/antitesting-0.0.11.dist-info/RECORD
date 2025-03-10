@@ -1,0 +1,16 @@
+antitesting/__init__.py,sha256=101wh3mNN8XTXPHjt3pH_I7STvIoIuT5XJvb-EdW1t4,109
+antitesting/collector.py,sha256=3NT2ij1exO2XaZlmTWuzU_5WDl-qYL0ODY6q9KH88CE,5161
+antitesting/errors.py,sha256=OEYoox2LUjO69gkpLc017Ah5Uz6wCJJdk0CLCrlgeAw,50
+antitesting/plugin.py,sha256=XoxPR7OPQ-JstaJbqTvWJ2vxZaf8_7bUxKMPxH8zhDE,500
+antitesting/proxy_module.py,sha256=7eIILR6VbXkB06KBFS4XfTHLNIFBvSSBwICjsTtmWDE,329
+antitesting/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+antitesting/specification.py,sha256=WcHKUqrMRZtZ247H6F6hWz1R4SBAAOXSGtXQK20nqoI,309
+antitesting/state.py,sha256=bp6_m5QW8fT0ZySqOYuu8u763Aqq_vw5q7SpUt-62IM,96
+antitesting/protocols/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+antitesting/protocols/item.py,sha256=PvcXCBuo0ZOHsktFsPAoYmwK4QhL1eUpuhbVcH8D8RU,112
+antitesting-0.0.11.dist-info/LICENSE,sha256=ORr8GcdTjVeQVDg9_JqOOPXr0lcv1aEzwu8Qwtc4-g8,1067
+antitesting-0.0.11.dist-info/METADATA,sha256=Q5tblZmApc0IeVovNKwQO4nVzzTAZ0s2BZf4I9twGgA,3863
+antitesting-0.0.11.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+antitesting-0.0.11.dist-info/entry_points.txt,sha256=tOVTdwFjz7THFat37-9qHomCoSZoV6q_gGoboGJVvEY,44
+antitesting-0.0.11.dist-info/top_level.txt,sha256=u-XdnVEJeEgovWJR-k8gHDsbtLenK1IKFB5XMntO510,12
+antitesting-0.0.11.dist-info/RECORD,,
