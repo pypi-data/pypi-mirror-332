@@ -1,0 +1,12 @@
+angets/__init__.py,sha256=hbHEuGCXxDtrcyPqaFNCBlFFmitjpmENEWY1kfK__30,932
+angets/_core.py,sha256=xVZCz94Ddp_29kkLSZb2-d4b9IAWCPwia-tukPmfLh0,10765
+angets/_decorators.py,sha256=1TFKJBKX-zJ7K4ma1R-msF7OqpMMn7kdbK_-3TtULdk,1749
+angets/_defaults.py,sha256=vg8L9i6NXxWc2sisCK79DR12kK8LaaeJgEhkOhT7mr4,136
+angets/_exceptions.py,sha256=v9qR5W4hOCejGdZ4ac3V83i0sgEfjTEbSMIeWNBXvEw,3225
+angets/_helpers.py,sha256=ubV9QG1XpIxC0TlCczN4g9cxd_NbE9Q651tnC7Yw_BQ,858
+angets/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+angets-0.2.2.dist-info/LICENSE,sha256=XHJDpANrorqlH0HEMOCCvBDSynk4cyKeHuzz7Nae1v8,1074
+angets-0.2.2.dist-info/METADATA,sha256=lsuW4DMStxrZs5SEWG8rFjc7hiWMG57AgjvL7wyB924,2398
+angets-0.2.2.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+angets-0.2.2.dist-info/top_level.txt,sha256=48_pCHCAW-63b7cQfxD5l8hqMp3WBn1lYCGOlMfOtyU,7
+angets-0.2.2.dist-info/RECORD,,
