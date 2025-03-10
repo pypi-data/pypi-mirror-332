@@ -1,0 +1,13 @@
+SyntenyQC/__init__.py,sha256=XNjd2zoXcaSbs3MmfPictd8flvG1e1sagXS9Bos5xZU,95
+SyntenyQC/app.py,sha256=3lnIYNpS7kohO89HYt-EulC0geKudo-mPAbSgZYm_80,20077
+SyntenyQC/blast_functions.py,sha256=183D1k3xvKd0OAlSBkenDqWCr2RnhKX4GQc4SxbuLgY,18726
+SyntenyQC/helpers.py,sha256=HOTrMXAWRQPPQBBUMyx-DfGnglXsa-w80OlYJFRcloE,8041
+SyntenyQC/neighbourhood.py,sha256=5fHacjGL9rDK4BTe84Btc6JMp0cmzqXn6wh4t6uiKqA,16339
+SyntenyQC/networks.py,sha256=O6tAoIrOR3duOSI6qweoPfjjdbnQV7GVMIWehvqe0ec,14535
+SyntenyQC/pipelines.py,sha256=fOnuQOm088t_Yg8qJqyqYkA9fMAIyQ9XeSOFrmMWkks,12117
+SyntenyQC/visualisations.py,sha256=PdT5oKlXUDwvGPLSjvdjs_BpPsFhNv8i4OouQW5h6BM,8690
+syntenyqc-1.5.dist-info/METADATA,sha256=mIiEu67qLmGr33jA3xhVAPOTnJyMddFN4eyp2bvsQBg,16270
+syntenyqc-1.5.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+syntenyqc-1.5.dist-info/entry_points.txt,sha256=0ufXkHyG3o76obDlD5QnYJNwTLKowGa3F5_yFTxt2JE,53
+syntenyqc-1.5.dist-info/licenses/LICENSE,sha256=s8zHGoVwKONYSzNYgal9lu9hiv4XF2kQ4yEca4OVExg,1103
+syntenyqc-1.5.dist-info/RECORD,,
