@@ -1,0 +1,3 @@
+[console_scripts]
+cc-worke = work_efforts.scripts.ai_work_effort_creator:main
+code-conductor = cli:main_entry
