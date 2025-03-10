@@ -1,0 +1,10 @@
+xinspect/__init__.py,sha256=augtDfmvp_fpbNBW0A4m8g5bI_KXqwe_8-GslJN_eaE,340
+xinspect/auto_argparse.py,sha256=BI33lsL6hLKdcXvn9vdc6M0SPObSjiFj2B3mbFM3B6Q,2526
+xinspect/autogen.py,sha256=1ce7ldmRZRKTTmIRuokgytn5dZiu4FGoOuinuUwBJCw,7683
+xinspect/dynamic_kwargs.py,sha256=7QT7rCisHZ1-Xv2U5Rp5DOERFXgNmNIh5r4qQd2QeXY,20789
+xinspect/static_kwargs.py,sha256=-CwLZaa8bpEcp54p_dtrAh76ZgJ0tP4iwe2kg7Z96SQ,7141
+xinspect-0.4.0.dist-info/LICENSE,sha256=nX9nxF55JDXothg0bqH3MQdENAzi_PluJRXvQ1D844Q,11341
+xinspect-0.4.0.dist-info/METADATA,sha256=veCvPntyoNtIt8C3LDJn_2ntXKgnKtCOuuo6q1TO_no,9230
+xinspect-0.4.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+xinspect-0.4.0.dist-info/top_level.txt,sha256=66HAgTEmc7beQK-MGaKIxEkQpSZe61lCxJIjcl3qQig,9
+xinspect-0.4.0.dist-info/RECORD,,
