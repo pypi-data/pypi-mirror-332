@@ -1,0 +1,16 @@
+CODE_OF_CONDUCT.md
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+chempropstereo/__init__.py
+chempropstereo/_version.py
+chempropstereo.egg-info/PKG-INFO
+chempropstereo.egg-info/SOURCES.txt
+chempropstereo.egg-info/dependency_links.txt
+chempropstereo.egg-info/not-zip-safe
+chempropstereo.egg-info/requires.txt
+chempropstereo.egg-info/top_level.txt
+chempropstereo/tests/__init__.py
+chempropstereo/tests/test_chempropstereo.py
