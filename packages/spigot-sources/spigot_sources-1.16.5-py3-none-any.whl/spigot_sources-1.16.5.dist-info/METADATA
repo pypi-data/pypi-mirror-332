@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: spigot-sources
+Version: 1.16.5
+Summary: Translated Spigot sources for writing PySpigot scripts
+Home-page: https://pyspigot-docs.magicmq.dev
+Author: magicmq
+Author-email: business@magicmq.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Java Libraries
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
