@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+src/crimson/py_json/__init__.py
+src/crimson/py_json/dumps.py
+src/crimson_py_json.egg-info/PKG-INFO
+src/crimson_py_json.egg-info/SOURCES.txt
+src/crimson_py_json.egg-info/dependency_links.txt
+src/crimson_py_json.egg-info/top_level.txt
