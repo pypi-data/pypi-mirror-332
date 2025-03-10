@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/thing3/__init__.py
+src/thing3/rat.gif
+src/thing3/win.png
+src/thingthingthingj.egg-info/PKG-INFO
+src/thingthingthingj.egg-info/SOURCES.txt
+src/thingthingthingj.egg-info/dependency_links.txt
+src/thingthingthingj.egg-info/top_level.txt
