@@ -1,0 +1,356 @@
+"""
+Python module generated from Java source file org.bukkit.Registry
+
+Java source file obtained from artifact spigot-api version 1.20.5-R0.1-20240429.101539-37
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from com.google.common.base import Preconditions
+from com.google.common.base import Predicates
+from com.google.common.collect import ImmutableMap
+from java.util import Iterator
+from java.util import Objects
+from java.util.function import Predicate
+from java.util.stream import Stream
+from java.util.stream import StreamSupport
+from org.bukkit import *
+from org.bukkit.advancement import Advancement
+from org.bukkit.attribute import Attribute
+from org.bukkit.block import Biome
+from org.bukkit.block.banner import PatternType
+from org.bukkit.boss import KeyedBossBar
+from org.bukkit.damage import DamageType
+from org.bukkit.enchantments import Enchantment
+from org.bukkit.entity import Cat
+from org.bukkit.entity import EntityType
+from org.bukkit.entity import Frog
+from org.bukkit.entity import Villager
+from org.bukkit.entity import Wolf
+from org.bukkit.entity.memory import MemoryKey
+from org.bukkit.generator.structure import Structure
+from org.bukkit.generator.structure import StructureType
+from org.bukkit.inventory.meta.trim import TrimMaterial
+from org.bukkit.inventory.meta.trim import TrimPattern
+from org.bukkit.loot import LootTables
+from org.bukkit.map import MapCursor
+from org.bukkit.potion import PotionEffectType
+from org.bukkit.potion import PotionType
+from typing import Any, Callable, Iterable, Tuple
+
+
+class Registry(Iterable):
+    """
+    Represents a registry of Bukkit objects that may be retrieved by
+    NamespacedKey.
+    
+    Type `<T>`: type of item in the registry
+    """
+
+    ADVANCEMENT = Registry<Advancement>() {
+    
+        @Nullable
+        @Override
+        public Advancement get(@NotNull NamespacedKey key) {
+            return Bukkit.getAdvancement(key);
+        }
+    
+        @NotNull
+        @Override
+        public Stream<Advancement> stream() {
+            return StreamSupport.stream(spliterator(), false);
+        }
+    
+        @NotNull
+        @Override
+        public Iterator<Advancement> iterator() {
+            return Bukkit.advancementIterator();
+        }
+    }
+    """
+    Server advancements.
+
+    See
+    - Bukkit.advancementIterator()
+    """
+    ART = SimpleRegistry<>(Art.class)
+    """
+    Server art.
+
+    See
+    - Art
+    """
+    ATTRIBUTE = SimpleRegistry<>(Attribute.class)
+    """
+    Attribute.
+
+    See
+    - Attribute
+    """
+    BANNER_PATTERN = SimpleRegistry<>(PatternType.class)
+    """
+    Server banner patterns.
+
+    See
+    - PatternType
+    """
+    BIOME = SimpleRegistry<>(Biome.class)
+    """
+    Server biomes.
+
+    See
+    - Biome
+    """
+    BOSS_BARS = Registry<KeyedBossBar>() {
+    
+        @Nullable
+        @Override
+        public KeyedBossBar get(@NotNull NamespacedKey key) {
+            return Bukkit.getBossBar(key);
+        }
+    
+        @NotNull
+        @Override
+        public Stream<KeyedBossBar> stream() {
+            return StreamSupport.stream(spliterator(), false);
+        }
+    
+        @NotNull
+        @Override
+        public Iterator<KeyedBossBar> iterator() {
+            return Bukkit.getBossBars();
+        }
+    }
+    """
+    Custom boss bars.
+
+    See
+    - Bukkit.getBossBars()
+    """
+    CAT_VARIANT = SimpleRegistry<>(Cat.Type.class)
+    """
+    Server cat types.
+
+    See
+    - Cat.Type
+    """
+    ENCHANTMENT = Objects.requireNonNull(Bukkit.getRegistry(Enchantment.class), "No registry present for Enchantment. This is a bug.")
+    """
+    Server enchantments.
+
+    See
+    - Enchantment
+    """
+    ENTITY_TYPE = SimpleRegistry<>(EntityType.class, (entity) -> entity != EntityType.UNKNOWN)
+    """
+    Server entity types.
+
+    See
+    - EntityType
+    """
+    INSTRUMENT = Objects.requireNonNull(Bukkit.getRegistry(MusicInstrument.class), "No registry present for MusicInstrument. This is a bug.")
+    """
+    Server instruments.
+
+    See
+    - MusicInstrument
+    """
+    LOOT_TABLES = SimpleRegistry<>(LootTables.class)
+    """
+    Default server loot tables.
+
+    See
+    - LootTables
+    """
+    MATERIAL = SimpleRegistry<>(Material.class, (mat) -> !mat.isLegacy())
+    """
+    Server materials.
+
+    See
+    - Material
+    """
+    EFFECT = Objects.requireNonNull(Bukkit.getRegistry(PotionEffectType.class), "No registry present for PotionEffectType. This is a bug.")
+    """
+    Server mob effects.
+
+    See
+    - PotionEffectType
+    """
+    PARTICLE_TYPE = SimpleRegistry<>(Particle.class, (par) -> par.register)
+    """
+    Server particles.
+
+    See
+    - Particle
+    """
+    POTION = SimpleRegistry<>(PotionType.class)
+    """
+    Server potions.
+
+    See
+    - PotionType
+    """
+    STATISTIC = SimpleRegistry<>(Statistic.class)
+    """
+    Server statistics.
+
+    See
+    - Statistic
+    """
+    STRUCTURE = Bukkit.getRegistry(Structure.class)
+    """
+    Server structures.
+
+    See
+    - Structure
+    """
+    STRUCTURE_TYPE = Bukkit.getRegistry(StructureType.class)
+    """
+    Server structure types.
+
+    See
+    - StructureType
+    """
+    SOUNDS = SimpleRegistry<>(Sound.class)
+    """
+    Sound keys.
+
+    See
+    - Sound
+    """
+    TRIM_MATERIAL = Bukkit.getRegistry(TrimMaterial.class)
+    """
+    Trim materials.
+
+    See
+    - TrimMaterial
+    """
+    TRIM_PATTERN = Bukkit.getRegistry(TrimPattern.class)
+    """
+    Trim patterns.
+
+    See
+    - TrimPattern
+    """
+    DAMAGE_TYPE = Objects.requireNonNull(Bukkit.getRegistry(DamageType.class), "No registry present for DamageType. This is a bug.")
+    """
+    Damage types.
+
+    See
+    - DamageType
+    """
+    VILLAGER_PROFESSION = SimpleRegistry<>(Villager.Profession.class)
+    """
+    Villager profession.
+
+    See
+    - Villager.Profession
+    """
+    VILLAGER_TYPE = SimpleRegistry<>(Villager.Type.class)
+    """
+    Villager type.
+
+    See
+    - Villager.Type
+    """
+    MEMORY_MODULE_TYPE = Registry<MemoryKey>() {
+    
+        @NotNull
+        @Override
+        public Iterator iterator() {
+            return MemoryKey.values().iterator();
+        }
+    
+        @Nullable
+        @Override
+        public MemoryKey get(@NotNull NamespacedKey key) {
+            return MemoryKey.getByKey(key);
+        }
+    
+        @NotNull
+        @Override
+        public Stream<MemoryKey> stream() {
+            return StreamSupport.stream(spliterator(), false);
+        }
+    }
+    """
+    Memory Keys.
+
+    See
+    - MemoryKey
+    """
+    FLUID = SimpleRegistry<>(Fluid.class)
+    """
+    Server fluids.
+
+    See
+    - Fluid
+    """
+    FROG_VARIANT = SimpleRegistry<>(Frog.Variant.class)
+    """
+    Frog variants.
+
+    See
+    - Frog.Variant
+    """
+    WOLF_VARIANT = Objects.requireNonNull(Bukkit.getRegistry(Wolf.Variant.class), "No registry present for Wolf Variant. This is a bug.")
+    """
+    Wolf variants.
+
+    See
+    - Wolf.Variant
+    """
+    MAP_DECORATION_TYPE = SimpleRegistry<>(MapCursor.Type.class)
+    """
+    Map cursor types.
+
+    See
+    - MapCursor.Type
+    """
+    GAME_EVENT = Objects.requireNonNull(Bukkit.getRegistry(GameEvent.class), "No registry present for GameEvent. This is a bug.")
+    """
+    Game events.
+
+    See
+    - GameEvent
+    """
+
+
+    def get(self, key: "NamespacedKey") -> "T":
+        """
+        Get the object by its key.
+
+        Arguments
+        - key: non-null key
+
+        Returns
+        - item or null if does not exist
+        """
+        ...
+
+
+    def stream(self) -> "Stream"["T"]:
+        """
+        Returns a new stream, which contains all registry items, which are registered to the registry.
+
+        Returns
+        - a stream of all registry items
+        """
+        ...
+
+
+    def match(self, input: str) -> "T":
+        """
+        Attempts to match the registered object with the given key.
+        
+        This will attempt to find a reasonable match based on the provided input
+        and may do so through unspecified means.
+
+        Arguments
+        - input: non-null input
+
+        Returns
+        - registered object or null if does not exist
+        """
+        ...
