@@ -1,0 +1,35 @@
+"""
+Python module generated from Java source file org.bukkit.plugin.PluginLogger
+
+Java source file obtained from artifact spigot-api version 1.20.2-R0.1-20231205.164257-71
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from org.bukkit.plugin import *
+from typing import Any, Callable, Iterable, Tuple
+
+
+class PluginLogger(Logger):
+    """
+    The PluginLogger class is a modified Logger that prepends all
+    logging calls with the name of the plugin doing the logging. The API for
+    PluginLogger is exactly the same as Logger.
+
+    See
+    - Logger
+    """
+
+    def __init__(self, context: "Plugin"):
+        """
+        Creates a new PluginLogger that extracts the name from a plugin.
+
+        Arguments
+        - context: A reference to the plugin
+        """
+        ...
+
+
+    def log(self, logRecord: "LogRecord") -> None:
+        ...
