@@ -1,0 +1,2 @@
+[console_scripts]
+easyai = easyaikit.cli:main

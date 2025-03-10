@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+easyaikit/__init__.py
+easyaikit/__main__.py
+easyaikit/cli.py
+easyaikit/client.py
+easyaikit/session.py
+easyaikit/storage.py
+easyaikit/utils.py
+easyaikit.egg-info/PKG-INFO
+easyaikit.egg-info/SOURCES.txt
+easyaikit.egg-info/dependency_links.txt
+easyaikit.egg-info/entry_points.txt
+easyaikit.egg-info/requires.txt
+easyaikit.egg-info/top_level.txt
