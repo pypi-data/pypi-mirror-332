@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: airobot-api-client
+Version: 0.1.0
+Summary: An API client for the Airobot Thermostat local API
+Project-URL: Documentation, https://github.com/aparelo/airobot-api-client#readme
+Project-URL: Issues, https://github.com/aparelo/airobot-api-client/issues
+Project-URL: Source, https://github.com/aparelo/airobot-api-client
+Author-email: Aleksander Parelo <aleksander@parelo.ee>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
