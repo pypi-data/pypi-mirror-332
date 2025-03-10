@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: automata_toolbox
+Version: 1.0
+Summary: A Python CLI for DFA, NFA, PDA, and CFG simulation
+Home-page: https://github.com/user/automata_toolbox
+Author: Numele tau
+Author-email: email@example.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: summary
