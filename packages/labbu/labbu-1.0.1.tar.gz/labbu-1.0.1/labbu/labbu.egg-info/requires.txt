@@ -1,0 +1,4 @@
+mytextgrid
+PyYAML
+ftfy
+loguru
