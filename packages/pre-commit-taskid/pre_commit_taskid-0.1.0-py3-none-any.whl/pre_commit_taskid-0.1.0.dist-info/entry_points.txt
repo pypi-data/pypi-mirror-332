@@ -1,0 +1,4 @@
+[console_scripts]
+install-taskid-hook = scripts.install_hook:main
+pre-commit-taskid = pre_commit_taskid:main
+run-taskid-tests = scripts.run_tests:main
