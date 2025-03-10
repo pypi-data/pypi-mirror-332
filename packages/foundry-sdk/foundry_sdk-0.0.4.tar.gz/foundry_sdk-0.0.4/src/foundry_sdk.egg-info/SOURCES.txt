@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/foundry_sdk.egg-info/PKG-INFO
+src/foundry_sdk.egg-info/SOURCES.txt
+src/foundry_sdk.egg-info/dependency_links.txt
+src/foundry_sdk.egg-info/requires.txt
+src/foundry_sdk.egg-info/top_level.txt
