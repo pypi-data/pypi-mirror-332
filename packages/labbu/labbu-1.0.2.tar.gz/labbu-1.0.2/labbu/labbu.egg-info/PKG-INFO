@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: labbu
+Version: 1.0.2
+Summary: Tool to make contextual editing of HTK-style lab files more intuitive and user friendly.
+Author: Tyler Koziol
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: mytextgrid
+Requires-Dist: PyYAML
+Requires-Dist: ftfy
+Requires-Dist: loguru
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary
