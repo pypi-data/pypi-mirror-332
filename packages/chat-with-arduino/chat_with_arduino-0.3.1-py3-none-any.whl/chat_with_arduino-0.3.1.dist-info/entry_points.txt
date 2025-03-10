@@ -1,0 +1,2 @@
+[console_scripts]
+chat-with-arduino = chat_with_arduino:main
