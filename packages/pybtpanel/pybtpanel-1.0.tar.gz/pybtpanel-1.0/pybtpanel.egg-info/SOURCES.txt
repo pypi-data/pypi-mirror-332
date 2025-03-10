@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pybtpanel/__init__.py
+pybtpanel.egg-info/PKG-INFO
+pybtpanel.egg-info/SOURCES.txt
+pybtpanel.egg-info/dependency_links.txt
+pybtpanel.egg-info/requires.txt
+pybtpanel.egg-info/top_level.txt
