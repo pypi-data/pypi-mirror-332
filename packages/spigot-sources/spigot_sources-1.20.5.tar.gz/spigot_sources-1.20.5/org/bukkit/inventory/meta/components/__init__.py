@@ -1,0 +1,1 @@
+from .FoodComponent import FoodComponent
