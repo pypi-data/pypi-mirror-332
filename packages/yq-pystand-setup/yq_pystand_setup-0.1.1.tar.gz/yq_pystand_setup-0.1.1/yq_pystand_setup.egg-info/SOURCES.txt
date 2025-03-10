@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+yq_pystand_setup/__main__.py
+yq_pystand_setup/_version.py
+yq_pystand_setup/main.py
+yq_pystand_setup.egg-info/PKG-INFO
+yq_pystand_setup.egg-info/SOURCES.txt
+yq_pystand_setup.egg-info/dependency_links.txt
+yq_pystand_setup.egg-info/top_level.txt
