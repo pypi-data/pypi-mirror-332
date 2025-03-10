@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/args_me_model/__init__.py
+src/args_me_model/claim.py
+src/args_me_model/claim_id.py
+src/args_me_model/source.py
+src/args_me_model/support.py
+src/args_me_model.egg-info/PKG-INFO
+src/args_me_model.egg-info/SOURCES.txt
+src/args_me_model.egg-info/dependency_links.txt
+src/args_me_model.egg-info/requires.txt
+src/args_me_model.egg-info/top_level.txt
+tests/test.py
