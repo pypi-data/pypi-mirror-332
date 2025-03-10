@@ -1,0 +1,16 @@
+[project]
+name = "hakarl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kyle Kestell", email = "kyle@kestell.org" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "lark>=1.2.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
