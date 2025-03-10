@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "django-payments-sepa"
+version = "2.0.0.dev0"
+packages = [
+    { include = "djp_sepa" }
+]
+description = "django-payments provider for SEPA"
+authors = ["Dominik George <dominik.george@teckids.org>"]
+license = "Apache-2.0"
+repository = "https://edugit.org/AlekSIS/libs/django-payments-sepa"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django-payments = "^3.0.0"
+django-localflavor = "^4.0.0"
+sepaxml = "^2.5.0"
+fints = { version = "^3.1.0", optional = true }
+svgwrite = { version = "^1.4.2", optional = true }
+
+[tool.poetry.extras]
+fints = ["fints", "svgwrite"]
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
