@@ -1,0 +1,7 @@
+cclib
+numpy
+pandas
+py-cpuinfo
+scipy
+seamm
+tabulate
