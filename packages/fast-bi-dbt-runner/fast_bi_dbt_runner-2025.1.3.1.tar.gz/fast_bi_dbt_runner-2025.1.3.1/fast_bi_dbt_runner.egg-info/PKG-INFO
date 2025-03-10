@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: fast_bi_dbt_runner
+Version: 2025.1.3.1
+Summary: Private Python library for managing dbt DAGs.
+Home-page: https://gitlab.fast.bi/infrastructure/bi-platform-pypi-packages/fast_bi_dbt_runner
+Author: Fast.Bi
+Author-email: "Fast.Bi" <support@fast.bi>
+Maintainer: Fast.Bi
+Maintainer-email: "Fast.Bi" <administrator@fast.bi>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: home-page
+Dynamic: maintainer
+Dynamic: requires-python
+
+# fast_bi_dbt_runner
+
+[![PyPI](https://img.shields.io/pypi/v/fast_bi_dbt_runner.svg)](https://pypi.org/project/fast_bi_dbt_runner/)
+
+_fast_bi_dbt_runner_ is a Python library  as a part of [fast.bi](https://fast.bi/) product for building and managing dbt pipelines within DAGs. 
+
+It offers a user-friendly interface to integrate bash scripts, k9s, API servers, and GKE operators for dbt projects. 
+Additionally, it supports Airbyte trigger build.
