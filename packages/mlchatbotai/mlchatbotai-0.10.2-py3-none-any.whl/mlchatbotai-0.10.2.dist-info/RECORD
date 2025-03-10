@@ -1,0 +1,11 @@
+MLChatbotAI/Chatbot_AI.py,sha256=_64cecQvO1erSlOBQcCr8Xo_pQsGdMuuDcfiTBzjcUw,4758
+MLChatbotAI/__init__.py,sha256=tQjGImhJC89c5UAPWRf3UnZAbApL0wSx2nrF--etyt0,119
+MLChatbotAI/train_chatbot.py,sha256=GFkrXwggLcTvdpAASLdOJyjAdoKhkx-1V3_Bqxt7IIY,5107
+MLChatbotAI/data/default_intents.json,sha256=aNaVeBAqG4m_Z9eN7mC5j1tJZsau5JhdlMAdQP93JpE,155109
+MLChatbotAI/model/chatbot_model2.h5,sha256=nxj-Rv8ZyIKK-bSnS1ij6xZEXgBPr0I67sCiOpjXUF4,6460328
+MLChatbotAI/model/classes.pkl,sha256=dKxrn0cU1D5VM2YinK2l8V2Zi-2pbogp7skrPY4gims,3078
+MLChatbotAI/model/words.pkl,sha256=th9rZrCTF_qg_jwQAA1KVzbI4h2SiFa3eGkmZ1nDvPA,6383
+mlchatbotai-0.10.2.dist-info/METADATA,sha256=ccBVRWJiyYV-FxswSIFFk6TGPU0hB5llLbLHYQZLHb8,2704
+mlchatbotai-0.10.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mlchatbotai-0.10.2.dist-info/top_level.txt,sha256=yedqmCpDQdlY_xwbtNGZ8iBLvB6XT6BAYBYqout76tw,12
+mlchatbotai-0.10.2.dist-info/RECORD,,
