@@ -1,0 +1,7 @@
+README.md
+setup.py
+postgres_import.egg-info/PKG-INFO
+postgres_import.egg-info/SOURCES.txt
+postgres_import.egg-info/dependency_links.txt
+postgres_import.egg-info/requires.txt
+postgres_import.egg-info/top_level.txt

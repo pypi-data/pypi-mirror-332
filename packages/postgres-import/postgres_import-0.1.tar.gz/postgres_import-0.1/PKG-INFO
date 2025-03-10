@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: postgres_import
+Version: 0.1
+Summary: A simple Python package with a function to import data from Excel sheets into created empty tables in Postgresql
+Home-page: UNKNOWN
+Author: Olu Ayinde
+Author-email: aolufeyijimi@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
