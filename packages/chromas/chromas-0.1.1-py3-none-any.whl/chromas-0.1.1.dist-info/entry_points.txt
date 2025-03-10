@@ -1,0 +1,3 @@
+[console_scripts]
+chromas=chromas.chromas:cli
+
