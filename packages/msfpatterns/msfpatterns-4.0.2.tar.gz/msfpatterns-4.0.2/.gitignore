@@ -1,0 +1,20 @@
+# Python
+## Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+## Distribution / packaging
+dist/
+
+## Unit test / coverage reports
+.coverage
+.mypy_cache/
+.pytest_cache/
+coverage.xml
+junit.xml
+
+## Environment
+.venv/
+
+## Development
+.ruff_cache/
