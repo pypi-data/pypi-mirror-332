@@ -1,0 +1,101 @@
+Metadata-Version: 2.2
+Name: simplemt5
+Version: 0.1.0
+Summary: Упрощенная библиотека для работы с MetaTrader 5
+Home-page: https://github.com/yourusername/simplemt5
+Author: SimpleMT5 Developer
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: MetaTrader5>=5.0.0
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: numpy>=1.18.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SimpleMT5 - Упрощенная библиотека для MetaTrader 5
+
+Эта библиотека предоставляет упрощенный интерфейс для работы с MetaTrader 5 через Python.
+
+## Установка
+
+```bash
+pip install simplemt5
+```
+
+## Использование
+
+### Инициализация
+
+```python
+from simplemt5 import SimpleMT5
+
+# Инициализация
+mt5 = SimpleMT5()
+```
+
+### Получение данных
+
+```python
+# Получение данных по символу, таймфрейму и количеству свечей
+data = mt5.get_data("EURUSD", "M5", 100)
+
+# Данные содержат только нужные столбцы: time, open, high, low, close
+print(data.head())
+```
+
+### Торговые операции
+
+#### Открытие позиций с указанием TP и SL в пунктах
+
+```python
+# Покупка с TP = 100 пунктов, SL = 50 пунктов
+mt5.buy("EURUSD", 0.01, tp_points=100, sl_points=50)
+
+# Продажа с TP = 200 пунктов, SL = 100 пунктов
+mt5.sell("EURUSD", 0.01, tp_points=200, sl_points=100)
+```
+
+#### Максимально простое открытие позиций
+
+```python
+# Покупка с TP = 100 пунктов, SL = 50 пунктов (значения по умолчанию)
+mt5.buy_simple("EURUSD", 0.01)
+
+# Продажа с указанием своих значений TP и SL в пунктах
+mt5.sell_simple("EURUSD", 0.01, tp_points=200, sl_points=100)
+```
+
+### Получение информации о счете и позициях
+
+```python
+# Получение информации о счете
+account_info = mt5.get_account_info()
+print(f"Баланс: {account_info['balance']}")
+
+# СУПЕР ПРОСТОЕ получение и вывод позиций
+positions = mt5.get_positions()
+for pos in positions:
+    print(pos)  # Автоматически выводит в удобном формате!
+
+# Еще проще:
+positions = mt5.get_positions_simple()
+print(positions)  # Выводит весь список позиций
+```
+
+## Требования
+
+- Установленный MetaTrader 5
+- Python 3.7+
+- Необходимые библиотеки: MetaTrader5, pandas, numpy 
