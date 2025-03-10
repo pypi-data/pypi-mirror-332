@@ -1,0 +1,16 @@
+automapper/__init__.py,sha256=T-2dECkR6TiOSumYXo4A5XX4v2lH8jdTZTBiRPOi_1I,243
+automapper/exceptions.py,sha256=7jBfwyKzG89bppJbCZiZzN6bfvhnvS4sO9_ItsaQh-0,306
+automapper/mapper.py,sha256=W9Wqa5uQDje-oavI3NSc5jtR9HtHqU0ga4cxmu6jE3w,13578
+automapper/mapper_initializer.py,sha256=3hevV4sd6TKl-wxsPKAJO6qBamUtvdl1uq9V9ObKOoA,1244
+automapper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automapper/utils.py,sha256=jLiSgQoOrpHnXqJODaegecSOFqF6ymgmG9s9wBbAPlE,869
+automapper/extensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automapper/extensions/default.py,sha256=fhHEh2zlngd8qpiy6t0h9qVN-GjW8QnFc7vM-In6iJE,1170
+automapper/extensions/pydantic.py,sha256=kPrTwF7432BoVATs7WY8r7ELTIoH0B-r11MOjSTDe4M,313
+automapper/extensions/sqlalchemy.py,sha256=2x40f7dkh-fkRdd1iayzq9Rx6qJh5C4UrexUKs_zBj4,537
+automapper/extensions/tortoise.py,sha256=CQ4dn0ZgncS_rBv8AgKohkg9Y147_Yzj2vYrYXZ_6fU,305
+py_automapper-2.2.0.dist-info/LICENSE,sha256=83PfKExIuL1d3JwzKlP3JPI3FWvf4E5tDCuhsKMG9JA,1074
+py_automapper-2.2.0.dist-info/METADATA,sha256=gsqvgjqbXh6qBBamYznNg_h6VMK96Lz0HGQE0E4BkO8,15513
+py_automapper-2.2.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+py_automapper-2.2.0.dist-info/top_level.txt,sha256=8Z8Ch-e8DuMXfnKl7lX4ag3McHOxAImrukjBclpLiNo,11
+py_automapper-2.2.0.dist-info/RECORD,,
