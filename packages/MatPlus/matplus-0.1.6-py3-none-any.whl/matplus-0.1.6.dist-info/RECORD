@@ -1,0 +1,17 @@
+MatPlus/BarPlot.py,sha256=Knf2nmhgd_DtCKTnUzx1SeFqX8OA7FVhHBmcWSGjLcM,3453
+MatPlus/BoxPlot.py,sha256=4ufwRmLiwe9l9bcEr5pI9xIDB-XCd_EJHLFlXUKZveA,3961
+MatPlus/Histogram.py,sha256=_K8zCMT70ITSwhnmq5wpF-dYjpiAGAvH2dfBL_nG1kg,2112
+MatPlus/LinePlot.py,sha256=k1w8R7d8kICRU2TnCm1atZFz3FOi3-CtrZjo7_t5gzE,2495
+MatPlus/ScatterPlot.py,sha256=_mRPQaOeyWq0F31f_xkwh-iOD-4vTHo7iXoExmeRS_o,4673
+MatPlus/__init__.py,sha256=_gp4RUHSn3RiSrnQR_AJ4kshybgUeosONJlzoFS6vjc,290
+tests/__init__.py,sha256=nd4iCKF2EvbLofLY7vRDcI1sv9kjKOSTmnMI6g9GsuQ,291
+tests/test_BarPlot.py,sha256=Lsp7Vp3hT6wg2z6QhEtqSeeUHNhw3dmxxzEQn04zP34,1163
+tests/test_BoxPlot.py,sha256=DZdcySpTzQN1Sj1ZTBEqH2vjLd21-9d62jELDJrnWbc,2522
+tests/test_Histogram.py,sha256=2qGeMFUiVC4tmfB9cBTBAotxWcCV94IxJYxji-m75KY,1785
+tests/test_LinePlot.py,sha256=T6RFkwIUaJD2MYnt2Ic5klnt3WXjPKPFvQ2W1Q97Dho,1125
+tests/test_ScatterPlot.py,sha256=z0bOy-MkS5mnwtvexckLI6FMWhlVeYlaGTc2Uv96HoI,1313
+matplus-0.1.6.dist-info/LICENSE,sha256=EmCZ_E9THXMH4xVqwt9N9uOlSR4sA11bfnzoEF-zmYk,1107
+matplus-0.1.6.dist-info/METADATA,sha256=jW6cJM05hm4OK2GTz7m9k1WSV7Ht7XA2eUb-a0-kjrI,3188
+matplus-0.1.6.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+matplus-0.1.6.dist-info/top_level.txt,sha256=exqzT-fU8cHsIS3gXXqXBvTsH4MpBdac9qvIHEeljg0,14
+matplus-0.1.6.dist-info/RECORD,,
