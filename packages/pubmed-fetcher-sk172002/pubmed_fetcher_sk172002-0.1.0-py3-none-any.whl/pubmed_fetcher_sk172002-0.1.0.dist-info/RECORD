@@ -1,0 +1,11 @@
+pubmed_fetcher/__init.py,sha256=yxQ6mZEK509tkJP2exLsMzXGuSRLWIpSo72YjKU5ga4,307
+pubmed_fetcher/cli.py,sha256=cqzV7eOHjpQzbbr8JN-10lvMwFSrdIdUZo17cbqRb6I,1963
+pubmed_fetcher/client.py,sha256=CGLDx7S1w2AlJ-v6uhN4h54rz3aGkn0olMS54LCnTUs,4289
+pubmed_fetcher/exceptions.py,sha256=RvaMX1dvaRcsmWAHq_kAlb4lcTpk4sZWEQNT_CLoZt8,76
+pubmed_fetcher/fetcher.py,sha256=z9poH5yrtB3a6qJFsFaa0ERaGoL7Mb_AJlVsTBkioLY,3976
+pubmed_fetcher/models.py,sha256=QkD8jSg8xOOk4SiL-E__1e3kRJ8aqM9nRkUtNA9tVEY,306
+pubmed_fetcher/processor.py,sha256=ZZ-E0ONiqvyJIgNaMwqGeuM4w7ScVgFigEzkds3E1V4,1713
+pubmed_fetcher_sk172002-0.1.0.dist-info/entry_points.txt,sha256=fehb35GHAe4nQxpAb_9StQAeYHnjBqpKneVzZB1rIrg,59
+pubmed_fetcher_sk172002-0.1.0.dist-info/METADATA,sha256=zlSErFbO6EM6CjGMsZWQ0_MJh1DeqkzCOzvlTZZu91A,1751
+pubmed_fetcher_sk172002-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pubmed_fetcher_sk172002-0.1.0.dist-info/RECORD,,
