@@ -1,0 +1,69 @@
+Metadata-Version: 2.4
+Name: otaro
+Version: 0.0.12
+Summary: Auto-optimization of LLM tasks
+Project-URL: Homepage, https://silanthro.github.io/otaro
+Project-URL: Repository, https://github.com/silanthro/otaro
+Author: Silanthro
+Requires-Python: >=3.9
+Requires-Dist: click>=8.1.8
+Requires-Dist: dirtyjson>=1.0.8
+Requires-Dist: fastapi>=0.115.8
+Requires-Dist: fuzzywuzzy[speedup]>=0.18.0
+Requires-Dist: litellm>=1.61.16
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: pyparsing>=3.2.1
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: uvicorn>=0.34.0
+Description-Content-Type: text/markdown
+
+# otaro
+
+```
+uv add otaro
+```
+
+Documentation: https://silanthro.github.io/otaro
+
+## Example
+
+Create a config YAML file to describe the task.
+
+```yaml
+# A sample config for a haiku writing task
+
+model: gemini/gemini-2.0-flash-001
+
+inputs:
+- topic
+
+outputs:
+- haiku
+```
+
+```py
+from otaro import Task
+
+task = Task.from_config("poet.yml")
+response = task.run(topic="frog")
+print(response.haiku)
+
+"""
+Green skin on blue pond,
+A croaking song fills the air,
+Summer's gentle kiss.
+"""
+```
+
+See `./examples` for more examples and configs.
+
+## Deploy API
+
+Run `otaro` to deploy a config file as an API.
+
+```
+$ otaro examples/poet.yml
+```
+
+Navigate to "https://localhost:8000" to view and test the API documentation.

@@ -1,0 +1,15 @@
+
+model: gemini/gemini-2.0-flash-001
+
+inputs:
+- topic
+
+outputs:
+- quotes: list[str]
+
+demos:
+- topic: frogs
+  quotes: [
+    "Kissing a frog to get the prince is a waste of a perfectly good frog.",
+    "Every journey begins with a single hop."
+  ]
