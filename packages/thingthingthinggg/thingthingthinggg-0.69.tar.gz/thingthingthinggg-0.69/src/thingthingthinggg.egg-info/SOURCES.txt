@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/thing3/__init__.py
+src/thingthingthinggg.egg-info/PKG-INFO
+src/thingthingthinggg.egg-info/SOURCES.txt
+src/thingthingthinggg.egg-info/dependency_links.txt
+src/thingthingthinggg.egg-info/top_level.txt
