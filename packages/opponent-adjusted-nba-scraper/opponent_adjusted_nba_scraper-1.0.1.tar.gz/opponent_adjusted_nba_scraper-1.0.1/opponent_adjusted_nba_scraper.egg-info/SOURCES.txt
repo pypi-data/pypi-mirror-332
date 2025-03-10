@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+opponent_adjusted_nba_scraper.egg-info/PKG-INFO
+opponent_adjusted_nba_scraper.egg-info/SOURCES.txt
+opponent_adjusted_nba_scraper.egg-info/dependency_links.txt
+opponent_adjusted_nba_scraper.egg-info/requires.txt
+opponent_adjusted_nba_scraper.egg-info/top_level.txt
+tests/__init__.py
+tests/test_player_stats.py
+tests/test_team_stats.py
