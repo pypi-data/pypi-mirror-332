@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+findmydevice/__init__.py
+findmydevice/client.py
+findmydevice/crypto.py
+findmydevice.egg-info/PKG-INFO
+findmydevice.egg-info/SOURCES.txt
+findmydevice.egg-info/dependency_links.txt
+findmydevice.egg-info/requires.txt
+findmydevice.egg-info/top_level.txt
+tests/test_server.py
