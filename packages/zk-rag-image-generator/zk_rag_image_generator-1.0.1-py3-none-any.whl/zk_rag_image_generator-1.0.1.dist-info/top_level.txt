@@ -1,0 +1,2 @@
+image_generator
+stable_diffusion_gateway
