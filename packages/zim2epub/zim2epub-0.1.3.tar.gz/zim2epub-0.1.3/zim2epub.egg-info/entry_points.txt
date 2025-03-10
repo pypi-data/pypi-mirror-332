@@ -1,0 +1,2 @@
+[console_scripts]
+zim2epub = zim2epub:main

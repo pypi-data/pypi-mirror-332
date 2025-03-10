@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+zim2epub.py
+tests/__init__.py
+tests/conftest.py
+tests/test_basic.py
+tests/test_conversion.py
+zim2epub.egg-info/PKG-INFO
+zim2epub.egg-info/SOURCES.txt
+zim2epub.egg-info/dependency_links.txt
+zim2epub.egg-info/entry_points.txt
+zim2epub.egg-info/requires.txt
+zim2epub.egg-info/top_level.txt
