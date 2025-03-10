@@ -1,0 +1,21 @@
+torch
+bcrypt
+numpy<2
+scipy
+gurobipy
+pandas
+openpyxl
+reportlab
+psutil
+sympy
+tqdm
+pywebview
+cefpython3
+rdkit
+matplotlib
+folium
+orjson
+pyyaml
+
+[:sys_platform == "win32"]
+pywin32
