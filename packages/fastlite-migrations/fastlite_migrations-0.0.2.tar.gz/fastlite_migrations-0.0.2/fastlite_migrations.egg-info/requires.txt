@@ -1,0 +1,4 @@
+fastlite
+graphviz
+
+[dev]
