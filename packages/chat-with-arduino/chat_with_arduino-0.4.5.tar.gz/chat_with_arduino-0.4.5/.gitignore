@@ -1,0 +1,4 @@
+code_written_by_llms/
+dist/
+chat_with_arduino.egg-info/
+.env
