@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: mcsmc
+Version: 0.0.1
+Summary: mcsm面板控制库
+Author-email: xiaoliang <2700858939@qq.com>
+License: Apache 2.0
+Project-URL: text, https://github.com/yxjsxl
+Keywords: mcsm,minecraft,server,control
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# MCSM-C
+---------
+## 这是什么库
+这是一个用来控制mcsm面板(主要针对我的世界服务器)的库
