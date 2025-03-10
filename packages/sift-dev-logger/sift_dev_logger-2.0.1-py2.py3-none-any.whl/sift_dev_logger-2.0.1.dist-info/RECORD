@@ -1,0 +1,9 @@
+sift_dev_logger/__init__.py,sha256=1XPxNLmHHyYd1_xczTujhExXZXIETsIgSFzKcGxgpBU,1174
+sift_dev_logger/common.py,sha256=oZSLIgu0afPr1B8lDG1DouqTTF-1ekXR03C3QDiShyM,2988
+sift_dev_logger/config.py,sha256=QvhuN2ZkS3AG_k50Fo4PcaMCD_YmcnlFcCxiDvJJTQo,2074
+sift_dev_logger/fastapi.py,sha256=uv-borAwuYcuSkJcoVualA0vkiy8k9h6UN2-9QW3eeM,12170
+sift_dev_logger/flask.py,sha256=1LYtSYZ_s-cb3f6e8-ho2-xYdui-La90zkKPAlbc5mo,4035
+sift_dev_logger/handlers.py,sha256=f8lrX6qTRUHDqWRx5tuN2hA1W8tL3i-Fs3fnE8TL53k,9929
+sift_dev_logger-2.0.1.dist-info/METADATA,sha256=07XBvFoBVyKU2St2zq8ZlWKnUt8dKiAU0Gv4FPwcBOs,4908
+sift_dev_logger-2.0.1.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+sift_dev_logger-2.0.1.dist-info/RECORD,,
