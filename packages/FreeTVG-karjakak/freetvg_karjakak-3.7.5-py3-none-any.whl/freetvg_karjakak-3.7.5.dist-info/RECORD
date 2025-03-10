@@ -1,0 +1,21 @@
+TVG/FreeTVG.py,sha256=s4iVNu2UQC-ZROFrvoV3Kbx5vRFyV_EHaC1nxdDnVRw,156182
+TVG/Tutorial TVG.pdf,sha256=k0zzNzdXoSdfLTXLC7cUwiE7DMJl4pQugVgyGUs0A9w,384401
+TVG/__init__.py,sha256=CKCwMC_bpw_NjCxucRHAH0ja_ThEw1_hNoINcxgxZrI,49
+TVG/bible_reader/__init__.py,sha256=pnEPI4qHQsj98D08eNlQVEizd04_Aj274YX2HOtfrAU,117
+TVG/bible_reader/bible_creator.py,sha256=Psy1MXyRTksRUGgEHFTAInld4DrSN2xKMtLuTteLlVk,5788
+TVG/bible_reader/database_bible_tvg.py,sha256=dJvE_LnZ5pN2s0G5xgQIOgI_hTCeBUTL_4supwLFebs,5020
+TVG/bible_reader/layout_BR.py,sha256=bG-dBql9_JXEfUxPYVcIdO2OEAtQA1uZ1NzNwkChTgY,16033
+TVG/bible_reader/.Bible/KJV.xml,sha256=LXmplDcp1dCpI3JCUOvkpFulnlo4AyX2bC18G_RgT7Y,5214233
+TVG/structure/__init__.py,sha256=GPUA_sIfc2KexyysyGr_B6oKCnwr10tX0ecYVZtB_Gw,101
+TVG/structure/frame_layouts.py,sha256=1_p_rJTcbM9cTvQh_Fy0rj-Auh4jAfaAxPcjt02n7BE,27872
+TVG/utility/RegMail.py,sha256=_omxHD-Ng16nFoyDnNBYT66UpkxI-Elo0RKfVtTDScc,925
+TVG/utility/__init__.py,sha256=Szf2J0phtv4ckEmyXzMnws0FxO2Pz-47UT8X1YasCi0,162
+TVG/utility/data_parse.py,sha256=-B7WFpmQcarAcWBvm0vst5XBcLsDrgxypl8exNY_SHw,10151
+TVG/utility/database_tvg.py,sha256=vWw8CNPIm1cGmgkKmAMEroPql2F8o2lH0kZHvc1w2AQ,3796
+TVG/utility/mdh.py,sha256=QepYUui325AEU_rp7aBU5cf--XRgOfrZ31zfk3ylphg,7742
+freetvg_karjakak-3.7.5.dist-info/LICENSE,sha256=FxVeIuvWQOiotfilSQ-rI8-wtxfzNCSsFtIvhyEpAYk,1084
+freetvg_karjakak-3.7.5.dist-info/METADATA,sha256=EdWabXxWV6qSjQQLHqPzW81HU5qHdsXWqWeMTiQAni8,3155
+freetvg_karjakak-3.7.5.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+freetvg_karjakak-3.7.5.dist-info/entry_points.txt,sha256=IQeo_p1F_yu-Ou372X3eE56Ot8KJ34oN6tqXIAwJjCs,29
+freetvg_karjakak-3.7.5.dist-info/top_level.txt,sha256=9h9r9IB3LAfX6aVQTvPnQBfTIrdg9SWEhKSJ3r2luw0,4
+freetvg_karjakak-3.7.5.dist-info/RECORD,,
