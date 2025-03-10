@@ -1,0 +1,7 @@
+README.md
+setup.py
+if_etl_sdk.egg-info/PKG-INFO
+if_etl_sdk.egg-info/SOURCES.txt
+if_etl_sdk.egg-info/dependency_links.txt
+if_etl_sdk.egg-info/requires.txt
+if_etl_sdk.egg-info/top_level.txt
