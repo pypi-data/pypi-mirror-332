@@ -1,0 +1,31 @@
+"""
+Python module generated from Java source file org.yaml.snakeyaml.tokens.DirectiveToken
+
+Java source file obtained from artifact snakeyaml version 1.27
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from org.yaml.snakeyaml.error import Mark
+from org.yaml.snakeyaml.error import YAMLException
+from org.yaml.snakeyaml.tokens import *
+from typing import Any, Callable, Iterable, Tuple
+
+
+class DirectiveToken(Token):
+
+    def __init__(self, name: str, value: list["T"], startMark: "Mark", endMark: "Mark"):
+        ...
+
+
+    def getName(self) -> str:
+        ...
+
+
+    def getValue(self) -> list["T"]:
+        ...
+
+
+    def getTokenId(self) -> "Token.ID":
+        ...
