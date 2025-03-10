@@ -1,0 +1,5 @@
+[console_scripts]
+griffe-typedoc = griffe_typedoc.cli:main
+
+[gui_scripts]
+
