@@ -1,0 +1,49 @@
+[tools]
+uv = "latest"
+ruff = "latest"
+
+[env]
+'_'.file = ".env.yaml"
+
+[tasks.sync]
+description = "Install all dependencies to the current environment from pyproject.toml"
+run = "uv sync"
+
+[tasks.sync-dev]
+description = "Install all dependencies including development dependencies"
+run = "uv sync --dev"
+
+[tasks.test]
+description = "Run tests"
+sources = ["tests"]
+run = "uv run pytest tests/"
+
+[tasks.format]
+description = "Format code with ruff"
+sources = ["snap_html", "tests"]
+run = "uv run ruff format snap_html/ tests/ && uv run ruff check --fix snap_html/ tests/"
+
+[tasks.lint]
+description = "Run all checks"
+depends = ["lint:mypy", "lint:ruff"]
+
+[tasks."lint:mypy"]
+description = "Check code style with ruff and mypy"
+run = "uv run mypy --config-file setup.cfg snap_html tests/**/*.py"
+
+[tasks."lint:ruff"]
+description = "Check code style with ruff"
+run = "uv run ruff check snap_html/ tests/"
+
+
+[tasks.build]
+description = "Build package"
+sources = ["snap_html/**/*.py"]
+outputs = ["dist"]
+run = "rm -rf dist && uv build"
+
+[tasks.publish]
+depends = ["build"]
+sources = ["dist"]
+description = "Publish package to PyPI"
+run = "uv publish"
