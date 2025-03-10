@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: smt-switch
+Version: 0.3.2
+Summary: Python bindings for the smt-switch C++ SMT solving library
+Author-email: Yoni Zohar <yoni.zohar@biu.ac.il>, Áron Ricardo Perez-Lopez <arpl@cs.stanford.edu>, Makai Mann <makaim@cs.stanford.edu>, Clark Barrett <barrett@cs.stanford.edu>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/stanford-centaur/smt-switch
+Project-URL: Repository, https://github.com/stanford-centaur/smt-switch.git
+Project-URL: Issues, https://github.com/stanford-centaur/smt-switch/issues
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: pysmt
+Requires-Dist: pysmt; extra == "pysmt"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
