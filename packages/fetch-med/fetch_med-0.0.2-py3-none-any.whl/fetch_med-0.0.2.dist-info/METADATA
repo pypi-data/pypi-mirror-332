@@ -1,0 +1,59 @@
+Metadata-Version: 2.3
+Name: fetch-med
+Version: 0.0.2
+Summary: A tool to fetch research papers
+Author: pallavdata
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: beautifulsoup4 (>=4.13.3)
+Requires-Dist: deep-translator (>=1.11.4)
+Requires-Dist: lxml (>=5.3.1)
+Requires-Dist: openpyxl (>=3.1.5)
+Requires-Dist: pandas (>=2.0.3)
+Requires-Dist: requests (>=2.32.3)
+Description-Content-Type: text/markdown
+
+# Pubmed-Paper-Fetcher-and-Processor
+
+Tools Used - ChatGPT https://chatgpt.com/, Stackoverflow http://stackoverflow.com/
+
+*This package is designed for searching the PubMed database and retrieving data, including the paper’s ID, title, publication date, non-academic authors, and their metadata.*
+
+INSTALL:
+
+`pip install fetch-med`
+
+**WITH** command-line syntax:
+--
+- -h,--help  : show this help message and exit
+- -d,--debug : debug the program
+- -q,--query : query to get papers
+- -f,--file  : path of the output file
+- --force    : force article to be added even if author is not present
+- -g,--get   : max number of articles to be present in output. By default all
+- -c,--count : max number of articles to fetch and parse. By default all
+- -e,--ext   : supports: .json, .csv and .xlsx
+
+For Example:
+
+`get-papers-list --debug --query covid-19 --force -c 2 -g 1`
+
+**WITHOUT** command-line syntax:
+--
+Run: `get-papers-list`
+
+
+_____
+Note :
+- *If no file or incorrect file path is given then output will be printed on console*
+- *Dont include -e or --ext to run the program or it will give you list of supported extensions*
+
+
+
+
