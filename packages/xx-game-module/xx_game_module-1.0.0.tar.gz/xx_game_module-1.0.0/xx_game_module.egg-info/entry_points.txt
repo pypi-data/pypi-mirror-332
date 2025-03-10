@@ -1,0 +1,2 @@
+[console_scripts]
+xx_game_module = game_module.cli:main
