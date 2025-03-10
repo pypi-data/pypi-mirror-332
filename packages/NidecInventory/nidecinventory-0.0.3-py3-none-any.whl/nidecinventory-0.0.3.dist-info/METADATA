@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: NidecInventory
+Version: 0.0.3
+Summary: Nidec Unidrive M motor control drives inventory generator.
+Home-page: https://github.com/carlosalma/nidec-inventory
+Author: Carlos Alonso Martín
+Author-email: Carlos Alonso Martín <cam.codeweaver@gmail.com>
+Maintainer-email: Carlos Alonso Martín <cam.codeweaver@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Topic :: Documentation
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas~=2.2.3
+Requires-Dist: PyYAML~=6.0.2
+Requires-Dist: setuptools~=75.8.2
+Dynamic: author
+Dynamic: home-page
