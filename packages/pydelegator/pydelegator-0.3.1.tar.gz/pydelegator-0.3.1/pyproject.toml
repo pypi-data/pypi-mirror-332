@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pydelegator"
+version = "0.3.1"
+description = "This project add able to work with delegators in python"
+authors = ["dima-on <sinica911@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "PyDelegator" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
