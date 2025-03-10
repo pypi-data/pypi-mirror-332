@@ -1,0 +1,3 @@
+[console_scripts]
+lubber=lubber.app:app
+
