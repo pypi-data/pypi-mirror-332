@@ -1,0 +1,9 @@
+pomodoro/__init__.py,sha256=_MSX6BqYQmeQR7CUuoIbootN6kx1qmlnPIJjLbI6O9g,6368
+pomodoro/audio.wav,sha256=Od81wbrYMX3X7cRz5YihSFhGN9aZZ4TxO7-dEs7sVrk,1552718
+pomodoro/constants.py,sha256=OI4EXQo-ET8s3tpeynYjchT48JT4oecgCqhLamFzHGM,436
+pomodoro/main.py,sha256=p6nTeSpbAlgiH3Fv24-3XKHqb7Lc8LSjzC8nmn6fk-k,1157
+pomodoro_app_cli-1.2.1.dist-info/LICENSE,sha256=Fcle6_pjhN1hq2aNtItn1BFFA-qJWwhcXaBQu2aZL2k,1071
+pomodoro_app_cli-1.2.1.dist-info/METADATA,sha256=Llu6abFgq-LrcqxD8HCuZaOF5t8nmJ9FlODj6c-wGJU,2248
+pomodoro_app_cli-1.2.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pomodoro_app_cli-1.2.1.dist-info/entry_points.txt,sha256=a4YAriHX3VpuNJqyy5z5rxcrrvRAPcmhS72EV7S94yQ,47
+pomodoro_app_cli-1.2.1.dist-info/RECORD,,
