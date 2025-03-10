@@ -1,0 +1,3 @@
+[console_scripts]
+bas-frame-extract = dudek.scripts.extract:cli
+bas-tdeed-train = dudek.scripts.tdeed:cli
