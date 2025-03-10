@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+fansauth.egg-info/PKG-INFO
+fansauth.egg-info/SOURCES.txt
+fansauth.egg-info/dependency_links.txt
+fansauth.egg-info/requires.txt
+fansauth.egg-info/top_level.txt
