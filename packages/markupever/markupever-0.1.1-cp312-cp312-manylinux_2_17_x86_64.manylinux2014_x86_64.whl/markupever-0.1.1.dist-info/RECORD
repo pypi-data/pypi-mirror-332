@@ -1,0 +1,12 @@
+markupever-0.1.1.dist-info/METADATA,sha256=fV0oqrs7CIKnnEsHm9E4JmDz2HyGkXcAZiT4CKhg54Q,4324
+markupever-0.1.1.dist-info/WHEEL,sha256=9eG-9PXVCQLiac52aWp6XMAtXo7kmcaYenxGAZuDM9c,129
+markupever-0.1.1.dist-info/licenses/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+markupever/dom.py,sha256=AhVGPt39SEr5LUlkPZRNuRZ3ZBMORnRuIYRah2VuxRg,30188
+markupever/_rustlib.pyi,sha256=msCo8PoqMzC7p_XnZLIs5LgK95Z2oU0XyZ2BxIR29Cw,5095
+markupever/iterators.py,sha256=t8XevfMTvb2H6kODnwU8rXBGMU2dLjdKTcpCjiO-TdA,2966
+markupever/_display.py,sha256=AInRCkP8QOSA5FkzJRu3ZDXC4JUojb7Ocx-8eYCuqRM,1277
+markupever/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+markupever/__init__.py,sha256=0pnuNKN-mV4H3zPkxSC7XAVcg89tdMKF-QsI4mfBJcc,376
+markupever/parser.py,sha256=6whNu1Z0kvHwZavSrWYbb_acbWmphrl59R5ToYnbiig,3645
+markupever/_rustlib.cpython-312-x86_64-linux-gnu.so,sha256=vmUIzTyteMb4iGJ2IheSB88RTVoPVQRX1zPa2Fd0Nss,1818936
+markupever-0.1.1.dist-info/RECORD,,
