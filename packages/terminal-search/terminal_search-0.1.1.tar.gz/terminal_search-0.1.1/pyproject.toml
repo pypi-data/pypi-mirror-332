@@ -1,0 +1,28 @@
+[project]
+name = "terminal-search"
+version = "0.1.1"
+description = "AI-powered search, right in your terminal"
+authors = [
+{name = "Craig Giles", email = "me@craigg.dev"}
+]
+license = "MIT"
+readme = "README.md"
+dependencies = [
+"python-dotenv",
+"exa-py",
+"textual"
+]
+
+[project.scripts]
+terminal-search = "terminal_search.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.entry-points."pipx.run"]
+terminal_search = "terminal_search.app:main"
+
+[project.urls]
+Homepage = "https://textual-web.io/craig/terminal-search"
+Repository = "https://github.com/CragglesG/terminal-search"
