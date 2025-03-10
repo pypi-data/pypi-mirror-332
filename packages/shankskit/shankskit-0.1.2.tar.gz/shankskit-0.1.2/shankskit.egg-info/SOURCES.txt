@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+shankskit/__init__.py
+shankskit/shankskit.py
+shankskit.egg-info/PKG-INFO
+shankskit.egg-info/SOURCES.txt
+shankskit.egg-info/dependency_links.txt
+shankskit.egg-info/top_level.txt
