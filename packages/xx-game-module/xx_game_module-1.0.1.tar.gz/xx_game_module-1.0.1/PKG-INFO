@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: xx_game_module
+Version: 1.0.1
+Summary: Game module CLI tool
+Author: xx_game_author
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: requires-python
+Dynamic: summary
