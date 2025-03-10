@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+Yeep.egg-info/PKG-INFO
+Yeep.egg-info/SOURCES.txt
+Yeep.egg-info/dependency_links.txt
+Yeep.egg-info/requires.txt
+Yeep.egg-info/top_level.txt
