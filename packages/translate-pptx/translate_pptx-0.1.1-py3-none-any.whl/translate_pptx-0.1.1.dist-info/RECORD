@@ -1,0 +1,12 @@
+translate_pptx/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+translate_pptx/_endpoints.py,sha256=4ruYAxUhmXmwdiJI--RCcVVOdcUIDrmKUatE59vDttQ,736
+translate_pptx/_pptx.py,sha256=GcyWx-8S5pMEHgEqKV14lEPBnkVmYt_IGeVU9_MUSTc,2016
+translate_pptx/_terminal.py,sha256=tszckgYiVmqsktx2FYDWm6ztDZTXdI7LApBMr9YD4eo,1491
+translate_pptx/_translation.py,sha256=Ck9GVMtJjDe7C67FYq0bLA70opMRUjQ3sRKdELzns9c,1789
+translate_pptx/_utilities.py,sha256=TwnvJyWa9L2xSbFBBNq_uCkoNXn2bg-b7IQigVqmRxU,1295
+translate_pptx-0.1.1.dist-info/LICENSE,sha256=NaKVdnZOSd3sCGQZIVVTPemeCezrH514JyfeRPHd6JQ,1499
+translate_pptx-0.1.1.dist-info/METADATA,sha256=0_bQFHKC2VzrRo5SKLE8_W0ePPxj6TYRb2wCbe4BqdY,3665
+translate_pptx-0.1.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+translate_pptx-0.1.1.dist-info/entry_points.txt,sha256=HWIWUY6V2aMGIbGmM-jRzASaWCDElr7Qr4fX1gx9RBU,83
+translate_pptx-0.1.1.dist-info/top_level.txt,sha256=VcwMTQQkDIzC7parAc6LtL38HE5AQM3UJzT93YBVXeQ,15
+translate_pptx-0.1.1.dist-info/RECORD,,
