@@ -1,0 +1,2 @@
+django_kakebo
+django_kakebo_user
