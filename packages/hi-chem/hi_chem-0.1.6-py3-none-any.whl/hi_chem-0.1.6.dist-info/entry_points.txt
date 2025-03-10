@@ -1,0 +1,2 @@
+[console_scripts]
+hi-chem = hi_chem.app:main

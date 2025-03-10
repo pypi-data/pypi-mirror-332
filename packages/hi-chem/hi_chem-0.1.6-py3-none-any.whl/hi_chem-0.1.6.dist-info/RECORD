@@ -1,0 +1,14 @@
+hi_chem/__init__.py,sha256=5BtcJVRAVSuonacidtF8SD9-cjYdhxdl5UoqThtls6Y,163
+hi_chem/__version__.py,sha256=bvFIPBt6MIsmw7BGrtAnOVAavdFEAjfolB79eaj8vQo,374
+hi_chem/app.py,sha256=R0on8Wm2JBYYnrZEZdJ1y8KkAXPwJejni0H3TwJkEjY,286
+hi_chem/conformer.py,sha256=fg8lum3j40bDjgChDA4WMI70aarzdPpCEFNf_068aDc,2306
+hi_chem/dimensionality_reduction.py,sha256=A5jcRqtYLawXp4opRmaZDhqWBP2TIIY0jZ7_T2YaS9E,3339
+hi_chem/featurize.py,sha256=Ykurgkw-T1VBL0LRDMjOQ5keDc8n7hijy0SJ0vuXEtk,4141
+hi_chem/translate.py,sha256=BuPuY7sKt-ZQ3Skd2Jn2RlWipmV-lRp0TEEQlAkXd9U,1702
+hi_chem/view.py,sha256=ln-k7FMXqsmHYYadLwpZ6pvlrKe1SyINAd14HJ8NhLc,1172
+hi_chem-0.1.6.dist-info/LICENSE,sha256=J0dwBtI5SlbtU6MOIfeswOoiqrL4_5JKYFXeu2h_fGA,1078
+hi_chem-0.1.6.dist-info/METADATA,sha256=onKu7E1ko-pCUXCKfbQsQckHAN4OH5aDlywU8BJBME0,1626
+hi_chem-0.1.6.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+hi_chem-0.1.6.dist-info/entry_points.txt,sha256=LxpB4kMF5Bt6xeVZzRhKic5MQAnqFMN2cGf0NMM_Uws,45
+hi_chem-0.1.6.dist-info/top_level.txt,sha256=6xNLzxEe2eb3r_OtsTwDpLH1NOSI10yONGYa6Mq69fY,8
+hi_chem-0.1.6.dist-info/RECORD,,
