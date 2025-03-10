@@ -1,0 +1,3 @@
+[console_scripts]
+EbookTranslator = EbookTranslator.cli:main
+
