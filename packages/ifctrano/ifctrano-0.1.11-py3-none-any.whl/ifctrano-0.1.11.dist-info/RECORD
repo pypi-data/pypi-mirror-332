@@ -1,0 +1,13 @@
+ifctrano/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ifctrano/base.py,sha256=xpfZ27dZ5SZ5z2fz3N4GonkGWvXRYhMfOjoy94R4Yt8,5748
+ifctrano/bounding_box.py,sha256=OnkOR3NOyVRFSdo0d9BeFm93ZU40TV_gQSxYHOEPCYE,9382
+ifctrano/building.py,sha256=NoF0V5H_jDoyl0zkWPrSQa4xX0HIA23Kqu_TbH4Q56M,7134
+ifctrano/example/verification.ifc,sha256=L6YRD_rny7IEB4myA7uCLO6eI-xXOn2jp_67lw3lUrE,128600
+ifctrano/exceptions.py,sha256=1FQeuuq_lVZ4CawwewQvkE8OlDQwhBTbKfmc2FiZodo,431
+ifctrano/main.py,sha256=QH5KI8wFM4KsIRXNz_CVNtr3DWP3GdETtAAZGL84VEI,2703
+ifctrano/space_boundary.py,sha256=SxVXkBi8TNZfmPDFT-6epuewk8E9V1astVgcD3FT8ew,8617
+ifctrano-0.1.11.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ifctrano-0.1.11.dist-info/METADATA,sha256=JvSb3y3CULKWge3RIfSQ7mkaU3DGhFp2NcRpzGCBFW0,3106
+ifctrano-0.1.11.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+ifctrano-0.1.11.dist-info/entry_points.txt,sha256=_2daDejazkphufyEu0m3lOeTio53WYmjol3KmSN0JM4,46
+ifctrano-0.1.11.dist-info/RECORD,,
