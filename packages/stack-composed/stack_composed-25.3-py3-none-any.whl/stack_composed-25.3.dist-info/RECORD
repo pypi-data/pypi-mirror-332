@@ -1,0 +1,11 @@
+stack_composed/__init__.py,sha256=FQVTYnytEX8rhpSw3ZgiiSg-2hwdTL7U7a-O3BNVY48,539
+stack_composed/image.py,sha256=4tleAE-DgZJL8H6_Oyryqrn8VXZ3A2EW9XYX6nqXCDM,5828
+stack_composed/parse.py,sha256=6v3B6VSeUnAEtAS7FirMQg6X_d95BoZhwATs8v_Mj-4,3277
+stack_composed/stack_composed_distributed.py,sha256=26c7TCu2yd1SEgVpx5GmdIcag2XrhEaeMfyfOzWj5p4,1524
+stack_composed/stack_composed_main.py,sha256=ylW6q7JHKhelBQaZLMQGw-wIDtSwa5_jjI8iBauludA,16102
+stack_composed/stats.py,sha256=HhCXX99V_y5JOeeywVDqWsfjMi-kk_XWK_yuxQLSL7w,11802
+stack_composed-25.3.data/scripts/stack-composed,sha256=bjAWT2V1XcqHJMHhtdJELEStf6DqONbHlMomRoyUOFI,170
+stack_composed-25.3.dist-info/METADATA,sha256=QyZWqZ7NlVlN2L8v63tVxTc4ZvcclnhyzlCHpqkapzc,2678
+stack_composed-25.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+stack_composed-25.3.dist-info/top_level.txt,sha256=dRdn-Nt_6XItQPd6sA4LKHdBjtu3ahws_xLOg0Fjkd0,15
+stack_composed-25.3.dist-info/RECORD,,
