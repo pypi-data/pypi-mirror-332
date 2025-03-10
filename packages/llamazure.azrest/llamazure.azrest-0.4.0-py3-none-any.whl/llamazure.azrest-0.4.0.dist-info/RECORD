@@ -1,0 +1,12 @@
+llamazure/azrest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llamazure/azrest/azrest.py,sha256=Y4XAsxhFXyauMH4zflIyLYUgLiPa8NW-aR-KY18CoFo,10981
+llamazure/azrest/models.py,sha256=Rt508QbFe_FUqMUTzlmeJ9Ug9G1gkbh0R22_5eXiLsk,5691
+llamazure/azrest/openapi.py,sha256=6DBAjORyIiL86BUy-kQ8bDTKmkKd0YoALmfNUFi6zN0,40479
+llamazure/azrest/openapi_info.py,sha256=7cJkgf_IfjWAoNSIMuowsvM_3teoRWSVrdozSC_gkXU,1945
+llamazure/azrest/openapi_inspect.py,sha256=iGPdzIXR-F8owkQMfpb_m4BJos4THP84E7J36GKii7U,2864
+llamazure.azrest-0.4.0.dist-info/METADATA,sha256=kqEAhMEnjExDVouw0Sj8xffLCjniWG3hPE_3ybSqr1Y,9543
+llamazure.azrest-0.4.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+llamazure.azrest-0.4.0.dist-info/entry_points.txt,sha256=F9MjqAtAviwvRTZ2F-OgHWKY5UHdNb7LF95_O5ydQSk,75
+llamazure.azrest-0.4.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+llamazure.azrest-0.4.0.dist-info/top_level.txt,sha256=4gbH0fcRQb_rEVCcLYRu_D2cVCdf0VYVCIi_f0PiMq4,10
+llamazure.azrest-0.4.0.dist-info/RECORD,,
