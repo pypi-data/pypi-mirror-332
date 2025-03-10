@@ -1,0 +1,3 @@
+libcst>=1.6.0
+openai>=1.64.0
+tiktoken>=0.9.0
