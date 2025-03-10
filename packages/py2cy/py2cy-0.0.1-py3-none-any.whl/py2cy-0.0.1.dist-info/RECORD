@@ -1,0 +1,10 @@
+py2cy/__init__.py,sha256=KmLCR6MjblIhxFsBD3WDedldcNcy70ZWHYOJ91ti2Uc,21
+py2cy/constants.py,sha256=h0k_aulFCmdt5H3KSPo929Eazl3YbuVd26BXjsd32I0,23
+py2cy/invoke.py,sha256=DtU8x5KE6U1Ce1iC2xYkf-_Md11KXF5orb4PhBPuK9Q,1468
+py2cy/py_to_cy.py,sha256=tkJVW-ab7vlS-BU9eFlTWIJnruyD_xAqP3mxKtc_oso,6105
+py2cy-0.0.1.dist-info/LICENSE,sha256=l3T4_tKTYgMr_OR9qfa-wFh041Cf3LRBW0yklKFh9Tw,1097
+py2cy-0.0.1.dist-info/METADATA,sha256=9B0vmKZbAh5O1v_CghH23khaXrEj3MhRChDCRJx7YHU,2498
+py2cy-0.0.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+py2cy-0.0.1.dist-info/entry_points.txt,sha256=ShbwcPrWPyMR5XAsWl8tDbuWYEgfUZCM78abge4EBb8,44
+py2cy-0.0.1.dist-info/top_level.txt,sha256=xicunBNB0F6CkvZL5-maUsw3yUNyYwWdnZNURNALdDg,6
+py2cy-0.0.1.dist-info/RECORD,,
