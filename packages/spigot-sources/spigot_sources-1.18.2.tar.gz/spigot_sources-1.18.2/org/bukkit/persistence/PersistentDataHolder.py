@@ -1,0 +1,31 @@
+"""
+Python module generated from Java source file org.bukkit.persistence.PersistentDataHolder
+
+Java source file obtained from artifact spigot-api version 1.18.2-R0.1-20220607.160742-53
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from org.bukkit.persistence import *
+from typing import Any, Callable, Iterable, Tuple
+
+
+class PersistentDataHolder:
+    """
+    The PersistentDataHolder interface defines an object that can store
+    custom persistent meta data on it.
+    """
+
+    def getPersistentDataContainer(self) -> "PersistentDataContainer":
+        """
+        Returns a custom tag container capable of storing tags on the object.
+        
+        Note that the tags stored on this container are all stored under their
+        own custom namespace therefore modifying default tags using this
+        PersistentDataHolder is impossible.
+
+        Returns
+        - the persistent metadata container
+        """
+        ...
