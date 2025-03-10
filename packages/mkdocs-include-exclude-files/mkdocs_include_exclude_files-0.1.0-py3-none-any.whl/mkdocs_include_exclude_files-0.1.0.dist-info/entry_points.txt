@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+include_exclude_files = mkdocs_include_exclude_files:IncludeExcludePlugin
