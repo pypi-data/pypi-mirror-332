@@ -1,0 +1,13 @@
+torch>=2
+matplotlib>=3
+torchinfo>=1.8
+
+[dev]
+mypy
+pytest
+pytest-cov
+jupyter
+sphinx
+myst-nb
+sphinx-autoapi
+pydata_sphinx_theme
