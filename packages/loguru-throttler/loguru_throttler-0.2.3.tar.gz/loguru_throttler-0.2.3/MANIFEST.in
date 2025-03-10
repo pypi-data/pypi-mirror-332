@@ -1,0 +1,26 @@
+include LICENSE
+include README.md
+include CHANGELOG.md
+include requirements.txt
+include pyproject.toml
+include setup.py
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include benchmarks *.py
+
+# Exclude utility scripts and development files
+exclude .flake8
+exclude .pre-commit-config.yaml
+exclude requirements-dev.txt
+exclude Makefile
+exclude build_tools.py
+exclude create_*.py
+exclude update_*.py
+exclude .gitignore
+exclude .coverage
+recursive-exclude .github *
+recursive-exclude .pytest_cache *
+recursive-exclude .mypy_cache *
+recursive-exclude venv *
+recursive-exclude dist *
+recursive-exclude *.egg-info *
