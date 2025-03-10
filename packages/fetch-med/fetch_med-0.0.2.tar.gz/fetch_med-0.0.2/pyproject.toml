@@ -1,0 +1,25 @@
+[project]
+name = "fetch-med"
+version = "0.0.2"
+description = "A tool to fetch research papers"
+authors = [
+    {name = "pallavdata"}
+]
+readme = "README.md"
+requires-python = ">=3.8,<4.0"
+dependencies = [
+"beautifulsoup4>=4.13.3",
+"deep-translator>=1.11.4",
+"lxml>=5.3.1",
+"openpyxl>=3.1.5",
+"pandas>=2.0.3",
+"requests>=2.32.3",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "fetch_med.main:main"
