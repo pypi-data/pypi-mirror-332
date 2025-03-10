@@ -1,0 +1,2 @@
+[console_scripts]
+m4a2text = m4a2text.speech_converter:convert_m4a_to_wav
