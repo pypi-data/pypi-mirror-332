@@ -1,0 +1,1 @@
+Multi-Threading Decorate for functions, easy use.
