@@ -1,0 +1,9 @@
+dev_contexts:
+  .:
+    title: .
+    desc: dev context of this directory
+  directory_impl.py:
+    title: directory_impl.py
+file_desc:
+  abcd.py: abstract classes
+editing: directory_impl.py
