@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: dtmf-py
+Version: 0.1.0
+Summary: DTMF (rfc2833) generator
+Home-page: https://github.com/PesyCorm/dtmf_py
+License: MIT
+Author: Dmitriy Noskov
+Author-email: pesycorm@yandex.ru
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: rtp (>=0.0.4,<0.0.5)
+Project-URL: Repository, https://github.com/PesyCorm/dtmf_py
+Description-Content-Type: text/markdown
+
+# dtmf_py
+
+This module allows you to get a list of tone dialing packages.
+
+## Usage:
+
+```python
+from dtmf_py import DTMF
+from rtp import PayloadType
+
+
+payload: list[bytes] = DTMF.make_numbers_packets(
+    numbers='123*',
+    payload_type=PayloadType.DYNAMIC_101,
+    tone_packets_count=10
+)
+```
+This code returns a list of tone dialing packets for the transmitted number. 
+<br/>What to do with them next is up to you.
