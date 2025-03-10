@@ -1,0 +1,11 @@
+# Core requirements
+numpy>=1.19.3
+scipy
+sparse
+numba  # Often complicated: https://numba.readthedocs.io/en/stable/user/installing.html#version-support-information
+matplotlib
+pandas
+pyyaml>=5.1
+joblib
+tabulate
+dcor

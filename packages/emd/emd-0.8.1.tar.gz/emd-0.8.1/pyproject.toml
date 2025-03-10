@@ -1,0 +1,67 @@
+[build-system]
+#build-backend = "setuptools.build_meta"
+#requires = [ "setuptools>=41", "wheel"]
+requires = ["hatchling", "hatch-vcs", "wheel"]
+build-backend = "hatchling.build"
+
+[project]
+name = "emd"
+description = "Empirical Mode Decomposition"
+authors = [{email = "a.quinn@bham.ac.uk", name = "Andrew Quinn"}]
+readme = "README.md"
+
+requires-python = ">=3.9"
+dynamic = ["version"]
+
+classifiers = [
+  # Indicate who your project is intended for
+  'Intended Audience :: Science/Research',
+  'Topic :: Scientific/Engineering :: Bio-Informatics',
+  'Topic :: Scientific/Engineering :: Information Analysis',
+  'Topic :: Scientific/Engineering :: Mathematics',
+  "Topic :: Software Development",
+  'License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+  'Programming Language :: Python :: 3.13',
+]
+
+keywords = ['EMD', 'Spectrum', 'Frequency', 'Non-Linear', 'Holospectrum', 'Hilbert-Huang']
+
+dependencies = ['numpy>=1.19.3', 'scipy', 'sparse', 
+                'numba', 'matplotlib', 'pandas', 
+                'pyyaml>=5.1', 'joblib', 'tabulate', 'dcor']
+
+[project.optional-dependencies]
+dev = ['setuptools>=41.0.1', 'build', 'pytest', 'pytest-cov', 
+       'coverage', 'flake8', 'codespell', 'twine']
+doc = ['pydata-sphinx-theme', 'sphinx_gallery', 'sphinx-copybutton', 
+       'sphinx-togglebutton', 'sphinx-design', 'myst-parser', 'numpydoc', 'ipywidgets']
+full = ["emd[dev, doc]"]
+
+[tool.setuptools]
+packages = ["emd", "emd.tests"]
+
+[project.urls]
+Documentation = "https://emd.readthedocs.io/"
+Source = "https://gitlab.com/emd-dev/emd"
+"Issue Tracker" = "https://gitlab.com/emd-dev/emd/-/issues"
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md"}
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+# https://setuptools-scm.readthedocs.io/en/latest/config/
+# https://setuptools-scm.readthedocs.io/en/latest/extending/#setuptools_scmlocal_scheme 
+version_scheme = "only-version"
+local_scheme = "no-local-version"
+git_describe_command = ["git", "describe", "--dirty", "--tags", "--long"]
+
+[tool.hatch.build.hooks.vcs]
+version-file = "emd/_version.py"

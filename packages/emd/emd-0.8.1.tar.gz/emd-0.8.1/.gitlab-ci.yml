@@ -1,0 +1,25 @@
+
+include:
+  - template: 'Workflows/MergeRequest-Pipelines.gitlab-ci.yml'
+
+before_script:
+  - apt update
+  - apt upgrade -q -y
+  - pip install .[full]
+
+
+pytests:
+  stage: test
+  image: docker.io/python:$PYTHON_VERSIONS
+  parallel:
+    matrix:
+      - PYTHON_VERSIONS: ["3.9", "3.10", "3.11", "3.12", "3.13"]  
+  script:
+    - flake8
+    - make clean-build
+    - make check-dist
+    - make test
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week

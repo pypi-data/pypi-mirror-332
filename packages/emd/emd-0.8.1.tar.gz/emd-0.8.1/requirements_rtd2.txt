@@ -1,0 +1,27 @@
+numpy>=1.19.3
+scipy
+sparse
+numba
+matplotlib
+pandas
+pyyaml>=5.1
+joblib
+tabulate
+dcor
+setuptools>=41.0.1
+build
+pytest
+pytest-cov
+coverage
+flake8
+codespell
+twine
+pydata-sphinx-theme
+sphinx_gallery
+sphinx-copybutton
+sphinx-togglebutton
+sphinx-design
+myst-parser
+numpydoc
+ipywidgets
+-e .
