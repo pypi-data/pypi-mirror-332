@@ -1,0 +1,60 @@
+Metadata-Version: 2.2
+Name: project_euler_aid
+Version: 1.0.0
+Summary: Utility functions to solve project euler and math problems
+Author: Julie Bryan
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=2.0
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## project-euler-aid
+
+Hi, I made this package to provide utility functions for solving project euler problems. It can be extended to solve other math problems
+
+Back story - It has been some time I have been solving math problems from different available problem sets. 
+A lot of these functions were often needed to solve the problems. I compiled the ones frequently used and decided to publish them. 
+
+
+## Installation
+
+```
+pip install project-euler-aid
+```
+
+## Usage
+
+Import the package
+
+```
+import project_euler_aid
+```
+```
+from project_euler_aid import get_nth_prime_number
+
+print(get_nth_prime_number(30)) # print the 30th prime number
+```
+## Contributing
+
+I will massively appreciate your contributions in developing this package alongside. Please refer to CONTRIBUTING.md for the same
+
+
+## Connect with me
+Email - juliebryan998@gmail.com
+
+Open an issue on GitHub if you encounter any problems or have any suggestions
+
+## License 
+This project is licensed under the **MIT License**.  
+
+Thanks for visiting the repo!
+
+<p align="center">
+  <i>If you found this package helpful, please give it a star and share it with others!</i>
+</p>
