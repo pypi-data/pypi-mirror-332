@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-my-lark = lark_doc:main
