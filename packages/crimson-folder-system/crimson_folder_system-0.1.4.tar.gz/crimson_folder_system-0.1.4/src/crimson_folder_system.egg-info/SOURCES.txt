@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/crimson/folder_system/__init__.py
+src/crimson/folder_system/delete.py
+src/crimson/folder_system/filter.py
+src/crimson/folder_system/path.py
+src/crimson/folder_system/search.py
+src/crimson_folder_system.egg-info/PKG-INFO
+src/crimson_folder_system.egg-info/SOURCES.txt
+src/crimson_folder_system.egg-info/dependency_links.txt
+src/crimson_folder_system.egg-info/requires.txt
+src/crimson_folder_system.egg-info/top_level.txt
