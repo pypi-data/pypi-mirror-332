@@ -1,0 +1,11 @@
+data/VGG16_CLASSES.txt,sha256=TrPaQ1z1ROSm85D2LITLnJu2jPixTpf4oGNFI4Ll79I,21675
+opengenome/__init__.py,sha256=A36xplY6_qQWd6DVsNtwSJevQPXoFt75KrKn02olwVM,107
+opengenome/welcome.py,sha256=XbrQOWB9doq5dgjANFMjFGG4lz0hlR6Uhk0xsg6lylQ,1092
+opengenome/data/VGG16_CLASSES.txt,sha256=TrPaQ1z1ROSm85D2LITLnJu2jPixTpf4oGNFI4Ll79I,21675
+opengenome/outputs/__init__.py,sha256=83wy2YHyLb69nyc6NaUArw6v9Ehh5vL7kbsM1VI9j-s,20
+opengenome/outputs/cnn.py,sha256=6TCA-nwfvsEBf6lum6rmZYVF4BKZffpldVNWP8krH_Q,2698
+opengenome-0.1.4.dist-info/METADATA,sha256=vg_jPZWJjVOOyy7faDWOIBTnsollBR9PTNf27ymWfWs,2276
+opengenome-0.1.4.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+opengenome-0.1.4.dist-info/entry_points.txt,sha256=3oTb3mLLtpC7sE-_Oq0ao56B9QdAeTmX_emsukUwv78,54
+opengenome-0.1.4.dist-info/top_level.txt,sha256=keS-El5YMvJzzx94aDmGVOhXFGxg_lx9GbQk8FRh0EU,11
+opengenome-0.1.4.dist-info/RECORD,,
