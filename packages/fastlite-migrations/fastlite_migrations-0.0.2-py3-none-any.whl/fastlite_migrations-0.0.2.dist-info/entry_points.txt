@@ -1,0 +1,2 @@
+[nbdev]
+fastlite_migrations = fastlite_migrations._modidx:d
