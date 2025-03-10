@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: sv <LL@li.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/source.rst:3
+msgid "Source Code"
+msgstr "Källa kod"
+
+#: ../../../_source/source.rst:4
+msgid "Source code repository for this documentation."
+msgstr "Källa kod repository för denna dokumentation."
+
+#: ../../../_source/source.rst:6
+msgid "`<https://spacecruft.org/deepcrayon/transpolibre>`_"
+msgstr "https:spacecruft.org/deepcrayon/transpolibre>"
+
+#: ../../../_source/source.rst:8
+msgid ""
+"Note, this is how to build documentation for the ``transpolibre`` "
+"application itself, not how to use ``transpolibre``."
+msgstr ""
+"Detta är hur man bygger dokumentation för \"transpolibre\" -applikationen "
+"själv, inte hur man använder \"transpolibre\"."
+
+#: ../../../_source/source.rst:12
+msgid "Build Documentation"
+msgstr "Bygg dokumentation"
+
+#: ../../../_source/source.rst:13
+msgid "To build this documentation locally, do thusly."
+msgstr "För att bygga denna dokumentation lokalt, gör således."
+
+#: ../../../_source/source.rst:16
+msgid "Install Dependencies"
+msgstr "Installera beroenden"
+
+#: ../../../_source/source.rst:17
+msgid "Install dependencies, such as with Debian:"
+msgstr "Installera beroenden, till exempel med Debian:"
+
+#: ../../../_source/source.rst:25
+msgid "Download Documentation Source"
+msgstr "Ladda ner dokumentation Källa"
+
+#: ../../../_source/source.rst:33
+msgid "Setup Python"
+msgstr "Setup Python"
+
+#: ../../../_source/source.rst:42
+msgid "Documentation Build Help"
+msgstr "Dokumentation Build Help"
+
+#: ../../../_source/source.rst:43
+msgid "For documentation build help, run:"
+msgstr "För dokumentation bygga hjälp, kör:"
+
+#: ../../../_source/source.rst:49
+msgid "This will display this help:"
+msgstr "Detta kommer att visa denna hjälp:"
+
+#: ../../../_source/source.rst:71
+msgid "Clean"
+msgstr "Ren ren ren ren ren rengöring"
+
+#: ../../../_source/source.rst:72
+msgid "Clean build artifacts thusly."
+msgstr "Ren bygg artefakter alltså."
+
+#: ../../../_source/source.rst:80
+msgid "Build HTML Documentation"
+msgstr "Bygg HTML-dokumentation"
+
+#: ../../../_source/source.rst:81
+msgid "To build the HTML documentation, run:"
+msgstr "För att bygga HTML-dokumentationen, kör:"
+
+#: ../../../_source/source.rst:88
+msgid ""
+"The resulting HTML will be in ``docs/_build/html/`` with a top-level ``index."
+"html`` file located here: ``docs/index.html``."
+msgstr ""
+"Den resulterande HTML kommer att vara i \"docs/_build/html/\" med en "
+"toppnivå \"index.html\" fil som finns här: \"docs/index.html\"."
+
+#: ../../../_source/source.rst:92
+msgid "Build LaTex PDF"
+msgstr "Bygg LaTex PDF"
+
+#: ../../../_source/source.rst:93
+msgid ""
+"To build a PDF document from a LaTeX build, first install dependencies (this "
+"is way more than needed):"
+msgstr ""
+"För att bygga ett PDF-dokument från en LaTeX-byggnad, installera först "
+"beroenden (detta är mycket mer än nödvändigt):"
+
+#: ../../../_source/source.rst:100
+msgid "Then build the LaTeX and PDF documents:"
+msgstr "Bygg sedan LaTeX och PDF-dokument:"
+
+#: ../../../_source/source.rst:107
+msgid "Build PDF"
+msgstr "Bygg PDF"
+
+#: ../../../_source/source.rst:108
+msgid "To build a PDF document from LaTeX:"
+msgstr "För att bygga ett PDF-dokument från LaTeX:"
+
+#: ../../../_source/source.rst:114
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre.pdf``."
+msgstr ""
+"Den resulterande PDF kommer att vara här: ”docs/_build/latex/en/transpolibre."
+"pdf”."
+
+#: ../../../_source/source.rst:117
+msgid "eBook"
+msgstr "eBook"
+
+#: ../../../_source/source.rst:118
+msgid "To greatly reduce the size of the PDF to 150 dpi for an eBook, run:"
+msgstr ""
+"För att kraftigt minska storleken på PDF till 150 dpi för en eBook, kör:"
+
+#: ../../../_source/source.rst:124
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-ebook-en."
+"pdf``."
+msgstr ""
+"Den resulterande PDF kommer att vara här: \"docs/_build/latex/en/"
+"transpolibre-ebook-en.pdf\"."
+
+#: ../../../_source/source.rst:127
+msgid "Prepress"
+msgstr "Prepress"
+
+#: ../../../_source/source.rst:129
+msgid "To reduce the size of the PDF to 300 dpi for printing, run:"
+msgstr "För att minska storleken på PDF till 300 dpi för utskrift, kör:"
+
+#: ../../../_source/source.rst:135
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-prepress-"
+"en.pdf``."
+msgstr ""
+"Den resulterande PDF kommer att vara här: ”docs/_build/latex/en/transpolibre-"
+"prepress-en.pdf”."
+
+#: ../../../_source/source.rst:138
+msgid "Build All Documentation"
+msgstr "Bygg all dokumentation"
+
+#: ../../../_source/source.rst:139
+msgid "To build all documentation, including HTML and PDFs."
+msgstr "Att bygga all dokumentation, inklusive HTML och PDF-filer."
+
+#: ../../../_source/source.rst:146
+msgid "Translations"
+msgstr "Översättningar"
+
+#: ../../../_source/source.rst:147
+msgid "See ``README.md`` for notes on how to update package translations."
+msgstr ""
+"Se \"README.md\" för anteckningar om hur du uppdaterar paketöversättningar."

@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: tl <LL@li.org>\n"
+"Language: tl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/libretranslate.rst:3
+msgid "LibreTranslate"
+msgstr "LibreTranslate"
+
+#: ../../../_source/libretranslate.rst:4
+msgid "transpolibre uses a LibreTranslate server for translations."
+msgstr ""
+"ang transpolibre ay gumagamit ng LiberTranslate server para sa mga salin."
+
+#: ../../../_source/libretranslate.rst:6
+msgid "https://libretranslate.com/"
+msgstr "mga http://libre translatione.com/"
+
+#: ../../../_source/libretranslate.rst:7
+msgid "https://github.com/LibreTranslate/LibreTranslate"
+msgstr "mga http://gothub.com/LibreTranslate/LibreTranslate"
+
+#: ../../../_source/libretranslate.rst:10
+msgid "Local Server"
+msgstr "Lokal na Server"
+
+#: ../../../_source/libretranslate.rst:11
+msgid "You can run your own LibreTranslate server."
+msgstr "Maaari mong patakbuhin ang iyong sariling LibreTranslate server."
+
+#: ../../../_source/libretranslate.rst:14
+msgid "Server Installation"
+msgstr "Pagkaluklok ng Server"
+
+#: ../../../_source/libretranslate.rst:15
+msgid "To install your own server, you can do it thusly on Debian:"
+msgstr ""
+"Upang mailuklok ang iyong sariling server, magagawa mo ito nang gayon kay "
+"Debian:"
+
+#: ../../../_source/libretranslate.rst:27
+msgid ""
+"Note, the first time it is run, it will download the translation models. The "
+"web URL won't be available until this is complete. It will download "
+"(currently) approximately 9 gigs of data."
+msgstr ""
+"Pansinin, sa unang pagkakataon na ito'y tumakbo, ida - download nito ang mga "
+"modelo sa pagsasalin. Ang web URL ay hindi makukuha hanggang ito ay mabuo. "
+"Ito ay mag-download (sabay-sabay) ng mga 9 na gig ng datos."
+
+#: ../../../_source/libretranslate.rst:31
+msgid "Translation model files download to here:"
+msgstr "Mga talaksan ng modelong salin na naka-download dito:"
+
+#: ../../../_source/libretranslate.rst:38
+msgid "systemd"
+msgstr "sistema"
+
+#: ../../../_source/libretranslate.rst:39
+msgid ""
+"You can set up the server to start on boot with systemd. It will need a "
+"startup script and a systemd file."
+msgstr ""
+"Maaari mong itayo ang server upang simulan ang boot sa pamamagitan ng "
+"sistema. Kakailanganin nito ang isang studup script at isang systemd file."
+
+#: ../../../_source/libretranslate.rst:42
+msgid "Edit the systemd service file:"
+msgstr "Baguhin ang systemd service file:"
+
+#: ../../../_source/libretranslate.rst:48
+msgid ""
+"Add contents such as this, adjusting path and user to where you put the "
+"startup script:"
+msgstr ""
+"Idagdag ang mga nilalaman tulad nito, baguhin ang landas at user kung saan "
+"mo ilalagay ang startup script:"
+
+#: ../../../_source/libretranslate.rst:69
+msgid "Create the startup script:"
+msgstr "Gumawa ng simulaup script:"
+
+#: ../../../_source/libretranslate.rst:75
+msgid "Add contents such as this, adjusting to the correct path:"
+msgstr "Idagdag ang nilalaman tulad nito, na umaangkop sa tamang landas:"
+
+#: ../../../_source/libretranslate.rst:93
+msgid "Web Access"
+msgstr "Paggamit ng Web"
+
+#: ../../../_source/libretranslate.rst:94
+msgid ""
+"You can then access your model remotely via the server's IP or from "
+"localhost, such as:"
+msgstr ""
+"Pagkatapos ay maaari mong basahin ang iyong modelo nang malayo sa "
+"pamamagitan ng IP ng server o mula sa lokal na tindahan, gaya ng:"
+
+#: ../../../_source/libretranslate.rst:97
+msgid "http://localhost:8000/"
+msgstr "http://localhost:8000/"
+
+#: ../../../_source/libretranslate.rst:98
+msgid "http://192.168.1.1:8000"
+msgstr "http://1992.168.1.1:8000"

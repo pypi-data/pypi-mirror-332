@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ja <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/libretranslate.rst:3
+msgid "LibreTranslate"
+msgstr "LibreTranslate ライブラリ"
+
+#: ../../../_source/libretranslate.rst:4
+msgid "transpolibre uses a LibreTranslate server for translations."
+msgstr "transpolibre は、翻訳用の LibreTranslate サーバーを使用します."
+
+#: ../../../_source/libretranslate.rst:6
+msgid "https://libretranslate.com/"
+msgstr "https://libretranslate.com/"
+
+#: ../../../_source/libretranslate.rst:7
+msgid "https://github.com/LibreTranslate/LibreTranslate"
+msgstr "https://github.com/LibreTranslate/LibreTranslate"
+
+#: ../../../_source/libretranslate.rst:10
+msgid "Local Server"
+msgstr "ローカルサーバー"
+
+#: ../../../_source/libretranslate.rst:11
+msgid "You can run your own LibreTranslate server."
+msgstr "独自の LibreTranslate サーバーを実行できます."
+
+#: ../../../_source/libretranslate.rst:14
+msgid "Server Installation"
+msgstr "サーバーインストール"
+
+#: ../../../_source/libretranslate.rst:15
+msgid "To install your own server, you can do it thusly on Debian:"
+msgstr ""
+"独自のサーバーをインストールするには、Debian 上でこのようにして実行できます"
+
+#: ../../../_source/libretranslate.rst:27
+msgid ""
+"Note, the first time it is run, it will download the translation models. The "
+"web URL won't be available until this is complete. It will download "
+"(currently) approximately 9 gigs of data."
+msgstr ""
+"翻訳モデルをダウンロードします。 Web URL は完了するまで利用できません。 デー"
+"タの約9gigsをダウンロードします."
+
+#: ../../../_source/libretranslate.rst:31
+msgid "Translation model files download to here:"
+msgstr "翻訳モデルのファイルはこちらからダウンロード:"
+
+#: ../../../_source/libretranslate.rst:38
+msgid "systemd"
+msgstr "システム"
+
+#: ../../../_source/libretranslate.rst:39
+msgid ""
+"You can set up the server to start on boot with systemd. It will need a "
+"startup script and a systemd file."
+msgstr ""
+"サーバをセットアップして、システムで起動します。 起動スクリプトとシステムファ"
+"イルが必要になります."
+
+#: ../../../_source/libretranslate.rst:42
+msgid "Edit the systemd service file:"
+msgstr "システムサービスファイルの編集:"
+
+#: ../../../_source/libretranslate.rst:48
+msgid ""
+"Add contents such as this, adjusting path and user to where you put the "
+"startup script:"
+msgstr ""
+"これのようなコンテンツを追加し、起動スクリプトを置く場所へのパスとユーザーを"
+"調整します"
+
+#: ../../../_source/libretranslate.rst:69
+msgid "Create the startup script:"
+msgstr "起動スクリプトを作成します"
+
+#: ../../../_source/libretranslate.rst:75
+msgid "Add contents such as this, adjusting to the correct path:"
+msgstr "このような内容を追加します。, 正しいパスに調整:"
+
+#: ../../../_source/libretranslate.rst:93
+msgid "Web Access"
+msgstr "ウェブアクセス"
+
+#: ../../../_source/libretranslate.rst:94
+msgid ""
+"You can then access your model remotely via the server's IP or from "
+"localhost, such as:"
+msgstr ""
+"サーバの IP や localhost からリモートでモデルにアクセスすることができます"
+
+#: ../../../_source/libretranslate.rst:97
+msgid "http://localhost:8000/"
+msgstr "http://localhost:8000/"
+
+#: ../../../_source/libretranslate.rst:98
+msgid "http://192.168.1.1:8000"
+msgstr "http://192.168.1.1:8000"

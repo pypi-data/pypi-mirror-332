@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/usage.rst:3
+msgid "Usage"
+msgstr "Gebruik"
+
+#: ../../../_source/usage.rst:4
+msgid "Thusly."
+msgstr "Dus."
+
+#: ../../../_source/usage.rst:7
+msgid "Help"
+msgstr "Hulp"
+
+#: ../../../_source/usage.rst:33
+msgid "Examples"
+msgstr "Voorbeelden"
+
+#: ../../../_source/usage.rst:34
+msgid "To translate a single PO file:"
+msgstr "Om één PO-bestand te vertalen:"
+
+#: ../../../_source/usage.rst:40
+msgid "To translate specifying to/from language:"
+msgstr "Om te vertalen naar/van taal:"
+
+#: ../../../_source/usage.rst:46
+msgid "To use a particular LibreTranslate server:"
+msgstr "Om een bepaalde LibreTranslate server te gebruiken:"
+
+#: ../../../_source/usage.rst:52
+msgid "To list languages available on a LibreTranslate server:"
+msgstr "Om talen beschikbaar te stellen op een LibreTranslate server:"
+
+#: ../../../_source/usage.rst:58
+msgid "To translate all the PO files in a directory:"
+msgstr "Om alle PO-bestanden in een map te vertalen:"
+
+#: ../../../_source/usage.rst:67
+msgid "Dotenv"
+msgstr "Dotenv"
+
+#: ../../../_source/usage.rst:68
+msgid ""
+"The LibreTranslate URL and API key can be stored using dotenv, so it doesn't "
+"need to be specified on the command line. For instance instead of doing this:"
+msgstr ""
+"De LibreTranslate URL en API-toets kunnen worden opgeslagen met behulp van "
+"dotenv, zodat het niet hoeft te worden opgegeven op de opdrachtregel. "
+"Bijvoorbeeld in plaats van dit te doen:"
+
+#: ../../../_source/usage.rst:75
+msgid ""
+"You can add the URL adding the ``LT_URL`` variable to an ``.env`` file in "
+"the base directory:"
+msgstr "U kunt de URL toevoegen van de variabele "
+
+#: ../../../_source/usage.rst:82
+msgid "The same can be done with the API key, such as:"
+msgstr "Hetzelfde kan gedaan worden met de API sleutel, zoals:"

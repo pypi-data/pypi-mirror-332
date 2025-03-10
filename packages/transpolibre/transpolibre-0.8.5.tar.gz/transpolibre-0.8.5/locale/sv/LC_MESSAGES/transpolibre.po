@@ -1,0 +1,138 @@
+# Swedish translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "Översätt PO-filer med LibreTranslate"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "LibreTranslate API nyckel"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "Debugging"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "PO-fil att översätta"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "Lista tillgängliga språk"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "Skriv över befintliga översättningar"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "Källa: Language ISO 639 code (Default en)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "Målspråk ISO 639-kod (standardes)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (Default http://127.0.0.1:8000)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "Öka output verbosity"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "Visa version"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "Fel: okänd språkkod:"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "Den angivna PO-filen finns inte eller är inte en fil:"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "Läs PO-fil:"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "Original:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "Översättning:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "Översätt länktext:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "URL upptäckt"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "Email upptäckt"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "Ingen URL eller e-post upptäckt"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "LibreTranslate URL:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "API Key:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "Ingen"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "Översättning:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "Källa ISO 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "Mål ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "Språk:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "Kod:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "Mål:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "Fel: fil krävs."

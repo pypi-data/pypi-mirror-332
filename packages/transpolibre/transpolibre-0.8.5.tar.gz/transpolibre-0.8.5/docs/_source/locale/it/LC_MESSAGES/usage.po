@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: it <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/usage.rst:3
+msgid "Usage"
+msgstr "Utilizzo"
+
+#: ../../../_source/usage.rst:4
+msgid "Thusly."
+msgstr "Così."
+
+#: ../../../_source/usage.rst:7
+msgid "Help"
+msgstr "Aiuto"
+
+#: ../../../_source/usage.rst:33
+msgid "Examples"
+msgstr "Esempi"
+
+#: ../../../_source/usage.rst:34
+msgid "To translate a single PO file:"
+msgstr "Tradurre un singolo file PO:"
+
+#: ../../../_source/usage.rst:40
+msgid "To translate specifying to/from language:"
+msgstr "Tradurre specificare da/per lingua:"
+
+#: ../../../_source/usage.rst:46
+msgid "To use a particular LibreTranslate server:"
+msgstr "Per utilizzare un particolare server LibreTranslate:"
+
+#: ../../../_source/usage.rst:52
+msgid "To list languages available on a LibreTranslate server:"
+msgstr "Per elencare le lingue disponibili su un server LibreTranslate:"
+
+#: ../../../_source/usage.rst:58
+msgid "To translate all the PO files in a directory:"
+msgstr "Tradurre tutti i file PO in una directory:"
+
+#: ../../../_source/usage.rst:67
+msgid "Dotenv"
+msgstr "Doten"
+
+#: ../../../_source/usage.rst:68
+msgid ""
+"The LibreTranslate URL and API key can be stored using dotenv, so it doesn't "
+"need to be specified on the command line. For instance instead of doing this:"
+msgstr ""
+"L'URL LibreTranslate e la chiave API possono essere memorizzati utilizzando "
+"dotenv, quindi non è necessario essere specificati sulla riga di comando. "
+"Per esempio invece di fare questo:"
+
+#: ../../../_source/usage.rst:75
+msgid ""
+"You can add the URL adding the ``LT_URL`` variable to an ``.env`` file in "
+"the base directory:"
+msgstr ""
+"È possibile aggiungere l'URL aggiungendo la variabile ``LT_URL` ad un file "
+"``.env`` nella directory di base:"
+
+#: ../../../_source/usage.rst:82
+msgid "The same can be done with the API key, such as:"
+msgstr "Lo stesso può essere fatto con la chiave API, come ad esempio:"

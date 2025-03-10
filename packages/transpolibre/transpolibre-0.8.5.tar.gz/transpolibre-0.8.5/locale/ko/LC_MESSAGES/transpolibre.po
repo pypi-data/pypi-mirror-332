@@ -1,0 +1,138 @@
+# Korean translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "LibreTranslate와 PO 파일 번역"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "LibreTranslate의 장점 API 키"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "관련 링크"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "PO 파일 번역"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "언어 선택"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "기존 번역을 덮어"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "소스 언어 ISO 639 코드 (기본 en)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "대상 언어 ISO 639 코드 (기본 es)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (기본값 http://127.0.0.1:8000)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "출력 동사성 증가"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "쇼 버전"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "오류: 알 수없는 언어 코드:"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "지정된 PO 파일은 존재하지 않거나 파일이 아닙니다"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "PO 파일 읽기 :"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "원래:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "번역:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "링크 텍스트를 변환:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "URL 감지"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "이메일 감지"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "URL 또는 이메일 감지"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "LibreTranslate의 장점 URL:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "API 열쇠:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "이름 *"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "공급 능력:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "근원 ISO 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "표적 ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "언어:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "이름:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "대상 :"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "오류: 파일이 필요합니다."

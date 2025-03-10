@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: hu <LL@li.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/usage.rst:3
+msgid "Usage"
+msgstr "Használat"
+
+#: ../../../_source/usage.rst:4
+msgid "Thusly."
+msgstr "Nagyon."
+
+#: ../../../_source/usage.rst:7
+msgid "Help"
+msgstr "Segítség"
+
+#: ../../../_source/usage.rst:33
+msgid "Examples"
+msgstr "Példák"
+
+#: ../../../_source/usage.rst:34
+msgid "To translate a single PO file:"
+msgstr "Egyetlen PO fájl lefordításához:"
+
+#: ../../../_source/usage.rst:40
+msgid "To translate specifying to/from language:"
+msgstr "A nyelvről / nyelvre történő fordítás:"
+
+#: ../../../_source/usage.rst:46
+msgid "To use a particular LibreTranslate server:"
+msgstr "Egy adott LibreTranslate szerver használata:"
+
+#: ../../../_source/usage.rst:52
+msgid "To list languages available on a LibreTranslate server:"
+msgstr "A LibreTranslate szerveren elérhető nyelvek felsorolása:"
+
+#: ../../../_source/usage.rst:58
+msgid "To translate all the PO files in a directory:"
+msgstr "Az összes PO fájl fordítása egy könyvtárban:"
+
+#: ../../../_source/usage.rst:67
+msgid "Dotenv"
+msgstr "Dotenv"
+
+#: ../../../_source/usage.rst:68
+msgid ""
+"The LibreTranslate URL and API key can be stored using dotenv, so it doesn't "
+"need to be specified on the command line. For instance instead of doing this:"
+msgstr ""
+"A LibreTranslate URL és API billentyűt a dotenv segítségével lehet tárolni, "
+"így nem kell megadni a parancssorban. Például ahelyett, hogy ezt csinálnánk:"
+
+#: ../../../_source/usage.rst:75
+msgid ""
+"You can add the URL adding the ``LT_URL`` variable to an ``.env`` file in "
+"the base directory:"
+msgstr ""
+"Az \"LT _ URL\" változót hozzá lehet adni egy \".env\" fájlhoz az "
+"alapkönyvtárban:"
+
+#: ../../../_source/usage.rst:82
+msgid "The same can be done with the API key, such as:"
+msgstr "Ugyanez érhető el az API kulcsával, például:"

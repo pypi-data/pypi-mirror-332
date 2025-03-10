@@ -1,0 +1,138 @@
+# Greek translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "Μετάφραση αρχείων PO με LibreTranslate"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "LibreΜεταφρασμένο Κλειδί API"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "Αποσφαλμάτωση"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "Αρχείο PO για μετάφραση"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "Λίστα διαθέσιμων γλωσσών"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "Αντικατάσταση υφιστάμενων μεταφράσεων"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "Κωδικός γλώσσας πηγής ISO 639 (Προκαθορισμένο en)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "Κωδικός γλώσσας-στόχου ISO 639 (Default es)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (Προκαθορισμένο http://127.0.1:8000)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "Αύξηση της verposity εξόδου"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "Εμφάνιση έκδοσης"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "Σφάλμα: άγνωστος κωδικός γλώσσας:"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "Το καθορισμένο αρχείο PO δεν υπάρχει ή δεν είναι ένα αρχείο:"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "Ανάγνωση αρχείου PO:"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "Αρχικό:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "Μετάφραση:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "Μεταφράζοντας το κείμενο του συνδέσμου:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "Εντοπίστηκε URL"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "Εντοπίστηκε ηλεκτρονικό ταχυδρομείο"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "Δεν ανιχνεύθηκε URL ή Email"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "LibreΜεταφρασμένο URL:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "Πλήκτρο API:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "Καμία"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "Μετάφραση:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "Πηγή ISO 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "Στόχος ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "Γλώσσα:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "Κωδικός:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "Στόχοι:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "Σφάλμα: απαιτείται το αρχείο."

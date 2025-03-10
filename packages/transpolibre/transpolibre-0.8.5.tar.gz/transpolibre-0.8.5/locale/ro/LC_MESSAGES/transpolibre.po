@@ -1,0 +1,138 @@
+# Romanian translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "Tradu fișiere OP cu LibreTraduce"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "LibreTraduce Cheie API"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "Depanare"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "Fișier PO de tradus"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "Listă limbile disponibile"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "Suprascrie traducerile existente"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "Limbă sursă ISO 639 cod (Default en)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "Limbă țintă ISO 639 cod (Default es)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (Default http://127.0.0.1:800)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "Crește verbozitatea de ieșire"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "Arată versiunea"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "Eroare: cod lingvistic necunoscut:"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "Fișierul PO specificat nu există sau nu este un fișier:"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "Citiți fișierul PO:"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "Original:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "Traducere:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "Traducere text link:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "URL detectat"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "E-mail detectat"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "Niciun URL sau e-mail detectate"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "LibreTraduce URL:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "Cheia API:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "Niciuna"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "Traducere:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "Sursa ISO 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "Obiectivul ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "Limba:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "Cod:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "Obiective:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "Eroare: este necesar fișierul."

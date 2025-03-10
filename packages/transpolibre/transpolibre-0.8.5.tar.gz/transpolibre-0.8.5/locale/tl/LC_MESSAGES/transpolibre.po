@@ -1,0 +1,138 @@
+# Tagalog translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: tl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "Mga talaksang Translate PO na may LibreTranslate"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "LibreTranslate Susi ng API"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "Pagsugpo"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "PO file upang isalin"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "Isulat ang available na mga wika"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "Isulat ang umiiral na mga salin"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "Pinagmulan ng Wika ISO 639 code (Default en)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "Target Language ISO 639 code (Default es)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (Default http://127.0.0.1:8000)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "Dagdagan ang verbosidad ng output"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "Ipakita ang bersyon"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "Error sa pagbasa ng talaksang '%s': %s"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr ""
+"Ang espesipikong talaksang PO ay hindi umiiral o hindi isang talaksan:"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "Basahin ang talaksang PO:"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "Orihinal:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "Salin:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "Salin:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "Napansin ng URL"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "Napuna ang Email"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "Walang nakitang URL o Email"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "LibreTranslate URL:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "Susi ng API:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "Wala"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "Pagsasalin:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "Pinagmulan ISO 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "Target ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "Wika:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "Kodigo:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "Mga target:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "Error sa pagbasa ng talaksang '%s': %s."

@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ro <LL@li.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/source.rst:3
+msgid "Source Code"
+msgstr "Codul sursei"
+
+#: ../../../_source/source.rst:4
+msgid "Source code repository for this documentation."
+msgstr "Depozit de coduri sursă pentru această documentație."
+
+#: ../../../_source/source.rst:6
+msgid "`<https://spacecruft.org/deepcrayon/transpolibre>`_"
+msgstr "traducerea şi adaptarea:"
+
+#: ../../../_source/source.rst:8
+msgid ""
+"Note, this is how to build documentation for the ``transpolibre`` "
+"application itself, not how to use ``transpolibre``."
+msgstr ""
+"Notă, acest lucru este modul în care pentru a construi documentaţie pentru "
+"aplicaţia de transpolibre, nu modul de a utiliza ."
+
+#: ../../../_source/source.rst:12
+msgid "Build Documentation"
+msgstr "Construiește documentația"
+
+#: ../../../_source/source.rst:13
+msgid "To build this documentation locally, do thusly."
+msgstr "Pentru a construi această documentație la nivel local, faceți astfel."
+
+#: ../../../_source/source.rst:16
+msgid "Install Dependencies"
+msgstr "Instalează dependențe"
+
+#: ../../../_source/source.rst:17
+msgid "Install dependencies, such as with Debian:"
+msgstr "Instalați dependențe, cum ar fi cu Debian:"
+
+#: ../../../_source/source.rst:25
+msgid "Download Documentation Source"
+msgstr "Descărcați documentația Sursă"
+
+#: ../../../_source/source.rst:33
+msgid "Setup Python"
+msgstr "Configurare Python"
+
+#: ../../../_source/source.rst:42
+msgid "Documentation Build Help"
+msgstr "Construcţie documentaţie Ajutor"
+
+#: ../../../_source/source.rst:43
+msgid "For documentation build help, run:"
+msgstr "Pentru documentare construi ajutor, executați:"
+
+#: ../../../_source/source.rst:49
+msgid "This will display this help:"
+msgstr "Acest lucru va afișa acest ajutor:"
+
+#: ../../../_source/source.rst:71
+msgid "Clean"
+msgstr "Curăță"
+
+#: ../../../_source/source.rst:72
+msgid "Clean build artifacts thusly."
+msgstr "Construiesc artefacte curate astfel."
+
+#: ../../../_source/source.rst:80
+msgid "Build HTML Documentation"
+msgstr "Construiește documentația HTML"
+
+#: ../../../_source/source.rst:81
+msgid "To build the HTML documentation, run:"
+msgstr "Pentru a construi documentația HTML, executați:"
+
+#: ../../../_source/source.rst:88
+msgid ""
+"The resulting HTML will be in ``docs/_build/html/`` with a top-level ``index."
+"html`` file located here: ``docs/index.html``."
+msgstr "HTML-ul rezultat va fi în  fișier situat aici: ."
+
+#: ../../../_source/source.rst:92
+msgid "Build LaTex PDF"
+msgstr "Construiește LaTex PDF"
+
+#: ../../../_source/source.rst:93
+msgid ""
+"To build a PDF document from a LaTeX build, first install dependencies (this "
+"is way more than needed):"
+msgstr ""
+"Pentru a construi un document PDF dintr-o clădire LaTeX, instalați mai întâi "
+"dependențe (acest lucru este mult mai mult decât este necesar):"
+
+#: ../../../_source/source.rst:100
+msgid "Then build the LaTeX and PDF documents:"
+msgstr "Apoi construiți documentele LaTeX și PDF:"
+
+#: ../../../_source/source.rst:107
+msgid "Build PDF"
+msgstr "Construiește PDF"
+
+#: ../../../_source/source.rst:108
+msgid "To build a PDF document from LaTeX:"
+msgstr "Pentru a construi un document PDF de la LaTeX:"
+
+#: ../../../_source/source.rst:114
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre.pdf``."
+msgstr "PDF-ul rezultat va fi aici: ."
+
+#: ../../../_source/source.rst:117
+msgid "eBook"
+msgstr "carte electronică"
+
+#: ../../../_source/source.rst:118
+msgid "To greatly reduce the size of the PDF to 150 dpi for an eBook, run:"
+msgstr ""
+"Pentru a reduce considerabil dimensiunea PDF la 150 dpi pentru o carte "
+"electronică, executați:"
+
+#: ../../../_source/source.rst:124
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-ebook-en."
+"pdf``."
+msgstr "PDF-ul rezultat va fi aici: ."
+
+#: ../../../_source/source.rst:127
+msgid "Prepress"
+msgstr "Prepress"
+
+#: ../../../_source/source.rst:129
+msgid "To reduce the size of the PDF to 300 dpi for printing, run:"
+msgstr ""
+"Pentru a reduce dimensiunea PDF la 300 dpi pentru imprimare, executați:"
+
+#: ../../../_source/source.rst:135
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-prepress-"
+"en.pdf``."
+msgstr "PDF-ul rezultat va fi aici: ."
+
+#: ../../../_source/source.rst:138
+msgid "Build All Documentation"
+msgstr "Construiește toată documentația"
+
+#: ../../../_source/source.rst:139
+msgid "To build all documentation, including HTML and PDFs."
+msgstr "Pentru a construi toate documentele, inclusiv HTML și PDF-uri."
+
+#: ../../../_source/source.rst:146
+msgid "Translations"
+msgstr "Traduceri"
+
+#: ../../../_source/source.rst:147
+msgid "See ``README.md`` for notes on how to update package translations."
+msgstr "A se vedea ."

@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: hu <LL@li.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/source.rst:3
+msgid "Source Code"
+msgstr "Forráskód"
+
+#: ../../../_source/source.rst:4
+msgid "Source code repository for this documentation."
+msgstr "Forráskód adattár ehhez a dokumentációhoz."
+
+#: ../../../_source/source.rst:6
+msgid "`<https://spacecruft.org/deepcrayon/transpolibre>`_"
+msgstr "\"< https: / / spacecruft.org / deepcrayon / transpolibre >\""
+
+#: ../../../_source/source.rst:8
+msgid ""
+"Note, this is how to build documentation for the ``transpolibre`` "
+"application itself, not how to use ``transpolibre``."
+msgstr ""
+"Megjegyzés, ez a módja annak, hogy a dokumentációt a \"transzpolibre\" "
+"alkalmazás maga, nem pedig, hogy hogyan kell használni \"tranpolibre\"."
+
+#: ../../../_source/source.rst:12
+msgid "Build Documentation"
+msgstr "Dokumentáció építése"
+
+#: ../../../_source/source.rst:13
+msgid "To build this documentation locally, do thusly."
+msgstr "Hogy helyben készítsük el ezt a dokumentációt, csináld ezt."
+
+#: ../../../_source/source.rst:16
+msgid "Install Dependencies"
+msgstr "Felszerelési követelmények"
+
+#: ../../../_source/source.rst:17
+msgid "Install dependencies, such as with Debian:"
+msgstr "Függőségek telepítése, például a Debiannal:"
+
+#: ../../../_source/source.rst:25
+msgid "Download Documentation Source"
+msgstr "Dokumentáció letöltése Forrás"
+
+#: ../../../_source/source.rst:33
+msgid "Setup Python"
+msgstr "Python beállítása"
+
+#: ../../../_source/source.rst:42
+msgid "Documentation Build Help"
+msgstr "Dokumentáció"
+
+#: ../../../_source/source.rst:43
+msgid "For documentation build help, run:"
+msgstr "A dokumentáció felépítéséhez segítséget kell futtatni:"
+
+#: ../../../_source/source.rst:49
+msgid "This will display this help:"
+msgstr "Ez megmutatja ezt a segítséget:"
+
+#: ../../../_source/source.rst:71
+msgid "Clean"
+msgstr "Tiszta"
+
+#: ../../../_source/source.rst:72
+msgid "Clean build artifacts thusly."
+msgstr "Tisztán épített ereklyék."
+
+#: ../../../_source/source.rst:80
+msgid "Build HTML Documentation"
+msgstr "HTML dokumentáció építése"
+
+#: ../../../_source/source.rst:81
+msgid "To build the HTML documentation, run:"
+msgstr "A HTML dokumentáció elkészítéséhez fusson:"
+
+#: ../../../_source/source.rst:88
+msgid ""
+"The resulting HTML will be in ``docs/_build/html/`` with a top-level ``index."
+"html`` file located here: ``docs/index.html``."
+msgstr ""
+"Az eredmény HTML lesz \"docs / _ build / html /\" egy top- szintű \"index."
+"html\" fájl található itt: \"docs / index.html\"."
+
+#: ../../../_source/source.rst:92
+msgid "Build LaTex PDF"
+msgstr "LaTex PDF építése"
+
+#: ../../../_source/source.rst:93
+msgid ""
+"To build a PDF document from a LaTeX build, first install dependencies (this "
+"is way more than needed):"
+msgstr ""
+"Ahhoz, hogy egy PDF dokumentumot egy LaTeX build, először telepíteni "
+"függések (ez sokkal több, mint szükséges):"
+
+#: ../../../_source/source.rst:100
+msgid "Then build the LaTeX and PDF documents:"
+msgstr "Ezután építsük fel a LaTeX és PDF dokumentumokat:"
+
+#: ../../../_source/source.rst:107
+msgid "Build PDF"
+msgstr "PDF építése"
+
+#: ../../../_source/source.rst:108
+msgid "To build a PDF document from LaTeX:"
+msgstr "PDF dokumentum létrehozása a LaTeX-ből:"
+
+#: ../../../_source/source.rst:114
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre.pdf``."
+msgstr ""
+"Az eredmény PDF lesz itt: \"docs / _ build / latex / en / transpolibre.pdf\"."
+
+#: ../../../_source/source.rst:117
+msgid "eBook"
+msgstr "eBook"
+
+#: ../../../_source/source.rst:118
+msgid "To greatly reduce the size of the PDF to 150 dpi for an eBook, run:"
+msgstr ""
+"Ahhoz, hogy jelentősen csökkentse a PDF méretét 150 dpi egy eBook, fuss:"
+
+#: ../../../_source/source.rst:124
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-ebook-en."
+"pdf``."
+msgstr ""
+"Az eredmény PDF lesz itt: \"docs / _ build / latex / en / transpolibre- "
+"ebook- en.pdf\"."
+
+#: ../../../_source/source.rst:127
+msgid "Prepress"
+msgstr "Előírás"
+
+#: ../../../_source/source.rst:129
+msgid "To reduce the size of the PDF to 300 dpi for printing, run:"
+msgstr "A PDF méretének 300 dpi-ra való csökkentése érdekében futtassa:"
+
+#: ../../../_source/source.rst:135
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-prepress-"
+"en.pdf``."
+msgstr ""
+"Az eredmény PDF lesz itt: \"docs / _ build / latex / en / transpolibre- "
+"presess- en.pdf\"."
+
+#: ../../../_source/source.rst:138
+msgid "Build All Documentation"
+msgstr "Minden dokumentáció építése"
+
+#: ../../../_source/source.rst:139
+msgid "To build all documentation, including HTML and PDFs."
+msgstr "Minden dokumentáció, beleértve a HTML-t és a PDF-eket."
+
+#: ../../../_source/source.rst:146
+msgid "Translations"
+msgstr "Fordítások"
+
+#: ../../../_source/source.rst:147
+msgid "See ``README.md`` for notes on how to update package translations."
+msgstr ""
+"Lásd \"READMe.md\" a csomag fordításának frissítésére vonatkozó "
+"megjegyzéseket."

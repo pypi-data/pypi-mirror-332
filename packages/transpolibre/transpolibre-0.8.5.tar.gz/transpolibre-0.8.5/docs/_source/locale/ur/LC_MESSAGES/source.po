@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ur <LL@li.org>\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/source.rst:3
+msgid "Source Code"
+msgstr "ماخذ کوڈ"
+
+#: ../../../_source/source.rst:4
+msgid "Source code repository for this documentation."
+msgstr "اس دستاویزات کے لیے ماخذ کوڈ محفوظ."
+
+#: ../../../_source/source.rst:6
+msgid "`<https://spacecruft.org/deepcrayon/transpolibre>`_"
+msgstr "&جی ایس این اے سی آرک آئی ڈی:"
+
+#: ../../../_source/source.rst:8
+msgid ""
+"Note, this is how to build documentation for the ``transpolibre`` "
+"application itself, not how to use ``transpolibre``."
+msgstr ""
+"غور کریں، اس طرح 'ٹرنسپولبرے' کے لئے دستاویزات بنانے کے لئے، خود پر اطلاق "
+"کرنا، نہ کہ 'ٹرنسپوری' کا استعمال کیسے کیا جائے."
+
+#: ../../../_source/source.rst:12
+msgid "Build Documentation"
+msgstr "دستاویز بنانا"
+
+#: ../../../_source/source.rst:13
+msgid "To build this documentation locally, do thusly."
+msgstr "اس دستاویز کو مقامی طور پر تعمیر کرنے کے لئے ایسا کرنے کے لئے."
+
+#: ../../../_source/source.rst:16
+msgid "Install Dependencies"
+msgstr "مناسب استعمال کریں"
+
+#: ../../../_source/source.rst:17
+msgid "Install dependencies, such as with Debian:"
+msgstr "ڈیسک ٹاپ نصب کریں جیسے دیوبہ:"
+
+#: ../../../_source/source.rst:25
+msgid "Download Documentation Source"
+msgstr "پرنٹ ماخذ"
+
+#: ../../../_source/source.rst:33
+msgid "Setup Python"
+msgstr "پیکجوں کو نصب کریں"
+
+#: ../../../_source/source.rst:42
+msgid "Documentation Build Help"
+msgstr "دستاویز بنانا"
+
+#: ../../../_source/source.rst:43
+msgid "For documentation build help, run:"
+msgstr "دستاویزات کی تعمیر کے لئے، چلانے کے لئے:"
+
+#: ../../../_source/source.rst:49
+msgid "This will display this help:"
+msgstr "اس سے اس مدد کا مظاہرہ ہوگا:"
+
+#: ../../../_source/source.rst:71
+msgid "Clean"
+msgstr "صفائی"
+
+#: ../../../_source/source.rst:72
+msgid "Clean build artifacts thusly."
+msgstr "لہٰذا صفائی‌ستھرائی کو فروغ دیتی ہے ۔."
+
+#: ../../../_source/source.rst:80
+msgid "Build HTML Documentation"
+msgstr "کمپیوٹر کی دستاویز بنانا"
+
+#: ../../../_source/source.rst:81
+msgid "To build the HTML documentation, run:"
+msgstr "ایچ ٹی ایم ایل دستاویزات بنانے کے لئے، چلانے کے لئے:"
+
+#: ../../../_source/source.rst:88
+msgid ""
+"The resulting HTML will be in ``docs/_build/html/`` with a top-level ``index."
+"html`` file located here: ``docs/index.html``."
+msgstr "HTML کا نتیجہ '' میں ہو گا۔ یہیں پر قائم ہے:‘doks/index.html'."
+
+#: ../../../_source/source.rst:92
+msgid "Build LaTex PDF"
+msgstr "LaTex PDF بنائیں"
+
+#: ../../../_source/source.rst:93
+msgid ""
+"To build a PDF document from a LaTeX build, first install dependencies (this "
+"is way more than needed):"
+msgstr ""
+"ایک لا ٹی ایکس عمارت سے پی ڈی ایف کی دستاویز بنانے کے لیے، پہلی نصب کردہ "
+"پلگس (یہ ضرورت سے زیادہ راستہ ہے):"
+
+#: ../../../_source/source.rst:100
+msgid "Then build the LaTeX and PDF documents:"
+msgstr "اس کے بعد LaTX اور PDF دستاویز سازی:"
+
+#: ../../../_source/source.rst:107
+msgid "Build PDF"
+msgstr "پی ڈی ایف تعمیر کریں"
+
+#: ../../../_source/source.rst:108
+msgid "To build a PDF document from LaTeX:"
+msgstr "لاٹیکس سے پی ڈی ایف دستاویز بنانے کے لیے:"
+
+#: ../../../_source/source.rst:114
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre.pdf``."
+msgstr ""
+"نتیجہ اخذ کردہ پی ڈی ایف یہاں ہو گا:'doks soundation/latex/en/transpolibre."
+"pdf''۔."
+
+#: ../../../_source/source.rst:117
+msgid "eBook"
+msgstr "ای‌میل"
+
+#: ../../../_source/source.rst:118
+msgid "To greatly reduce the size of the PDF to 150 dpi for an eBook, run:"
+msgstr "ایک ای کتاب کے لیے پی ڈی ایف کا حجم بہت کم کرنے کے لیے، چلاتے ہیں:"
+
+#: ../../../_source/source.rst:124
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-ebook-en."
+"pdf``."
+msgstr ""
+"نتیجہ اخذ کردہ پی ڈی ایف یہاں ہو گا:'doks soundation/latex/en/transpolibre-"
+"ebook-en.pdf'۔."
+
+#: ../../../_source/source.rst:127
+msgid "Prepress"
+msgstr "دباؤ"
+
+#: ../../../_source/source.rst:129
+msgid "To reduce the size of the PDF to 300 dpi for printing, run:"
+msgstr "پرنٹنگ کے لیے پی ڈی ایف کا حجم کم کرنے کے لیے، چلایا:"
+
+#: ../../../_source/source.rst:135
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-prepress-"
+"en.pdf``."
+msgstr ""
+"نتیجہ اخذ کردہ پی ڈی ایف یہاں ہو گا:'doks soundation/latex/en/"
+"transpolibrepress-en.pdf'۔."
+
+#: ../../../_source/source.rst:138
+msgid "Build All Documentation"
+msgstr "تمام دستاویزات تعمیر کریں"
+
+#: ../../../_source/source.rst:139
+msgid "To build all documentation, including HTML and PDFs."
+msgstr ""
+"تمام دستاویزات بنانے کے لیے جن میں ایچ ٹی ایم ایل اور پی ڈی ایف شامل ہیں۔."
+
+#: ../../../_source/source.rst:146
+msgid "Translations"
+msgstr "ترجمے"
+
+#: ../../../_source/source.rst:147
+msgid "See ``README.md`` for notes on how to update package translations."
+msgstr ""
+"[حوالہ درکار] نوٹ کے لئے دیکھیے کہ پیکج ترجمے کس طرح اپ لوڈ کرنے کے لئے."

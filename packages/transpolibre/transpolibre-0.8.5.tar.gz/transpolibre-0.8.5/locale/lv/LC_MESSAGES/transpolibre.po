@@ -1,0 +1,138 @@
+# Latvian translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "Tulkot PO failus ar LibreTranslate"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "LibreTulkot API atslēga"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "Atkļūdošana"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "PO fails, ko tulkot"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "Parādīt pieejamās valodas"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "Pārrakstīt esošos tulkojumus"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "Izcelsmes valodas ISO 639 kods (Default en)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "Mērķvalodas ISO 639 kods (default ess)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (Noklusētais http://127.0.0.1:8000)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "Palielināt izvades stenogrammu"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "Rādīt versiju"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "Kļūda: nezināms valodas kods:"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "Norādītais PO fails neeksistē vai nav fails:"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "PO lasīšanas fails:"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "Oriģināls:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "Tulkojums:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "Tulkojot saites tekstu:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "Atklāts URL"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "E- pasts konstatēts"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "URL vai e- pasts nav atrasts"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "LibreTulkot URL:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "API atslēga:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "Nav"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "Tulkojums:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "Avots: ISO 639"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "Mērķis ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "Valoda:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "Kods:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "Mērķi:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "Kļūda: nepieciešams fails."

@@ -1,0 +1,137 @@
+# Hindi translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "LibreTranslate के साथ पीओ फाइलों का अनुवाद करें"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "Libretranslate एपीआई कुंजी"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "डिबगिंग"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "पीओ फ़ाइल का अनुवाद करने के लिए"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "उपलब्ध भाषा सूची"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "मौजूदा अनुवादों को ओवरराइट करें"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "स्रोत भाषा आईएसओ 639 कोड (डिफ़ॉल्ट एन)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "लक्ष्य भाषा आईएसओ 639 कोड (डिफ़ॉल्ट ई)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (Default http://127.0.0.1:8000)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "उत्पादन क्रिया"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "संस्करण दिखाएं"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "त्रुटि: अज्ञात भाषा कोड:"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "निर्दिष्ट पीओ फ़ाइल मौजूद नहीं है या नहीं है:"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "PO फ़ाइल पढ़ें:"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "मूल:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "अनुवाद:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "लिंक पाठ का अनुवाद:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "URL का पता लगाना"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "ईमेल पता लगाना"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "कोई यूआरएल या ईमेल पता नहीं"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "Libretranslate यूआरएल:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "एपीआई कुंजी:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "कोई नहीं"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "अनुवाद:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "स्रोत आईएसओ 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "लक्ष्य ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "भाषा:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "कोड:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "लक्ष्य:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "त्रुटि: फ़ाइल की आवश्यकता है।."

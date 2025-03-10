@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: sq <LL@li.org>\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/source.rst:3
+msgid "Source Code"
+msgstr "Kodi fillestar"
+
+#: ../../../_source/source.rst:4
+msgid "Source code repository for this documentation."
+msgstr "Rezervë kodi për."
+
+#: ../../../_source/source.rst:6
+msgid "`<https://spacecruft.org/deepcrayon/transpolibre>`_"
+msgstr "<https://spacecrft.org/epiccrayon/transpolitre>_"
+
+#: ../../../_source/source.rst:8
+msgid ""
+"Note, this is how to build documentation for the ``transpolibre`` "
+"application itself, not how to use ``transpolibre``."
+msgstr ""
+"Vini re, kjo është mënyra se si të ndërtohet dokumentacioni për vetë "
+"aplikimin e ♫transparere, jo si të përdoret  hynë në punë."
+
+#: ../../../_source/source.rst:12
+msgid "Build Documentation"
+msgstr "Dokumentë"
+
+#: ../../../_source/source.rst:13
+msgid "To build this documentation locally, do thusly."
+msgstr "Për ta ndërtuar këtë dokument në vend, bëj kështu."
+
+#: ../../../_source/source.rst:16
+msgid "Install Dependencies"
+msgstr "Instalo"
+
+#: ../../../_source/source.rst:17
+msgid "Install dependencies, such as with Debian:"
+msgstr "Instalo vartësitë, si për shembull me Debianin:"
+
+#: ../../../_source/source.rst:25
+msgid "Download Documentation Source"
+msgstr "Dokumentë Burimi"
+
+#: ../../../_source/source.rst:33
+msgid "Setup Python"
+msgstr "Rregullimi Python"
+
+#: ../../../_source/source.rst:42
+msgid "Documentation Build Help"
+msgstr "Ndihmë për të krijuar dokumentimin"
+
+#: ../../../_source/source.rst:43
+msgid "For documentation build help, run:"
+msgstr "Për dokumentacionin e ndihmës, vrapo:"
+
+#: ../../../_source/source.rst:49
+msgid "This will display this help:"
+msgstr "Kjo do të shfaqë këtë ndihmë:"
+
+#: ../../../_source/source.rst:71
+msgid "Clean"
+msgstr "E pastër"
+
+#: ../../../_source/source.rst:72
+msgid "Clean build artifacts thusly."
+msgstr "Kështu, pastërt ndërtojnë objekte."
+
+#: ../../../_source/source.rst:80
+msgid "Build HTML Documentation"
+msgstr "_Build dokumentimin HTML"
+
+#: ../../../_source/source.rst:81
+msgid "To build the HTML documentation, run:"
+msgstr "Për të ndërtuar dokumentacionin HTML, drejtuar:"
+
+#: ../../../_source/source.rst:88
+msgid ""
+"The resulting HTML will be in ``docs/_build/html/`` with a top-level ``index."
+"html`` file located here: ``docs/index.html``."
+msgstr "HTML File i vendosur këtu: ♫docs/index.html."
+
+#: ../../../_source/source.rst:92
+msgid "Build LaTex PDF"
+msgstr "Gjenero Latex PDF"
+
+#: ../../../_source/source.rst:93
+msgid ""
+"To build a PDF document from a LaTeX build, first install dependencies (this "
+"is way more than needed):"
+msgstr ""
+"Për të ndërtuar një dokument PDF nga një ndërtesë LaTeX, së pari instalo "
+"reduksionet (kjo është shumë më tepër se ç'duhet):"
+
+#: ../../../_source/source.rst:100
+msgid "Then build the LaTeX and PDF documents:"
+msgstr "Pastaj ndertoni dokumentet LaTeX dhe PDF:"
+
+#: ../../../_source/source.rst:107
+msgid "Build PDF"
+msgstr "Gjenero PDF"
+
+#: ../../../_source/source.rst:108
+msgid "To build a PDF document from LaTeX:"
+msgstr "Për të ndërtuar një dokument PDF nga LaTeX:"
+
+#: ../../../_source/source.rst:114
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre.pdf``."
+msgstr ""
+"PDF-ja që rezulton do të jetë këtu: ♫docs/_Build/latex/en/e/transpolitere."
+"pdfʼ."
+
+#: ../../../_source/source.rst:117
+msgid "eBook"
+msgstr "eBook"
+
+#: ../../../_source/source.rst:118
+msgid "To greatly reduce the size of the PDF to 150 dpi for an eBook, run:"
+msgstr ""
+"Për të reduktuar shumë madhësinë e PDF në 150 dpi për një eBook, drejtuar:"
+
+#: ../../../_source/source.rst:124
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-ebook-en."
+"pdf``."
+msgstr ""
+"PDF që rezulton do të jetë këtu: ♫docs/_Build/latex/en/en/transpolitere-"
+"ebook-en.pdfʼ."
+
+#: ../../../_source/source.rst:127
+msgid "Prepress"
+msgstr "Prepress"
+
+#: ../../../_source/source.rst:129
+msgid "To reduce the size of the PDF to 300 dpi for printing, run:"
+msgstr "Për të reduktuar madhësinë e PDF-së në 300 dpi për printim, drejtohet:"
+
+#: ../../../_source/source.rst:135
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-prepress-"
+"en.pdf``."
+msgstr ""
+"PDF që rezulton do të jetë këtu: ♫docs/_Build/latex/en/en/transpolite-"
+"prepress-en.pdfʼ."
+
+#: ../../../_source/source.rst:138
+msgid "Build All Documentation"
+msgstr "Gjenero të gjithë dokumentimin"
+
+#: ../../../_source/source.rst:139
+msgid "To build all documentation, including HTML and PDFs."
+msgstr "Për të ndërtuar të gjitha dokumentet, duke përfshirë HTML dhe PDF."
+
+#: ../../../_source/source.rst:146
+msgid "Translations"
+msgstr "Përkthimi"
+
+#: ../../../_source/source.rst:147
+msgid "See ``README.md`` for notes on how to update package translations."
+msgstr "Shih për shënime se si të përditësosh përkthimet e paketave."

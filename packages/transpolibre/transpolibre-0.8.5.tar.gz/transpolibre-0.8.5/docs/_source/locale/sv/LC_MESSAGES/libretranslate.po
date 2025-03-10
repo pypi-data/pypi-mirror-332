@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: sv <LL@li.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/libretranslate.rst:3
+msgid "LibreTranslate"
+msgstr "LibreTranslate"
+
+#: ../../../_source/libretranslate.rst:4
+msgid "transpolibre uses a LibreTranslate server for translations."
+msgstr "transpolibre använder en LibreTranslate-server för översättningar."
+
+#: ../../../_source/libretranslate.rst:6
+msgid "https://libretranslate.com/"
+msgstr "https://libretranslate.com/"
+
+#: ../../../_source/libretranslate.rst:7
+msgid "https://github.com/LibreTranslate/LibreTranslate"
+msgstr "https://github.com/LibreTranslate/LibreTranslate"
+
+#: ../../../_source/libretranslate.rst:10
+msgid "Local Server"
+msgstr "Lokal server"
+
+#: ../../../_source/libretranslate.rst:11
+msgid "You can run your own LibreTranslate server."
+msgstr "Du kan köra din egen LibreTranslate-server."
+
+#: ../../../_source/libretranslate.rst:14
+msgid "Server Installation"
+msgstr "Server Installation"
+
+#: ../../../_source/libretranslate.rst:15
+msgid "To install your own server, you can do it thusly on Debian:"
+msgstr "För att installera din egen server kan du göra det på Debian:"
+
+#: ../../../_source/libretranslate.rst:27
+msgid ""
+"Note, the first time it is run, it will download the translation models. The "
+"web URL won't be available until this is complete. It will download "
+"(currently) approximately 9 gigs of data."
+msgstr ""
+"Observera att första gången det körs kommer det att ladda ner "
+"översättningsmodellerna. Webbadressen kommer inte att vara tillgänglig "
+"förrän detta är klart. Det kommer att ladda ner (för närvarande) cirka 9 "
+"spelningar av data."
+
+#: ../../../_source/libretranslate.rst:31
+msgid "Translation model files download to here:"
+msgstr "Översättningsmodellfiler nedladdning till här:"
+
+#: ../../../_source/libretranslate.rst:38
+msgid "systemd"
+msgstr "systemd"
+
+#: ../../../_source/libretranslate.rst:39
+msgid ""
+"You can set up the server to start on boot with systemd. It will need a "
+"startup script and a systemd file."
+msgstr ""
+"Du kan ställa in servern för att starta på start med systemad. Det kommer "
+"att behöva ett startskript och en systemad fil."
+
+#: ../../../_source/libretranslate.rst:42
+msgid "Edit the systemd service file:"
+msgstr "Redigera systemd service fil:"
+
+#: ../../../_source/libretranslate.rst:48
+msgid ""
+"Add contents such as this, adjusting path and user to where you put the "
+"startup script:"
+msgstr ""
+"Lägg till innehåll som detta, justeringsväg och användare till där du sätter "
+"startskriptet:"
+
+#: ../../../_source/libretranslate.rst:69
+msgid "Create the startup script:"
+msgstr "Skapa start script:"
+
+#: ../../../_source/libretranslate.rst:75
+msgid "Add contents such as this, adjusting to the correct path:"
+msgstr "Lägg till innehåll som detta, justera till rätt väg:"
+
+#: ../../../_source/libretranslate.rst:93
+msgid "Web Access"
+msgstr "Web Access"
+
+#: ../../../_source/libretranslate.rst:94
+msgid ""
+"You can then access your model remotely via the server's IP or from "
+"localhost, such as:"
+msgstr ""
+"Du kan sedan komma åt din modell på distans via serverns IP eller från "
+"localhost, till exempel:"
+
+#: ../../../_source/libretranslate.rst:97
+msgid "http://localhost:8000/"
+msgstr "http://localhost:8000/"
+
+#: ../../../_source/libretranslate.rst:98
+msgid "http://192.168.1.1:8000"
+msgstr "http://192.168.1.1:8000"

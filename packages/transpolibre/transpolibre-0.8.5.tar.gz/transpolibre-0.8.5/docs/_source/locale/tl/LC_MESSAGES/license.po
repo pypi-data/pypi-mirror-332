@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: tl <LL@li.org>\n"
+"Language: tl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/license.rst:3
+msgid "License"
+msgstr "Lisensiya"
+
+#: ../../../_source/license.rst:4
+msgid ""
+"This code, documentation files, and text are released under the `Apache 2.0 "
+"license <https://www.apache.org/licenses/LICENSE-2.0>`_ and the `Creative "
+"Commons CC BY-SA 4.0 International License <https://creativecommons.org/"
+"licenses/by-sa/4.0/>`_."
+msgstr ""
+"This code, documentation files, and text are released under the `Ang "
+"lisensiya sa Apache 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`_ and "
+"the `CC BY-SA 4.0 International License <https://creativecommons.org/"
+"licenses/by-sa/4.0/>`_."
+
+#: ../../../_source/license.rst:10
+msgid "You may use this code, files, and text under either license."
+msgstr ""
+"Maaari mong gamitin ang kodigong ito, mga file, at teksto sa ilalim ng "
+"alinman sa mga lisensiya."
+
+#: ../../../_source/license.rst:12
+msgid "Upstream sources under their respective copyrights."
+msgstr ""
+"Ang pinakabagong mga pinagmumulan sa ilalim ng kani - kanilang mga copyright."
+
+#: ../../../_source/license.rst:14
+msgid "Unofficial project, not related to upstream projects."
+msgstr ""
+"Di - opisyal na proyekto, na hindi nauugnay sa mga proyekto sa itaas ng ilog."
+
+#: ../../../_source/license.rst:16
+msgid "Copyright (C) 2025, Jeff Moe"
+msgstr "Karapatan sa Pagkopya (C) 2025, Jeff Moe"

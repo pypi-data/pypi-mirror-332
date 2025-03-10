@@ -1,0 +1,138 @@
+# Estonian translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "PO- failide tõlkimine LibreTranslate' iga"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "LibreTranslate API võti"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "Silumine"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "PO- fail tõlkimiseks"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "Saadaolevate keelte nimekiri"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "Olemasolevate tõlgete ülekirjutamine"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "Lähtekeel ISO 639 kood (Default en)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "Sihtkeel ISO 639 kood (vaikimisi es)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (vaikimisi http://127.0.0.1: 8000)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "Väljundi verbaalsuse suurendamine"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "Näita versiooni"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "Viga: tundmatu keelekood:"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "Määratud PO- faili ei ole olemas või see ei ole fail:"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "PO- faili lugemine:"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "Originaal:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "Tõlge:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "Lingi teksti tõlkimine:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "Tuvastatud URL"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "E-mail tuvastati"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "URL- i või e- posti ei leitud"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "LibreTranslate URL:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "API võti:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "Mitte ükski"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "Tõlkimine:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "Allikas ISO 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "Eesmärk ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "Keel:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "Kood:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "Sihtmärgid:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "Viga: vajalik on fail."

@@ -1,0 +1,137 @@
+# Chinese translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "用自由翻译翻译 PO 文件"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "自由翻译 API 密钥"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "调试"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "要翻译的 PO 文件"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "列出可用语言"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "覆盖已有的翻译"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "源语言 ISO 639 代码 (Default en)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "目标语言 ISO 639 代码 (Default es)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (Default http://127. 0.0.1: 800) (英语)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "增加输出动词"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "显示版本"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "错误: 语言代码未知 :"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "指定的 PO 文件不存在或不是文件 :"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "读取 PO 文件 :"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "原文:英文"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "翻译 :"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "翻译链接文本 :"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "检测到 URL"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "已检测到电子邮件"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "未检测到 URL 或电子邮件"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "自由翻译 URL :"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "API 密钥 :"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "无"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "翻译 :"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "资料来源 ISO 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "目标ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "语言 :"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "代码 :"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "目标:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "错误: 需要文件 ."

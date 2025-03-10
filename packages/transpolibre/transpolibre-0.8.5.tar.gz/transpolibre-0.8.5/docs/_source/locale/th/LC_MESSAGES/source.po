@@ -1,0 +1,170 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/source.rst:3
+msgid "Source Code"
+msgstr "รหัสต้นทาง"
+
+#: ../../../_source/source.rst:4
+msgid "Source code repository for this documentation."
+msgstr "ที่เก็บรหัสสําหรับเอกสารนี้."
+
+#: ../../../_source/source.rst:6
+msgid "`<https://spacecruft.org/deepcrayon/transpolibre>`_"
+msgstr "'[htttps spacecruft.org/frestcyon/transpolibre]'"
+
+#: ../../../_source/source.rst:8
+msgid ""
+"Note, this is how to build documentation for the ``transpolibre`` "
+"application itself, not how to use ``transpolibre``."
+msgstr ""
+"โปรดสังเกตว่า นี่คือวิธีสร้างเอกสาร สําหรับโปรแกรม 'Transpolibre' ด้วยตัวเอง ไม่ใช่วิธีใช้ "
+"''' polibre'."
+
+#: ../../../_source/source.rst:12
+msgid "Build Documentation"
+msgstr "สร้างเอกสารเอกสาร"
+
+#: ../../../_source/source.rst:13
+msgid "To build this documentation locally, do thusly."
+msgstr "เพื่อสร้างเอกสารนี้ในท้องถิ่น ทําดังนี้."
+
+#: ../../../_source/source.rst:16
+msgid "Install Dependencies"
+msgstr "^ติดตั้งปัญหา"
+
+#: ../../../_source/source.rst:17
+msgid "Install dependencies, such as with Debian:"
+msgstr "ติดตั้งความขึ้นต่อกัน เช่น กับ Debian:"
+
+#: ../../../_source/source.rst:25
+msgid "Download Documentation Source"
+msgstr "ดาวน์โหลดเอกสาร แหล่ง"
+
+#: ../../../_source/source.rst:33
+msgid "Setup Python"
+msgstr "ตั้งค่า Python"
+
+#: ../../../_source/source.rst:42
+msgid "Documentation Build Help"
+msgstr "ความ ช่วย เหลือ ใน การ สร้าง เอกสาร"
+
+#: ../../../_source/source.rst:43
+msgid "For documentation build help, run:"
+msgstr "สําหรับความช่วยเหลือในการสร้างเอกสาร ทํางาน:"
+
+#: ../../../_source/source.rst:49
+msgid "This will display this help:"
+msgstr "จะแสดงความช่วยเหลือนี้:"
+
+#: ../../../_source/source.rst:71
+msgid "Clean"
+msgstr "สะอาด"
+
+#: ../../../_source/source.rst:72
+msgid "Clean build artifacts thusly."
+msgstr "โครงสร้างที่สะอาด จึงเป็นสิ่งประดิษฐ์."
+
+#: ../../../_source/source.rst:80
+msgid "Build HTML Documentation"
+msgstr "สร้างเอกสาร HTML"
+
+#: ../../../_source/source.rst:81
+msgid "To build the HTML documentation, run:"
+msgstr "เพื่อสร้างเอกสาร HTML ให้ทํางาน:"
+
+#: ../../../_source/source.rst:88
+msgid ""
+"The resulting HTML will be in ``docs/_build/html/`` with a top-level ``index."
+"html`` file located here: ``docs/index.html``."
+msgstr ""
+"ผลของ HTML จะอยู่ใน ''docs/สร้าง/สร้าง/ html/'' ด้วยระดับบนสุด `'. html' แฟ้มที่นี่: "
+"`'docs/index.html'."
+
+#: ../../../_source/source.rst:92
+msgid "Build LaTex PDF"
+msgstr "สร้างเอกสาร PDF"
+
+#: ../../../_source/source.rst:93
+msgid ""
+"To build a PDF document from a LaTeX build, first install dependencies (this "
+"is way more than needed):"
+msgstr ""
+"การสร้างเอกสาร PDF จากการสร้าง LaTeX การขึ้นต่อกันของแพกเกจแรก (นี่มากกว่าความจําเป็น):"
+
+#: ../../../_source/source.rst:100
+msgid "Then build the LaTeX and PDF documents:"
+msgstr "จากนั้นสร้างเอกสาร LATeX และ PDF"
+
+#: ../../../_source/source.rst:107
+msgid "Build PDF"
+msgstr "สร้างเอกสาร PDF"
+
+#: ../../../_source/source.rst:108
+msgid "To build a PDF document from LaTeX:"
+msgstr "เพื่อสร้างเอกสาร PDF จาก LaTeX:"
+
+#: ../../../_source/source.rst:114
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre.pdf``."
+msgstr "PDF จะแสดงผลลัพธ์ที่นี่: ‘'docs/build/latex/en/Transpolibre. pdf'."
+
+#: ../../../_source/source.rst:117
+msgid "eBook"
+msgstr "สมุดที่อยู่"
+
+#: ../../../_source/source.rst:118
+msgid "To greatly reduce the size of the PDF to 150 dpi for an eBook, run:"
+msgstr "เพื่อลดขนาด PDF ถึง 150 จุดต่อนิ้ว สําหรับหนังสือเล่น, ให้ทํางาน:"
+
+#: ../../../_source/source.rst:124
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-ebook-en."
+"pdf``."
+msgstr "PDF จะแสดงผลลัพธ์ที่นี่: ‘'docs/build/latex/en/Transpolibre-Ebook-en.pdf'."
+
+#: ../../../_source/source.rst:127
+msgid "Prepress"
+msgstr "ตั้งค่า"
+
+#: ../../../_source/source.rst:129
+msgid "To reduce the size of the PDF to 300 dpi for printing, run:"
+msgstr "เพื่อลดขนาด PDF เป็น 300 จุดต่อนิ้ว สําหรับการพิมพ์ ให้ทํางาน:"
+
+#: ../../../_source/source.rst:135
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-prepress-"
+"en.pdf``."
+msgstr "PDF จะแสดงผลลัพธ์ที่นี่: ‘'docs/build/latex/en/Transpolibre-prress-en.pdf'."
+
+#: ../../../_source/source.rst:138
+msgid "Build All Documentation"
+msgstr "สร้างเอกสารทั้งหมด"
+
+#: ../../../_source/source.rst:139
+msgid "To build all documentation, including HTML and PDFs."
+msgstr "เพื่อสร้างเอกสารทั้งหมด รวมทั้งเอกสาร HTML และ PDF."
+
+#: ../../../_source/source.rst:146
+msgid "Translations"
+msgstr "การแปลภาษา"
+
+#: ../../../_source/source.rst:147
+msgid "See ``README.md`` for notes on how to update package translations."
+msgstr "ดูที่ \"'ReadME'.md' สําหรับบันทึกวิธีปรับปรุงการแปลแพกเกจ."

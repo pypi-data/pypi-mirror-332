@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: el <LL@li.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/libretranslate.rst:3
+msgid "LibreTranslate"
+msgstr "LibreΜεταφρασμένο"
+
+#: ../../../_source/libretranslate.rst:4
+msgid "transpolibre uses a LibreTranslate server for translations."
+msgstr ""
+"το transpolibre χρησιμοποιεί έναν εξυπηρετητή LibreTranslate για μεταφράσεις."
+
+#: ../../../_source/libretranslate.rst:6
+msgid "https://libretranslate.com/"
+msgstr "https://libretranslate.com/"
+
+#: ../../../_source/libretranslate.rst:7
+msgid "https://github.com/LibreTranslate/LibreTranslate"
+msgstr "https://github.com/LibreTranslate/LibreTranslate"
+
+#: ../../../_source/libretranslate.rst:10
+msgid "Local Server"
+msgstr "Τοπικός εξυπηρετητής"
+
+#: ../../../_source/libretranslate.rst:11
+msgid "You can run your own LibreTranslate server."
+msgstr "Μπορείτε να εκτελέσετε το δικό σας διακομιστή LibreTranslate."
+
+#: ../../../_source/libretranslate.rst:14
+msgid "Server Installation"
+msgstr "Εγκατάσταση εξυπηρετητή"
+
+#: ../../../_source/libretranslate.rst:15
+msgid "To install your own server, you can do it thusly on Debian:"
+msgstr ""
+"Για να εγκαταστήσετε το δικό σας διακομιστή, μπορείτε να το κάνετε έτσι στο "
+"Debian:"
+
+#: ../../../_source/libretranslate.rst:27
+msgid ""
+"Note, the first time it is run, it will download the translation models. The "
+"web URL won't be available until this is complete. It will download "
+"(currently) approximately 9 gigs of data."
+msgstr ""
+"Σημειώστε, την πρώτη φορά που εκτελείται, θα κατεβάσει τα μεταφραστικά "
+"μοντέλα. Το URL ιστού δεν θα είναι διαθέσιμο μέχρι να ολοκληρωθεί. Θα "
+"κατεβάσει (προς το παρόν) περίπου 9 gigs δεδομένων."
+
+#: ../../../_source/libretranslate.rst:31
+msgid "Translation model files download to here:"
+msgstr "Μεταφραστικά αρχεία μοντέλων κατεβάσετε εδώ:"
+
+#: ../../../_source/libretranslate.rst:38
+msgid "systemd"
+msgstr "με σύστημα"
+
+#: ../../../_source/libretranslate.rst:39
+msgid ""
+"You can set up the server to start on boot with systemd. It will need a "
+"startup script and a systemd file."
+msgstr ""
+"Μπορείτε να ρυθμίσετε τον εξυπηρετητή για εκκίνηση με σύστημα. Θα χρειαστεί "
+"ένα σενάριο εκκίνησης και ένα συστηματικό αρχείο."
+
+#: ../../../_source/libretranslate.rst:42
+msgid "Edit the systemd service file:"
+msgstr "Επεξεργασία του αρχείου υπηρεσιών του συστήματος:"
+
+#: ../../../_source/libretranslate.rst:48
+msgid ""
+"Add contents such as this, adjusting path and user to where you put the "
+"startup script:"
+msgstr ""
+"Προσθήκη περιεχομένων όπως αυτό, προσαρμογή διαδρομής και χρήστη στο σημείο "
+"όπου βάζετε το σενάριο εκκίνησης:"
+
+#: ../../../_source/libretranslate.rst:69
+msgid "Create the startup script:"
+msgstr "Δημιουργία σεναρίου εκκίνησης:"
+
+#: ../../../_source/libretranslate.rst:75
+msgid "Add contents such as this, adjusting to the correct path:"
+msgstr "Προσθήκη περιεχομένων όπως αυτό, προσαρμογή στη σωστή διαδρομή:"
+
+#: ../../../_source/libretranslate.rst:93
+msgid "Web Access"
+msgstr "Πρόσβαση στο διαδίκτυο"
+
+#: ../../../_source/libretranslate.rst:94
+msgid ""
+"You can then access your model remotely via the server's IP or from "
+"localhost, such as:"
+msgstr ""
+"Στη συνέχεια, μπορείτε να έχετε πρόσβαση στο μοντέλο σας εξ αποστάσεως μέσω "
+"της IP του διακομιστή ή από localhost, όπως:"
+
+#: ../../../_source/libretranslate.rst:97
+msgid "http://localhost:8000/"
+msgstr "http://localhost:8000/"
+
+#: ../../../_source/libretranslate.rst:98
+msgid "http://192.168.1.1:8000"
+msgstr "http://192.168.1.1:8000"

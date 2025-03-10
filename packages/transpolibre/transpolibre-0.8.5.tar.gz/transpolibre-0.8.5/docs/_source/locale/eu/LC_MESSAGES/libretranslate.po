@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: eu <LL@li.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/libretranslate.rst:3
+msgid "LibreTranslate"
+msgstr "LibreTranslate"
+
+#: ../../../_source/libretranslate.rst:4
+msgid "transpolibre uses a LibreTranslate server for translations."
+msgstr ""
+"transpolibrek LibreTranslate zerbitzaria erabiltzen du itzulpenetarako."
+
+#: ../../../_source/libretranslate.rst:6
+msgid "https://libretranslate.com/"
+msgstr "https://libretranslate.com/"
+
+#: ../../../_source/libretranslate.rst:7
+msgid "https://github.com/LibreTranslate/LibreTranslate"
+msgstr "https://github.com/LibreTranslate/LibreTranslate"
+
+#: ../../../_source/libretranslate.rst:10
+msgid "Local Server"
+msgstr "Lokaleko zerbitzaria"
+
+#: ../../../_source/libretranslate.rst:11
+msgid "You can run your own LibreTranslate server."
+msgstr "LibreTranslate zerbitzaria exekuta dezakezu."
+
+#: ../../../_source/libretranslate.rst:14
+msgid "Server Installation"
+msgstr "Zerbitzariaren instalazioa"
+
+#: ../../../_source/libretranslate.rst:15
+msgid "To install your own server, you can do it thusly on Debian:"
+msgstr "Zure zerbitzaria instalatzeko, horrela egin dezakezu Debianen:"
+
+#: ../../../_source/libretranslate.rst:27
+msgid ""
+"Note, the first time it is run, it will download the translation models. The "
+"web URL won't be available until this is complete. It will download "
+"(currently) approximately 9 gigs of data."
+msgstr ""
+"Oharra, lehen aldiz exekutatzen denean, itzulpen-ereduak deskargatuko ditu. "
+"Web URLa ez da erabilgarri egongo hau osatu arte. 9 gig datu inguru "
+"deskargatuko ditu."
+
+#: ../../../_source/libretranslate.rst:31
+msgid "Translation model files download to here:"
+msgstr "Itzulpen-ereduen fitxategiak deskargatu hona:"
+
+#: ../../../_source/libretranslate.rst:38
+msgid "systemd"
+msgstr "sistematizatua"
+
+#: ../../../_source/libretranslate.rst:39
+msgid ""
+"You can set up the server to start on boot with systemd. It will need a "
+"startup script and a systemd file."
+msgstr ""
+"Zerbitzaria konfigura dezakezu sistemarekin abiarazteko. Abioko script bat "
+"eta sistematutako fitxategi bat beharko ditu."
+
+#: ../../../_source/libretranslate.rst:42
+msgid "Edit the systemd service file:"
+msgstr "Editatu sistematutako zerbitzu-fitxategia:"
+
+#: ../../../_source/libretranslate.rst:48
+msgid ""
+"Add contents such as this, adjusting path and user to where you put the "
+"startup script:"
+msgstr ""
+"Gehitu hau bezalako edukia, bide-izena eta erabiltzailea abioko script-a "
+"jarri duzun lekura doitzen:"
+
+#: ../../../_source/libretranslate.rst:69
+msgid "Create the startup script:"
+msgstr "Sortu abioko script-a:"
+
+#: ../../../_source/libretranslate.rst:75
+msgid "Add contents such as this, adjusting to the correct path:"
+msgstr "Gehitu edukia honela, bide zuzenera egokituz:"
+
+#: ../../../_source/libretranslate.rst:93
+msgid "Web Access"
+msgstr "Web sarbidea"
+
+#: ../../../_source/libretranslate.rst:94
+msgid ""
+"You can then access your model remotely via the server's IP or from "
+"localhost, such as:"
+msgstr ""
+"Zure modeloa urrunetik atzi dezakezu zerbitzariaren IP bidez edo ostalari "
+"lokalaren bidez, adibidez:"
+
+#: ../../../_source/libretranslate.rst:97
+msgid "http://localhost:8000/"
+msgstr "http://localhost:8000/"
+
+#: ../../../_source/libretranslate.rst:98
+msgid "http://192.168.1.1:8000"
+msgstr "http://192.168.1.1:8000"

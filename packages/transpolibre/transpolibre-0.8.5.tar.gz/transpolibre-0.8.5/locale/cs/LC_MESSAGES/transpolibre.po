@@ -1,0 +1,138 @@
+# Czech translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "Přeložit soubory PO s LibreTranslate"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "LibreTranslate API klíč"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "Ladění"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "PO soubor přeložit"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "Seznam dostupných jazyků"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "Přepsat stávající překlady"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "Zdrojový jazyk ISO 639 kód (výchozí en)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "Cílový jazyk ISO 639 kód (Výchozí)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (Výchozí http: / / 127.0.0.1: 8000)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "Zvýšit verbalitu výstupu"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "Zobrazit verzi"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "Chyba: neznámý kód jazyka:"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "Zadaný PO soubor neexistuje nebo není soubor:"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "Přečtěte si PO soubor:"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "Původní:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "Překlad:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "Text překladu odkazu:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "Zjištěno URL"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "Zjištěn email"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "Žádné URL nebo Email detekován"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "LibreTranslate URL:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "API klíč:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "Žádné"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "Překlad:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "Zdroj ISO 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "Cíl ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "Jazyk:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "Kód:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "Cíle:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "Chyba: je vyžadován soubor."

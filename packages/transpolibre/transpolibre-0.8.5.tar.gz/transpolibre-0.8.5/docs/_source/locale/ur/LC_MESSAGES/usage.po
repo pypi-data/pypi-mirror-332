@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ur <LL@li.org>\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/usage.rst:3
+msgid "Usage"
+msgstr "استعمال"
+
+#: ../../../_source/usage.rst:4
+msgid "Thusly."
+msgstr "اس طرح."
+
+#: ../../../_source/usage.rst:7
+msgid "Help"
+msgstr "مدد"
+
+#: ../../../_source/usage.rst:33
+msgid "Examples"
+msgstr "مثالیں"
+
+#: ../../../_source/usage.rst:34
+msgid "To translate a single PO file:"
+msgstr "ایک پی یو فائل کا ترجمہ کرنے کے لیے:"
+
+#: ../../../_source/usage.rst:40
+msgid "To translate specifying to/from language:"
+msgstr "ترجمہ کرنے کے لیے:"
+
+#: ../../../_source/usage.rst:46
+msgid "To use a particular LibreTranslate server:"
+msgstr "ایک مخصوص لیبرسٹر سرور استعمال کرنے کے لیے:"
+
+#: ../../../_source/usage.rst:52
+msgid "To list languages available on a LibreTranslate server:"
+msgstr "فہرست زبانوں کی فہرست ایک لیبرسٹر سرور پر دستیاب ہے:"
+
+#: ../../../_source/usage.rst:58
+msgid "To translate all the PO files in a directory:"
+msgstr "ایک ڈائریکٹری میں تمام پی یو فائلیں کا ترجمہ کرنے کے لیے:"
+
+#: ../../../_source/usage.rst:67
+msgid "Dotenv"
+msgstr "دانت"
+
+#: ../../../_source/usage.rst:68
+msgid ""
+"The LibreTranslate URL and API key can be stored using dotenv, so it doesn't "
+"need to be specified on the command line. For instance instead of doing this:"
+msgstr ""
+"لیبری ٹرانس ڈرم اور اے پی آئی کی کلید کو دوا استعمال کرتے ہوئے محفوظ کیا جا "
+"سکتا ہے، اس لیے اسے کمانڈ لائن پر مخصوص کرنے کی ضرورت نہیں۔ مثال کے طور پر ، "
+"ایسا کرنے کی بجائے :"
+
+#: ../../../_source/usage.rst:75
+msgid ""
+"You can add the URL adding the ``LT_URL`` variable to an ``.env`` file in "
+"the base directory:"
+msgstr "آپ 'LT_URL' میں تبدیل کر سکتے ہیں"
+
+#: ../../../_source/usage.rst:82
+msgid "The same can be done with the API key, such as:"
+msgstr "اسی طرح اے پی آئی کی کلید کے ساتھ بھی کیا جا سکتا ہے جیسے:"

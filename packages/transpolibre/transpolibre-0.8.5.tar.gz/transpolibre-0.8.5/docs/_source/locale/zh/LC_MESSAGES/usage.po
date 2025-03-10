@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh <LL@li.org>\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/usage.rst:3
+msgid "Usage"
+msgstr "使用量"
+
+#: ../../../_source/usage.rst:4
+msgid "Thusly."
+msgstr "这样."
+
+#: ../../../_source/usage.rst:7
+msgid "Help"
+msgstr "帮助"
+
+#: ../../../_source/usage.rst:33
+msgid "Examples"
+msgstr "实例"
+
+#: ../../../_source/usage.rst:34
+msgid "To translate a single PO file:"
+msgstr "要翻译单个 PO 文件 :"
+
+#: ../../../_source/usage.rst:40
+msgid "To translate specifying to/from language:"
+msgstr "将指定翻译为/从语言翻译:"
+
+#: ../../../_source/usage.rst:46
+msgid "To use a particular LibreTranslate server:"
+msgstr "要使用特定 LibreTranslate 服务器 :"
+
+#: ../../../_source/usage.rst:52
+msgid "To list languages available on a LibreTranslate server:"
+msgstr "要列出 LibreTranslate 服务器上可用的语言:"
+
+#: ../../../_source/usage.rst:58
+msgid "To translate all the PO files in a directory:"
+msgstr "要在目录中翻译所有 PO 文件 :"
+
+#: ../../../_source/usage.rst:67
+msgid "Dotenv"
+msgstr "多腾夫"
+
+#: ../../../_source/usage.rst:68
+msgid ""
+"The LibreTranslate URL and API key can be stored using dotenv, so it doesn't "
+"need to be specified on the command line. For instance instead of doing this:"
+msgstr ""
+"LibreTranslate URL和API密钥可以使用dotenv存储,因此不需要在命令行上指定. 例如,"
+"与其这样做:"
+
+#: ../../../_source/usage.rst:75
+msgid ""
+"You can add the URL adding the ``LT_URL`` variable to an ``.env`` file in "
+"the base directory:"
+msgstr "您可以在基准目录中添加“ LT_ URL” 变量到“.env” 文件 :"
+
+#: ../../../_source/usage.rst:82
+msgid "The same can be done with the API key, such as:"
+msgstr "API 密钥也可以这样做,例如:"

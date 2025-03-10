@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ga <LL@li.org>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=6 ? 2 : "
+"n>=7 && n<=10 ? 3 : 4);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/source.rst:3
+msgid "Source Code"
+msgstr "Cód Foinse"
+
+#: ../../../_source/source.rst:4
+msgid "Source code repository for this documentation."
+msgstr "Córas cód foinse don doiciméadú."
+
+#: ../../../_source/source.rst:6
+msgid "`<https://spacecruft.org/deepcrayon/transpolibre>`_"
+msgstr "cóipeáil nasc leis an tweet leabaigh an tweet https://www"
+
+#: ../../../_source/source.rst:8
+msgid ""
+"Note, this is how to build documentation for the ``transpolibre`` "
+"application itself, not how to use ``transpolibre``."
+msgstr ""
+"Tabhair faoi deara, is é seo an chaoi le cáipéisíocht a thógáil don "
+"fheidhmchlár `transpolibre` féin, gan conas `transpolibre` a úsáid."
+
+#: ../../../_source/source.rst:12
+msgid "Build Documentation"
+msgstr "Doiciméadú Tógála"
+
+#: ../../../_source/source.rst:13
+msgid "To build this documentation locally, do thusly."
+msgstr "Chun an doiciméadú seo a thógáil go háitiúil, rud a dhéanamh."
+
+#: ../../../_source/source.rst:16
+msgid "Install Dependencies"
+msgstr "Suiteáil Spleáchas"
+
+#: ../../../_source/source.rst:17
+msgid "Install dependencies, such as with Debian:"
+msgstr "Suiteáil spleáchais, mar shampla le Debian:"
+
+#: ../../../_source/source.rst:25
+msgid "Download Documentation Source"
+msgstr "Íoslódáil an Doiciméad Foinse do bhfianaise faoi stiúir glan"
+
+#: ../../../_source/source.rst:33
+msgid "Setup Python"
+msgstr "Socraigh Python"
+
+#: ../../../_source/source.rst:42
+msgid "Documentation Build Help"
+msgstr "Tógáil Cáipéisí Cabhair"
+
+#: ../../../_source/source.rst:43
+msgid "For documentation build help, run:"
+msgstr "Maidir le doiciméid a thógáil cabhair, reáchtáil:"
+
+#: ../../../_source/source.rst:49
+msgid "This will display this help:"
+msgstr "Taispeánfaidh sé seo an chabhair seo:"
+
+#: ../../../_source/source.rst:71
+msgid "Clean"
+msgstr "Glanadh agus Glanadh"
+
+#: ../../../_source/source.rst:72
+msgid "Clean build artifacts thusly."
+msgstr "Déantáin a thógáil glan dá bhrí sin."
+
+#: ../../../_source/source.rst:80
+msgid "Build HTML Documentation"
+msgstr "Tógáil Doiciméadú HTML"
+
+#: ../../../_source/source.rst:81
+msgid "To build the HTML documentation, run:"
+msgstr "A thógáil ar an doiciméadú HTML, reáchtáil:"
+
+#: ../../../_source/source.rst:88
+msgid ""
+"The resulting HTML will be in ``docs/_build/html/`` with a top-level ``index."
+"html`` file located here: ``docs/index.html``."
+msgstr ""
+"Beidh an HTML mar thoradh ar a bheith i ```docs /_build/html/`` le barr-"
+"leibhéal `innéacs . comhad atá suite anseo: ``docs / innéacs .html` ."
+
+#: ../../../_source/source.rst:92
+msgid "Build LaTex PDF"
+msgstr "Tógáil LaTex PDF"
+
+#: ../../../_source/source.rst:93
+msgid ""
+"To build a PDF document from a LaTeX build, first install dependencies (this "
+"is way more than needed):"
+msgstr ""
+"Chun doiciméad PDF a thógáil ó thógáil LaTeX, spleáchais a shuiteáil ar dtús "
+"(tá sé seo níos mó ná mar is gá):"
+
+#: ../../../_source/source.rst:100
+msgid "Then build the LaTeX and PDF documents:"
+msgstr "Ansin a thógáil ar na doiciméid LaTeX agus PDF:"
+
+#: ../../../_source/source.rst:107
+msgid "Build PDF"
+msgstr "Tógáil PDF"
+
+#: ../../../_source/source.rst:108
+msgid "To build a PDF document from LaTeX:"
+msgstr "Chun doiciméad PDF a thógáil ó LaTeX:"
+
+#: ../../../_source/source.rst:114
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre.pdf``."
+msgstr ""
+"Beidh PDF mar thoradh air sin anseo: ` `docs/_build/latex/en/transpolibre."
+"pdf` ."
+
+#: ../../../_source/source.rst:117
+msgid "eBook"
+msgstr "ríomhleabhar"
+
+#: ../../../_source/source.rst:118
+msgid "To greatly reduce the size of the PDF to 150 dpi for an eBook, run:"
+msgstr ""
+"Chun méid na PDF a laghdú go mór go dtí 150 dpi le haghaidh eBook, reáchtáil:"
+
+#: ../../../_source/source.rst:124
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-ebook-en."
+"pdf``."
+msgstr ""
+"Beidh PDF mar thoradh air sin anseo: ` `docs/_build/latex/en/transpolibre-"
+"ebook-en.pdf` ."
+
+#: ../../../_source/source.rst:127
+msgid "Prepress"
+msgstr "Réamhbhrúite"
+
+#: ../../../_source/source.rst:129
+msgid "To reduce the size of the PDF to 300 dpi for printing, run:"
+msgstr ""
+"Chun méid na PDF a laghdú go dtí 300 dpi le haghaidh priontála, reáchtáil:"
+
+#: ../../../_source/source.rst:135
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-prepress-"
+"en.pdf``."
+msgstr ""
+"Beidh PDF mar thoradh air sin anseo: ` `docs/_build/latex/en/transpolibre-"
+"prepress-en.pdf` ."
+
+#: ../../../_source/source.rst:138
+msgid "Build All Documentation"
+msgstr "Tógáil Gach Doiciméad"
+
+#: ../../../_source/source.rst:139
+msgid "To build all documentation, including HTML and PDFs."
+msgstr "Gach doiciméadú a thógáil, lena n-áirítear HTML agus PDFs."
+
+#: ../../../_source/source.rst:146
+msgid "Translations"
+msgstr "Aistriúcháin"
+
+#: ../../../_source/source.rst:147
+msgid "See ``README.md`` for notes on how to update package translations."
+msgstr ""
+"Féach ` README.md` do nótaí ar conas a thabhairt cothrom le dáta "
+"aistriúcháin pacáiste ."

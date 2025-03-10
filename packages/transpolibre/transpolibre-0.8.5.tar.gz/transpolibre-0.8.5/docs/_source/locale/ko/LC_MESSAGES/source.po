@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ko <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/source.rst:3
+msgid "Source Code"
+msgstr "소스 코드"
+
+#: ../../../_source/source.rst:4
+msgid "Source code repository for this documentation."
+msgstr "이 문서에 대한 소스 코드 저장소."
+
+#: ../../../_source/source.rst:6
+msgid "`<https://spacecruft.org/deepcrayon/transpolibre>`_"
+msgstr "`<https://spacecruft.org/deepcrayon/transpolibre>``_"
+
+#: ../../../_source/source.rst:8
+msgid ""
+"Note, this is how to build documentation for the ``transpolibre`` "
+"application itself, not how to use ``transpolibre``."
+msgstr ""
+"참고, ``transpolibre``` 애플리케이션 자체에 대한 문서를 작성하는 방법은 "
+"``transpolibre`````````를 사용하는 방법."
+
+#: ../../../_source/source.rst:12
+msgid "Build Documentation"
+msgstr "회사연혁"
+
+#: ../../../_source/source.rst:13
+msgid "To build this documentation locally, do thusly."
+msgstr "이 문서를 로컬로 만들기 위해, 이렇게."
+
+#: ../../../_source/source.rst:16
+msgid "Install Dependencies"
+msgstr "설치 Dependencies"
+
+#: ../../../_source/source.rst:17
+msgid "Install dependencies, such as with Debian:"
+msgstr "Debian과 같은 의존성을 설치하십시오:"
+
+#: ../../../_source/source.rst:25
+msgid "Download Documentation Source"
+msgstr "다운로드 Documentation 이름 *"
+
+#: ../../../_source/source.rst:33
+msgid "Setup Python"
+msgstr "Python 설정"
+
+#: ../../../_source/source.rst:42
+msgid "Documentation Build Help"
+msgstr "문서 작성 도움말"
+
+#: ../../../_source/source.rst:43
+msgid "For documentation build help, run:"
+msgstr "문서 빌드 도움말, 실행:"
+
+#: ../../../_source/source.rst:49
+msgid "This will display this help:"
+msgstr "이 도움말을 표시 할 것입니다:"
+
+#: ../../../_source/source.rst:71
+msgid "Clean"
+msgstr "제품정보"
+
+#: ../../../_source/source.rst:72
+msgid "Clean build artifacts thusly."
+msgstr "깨끗한 빌드 artifacts 따라서."
+
+#: ../../../_source/source.rst:80
+msgid "Build HTML Documentation"
+msgstr "HTML 문서 작성"
+
+#: ../../../_source/source.rst:81
+msgid "To build the HTML documentation, run:"
+msgstr "HTML 문서를 작성하려면, 실행:"
+
+#: ../../../_source/source.rst:88
+msgid ""
+"The resulting HTML will be in ``docs/_build/html/`` with a top-level ``index."
+"html`` file located here: ``docs/index.html``."
+msgstr ""
+"그 결과 HTML은 ``docs/_build/html/```에서 top-level ``index.html`````로 나옵"
+"니다. 여기에 있는 파일: ``docs/index.html``."
+
+#: ../../../_source/source.rst:92
+msgid "Build LaTex PDF"
+msgstr "LaTex PDF 만들기"
+
+#: ../../../_source/source.rst:93
+msgid ""
+"To build a PDF document from a LaTeX build, first install dependencies (this "
+"is way more than needed):"
+msgstr ""
+"LaTeX 빌드에서 PDF 문서를 작성하려면 먼저 의존성을 설치하십시오 (이 필요보다 "
+"더 많은 방법) :"
+
+#: ../../../_source/source.rst:100
+msgid "Then build the LaTeX and PDF documents:"
+msgstr "그런 다음 LaTeX 및 PDF 문서를 작성하십시오"
+
+#: ../../../_source/source.rst:107
+msgid "Build PDF"
+msgstr "PDF 만들기"
+
+#: ../../../_source/source.rst:108
+msgid "To build a PDF document from LaTeX:"
+msgstr "LaTeX에서 PDF 문서를 작성하려면:"
+
+#: ../../../_source/source.rst:114
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre.pdf``."
+msgstr "결과 PDF는 다음과 같습니다. ``docs/_build/latex/en/transpolibre.pdf``."
+
+#: ../../../_source/source.rst:117
+msgid "eBook"
+msgstr "전자 책"
+
+#: ../../../_source/source.rst:118
+msgid "To greatly reduce the size of the PDF to 150 dpi for an eBook, run:"
+msgstr "PDF의 크기를 eBook에 150 dpi로 크게 줄입니다"
+
+#: ../../../_source/source.rst:124
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-ebook-en."
+"pdf``."
+msgstr ""
+"결과 PDF는 다음과 같습니다. ``docs/_build/latex/en/transpolibre-ebook-en."
+"pdf``."
+
+#: ../../../_source/source.rst:127
+msgid "Prepress"
+msgstr "공지사항"
+
+#: ../../../_source/source.rst:129
+msgid "To reduce the size of the PDF to 300 dpi for printing, run:"
+msgstr "인쇄를 위한 PDF에서 300 dpi의 크기를 감소시키기 위하여는, 달리십시오:"
+
+#: ../../../_source/source.rst:135
+msgid ""
+"The resulting PDF will be here: ``docs/_build/latex/en/transpolibre-prepress-"
+"en.pdf``."
+msgstr ""
+"결과 PDF는 다음과 같습니다. ``docs/_build/latex/en/transpolibre-prepress-en."
+"pdf``."
+
+#: ../../../_source/source.rst:138
+msgid "Build All Documentation"
+msgstr "모든 문서 작성"
+
+#: ../../../_source/source.rst:139
+msgid "To build all documentation, including HTML and PDFs."
+msgstr "HTML 및 PDF를 포함한 모든 문서를 작성합니다."
+
+#: ../../../_source/source.rst:146
+msgid "Translations"
+msgstr "한국어"
+
+#: ../../../_source/source.rst:147
+msgid "See ``README.md`` for notes on how to update package translations."
+msgstr "``README.md``를 참고하여 패키지 번역을 업데이트하는 방법."

@@ -1,0 +1,138 @@
+# Norwegian Bokmal translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "Oversett PO-filer med LibreTranslate"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "LibreTranslate API-nøkkel"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "Feilsøking"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "PO-fil å oversette"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "Liste over tilgjengelige språk"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "Overskriv eksisterende oversettelser"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "Kildespråk ISO 639 kode (standard en)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "Målspråk ISO 639 kode (standard es)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (Standard http://127.0.1:8000)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "Øk utgangsverbositeten"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "Vis versjon"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "Feil: ukjent språkkode:"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "Den angitte PO-filen eksisterer ikke eller er ikke en fil:"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "Les PO-fil:"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "Original:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "Oversettelse:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "Oversettende linktekst:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "URL oppdaget"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "E-post oppdaget"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "Ingen URL eller e-postadresse oppdaget"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "LibreTranslate URL:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "API-nøkkel:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "Ingen"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "Oversetter:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "Kilde ISO 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "Mål ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "Språk:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "Kode:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "Mål:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "Feil: Filen er nødvendig."

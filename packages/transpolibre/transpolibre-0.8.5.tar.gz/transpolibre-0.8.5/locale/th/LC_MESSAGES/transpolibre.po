@@ -1,0 +1,137 @@
+# Thai translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "แปลแฟ้ม PP ด้วย LibreTranslate"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "LibreTranslate กุญแจ API"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "การดีบั๊ก"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "แฟ้ม PP ที่จะแปล"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "รายการภาษาที่มีอยู่"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "เขียนทับหน้าต่างที่มีอยู่"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "ต้นฉบับภาษา ISO 639 รหัส (Defaulten)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "ภาษาเป้าหมาย ISO 639 รหัส (Defal Es)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "LibreTranslate URL (Defult http167.0.1: 8000)"
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "เพิ่มความไวแสง"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "แสดงรุ่น"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "ผิดพลาด: รหัสภาษาไม่ทราบ:"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "แฟ้ม PO ที่ระบุยังไม่มีอยู่ หรือไม่ใช่แฟ้ม:"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "อ่านแฟ้ม PO:"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "ต้นฉบับ:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "การแปล:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "กําลังแปลงข้อความเชื่อมโยง:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "ตรวจพบที่อยู่ URL"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "ตรวจพบอีเมล"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "ไม่พบที่อยู่ URL หรืออีเมล"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "LibreTranslate ที่อยู่ URL:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "กุญแจ API:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "ไม่มี"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "การแปล:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "แหล่งที่มา ISO 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "เป้าหมาย ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "ภาษา:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "รหัส:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "เป้าหมาย:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "ผิดพลาด: ต้องการแฟ้ม."

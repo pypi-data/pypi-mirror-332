@@ -1,0 +1,138 @@
+# Irish translations for PACKAGE package.
+# Copyright (C) 2025 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:09-0600\n"
+"PO-Revision-Date: 2025-03-09 13:09-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;\n"
+
+#: src/transpolibre/transpolibre.py:25
+msgid "Translate PO files with LibreTranslate"
+msgstr "Aistrithe comhaid PO le LibreTranslate"
+
+#: src/transpolibre/transpolibre.py:30
+msgid "LibreTranslate API key"
+msgstr "Déan teagmháil anois eochair API"
+
+#: src/transpolibre/transpolibre.py:38
+msgid "Debugging"
+msgstr "Debugging"
+
+#: src/transpolibre/transpolibre.py:45
+msgid "PO file to translate"
+msgstr "PO comhad a aistriú"
+
+#: src/transpolibre/transpolibre.py:52
+msgid "List available languages"
+msgstr "Liosta teangacha ar fáil"
+
+#: src/transpolibre/transpolibre.py:59
+msgid "Overwrite existing translations"
+msgstr "Róscríobh aistriúcháin atá ann cheana féin"
+
+#: src/transpolibre/transpolibre.py:66
+msgid "Source Language ISO 639 code (Default en)"
+msgstr "Foinse Teanga ISO 639 cód (Default en)"
+
+#: src/transpolibre/transpolibre.py:74
+msgid "Target Language ISO 639 code (Default es)"
+msgstr "Sprioc Teanga ISO 639 cód (Default es)"
+
+#: src/transpolibre/transpolibre.py:82
+msgid "LibreTranslate URL (Default http://127.0.0.1:8000)"
+msgstr "Cóipeáil nasc leis an tweet Leabaigh an Tweet "
+
+#: src/transpolibre/transpolibre.py:90
+msgid "Increase output verbosity"
+msgstr "Méadú briogadh aschur"
+
+#: src/transpolibre/transpolibre.py:98
+msgid "Show version"
+msgstr "Leagan Taispeáin"
+
+#: src/transpolibre/transpolibre.py:116
+msgid "Error: unknown language code: "
+msgstr "Earráid: cód teanga anaithnid:"
+
+#: src/transpolibre/transpolibre.py:125
+msgid "The specified PO file does not exist or is not a file: "
+msgstr "Níl an comhad PO sonraithe ann nó nach bhfuil comhad:"
+
+#: src/transpolibre/transpolibre.py:128
+msgid "Read PO file: "
+msgstr "Léigh comhad PO:"
+
+#: src/transpolibre/transpolibre.py:140
+msgid "Original:    "
+msgstr "Bunaidh:"
+
+#: src/transpolibre/transpolibre.py:141 src/transpolibre/transpolibre.py:192
+msgid "Translation: "
+msgstr "Aistriúchán:"
+
+#: src/transpolibre/transpolibre.py:168
+msgid "Translating link text: "
+msgstr "Aistriú téacs nasc:"
+
+#: src/transpolibre/transpolibre.py:176
+msgid "URL detected"
+msgstr "URL a braitheadh"
+
+#: src/transpolibre/transpolibre.py:180
+msgid "Email detected"
+msgstr "Ríomhphost aimsithe"
+
+#: src/transpolibre/transpolibre.py:184
+msgid "No URL or Email detected"
+msgstr "Uimh URL nó Ríomhphost braitheadh"
+
+#: src/transpolibre/transpolibre.py:187
+msgid "LibreTranslate URL: "
+msgstr "Déan teagmháil anois URL:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "API Key: "
+msgstr "API Key:"
+
+#: src/transpolibre/transpolibre.py:188
+msgid "None"
+msgstr "Gan a bheith ráite"
+
+#: src/transpolibre/transpolibre.py:189
+msgid "Translating: "
+msgstr "Aistriú:"
+
+#: src/transpolibre/transpolibre.py:190
+msgid "Source ISO 639: "
+msgstr "Foinse ISO 639:"
+
+#: src/transpolibre/transpolibre.py:191
+msgid "Target ISO 639: "
+msgstr "Sprioc ISO 639:"
+
+#: src/transpolibre/transpolibre.py:205
+msgid "Language: "
+msgstr "Teanga:"
+
+#: src/transpolibre/transpolibre.py:206
+msgid "Code: "
+msgstr "Cód:"
+
+#: src/transpolibre/transpolibre.py:207
+msgid "Targets: "
+msgstr "Spriocanna:"
+
+#: src/transpolibre/transpolibre.py:243
+msgid "Error: file is required."
+msgstr "Earráid: Tá gá le comhad."

@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 12:42-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ko <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/todo.rst:3
+msgid "TODO"
+msgstr "사이트맵"
+
+#: ../../../_source/todo.rst:4
+msgid "Work to do on transpolibre."
+msgstr "Transpolibre에서 할 일."
+
+#: ../../../_source/todo.rst:6
+msgid "Fix broken PDF languages: ar fr he ja zh."
+msgstr "해결 깨진 PDF 언어: ar fr he ja zh."
+
+#: ../../../_source/todo.rst:8
+msgid "Fix missing fonts for PDF generation."
+msgstr "PDF 생성에 대한 누락 된 글꼴 수정."
+
+#: ../../../_source/todo.rst:10
+msgid "Fix formatting of URLs."
+msgstr "URL의 형식을 수정합니다."
+
+#: ../../../_source/todo.rst:12
+msgid "Fix formatting of inline code with backticks."
+msgstr "Backticks와 인라인 코드의 형식을 수정합니다."
+
+#: ../../../_source/todo.rst:14
+msgid "Fix --help in docs for multiple languages."
+msgstr "수정 --다중 언어에 대한 문서에 대한 도움말."

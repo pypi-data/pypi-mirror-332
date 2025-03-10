@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 15:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: id <LL@li.org>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/usage.rst:3
+msgid "Usage"
+msgstr "Penggunaan"
+
+#: ../../../_source/usage.rst:4
+msgid "Thusly."
+msgstr "Thusly."
+
+#: ../../../_source/usage.rst:7
+msgid "Help"
+msgstr "Bantuan"
+
+#: ../../../_source/usage.rst:33
+msgid "Examples"
+msgstr "Contoh"
+
+#: ../../../_source/usage.rst:34
+msgid "To translate a single PO file:"
+msgstr "Untuk menerjemahkan satu berkas PO:"
+
+#: ../../../_source/usage.rst:40
+msgid "To translate specifying to/from language:"
+msgstr "Untuk menerjemahkan yang menyatakan ke / dari bahasa:"
+
+#: ../../../_source/usage.rst:46
+msgid "To use a particular LibreTranslate server:"
+msgstr "Untuk menggunakan suatu Server LibreTranslate tertentu:"
+
+#: ../../../_source/usage.rst:52
+msgid "To list languages available on a LibreTranslate server:"
+msgstr "Untuk daftar bahasa yang tersedia pada server LibreTranslate:"
+
+#: ../../../_source/usage.rst:58
+msgid "To translate all the PO files in a directory:"
+msgstr "Untuk menerjemahkan semua berkas PO dalam direktori:"
+
+#: ../../../_source/usage.rst:67
+msgid "Dotenv"
+msgstr "Dodenv"
+
+#: ../../../_source/usage.rst:68
+msgid ""
+"The LibreTranslate URL and API key can be stored using dotenv, so it doesn't "
+"need to be specified on the command line. For instance instead of doing this:"
+msgstr ""
+"LibreTranslate URL dan kunci API dapat disimpan menggunakan dotenv, sehingga "
+"tidak perlu dispesifikasikan pada baris perintah. Sebagai contoh daripada "
+"melakukan hal ini:"
+
+#: ../../../_source/usage.rst:75
+msgid ""
+"You can add the URL adding the ``LT_URL`` variable to an ``.env`` file in "
+"the base directory:"
+msgstr ""
+"Anda dapat menambahkan URL menambahkan variabel \"LT _ URL\" ke sebuah "
+"berkas \".env\" dalam direktori dasar:"
+
+#: ../../../_source/usage.rst:82
+msgid "The same can be done with the API key, such as:"
+msgstr "Hal yang sama dapat dilakukan dengan kunci API, seperti:"

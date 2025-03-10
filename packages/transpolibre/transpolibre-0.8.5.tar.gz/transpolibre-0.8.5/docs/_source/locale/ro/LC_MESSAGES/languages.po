@@ -1,0 +1,411 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jeff Moe
+# This file is distributed under the same license as the transpolibre
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: transpolibre 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 13:17-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ro <LL@li.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../_source/languages.rst:3
+msgid "Languages"
+msgstr "Limbi"
+
+#: ../../../_source/languages.rst:5
+msgid "Application Languages"
+msgstr "Limbi de aplicare"
+
+#: ../../../_source/languages.rst:6
+msgid "The application is written in English."
+msgstr "Cererea este scrisă în limba engleză."
+
+#: ../../../_source/languages.rst:8
+#, fuzzy
+msgid ""
+"This application is written in English and uses AI machine translation for "
+"other languages."
+msgstr ""
+"Această documentaţie este scrisă în limba engleză şi foloseşte traducerea "
+"maşinii AI pentru alte limbi."
+
+#: ../../../_source/languages.rst:10
+msgid "The application is translated into the following languages:"
+msgstr "Cererea se traduce în următoarele limbi:"
+
+#: ../../../_source/languages.rst:12
+msgid "Arabic (ar)"
+msgstr "Arabă (ar)"
+
+#: ../../../_source/languages.rst:13
+msgid "Azerbaijani (az)"
+msgstr "Azerbaidjan (az)"
+
+#: ../../../_source/languages.rst:14
+msgid "Bengali (bn)"
+msgstr "Bengali (bn)"
+
+#: ../../../_source/languages.rst:15
+msgid "Catalan (ca)"
+msgstr "Catalană (ca)"
+
+#: ../../../_source/languages.rst:16
+msgid "Czech (cs)"
+msgstr "Cehă (cs)"
+
+#: ../../../_source/languages.rst:17
+#, fuzzy
+msgid "Danish (da)"
+msgstr "Spaniolă (spaniolă)"
+
+#: ../../../_source/languages.rst:18
+msgid "German (de)"
+msgstr "Germană (de)"
+
+#: ../../../_source/languages.rst:19
+msgid "Greek (el)"
+msgstr "Grec (el)"
+
+#: ../../../_source/languages.rst:20
+#, fuzzy
+msgid "Esperanto (eo)"
+msgstr "Spaniolă (spaniolă)"
+
+#: ../../../_source/languages.rst:21
+msgid "Spanish (es)"
+msgstr "Spaniolă (spaniolă)"
+
+#: ../../../_source/languages.rst:22
+msgid "Estonian (et)"
+msgstr "Estoniană (et)"
+
+#: ../../../_source/languages.rst:23
+msgid "Basque (eu)"
+msgstr "Basc (eu)"
+
+#: ../../../_source/languages.rst:24
+msgid "Persian (fa)"
+msgstr "Persan (fa)"
+
+#: ../../../_source/languages.rst:25
+msgid "French (fr)"
+msgstr "Franceză (fr)"
+
+#: ../../../_source/languages.rst:26
+msgid "Irish (ga)"
+msgstr "Irlandeză (ga)"
+
+#: ../../../_source/languages.rst:27
+msgid "Galician (gl)"
+msgstr "Galiciană (gl)"
+
+#: ../../../_source/languages.rst:28
+msgid "Hebrew (he)"
+msgstr "Ebraică (el)"
+
+#: ../../../_source/languages.rst:29
+msgid "Hindi (hi)"
+msgstr "Hindi (bună)"
+
+#: ../../../_source/languages.rst:30
+msgid "Hungarian (hu)"
+msgstr "Maghiară (hu)"
+
+#: ../../../_source/languages.rst:31
+msgid "Indonesian (id)"
+msgstr "Indonezian (id)"
+
+#: ../../../_source/languages.rst:32
+msgid "Italian (it)"
+msgstr "Italian (it)"
+
+#: ../../../_source/languages.rst:33
+msgid "Japanese (ja)"
+msgstr "Japoneză (ja)"
+
+#: ../../../_source/languages.rst:34
+msgid "Korean (ko)"
+msgstr "Coreeană (ko)"
+
+#: ../../../_source/languages.rst:35
+msgid "Lithuanian (lt)"
+msgstr "Lituaniană (lt)"
+
+#: ../../../_source/languages.rst:36
+msgid "Latvian (lv)"
+msgstr "Letonia (lv)"
+
+#: ../../../_source/languages.rst:37
+msgid "Malay (ms)"
+msgstr "Malaezia (ms)"
+
+#: ../../../_source/languages.rst:38
+msgid "Norwegian (nb)"
+msgstr "Norvegiană (nb)"
+
+#: ../../../_source/languages.rst:39
+msgid "Dutch (nl)"
+msgstr "Olandeză (nl)"
+
+#: ../../../_source/languages.rst:40
+#, fuzzy
+msgid "Polish (pl)"
+msgstr "Spaniolă (spaniolă)"
+
+#: ../../../_source/languages.rst:41
+msgid "Portuguese (pt)"
+msgstr "Portugheză (pt)"
+
+#: ../../../_source/languages.rst:42
+msgid "Romanian (ro)"
+msgstr "Română (ro)"
+
+#: ../../../_source/languages.rst:43
+msgid "Russian (ru)"
+msgstr "Rusă (ru)"
+
+#: ../../../_source/languages.rst:44
+msgid "Slovak (sk)"
+msgstr "Slovacia (sk)"
+
+#: ../../../_source/languages.rst:45
+msgid "Slovenian (sl)"
+msgstr "Sloveană (sl)"
+
+#: ../../../_source/languages.rst:46
+msgid "Albanian (sq)"
+msgstr "Albaneză (sq)"
+
+#: ../../../_source/languages.rst:47
+#, fuzzy
+msgid "Swedish (sv)"
+msgstr "Spaniolă (spaniolă)"
+
+#: ../../../_source/languages.rst:48
+msgid "Thai (th)"
+msgstr "Thai (th)"
+
+#: ../../../_source/languages.rst:49
+msgid "Tagalog (tl)"
+msgstr "Tagalog (tl)"
+
+#: ../../../_source/languages.rst:50
+msgid "Turkish (tr)"
+msgstr "Turcă (tr)"
+
+#: ../../../_source/languages.rst:51
+msgid "Ukranian (uk)"
+msgstr "Ukranian (uk)"
+
+#: ../../../_source/languages.rst:52
+msgid "Urdu (ur)"
+msgstr "Urdu (ur)"
+
+#: ../../../_source/languages.rst:53
+msgid "Chinese (zh)"
+msgstr "Chineză (zh)"
+
+#: ../../../_source/languages.rst:56
+msgid "Documentation Languages"
+msgstr "Limbi documentare"
+
+#: ../../../_source/languages.rst:57
+msgid "The documentation is written in English."
+msgstr "Documentaţia este scrisă în engleză."
+
+#: ../../../_source/languages.rst:59
+msgid "English (en) `<https://transpolibre.org/en/>`_"
+msgstr "Engleză (ro) "
+
+#: ../../../_source/languages.rst:62
+msgid ""
+"This documentation is written in English and uses AI machine translation for "
+"other languages."
+msgstr ""
+"Această documentaţie este scrisă în limba engleză şi foloseşte traducerea "
+"maşinii AI pentru alte limbi."
+
+#: ../../../_source/languages.rst:64
+msgid "It is machine (AI) translated into the following languages:"
+msgstr "Este un aparat (AI) tradus în următoarele limbi:"
+
+#: ../../../_source/languages.rst:66
+msgid "Arabic (ar) `<https://transpolibre.org/ar/>`_"
+msgstr "Arabă (ar) "
+
+#: ../../../_source/languages.rst:69
+msgid "Azerbaijani (az) `<https://transpolibre.org/az/>`_"
+msgstr "Azerbaidjani (az)"
+
+#: ../../../_source/languages.rst:72
+msgid "Bengali (bn) `<https://transpolibre.org/bn/>`_"
+msgstr "Bengali (bn)"
+
+#: ../../../_source/languages.rst:75
+msgid "Catalan (ca) `<https://transpolibre.org/ca/>`_"
+msgstr "Catalană (ca) "
+
+#: ../../../_source/languages.rst:78
+msgid "Czech (cs) `<https://transpolibre.org/cs/>`_"
+msgstr "Cehia (cs)"
+
+#: ../../../_source/languages.rst:81
+msgid "Danish (da) `<https://transpolibre.org/da/>`_"
+msgstr "Daneză (da) "
+
+#: ../../../_source/languages.rst:84
+msgid "German (de) `<https://transpolibre.org/de/>`_"
+msgstr "Germană (de)"
+
+#: ../../../_source/languages.rst:87
+msgid "Greek (el) `<https://transpolibre.org/el/>`_"
+msgstr "Greacă (el)"
+
+#: ../../../_source/languages.rst:90
+msgid "Esperanto (eo) `<https://transpolibre.org/eo/>`_"
+msgstr "Esperanto (eo)"
+
+#: ../../../_source/languages.rst:93
+msgid "Spanish (es) `<https://transpolibre.org/es/>`_"
+msgstr "Spaniolă (es) "
+
+#: ../../../_source/languages.rst:96
+msgid "Estonian (et) `<https://transpolibre.org/et/>`_"
+msgstr "Estonian (et) "
+
+#: ../../../_source/languages.rst:99
+msgid "Basque (eu) `<https://transpolibre.org/eu/>`_"
+msgstr "Basc (eu) "
+
+#: ../../../_source/languages.rst:102
+msgid "Persian (fa) `<https://transpolibre.org/fa/>`_"
+msgstr "Persană (fa)"
+
+#: ../../../_source/languages.rst:105
+msgid "French (fr) `<https://transpolibre.org/fr/>`_"
+msgstr "Franceza (fr) "
+
+#: ../../../_source/languages.rst:108
+msgid "Irish (ga) `<https://transpolibre.org/ga/>`_"
+msgstr "Irlandez (ga)"
+
+#: ../../../_source/languages.rst:111
+msgid "Galician (gl) `<https://transpolibre.org/gl/>`_"
+msgstr "Galiciana (gl) "
+
+#: ../../../_source/languages.rst:114
+msgid "Hebrew (he) `<https://transpolibre.org/he/>`_"
+msgstr "Ebraică (he)"
+
+#: ../../../_source/languages.rst:117
+msgid "Hindi (hi) `<https://transpolibre.org/hi/>`_"
+msgstr "Hindi (hi)"
+
+#: ../../../_source/languages.rst:120
+msgid "Hungarian (hu) `<https://transpolibre.org/hu/>`_"
+msgstr "Maghiară (hu)"
+
+#: ../../../_source/languages.rst:123
+msgid "Indonesian (id) `<https://transpolibre.org/id/>`_"
+msgstr "Indoneziană (id)"
+
+#: ../../../_source/languages.rst:126
+msgid "Italian (it) `<https://transpolibre.org/it/>`_"
+msgstr "Italian (it) "
+
+#: ../../../_source/languages.rst:129
+msgid "Japanese (ja) `<https://transpolibre.org/ja/>`_"
+msgstr "Japoneza (ja)"
+
+#: ../../../_source/languages.rst:132
+msgid "Korean (ko) `<https://transpolibre.org/ko/>`_"
+msgstr "Coreeană (ko)"
+
+#: ../../../_source/languages.rst:135
+msgid "Lithuanian (lt) `<https://transpolibre.org/lt/>`_"
+msgstr "Lituaniană (lt)"
+
+#: ../../../_source/languages.rst:138
+msgid "Latvian (lv) `<https://transpolibre.org/lv/>`_"
+msgstr "Letonia (lv)"
+
+#: ../../../_source/languages.rst:141
+msgid "Malay (ms) `<https://transpolibre.org/ms/>`_"
+msgstr "Malaezia (ms)"
+
+#: ../../../_source/languages.rst:144
+msgid "Norwegian (nb) `<https://transpolibre.org/nb/>`_"
+msgstr "Norvegiană (nb) "
+
+#: ../../../_source/languages.rst:147
+msgid "Dutch (nl) `<https://transpolibre.org/nl/>`_"
+msgstr "Olandeză (nl)"
+
+#: ../../../_source/languages.rst:150
+msgid "Polish (pl) `<https://transpolibre.org/pl/>`_"
+msgstr "Poloneză (pl)"
+
+#: ../../../_source/languages.rst:153
+msgid "Portuguese (pt) `<https://transpolibre.org/pt/>`_"
+msgstr "Portugheza (pt)"
+
+#: ../../../_source/languages.rst:156
+msgid "Romanian (ro) `<https://transpolibre.org/ro/>`_"
+msgstr "Română (ro) "
+
+#: ../../../_source/languages.rst:159
+msgid "Russian (ru) `<https://transpolibre.org/ru/>`_"
+msgstr "Rusa (ru)"
+
+#: ../../../_source/languages.rst:162
+msgid "Slovak (sk) `<https://transpolibre.org/sk/>`_"
+msgstr "Slovacă (sk)"
+
+#: ../../../_source/languages.rst:165
+msgid "Slovenian (sl) `<https://transpolibre.org/sl/>`_"
+msgstr "Sloveni (sl)"
+
+#: ../../../_source/languages.rst:168
+msgid "Albanian (sq) `<https://transpolibre.org/sq/>`_"
+msgstr "Albaneză (sq)"
+
+#: ../../../_source/languages.rst:171
+msgid "Swedish (sv) `<https://transpolibre.org/sv/>`_"
+msgstr "Suedeză (sv)"
+
+#: ../../../_source/languages.rst:174
+msgid "Thai (th) `<https://transpolibre.org/th/>`_"
+msgstr "Thai (th)"
+
+#: ../../../_source/languages.rst:177
+msgid "Tagalog (tl) `<https://transpolibre.org/tl/>`_"
+msgstr "Tagalog (tl)"
+
+#: ../../../_source/languages.rst:180
+msgid "Turkish (tr) `<https://transpolibre.org/tr/>`_"
+msgstr "Turkish (tr) "
+
+#: ../../../_source/languages.rst:183
+msgid "Ukranian (uk) `<https://transpolibre.org/uk/>`_"
+msgstr "Ukranian (uk) "
+
+#: ../../../_source/languages.rst:186
+msgid "Urdu (ur) `<https://transpolibre.org/ur/>`_"
+msgstr "Urdu (ur)"
+
+#: ../../../_source/languages.rst:189
+msgid "Chinese (zh) `<https://transpolibre.org/zh/>`_"
+msgstr "Chineză (zh)"
