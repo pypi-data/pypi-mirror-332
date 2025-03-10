@@ -1,0 +1,35 @@
+"""
+Python module generated from Java source file org.bukkit.event.world.ChunkPopulateEvent
+
+Java source file obtained from artifact spigot-api version 1.20.1-R0.1-20230921.163938-66
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from org.bukkit import Chunk
+from org.bukkit.event import HandlerList
+from org.bukkit.event.world import *
+from org.bukkit.generator import BlockPopulator
+from typing import Any, Callable, Iterable, Tuple
+
+
+class ChunkPopulateEvent(ChunkEvent):
+    """
+    Thrown when a newly generated chunk has finished being populated.
+    
+    **Note:** Do not use this to generated blocks in a newly generated chunk.
+    Use a BlockPopulator instead.
+    """
+
+    def __init__(self, chunk: "Chunk"):
+        ...
+
+
+    def getHandlers(self) -> "HandlerList":
+        ...
+
+
+    @staticmethod
+    def getHandlerList() -> "HandlerList":
+        ...
