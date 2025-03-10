@@ -1,0 +1,8 @@
+result_portal_lib/__init__.py,sha256=61ZJ6vATVRxJlqa75TyOKui22EkEXtyZoftmeMzuJV0,527
+result_portal_lib/aws_utils.py,sha256=8WfyHXzIEkqTyuZNX0w3775a6u2bO6qDpRNju1D99oA,7407
+result_portal_lib/complaint_manager.py,sha256=ABePH00gRxJQDkuV4_w63PZPxpAdVb34XXu2OndnCrc,5719
+result_portal_lib/models.py,sha256=s84VFtWSNz0i69sOvFf_5f5p7Xb0jX0GugBUlDt0baY,2309
+result_portal_lib-0.1.5.dist-info/METADATA,sha256=HhnLzzSBAlzDtaZoc9Ov_ElvGF-5U9KGapogzD6CBmA,746
+result_portal_lib-0.1.5.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+result_portal_lib-0.1.5.dist-info/top_level.txt,sha256=tDTAC4L3eIxVINDIXPvd7Nn93v5Gzqys_YpOilVte-U,18
+result_portal_lib-0.1.5.dist-info/RECORD,,
