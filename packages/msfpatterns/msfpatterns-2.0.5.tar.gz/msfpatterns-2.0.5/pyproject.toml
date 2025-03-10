@@ -1,0 +1,43 @@
+[project]
+name = "msfpatterns"
+version = "2.0.5"
+description = "Generate/find patterns for use in stack smashing alla pattern_{create,offset}.rb from Metasploit"
+authors = [{ name = "Will Boyce", email = "me@willboyce.com" }]
+license = "BSD-3-Clause"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/wrboyce/msfpatterns"
+Repository = "https://github.com/wrboyce/msfpatterns.git"
+Issues = "https://github.com/wrboyce/msfpatterns/issues"
+Changelog = "https://github.com/wrboyce/msfpatterns/blob/master/CHANGELOG.md"
+
+[project.scripts]
+msfpatterns = "msfpatterns.cli:main"
+
+[dependency-groups]
+dev = [
+  "mypy>=1.15.0",
+  "pre-commit>=4.1.0",
+  "pytest>=8.3.4",
+  "pytest-codecov>=0.6.1",
+  "pytest-sugar>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+
+[tool.commitizen]
+name = "cz_gitmoji"
+tag_format = "v$version"
+version_scheme = "pep440"
+version_provider = "pep621"
+update_changelog_on_bump = true
+bump_message = "🔖 bump: version $current_version → $new_version"
