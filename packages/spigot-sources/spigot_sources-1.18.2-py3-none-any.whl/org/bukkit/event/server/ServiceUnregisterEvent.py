@@ -1,0 +1,34 @@
+"""
+Python module generated from Java source file org.bukkit.event.server.ServiceUnregisterEvent
+
+Java source file obtained from artifact spigot-api version 1.18.2-R0.1-20220607.160742-53
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from org.bukkit.event import HandlerList
+from org.bukkit.event.server import *
+from org.bukkit.plugin import RegisteredServiceProvider
+from typing import Any, Callable, Iterable, Tuple
+
+
+class ServiceUnregisterEvent(ServiceEvent):
+    """
+    This event is called when a service is unregistered.
+    
+    Warning: The order in which register and unregister events are called
+    should not be relied upon.
+    """
+
+    def __init__(self, serviceProvider: "RegisteredServiceProvider"[Any]):
+        ...
+
+
+    def getHandlers(self) -> "HandlerList":
+        ...
+
+
+    @staticmethod
+    def getHandlerList() -> "HandlerList":
+        ...

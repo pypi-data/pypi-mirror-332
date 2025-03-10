@@ -1,0 +1,17 @@
+"""
+Python module generated from Java source file org.bukkit.command.ConsoleCommandSender
+
+Java source file obtained from artifact spigot-api version 1.18.2-R0.1-20220607.160742-53
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from org.bukkit.command import *
+from org.bukkit.conversations import Conversable
+from typing import Any, Callable, Iterable, Tuple
+
+
+class ConsoleCommandSender(CommandSender, Conversable):
+
+
