@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: au-tools
+Version: 0.1.4
+Summary: AU - GitHub Classroom Automation Tools
+License: MIT
+Author: Paul York
+Author-email: paul@yorkfamily.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: beaupy (>=3.10.1,<4.0.0)
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: dacite (>=1.9.2,<2.0.0)
+Requires-Dist: pylint (>=3.3.4,<4.0.0)
+Requires-Dist: pytest (>=8.3.4,<9.0.0)
+Requires-Dist: pytest-subtests (>=0.14.1,<0.15.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Requires-Dist: tomlkit (>=0.13.2,<0.14.0)
+Project-URL: Bug Tracker, https://github.com/ptyork/au/issues
+Project-URL: Homepage, https://github.com/ptyork/au
+Project-URL: Repository, https://github.com/ptyork/au
+Description-Content-Type: text/markdown
+
+# au
