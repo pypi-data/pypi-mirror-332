@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pubmed-paper-fetcher-prajwal"
+version = "0.1.1"
+description = "A CLI tool to fetch PubMed papers and filter non-academic authors."
+authors = ["Prajwal Parve <parve99prajwal@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pubmed_paper_fetcher", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.13"
+pandas = ">=2.2.3,<3.0.0"
+typer = ">=0.15.2,<0.16.0"
+requests = ">=2.32.3,<3.0.0"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_paper_fetcher.fetch_papers:main"
+pubmed-paper-fetcher = "pubmed_paper_fetcher.cli:app"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
