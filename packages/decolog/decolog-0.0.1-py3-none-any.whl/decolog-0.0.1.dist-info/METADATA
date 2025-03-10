@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: decolog
+Version: 0.0.1
+Summary: A simple log class usable as decorator
+Author: Cyril Quijoux
+Keywords: log,decorator
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+## DECOLOG
+
+Small package to manage logs and log functions inputs and outputs easily
