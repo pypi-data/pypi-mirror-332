@@ -1,0 +1,15 @@
+transforms84/__init__.py,sha256=Zrv57EzpjdsuSPqsYvFkVsQKKRUOHFG7yURCf7qN-Tk,23
+transforms84/definitions.py,sha256=POa2sRd4X8q0slE3W9qKYGSfjI51_5KoP5UhHEfV_4I,350
+transforms84/distances.cp313-win_amd64.pyd,sha256=HtBpcrBdZHUSd-xiKjx6YJSAYUuYZJndWRAjbdewO8A,20480
+transforms84/distances.pyi,sha256=b_jZfttrlPf1yZaZalYOkkxQPsV-pPKqTBlfrkBLhsY,2659
+transforms84/helpers.cp313-win_amd64.pyd,sha256=5dWIZEKYHlvZu5xUaD3g6qjB00ChFxpK-Q8nk81pMqE,22016
+transforms84/helpers.pyi,sha256=PzRRX3jlzlWWN3cm2gabvEOvGJIuhMsIrKSqYUMZblU,3058
+transforms84/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transforms84/systems.py,sha256=0s_3jxEJSLM6kL5sxo5NUwQwwmwZGdDnhutFwIpb3V8,1718
+transforms84/transforms.cp313-win_amd64.pyd,sha256=P1WxgC0ExIV5IMQJhSi64g9oSOs9E8MIeSdLImkq5-0,123392
+transforms84/transforms.pyi,sha256=zHBNv0sdjBwD_0wFx91LUaoUgmqRnB7vjV7DMApU0B8,35976
+transforms84-1.1.0.dist-info/LICENSE.txt,sha256=RJwAMTt16c4MA1fx4TUKFM3M7ytWU0zdfHPcI5y_JgY,1552
+transforms84-1.1.0.dist-info/METADATA,sha256=eoOmcwT2N2B865d0DpuYoRNAjW6zvsNQcgAWwvz1yy0,11042
+transforms84-1.1.0.dist-info/WHEEL,sha256=EHzmORDFq-a8WFxIRoKnhGYoeqBOn0bSsCVW9-xIhHA,101
+transforms84-1.1.0.dist-info/top_level.txt,sha256=mxRdltwPgCTwa4oTSH0BVoSkAkpDN6nX_JlThimOORQ,13
+transforms84-1.1.0.dist-info/RECORD,,
