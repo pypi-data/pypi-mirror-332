@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/VisualizePhonon/__init__.py
+src/VisualizePhonon/cmdline.py
+src/VisualizePhonon/vibrational_analysis.py
+src/VisualizePhonon/vibrational_analysis_io.py
+src/VisualizePhonon.egg-info/PKG-INFO
+src/VisualizePhonon.egg-info/SOURCES.txt
+src/VisualizePhonon.egg-info/dependency_links.txt
+src/VisualizePhonon.egg-info/entry_points.txt
+src/VisualizePhonon.egg-info/requires.txt
+src/VisualizePhonon.egg-info/top_level.txt
+test/test_vibrationalanalysis.py
