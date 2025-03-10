@@ -1,0 +1,13 @@
+privydns/__init__.py,sha256=_Ujc8V7AYJ231IPHXzv3c-oCde4_xTxWbBFTGPz-5tI,175
+privydns/dnscrypt.py,sha256=xrSP-JFdxCU4ufHwoAYBANBdnFmxuVqTO8PMLjCbrKs,3114
+privydns/exceptions.py,sha256=KErT-o-pD0rcFzoKc5QHhdoaLQ-6mKiYQT2mXcm66tA,193
+privydns/logging.py,sha256=wHOldqT1smLVRa1yb6aKIMkKx0ZwLFrIXujzTsuopT4,147
+privydns/resolver.py,sha256=pKfgDjWwGvKbcez9jLdse7B8VLCnXNTIlCVyqnw4e64,7558
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dnscrypt.py,sha256=NyCeL1zUG3brD0QqTEsRArX3NVNvSFwcejYxFeTdhmo,3799
+tests/test_resolver.py,sha256=FcJNO9fLLTCAUKEcaCASzAF3PrG0qwm-XmDktrnmDOc,601
+privydns-0.1.1.dist-info/LICENSE,sha256=RBDZ31iDJETjFVUZmsUHH5A3sOzBSEQ6Vngt48E3Zps,1072
+privydns-0.1.1.dist-info/METADATA,sha256=dezivi-2QOkIFWlTongKn7T63zWgQjft6RpMH5kXLbA,5375
+privydns-0.1.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+privydns-0.1.1.dist-info/top_level.txt,sha256=4TYwysgSBIDahZ8OqGKHsts0v3c1R_MxH1i0XBeqhJU,15
+privydns-0.1.1.dist-info/RECORD,,
