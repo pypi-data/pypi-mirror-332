@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: terminal-search
+Version: 0.1.0
+Summary: AI-powered search, right in your terminal
+Author-email: Craig Giles <me@craigg.dev>
+License-Expression: MIT
+Requires-Dist: exa-py
+Requires-Dist: python-dotenv
+Requires-Dist: textual
+Description-Content-Type: text/markdown
+
+# Terminal Search
+
+Terminal Search is a command-line application that allows users to search the internet using [Exa](https://exa.ai). It's built in Python using [Textual](https://textualize.io).
