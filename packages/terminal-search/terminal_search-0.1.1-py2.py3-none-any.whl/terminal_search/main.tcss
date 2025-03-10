@@ -1,0 +1,56 @@
+Button {
+    margin: 1 2;
+}
+
+Horizontal {
+    align-horizontal: center;
+    width: auto;
+    height: auto;
+}
+
+Horizontal > VerticalScroll {
+    align: center middle;
+
+}
+
+VerticalScroll {
+    align: center middle;
+}
+
+Input {
+    width: 50%;
+}
+
+.label {
+    height: 3;
+    content-align: center middle;
+    width: auto;
+}
+
+Screen {
+    align: center middle;
+}
+
+.label {
+    height: 3;
+    content-align: center middle;
+    width: auto;
+}
+
+.url {
+    height: 2;
+    content-align: center middle;
+    width: auto;
+    color: grey;
+    margin: 1 2;
+}
+
+.summary {
+    content-align: center middle;
+    width: 100%;
+    height: auto;
+}
+
+#github-link {
+    margin: 2 2;
+}

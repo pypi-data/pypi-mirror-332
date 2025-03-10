@@ -1,0 +1,5 @@
+[console_scripts]
+terminal-search = terminal_search.app:main
+
+[pipx.run]
+terminal_search = terminal_search.app:main
