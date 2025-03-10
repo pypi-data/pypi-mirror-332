@@ -1,0 +1,2 @@
+PyYAML>=5.4.0
+ruamel.yaml>=0.17.0
