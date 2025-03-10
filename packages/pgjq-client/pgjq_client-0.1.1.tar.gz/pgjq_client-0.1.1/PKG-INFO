@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: pgjq-client
+Version: 0.1.1
+Summary: PGJobQueue Python Client
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asyncpg>=0.30.0
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: devtools>=0.12.2
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: twine>=6.1.0
