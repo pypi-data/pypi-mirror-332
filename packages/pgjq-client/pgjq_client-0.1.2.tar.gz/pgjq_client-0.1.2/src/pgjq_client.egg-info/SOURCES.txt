@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pgjq_client/client.py
+src/pgjq_client/example.py
+src/pgjq_client.egg-info/PKG-INFO
+src/pgjq_client.egg-info/SOURCES.txt
+src/pgjq_client.egg-info/dependency_links.txt
+src/pgjq_client.egg-info/requires.txt
+src/pgjq_client.egg-info/top_level.txt
