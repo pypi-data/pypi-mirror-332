@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Demineur
+Version: 0.1
+Summary: Réplique du jeu vidéo "Démineur" de Google
+Author: Aether-i0n
+Author-email: aetherion.github@gmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools==69.2.0
+Requires-Dist: wheel
+Requires-Dist: twine
+
+# Demineur
+Ce projet est une rÃ©plique du jeu vidÃ©o "DÃ©mineur" de Google (https://g.co/kgs/AFPEqsi).
+C'est un jeu de rÃ©flexion dont le but est de localiser des mines cachÃ©es dans une grille reprÃ©sentant un champ de mines virtuel, avec pour seule indication le nombre de mines dans les zones adjacentes.

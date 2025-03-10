@@ -1,0 +1,4 @@
+# To include all files and subdirectories within the my_package/directory_name directory
+recursive-include Demineur/Ressources *
+# To include a specific file in your package.
+# include  Demineur/file_name

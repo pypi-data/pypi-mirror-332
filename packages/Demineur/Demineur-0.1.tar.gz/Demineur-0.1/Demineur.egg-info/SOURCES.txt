@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Demineur/__init__.py
+Demineur/module1.py
+Demineur.egg-info/PKG-INFO
+Demineur.egg-info/SOURCES.txt
+Demineur.egg-info/dependency_links.txt
+Demineur.egg-info/requires.txt
+Demineur.egg-info/top_level.txt
+demineur/__init__.py
+demineur/module1.py
