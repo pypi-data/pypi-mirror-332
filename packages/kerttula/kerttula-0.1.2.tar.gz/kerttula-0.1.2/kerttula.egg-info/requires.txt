@@ -1,0 +1,10 @@
+juham-automation>=0.0.13
+juham-visualcrossing>=0.1.8
+juham-openweathermap>=0.1.8
+juham-systemstatus>=0.1.7
+juham-watermeter>=0.0.7
+juham-shelly>=0.0.5
+importlib-metadata
+
+[dev]
+check-manifest
