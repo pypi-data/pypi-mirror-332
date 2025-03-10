@@ -1,0 +1,11 @@
+computer_server/__init__.py,sha256=PNL7bvua4P4NCy4QeUIc0AeP5ncbgQHGl16VkfQ5OaQ,374
+computer_server/cli.py,sha256=X-ZZ6AyiSFEgdsv-wXgxkTURElPWDXmc62NvPmMv8kQ,1603
+computer_server/handlers/base.py,sha256=u8-wpfskydq-KEociMFUyx2U5HiRQ3Ykdbs3XfEqlts,3986
+computer_server/handlers/factory.py,sha256=VRoakwjngPSmOiulbojPWwQJArgoSPjZZQf-98U-tR0,2007
+computer_server/handlers/macos.py,sha256=alB3nw9kd3UqPi7DX-EZNGBUu9LeDsWKyaixV8yFqYE,24240
+computer_server/main.py,sha256=JVakxlLFWRIPjIIifvWLcp1yHmWbEustvcSPw5B3i5Y,4731
+computer_server/server.py,sha256=xFcuO-TVwo--o-p_YlfHYVIapF_XGmf9CBXtcMUSZpY,2667
+cua_computer_server-0.1.2.dist-info/METADATA,sha256=79lVjkwQANdhFRSau1Gx7fVUmGmODwyaSguMC1SdwkU,2472
+cua_computer_server-0.1.2.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+cua_computer_server-0.1.2.dist-info/entry_points.txt,sha256=lGo1Xz4L_TlZh5rGtS55PStNX2WmTzeqSWmiWrqbRoU,80
+cua_computer_server-0.1.2.dist-info/RECORD,,
