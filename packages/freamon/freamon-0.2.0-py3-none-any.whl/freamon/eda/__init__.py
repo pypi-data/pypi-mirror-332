@@ -1,0 +1,35 @@
+"""
+Module for Exploratory Data Analysis (EDA).
+"""
+
+from freamon.eda.analyzer import EDAAnalyzer
+from freamon.eda.univariate import (
+    analyze_numeric,
+    analyze_categorical,
+    analyze_datetime,
+)
+from freamon.eda.bivariate import (
+    analyze_correlation,
+    analyze_feature_target,
+)
+from freamon.eda.time_series import (
+    analyze_timeseries,
+    analyze_autocorrelation,
+    analyze_seasonality,
+)
+from freamon.eda.report import generate_html_report
+from freamon.eda.explainability_report import generate_interaction_report
+
+__all__ = [
+    "EDAAnalyzer",
+    "analyze_numeric",
+    "analyze_categorical",
+    "analyze_datetime",
+    "analyze_correlation",
+    "analyze_feature_target",
+    "analyze_timeseries",
+    "analyze_autocorrelation",
+    "analyze_seasonality",
+    "generate_html_report",
+    "generate_interaction_report",
+]
