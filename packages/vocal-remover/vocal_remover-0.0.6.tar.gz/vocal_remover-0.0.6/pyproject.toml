@@ -1,0 +1,32 @@
+[project]
+name = "vocal-remover"
+version = "0.0.6"
+authors = [
+  { name="Hossein", email="hoseinshr1055@gmail.com" },
+]
+description = "Vocal remover."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "librosa",
+    "matplotlib",
+    "opencv_python",
+    "resampy",
+    "tqdm",
+    "numpy",
+    "huggingface_hub",
+    "torch",
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
