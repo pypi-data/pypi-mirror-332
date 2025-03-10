@@ -1,0 +1,10 @@
+easyinference/__init__.py,sha256=SzxD6eXoF6G0-1q0KDK9voM_nju422a2Mbu4XawUFQQ,1011
+easyinference/config.py,sha256=fBPQCFArI2OtaPCxFMCYUPg95D9YC7MdirfADdja1wY,3349
+easyinference/inference.py,sha256=Cil713sEqjOcgcmV4dZY3erRCjCeexNgQqY6xMsJZ_M,43854
+easyinference/cloudsql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easyinference/cloudsql/schema.py,sha256=DLx5vyBL6tCmdAwuA9aAooqt9K6CTXW-HgzjWph-Vmw,7577
+easyinference/cloudsql/table_utils.py,sha256=W2_NYmkwBnZCiztt8pYKt4PYR4aedahB8-DNqL4xSUk,23658
+easyvertexinference-1.0.1.dist-info/METADATA,sha256=uZfdLbn-AuIahVSNy8iPTjmPn0LYrYRI8ItK-NrAZc0,20319
+easyvertexinference-1.0.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+easyvertexinference-1.0.1.dist-info/top_level.txt,sha256=Pa1K7LMl5a6pKn5qrTsekP7zvt5dlaBnJmUxq49fon4,14
+easyvertexinference-1.0.1.dist-info/RECORD,,
