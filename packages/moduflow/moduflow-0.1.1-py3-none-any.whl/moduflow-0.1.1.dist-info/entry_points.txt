@@ -1,0 +1,2 @@
+[console_scripts]
+moduflow = moduflow.cli.main:cli
