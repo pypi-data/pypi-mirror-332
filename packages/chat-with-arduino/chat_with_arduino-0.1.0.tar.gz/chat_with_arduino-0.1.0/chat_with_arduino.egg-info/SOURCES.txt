@@ -1,0 +1,8 @@
+README.md
+main.py
+pyproject.toml
+chat_with_arduino.egg-info/PKG-INFO
+chat_with_arduino.egg-info/SOURCES.txt
+chat_with_arduino.egg-info/dependency_links.txt
+chat_with_arduino.egg-info/requires.txt
+chat_with_arduino.egg-info/top_level.txt
