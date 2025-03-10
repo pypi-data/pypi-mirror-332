@@ -1,0 +1,14 @@
+l2data_reader/__init__.py,sha256=tng_IGnK_l5mVA66XAVdm0atQTkcuSsxfQYb3cTkx6o,2384
+l2data_reader/enums.py,sha256=JjakLma-cNwBb1SDIwR-_m9LBPEbcCWWOfwR_S0ZOYE,29927
+l2data_reader/exceptions.py,sha256=HogjFkqw9jU6p8oqBGZeEKdSuAl1qKRKB6odAsCfXm8,851
+l2data_reader/models.py,sha256=wJp3ps9h_TGFpfyKsPG9m4kTBsYWfURWTxxd8M65fTw,2249
+l2data_reader/reader.py,sha256=C5w9XxLdyJvAJAR4zIT7uUba5qKdOnVcTXIWxANpK1k,16364
+l2data_reader/utils.py,sha256=p2RLZnrrD74aggXveRyqtld_-edPD4SCzjVFPNgSxc4,3641
+l2data_reader/proto/__init__.py,sha256=gGq0cXEGeQyrhWdNoMcxoI3oN9e8NELQxf4A_Lyb2CE,56
+l2data_reader/proto/global_pb2.py,sha256=Zh6RycJ9nl5ittTjuP1XXgMruk_efvkElShWPqrYZII,26783
+l2data_reader/proto/market_data_pb2.py,sha256=tscY99g23qxRJU2HI3ab5kUrbqa9vTWEsRA7bF1O-LE,23939
+l2data_reader-0.1.6.dist-info/LICENSE,sha256=asXcsniIu2jS57XalgIRoQDoPeUjt8V4Zo_8weC_35k,1090
+l2data_reader-0.1.6.dist-info/METADATA,sha256=nloMbVQlmVtcSkbZ8aLhTwBEx_-69UleycwpparhRuM,2091
+l2data_reader-0.1.6.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+l2data_reader-0.1.6.dist-info/top_level.txt,sha256=N_mw-5v0_RKE_GGEenngx4tWetbXKD2mBZGQ6141sqc,14
+l2data_reader-0.1.6.dist-info/RECORD,,
