@@ -1,0 +1,16 @@
+cudg/__init__.py,sha256=XIpPa6XWOOE4SKmQi82RYK8NwD4ohDWwTV1Aj3L86ng,145
+cudg/VRAManager/__init__.py,sha256=uQlbSCdZWvzOKP2l-HPEhODUu_pG79-llJZX42TAx6A,120
+cudg/VRAManager/assigner.py,sha256=FmotQjdRVC1aq_DUxygqjiqpaSDOqNHam2eI1Ih6-ug,28
+cudg/VRAManager/cleaner.py,sha256=-VXuO28EiuPLcQP9pwkJJ21sGw7jma6_NgNZCh1BKK4,27
+cudg/VRAManager/memory.py,sha256=62V8SImoGn7wa6LTBPRYjpPP9NZEWqHT3agBloPPvSo,567
+cudg/gpuarray/__init__.py,sha256=w7TgiOKsbJTFm8BNrHjQRs45yKh-gz20jxPqmBd_POs,32
+cudg/gpuarray/gpuarray.py,sha256=jhLw2r8_yab2Xxfur4bXBHajRE41k33Qj2BiKmzl5ws,1572
+cudg/linalg/__init__.py,sha256=Oxlo2ofDJ_xONqk1IkMr9X0icR2Du2KuyC6Z-gskquA,24
+cudg/linalg/linalg.py,sha256=m12g4wt6VB_qiLCbgc4cYZL_-xm10jLOAwM_irSiP4w,1930
+cudg/linalg/linalgcore.py,sha256=MN5lTJEffD17djO7HyISmfTnw5ZVw7eNmQGjlJHtORc,3117
+cudg/sparse/__init__.py,sha256=532OPs5LTeQCPMgNRXUk80S4ToJpQNon0TIwN-iX364,17
+cudg/sparse/gpusparse.py,sha256=5tUf6Xdbdc8xesn0j4rCXhCqwCrmrIVHzvUrdfsUgVU,1416
+cudg-0.0.1.dist-info/METADATA,sha256=BaVj1Y2c7Fzy1JC7ENMCR8IRVxymDf__fS3OsxcJA14,469
+cudg-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cudg-0.0.1.dist-info/top_level.txt,sha256=cRGA1gkuS_dkJZSmnxz84Bcru7Wkk7e0ZwRgj6Vjb_g,5
+cudg-0.0.1.dist-info/RECORD,,
