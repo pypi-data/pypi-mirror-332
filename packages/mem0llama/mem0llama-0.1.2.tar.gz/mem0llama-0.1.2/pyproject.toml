@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "mem0llama"
+version = "0.1.2"
+description = "A specialized fork of Mem0 optimized for small, local Large Language Models (LLMs) running through Ollama."
+authors = ["Alfred WALLACE <alfred.wallace@netcraft.fr>"]
+license = "Apache-2.0"
+repository = "https://github.com/alfredwallace7/mem0llama"
+keywords = ["memory", "llm", "ai", "agents", "qdrant", "neo4j", "ollama"]
+exclude = [
+    "data",
+    ".env",
+    "venv",
+    ".venv",
+    "__pycache__",
+    "dist"
+]
+packages = [
+    { include = "mem0llama" },
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+qdrant-client = "^1.9.1"
+pydantic = "^2.7.3"
+openai = "^1.33.0"
+pytz = "^2024.1"
+sqlalchemy = "^2.0.31"
+langchain-community = "^0.3.1"
+langchain_neo4j = "^0.3.1"
+rank-bm25 = "^0.2.2"
+psycopg2-binary = "^2.9.10"
+python-dotenv = "^1.0.0"
+litellm = "^1.0.0"
+rich = "^13.0.0"
+ollama = "^0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.7.0"
+isort = "^5.12.0"
+mypy = "^1.5.1"
+ruff = "^0.0.287"
+pre-commit = "^3.4.0"
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+select = ["E", "F", "B", "I"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
