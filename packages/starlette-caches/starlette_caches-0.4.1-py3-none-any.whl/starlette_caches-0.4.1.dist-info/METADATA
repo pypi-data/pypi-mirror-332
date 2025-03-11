@@ -1,0 +1,99 @@
+Metadata-Version: 2.4
+Name: starlette-caches
+Version: 0.4.1
+Summary: Server-side HTTP caching for ASGI applications, inspired by Django's cache framework
+Project-URL: Repository, https://github.com/mattmess1221/starlette-caches
+Project-URL: Documentation, https://mattmess1221.github.io/starlette-caches
+Project-URL: Changelog, https://mattmess1221.github.io/starlette-caches/changelog
+Project-URL: Issues, https://github.com/mattmess1221/starlette-caches/issues
+Author-email: Matthew Messinger <mattmess1221@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: aiocache>=0.12.3
+Requires-Dist: starlette==0.*
+Provides-Extra: memcached
+Requires-Dist: aiomcache>=0.5.2; extra == 'memcached'
+Provides-Extra: msgpack
+Requires-Dist: msgpack>=0.5.5; extra == 'msgpack'
+Provides-Extra: redis
+Requires-Dist: redis>=5; extra == 'redis'
+Description-Content-Type: text/markdown
+
+# starlette-caches
+
+[![Build Status](https://github.com/mattmess1221/starlette-caches/actions/workflows/ci.yml/badge.svg)](https://github.com/mattmess1221/starlette-caches/actions/workflows/ci.yml)
+[![Coverage](https://codecov.io/gh/mattmess1221/starlette-caches/branch/main/graph/badge.svg)](https://codecov.io/gh/mattmess1221/starlette-caches)
+[![Package version](https://badge.fury.io/py/starlette-caches.svg)](https://pypi.org/project/starlette-caches)
+
+`starlette-caches` provides middleware and utilities for adding server-side HTTP caching to ASGI applications. It is powered by [`aiocache`](https://aiocache.aio-libs.org/en/latest/), and inspired by Django's cache framework.
+
+Documentation is available at: https://mattmess1221.github.io/starlette-caches/
+
+**Note**: this project is in an "alpha" status. Several features still need to be implemented, and you should expect breaking API changes across minor versions.
+
+## Features
+
+- Compatibility with any ASGI application (e.g. Starlette, FastAPI, Quart, etc.).
+- Support for application-wide or per-endpoint caching.
+- Ability to fine-tune the cache behavior (TTL, cache control) down to the endpoint level.
+- Clean and explicit API enabled by a loose coupling with `aiocache`.
+- Fully type annotated.
+- 100% test coverage.
+
+## Installation
+
+```bash
+pip install "starlette-caches"
+```
+
+To install with redis or memcached support, use:
+
+```bash
+pip install "starlette-caches[redis,memcached]"
+```
+
+## Quickstart
+
+```python
+from aiocache import Cache
+from starlette_caches.middleware import CacheMiddleware
+
+cache = Cache(ttl=2 * 60)
+
+async def app(scope, receive, send):
+    assert scope["type"] == "http"
+    headers = [(b"content-type", "text/plain")]
+    await send({"type": "http.response.start", "status": 200, "headers": headers})
+    await send({"type": "http.response.body", "body": b"Hello, world!"})
+
+app = CacheMiddleware(app, cache=cache)
+```
+
+This example:
+
+- Sets up an in-memory cache (see the [aiocache docs](https://aiocache.aio-libs.org/en/latest/) for specifics).
+- Sets up an application (in this case, a raw-ASGI 'Hello, world!' app).
+- Applies caching on the entire application.
+
+To learn more, head to the [documentation](https://mattmess1221.github.io/starlette-caches/).
+
+## Credits
+
+Due credit goes to the Django developers and maintainers, as a lot of the API and implementation was directly inspired by the [Django cache framework](https://docs.djangoproject.com/en/2.2/topics/cache/).
+
+## License
+
+MIT

@@ -1,0 +1,16 @@
+starlette_caches/__init__.py,sha256=OuqD7ccFgzZpmQpnGVPU2O_U2ITvETGXiWZ0KHN5j9g,64
+starlette_caches/__version__.py,sha256=pMtTmSUht-XtbR_7Doz6bsQqopJJd8rZ8I8zy2HwwoA,22
+starlette_caches/decorators.py,sha256=htEWCb2k1Ikv8hgIMNaFhzNRtknJo512eBfyR_bJBss,2348
+starlette_caches/exceptions.py,sha256=8AZmuFMA-mYTbTwLk5Y8VVkumVRQNCxqCuTv0zGpzvE,809
+starlette_caches/helpers.py,sha256=1ukziJ0rGHfKt8g1ddMa8rH3pM91PLI7ZRl9DiWGEIc,2873
+starlette_caches/middleware.py,sha256=OyEEaFM4wxZda4y5algBbqF48EedwbSbtYoolDrkTpE,7607
+starlette_caches/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starlette_caches/rules.py,sha256=SYF1BIkz4Gdv77Vf83cnN_Geh5H7pxf1cvNcSRNE330,2852
+starlette_caches/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starlette_caches/utils/cache.py,sha256=HbPUqJXpGu7d2VWE8wPa4hrV6ch2hDB_vPptENBrDSs,13994
+starlette_caches/utils/logging.py,sha256=ODgbpTETrUGuY-9N8NEGmOUwgRFX72a984XYJvng3O4,2060
+starlette_caches/utils/misc.py,sha256=NQBt_D8dwwK3ZN-ItN_78osb7T4wLlk_9alBGZvQK2g,2042
+starlette_caches-0.4.1.dist-info/METADATA,sha256=D2ZNDDiq2D4MW2z8hdN166_mCox4YYwT-D0BSZVCsHs,3960
+starlette_caches-0.4.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+starlette_caches-0.4.1.dist-info/licenses/LICENSE,sha256=y1GSwZQqqWFkpw6G0l-bGmcYDa9PByWjwa2bxVY-puA,1072
+starlette_caches-0.4.1.dist-info/RECORD,,
