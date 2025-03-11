@@ -1,0 +1,11 @@
+creduse/__init__.py,sha256=8_EuvGNZ1eSx1vX4UDHh5GfTeFeVJgvKnEPE1wzRwPI,92
+creduse/__version__.py,sha256=jLGuFdEwhMvHvklOJPvsqvbHQj9TW5k2grc-tedu-YE,22
+creduse/_client.py,sha256=KsoL-7ROgt7mShzEPhT0dSLzX93Hw01ID2fB7yCl3BU,12153
+creduse/_exceptions.py,sha256=DGOPGQcX-aar9A7Ud33GIpOyWayr1YMm_t2JjOievMY,1743
+creduse/_httpclient.py,sha256=m4S-6qKxz3BmOxZ5fd9ciLyUN6OfDgChyOF2hffMjxw,2217
+creduse/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+creduse/models/request_options.py,sha256=DPev0xyChYm3Tbn9qQAHE1Z03tHTEeq3Zax4jsdXNik,450
+creduse/models/response_models.py,sha256=n-wPQh34yEULmHlrK_5CHfzvB1vp2UXb2FqYgO1cPQg,2864
+creduse-0.1.10.dist-info/METADATA,sha256=aGaRNwSrYai3E0RYf-qvQnBxrY5mXYcSEyKg_ETu45w,4931
+creduse-0.1.10.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+creduse-0.1.10.dist-info/RECORD,,
