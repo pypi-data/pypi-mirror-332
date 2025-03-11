@@ -1,0 +1,9 @@
+profiles:
+  default:
+    beans:
+      SessionFactoryConfig:
+        bean_type: "session_factory_config.SessionFactoryConfig"
+        implementation: "session_factory_config.SessionFactoryConfig"
+        scope: "singleton"
+        constructor_args:
+          SQLALCHEMY_POSTGRESQL_DATABASE_URI: ${SQLALCHEMY_POSTGRESQL_DATABASE_URI}
