@@ -1,0 +1,103 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger on version tags
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (without v prefix)'
+        required: true
+        default: ''
+
+jobs:
+  notify-start:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send workflow start notification
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            🚀 GitTales Release Started
+            
+            Tag: ${{ github.ref_name }}
+            Triggered by: ${{ github.actor }}
+
+  build-and-publish:
+    needs: notify-start
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Needed for creating releases
+      id-token: write  # Needed for PyPI publishing
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+      
+      - name: Build package
+        run: uv run hatch build
+      
+      - name: Get package metadata
+        id: metadata
+        run: |
+          echo "pkg_name=$(python -c "import tomli; print(tomli.load(open('pyproject.toml', 'rb'))['project']['name'])")" >> $GITHUB_OUTPUT
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "version=${{ github.event.inputs.version }}" >> $GITHUB_OUTPUT
+          else
+            echo "version=$(python -c "import tomli; print(tomli.load(open('pyproject.toml', 'rb'))['project']['version'])")" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Create GitHub Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: GitTales ${{ steps.metadata.outputs.version }}
+          tag_name: ${{ github.event_name == 'workflow_dispatch' && format('v{0}', github.event.inputs.version) || github.ref_name }}
+          files: dist/*
+          generate_release_notes: true
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          skip-existing: true
+          
+      - name: Set outputs
+        id: build_info
+        run: |
+          echo "pkg_name=${{ steps.metadata.outputs.pkg_name }}" >> $GITHUB_OUTPUT
+          echo "version=${{ steps.metadata.outputs.version }}" >> $GITHUB_OUTPUT
+          echo "release_url=${{ steps.create_release.outputs.html_url }}" >> $GITHUB_OUTPUT
+
+  notify-complete:
+    needs: build-and-publish
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Send final status notification
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            📦 GitTales Release Complete
+            
+            Status: ${{ needs.build-and-publish.result }}
+            Version: ${{ needs.build-and-publish.outputs.version }}
+            
+            📁 GitHub Release: ${{ needs.build-and-publish.outputs.release_url }}
