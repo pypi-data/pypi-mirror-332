@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: testwknd_unique
+Version: 1.0.1
+Summary: I'm on my way
+Author: 1nfinity
+Author-email: edmond.nistor723@gmail.com
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
