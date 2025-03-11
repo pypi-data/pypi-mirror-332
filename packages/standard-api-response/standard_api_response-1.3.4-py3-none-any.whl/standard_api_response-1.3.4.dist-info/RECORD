@@ -1,0 +1,11 @@
+standard_api_response/__init__.py,sha256=jbx08mCtWX-bSvmFMKHrosujl9uUY-WjuscFS7gAezA,401
+standard_api_response/exception.py,sha256=PsBGQ0mnxzyRE5LbeBia4X7fMdIM90HP9Vd7TJp0cBQ,1036
+standard_api_response/standard_response.py,sha256=3tRHTS0_nINt1vYDJsQzKz73Xwu4edH-t5awM5Ogpmk,9893
+standard_api_response/standard_response_mapper.py,sha256=YGTEFL75gkmPs0TmY_11pfC7ockWBq441F7113BnKwM,3786
+standard_api_response/time_utility.py,sha256=EzVhN47o9-Nx_JV-GGFqttckx6xS5TGG6hQd2-InWRI,1083
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=I7aQRXR-1gJNvi6tfoZLlRDhD4fAHfnSdJhkznO5ivg,24934
+standard_api_response-1.3.4.dist-info/METADATA,sha256=fnBYGNQ0kSbD2zJ7oGag0drc6LzInh3RAxdZccf9Dqk,21278
+standard_api_response-1.3.4.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+standard_api_response-1.3.4.dist-info/top_level.txt,sha256=Eiyeatg7BVdCAhMTpMFxkq0dngtnI4M8La0hl-7dy70,27
+standard_api_response-1.3.4.dist-info/RECORD,,
