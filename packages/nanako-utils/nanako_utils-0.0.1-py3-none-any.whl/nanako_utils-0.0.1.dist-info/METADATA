@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: nanako-utils
+Version: 0.0.1
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: matplotlib
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
