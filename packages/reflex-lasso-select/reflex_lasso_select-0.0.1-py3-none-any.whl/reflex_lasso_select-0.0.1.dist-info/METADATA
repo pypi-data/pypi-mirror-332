@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: reflex-lasso-select
+Version: 0.0.1
+Summary: Reflex custom component wrapping  react-lasso-select
+Author-email: timjchild@gmail.com
+License: Apache-2.0
+Keywords: reflex,reflex-custom-components
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: reflex>=0.7.1
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# lasso-select
+
+A Reflex custom component lasso-select.
+
+## Installation
+
+```bash
+pip install reflex-lasso-select
+```
