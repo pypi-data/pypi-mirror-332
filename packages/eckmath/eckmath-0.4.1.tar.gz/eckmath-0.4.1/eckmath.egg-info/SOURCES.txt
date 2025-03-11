@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+eckmath/__init__.py
+eckmath/mathfunctions.py
+eckmath.egg-info/PKG-INFO
+eckmath.egg-info/SOURCES.txt
+eckmath.egg-info/dependency_links.txt
+eckmath.egg-info/top_level.txt
