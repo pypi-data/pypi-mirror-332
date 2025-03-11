@@ -1,0 +1,14 @@
+certifi
+colorama
+jiwer
+pydub>=0.25.1
+pytz
+sentence-splitter
+sounddevice
+srt
+static-ffmpeg
+tqdm==4.64.1
+vosk
+
+[:python_version >= "3.13"]
+audioop-lts
