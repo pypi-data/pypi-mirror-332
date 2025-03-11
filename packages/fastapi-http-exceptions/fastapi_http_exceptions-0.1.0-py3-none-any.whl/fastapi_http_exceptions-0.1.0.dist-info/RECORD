@@ -1,0 +1,8 @@
+fastapi_http_exceptions/__init__.py,sha256=ekmA8aFtbAYsYNS4ApRWom5Eyp1-QseY_3J-usOuNj8,2490
+fastapi_http_exceptions/http_exceptions.py,sha256=PhE_TnJW22jHKacgD9QP82u03ZENeoxPw5AQW1WErtU,18417
+fastapi_http_exceptions/status.py,sha256=e70xV6wYFR5bdmkYkgYCSwZk1L2FdKDwA6u4zCjmypQ,2820
+fastapi_http_exceptions/ws_exceptions.py,sha256=yuj2SFKZpuTwdq-Tob46Wmb08df5m_yDTrkI9XzERp4,3289
+fastapi_http_exceptions-0.1.0.dist-info/METADATA,sha256=jecV0ed87V45nTrKK7X1EbAUCqb4jY9pMKmxZI4IaEg,4331
+fastapi_http_exceptions-0.1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+fastapi_http_exceptions-0.1.0.dist-info/top_level.txt,sha256=wbIhQMx0BaeFuu-g6DKwlky19Y8HMdZNedUjXlqtQMI,24
+fastapi_http_exceptions-0.1.0.dist-info/RECORD,,
