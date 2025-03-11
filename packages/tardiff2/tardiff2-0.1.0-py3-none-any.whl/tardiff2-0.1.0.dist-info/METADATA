@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: tardiff2
+Version: 0.1.0
+Summary: Utility to compare differences in tar files
+Author-email: James Knight <git@jdknight.me>
+Requires-Python: >=3.9
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Requires-Dist: prettytable
+Project-URL: Download, https://pypi.python.org/pypi/tardiff2
+Project-URL: Source, https://github.com/jdknight/tardiff2
