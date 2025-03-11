@@ -1,0 +1,275 @@
+/* 
+ * 默认模板样式
+ * 
+ * 这是一个简洁现代的默认样式，适合大多数Markdown内容
+ */
+
+/* 基础样式 */
+:root {
+    --primary-color: #333;
+    --secondary-color: #666;
+    --background-color: #fff;
+    --link-color: #0366d6;
+    --border-color: #eaecef;
+    --code-background: #f6f8fa;
+    --blockquote-color: #6a737d;
+    --font-family: "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+}
+
+h1 {
+    font-size: 1.8em;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.85em;
+    color: #777;
+}
+
+/* 段落和列表 */
+p, ul, ol, blockquote {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+p {
+    text-align: justify;
+}
+
+ul, ol {
+    padding-left: 2em;
+}
+
+li {
+    margin: 0.3em 0;
+}
+
+li > p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* 引用块 */
+blockquote {
+    padding: 0 1em;
+    color: var(--blockquote-color);
+    border-left: 0.25em solid var(--border-color);
+}
+
+/* 代码和预格式化文本 */
+code, pre {
+    font-family: Consolas, monospace;
+    background-color: var(--code-background);
+    border-radius: 3px;
+}
+
+code {
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
+    color: #e83e8c;
+}
+
+pre {
+    padding: 16px;
+    overflow: auto;
+    line-height: 1.45;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* 表格 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+table th, table td {
+    padding: 6px 13px;
+    border: 1px solid var(--border-color);
+}
+
+table th {
+    background-color: var(--code-background);
+    font-weight: bold;
+}
+
+table tr:nth-child(2n) {
+    background-color: var(--code-background);
+}
+
+/* 图片 */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+figure {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0.5em;
+}
+
+/* 链接 */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 水平线 */
+hr {
+    height: 1px;
+    background-color: #ddd;
+    border: none;
+    margin: 2em 0;
+}
+
+/* 定义列表 */
+dt {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+dd {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+/* 脚注 */
+.footnote {
+    font-size: 0.85em;
+    vertical-align: super;
+    color: #0366d6;
+}
+
+.footnotes {
+    margin-top: 3em;
+    border-top: 1px solid #eee;
+    padding-top: 1em;
+}
+
+.footnotes ol {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* 目录 */
+.table-of-contents {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 1em;
+    margin: 1.5em 0;
+}
+
+.table-of-contents ul {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+/* 页眉和页脚 */
+header, footer {
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer {
+    font-size: 0.9em;
+    color: var(--secondary-color);
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.6em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    body {
+        font-size: 12pt;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    footer {
+        display: none;
+    }
+} 

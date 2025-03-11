@@ -1,0 +1,38 @@
+{
+    "template": "ebook/template.html",
+    "css": "ebook/style.css",
+    "variables": {
+        "title": "",
+        "book_title": "我的电子书",
+        "author": "",
+        "content": "",
+        "chapters": [],
+        "prev_chapter": null,
+        "next_chapter": null
+    },
+    "page": {
+        "size": "A5",
+        "margin": {
+            "top": "1.5cm",
+            "right": "1.5cm",
+            "bottom": "1.5cm",
+            "left": "1.5cm"
+        }
+    },
+    "fonts": {
+        "default": {
+            "family": "'Palatino Linotype', 'Book Antiqua', Palatino, serif",
+            "size": "18px",
+            "line-height": "1.7"
+        },
+        "title": {
+            "family": "'Playfair Display', Georgia, serif",
+            "size": "2.5rem",
+            "weight": "700"
+        },
+        "headings": {
+            "family": "'Playfair Display', Georgia, serif",
+            "weight": "700"
+        }
+    }
+} 

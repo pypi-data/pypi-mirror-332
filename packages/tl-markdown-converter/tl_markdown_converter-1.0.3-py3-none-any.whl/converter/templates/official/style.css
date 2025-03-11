@@ -1,0 +1,205 @@
+/* 标准公文样式的Markdown转HTML */
+@font-face {
+    font-family: 'FangSong_GB2312';
+    src: local('FangSong_GB2312'), local('FangSong');
+}
+
+@font-face {
+    font-family: 'KaiTi_GB2312';
+    src: local('KaiTi_GB2312'), local('KaiTi');
+}
+
+@font-face {
+    font-family: 'STXinwei';
+    src: local('STXinwei'), local('华文新魏');
+}
+
+body {
+    font-family: 'FangSong_GB2312', FangSong, '仿宋', SimSun, serif;
+    font-size: 16pt; /* 3号字 */
+    line-height: 30pt; /* 30磅行距 */
+    color: #000;
+    max-width: 21cm; /* A4 width */
+    margin: 0 auto;
+    padding: 3.7cm 2.6cm 3.5cm 2.8cm; /* 标准公文页边距 */
+    background-color: #fff;
+}
+
+/* 发文机关标志 */
+.document-header {
+    color: #FF0000;
+    font-family: 'STXinwei', '方正小标宋简体', SimSun, serif;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/* 发文字号 */
+.document-number {
+    font-family: 'FangSong_GB2312', FangSong, '仿宋', SimSun, serif;
+    font-size: 16pt; /* 3号字 */
+    margin: 1em 0;
+}
+
+/* 签发人 */
+.issuer {
+    font-family: 'FangSong_GB2312', FangSong, '仿宋', SimSun, serif;
+    font-size: 16pt; /* 3号字 */
+}
+
+.issuer-name {
+    font-family: 'KaiTi_GB2312', KaiTi, '楷体', SimKai, serif;
+    font-size: 16pt; /* 3号字 */
+}
+
+/* 公文标题 */
+h1 {
+    font-family: 'STXinwei', '方正小标宋简体', SimSun, serif;
+    font-size: 22pt; /* 2号字 */
+    font-weight: normal;
+    text-align: center;
+    line-height: 35pt;
+    margin: 2em 0;
+    color: #000;
+}
+
+/* 一级标题 */
+h2 {
+    font-family: SimHei, '黑体', sans-serif;
+    font-size: 16pt; /* 3号字 */
+    font-weight: normal;
+    margin: 1em 0;
+}
+
+/* 二级标题 */
+h3 {
+    font-family: 'KaiTi_GB2312', KaiTi, '楷体', SimKai, serif;
+    font-size: 16pt; /* 3号字 */
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+/* 三级标题 */
+h4 {
+    font-family: 'FangSong_GB2312', FangSong, '仿宋', SimSun, serif;
+    font-size: 16pt; /* 3号字 */
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+/* 正文段落 */
+p {
+    margin: 1em 0;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+/* 附件说明 */
+.attachment-list {
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.attachment-list h2 {
+    font-family: SimHei, '黑体', sans-serif;
+    font-size: 16pt; /* 3号字 */
+    font-weight: normal;
+    margin: 0;
+    display: inline;
+}
+
+/* 页码 */
+@page {
+    @bottom-right {
+        content: counter(page);
+        font-family: SimSun, '宋体', serif;
+        font-size: 14pt; /* 4号字 */
+        margin-right: 1em;
+    }
+}
+
+@page :left {
+    @bottom-left {
+        content: counter(page);
+        font-family: SimSun, '宋体', serif;
+        font-size: 14pt; /* 4号字 */
+        margin-left: 1em;
+    }
+    @bottom-right {
+        content: none;
+    }
+}
+
+/* 密级标记 */
+.security-level {
+    font-family: SimHei, '黑体', sans-serif;
+    font-size: 16pt; /* 3号字 */
+    margin-bottom: 1em;
+}
+
+/* 版记 */
+.document-footer {
+    font-family: 'FangSong_GB2312', FangSong, '仿宋', SimSun, serif;
+    font-size: 14pt; /* 4号字 */
+    margin-top: 2em;
+    border-top: 1px solid #000;
+    padding-top: 1em;
+}
+
+.issuing-office {
+    margin-left: 1em;
+}
+
+.issuing-date {
+    margin-right: 1em;
+    text-align: right;
+}
+
+/* 表格样式 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    page-break-inside: avoid;
+}
+
+table th, table td {
+    border: 1px solid #000;
+    padding: 0.5em;
+    font-family: 'FangSong_GB2312', FangSong, '仿宋', SimSun, serif;
+    font-size: 16pt; /* 3号字 */
+}
+
+/* 数字使用 Times New Roman */
+.number {
+    font-family: 'Times New Roman', serif;
+    font-size: 16pt; /* 3号字 */
+}
+
+/* 打印样式优化 */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+
+    @page {
+        size: A4;
+        margin-top: 3.7cm;
+        margin-right: 2.6cm;
+        margin-bottom: 3.5cm;
+        margin-left: 2.8cm;
+    }
+
+    /* 确保重要元素不跨页 */
+    h1, h2, h3, h4, table, .attachment-list {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* 装订线位置标记 */
+    @page {
+        marks: crop cross;
+        bleed: 0;
+    }
+} 

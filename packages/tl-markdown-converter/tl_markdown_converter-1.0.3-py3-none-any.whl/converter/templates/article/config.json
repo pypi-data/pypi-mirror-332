@@ -1,0 +1,9 @@
+{
+    "name": "文章模板",
+    "description": "适合长篇文章阅读的模板，提供目录和阅读进度指示",
+    "version": "1.0.0",
+    "author": "Fiction团队",
+    "html_template": "template.html",
+    "css_files": ["style.css"],
+    "js_files": ["script.js"]
+} 

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    {% for css_file in css_files %}
+    <link rel="stylesheet" href="{{ css_file }}">
+    {% endfor %}
+    <style>
+        /* 杂志风格基础样式 */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .magazine-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .magazine-header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 30px;
+        }
+        
+        .magazine-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        
+        .magazine-subtitle {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .magazine-meta {
+            font-size: 14px;
+            color: #888;
+            margin-top: 20px;
+        }
+        
+        .magazine-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 30px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        blockquote {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 24px;
+            line-height: 1.4;
+            color: #555;
+            border-left: none;
+            padding: 20px 40px;
+            margin: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        blockquote:before, blockquote:after {
+            content: '"';
+            font-size: 60px;
+            position: absolute;
+            color: #ddd;
+        }
+        
+        blockquote:before {
+            top: -10px;
+            left: 10px;
+        }
+        
+        blockquote:after {
+            bottom: -30px;
+            right: 10px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+        }
+        
+        .image-caption {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: -20px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .dropcap {
+            float: left;
+            font-family: 'Playfair Display', serif;
+            font-size: 75px;
+            line-height: 60px;
+            padding-top: 4px;
+            padding-right: 8px;
+            padding-left: 3px;
+        }
+        
+        .two-column {
+            column-count: 2;
+            column-gap: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .magazine-title {
+                font-size: 36px;
+            }
+            
+            .two-column {
+                column-count: 1;
+            }
+            
+            blockquote {
+                font-size: 20px;
+                padding: 15px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="magazine-container">
+        <header class="magazine-header">
+            <h1 class="magazine-title">{{ title }}</h1>
+            {% if subtitle %}
+            <div class="magazine-subtitle">{{ subtitle }}</div>
+            {% endif %}
+            {% if author or date %}
+            <div class="magazine-meta">
+                {% if author %}由 {{ author }} 撰写{% endif %}
+                {% if author and date %} · {% endif %}
+                {% if date %}{{ date }}{% endif %}
+            </div>
+            {% endif %}
+        </header>
+        
+        <div class="magazine-content">
+            {{ content }}
+        </div>
+    </div>
+    
+    {% for js_file in js_files %}
+    <script src="{{ js_file }}"></script>
+    {% endfor %}
+</body>
+</html> 

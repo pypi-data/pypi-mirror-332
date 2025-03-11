@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- 基本字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* 基础样式，会被外部CSS覆盖 */
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        /* 其他样式将通过外部CSS文件导入 */
+    </style>
+    <!-- 外部CSS将在此处通过链接标签插入 -->
+</head>
+<body>
+    <div class="container">
+        <header class="blog-header">
+            <div class="site-title">
+                <a href="#">{{ site_name }}</a>
+            </div>
+        </header>
+        
+        <main class="blog-content">
+            <article class="blog-post">
+                <header class="post-header">
+                    <h1 class="post-title">{{ title }}</h1>
+                    <div class="post-meta">
+                        <div class="author-info">
+                            <div class="author-avatar">
+                                <img src="{{ author_avatar }}" alt="{{ author }}" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2220%22%20fill%3D%22%23eee%22%2F%3E%3Ctext%20x%3D%2220%22%20y%3D%2225%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20fill%3D%22%23999%22%3E%3F%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                            </div>
+                            <div class="author-details">
+                                <span class="author-name">{{ author }}</span>
+                                <span class="post-date">{{ date }}</span>
+                            </div>
+                        </div>
+                        <div class="post-categories">
+                            <span class="category-label">分类:</span>
+                            <span class="category">{{ category }}</span>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="post-content">
+                    {{ content }}
+                </div>
+                
+                <footer class="post-footer">
+                    <div class="post-tags">
+                        <span class="tags-label">标签:</span>
+                        <div class="tags-list">{{ tags }}</div>
+                    </div>
+                    
+                    <div class="author-bio">
+                        <h3>关于作者</h3>
+                        <p>{{ author_bio }}</p>
+                        <div class="author-links">
+                            <a href="{{ author_website }}" class="author-link website" target="_blank" rel="noopener">个人网站</a>
+                            <a href="{{ author_weibo }}" class="author-link weibo" target="_blank" rel="noopener">微博</a>
+                            <a href="{{ author_twitter }}" class="author-link twitter" target="_blank" rel="noopener">Twitter</a>
+                        </div>
+                    </div>
+                    
+                    <div class="related-posts">
+                        <h3>相关文章</h3>
+                        <div class="related-posts-list">
+                            {{ related_posts }}
+                        </div>
+                    </div>
+                    
+                    <div class="post-comments">
+                        <h3>评论</h3>
+                        <div class="comments-container">
+                            {{ comments }}
+                        </div>
+                    </div>
+                </footer>
+            </article>
+        </main>
+        
+        <footer class="site-footer">
+            <p>&copy; {{ current_year }} {{ site_name }}</p>
+        </footer>
+    </div>
+    
+    <!-- 外部JavaScript将在此处通过脚本标签插入 -->
+</body>
+</html> 

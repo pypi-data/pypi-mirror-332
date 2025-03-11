@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - {{ wiki_name }}</title>
+    <!-- 外部CSS将在此处通过链接标签插入 -->
+</head>
+<body>
+    <div class="wiki-container">
+        <!-- 侧边栏导航 -->
+        <aside class="wiki-sidebar">
+            <div class="wiki-logo">
+                <a href="#">
+                    <img src="{{ logo_url|default('https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/135px-Wikipedia-logo-v2.svg.png') }}" alt="{{ wiki_name|default('Wiki') }}">
+                </a>
+            </div>
+            
+            <!-- 主导航 -->
+            <nav class="wiki-nav">
+                <div class="wiki-nav-title">导航</div>
+                <ul class="wiki-nav-list">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">分类索引</a></li>
+                    <li><a href="#">最近更改</a></li>
+                    <li><a href="#">特色内容</a></li>
+                    <li><a href="#">随机条目</a></li>
+                </ul>
+            </nav>
+            
+            <!-- 工具箱 -->
+            <div class="wiki-nav">
+                <div class="wiki-nav-title">工具箱</div>
+                <ul class="wiki-nav-list">
+                    <li><a href="#">链入页面</a></li>
+                    <li><a href="#">相关更改</a></li>
+                    <li><a href="#">特殊页面</a></li>
+                    <li><a href="#">打印版本</a></li>
+                    <li><a href="#">固定链接</a></li>
+                </ul>
+            </div>
+            
+            <!-- 其他语言 -->
+            {% if languages %}
+            <div class="wiki-nav">
+                <div class="wiki-nav-title">其他语言</div>
+                <ul class="wiki-nav-list">
+                    {% for lang in languages %}
+                    <li><a href="{{ lang.url }}">{{ lang.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </aside>
+        
+        <!-- 主要内容 -->
+        <main class="wiki-content">
+            <!-- 语言链接和页面状态 -->
+            <div class="language-links">
+                {% if language_count %}
+                <a href="#">其他{{ language_count }}种语言</a>
+                {% endif %}
+                
+                {% if page_status %}
+                <span class="page-status {{ page_status }}">{{ page_status_text }}</span>
+                {% endif %}
+            </div>
+            
+            <!-- 重定向提示 -->
+            {% if redirected_from %}
+            <div class="redirected-from">（重定向自 <a href="#">{{ redirected_from }}</a>）</div>
+            {% endif %}
+            
+            <!-- 提示帽注 -->
+            {% if hatnote %}
+            <div class="hatnote">{{ hatnote }}</div>
+            {% endif %}
+            
+            <!-- 页面标题 -->
+            <h1>
+                {{ title }}
+                <span class="edit-link"><a href="#">[编辑]</a></span>
+            </h1>
+            
+            <!-- 信息框 -->
+            {% if infobox %}
+            <div class="infobox">
+                {% if infobox_title %}
+                <div class="infobox-title">{{ infobox_title }}</div>
+                {% endif %}
+                
+                {% if infobox_image %}
+                <div class="infobox-image">
+                    <img src="{{ infobox_image }}" alt="{{ infobox_image_alt|default(title) }}">
+                    {% if infobox_caption %}
+                    <div>{{ infobox_caption }}</div>
+                    {% endif %}
+                </div>
+                {% endif %}
+                
+                <table>
+                    {% for item in infobox_data %}
+                    <tr>
+                        <th>{{ item.label }}</th>
+                        <td>{{ item.value }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            {% endif %}
+            
+            <!-- 文章内容 -->
+            {{ content }}
+            
+            <!-- 参考文献 -->
+            {% if references %}
+            <div class="references">
+                <h2 class="references-title">参考文献</h2>
+                <ol>
+                    {% for ref in references %}
+                    <li id="ref{{ loop.index }}">{{ ref }}</li>
+                    {% endfor %}
+                </ol>
+            </div>
+            {% endif %}
+            
+            <!-- 分类 -->
+            {% if categories %}
+            <div class="wiki-categories">
+                <ul>
+                    {% for category in categories %}
+                    <li><a href="#">{{ category }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            
+            <!-- 页脚 -->
+            <div class="wiki-footer">
+                <div>此页面最后编辑于{{ last_modified|default('2024年3月7日') }} (星期四) {{ last_modified_time|default('19:30') }}。</div>
+                <div>本站内容采用<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0协议</a>授权，文本内容除另有声明外均可在该协议下使用。</div>
+            </div>
+        </main>
+    </div>
+    
+    <script>
+        // 为引用添加链接
+        document.addEventListener('DOMContentLoaded', function() {
+            // 查找所有引用标记
+            const citations = document.querySelectorAll('.citation');
+            
+            citations.forEach(citation => {
+                const num = citation.dataset.ref;
+                if (num) {
+                    const link = document.createElement('a');
+                    link.href = '#ref' + num;
+                    link.textContent = '[' + num + ']';
+                    citation.appendChild(link);
+                }
+            });
+            
+            // 为表格添加可排序功能
+            const tables = document.querySelectorAll('table.sortable');
+            
+            tables.forEach(table => {
+                const headers = table.querySelectorAll('th');
+                
+                headers.forEach((header, index) => {
+                    header.style.cursor = 'pointer';
+                    header.addEventListener('click', function() {
+                        sortTable(table, index);
+                    });
+                });
+            });
+            
+            // 表格排序函数
+            function sortTable(table, column) {
+                const body = table.querySelector('tbody') || table;
+                const rows = Array.from(body.querySelectorAll('tr')).slice(1); // 跳过标题行
+                
+                const currentSort = table.dataset.sort || '';
+                const isAsc = currentSort !== column.toString();
+                
+                rows.sort((a, b) => {
+                    const cellA = a.cells[column].textContent.trim();
+                    const cellB = b.cells[column].textContent.trim();
+                    
+                    // 尝试数字排序
+                    const numA = parseFloat(cellA);
+                    const numB = parseFloat(cellB);
+                    
+                    if (!isNaN(numA) && !isNaN(numB)) {
+                        return isAsc ? numA - numB : numB - numA;
+                    }
+                    
+                    // 字母排序
+                    return isAsc ? 
+                        cellA.localeCompare(cellB) : 
+                        cellB.localeCompare(cellA);
+                });
+                
+                // 重新插入行
+                rows.forEach(row => body.appendChild(row));
+                
+                // 更新排序状态
+                table.dataset.sort = isAsc ? column : '';
+                
+                // 更新排序指示器
+                const headers = table.querySelectorAll('th');
+                headers.forEach(header => {
+                    header.classList.remove('sort-asc', 'sort-desc');
+                });
+                
+                if (isAsc) {
+                    headers[column].classList.add('sort-asc');
+                } else {
+                    headers[column].classList.add('sort-desc');
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

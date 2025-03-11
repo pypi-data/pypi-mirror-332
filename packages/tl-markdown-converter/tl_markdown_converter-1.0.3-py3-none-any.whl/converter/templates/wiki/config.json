@@ -1,0 +1,50 @@
+{
+    "template": "wiki/template.html",
+    "css": "wiki/style.css",
+    "variables": {
+        "title": "",
+        "wiki_name": "Fiction Wiki",
+        "logo_url": "",
+        "language_count": 0,
+        "page_status": "",
+        "page_status_text": "",
+        "redirected_from": "",
+        "hatnote": "",
+        "infobox": false,
+        "infobox_title": "",
+        "infobox_image": "",
+        "infobox_image_alt": "",
+        "infobox_caption": "",
+        "infobox_data": [],
+        "content": "",
+        "references": [],
+        "categories": [],
+        "languages": [],
+        "last_modified": "",
+        "last_modified_time": ""
+    },
+    "page": {
+        "size": "A4",
+        "margin": {
+            "top": "2cm",
+            "right": "2cm",
+            "bottom": "2cm",
+            "left": "2cm"
+        }
+    },
+    "fonts": {
+        "default": {
+            "family": "'Linux Libertine', 'Georgia', 'Times', serif",
+            "size": "15px",
+            "line-height": "1.6"
+        },
+        "heading": {
+            "family": "'Linux Libertine', 'Georgia', 'Times', serif",
+            "weight": "normal"
+        },
+        "mono": {
+            "family": "'Menlo', 'Consolas', 'Monaco', monospace",
+            "size": "0.9em"
+        }
+    }
+} 

@@ -1,0 +1,392 @@
+Metadata-Version: 2.2
+Name: tl-markdown-converter
+Version: 1.0.0
+Summary: A powerful and flexible Markdown converter supporting multiple output formats and templates
+Home-page: https://github.com/fiction/markdown-converter
+Author: TL
+Author-email: ttieli@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: markdown>=3.3.0
+Requires-Dist: jinja2>=3.0.0
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: beautifulsoup4>=4.9.0
+Requires-Dist: playwright>=1.20.0
+Requires-Dist: python-docx>=0.8.11
+Requires-Dist: weasyprint>=54.0
+Requires-Dist: argparse>=1.4.0
+Requires-Dist: python-dotenv>=0.19.0
+Requires-Dist: rich>=10.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Markdown Format Converter
+
+A powerful Markdown format converter that supports converting Markdown documents to HTML, PDF, images, and DOC documents. This tool is designed as a pure Python library that can be easily integrated into other projects.
+
+## Features
+
+- **Multiple Format Conversion**: Support converting Markdown to HTML, PDF, images, and DOC formats
+- **Rich Template System**: Built-in multiple HTML templates for different layout needs
+- **YAML Metadata Support**: Extract metadata like title and author from documents
+- **Table Optimization**: Automatically optimize table display for better readability
+- **Code Highlighting**: Support code highlighting for multiple programming languages
+- **Responsive Design**: Generated HTML/PDF adapts to different devices
+- **Extensible Template System**: Easily add and customize new templates
+- **Command Line Tool**: Simple and easy-to-use command line interface
+
+## Installation
+
+```bash
+# Install from PyPI
+pip install markdown-converter
+
+# Or install from source
+pip install .
+
+# Or install from GitHub
+pip install git+https://github.com/fiction/markdown-converter.git
+```
+
+## Quick Start
+
+### Command Line Usage
+
+After installation, you can use the conversion features through the command line tool:
+
+```bash
+# View help
+md-converter --help
+
+# Convert Markdown to HTML
+md-converter your_file.md --html
+
+# Convert Markdown to PDF (generates both print and continuous versions)
+md-converter your_file.md --pdf
+
+# Use specific template
+md-converter your_file.md --html --template wiki
+
+# Specify output directory
+md-converter your_file.md --html --pdf --output-dir ./output
+```
+
+### Use as Python Library
+
+```python
+# Generate HTML from Markdown
+from converter.core.md_converter import convert_md_to_html
+
+html_content = convert_md_to_html(
+    "document.md", 
+    template="modern",
+    options={
+        "title": "My Document",
+        "author": "Author Name",
+        "date": "2024-03-07"
+    }
+)
+
+# Convert HTML to PDF
+from converter.core.pdf_converter import convert_html_to_pdf
+
+# Generate print version PDF (with pagination)
+convert_html_to_pdf("document.html", "document_print.pdf", mode="print")
+
+# Generate continuous version PDF (without pagination)
+convert_html_to_pdf("document.html", "document_continuous.pdf", mode="continuous")
+```
+
+## Available Templates
+
+Here are several built-in commonly used templates:
+
+| Template Name | Description | Use Case |
+|--------------|-------------|----------|
+| default | Clean default style | General documents |
+| modern | Modern style design | Blogs, articles |
+| wiki | Wiki-like style | Knowledge base, encyclopedia |
+| ebook | E-book style | Long-form reading content |
+| official | Formal document style | Official documents |
+| technical | Technical documentation style | Technical manuals, API docs |
+| academic | Academic paper style | Academic papers, research reports |
+
+## Advanced Usage
+
+### API Integration Example
+
+```python
+from flask import Flask, request, jsonify
+from converter.core.md_converter import convert_md_to_html
+from converter.core.pdf_converter import convert_html_to_pdf
+
+app = Flask(__name__)
+
+@app.route("/convert", methods=["POST"])
+def convert():
+    data = request.json
+    markdown = data.get("markdown")
+    template = data.get("template", "default")
+    
+    # Save Markdown to temporary file
+    with open("temp.md", "w", encoding="utf-8") as f:
+        f.write(markdown)
+        
+    # Convert to HTML
+    html = convert_md_to_html("temp.md", template=template)
+    
+    # Save HTML
+    with open("temp.html", "w", encoding="utf-8") as f:
+        f.write(html)
+        
+    # Convert to PDF
+    convert_html_to_pdf("temp.html", "output.pdf")
+    
+    return jsonify({"success": True, "message": "Conversion successful"})
+```
+
+### Custom Templates
+
+You can create custom templates in the following way:
+
+1. Create a new template in the `converter/templates/your_template/` directory
+2. Add the following files:
+   - `template.html` - HTML template file
+   - `style.css` - Stylesheet
+   - `config.json` - Template configuration
+
+For detailed examples, refer to the project's `examples/custom_template.py` file.
+
+## Project Structure
+
+```
+converter/
+├── __init__.py           # Package initialization
+├── cli.py                # Command line interface
+├── core/                 # Core functionality modules
+│   ├── md_converter.py   # Markdown converter
+│   ├── pdf_converter.py  # PDF converter
+│   ├── image_converter.py# Image converter
+│   └── doc_converter.py  # DOC converter
+├── templates/            # Templates directory
+│   ├── default/          # Default template
+│   ├── modern/           # Modern style template
+│   ├── wiki/             # Wiki style template
+│   └── ...               # Other templates
+└── utils/                # Utility modules
+    ├── config.py         # Configuration management
+    └── logger.py         # Logging management
+```
+
+## Dependencies
+
+- `markdown` - Markdown parsing
+- `jinja2` - Template rendering
+- `beautifulsoup4` - HTML processing
+- `Pillow` - Image processing
+- `weasyprint` - HTML to PDF conversion
+- `python-docx` - DOC format support
+- `playwright` - Advanced web rendering (HTML to image)
+
+## Contributing
+
+Contributions are welcome! Please read the contribution guidelines before submitting pull requests or creating issues.
+
+## License
+
+MIT
+
+---
+
+# Markdown格式转换工具
+
+一个功能丰富的Markdown格式转换工具，支持将Markdown文档转换为HTML、PDF、图片和DOC文档。该工具设计为一个纯Python库，可以轻松集成到其他项目中。
+
+## 功能特点
+
+- **多格式转换**：支持Markdown转HTML、PDF、图片和DOC格式
+- **丰富的模板系统**：内置多种HTML模板，满足不同排版需求
+- **YAML元数据支持**：可从文档提取标题、作者等元数据
+- **表格优化**：自动优化表格显示，增强可读性
+- **代码高亮**：支持多种编程语言的代码高亮
+- **响应式设计**：生成的HTML/PDF适配不同设备
+- **可扩展的模板系统**：轻松添加和定制新模板
+- **命令行工具**：简单易用的命令行接口
+
+## 安装
+
+```bash
+# 从PyPI安装
+pip install markdown-converter
+
+# 或从源码安装
+pip install .
+
+# 或从GitHub安装
+pip install git+https://github.com/fiction/markdown-converter.git
+```
+
+## 快速入门
+
+### 命令行使用
+
+安装后，可以通过命令行工具使用转换功能：
+
+```bash
+# 查看帮助
+md-converter --help
+
+# Markdown转HTML
+md-converter your_file.md --html
+
+# Markdown转PDF（同时生成打印版和连续版）
+md-converter your_file.md --pdf
+
+# 使用特定模板
+md-converter your_file.md --html --template wiki
+
+# 指定输出目录
+md-converter your_file.md --html --pdf --output-dir ./output
+```
+
+### 作为Python库使用
+
+```python
+# 从Markdown生成HTML
+from converter.core.md_converter import convert_md_to_html
+
+html_content = convert_md_to_html(
+    "document.md", 
+    template="modern",
+    options={
+        "title": "我的文档",
+        "author": "作者名称",
+        "date": "2024-03-07"
+    }
+)
+
+# 将HTML转换为PDF
+from converter.core.pdf_converter import convert_html_to_pdf
+
+# 生成打印版PDF（带分页）
+convert_html_to_pdf("document.html", "document_print.pdf", mode="print")
+
+# 生成连续版PDF（无分页）
+convert_html_to_pdf("document.html", "document_continuous.pdf", mode="continuous")
+```
+
+## 可用模板
+
+以下是内置的几种常用模板：
+
+| 模板名称 | 描述 | 适用场景 |
+|----------|------|----------|
+| default | 简洁的默认样式 | 通用文档 |
+| modern | 现代风格设计 | 博客、文章 |
+| wiki | 类Wiki风格 | 知识库、百科 |
+| ebook | 电子书风格 | 长篇阅读内容 |
+| official | 正式公文样式 | 正式文档、公文 |
+| technical | 技术文档样式 | 技术手册、API文档 |
+| academic | 学术论文风格 | 学术论文、研究报告 |
+
+## 高级用法
+
+### API集成示例
+
+```python
+from flask import Flask, request, jsonify
+from converter.core.md_converter import convert_md_to_html
+from converter.core.pdf_converter import convert_html_to_pdf
+
+app = Flask(__name__)
+
+@app.route("/convert", methods=["POST"])
+def convert():
+    data = request.json
+    markdown = data.get("markdown")
+    template = data.get("template", "default")
+    
+    # 保存Markdown到临时文件
+    with open("temp.md", "w", encoding="utf-8") as f:
+        f.write(markdown)
+        
+    # 转换为HTML
+    html = convert_md_to_html("temp.md", template=template)
+    
+    # 保存HTML
+    with open("temp.html", "w", encoding="utf-8") as f:
+        f.write(html)
+        
+    # 转换为PDF
+    convert_html_to_pdf("temp.html", "output.pdf")
+    
+    return jsonify({"success": True, "message": "转换成功"})
+```
+
+### 自定义模板
+
+您可以通过以下方式创建自定义模板：
+
+1. 在`converter/templates/your_template/`目录下创建新模板
+2. 添加以下文件：
+   - `template.html` - HTML模板文件
+   - `style.css` - 样式表
+   - `config.json` - 模板配置
+
+详细示例可参考项目`examples/custom_template.py`文件。
+
+## 项目结构
+
+```
+converter/
+├── __init__.py           # 包初始化
+├── cli.py                # 命令行界面
+├── core/                 # 核心功能模块
+│   ├── md_converter.py   # Markdown转换器
+│   ├── pdf_converter.py  # PDF转换器
+│   ├── image_converter.py# 图片转换器
+│   └── doc_converter.py  # DOC转换器
+├── templates/            # 模板目录
+│   ├── default/          # 默认模板
+│   ├── modern/           # 现代风格模板
+│   ├── wiki/             # Wiki风格模板
+│   └── ...               # 其他模板
+└── utils/                # 工具模块
+    ├── config.py         # 配置管理
+    └── logger.py         # 日志管理
+```
+
+## 依赖项
+
+- `markdown` - Markdown解析
+- `jinja2` - 模板渲染
+- `beautifulsoup4` - HTML处理
+- `Pillow` - 图片处理
+- `weasyprint` - HTML转PDF
+- `python-docx` - DOC格式支持
+- `playwright` - 高级网页渲染(HTML转图片)
+
+## 贡献
+
+欢迎贡献代码或报告问题。请先阅读贡献指南，然后提交拉取请求或创建问题。
+
+## 许可证
+
+MIT

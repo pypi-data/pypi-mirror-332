@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- 外部CSS将在此处通过链接标签插入 -->
+</head>
+<body>
+    <div class="progress-bar" id="progress-bar"></div>
+    
+    <div class="container">
+        <header>
+            <h1 class="title">{{ title }}</h1>
+            <div class="meta">
+                <span class="author">{{ author }}</span>
+                <span class="date">{{ date }}</span>
+            </div>
+        </header>
+        
+        <div class="article-layout">
+            <aside class="toc" id="toc">
+                <div class="toc-header">
+                    <h2>目录</h2>
+                    <button id="toggle-toc" aria-label="切换目录">
+                        <span class="icon">≡</span>
+                    </button>
+                </div>
+                <div class="toc-content" id="toc-content">
+                    <!-- 目录将通过JavaScript动态生成 -->
+                </div>
+            </aside>
+            
+            <main class="content">
+                {{ content }}
+            </main>
+        </div>
+        
+        <footer>
+            <p>&copy; {{ current_year }} {{ site_name }}</p>
+            <p class="category">分类: {{ category }}</p>
+            <p class="tags">标签: {{ tags }}</p>
+        </footer>
+    </div>
+    
+    <!-- 外部JavaScript将在此处通过脚本标签插入 -->
+</body>
+</html> 

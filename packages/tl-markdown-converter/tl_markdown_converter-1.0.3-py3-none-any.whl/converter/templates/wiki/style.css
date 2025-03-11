@@ -1,0 +1,578 @@
+/* Wiki风格的Markdown转HTML样式 */
+:root {
+  --main-bg: #ffffff;
+  --content-bg: #ffffff;
+  --sidebar-bg: #f8f9fa;
+  --border-color: #a2a9b1;
+  --light-border: #eaecf0;
+  --text-color: #202122;
+  --secondary-text: #54595d;
+  --link-color: #0645ad;
+  --link-visited: #551a8b;
+  --link-hover: #0b0080;
+  --toc-bg: #f8f9fa;
+  --infobox-bg: #f8f9fa;
+  --code-bg: #f5f5f5;
+  --heading-border: #c8ccd1;
+  --font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+  --font-sans: 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
+  --font-mono: 'Menlo', 'Consolas', 'Monaco', monospace;
+}
+
+/* 基本布局 */
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--main-bg);
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+.wiki-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wiki-sidebar {
+  width: 220px;
+  background-color: var(--sidebar-bg);
+  padding: 1.25rem;
+  border-right: 1px solid var(--light-border);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.wiki-content {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  background-color: var(--content-bg);
+  min-height: 100vh;
+  border-left: 1px solid var(--light-border);
+  border-right: 1px solid var(--light-border);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+  line-height: 1.3;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 1.8em;
+  border-bottom: 1px solid var(--heading-border);
+  padding-bottom: 0.3em;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid var(--heading-border);
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5, h6 {
+  font-size: 1.1em;
+}
+
+/* 章节编号 */
+.wiki-content {
+  counter-reset: section;
+}
+
+h2 {
+  counter-reset: subsection;
+}
+
+h3 {
+  counter-reset: subsubsection;
+}
+
+h2::before {
+  counter-increment: section;
+  content: counter(section) " ";
+}
+
+h3::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+
+h4::before {
+  counter-increment: subsubsection;
+  content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+}
+
+/* 段落和文本 */
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.7em;
+}
+
+/* 链接 */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+
+/* 外部链接图标 */
+a.external::after {
+  content: " \2197";
+  font-size: 0.8em;
+  vertical-align: super;
+}
+
+/* 目录 */
+.toc {
+  background-color: var(--toc-bg);
+  border: 1px solid var(--light-border);
+  padding: 1em;
+  margin: 1em 0;
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 3px;
+}
+
+.toc-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.toc ul {
+  list-style-type: none;
+  padding-left: 1.5em;
+  margin: 0;
+}
+
+.toc li {
+  margin: 0.2em 0;
+}
+
+/* Infobox */
+.infobox {
+  float: right;
+  margin: 0 0 1em 1em;
+  padding: 0.2em;
+  border: 1px solid var(--border-color);
+  background-color: var(--infobox-bg);
+  width: 280px;
+  font-size: 0.9em;
+  clear: right;
+}
+
+.infobox .infobox-title {
+  font-size: 1.1em;
+  text-align: center;
+  background-color: var(--light-border);
+  padding: 0.2em;
+  font-weight: bold;
+}
+
+.infobox .infobox-image {
+  text-align: center;
+  margin: 0.5em auto;
+}
+
+.infobox .infobox-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.infobox table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.infobox th, .infobox td {
+  vertical-align: top;
+  padding: 0.2em 0.4em;
+  border-top: 1px solid var(--light-border);
+}
+
+.infobox th {
+  text-align: left;
+  background-color: var(--light-border);
+  width: 40%;
+}
+
+/* 列表 */
+ul, ol {
+  margin-top: 0.3em;
+  margin-bottom: 0.7em;
+  padding-left: 2em;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+ul ul ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+li {
+  margin-bottom: 0.1em;
+}
+
+/* 代码和预格式化文本 */
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background-color: var(--code-bg);
+  padding: 0.1em 0.3em;
+  border: 1px solid var(--light-border);
+  border-radius: 2px;
+}
+
+pre {
+  font-family: var(--font-mono);
+  background-color: var(--code-bg);
+  padding: 1em;
+  border: 1px solid var(--light-border);
+  overflow-x: auto;
+  margin: 1em 0;
+  font-size: 0.9em;
+  line-height: 1.4;
+  border-radius: 3px;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* 引用 */
+blockquote {
+  margin: 1em 2em;
+  padding: 0 1em;
+  border-left: 3px solid var(--heading-border);
+  color: var(--secondary-text);
+  font-style: italic;
+}
+
+/* 表格 */
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.95em;
+  width: 100%;
+}
+
+table th {
+  background-color: var(--toc-bg);
+  font-weight: bold;
+  text-align: center;
+}
+
+table th, table td {
+  border: 1px solid var(--border-color);
+  padding: 0.3em 0.6em;
+}
+
+table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+table caption {
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 底注和引用 */
+.references {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid var(--heading-border);
+  font-size: 0.9em;
+}
+
+.references-title {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.references ol {
+  padding-left: 2.5em;
+}
+
+.references li {
+  margin-bottom: 0.5em;
+}
+
+/* 引用标记 */
+.citation {
+  vertical-align: super;
+  font-size: 0.8em;
+  margin-left: 0.1em;
+}
+
+/* 特殊标记 */
+.hatnote {
+  padding: 0.1em 1.2em;
+  margin-bottom: 0.5em;
+  color: var(--secondary-text);
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.redirected-from {
+  padding: 0.1em 1.2em;
+  margin-bottom: 0.5em;
+  color: var(--secondary-text);
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+/* 水平线 */
+hr {
+  height: 1px;
+  background-color: var(--light-border);
+  border: none;
+  margin: 2em 0;
+}
+
+/* 页脚 */
+.wiki-footer {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid var(--heading-border);
+  font-size: 0.85em;
+  color: var(--secondary-text);
+}
+
+/* 分类 */
+.wiki-categories {
+  margin-top: 2em;
+  padding-top: 0.5em;
+  border-top: 1px solid var(--light-border);
+  font-size: 0.9em;
+}
+
+.wiki-categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wiki-categories li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.wiki-categories a {
+  color: var(--secondary-text);
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+  .wiki-container {
+    flex-direction: column;
+  }
+  
+  .wiki-sidebar {
+    width: auto;
+    height: auto;
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid var(--light-border);
+  }
+  
+  .wiki-content {
+    border-left: none;
+    border-right: none;
+  }
+  
+  .infobox {
+    float: none;
+    margin: 1em auto;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  .wiki-sidebar {
+    display: none;
+  }
+  
+  .wiki-container {
+    display: block;
+  }
+  
+  .wiki-content {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+  }
+  
+  .toc a::after {
+    content: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  
+  img, pre, blockquote, table {
+    page-break-inside: avoid;
+  }
+}
+
+/* Wiki侧边栏导航样式 */
+.wiki-logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.wiki-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wiki-nav {
+  margin-bottom: 1.5rem;
+}
+
+.wiki-nav-title {
+  font-family: var(--font-sans);
+  font-weight: bold;
+  font-size: 0.9em;
+  color: var(--secondary-text);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--light-border);
+  padding-bottom: 0.3rem;
+}
+
+.wiki-nav-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.wiki-nav-list li {
+  margin-bottom: 0.3rem;
+  font-size: 0.9em;
+}
+
+.wiki-nav-list a {
+  display: block;
+  padding: 0.3rem 0;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.wiki-nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* 编辑链接 */
+.edit-link {
+  font-family: var(--font-sans);
+  font-size: 0.8em;
+  margin-left: 1em;
+  color: var(--secondary-text);
+  vertical-align: baseline;
+}
+
+/* 页面状态 */
+.page-status {
+  display: inline-block;
+  background-color: #eaf3ff;
+  color: #36c;
+  font-size: 0.8em;
+  padding: 0.1em 0.5em;
+  border-radius: 3px;
+  margin-right: 0.5em;
+  font-family: var(--font-sans);
+}
+
+.featured {
+  background-color: #d5fdf4;
+  color: #00af89;
+}
+
+.stub {
+  background-color: #fef6e7;
+  color: #fc3;
+}
+
+/* 语言链接 */
+.language-links {
+  font-family: var(--font-sans);
+  font-size: 0.85em;
+  color: var(--secondary-text);
+  margin-bottom: 1em;
+}
+
+.language-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.language-links li {
+  display: inline-block;
+  margin-right: 0.8em;
+} 

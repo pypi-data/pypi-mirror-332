@@ -1,0 +1,23 @@
+{
+    "id": "webpage",
+    "name": "网页式样",
+    "description": "现代网页风格的Markdown转换模板，提供清晰优雅的阅读体验",
+    "version": "1.0.0",
+    "author": "Fiction团队",
+    "html_template": "template.html",
+    "css_files": ["style.css"],
+    "pdf_settings": {
+        "margin": {
+            "top": "2cm",
+            "right": "2.5cm",
+            "bottom": "2cm",
+            "left": "2.5cm"
+        },
+        "format": "A4",
+        "printBackground": true
+    },
+    "image_settings": {
+        "width": 900,
+        "deviceScaleFactor": 2
+    }
+} 

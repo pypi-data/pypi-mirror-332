@@ -1,0 +1,329 @@
+/* 
+ * 博客模板特定样式
+ *
+ * 这是博客风格模板的特定样式，提供博客特有的功能样式
+ */
+
+/* 社交分享按钮 */
+.social-share {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.share-btn {
+    display: inline-block;
+    margin: 0 5px 10px;
+    padding: 6px 12px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #555;
+    font-size: 0.85em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    background-color: #e9e9e9;
+}
+
+.share-btn i {
+    margin-right: 5px;
+}
+
+.share-btn[data-platform="weibo"]:hover {
+    background-color: #e6162d;
+    border-color: #e6162d;
+    color: white;
+}
+
+.share-btn[data-platform="wechat"]:hover {
+    background-color: #07c160;
+    border-color: #07c160;
+    color: white;
+}
+
+.share-btn[data-platform="twitter"]:hover {
+    background-color: #1da1f2;
+    border-color: #1da1f2;
+    color: white;
+}
+
+.share-btn[data-platform="facebook"]:hover {
+    background-color: #4267b2;
+    border-color: #4267b2;
+    color: white;
+}
+
+.share-btn[data-platform="linkedin"]:hover {
+    background-color: #0077b5;
+    border-color: #0077b5;
+    color: white;
+}
+
+/* 文章标签 */
+.post-tags {
+    margin: 30px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.post-tags a {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 3px 8px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    color: #555;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.post-tags a:hover {
+    background-color: #e1e1e1;
+    color: #333;
+}
+
+/* 作者信息 */
+.author-info {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.author-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.author-bio {
+    flex: 1;
+}
+
+.author-bio h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.author-bio p {
+    margin: 0 0 15px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.author-social a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #666;
+    font-size: 1.1em;
+    transition: color 0.2s ease;
+}
+
+.author-social a:hover {
+    color: #0366d6;
+}
+
+/* 相关文章 */
+.related-posts {
+    margin: 40px 0;
+}
+
+.related-posts h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.related-posts ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.related-posts li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+}
+
+.related-posts a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.related-posts a:hover {
+    color: #0366d6;
+}
+
+/* 评论区 */
+.comments-section {
+    margin: 40px 0;
+}
+
+.comments-section h3 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.comments-container {
+    margin-bottom: 30px;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-meta {
+    flex: 1;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin: 0;
+}
+
+.comment-date {
+    font-size: 0.85em;
+    color: #666;
+    margin: 0;
+}
+
+.comment-content {
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* 评论表单 */
+.comment-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.comment-form h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 8px 16px;
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0256b9;
+}
+
+/* 页脚 */
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* 返回顶部按钮 */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000;
+    padding: 0;
+}
+
+#back-to-top:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#back-to-top i {
+    margin-right: 5px;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .post-title {
+        font-size: 2em;
+    }
+    
+    .author-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .author-avatar {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .share-btn {
+        padding: 5px 10px;
+    }
+} 
