@@ -1,0 +1,5 @@
+Name: Spglib
+Description: The spglib library
+Version: 2.6.0
+Libs: -L/tmp/tmpl_drt1xq/wheel/platlib/spglib/lib64 -lsymspg
+Cflags: -I/tmp/tmpl_drt1xq/wheel/platlib/spglib/include
