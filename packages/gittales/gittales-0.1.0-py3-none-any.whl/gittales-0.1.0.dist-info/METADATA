@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: gittales
+Version: 0.1.0
+Summary: Extract insights from your git commit history
+Author-email: Patrick Kalkman <patrick@simpletechture.nl>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.11
+Requires-Dist: gitpython>=3.1.44
+Requires-Dist: langchain-core>=0.3.43
+Requires-Dist: langchain-openai>=0.3.8
+Requires-Dist: matplotlib>=3.10.1
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: rich>=13.9.4
+Requires-Dist: typer>=0.15.2
+Description-Content-Type: text/markdown
+
+# GitTales
+
+A command-line tool for generating stories and insights from your Git repository history.
+
+## Features
+
+- Analyze commit patterns and history
+- Generate narrative summaries of repository development
+- Identify key contributors and their impact
+- Visualize repository evolution over time
+
+## Installation
+
+```bash
+pip install gittales
+```
+
+## Usage
+
+```bash
+gittales analyze [REPOSITORY_PATH]
+```
+
+## Development
+
+1. Clone the repository
+2. Install development dependencies: `pip install -e ".[dev]"`
+3. Run tests: `pytest`
+
+## License
+
+See the [LICENSE](LICENSE) file for details.
