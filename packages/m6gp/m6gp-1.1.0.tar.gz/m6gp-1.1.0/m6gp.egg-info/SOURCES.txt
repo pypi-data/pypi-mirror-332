@@ -1,0 +1,13 @@
+README.txt
+pyproject.toml
+setup.py
+m6gp/GeneticOperators.py
+m6gp/Individual.py
+m6gp/M6GP.py
+m6gp/MahalanobisDistanceClassifier.py
+m6gp/Node.py
+m6gp/__init__.py
+m6gp.egg-info/PKG-INFO
+m6gp.egg-info/SOURCES.txt
+m6gp.egg-info/dependency_links.txt
+m6gp.egg-info/top_level.txt
