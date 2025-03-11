@@ -1,0 +1,7 @@
+README.md
+setup.py
+flare_torch.egg-info/PKG-INFO
+flare_torch.egg-info/SOURCES.txt
+flare_torch.egg-info/dependency_links.txt
+flare_torch.egg-info/requires.txt
+flare_torch.egg-info/top_level.txt

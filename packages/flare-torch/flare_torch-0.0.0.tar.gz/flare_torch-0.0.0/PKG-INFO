@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: flare-torch
+Version: 0.0.0
+Summary: (Not yet.) Train pytorch models with a few lines of code.
+Home-page: https://github.com/denev6/deep-learning-codes/tree/main/flare
+Author: denev6
+Author-email: sungjin.code@gmail.com
+License: MIT License
+Keywords: teddynote,teddylee777,python datasets,python tutorial,pypi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
