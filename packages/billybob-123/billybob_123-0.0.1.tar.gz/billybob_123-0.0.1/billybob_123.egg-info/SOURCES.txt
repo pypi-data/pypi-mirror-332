@@ -1,0 +1,8 @@
+setup.py
+billybob_123/__init__.py
+billybob_123/module1.py
+billybob_123/module2.py
+billybob_123.egg-info/PKG-INFO
+billybob_123.egg-info/SOURCES.txt
+billybob_123.egg-info/dependency_links.txt
+billybob_123.egg-info/top_level.txt
