@@ -1,0 +1,8 @@
+locust<3.0,>=2.33
+psutil<8.0,>=7.0
+
+[dev]
+pytest
+pytest-pep8
+pytest-cov
+pyspark==3.4.1
