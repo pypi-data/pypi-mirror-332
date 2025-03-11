@@ -1,0 +1,8 @@
+distil_whisper_fastrtc/__init__.py,sha256=gfCP3SQlwRhBQ-veV4bBI8qiPuqeZDkTzy8kFtnuaVQ,256
+distil_whisper_fastrtc/model.py,sha256=VWNvKwnliOH0AwNEyJEpBXSLyHb-qikbzkY2x_0Z9lA,5754
+distil_whisper_fastrtc/utils.py,sha256=qL6IpgtHdgGzmIR-nnUbr5G3At2anZpa9HRsAf9mPzk,1016
+distil_whisper_fastrtc-0.1.0.dist-info/LICENSE,sha256=pD1G834hkF3F0BruD69K_vNoIXxIb1XdMCeRcYEaOxc,1113
+distil_whisper_fastrtc-0.1.0.dist-info/METADATA,sha256=oO4Wcw8Wd-YgyfX8Z7MfMDHZ1r46dnImdbOTc6RfrZY,3963
+distil_whisper_fastrtc-0.1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+distil_whisper_fastrtc-0.1.0.dist-info/top_level.txt,sha256=y5xSO-v3KGOqRS233Dwe7R9G6x3uAPSxyAZpckuAT0E,23
+distil_whisper_fastrtc-0.1.0.dist-info/RECORD,,
