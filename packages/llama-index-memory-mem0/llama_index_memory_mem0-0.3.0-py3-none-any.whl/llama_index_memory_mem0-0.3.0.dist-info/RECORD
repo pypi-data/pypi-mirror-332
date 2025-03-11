@@ -1,0 +1,8 @@
+llama_index/memory/mem0/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/memory/mem0/__init__.py,sha256=-nE1x4OcP9eKvRDlB8UR_6u4Tf2YjFzUUN14wHzRG04,78
+llama_index/memory/mem0/base.py,sha256=6yMjcrXZeUllvP1thN2jl4PRfi6FEStyH3mnRjE9yZ4,6322
+llama_index/memory/mem0/utils.py,sha256=pFrPvDVQb7Tku9_LG8fGGtZnM_lRrDuQuNnwMd1iadA,2199
+llama_index_memory_mem0-0.3.0.dist-info/LICENSE,sha256=JPQLUZD9rKvCTdu192Nk0V5PAwklIg6jANii3UmTyMs,1065
+llama_index_memory_mem0-0.3.0.dist-info/METADATA,sha256=VqyFBLK4r6a0D5I36ipvtfPkk-MFTejhPFehH7mGZz0,4922
+llama_index_memory_mem0-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_memory_mem0-0.3.0.dist-info/RECORD,,
