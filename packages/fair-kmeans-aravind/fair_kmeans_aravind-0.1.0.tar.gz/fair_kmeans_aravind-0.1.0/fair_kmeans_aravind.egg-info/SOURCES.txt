@@ -1,0 +1,6 @@
+README.md
+setup.py
+fair_kmeans_aravind.egg-info/PKG-INFO
+fair_kmeans_aravind.egg-info/SOURCES.txt
+fair_kmeans_aravind.egg-info/dependency_links.txt
+fair_kmeans_aravind.egg-info/top_level.txt
