@@ -1,0 +1,54 @@
+Metadata-Version: 2.2
+Name: souvenir-python
+Version: 0.0.2
+Summary: A tag identifier library based on https://github.com/j5pr/souvenir
+Author-email: BriHan <brihan.tech@gmail.com>
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Provides-Extra: dev
+Requires-Dist: black==24.10.0; extra == "dev"
+Requires-Dist: flake8==7.1.1; extra == "dev"
+Requires-Dist: flake8-import-order==0.18.2; extra == "dev"
+Requires-Dist: pytest==8.3.3; extra == "dev"
+Requires-Dist: sphinx==8.1.3; extra == "dev"
+Requires-Dist: sphinx_rtd_theme==3.0.2; extra == "dev"
+Requires-Dist: twine==5.1.1; extra == "dev"
+
+# souvenir python
+
+Translated [souvenir](https://github.com/j5pr/souvenir) to python.
+
+A structured ID generation and parsing library using prefixes.
+
+This library primariy provides the `Id` class, which stores a 128-bit identifier
+with its corresponding type (tag). The string representation of an `Id` is the
+type's tag and the 128-bit value encoded into a variant of
+[Crockford Base 32](https://www.crockford.com/base32.html).
+
+## Release
+
+Found on [PyPI](https://pypi.org/project/souvenir-python/)
+
+## Setup
+
+### User
+
+```
+pip install souvenir-python
+```
+
+### Dev
+
+```
+pip install ".[dev]"
+```
+
+## License
+
+This project is licensed under the MIT License.
