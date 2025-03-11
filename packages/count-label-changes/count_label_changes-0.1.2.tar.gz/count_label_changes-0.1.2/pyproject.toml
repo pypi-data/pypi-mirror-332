@@ -1,0 +1,27 @@
+[project]
+name = "count-label-changes"
+version = "0.1.2"
+description = "A plugin for Nellie that counts label changes. One type of typically used fission and fusion metric."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    {name = "Austin E. Y. T. Lefebvre", email = "austin.e.lefebvre+nellie@gmail.com"}
+]
+dependencies = [
+    "nellie",
+    "pandas",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/aelefebv/nellie-plugin-fission-fusion"
+
+[project.entry-points."nellie.plugins"]
+"Count Label Changes" = "plugin_module:count_label_changes"
+
+[tool.setuptools]
+py-modules = ["plugin_module"]
