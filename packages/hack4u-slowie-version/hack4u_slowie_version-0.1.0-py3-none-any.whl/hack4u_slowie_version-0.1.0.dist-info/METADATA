@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: hack4u_slowie_version
+Version: 0.1.0
+Summary: Biblioteca para conultar cursos de Hack4u
+Home-page: https://hack4u.io
+Author: CMJ
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
