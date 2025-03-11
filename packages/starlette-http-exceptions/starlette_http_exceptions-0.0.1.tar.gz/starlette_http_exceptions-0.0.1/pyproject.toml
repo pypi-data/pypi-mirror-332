@@ -1,0 +1,10 @@
+[project]
+name = "starlette-http-exceptions"
+version = "0.0.1"
+description = "A library for handling HTTP exceptions in Starlette applications, providing a set of predefined exceptions for common HTTP error statuses like 404, 403, 401, etc., to make error handling in APIs more streamlined and maintainable."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "starlette>=0.14.0",
+    "typing-extensions>=3.7.4.3"
+]

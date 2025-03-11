@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: starlette-http-exceptions
+Version: 0.0.1
+Summary: A library for handling HTTP exceptions in Starlette applications, providing a set of predefined exceptions for common HTTP error statuses like 404, 403, 401, etc., to make error handling in APIs more streamlined and maintainable.
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: starlette>=0.14.0
+Requires-Dist: typing-extensions>=3.7.4.3
