@@ -1,0 +1,122 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+# Project information
+[project]
+name = "htmlmin4"
+version = "0.2.15"
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    # add dependencies here
+]
+
+# dependencies for development and testing
+[dependency-groups]
+dev = [
+    "ruff>=0.9.9",
+    "pyright>=1.1.396",
+    "pip-tools>=7.4.1",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.0.0",
+    "pre-commit>=4.1.0",
+    "bandit>=1.8.3",
+    "setuptools",
+    "ipdb",
+    "twine",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.9.9",
+    "pyright>=1.1.396",
+    "pip-tools>=7.4.1",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.0.0",
+    "pre-commit>=4.1.0",
+    "bandit>=1.8.3",
+    "setuptools",
+    "ipdb",
+    "twine",
+]
+
+
+# coverage config
+[tool.coverage.paths]
+source = ["src"]
+
+[tool.coverage.run]
+branch = true
+relative_files = true
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 70
+
+# linting config
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.pyright]
+include = ["src", "tests"]
+exclude = ["**/__pycache__"]
+
+venv = "venv"
+venvPath = "."
+
+executionEnvironments = [
+    { root = "src" },
+    { root = "tests", extraPaths = [
+        "src",
+    ] },
+]
+
+# This should be your name or the name of the organization who originally
+# authored the project, and a valid email address corresponding to the name
+# listed.
+authors = [
+    { name = "Dave Mankoff", email = "mankyd@gmail.com" },
+    { name = "Tatiana Saturno", email = "tatianassaturno@gmail.com" },
+]
+
+# This should be your name or the names of the organization who currently
+# maintains the project, and a valid email address corresponding to the name
+# listed.
+maintainers = [
+    { name = "Dave Mankoff", email = "mankyd@gmail.com" },
+    { name = "Tatiana Saturno", email = "tatianassaturno@gmail.com" },
+]
+
+# Classifiers help users find your project by categorizing it.
+#
+# For a list of valid classifiers, see https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Rust",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[python-entrypoint-reference]
+console_scripts = "htmlmin4 = htmlmin4.command:main"
+
+[project.urls]
+Homepage = "https://github.com/tatianass/htmlmin"
+Issues = "https://github.com/tatianass/htmlmin/issues"
