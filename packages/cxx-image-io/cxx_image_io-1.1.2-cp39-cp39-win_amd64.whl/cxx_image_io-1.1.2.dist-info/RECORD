@@ -1,0 +1,12 @@
+cxx_image_io/__init__.py,sha256=ky8EDcoLTlANfbrhUZA2Q6PNcPI2mdzdDIOWva_dSuk,1378
+cxx_image_io/cxx_image.cp39-win_amd64.pyd,sha256=rKu7ZmqZehYrE33CJ3nlMT0ivh9iOtn5rzyPi2Xgz60,5508608
+cxx_image_io/cxx_libraw.cp39-win_amd64.pyd,sha256=mXRdHbrxUGvWSEKN9XG9-u-JbJlsXalWzrnoHgHPdkM,558592
+cxx_image_io/io.py,sha256=oipVBcClS7CBWR-Sh-GvMTuSKgJLjijV5mPsK5l6bKE,16496
+cxx_image_io/libexif.dll,sha256=LNzavtw0Wo_YmFn2MS6mlNWayL4kpIHzRaWa-JPQb2w,511190
+cxx_image_io/libraw_r.dll,sha256=E2AjOe65t274nhw6csZMWw2gkX5uUOt4E4QQp_7q_Y8,3148476
+cxx_image_io/utils.py,sha256=1JMp6cmgWExedT8Y3AYsRBVVdMv6y7GSWJeWYth4xu0,12359
+cxx_image_io-1.1.2.dist-info/LICENSE.md,sha256=N8PvVOBetYqtxJt0prtYKDUCtTD90bUmhaSKxCdePtU,1083
+cxx_image_io-1.1.2.dist-info/METADATA,sha256=jX7Ygc4mgBt_PCNspPHTecNS2bv-vb6BN7jhWE2Y9rU,22092
+cxx_image_io-1.1.2.dist-info/WHEEL,sha256=fvNoTPbNdRAfsv1hWsmn2TKqULUpllfaSGBE1Ye0N8Q,99
+cxx_image_io-1.1.2.dist-info/top_level.txt,sha256=qfJHhjlSV-6njNwlUODGXv8V6CNBhvGOjZQShPnbsBQ,23
+cxx_image_io-1.1.2.dist-info/RECORD,,
