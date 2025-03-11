@@ -1,0 +1,15 @@
+allyson/__init__.py,sha256=zGc9rOEMPrRfAjFmWDnuy10MdAWmDj1kuCvoSMi0RWo,456
+allyson/agent.py,sha256=c4KHnhhoEm2AhSbfMCAUVOWfqHodqktcVIAR8tkuaq0,5278
+allyson/agent_loop.py,sha256=ZuvcuzYanWesVsS8rpSMsjcyOoA3KrGwGDoFOHXPsww,33269
+allyson/browser.py,sha256=SD4M0wtIgUmC6L-vrpDL31XyaV5TKpqUdsM5RdaeTZU,8708
+allyson/cli.py,sha256=-PccmLF4p85MLxfGgPQQjqS47l6rmoWRjSbiKFJhmLo,6449
+allyson/dom_extractor.py,sha256=L7AAJqLCdLHbTiIkf7mSt_DORfQEogakX6R1bSnaVAY,26981
+allyson/element.py,sha256=dbqQlX5ptWGTXPmjXjU9fAXz-13VnN0c3JTKOLi2MJA,10119
+allyson/page.py,sha256=hPx6tDhEVvmxAz5NWLr4dbqGiy6d0AeuVeNLeTIKZek,13072
+allyson/tools.py,sha256=dGYgv0uXO_v0amz-mQZ7-OA8gTZuSadBwLwfcTpt-XA,6476
+allyson-0.1.6.dist-info/LICENSE,sha256=ABj5exguSlAySk0QZxfr4GsMOqjk55mhOveZBG3JzrI,1069
+allyson-0.1.6.dist-info/METADATA,sha256=pp3gfq_Z6xZvvj52ENP2SsG-0OPxE70QbFzpkRAXbtY,7103
+allyson-0.1.6.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+allyson-0.1.6.dist-info/entry_points.txt,sha256=ToO12AeiL6QozHpZHuyX2dUxUC__99Qyli54isAUsZ4,45
+allyson-0.1.6.dist-info/top_level.txt,sha256=xWa6B3u4oqXQ7bf6uK3T9Vmd9b47udM-AdIIoC3w_Ck,8
+allyson-0.1.6.dist-info/RECORD,,
