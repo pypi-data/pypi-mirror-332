@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/officechunker/__init__.py
+src/officechunker/chunkers.py
+src/officechunker/cli.py
+src/officechunker/converter.py
+src/officechunker/file_handlers.py
+src/officechunker/process.py
+src/officechunker.egg-info/PKG-INFO
+src/officechunker.egg-info/SOURCES.txt
+src/officechunker.egg-info/dependency_links.txt
+src/officechunker.egg-info/entry_points.txt
+src/officechunker.egg-info/requires.txt
+src/officechunker.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+tiktoken
+tqdm
+markitdown[all]
+chonkie[all]

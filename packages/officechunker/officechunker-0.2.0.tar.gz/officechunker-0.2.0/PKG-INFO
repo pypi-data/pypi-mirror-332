@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: officechunker
+Version: 0.2.0
+Summary: Directly Parse and Chunk all the office files inside the folders
+Author-email: "Hangwoo, Cho" <t-hangwoocho@microsoft.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: tiktoken
+Requires-Dist: tqdm
+Requires-Dist: markitdown[all]
+Requires-Dist: chonkie[all]
