@@ -1,0 +1,3 @@
+[console_scripts]
+physicscore = Physicscore:physicscore
+reportgen = Physicscore:reportgen
