@@ -1,0 +1,17 @@
+mailinator/__init__.py,sha256=VfZCUnU5hDSd-Aj1L7VbZKtQzkm7O2OOEoE_puoBnWw,195
+mailinator/authenticators.py,sha256=h3VVWv3VfpnVYB0Zi6y2wNgry9fDEPb8NlatZ8QEyyk,1126
+mailinator/base.py,sha256=02fVeKbNNk6SLXRyd9RNltcBjC127Ia1QQZaKzNMxMs,531
+mailinator/domain.py,sha256=hajqW3bZl3DwhVg0K6H4nuMs8nKBsaZurK4LCa5kBS8,943
+mailinator/mailinator.py,sha256=firftoh_GjdBWD3S7Z6yW1GKk7-K6r-_d8NkNTRIJIk,2389
+mailinator/message.py,sha256=ieMWaLAKrYy1BIAfPTRBtlNoF46BfHNBO7L1Brqq_wg,8657
+mailinator/models.py,sha256=gDI3_ebvnqpFiJjbvhBK9eafLHvE_DNY3RF0aIU2PnE,12983
+mailinator/rules.py,sha256=2XEsBihij9xQ8ED9IQngtbdRyKFkqDnOWIpdGh9yQTM,1856
+mailinator/stats.py,sha256=g7RTfM88-DmoqFYqxYqck1B5syGPXfjNSGkxxAuAcAo,563
+mailinator/webhooks.py,sha256=DirW_XEsCQz66VJFDZjnuJntigqVub721m03OcTj7DM,1593
+tests/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+tests/test_mailinator.py,sha256=dZgon69VrudV2PJoZscH9GuZBCJu2p5XXHhUGPF9ufI,14904
+mailinator_python_client_2-0.0.8.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+mailinator_python_client_2-0.0.8.dist-info/METADATA,sha256=bJ9whajb7BrU6o52WambySUkuyqOBCubDkduQ-JlgdY,726
+mailinator_python_client_2-0.0.8.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+mailinator_python_client_2-0.0.8.dist-info/top_level.txt,sha256=L2-bbJeDx6XT3wxSmmgh9WWbLDndQf3Wx0cehn2wOLo,17
+mailinator_python_client_2-0.0.8.dist-info/RECORD,,
