@@ -1,0 +1,136 @@
+Metadata-Version: 2.4
+Name: pyrilog
+Version: 0.1.0
+Summary: A Python-based Verilog code generator
+Author-email: NightWatcher <hitszzzf@gmail.com>
+License: GPL-3.0-or-later
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest>=7.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Pyrilog
+
+一个用于生成 Verilog 代码的 Python 工具。使用 Python 的上下文管理器特性，以简洁的方式生成 Verilog 代码。
+
+## 安装
+
+使用 pip 安装：
+
+```bash
+pip install pyrilog
+```
+
+## 使用示例
+
+### 基本模块定义
+
+```python
+from pyrilog import ModuleBlock, add_parameter, add_input, add_output, VAR_TYPE
+
+with ModuleBlock("counter"):
+    # 定义参数
+    add_parameter("WIDTH", "8")
+    
+    # 定义端口
+    add_input("clk")
+    add_input("rst_n")
+    add_output("count", width="WIDTH", var_type=VAR_TYPE.REG)
+```
+
+生成的 Verilog 代码：
+
+```verilog
+module counter #(
+    parameter WIDTH = 8
+) (
+    input clk,
+    input rst_n,
+    output reg [WIDTH - 1 : 0] count
+);
+endmodule
+```
+
+### 时序逻辑
+
+```python
+from pyrilog import ModuleBlock, AlwaysBlock, IfBlock, ElseBlock
+
+with ModuleBlock("counter"):
+    add_parameter("WIDTH", "8")
+    add_input("clk")
+    add_input("rst_n")
+    add_output("count", width="WIDTH", var_type=VAR_TYPE.REG)
+    
+    with AlwaysBlock("posedge clk"):
+        with IfBlock("!rst_n"):
+            add_body("count <= 0;")
+        with ElseBlock():
+            add_body("count <= count + 1;")
+```
+
+### 生成块和循环
+
+```python
+from pyrilog import ModuleBlock, GenerateBlock, ForBlock, add_genvar
+
+with ModuleBlock("bit_reversal"):
+    add_input("data_in", width="8")
+    add_output("data_out", width="8")
+    
+    with GenerateBlock():
+        add_genvar("i")
+        with ForBlock("i=0", "i<8", "i=i+1", "reverse"):
+            add_body("assign data_out[i] = data_in[7-i];")
+```
+
+### 变量声明
+
+```python
+from pyrilog import ModuleBlock, add_wire, add_reg, add_integer
+
+with ModuleBlock("variables"):
+    add_wire("w_data", width="32")
+    add_reg("r_data", width="16", height="4")  # 创建寄存器数组
+    add_integer("counter")
+```
+
+### 模块实例化
+
+```python
+from pyrilog import ModuleBlock, add_instance
+
+with ModuleBlock("top"):
+    # 实例化子模块
+    params = {"WIDTH": "32", "DEPTH": "4"}
+    ports = {
+        "clk": "sys_clk",
+        "rst_n": "sys_rst_n",
+        "data_in": "top_data_in",
+        "data_out": "top_data_out"
+    }
+    add_instance("fifo", "u_fifo", params, ports)
+```
+
+## 特性
+
+- 支持模块定义
+- 支持 always 块
+- 支持条件语句（if-else）
+- 支持循环语句（for）
+- 支持生成块（generate）
+- 支持变量声明（wire、reg、genvar、integer）
+- 支持端口定义（input、output、inout）
+- 支持参数定义
+- 支持模块实例化
+- 支持多维信号
+- 支持组合逻辑和时序逻辑
+
+## 许可证
+
+本项目采用 GNU 通用公共许可证第3版（GPLv3）。这意味着你可以自由地：
+- 使用
+- 修改
+- 分发
+
+本软件，但任何修改后的版本都必须以相同的许可证发布。完整的许可证文本请参见 [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)。 
