@@ -1,0 +1,10 @@
+api_to_dataframe/__init__.py,sha256=meb6Lpo9ClPUZh40bgt1zqoA3Usf0WeyIcjvQlNfEvQ,112
+api_to_dataframe/controller/client_builder.py,sha256=T_yHVcdlGx-UXrpiFQzNf-KPppw6B5-lKK6kOI2Wnqc,9754
+api_to_dataframe/models/get_data.py,sha256=yOeH9M8X9GYlkto_ar_bZ7kDF3GCrpeasMOgGJUzLZA,8673
+api_to_dataframe/models/retainer.py,sha256=KTdipW7XvJ870nYcOA4ZZb-DTaGi8b0q9xR31tldpiA,8654
+api_to_dataframe/utils/__init__.py,sha256=ooyelkFIGlYs9HfYuRvf-SNMVXXOuKxxrfvzTxKVOxs,40
+api_to_dataframe/utils/logger.py,sha256=1oI60Y5RsOXlcLN4obbQ5_EtjZU1pOF6j_o1aGbyFXs,469
+api_to_dataframe-1.5.1.dist-info/LICENSE,sha256=pKPw6WmgJ6VjPoJ0zbDSL1Y4E-yDB0I8ds12QuL1XLU,1089
+api_to_dataframe-1.5.1.dist-info/METADATA,sha256=edC58V4krz-xLylk_6eSjo8dlDca18OwlbhD2ENmJho,6171
+api_to_dataframe-1.5.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+api_to_dataframe-1.5.1.dist-info/RECORD,,
