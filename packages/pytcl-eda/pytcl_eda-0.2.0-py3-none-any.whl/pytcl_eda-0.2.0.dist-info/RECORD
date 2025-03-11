@@ -1,0 +1,12 @@
+pytcl/__init__.py,sha256=y-TY4GanD8zWnbvniBHdCVVPiOPPfkBWzavg2Gs8oAY,421
+pytcl/call.py,sha256=eyL5mIBQB4FCl-_54ikePZ_RLU3ELryeWWRPONSWL_g,3641
+pytcl/error.py,sha256=O7-2Dd_tLfddwCoW6AiyBmoQQRaDoCuNPYcQdYt58mE,888
+pytcl/execute.tcl,sha256=Sxg9F_lOfu1LlLDWiXnuWZeu0K84oAPvpwqSjUSiLdI,2394
+pytcl/pytcl.py,sha256=wnSRNESLkoKB1x6ej8SIGImYZJmQ5YQYDcmKaSLklUA,3388
+pytcl/receiver.py,sha256=daefBgRC1hir_vCvHccCmXgVjJOQxIFEDoSQQwwab2w,601
+pytcl/sender.py,sha256=ABiqdKu202HEilEGfrq8m3UDmPZAQ6xSG0UqLSkmFlU,446
+pytcl/value.py,sha256=e-64zUeFAxnyJy0lcaq25TMfZ1Tk6EhWohl8POmNSok,1515
+pytcl/vivado.py,sha256=3rk3pakDToh-cEKtXW6ESA0pze5MxAbxoRxhZQQR7hI,1541
+pytcl_eda-0.2.0.dist-info/METADATA,sha256=FW4oPC9haONgvWcGGXHNYGd4dPYi9Mjt9duDh7pWeb8,5649
+pytcl_eda-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytcl_eda-0.2.0.dist-info/RECORD,,
