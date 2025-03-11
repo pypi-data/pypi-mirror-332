@@ -1,0 +1,2 @@
+[console_scripts]
+testshubham9900 = testshubham9900:hello
