@@ -1,0 +1,2 @@
+[console_scripts]
+lwalkm = lwalkm.pipeline:main

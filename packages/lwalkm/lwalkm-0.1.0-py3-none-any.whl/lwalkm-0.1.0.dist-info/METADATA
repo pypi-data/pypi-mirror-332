@@ -1,0 +1,162 @@
+Metadata-Version: 2.2
+Name: lwalkm
+Version: 0.1.0
+Summary: Integrated Protein Morphing Pipeline with Interpolation, CorrectionNet/NEB, and GROMACS Minimization.
+Home-page: https://github.com/yourusername/lwalkm
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: biopython
+Requires-Dist: openmm
+Requires-Dist: gymnasium
+Requires-Dist: stable-baselines3
+Requires-Dist: gromacs
+
+# lwalkm
+
+lwalkm is an integrated protein morphing pipeline designed for research in structural biology. It combines several steps into one tool:
+
+1. Local Interpolation ("Local Walk")  
+   Optionally, generate intermediate structures by interpolating between two protein configurations over a user‐defined set of residues. Each interpolated structure is refined using GROMACS.
+
+2. CorrectionNet/NEB Optimization  
+   The refined interpolation frames (or preexisting ones matching the pattern `localwalk__refined.pdb`) are loaded as a baseline pathway ("beads on a string"). A CorrectionNet neural network is then pre‐trained and integrated with a NEB (Nudged Elastic Band) framework using cyclic simulated annealing and a SAC (Soft Actor-Critic) agent to drive the pathway toward a lower–energy transition.
+
+3. Final Minimization  
+   Finally, a separate GROMACS minimization pipeline can be run on each final image, with energy extraction and plotting.
+
+All key parameters (interpolation, CorrectionNet training, SA parameters, etc.) are configurable via command-line flags.
+
+## Installation
+
+To build and install lwalkm from source, follow these steps:
+
+1. Install Build Tools:  
+   Make sure you have an up-to-date pip, setuptools, and wheel:
+   ```bash
+   python3 -m pip install --upgrade pip setuptools wheel
+   ```
+
+2. Build the Package:  
+   From the project root (the directory containing `pyproject.toml`), run:
+   ```bash
+   python3 -m build
+   ```
+   This will generate a `dist/` folder with your distribution files (e.g., a `.whl` file).
+
+3. Install Locally:  
+   To install the package, run:
+   ```bash
+   python3 -m pip install .
+   ```
+   After installation, a console script named `lwalkm` will be available.
+
+## Usage
+
+Once installed, you can run the pipeline from the command line. Below are two usage examples.
+
+### Minimal Usage
+
+If you want to run the pipeline with the fewest command-line options, you need to specify:
+
+1. Endpoints:  
+   `-conf1` and `-conf2` (your two protein PDB files; no defaults).
+
+2. Interpolation Option (if needed):  
+   Use `--interpolate` and supply the residues with `--residues`.
+
+Example (Interpolation Case):
+
+
+lwalkm -conf1 model_01A.pdb -conf2 model_01B.pdb --interpolate --residues "1-10" --steps 16 --run_minimizer
+
+
+This command uses all other default parameters (for example, `--steps` defaults to 10, meaning 11 frames are generated, `-pretrain_epochs` defaults to 200, etc.).
+
+### No Interpolation
+
+If you do not wish to interpolate, make sure you have preexisting files named `localwalk__refined.pdb` in your working directory:
+
+lwalkm -conf1 model_01A.pdb -conf2 model_01B.pdb
+
+
+In this case, the pipeline will detect the number of images from your local files (with a fallback default of 16 via the `-nimages` flag).
+
+### Full Example
+
+Below is an example with additional parameters:
+
+```bash
+lwalkm -conf1 model_01A.pdb -conf2 model_01B.pdb --interpolate --residues "1-313" --steps 10 --run_minimizer
+```
+
+This command:
+- Uses `model_01A.pdb` and `model_01B.pdb` as endpoints.
+- Performs interpolation over residues 1–313 (default global set).
+- Generates 11 frames (10 steps + 1).
+- Uses all other default parameters for training and optimization.
+- Runs the final GROMACS minimizer pipeline.
+
+## Default Parameters
+
+If you omit any flag, the following defaults are used:
+
+| Flag                             | Default Value  | Description                                                                                   |
+|-------------------------------   |---------------:|:----------------------------------------------------------------------------------------------|
+| Endpoints                        |                |                                                                                               |
+| `-conf1` / `-conf2`              | (Required)     | Protein A and B PDB files (must supply).                                                      |
+| Interpolation                    |                |                                                                                               |
+| `--interpolate`                  | False          | Whether to perform local interpolation.                                                       |
+| `--residues`                     | None           | Global residues to interpolate (required if using `--interpolate`).                           |
+| `--chain_residues`               | None           | Chain-specific residues, e.g., "A:1-10,B:20-30".                                              |
+| `--steps`                        | 10             | Number of interpolation steps (produces `steps + 1` frames).                                  |
+| `--chains`                       | None           | Comma-separated chain IDs (if omitted, uses all common chains).                               |
+| `--output_prefix`                | "localwalk"    | Prefix for interpolation output files.                                                        |
+| Pipeline                         |                |                                                                                               |
+| `-nimages`                       | 16             | Expected number of images if not interpolating (the code counts existing `localwalk` files).  |
+| `-pretrain_epochs`               | 200            | CorrectionNet pre-training epochs.                                                            |
+| `-sac_timesteps`                 | 50             | Total timesteps for the SAC agent in the NEB environment.                                     |
+| `--sa_steps`                     | 1000           | Number of simulated annealing steps in the NEB environment’s refinement routine.              |
+| `--max_steps`                    | 50             | Maximum steps per episode in the NEB environment.                                             |
+| Cyclic SA (Pre-training)         |                |                                                                                               |
+| `--sa_cycles`                    | 3              | Number of heat/cool cycles when cyclic SA is triggered.                                       |
+| `--sa_steps_per_cycle`           | 300            | Steps per cycle during cyclic SA.                                                             |
+| `--sa_T_high`                    | 400            | High temperature (K) for cyclic SA.                                                           |
+| `--sa_T_low`                     | 50             | Low temperature (K) for cyclic SA.                                                            |
+| `--sa_update_frequency`          | 5              | Frequency (in epochs) to run cyclic SA during CorrectionNet pre-training.                     |
+| CorrectionNet Hyperparameters.   |                |                                                                                               |
+| `--lr`                           | 0.0005         | Learning rate for the CorrectionNet Adam optimizer.                                           |
+| `--sigma`                        | 0.05           | Standard deviation of noise added during CorrectionNet pre-training.                          |
+| L-BFGS-B Minimization            |                |                                                                                               |
+| `--lbfgs_maxiter`                | 5000           | Maximum iterations for SciPy’s L‑BFGS‑B minimizer per final image.                            |
+| `--lbfgs_disp`                   | False          | If specified, displays L‑BFGS‑B optimizer output.                                             |
+| Final GROMACS Minimizer          |                |                                                                                               |
+| `--run_minimizer`                | False          | If true, runs the final GROMACS minimizer pipeline on each final structure.                   |
+
+Key Points:
+- If you omit a flag, its default is used.
+- Endpoints (`-conf1` and `-conf2`) are required.
+- If you do not specify `--interpolate`, you must have preexisting `localwalk__refined.pdb` files.
+- The package is designed so that you can start with a minimal run and then tweak parameters as needed.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request on GitHub.
+
+## Contact
+
+For questions or suggestions, please contact Bernard Kwadwo Essuman (mailto:bessuman.academia@gmail.com).
+
