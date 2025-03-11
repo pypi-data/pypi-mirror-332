@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package divi.proto.trace.v1;
+
+import "divi/proto/resource/v1/resource.proto";
+
+option go_package = "services/proto";
+
+message TracesData {
+    // An array of ResourceSpans.
+    // For data coming from a single resource this array will typically contain one element.
+    repeated ResourceSpans resource_spans = 1;
+}
+
+message ResourceSpans {
+    // The resource for which the spans are reported.
+    divi.proto.resource.v1.Resource resource = 1;
+}
