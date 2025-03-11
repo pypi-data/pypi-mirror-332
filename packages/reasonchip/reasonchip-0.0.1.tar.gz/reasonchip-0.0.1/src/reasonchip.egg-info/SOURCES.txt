@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/reasonchip/__init__.py
+src/reasonchip/exceptions.py
+src/reasonchip.egg-info/PKG-INFO
+src/reasonchip.egg-info/SOURCES.txt
+src/reasonchip.egg-info/dependency_links.txt
+src/reasonchip.egg-info/requires.txt
+src/reasonchip.egg-info/top_level.txt
