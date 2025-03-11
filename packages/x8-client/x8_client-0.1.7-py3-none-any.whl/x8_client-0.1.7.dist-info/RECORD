@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=MNQwNiTouRmKSI6oJGBiEfmFqZGWeY8By1HsCOne5AY,34
+tests/conftest.py,sha256=J9hWtjOQWBzO16YRtMWPJSXW0ahF6me-ktr5ArQ2cEo,1289
+tests/test_api_client.py,sha256=bX6ZI_7vfW8gGme-Zk5vSsyfcxhGyqWzEcHlsiedA7w,3779
+tests/test_integration.py,sha256=pggje6NqT8-xeT5AEAG3nw8Z2CRr7Rgck9fBSKszMsU,3911
+x8/__init__.py,sha256=Nww7xghWpnpauFQcNqd0CqUjPdoohNfR0W7xVmdIlmw,117
+x8/api_client.py,sha256=kIrkmTqUsTDhVUPPmx4U50J1o7LT0FV4uNwdUXaM0nM,9660
+x8/config.py,sha256=2aj4zc18lSQV40PSbXLOSOoPIsgwK7eZ8oaOdWkKFCI,343
+x8/exceptions.py,sha256=wzyIpLcNz2JaTmjeL6EJSFpT9T3ru02AozncaNZZfC0,224
+x8/models.py,sha256=gijQhRe4ifhshjDP07EGRVi4nJBwxt3l52tW9TAoB_w,4875
+x8_client-0.1.7.dist-info/LICENSE,sha256=u5swvZ0LvVqH2rcCSeRkKJ1JeMZY09_knAmUpoOVkcU,1066
+x8_client-0.1.7.dist-info/METADATA,sha256=kHoOeu_UzJHvRmE4TM95i_7zcElBBNo1x-FdV2KLMzI,2621
+x8_client-0.1.7.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+x8_client-0.1.7.dist-info/top_level.txt,sha256=olnr2NFhG_391wWxfQuzGFLG8YcEpL8BOw6P9TKNUBo,9
+x8_client-0.1.7.dist-info/RECORD,,
