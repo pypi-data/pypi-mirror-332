@@ -1,0 +1,12 @@
+ss_pybind11/__init__.py,sha256=aFXZrgrj4shO7-Clv5dhXTGSeplG9ejpF7AORjtEyBw,246
+ss_pybind11/_core.cpython-38-i386-linux-gnu.so,sha256=FkPu4pR1xHbEJoIwHKBUkAdHxAlxATiOrA3b4hMzT5E,137885
+ss_pybind11/_core.pyi,sha256=fN7TN1hPvo3WiK-x-a9YsV820gWP9Qn8hPYy79CtPwM,209
+ss_pybind11/_version.py,sha256=VbCwMFx4upVKH62w07vdq9aDVTPDo0pux890ohnqLxM,513
+ss_pybind11/_version.pyi,sha256=j5kbzfm6lOn8BzASXWjGIA1yT0OlHTWqlbyZ8Si_o0E,118
+ss_pybind11/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ss_pybind11.libs/libgcc_s-887de51c.so.1,sha256=RNCpguSD0HdFtlL1g8NK7PFi5CjUceWeO3d0Hf_dMQ0,218145
+ss_pybind11.libs/libstdc++-d6415257.so.6.0.33,sha256=meIiZn0YlC5otOd-KKSYWFNdlouafStLQyPhNs_zcYQ,3597909
+ss_pybind11-0.8.34.dist-info/METADATA,sha256=NRFMcYR1rCE91ElEZyATcNgfFpupR9dPDmlnqVNHWlU,5754
+ss_pybind11-0.8.34.dist-info/WHEEL,sha256=qFDgMxTpBYeNh5GrnMzGJf1S7BzppRZrdo6xQgYBJ8w,113
+ss_pybind11-0.8.34.dist-info/RECORD,,
+ss_pybind11-0.8.34.dist-info/licenses/LICENSE,sha256=j1mtQRkENK_gPALT45ha0fXKVgoEcAHJHSUa8g7cZoY,1073
