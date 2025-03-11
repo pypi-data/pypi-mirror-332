@@ -1,0 +1,8 @@
+pytest_cratedb_reporter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_cratedb_reporter/plugin.py,sha256=PIYOgkclPZAKEcIn8KqRu69s-qrlF7GyaD8SjIk3xQA,3190
+pytest_cratedb_reporter-0.1.0.dist-info/LICENSE,sha256=QfqG7vNrFPSPN3Dl1-D2LAhfCt2chzpyIm69ItdDejs,1073
+pytest_cratedb_reporter-0.1.0.dist-info/METADATA,sha256=RewflhtHnVd_TFZFSUu89YsvTaKwQmcXAem3mL_sjxE,3441
+pytest_cratedb_reporter-0.1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+pytest_cratedb_reporter-0.1.0.dist-info/entry_points.txt,sha256=WLWNF2-Q0ksJT14JZmf1DY5BYvnjEOdJM3r5EJOCrs0,61
+pytest_cratedb_reporter-0.1.0.dist-info/top_level.txt,sha256=6rGJ2CYPVE7A1GmY2KKLWlUT412firkyFmbGVhxmcIE,24
+pytest_cratedb_reporter-0.1.0.dist-info/RECORD,,
