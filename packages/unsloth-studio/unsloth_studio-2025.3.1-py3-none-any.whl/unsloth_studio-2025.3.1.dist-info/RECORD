@@ -1,0 +1,12 @@
+unsloth_studio/__init__.py,sha256=VH6ygaHxyQk3PlA3cm9F8I1pl0wM4lqjy2wPxvk9uTg,811
+unsloth_studio/chat.py,sha256=ihvxYnIudRr763KUhXwbAxsuPRwJBpZUBodVyj8_2No,6006
+unsloth_studio/evaluation.py,sha256=TjX9-64XWfYIYus1gn9OktEfnr7wO9f5GF_HxMj9cQU,7874
+unsloth_studio/losses.py,sha256=PmmvnX9GdM2LlsPTPkzli67ca9FtJAuiO0l9g-JkMpc,9589
+unsloth_studio/utils.py,sha256=nNaEUUTKswyKYWro4b0cWYknjG_6HePNhyJmJUyUE1I,1351
+unsloth_studio/tests/__init__.py,sha256=f9IUV8VWGbln97SXIjKdHrz7TkYc4PleaMc2tbbJGn8,783
+unsloth_studio/tests/losses.py,sha256=hym7te-u6kfyGZboOk3vwDIVzkFO9966z7kn6hXr_NU,8666
+unsloth_studio-2025.3.1.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+unsloth_studio-2025.3.1.dist-info/METADATA,sha256=sGV4coVQC5PHMtyw31pFnb4Vltq-8Fch4agUeh8p54s,68150
+unsloth_studio-2025.3.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+unsloth_studio-2025.3.1.dist-info/top_level.txt,sha256=8Hsj2FGDY_bZBbY029Xeb5l-N8Q3Fq7n28O1IyjjNYA,15
+unsloth_studio-2025.3.1.dist-info/RECORD,,
