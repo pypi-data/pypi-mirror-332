@@ -1,0 +1,14 @@
+[project]
+name = "mathlibgbvcc"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Gabriel", email = "gabriel.bauer9@hotmail.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = []
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

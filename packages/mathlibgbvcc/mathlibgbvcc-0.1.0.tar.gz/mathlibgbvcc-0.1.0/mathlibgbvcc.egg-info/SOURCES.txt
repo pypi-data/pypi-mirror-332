@@ -1,0 +1,12 @@
+pyproject.toml
+mathlib/entities/__init__.py
+mathlib/entities/point_2d.py
+mathlib/entities/point_3d.py
+mathlib/operations/__init__.py
+mathlib/operations/line_segment.py
+mathlib/operations/matrixes.py
+mathlib/operations/utils.py
+mathlibgbvcc.egg-info/PKG-INFO
+mathlibgbvcc.egg-info/SOURCES.txt
+mathlibgbvcc.egg-info/dependency_links.txt
+mathlibgbvcc.egg-info/top_level.txt
