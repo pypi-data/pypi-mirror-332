@@ -1,0 +1,10 @@
+README.md
+setup.py
+galamo.egg-info/PKG-INFO
+galamo.egg-info/SOURCES.txt
+galamo.egg-info/dependency_links.txt
+galamo.egg-info/requires.txt
+galamo.egg-info/top_level.txt
+stella/__init__.py
+stella/galaxy_morph.py
+test/test.py
