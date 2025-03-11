@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+nict.egg-info/PKG-INFO
+nict.egg-info/SOURCES.txt
+nict.egg-info/dependency_links.txt
+nict.egg-info/top_level.txt
+nictemp/prompt_toolkit-3.0.50-py3-none-any.whl
