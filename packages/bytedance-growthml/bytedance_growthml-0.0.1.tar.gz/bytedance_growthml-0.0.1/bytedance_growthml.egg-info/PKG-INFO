@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: bytedance-growthml
+Version: 0.0.1
+Summary: A simple package named bytedance_growthml
+Home-page: https://github.com/artifact/bytedance_growthml.git
+Author: artifact
+Author-email: artifact@example.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
