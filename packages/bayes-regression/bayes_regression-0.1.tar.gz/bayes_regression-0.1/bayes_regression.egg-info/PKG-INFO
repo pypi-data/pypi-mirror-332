@@ -1,0 +1,54 @@
+Metadata-Version: 2.2
+Name: bayes-regression
+Version: 0.1
+Summary: A Bayesian Neural Network framework for regression tasks implemented in PyTorch.
+Home-page: https://github.com/zchccsx/Bayes-by-Backprop
+Author: Chenhang Zheng
+Author-email: chenhang.zheng.edu@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Bayes by Backprop
+
+A Bayesian Neural Network framework for regression tasks implemented in PyTorch. This framework provides tools for uncertainty estimation in neural networks through variational inference.
+
+## Installation
+
+```bash
+pip install bayes-by-backprop
+```
+
+Or install directly from GitHub:
+
+```bash
+pip install git+https://github.com/zchccsx/Bayes-by-Backprop.git
+```
+
+## Usage
+
+```python
+import Bayes
+from Bayes import BayesianLinear, BayesianRegressor
+
+# Create a Bayesian neural network
+model = BayesianRegressor(input_dim=10, hidden_dims=[32, 16], output_dim=1)
+
+# Use it for regression with uncertainty estimation
+...
+```
+
+## License
+
+MIT
