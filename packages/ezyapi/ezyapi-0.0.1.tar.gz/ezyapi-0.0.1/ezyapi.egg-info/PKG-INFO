@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ezyapi
+Version: 0.0.1
+Summary: Frameworks for creating APIs without controllers
+Home-page: https://github.com/3x-haust/Python_Ezy_API
+Author: 3xhaust, nck90
+Author-email: s2424@e-mirim.hs.kr, s2460@e-mirim.hs.k
+Keywords: 3xhaust,nck90,python api,ezy api,backend
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: pydantic
+Requires-Dist: uvicorn
+Requires-Dist: inflect
+
+서비스만 작성을 하면 컨트롤러를 자동으로 작성해주는, 프레임워크
