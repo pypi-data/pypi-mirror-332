@@ -1,0 +1,85 @@
+Metadata-Version: 2.2
+Name: theotown_plugin
+Version: 0.0.6
+Summary: Plugin Editor for TheoTown (Unofficial)
+Home-page: https://github.com/SrBolilloStudios/theotown_plugin_editor.git
+Author: Javier Cruz Uc
+Author-email: contacto@srbolillo.net
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# JSON Plugin Generation Project
+
+This project allows generating custom JSON files for plugins using Python. It is ideal for creating plugin configurations with detailed metadata and customization options.
+
+## Requirements
+
+- Python 3.x
+- Standard modules: `uuid`, `json`
+
+## Installation
+
+Clone the repository or download the files directly:
+
+```bash
+git clone https://github.com/SrBolilloStudios/theotown_plugin_editor.git
+cd your-repository
+```
+
+## Usage
+
+### Generate a UUID
+
+The project automatically generates a unique UUID:
+
+```python
+import uuid
+uuid = uuid.uuid4()
+print(uuid)
+```
+
+### Create a Manifest
+
+The `manifest` function allows creating a JSON manifest with the following parameters:
+
+```python
+manifest(id_: str, version: float, title: str, platforms, text: str, autor: str, thumbnail: str)
+```
+
+Example:
+
+```python
+json_data = manifest("plugin-1", 1.0, "Sample Plugin", "Windows", "Plugin description", "Author", "url/thumbnail.png")
+print(json_data)
+```
+
+### Create a Plugin JSON
+
+The `json_plugin` function allows creating a detailed JSON for a plugin with custom parameters:
+
+```python
+json_plugin(id: str, type: str, autor: str, width: int, height: int, frame: int, smoke_add: bool, smoke_id: Optional[int] = None, smoke_positions: Optional[int] = None, level: int = 0)
+```
+
+Example with smoke:
+
+```python
+plugin_data = json_plugin("plugin-2", "building", "Author", 10, 15, 1, True, 5, [3, 4])
+print(plugin_data)
+```
+
+## Contribution
+
+Contributions are welcome. You can fork the project and submit a pull request.
+
+## License
+
+This project is distributed under the MIT license.
