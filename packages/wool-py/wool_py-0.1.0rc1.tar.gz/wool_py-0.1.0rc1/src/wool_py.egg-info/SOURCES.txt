@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/wool_py.egg-info/PKG-INFO
+src/wool_py.egg-info/SOURCES.txt
+src/wool_py.egg-info/dependency_links.txt
+src/wool_py.egg-info/entry_points.txt
+src/wool_py.egg-info/requires.txt
+src/wool_py.egg-info/top_level.txt
