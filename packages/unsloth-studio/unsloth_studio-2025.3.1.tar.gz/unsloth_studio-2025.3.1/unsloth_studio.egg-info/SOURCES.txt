@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+unsloth_studio/__init__.py
+unsloth_studio/chat.py
+unsloth_studio/evaluation.py
+unsloth_studio/losses.py
+unsloth_studio/utils.py
+unsloth_studio.egg-info/PKG-INFO
+unsloth_studio.egg-info/SOURCES.txt
+unsloth_studio.egg-info/dependency_links.txt
+unsloth_studio.egg-info/requires.txt
+unsloth_studio.egg-info/top_level.txt
+unsloth_studio/tests/__init__.py
+unsloth_studio/tests/losses.py

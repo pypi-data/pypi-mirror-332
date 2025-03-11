@@ -1,0 +1,11 @@
+torch
+packaging
+tyro
+tqdm
+psutil
+wheel>=0.42.0
+numpy
+pillow
+
+[:platform_system == "Linux"]
+triton
