@@ -1,0 +1,8 @@
+setup.py
+newunicfolder/__init__.py
+newunicfolder/moduleone.py
+newunicfolder/moduletwo.py
+newunicfolder.egg-info/PKG-INFO
+newunicfolder.egg-info/SOURCES.txt
+newunicfolder.egg-info/dependency_links.txt
+newunicfolder.egg-info/top_level.txt
