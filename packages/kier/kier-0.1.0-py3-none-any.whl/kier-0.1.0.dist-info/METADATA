@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: kier
+Version: 0.1.0
+Summary: Kier
+Project-URL: Homepage, https://github.com/phillipdupuis/kier
+Project-URL: Repository, https://github.com/phillipdupuis/kier
+Author-email: Phillip Dupuis <phillip_dupuis@alumni.brown.edu>
+License: GNU General Public License v3.0
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: openai>=1.65.5
+Provides-Extra: dev
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# kier
