@@ -1,0 +1,3 @@
+importlib.metadata>=8.6
+darkdetect>=0.8
+pyperclip>=1.9
