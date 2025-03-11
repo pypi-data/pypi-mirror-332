@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+time_it_profiler.egg-info/PKG-INFO
+time_it_profiler.egg-info/SOURCES.txt
+time_it_profiler.egg-info/dependency_links.txt
+time_it_profiler.egg-info/top_level.txt
