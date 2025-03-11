@@ -1,0 +1,9 @@
+arrow
+beautifulsoup4
+click
+selenium
+pyyaml
+requests
+fastapi
+uvicorn
+cryptography
