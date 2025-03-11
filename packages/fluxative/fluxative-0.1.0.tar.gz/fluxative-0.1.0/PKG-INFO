@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: fluxative
+Version: 0.1.0
+Summary: Generate LLM context files from Git repositories
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: gitingest>=0.1.4
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: ruff>=0.9.10; extra == "dev"
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
