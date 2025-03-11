@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyspark-date-validator
+Version: 0.1.2
+Summary: A PySpark package to check missing dates in tables
+Author-email: Natthakit Jeamprapakorn <natthakit.j@kasikornline.com>
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyspark
+
+# Date Validator PySpark
+A PySpark utility for validating date completeness in tables.
+
+## Installation
+```bash
+pip install pyspark-date-validator
