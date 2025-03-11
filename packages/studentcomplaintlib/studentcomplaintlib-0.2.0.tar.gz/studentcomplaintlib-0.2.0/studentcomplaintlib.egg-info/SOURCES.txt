@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+studentcomplaintlib/__init__.py
+studentcomplaintlib/post_complaint.py
+studentcomplaintlib.egg-info/PKG-INFO
+studentcomplaintlib.egg-info/SOURCES.txt
+studentcomplaintlib.egg-info/dependency_links.txt
+studentcomplaintlib.egg-info/top_level.txt
