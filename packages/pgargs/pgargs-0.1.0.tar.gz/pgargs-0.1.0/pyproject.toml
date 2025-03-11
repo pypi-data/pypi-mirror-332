@@ -1,0 +1,33 @@
+[project]
+name = "pgargs"
+version = "0.1.0"
+description = "Named arguments for asyncpg"
+authors = [{ name = "Raymond Butcher" }]
+readme = "README.md"
+license = { text = "MIT License" }
+keywords = ["asyncpg"]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.urls]
+homepage = "https://github.com/raymondbutcher/pgargs"
+repository = "https://github.com/raymondbutcher/pgargs.git"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "pydantic>=2.10.6",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.25.3",
+    "ruff>=0.9.10",
+]
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
