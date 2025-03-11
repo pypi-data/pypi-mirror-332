@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+siphon
+xarray
+pyproj
+metpy
+toml
+tomli
+netCDF4
+cht_utils
+
+[tests]
+pytest
