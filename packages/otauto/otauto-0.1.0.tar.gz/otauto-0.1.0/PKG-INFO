@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: otauto
+Version: 0.1.0
+Summary: vnc窗口操作工具
+Author: ordtie
+Author-email: 283044916@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: aircv==1.4.6
+Requires-Dist: cupy==13.4.0
+Requires-Dist: deepdiff==8.2.0
+Requires-Dist: fuzzywuzzy==0.18.0
+Requires-Dist: loguru==0.7.2
+Requires-Dist: matplotlib==3.10.1
+Requires-Dist: numpy==2.2.3
+Requires-Dist: opencv_python==4.11.0.86
+Requires-Dist: pexpect==4.9.0
+Requires-Dist: Pillow==11.1.0
+Requires-Dist: pycryptodomex==3.21.0
+Requires-Dist: pymongo==4.11.2
+Requires-Dist: pyvirtualdisplay==3.0
+Requires-Dist: Requests==2.32.3
+Requires-Dist: scikit_learn==1.6.1
+Requires-Dist: scipy==1.15.2
+Requires-Dist: setuptools==75.1.0
+Requires-Dist: tritonclient==2.53.0
+Requires-Dist: Twisted==24.11.0
