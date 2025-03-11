@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mytoolset/__init__.py
+mytoolset/uninstall.py
+mytoolset.egg-info/PKG-INFO
+mytoolset.egg-info/SOURCES.txt
+mytoolset.egg-info/dependency_links.txt
+mytoolset.egg-info/requires.txt
+mytoolset.egg-info/top_level.txt
