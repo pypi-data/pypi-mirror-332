@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: testwknd
+Version: 1.0.1
+Summary: I'm on my way
+Author: 1nfinity
+Author-email: edmond.nistor723@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: summary
+
+This is the homepage of our project.
