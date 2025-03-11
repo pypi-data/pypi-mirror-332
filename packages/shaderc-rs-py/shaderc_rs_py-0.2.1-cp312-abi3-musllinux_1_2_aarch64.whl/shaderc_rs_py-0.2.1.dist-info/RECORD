@@ -1,0 +1,9 @@
+shaderc_rs_py-0.2.1.dist-info/METADATA,sha256=x6Dhit3BD10qu5ylYvRq_4PyZ2OeVIHSaNVRgRRXE1Q,434
+shaderc_rs_py-0.2.1.dist-info/WHEEL,sha256=LXb166qGKXwihH4djCX-QTtMZdtw2ct-IiYRVe4qvuA,107
+shaderc_rs_py-0.2.1.dist-info/licenses/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+shadercrs.libs/libgcc_s-e52197c3.so.1,sha256=vkPW1Auw6CH9Bjk7frmX3hry_1H9c0tRI0Ncyg71WUI,724137
+shadercrs.libs/libstdc++-405035b3.so.6,sha256=dhdlt148awG0mZDLGM8wZy1R4PeU5HXvi8l9pgv4DiY,22443689
+shadercrs/__init__.py,sha256=I5RBSZLGjfVZfCg88fZUWD2_2cAWtoES-Olh3U_b8JA,142
+shadercrs/enums.py,sha256=xe3NGkgnbZStSCI5A9ccPDu0j2RyvRyVSgQMRQ78jsw,9019
+shadercrs/shadercrs.abi3.so,sha256=Orp5sNYNyCdGWvUUmJWzu6-JLGfQDnSBsC8vPKv5_nE,7282185
+shaderc_rs_py-0.2.1.dist-info/RECORD,,
