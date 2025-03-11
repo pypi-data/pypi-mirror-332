@@ -1,0 +1,9 @@
+README.md
+setup.py
+eamcvd/__init__.py
+eamcvd.egg-info/PKG-INFO
+eamcvd.egg-info/SOURCES.txt
+eamcvd.egg-info/dependency_links.txt
+eamcvd.egg-info/requires.txt
+eamcvd.egg-info/top_level.txt
+eamcvd/requlib/__init__.py
