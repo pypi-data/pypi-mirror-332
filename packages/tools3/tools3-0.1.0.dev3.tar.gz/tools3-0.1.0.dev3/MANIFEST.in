@@ -1,0 +1,2 @@
+recursive-exclude docs/dev.md
+recursive-exclude docs/USE.md
