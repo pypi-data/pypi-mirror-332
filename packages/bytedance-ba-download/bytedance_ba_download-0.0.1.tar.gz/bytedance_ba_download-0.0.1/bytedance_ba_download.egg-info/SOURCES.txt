@@ -1,0 +1,6 @@
+setup.py
+bytedance_ba_download/__init__.py
+bytedance_ba_download.egg-info/PKG-INFO
+bytedance_ba_download.egg-info/SOURCES.txt
+bytedance_ba_download.egg-info/dependency_links.txt
+bytedance_ba_download.egg-info/top_level.txt
