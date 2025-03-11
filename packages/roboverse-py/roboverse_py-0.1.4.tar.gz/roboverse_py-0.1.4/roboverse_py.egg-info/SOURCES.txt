@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+metasim/__init__.py
+metasim/constants.py
+metasim/types.py
+roboverse_py.egg-info/PKG-INFO
+roboverse_py.egg-info/SOURCES.txt
+roboverse_py.egg-info/dependency_links.txt
+roboverse_py.egg-info/requires.txt
+roboverse_py.egg-info/top_level.txt
