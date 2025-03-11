@@ -1,0 +1,9 @@
+asreview>=v2.0b0
+jinja2
+cfgtemplater
+
+[lint]
+ruff
+
+[test]
+pytest
