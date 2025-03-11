@@ -1,0 +1,5 @@
+setup.py
+pupok_123.egg-info/PKG-INFO
+pupok_123.egg-info/SOURCES.txt
+pupok_123.egg-info/dependency_links.txt
+pupok_123.egg-info/top_level.txt
