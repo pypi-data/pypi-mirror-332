@@ -1,0 +1,6 @@
+setup.py
+bytedance_erdosidl/__init__.py
+bytedance_erdosidl.egg-info/PKG-INFO
+bytedance_erdosidl.egg-info/SOURCES.txt
+bytedance_erdosidl.egg-info/dependency_links.txt
+bytedance_erdosidl.egg-info/top_level.txt
