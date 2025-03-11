@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: onelinerml
+Version: 0.1.3
+Summary: A one-line machine learning library with remote API and dashboard support.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: streamlit
+Requires-Dist: pyngrok
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary
