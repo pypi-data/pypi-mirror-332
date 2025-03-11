@@ -1,0 +1,11 @@
+taskaway/column_layout_screen.py,sha256=czT3qZDFAyKHC9FnG6J9oEmEWYwe2ePOCisXqUhnklk,3574
+taskaway/constants.py,sha256=MQDFIwMxl7bfaQJ84a4Qn6oOv0cG-U7waYRjkqbn3fk,1064
+taskaway/main.py,sha256=2rn9Vm_HC3e4SOmH3ZuybJsTTYlL9_zz9N7RRchWV-k,19824
+taskaway/taskaway.tcss,sha256=cUZ4y-eVvEgaSv5INun3s2dcgMRWU_UZpffsdTqhZtQ,549
+taskaway/taskaway_types.py,sha256=ok9XAObbESe6YQk3OXEJUpm79Yh2jGBO41jcyDn2wUc,2434
+taskaway/utils.py,sha256=bXtD7j8Xz043WprJR2ydZEGis_digB07NVDiZ_S1mk4,3674
+taskaway-0.3.0.dist-info/LICENSE,sha256=3gay9LJltIHkZG-ieiUJ42eSRbrlIq9hDVt-Ctxfn8k,1064
+taskaway-0.3.0.dist-info/METADATA,sha256=NG-1ER2RL_PzWbOyalA1v_ZeuWBjZeEx3iR0suDGNoQ,464
+taskaway-0.3.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+taskaway-0.3.0.dist-info/entry_points.txt,sha256=JoXFp48v6mgUqHA7_Cf8oYuByxhBqFzxQbNaCtE1u_E,60
+taskaway-0.3.0.dist-info/RECORD,,
