@@ -1,0 +1,8 @@
+setup.py
+G0l0vach/__init__.py
+G0l0vach/legenda.py
+G0l0vach/serega.py
+GOLOVACH.egg-info/PKG-INFO
+GOLOVACH.egg-info/SOURCES.txt
+GOLOVACH.egg-info/dependency_links.txt
+GOLOVACH.egg-info/top_level.txt

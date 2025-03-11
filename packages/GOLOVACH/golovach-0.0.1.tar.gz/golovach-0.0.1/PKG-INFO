@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: GOLOVACH
+Version: 0.0.1
+Summary: My Package
+Author: Your Name
+Author-email: your@domain.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
