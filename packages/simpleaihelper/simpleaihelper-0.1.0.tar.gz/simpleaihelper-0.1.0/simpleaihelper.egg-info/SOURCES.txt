@@ -1,0 +1,13 @@
+README.md
+setup.py
+simpleaihelper/__init__.py
+simpleaihelper/client.py
+simpleaihelper/session.py
+simpleaihelper.egg-info/PKG-INFO
+simpleaihelper.egg-info/SOURCES.txt
+simpleaihelper.egg-info/dependency_links.txt
+simpleaihelper.egg-info/requires.txt
+simpleaihelper.egg-info/top_level.txt
+simpleaihelper/db/__init__.py
+simpleaihelper/db/json_manager.py
+simpleaihelper/db/sqlite_manager.py
