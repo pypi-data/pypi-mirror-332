@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+DemPy3/DEMO.py
+DemPy3/__init__.py
+DemPy3.egg-info/PKG-INFO
+DemPy3.egg-info/SOURCES.txt
+DemPy3.egg-info/dependency_links.txt
+DemPy3.egg-info/top_level.txt
