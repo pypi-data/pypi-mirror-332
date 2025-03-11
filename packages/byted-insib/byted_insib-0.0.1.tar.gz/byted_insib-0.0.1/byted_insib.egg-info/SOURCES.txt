@@ -1,0 +1,6 @@
+setup.py
+byted_insib/__init__.py
+byted_insib.egg-info/PKG-INFO
+byted_insib.egg-info/SOURCES.txt
+byted_insib.egg-info/dependency_links.txt
+byted_insib.egg-info/top_level.txt
