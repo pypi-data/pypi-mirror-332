@@ -1,0 +1,15 @@
+README.md
+setup.py
+automata_toolbox.egg-info/PKG-INFO
+automata_toolbox.egg-info/SOURCES.txt
+automata_toolbox.egg-info/dependency_links.txt
+automata_toolbox.egg-info/entry_points.txt
+automata_toolbox.egg-info/top_level.txt
+toolbox/__init__.py
+toolbox/cfg.py
+toolbox/cli.py
+toolbox/dfa.py
+toolbox/nfa.py
+toolbox/parser.py
+toolbox/pda.py
+toolbox/templates.py
