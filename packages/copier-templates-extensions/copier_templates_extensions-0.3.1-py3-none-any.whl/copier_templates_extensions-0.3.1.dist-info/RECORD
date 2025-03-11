@@ -1,0 +1,11 @@
+copier_templates_extensions-0.3.1.dist-info/METADATA,sha256=nhtC8ORs4dU1UYxCAR98v3kxP_InQw2oB8InNQkM7JQ,8411
+copier_templates_extensions-0.3.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+copier_templates_extensions-0.3.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+copier_templates_extensions-0.3.1.dist-info/licenses/LICENSE,sha256=JGb4pdPEM8TTjjhr-uNCO7oXkiVrwG5Pz0JamcjNF_s,754
+copier_templates_extensions/__init__.py,sha256=i44F_JJLsz_2aMWX-mBnrj7RNLvhcQNGprfcBXm2crU,444
+copier_templates_extensions/_internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+copier_templates_extensions/_internal/context.py,sha256=kAvYr7vRPPb96QDp__fgrntitmxSp-0k5ppNXTzAXtU,2688
+copier_templates_extensions/_internal/debug.py,sha256=9AownjiLCEljyo09-cI9Oy_JFLgcU05N_yzR10PBDbs,2869
+copier_templates_extensions/_internal/loader.py,sha256=nTOLsA4p2v9LZFMU1txjIOuTszV8XZG0lzPkyMk5-j0,3665
+copier_templates_extensions/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+copier_templates_extensions-0.3.1.dist-info/RECORD,,
