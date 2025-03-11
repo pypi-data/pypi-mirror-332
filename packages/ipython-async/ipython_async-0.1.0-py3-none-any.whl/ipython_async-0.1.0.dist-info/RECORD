@@ -1,0 +1,10 @@
+ipython_async/__init__.py,sha256=N5VLJ1q5ebHLD3M7HSnGkIcIYsxh47K2v8jP0vSRFZE,252
+ipython_async/magics.py,sha256=8k3v9rpAjmjadVCJwrf-l0MbfGyRzOm4-WhIARYzvLs,9254
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=xdBx9JMmrBPvwYt4b2wdSsJpPlNQZh23VobZDLm6hTs,126
+tests/test_magics.py,sha256=DYbs0vdNlbDcWFRZk0c5r3cPjS3VCJZCJsdDatigTEM,10790
+ipython_async-0.1.0.dist-info/LICENSE,sha256=QxTTlL6YL0MKmk8mR8OJcdbHVJShWH6uD8cl8rwLv0M,1099
+ipython_async-0.1.0.dist-info/METADATA,sha256=UWf5a1NVpk5n96-irm4Z4Jvw5waahsvpGM51dNv8BUs,2409
+ipython_async-0.1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+ipython_async-0.1.0.dist-info/top_level.txt,sha256=cj36n8M9j5Qt0iPqMqXnDMyQOzM7M3ZNq_GiQpdWGmU,20
+ipython_async-0.1.0.dist-info/RECORD,,
