@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+doseper/__init__.py
+doseper/main.py
+doseper.egg-info/PKG-INFO
+doseper.egg-info/SOURCES.txt
+doseper.egg-info/dependency_links.txt
+doseper.egg-info/entry_points.txt
+doseper.egg-info/requires.txt
+doseper.egg-info/top_level.txt
