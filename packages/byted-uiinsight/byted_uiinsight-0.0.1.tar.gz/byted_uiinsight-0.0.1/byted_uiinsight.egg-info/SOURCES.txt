@@ -1,0 +1,6 @@
+setup.py
+byted_uiinsight/__init__.py
+byted_uiinsight.egg-info/PKG-INFO
+byted_uiinsight.egg-info/SOURCES.txt
+byted_uiinsight.egg-info/dependency_links.txt
+byted_uiinsight.egg-info/top_level.txt
