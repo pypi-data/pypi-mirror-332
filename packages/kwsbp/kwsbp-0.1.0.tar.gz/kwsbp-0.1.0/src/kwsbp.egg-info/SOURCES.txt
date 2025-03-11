@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/kwsbp/__init__.py
+src/kwsbp.egg-info/PKG-INFO
+src/kwsbp.egg-info/SOURCES.txt
+src/kwsbp.egg-info/dependency_links.txt
+src/kwsbp.egg-info/top_level.txt
