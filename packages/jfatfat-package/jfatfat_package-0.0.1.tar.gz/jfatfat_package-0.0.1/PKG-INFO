@@ -1,0 +1,42 @@
+Metadata-Version: 2.2
+Name: jfatfat_package
+Version: 0.0.1
+Summary: A simple utility package
+Home-page: https://github.com/jihadfatfat99/Python-Piscine/00/ex09/ft-package
+Author: Jihad Fatfat
+Author-email: jihadmohfatfat1999@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+ft_package
+
+A simple Python package with useful utility functions.
+
+Build:
+run in the terminal inside the ft_package main directory: pip install build twine
+run in the terminal inside the ft_package main directory: python3 -m build
+run in the terminal inside the ft_package main directory: twine upload dist/* and enter this api key : pypi-AgEIcHlwaS5vcmcCJGRmNDVjZmZkLWFjMGQtNDBmZi1iN2Y3LTM3MmMzZTUwOTZmYgACKlszLCJkNGQwODA1NS01ZGUwLTQyYmYtOWE3MS1jNTVmZmEwMjEyY2MiXQAABiAHbFCUDfVctBnYSLEti0nddRjhEx7XIQmFmqgwum9MaA
+
+
+Installation:
+pip install ft-package
+
+Usage:
+from ft_package import count_in_list, unique_elements, flatten_list, reverse_string
+
+print(count_in_list(["apple", "banana", "apple"], "apple")) # Output: 2
+print(unique_elements([1, 2, 2, 3, 4])) # Output: [1, 2, 3, 4]
+print(flatten_list([[1, 2], [3, 4], [5]])) # Output: [1, 2, 3, 4, 5]
+print(reverse_string("hello")) # Output: "olleh"
