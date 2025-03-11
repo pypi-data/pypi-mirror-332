@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: invenio-edugain
+Version: 0.0.1
+Summary: Invenio extension for login via edugain.
+Project-URL: Repository, https://github.com/tu-graz-library/invenio-edugain
+Author-email: Graz University of Technology <info@tugraz.at>
+License: MIT License
+        
+        Copyright (c) 2025 Graz University of Technology
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: edugain,invenio
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Provides-Extra: tests
+Requires-Dist: pytest-black>=0.6.0; extra == 'tests'
+Requires-Dist: pytest-invenio>=3.0.0; extra == 'tests'
+Requires-Dist: ruff>=0.9.6; extra == 'tests'
+Description-Content-Type: text/markdown
+
+# invenio-edugain
+
+> [!WARNING]
+> This package is not implemented yet.
+>
+> It's at the top of our priority list and actively being worked on though.
+
+This package will implement an easy way to bring `edugain` logins to your invenio instance.
+
+Planned features:
+
+- discovery service that looks native to your invenio instance
+- parse IdP-configuration from file/url (manually via CLI or on configurable timer)
+- parsed IdP-configurations persist in database
+- activate/deactivate some IdPs at your choice (e.g. if your security-team would like to allow IdPs only after taking a look at them)
