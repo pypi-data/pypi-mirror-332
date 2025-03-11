@@ -1,0 +1,7 @@
+.venv
+node_modules
+.vscode/settings.json
+__pycache__
+.parcel-cache
+.localapp
+dist/
