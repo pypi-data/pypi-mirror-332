@@ -1,0 +1,6 @@
+pyproject.toml
+mathlibgbvcc/__init__.py
+mathlibgbvcc.egg-info/PKG-INFO
+mathlibgbvcc.egg-info/SOURCES.txt
+mathlibgbvcc.egg-info/dependency_links.txt
+mathlibgbvcc.egg-info/top_level.txt
