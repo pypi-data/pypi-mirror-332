@@ -1,0 +1,33 @@
+[project]
+name = "aloys"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Aloys Bernard", email = "aloys.bernard@artefact.com" }]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+  "pandas (>=2.2.3,<3.0.0)",
+  "scikit-learn (>=1.6.1,<2.0.0)",
+  "click (>=8.1.8,<9.0.0)",
+  "loguru (>=0.7.3,<0.8.0)",
+]
+
+[tool.poetry]
+packages = [{ include = "aloys", from = "src" }]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pre-commit = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+hello = "aloys.main:hello"
+
+[tool.black]
+line-length = 120 # How many characters per line to allow
+target-version = ['py310'] # Python versions that should be supported by Black’s output. There are slight nuances in allowed syntaxes between Python versions (more info at https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#t-target-version)
+skip-string-normalization = true # Whether to replace all single quote strings with double quotes.
