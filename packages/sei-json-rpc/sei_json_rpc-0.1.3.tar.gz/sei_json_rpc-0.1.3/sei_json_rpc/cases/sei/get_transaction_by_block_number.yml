@@ -1,0 +1,43 @@
+test_cases:
+  # ---------------------------
+  # 正常场景测试
+  # ---------------------------
+  - description: "正常场景 - 通过区块号和交易索引获取交易"
+    method_name: "get_transaction_by_block"
+    params: [ 135182747, 19 ]
+    expected_result:
+      blockNumber: 135182747
+      transactionIndex: 19
+
+  - description: "正常场景 - 使用latest获取最新区块的交易"
+    method_name: "get_transaction_by_block"
+    params: [ "0x3cd8dbdd7db16c5098a1fa710530d38174164569a3c249cbd17f2263d98e5acf", 14 ]
+    expected_result:
+      blockNumber: 135329435
+      transactionIndex: 14
+
+
+
+
+  # # ---------------------------
+  # # 异常场景测试
+  # # ---------------------------
+  # - description: "异常场景 - 区块号不存在"
+  #   method_name: "get_transaction_by_block"
+  #   params: ["0x1000000", "0x0"]
+  #   expected_error: "block not found"
+
+  # - description: "异常场景 - 交易索引越界"
+  #   method_name: "get_transaction_by_block"
+  #   params: ["0x1", "0x1000"]
+  #   expected_error: "transaction index out of range"
+
+  # - description: "异常场景 - 区块号格式错误"
+  #   method_name: "get_transaction_by_block"
+  #   params: ["invalid", "0x0"]
+  #   expected_error: "invalid block number"
+
+  # - description: "异常场景 - 交易索引格式错误"
+  #   method_name: "get_transaction_by_block"
+  #   params: ["0x1", "invalid"]
+  #   expected_error: "invalid transaction index"
