@@ -1,0 +1,11 @@
+bullscatch_backtest/__init__.py,sha256=mqWT7OYGYftB-jrL4l1KgaejeBkEWTsjnU2sB-7Kfkc,162
+bullscatch_backtest/config.py,sha256=knKqEwCQ6aAHc63rNy__maoxrirQ0XWbZ5ndwyuLjsU,182
+bullscatch_backtest/expiry_list_spa.py,sha256=pZhqUqE4joXkO4-JAp0DOd8b5dnQoDvZRxwc1rrW-h4,9113
+bullscatch_backtest/multidate_option_chain_spa.py,sha256=pQ99C6m9uM1G2XDcFPtQm8huxk6gErUhKAGbnDcqYi8,1917
+bullscatch_backtest/option_chain_spa.py,sha256=KphH2OaqI4-XX_cumMaCVy5X5nNOMH0yfQtrkemegmA,5330
+bullscatch_backtest/spot_fetch_spa.py,sha256=AL8XI-nRqlepFkj6EtmKZq3P7cwFg71_DEedRLH3P54,3142
+bullscatch_backtest/test.py,sha256=WMjHdn6uCAUUfjJLKJ__VxHpzX2hMNZ58yNRGZtsXLs,1220
+bullscatch_backtester-0.1.7.dist-info/METADATA,sha256=RUxD2-eSuXi58sJUq0YFKA8xFUyID9TOCqrLXYdj2Gg,485
+bullscatch_backtester-0.1.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bullscatch_backtester-0.1.7.dist-info/top_level.txt,sha256=MAspyFPUee641FoiJZI7DJjmeZKmzwl9d_AM_Uzf_x8,20
+bullscatch_backtester-0.1.7.dist-info/RECORD,,
