@@ -1,0 +1,42 @@
+Metadata-Version: 2.2
+Name: aws_session_manager
+Version: 1.2
+Summary: A command line UI to manage AWS Session Manager sessions
+Author-email: Hélio Santos <heliosantos99@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML
+Requires-Dist: curses; platform_system == "Linux"
+Requires-Dist: curses; platform_system == "Darwin"
+Requires-Dist: windows-curses; platform_system == "Windows"
+
+### A command line UI to manage AWS Session Manager sessions
+
+![alt text](image.png)
+
+
+![Python Version](https://img.shields.io/pypi/pyversions/your-package-name)
+
+#### Install
+```bash
+pip install aws-session-manager
+```
+
+#### Configure
+Create configuration file from example `aws_session_manager\example.config.yaml`.
+
+#### Run
+```bash
+python -m aws_session_manager your_config.yaml
+```
+
+#### How to use
+Press keys `1-9` to establish a connection.  
+Press `c` to open the application of choice for the connection (as configured in the yaml file).  
+Press keys `1-9` again to close a connection.  
+`l` shows logs.  
+`x` to exit.  
