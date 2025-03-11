@@ -1,0 +1,5 @@
+setup.py
+Lib_Kate965.egg-info/PKG-INFO
+Lib_Kate965.egg-info/SOURCES.txt
+Lib_Kate965.egg-info/dependency_links.txt
+Lib_Kate965.egg-info/top_level.txt
