@@ -1,0 +1,2 @@
+[nellie.plugins]
+Count Label Changes = plugin_module:count_label_changes

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+plugin_module.py
+setup.py
+count_label_changes.egg-info/PKG-INFO
+count_label_changes.egg-info/SOURCES.txt
+count_label_changes.egg-info/dependency_links.txt
+count_label_changes.egg-info/entry_points.txt
+count_label_changes.egg-info/requires.txt
+count_label_changes.egg-info/top_level.txt
