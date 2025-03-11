@@ -1,0 +1,6 @@
+setup.py
+byteddorado_oapi/__init__.py
+byteddorado_oapi.egg-info/PKG-INFO
+byteddorado_oapi.egg-info/SOURCES.txt
+byteddorado_oapi.egg-info/dependency_links.txt
+byteddorado_oapi.egg-info/top_level.txt
