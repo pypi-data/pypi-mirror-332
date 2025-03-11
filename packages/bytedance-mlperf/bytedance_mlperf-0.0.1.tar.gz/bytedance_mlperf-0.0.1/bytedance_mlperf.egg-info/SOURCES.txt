@@ -1,0 +1,6 @@
+setup.py
+bytedance_mlperf/__init__.py
+bytedance_mlperf.egg-info/PKG-INFO
+bytedance_mlperf.egg-info/SOURCES.txt
+bytedance_mlperf.egg-info/dependency_links.txt
+bytedance_mlperf.egg-info/top_level.txt
