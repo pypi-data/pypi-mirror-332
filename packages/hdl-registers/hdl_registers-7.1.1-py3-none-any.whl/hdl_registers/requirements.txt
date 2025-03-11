@@ -1,0 +1,8 @@
+black
+docutils
+GitPython
+PyYAML
+rtoml
+termcolor
+tomli-w
+tsfpga>= 13.1.3
