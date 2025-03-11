@@ -1,0 +1,16 @@
+codemcp/__init__.py,sha256=rHhphQjtgenTbcdfsLGWPctW8IHy-YPpltYnh1aqndQ,12361
+codemcp/__main__.py,sha256=6XdcpnTp5-38EeBAiv_eld3BONfFDrFIKN1J0CXxq3c,80
+codemcp/common.py,sha256=ogBWP9p9U9z1Me52lXD3-lYId3OD6mJHAnS5KAJ1hpA,2125
+codemcp/config.py,sha256=vNFmpPQBGIs468dsHK4AGOVQT8s8J6363frhJEqRttk,1854
+codemcp/git.py,sha256=RDoTaqUkdu9lfyuBqtzaqa7GXHKrzMSEw5vMslAl9-4,8939
+codemcp/tools/__init__.py,sha256=Hh3bKp-xlwhroeQCh3_DtVLlZhJ_k4mbdWSCHUZUPxk,371
+codemcp/tools/edit_file.py,sha256=zNEPNBWsL72xh-EEBBNzCnfMxPs5daMsP6IK1r9GYJI,14082
+codemcp/tools/grep.py,sha256=aHtaP6B37ATc8YfCwRxSA1m2bwVYOWmaaIBTmd2zdRY,6857
+codemcp/tools/init_project.py,sha256=CyBlu93U5Cyn-leGYdLWWiICmqX2qDLWLbxSs5G3Ol4,1894
+codemcp/tools/ls.py,sha256=zXDmjnBwNJAwb-dAlRi9BK-uEr6bFAQx_UDJ6CloRHQ,6118
+codemcp/tools/read_file.py,sha256=khZ_oKDwMmoednN0zYgfu6adcamxG1jC_suYfLjc1PE,3178
+codemcp/tools/write_file.py,sha256=klBcnT1UXrNJqdgeJLUreXihWq0d_aKo_42j30lz2L0,4091
+codemcp-0.1.0.dist-info/METADATA,sha256=FVrbVfFk_6sXljdqCOWPLtFUReX47I5z6i2kU1Sw1bw,2764
+codemcp-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+codemcp-0.1.0.dist-info/entry_points.txt,sha256=7NzWorudH_sOnCHcZ1xnGur9gRBRH9cQokBY9hU7NU0,40
+codemcp-0.1.0.dist-info/RECORD,,
