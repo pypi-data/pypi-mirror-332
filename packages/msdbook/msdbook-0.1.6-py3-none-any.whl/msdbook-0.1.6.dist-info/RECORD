@@ -1,0 +1,16 @@
+msdbook/__init__.py,sha256=IHT4mKrIr8eV-C3HtmIVD85iGVH25n2ohoff31kaJ1A,93
+msdbook/fishery_dynamics.py,sha256=FH44xHKuPX9N_oiwRO6Lvk6ZQS28zFB8SZLYeyEdMY4,6346
+msdbook/generalized_fish_game.py,sha256=lo9cLI3GnPPk5Z5ifcDVDUhDpWAKChRgbrV0_2dWz0c,12860
+msdbook/hymod.py,sha256=bVE4fagvmbod1qNmo8WIBmIO0J-NeFSIDfi7CGrANd0,12431
+msdbook/install_supplement.py,sha256=AvgoCqoUM4KEBx0_TsR0bGtutLgvu7JvG2u9wQdWPsA,2749
+msdbook/package_data.py,sha256=Zwa4PwffQfscnfHsbPyRMkiIZMsAQde5HVbN1kw7_gQ,4407
+msdbook/utils.py,sha256=95PuptlehsMS02i6Fxk-nuOF0LFDWApR__-PX3HJ3KI,1572
+msdbook/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msdbook/tests/test_fishery_dynamics.py,sha256=yiAzKSNa5QUwGw6aFCpyhZyU2-NE0VElH9TdVjqZGCQ,2584
+msdbook/tests/test_hymod.py,sha256=OaVGPICv4oy8B-YuVupRuG1g2RyHVLCpDiv8veD9saQ,3321
+msdbook/tests/test_install_supplement.py,sha256=dl0lxjImvLPiDQXKOwQnoUOuAwyaxfvIF63T6CfdFTU,5024
+msdbook/tests/test_package_data.py,sha256=aNyC9os5coo389nP9xBXsFytonkk1eZT8ARoqoe55a4,7359
+msdbook-0.1.6.dist-info/METADATA,sha256=UjXL_Wy7f7-MBLQ9j9Z2NG760WRqpuQfH7rAGP1qzcI,3426
+msdbook-0.1.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+msdbook-0.1.6.dist-info/licenses/LICENSE,sha256=q-Iy24WqviKMBGE3ZogPSC2IR8YkLmTr0cTMMeeYNoA,1284
+msdbook-0.1.6.dist-info/RECORD,,
