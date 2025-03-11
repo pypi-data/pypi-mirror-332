@@ -1,0 +1,8 @@
+llm_cerebras/__init__.py,sha256=_g9uDu8VuqxEdeXkQ2FA5JnC4ZYYdVwMuuMTg_8c3Q8,39
+llm_cerebras/cerebras.py,sha256=VO8tiTLOAgDB-aNjw7n7_HBZkeX6ZFtt5OVertUrkjU,13207
+llm_cerebras-0.1.7.dist-info/LICENSE,sha256=TxDB15EaTFhCzWPJtYip96fPCJTWPvcpPY1gT1ZRf_s,169
+llm_cerebras-0.1.7.dist-info/METADATA,sha256=FP36VJ69DI2Ksc1heURWU4KD-nZiCxfLZM9ze-UGI9g,3287
+llm_cerebras-0.1.7.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+llm_cerebras-0.1.7.dist-info/entry_points.txt,sha256=08NScvbR8w69fFelVk3HQBpaQ5vvNx9lrEKjqJ8lqsY,39
+llm_cerebras-0.1.7.dist-info/top_level.txt,sha256=rwHlSMGX4jgDkqhajpnJIcd5tWfXH1iv8KYWlcSSfQ4,13
+llm_cerebras-0.1.7.dist-info/RECORD,,
