@@ -1,0 +1,7 @@
+[argcomplete.completers]
+vl = vl.cli:main
+vll = vl.pager:main
+
+[console_scripts]
+vl = vl.cli:main
+vll = vl.pager:main
