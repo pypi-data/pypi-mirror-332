@@ -1,0 +1,24 @@
+[project]
+name = "fastapi-http-exceptions"
+version = "0.1.0"
+authors = [
+  { name = "Sebastian Sala", email = "sebastian.sala.alanis@hotmail.com" },
+]
+description = "A library for handling HTTP exceptions in FastAPI applications, providing a set of predefined exceptions for common HTTP error statuses like 404, 403, 401, etc., to make error handling in APIs more streamlined and maintainable."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.115.0",
+]
+
+[tool.setuptools.package-data]
+"fastapi_http_exceptions" = ["README.md"] 
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sebasxsala/fastapi-http-exceptions"
+"Bug Tracker" = "https://github.com/sebasxsala/fastapi-http-exceptions/issues"
