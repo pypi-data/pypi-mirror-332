@@ -1,0 +1,7 @@
+Cython>=3.0.0
+cysignals
+
+[dev]
+pytest>=6.0
+black
+mypy
