@@ -1,0 +1,14 @@
+gxctmm/__init__.py,sha256=ITnVYO06rWLpm1xx_sr7GuRlj8sNvUE5IbRuFxHVtH8,571
+gxctmm/fit.py,sha256=0uGnkcnweJieMTyx5Gzyp9yQVIlITAaM9oB3PqkX-b8,59868
+gxctmm/log.py,sha256=1ylgmyq5nsMSfM5_5lihXSfPUIw98Z2Wgeps2aagaBQ,296
+gxctmm/plot.py,sha256=B6DpiyPHGp5icYN1UynIViuvfpViqBtgEELKroxqfQ0,37225
+gxctmm/preprocess.py,sha256=q_om5mIXM976T9jY-Z8HHv45KYQJ7intMvo74RD0Woc,23395
+gxctmm/reml.R,sha256=DnGbih1BAUHtmiqp_cnsOXt1xx4zH9oGjmdUlNnMEUs,9780
+gxctmm/skeleton.py,sha256=lLn5vRr649laqJ9jAa54Y9Jfx8FU_cUQ4o9Egihb_RI,4205
+gxctmm/util.py,sha256=zCtDNGtJuZapRg0_T7ZiMx9mcHAI8PxlnjHu92hpM_0,51979
+gxctmm/wald.py,sha256=GWzLmCzoO98-JhOb7SDLXrWLXo2U7E2_CSmJ0XM9EHg,5726
+gxctmm-0.2.0.dist-info/LICENSE.txt,sha256=NNtswHduJcxOybaZm7HZ0lx6C6bsE6lOB01xPikGWuo,1078
+gxctmm-0.2.0.dist-info/METADATA,sha256=A34l7nGirJEeIcifh_tzlsj4b3guvS4gaaQT2lv_VKA,2272
+gxctmm-0.2.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+gxctmm-0.2.0.dist-info/top_level.txt,sha256=wlodrpU3_SzLmjdtWjCTmwjhYjmcFGHexrs2Xcem0iw,7
+gxctmm-0.2.0.dist-info/RECORD,,
