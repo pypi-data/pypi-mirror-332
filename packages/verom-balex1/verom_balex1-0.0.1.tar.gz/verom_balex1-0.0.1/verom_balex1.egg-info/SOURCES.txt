@@ -1,0 +1,8 @@
+setup.py
+verom_balex1/__init__.py
+verom_balex1/module_furunk.py
+verom_balex1/second.py
+verom_balex1.egg-info/PKG-INFO
+verom_balex1.egg-info/SOURCES.txt
+verom_balex1.egg-info/dependency_links.txt
+verom_balex1.egg-info/top_level.txt
