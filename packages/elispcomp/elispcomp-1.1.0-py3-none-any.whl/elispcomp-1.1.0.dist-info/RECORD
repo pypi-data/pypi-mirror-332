@@ -1,0 +1,10 @@
+elispcomp/__init__.py,sha256=4obWO99GcOa9pdCXv9TDhW8TGdVQ47TKewTd-sPUUtU,925
+elispcomp/cli.py,sha256=g2MsSrJWg5jjPCm1_ZhU7jZ6ojAQ67HWTyYJ5hFecgU,8190
+elispcomp/elispcomp.el,sha256=rwA7_uB4DhsQ0E-bRb5IXanuDx0oeHMv7N7bAXbsu_4,8502
+elispcomp/misc.py,sha256=QPY_o67VC9u0nzQEjkoWYHXiIJ1P1vySAFkpC-VDgn0,1418
+elispcomp-1.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+elispcomp-1.1.0.dist-info/METADATA,sha256=6ZTSlLTx65z0_ow_y52E8RqLPpRbdtMHPzCZuThbPfs,10546
+elispcomp-1.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+elispcomp-1.1.0.dist-info/entry_points.txt,sha256=8L6NMEJ0KuC7oaEpNRY4cv8R78RZx4p1_yf9r_fGUdk,72
+elispcomp-1.1.0.dist-info/top_level.txt,sha256=erwbE6-MJZhbd_vJuNDgXqOhz8GSvx73YDTN3NZPb3c,10
+elispcomp-1.1.0.dist-info/RECORD,,
