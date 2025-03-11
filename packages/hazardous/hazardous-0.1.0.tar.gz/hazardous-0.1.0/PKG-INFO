@@ -1,0 +1,121 @@
+Metadata-Version: 2.4
+Name: hazardous
+Version: 0.1.0
+Summary: Predictive Competing Risks and Survival Analysis.
+Author-email: Olivier Grisel <olivier.grisel@ensta.org>, Vincent Maladière <vincent.maladiere@inria.fr>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+Requires-Dist: lifelines
+Requires-Dist: setuptools
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: pydata-sphinx-theme ; extra == "doc"
+Requires-Dist: sphinx-gallery ; extra == "doc"
+Requires-Dist: sphinx-design ; extra == "doc"
+Requires-Dist: sphinx-copybutton ; extra == "doc"
+Requires-Dist: matplotlib ; extra == "doc"
+Requires-Dist: seaborn ; extra == "doc"
+Requires-Dist: pillow ; extra == "doc"
+Requires-Dist: numpydoc ; extra == "doc"
+Requires-Dist: pycox ; extra == "doc"
+Requires-Dist: torch ; extra == "doc"
+Requires-Dist: numpy==1.22 ; extra == "oldest-deps"
+Requires-Dist: scikit-learn==1.1.3 ; extra == "oldest-deps"
+Requires-Dist: pandas==1.5.1 ; extra == "oldest-deps"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pandas ; extra == "test"
+Project-URL: Bug Tracker, https://github.com/soda-inria/hazardous/issues
+Project-URL: Homepage, https://github.com/soda-inria/hazardous
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: oldest-deps
+Provides-Extra: test
+
+# HΛZΛRDOUS
+
+Predictive Competing Risks and Survival Analysis.
+
+[![Tests](https://github.com/soda-inria/hazardous/actions/workflows/test.yml/badge.svg)](https://github.com/soda-inria/hazardous/actions/workflows/test.yml)
+
+## Installation and usage
+
+XXX: the following will work only once the 0.1.0 release is out!
+
+```
+pip install hazardous
+```
+
+or
+
+```
+conda install -c conda-forge hazardous
+```
+
+Then browse the [online documentation](https://soda-inria.github.io/hazardous/)
+and run the `examples/` to get started.
+
+## Development and testing
+
+Install in "editable" mode in your current Python env (after a standard installation to install the dependencies):
+
+```
+pip install flit
+pip install . -v
+pip install -e ".[dev]" --no-build-isolation -v
+pre-commit install
+```
+
+Run the tests with nox to test in an environment that matches exactly on
+specific CI build, for instance:
+
+```
+nox -p 3.11 -s test_latest_from_pypi -r
+```
+
+The `-r` flag makes it possible to reuse an existing env.
+
+You can also install the test dependencies in the current env and use `pytest`
+directly with arbitrary command line arguments:
+
+```
+pip install -e ".[test]" --no-build-isolation -v
+pytest -vl -x -k test_name_pattern
+```
+
+## Building the doc
+
+Using `nox`:
+
+```
+nox -s doc -r
+```
+
+or manually:
+
+```
+pip install -e ".[doc]" --no-build-isolation -v
+cd doc
+make html
+```
+
+The resulting html files are generated under the `doc/_build` folder.
+
+## Building a release
+
+```
+pip install build
+python -m build
+ls dist/
+```
+
+TODO: make it possible to automate a release using GitHub Actions for a given tag.
+
