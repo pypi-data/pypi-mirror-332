@@ -1,0 +1,115 @@
+name: Deploy Dev
+
+on:
+  push:
+    branches: [ dev ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      - name: Install latex dependencies
+        run: sudo apt-get update -y && sudo apt-get install -y texlive latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended ghostscript
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ".[docs]"
+      - name: Build html and pdf ebook
+        working-directory: 'docs/'
+        env:
+          NODE_ENV: development
+        run: |
+          make html latexpdf --keep-going LATEXMKOPTS="-interaction=nonstopmode" || true
+          make latexpdf --keep-going LATEXMKOPTS="-interaction=nonstopmode" || true
+          make latexpdf --keep-going LATEXMKOPTS="-interaction=nonstopmode" || true
+        continue-on-error: true
+      - name: Concatenate eBook cover with eBook
+        run: |
+          mv docs/build/latex/addressinguncertaintyinmultisectordynamicsresearch.pdf docs/build/latex/ebook_content.pdf
+          gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=docs/build/latex/addressinguncertaintyinmultisectordynamicsresearch.pdf -dBATCH docs/ebook_cover.pdf docs/build/latex/ebook_content.pdf
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+          cache: 'npm'
+          cache-dependency-path: landing/package-lock.json
+      - name: Install landing page dependencies
+        working-directory: 'landing/'
+        run: npm install
+      - name: Build landing page
+        working-directory: 'landing/'
+        env:
+          NODE_ENV: development
+        run: npm run build
+      - name: Commit documentation changes
+        run: |
+          git clone --depth=1 --branch=gh-pages https://github.com/IMMM-SFA/msd_uncertainty_ebook.git deploy
+          rm -rf ./deploy/.git
+          rm -rf ./deploy/dev
+          mkdir ./deploy/dev
+          cp -r ./landing/build/* ./deploy/dev/
+          cd ./deploy
+          git init
+          git add -A
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m 'deploy' -a || true
+      - name: Push changes to gh-pages
+        uses: ad-m/github-push-action@master
+        with:
+          branch: gh-pages
+          directory: deploy
+          force: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  build-distribution:
+    name: Build distribution
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10.x"
+    - name: Install pypa/build
+      run: >-
+        python3 -m
+        pip install
+        build
+        --user
+    - name: Build a binary wheel and a source tarball
+      run: python3 -m build
+    - name: Store the distribution packages
+      uses: actions/upload-artifact@v4
+      with:
+        name: python-package-distributions
+        path: dist/
+
+  publish-to-testpypi:
+    name: Publish to TestPyPI
+    if: startsWith(github.ref, 'refs/tags/')  # only publish to test PyPI on tag pushes
+    needs:
+    - build-distribution
+    runs-on: ubuntu-latest
+
+    environment:
+      name: testpypi
+      url: https://test.pypi.org/p/msdbook
+
+    permissions:
+      id-token: write  # IMPORTANT: mandatory for trusted publishing
+
+    steps:
+    - name: Download all the dists
+      uses: actions/download-artifact@v4
+      with:
+        name: python-package-distributions
+        path: dist/
+    - name: Publish distribution to TestPyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        repository-url: https://test.pypi.org/legacy/
