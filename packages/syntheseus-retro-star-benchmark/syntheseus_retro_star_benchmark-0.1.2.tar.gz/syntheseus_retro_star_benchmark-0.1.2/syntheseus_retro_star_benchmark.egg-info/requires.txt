@@ -1,0 +1,5 @@
+torch
+syntheseus
+rdkit
+pandas
+rdchiral

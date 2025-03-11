@@ -1,0 +1,73 @@
+Metadata-Version: 2.2
+Name: syntheseus-retro-star-benchmark
+Version: 0.1.2
+Summary: Syntheseus wrapper for retro* benchmark. 
+Author: Austin Tripp
+License: MIT License
+        
+        Copyright (c) 2024 Austin Tripp (and implicitly by Binghong Chen, Chengtao Li,
+        Hanjun Dai, Le Song via inclusion of some of their code)
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/AustinT/syntheseus-retro-star-benchmark
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: syntheseus
+Requires-Dist: rdkit
+Requires-Dist: pandas
+Requires-Dist: rdchiral
+
+# Syntheseus retro star benchmark
+
+A wrapper for using the benchmark from retro*
+([Chen et al 2020](http://proceedings.mlr.press/v119/chen20k.html))
+in [syntheseus](https://github.com/microsoft/syntheseus/).
+
+Usage:
+
+```python
+from syntheseus_retro_star_benchmark import RetroStarReactionModel
+model = RetroStarReactionModel()  # a syntheseus BackwardReactionModel object wrapping the pre-trained template classifier
+
+from syntheseus_retro_star_benchmark import RetroStarInventory
+inventory = RetroStarInventory()  # their inventory of ~23M purchasable molecules
+
+from syntheseus_retro_star_benchmark import get_190_hard_test_smiles
+test_smiles = get_190_hard_test_smiles()  # their recommended 190 test SMILES
+
+from syntheseus_retro_star_benchmark import RetroStarValueMLP
+value_fn = RetroStarValueMLP()  # their pre-trained search heuristic
+```
+
+Code was based on open source code from [here](https://github.com/binghong-ml/retro_star/tree/master/retro_star/packages/mlp_retrosyn/mlp_retrosyn).
+Some data was uploaded to
+[figshare](https://figshare.com/articles/dataset/Syntheseus_retro_star_benchmark_data/25376728)
+to ensure stable, consistent access.
+
+## Installation
+
+Install either by cloning and using pip or running
+`pip install syntheseus-retro-star-benchmark`.
+
+## Development
+
+Ensure to install all pre-commit hooks and run unit tests (provided by pytest).
