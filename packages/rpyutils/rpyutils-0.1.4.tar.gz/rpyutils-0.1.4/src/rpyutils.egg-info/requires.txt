@@ -1,0 +1,10 @@
+rich>=12.0.0
+tqdm
+pyrootutils
+
+[dev]
+black
+isort
+sphinx
+furo
+sphinx_rtd_theme
