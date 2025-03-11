@@ -1,0 +1,11 @@
+shrijuu/__init__.py,sha256=Xgh5Mp_y2lKDlxUG22DZRJePCbVPZfgVvZwXXLkBIK0,253
+shrijuu/core.py,sha256=yWWFP6PRYEy--wKORLlCNqOX8R2tEopoWa9AWChgd78,10644
+shrijuu/exceptions.py,sha256=7HRkzAbfThVSN89Uegeza69dYnEtqV5TeJQPqe-J-MI,467
+shrijuu/utils.py,sha256=5ULmTF2JSD56DI6wkE_L-rN_KVZR4EJQhc4_5o3204A,969
+tests/__init__.py,sha256=wwzI0HWMz0FUp4V66XGRfzeaK3gaQUnIjDstG8ZUpFI,40
+tests/test_core.py,sha256=aH960ihBMRJDeZ7hLNaDn20yCmHlzr8zZiL0CtuZc-Y,10147
+shrijuu-0.1.0.dist-info/LICENSE,sha256=KGrtPw_4nMvIhN_MZGma969K99tb1MedJd3RUbrWmNU,1075
+shrijuu-0.1.0.dist-info/METADATA,sha256=s_OdfFKBDhxhPfvfxW_HtHFg5Kd4RB9HXfinJNn6vbE,1619
+shrijuu-0.1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+shrijuu-0.1.0.dist-info/top_level.txt,sha256=fRWtO7BYJvkWSmBddoukjZu2zA1QkDjCIGeuT13Ccdc,14
+shrijuu-0.1.0.dist-info/RECORD,,
