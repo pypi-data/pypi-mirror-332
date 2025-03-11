@@ -1,0 +1,9 @@
+README.md
+setup.py
+metaidigitstt/__init__.py
+metaidigitstt/main.py
+metaidigitstt.egg-info/PKG-INFO
+metaidigitstt.egg-info/SOURCES.txt
+metaidigitstt.egg-info/dependency_links.txt
+metaidigitstt.egg-info/entry_points.txt
+metaidigitstt.egg-info/top_level.txt
