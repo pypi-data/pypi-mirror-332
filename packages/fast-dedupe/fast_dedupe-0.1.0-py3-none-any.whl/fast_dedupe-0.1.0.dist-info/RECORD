@@ -1,0 +1,14 @@
+fastdedupe/__init__.py,sha256=NvOH2rKG3oMbMAwehpl-wN8KevQ4jSkqgtfBmRQ2_Vw,325
+fastdedupe/__main__.py,sha256=mwHqld-FB3F2jYOLB1L2iIKX0g_nkQ-92-LjcdUhojE,256
+fastdedupe/cli.py,sha256=EJxGAsmUqRxj34goz_kruZow7lqPwKMwzYnQDkwAOS8,5757
+fastdedupe/core.py,sha256=mp7m5Hprhd42u1xZCOtp5XKn858RYNGIvX85HglhDn4,5512
+fastdedupe/tests/__init__.py,sha256=BZo0KAWOkprgQ-gSh3VWOn-cMXC2OvfZyKtS-L0WiJU,101
+fastdedupe/tests/test_cli.py,sha256=4jnxfLhpiF292Mk6hwO2Rqu6F-WUnp4MM44BscuEvcY,6985
+fastdedupe/tests/test_core.py,sha256=6Np9tJ00_q-oy6MtSJYe0NPD3uvWl9J6fVRm9b2yrkg,6256
+fastdedupe/tests/test_main.py,sha256=VQQ2ckTv5SWtTt8KRFzZm5yfA40nIZj3AeQObh-SS8M,1609
+fast_dedupe-0.1.0.dist-info/LICENSE,sha256=T5DoOI5qsdhl3eVOnLPH9Q50Qj7-HJEqY7HwDKLsCBI,1069
+fast_dedupe-0.1.0.dist-info/METADATA,sha256=PSVcYRld56Blwixgci9s86Z7Pjcpj69B1Mdp_KCquT4,8170
+fast_dedupe-0.1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+fast_dedupe-0.1.0.dist-info/entry_points.txt,sha256=KWlOZ-Xzn9WZdShpMT0UBriuDcvsrpc0vG1OMsc5QP8,51
+fast_dedupe-0.1.0.dist-info/top_level.txt,sha256=z17BJjw44hCMj9qPgmv1xNENlzmEGuPov7FX_OqgzZM,11
+fast_dedupe-0.1.0.dist-info/RECORD,,
