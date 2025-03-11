@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: simpliflow
+Version: 0.0.1
+Summary: A small example package
+Author-email: Deven Panchal <devenrpanchal@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: anthropic
+Requires-Dist: qiskit
+Requires-Dist: matplotlib
+Requires-Dist: qiskit-ibm-runtime
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: openai
+Requires-Dist: cohere
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+
+# simpliflow
