@@ -1,0 +1,31 @@
+{
+    "name": "staging.stg_restaurant_opening_hours",
+    "model_to_test": "staging.stg_restaurant_opening_hours",
+    "input_data": {
+        "sources.raw_restaurant_api": {
+            "restaurant_no": "N468",
+            "updated_at": "2024-09-01 02:05:05 UTC",
+            "is_active": "true"
+        },
+        "reporting.restaurant_closures": [
+            {
+                "restaurant_id": "14004",
+                "restaurant_no": "N004",
+                "ypwdid": "20250341",
+                "store_closure_id": "163647",
+                "business_date": "2024-05-13"
+            }
+        ]
+    },
+    "expected_output": [
+        {
+            "business_date": "2024-09-01",
+            "restaurant_no": "N468",
+            "channel": "Eat In",
+            "hour_of_day": "2024-09-01 10:00:00 UTC",
+            "open_time_day": "2024-09-01 10:30:00 UTC",
+            "close_time_day": "2024-09-01 21:00:00 UTC",
+            "open_minutes": "30"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+actual_output_to_test AS (
+  SELECT
+   'Actual' AS result_type,
+    *,
+    TO_JSON_STRING(actual_output) AS row_as_json,
+    MD5(TO_JSON_STRING(actual_output)) AS row_hash
+  FROM actual_output
+),
+expected_output_to_test AS (
+  SELECT 
+    'Expected' AS result_type,
+    *,
+    TO_JSON_STRING(expected_output) AS row_as_json,
+    MD5(TO_JSON_STRING(expected_output)) AS row_hash
+  FROM expected_output
+),
+results AS (
+  SELECT 1
+  FROM expected_output_to_test AS e
+  FULL JOIN actual_output_to_test AS a
+    ON e.row_hash = a.row_hash
+  WHERE a.row_hash IS NULL OR e.row_hash IS NULL
+)
+SELECT * EXCEPT (row_as_json, row_hash)
+FROM (
+  SELECT *
+  FROM expected_output_to_test
+  UNION ALL
+  SELECT *
+  FROM actual_output_to_test
+)
+WHERE (SELECT COUNT(*) FROM results) > 0
+ORDER BY row_as_json, result_type DESC

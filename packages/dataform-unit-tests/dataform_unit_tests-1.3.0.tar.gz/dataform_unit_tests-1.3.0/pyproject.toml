@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataform-unit-tests"
+version = "1.3.0"
+authors = [
+  { name="Neeraj Morar" },
+]
+description = "Code that is executed as part of GitHub Actions pipelines in Dataform-enabled Google Cloud projects to perform unit tests on Dataform models"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dataform_unit_testing = ["final_test_ctes.txt"]
+
+[project.urls]
+Homepage = "https://neerajmorar.wixsite.com/dataform-unit-tests"

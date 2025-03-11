@@ -1,0 +1,227 @@
+{
+    "name": "staging.stg_restaurant_opening_hours",
+    "model_to_test": "staging.stg_restaurant_opening_hours",
+    "input_data": {
+        "sources.raw_restaurant_api": [
+            {
+                "restaurant_no": "N468",
+                "updated_at": "2024-09-01 02:05:05 UTC",
+                "is_active": "true",
+                "fulfilment_methods": [
+                    {
+                      "enabled":"true",
+                      "name":"EAT_IN",
+                      "openingHours":[
+                        {
+                          "dayOfWeek":"1",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-06-03",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"2",
+                          "opens":"11:30",
+                          "closes":"20:45",
+                          "validFrom":"2024-08-20",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"3",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-08-20",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"4",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-07-18",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"5",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-02-18",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"6",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-07-20",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"7",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-07-20",
+                          "validThrough":null
+                        }
+                      ],
+                      "specialOpeningHours":[
+                        {
+                            "dayOfWeek":null,
+                            "opens":null,
+                            "closes":null,
+                            "validFrom":null,
+                            "validThrough":null
+                        }
+                      ]
+                    },
+                    {
+                      "enabled":"true",
+                      "name":"DELIVERY",
+                      "openingHours":[
+                        {
+                          "dayOfWeek":"1",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-06-03",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"2",
+                          "opens":"11:30",
+                          "closes":"20:45",
+                          "validFrom":"2024-08-20",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"3",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-08-20",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"4",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-07-18",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"5",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-02-18",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"6",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-07-20",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"7",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-07-20",
+                          "validThrough":null
+                        }
+                      ],
+                      "specialOpeningHours":[
+                        {
+                            "dayOfWeek":null,
+                            "opens":null,
+                            "closes":null,
+                            "validFrom":null,
+                            "validThrough":null
+                        }
+                      ]
+                    },
+                    {
+                      "enabled":"true",
+                      "name":"COLLECTION",
+                      "openingHours":[
+                        {
+                          "dayOfWeek":"1",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-06-03",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"2",
+                          "opens":"11:30",
+                          "closes":"20:45",
+                          "validFrom":"2024-08-20",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"3",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-08-20",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"4",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-07-18",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"5",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-02-18",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"6",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-07-20",
+                          "validThrough":null
+                        },
+                        {
+                          "dayOfWeek":"7",
+                          "opens":"11:30",
+                          "closes":"22:00",
+                          "validFrom":"2024-07-20",
+                          "validThrough":null
+                        }
+                      ],
+                      "specialOpeningHours":[
+                        {
+                            "dayOfWeek":null,
+                            "opens":null,
+                            "closes":null,
+                            "validFrom":null,
+                            "validThrough":null
+                        }
+                      ]
+                    }
+                  ]
+            }
+        ],
+        "reporting.restaurant_closures": [
+            {
+                "restaurant_id": "14004",
+                "restaurant_no": "N004",
+                "ypwdid": "20250341",
+                "store_closure_id": "163647",
+                "business_date": "2024-05-13"
+            }
+        ]
+    },
+    "expected_output": [
+        {
+            "business_date": "2024-09-01",
+            "restaurant_no": "N468",
+            "channel": "Eat In",
+            "hour_of_day": "2024-09-01 10:00:00 UTC",
+            "open_time_day": "2024-09-01 10:30:00 UTC",
+            "close_time_day": "2024-09-01 21:00:00 UTC",
+            "open_minutes": "30"
+        }
+    ]
+}
