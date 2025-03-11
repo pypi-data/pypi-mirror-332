@@ -1,0 +1,7 @@
+[root]
+depends_on = ["//module1.api"]
+layer = "mid"
+
+[[interfaces]]
+expose = []
+from = ["<domain_root>"]
