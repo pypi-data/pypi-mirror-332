@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+wkndpdf/__init__.py
+wkndpdf/pdf2image.py
+wkndpdf/pdf2text.py
+wkndpdf.egg-info/PKG-INFO
+wkndpdf.egg-info/SOURCES.txt
+wkndpdf.egg-info/dependency_links.txt
+wkndpdf.egg-info/top_level.txt
