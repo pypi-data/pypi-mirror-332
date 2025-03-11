@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: mkdocs-overview-page
+Version: 1.0.0
+Summary: Overview Page for MkDocs
+License: MIT
+Author: Markus
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: mkdocs (>=1.6.1,<2.0.0)
+Requires-Dist: mkdocs-material (>=9.5.43,<10.0.0)
+Requires-Dist: pymdown-extensions (>=10.7,<11.0)
