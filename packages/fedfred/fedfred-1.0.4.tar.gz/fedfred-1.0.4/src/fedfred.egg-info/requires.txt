@@ -1,0 +1,8 @@
+httpx
+typed-diskcache
+tenacity
+pandas
+pandas-stubs
+polars
+geopandas
+types-geopandas
