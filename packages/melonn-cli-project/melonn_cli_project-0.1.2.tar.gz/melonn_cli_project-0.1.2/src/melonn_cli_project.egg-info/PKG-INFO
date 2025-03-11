@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: melonn-cli-project
+Version: 0.1.2
+Summary: CLI para la creación del proyecto completo
+Author: Joaquin Mejia
+Author-email: Joaquin Mejia <nmejia@melonn.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typer
+Requires-Dist: aws-cdk-lib
+Dynamic: author
