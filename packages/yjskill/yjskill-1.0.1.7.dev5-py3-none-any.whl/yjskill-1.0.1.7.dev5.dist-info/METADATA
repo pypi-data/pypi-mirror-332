@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: yjskill
+Version: 1.0.1.7.dev5
+Summary: sdk in python for skill
+Home-page: https://console.cloud.baidu-int.com/devops/icode/repos/baidu/bce-vistudio/vision-studio/tree/master
+Author: leibin01
+Author-email: leibin01@baidu.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Requires-Dist: annotated-types ==0.7.0
+Requires-Dist: bce-internal-sdk ==1.0.0.15
+Requires-Dist: bce-python-sdk ==0.8.87
+Requires-Dist: bcelogger ==1.2.0.7
+Requires-Dist: click ==8.1.7
+Requires-Dist: future ==1.0.0
+Requires-Dist: jobv1
+Requires-Dist: pycryptodome ==3.21.0
+Requires-Dist: pydantic ==2.10.6
+Requires-Dist: pydantic-core ==2.27.2
+Requires-Dist: pyyaml ==6.0.2
+Requires-Dist: pywindmill
+Requires-Dist: six
+Requires-Dist: typing
+Requires-Dist: typing-extensions
+Requires-Dist: windmill-artifact
+Requires-Dist: windmill-device
+Requires-Dist: graph-service ==1.0.0.5.dev4
+Requires-Dist: yjskill ==1.0.1.7-dev4
+
