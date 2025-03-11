@@ -1,0 +1,21 @@
+"""
+Python module generated from Java source file org.bukkit.event.player.PlayerAnimationType
+
+Java source file obtained from artifact spigot-api version 1.21-R0.1-20240807.214924-87
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from enum import Enum
+from org.bukkit.event.player import *
+from typing import Any, Callable, Iterable, Tuple
+
+
+class PlayerAnimationType(Enum):
+    """
+    Different types of player animations
+    """
+
+    ARM_SWING = 0
+    OFF_ARM_SWING = 1
