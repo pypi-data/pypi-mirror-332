@@ -1,0 +1,11 @@
+django_invoke/__init__.py,sha256=XN6x_KJzRg47FZs_6Uv5coLDVszpn5SmcBvAA1LyKTg,273
+django_invoke/_config.py,sha256=tg6H_EQMgca16xPkUtMkuetSLwNnHnyaHx53URebvsY,1600
+django_invoke/django.py,sha256=NMjZQlAv4aYyktXvPzExcNkVUOKmuqJWlEtvHV9XdJw,3431
+django_invoke/docker.py,sha256=ikBccmeeIQwRpL5Yl3WLF7DgsnzYuG1lE8-bCzZrjMA,3317
+django_invoke/printer.py,sha256=vyxQOIDoYL98b2TaG6PBXOeNrCz569K6Jq4o4s5JoRU,442
+django_invoke/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_invoke/python.py,sha256=OxjkjDnm39yIS4uvvf-xl0PaAMdnak0ch4NuhdJJP_0,147
+django_invoke-0.0.0.dev1.dist-info/METADATA,sha256=Rjr_uTdcHNP3HsVpEyTyOJOaqVVSl9TB24JvPfsvPKM,624
+django_invoke-0.0.0.dev1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+django_invoke-0.0.0.dev1.dist-info/top_level.txt,sha256=rOtuyJ0_RrM1TXZqY93g6CY0hgJ1hklCa3h-yfg1zio,14
+django_invoke-0.0.0.dev1.dist-info/RECORD,,
