@@ -1,0 +1,2 @@
+[console_scripts]
+ieeefp = ieeefp.ieeefp:float_to_ieee754
