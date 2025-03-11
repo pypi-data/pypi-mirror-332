@@ -1,0 +1,7 @@
+faststream_schema_registry/__init__.py,sha256=zPo0EyGSFISmZ-Sxh-20KbeLiMBQXpCrCvirSe7yWDM,192
+faststream_schema_registry/middleware.py,sha256=OgzU9VnmunIdoY8DY6zHlVblJwzkdQ3TyZmBBS1kuxU,1551
+faststream_schema_registry/registries.py,sha256=uNkmKUi0eEx0ulx7MjjblfphRrG-WMHGH_GdZKxAdTE,5437
+faststream_schema_registry-0.1.1.dist-info/LICENSE,sha256=kANCPVtdObYs7YWSpyuenAgteBOF-LTQOiI3sb9RUGA,11362
+faststream_schema_registry-0.1.1.dist-info/METADATA,sha256=9m-3-8Uo9kze3hEYG7JB59vKbrueI-xfgQES2ntyfrw,3220
+faststream_schema_registry-0.1.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+faststream_schema_registry-0.1.1.dist-info/RECORD,,
