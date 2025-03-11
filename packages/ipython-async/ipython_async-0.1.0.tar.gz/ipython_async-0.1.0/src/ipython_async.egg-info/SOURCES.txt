@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ipython_async/__init__.py
+src/ipython_async/magics.py
+src/ipython_async.egg-info/PKG-INFO
+src/ipython_async.egg-info/SOURCES.txt
+src/ipython_async.egg-info/dependency_links.txt
+src/ipython_async.egg-info/requires.txt
+src/ipython_async.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/conftest.py
+src/tests/test_magics.py
