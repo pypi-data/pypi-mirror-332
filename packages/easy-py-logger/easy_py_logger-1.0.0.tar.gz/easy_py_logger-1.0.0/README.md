@@ -1,0 +1,90 @@
+
+# 🚀 `logg_it` - Python Logging Utility
+
+`logg_it` is a versatile logging utility designed to simplify logging for Python applications, featuring powerful stdout capture, automated exception logging, and customizable output.
+
+---
+
+## ✨ Features
+
+- **Automatic Exception Logging:** Automatically logs exceptions and highlights the problematic line.
+- **Stdout Capture:** Captures outputs from `print()` statements.
+- **Multiple Outputs:** Supports logging to console, file, or both.
+- **Flexible Logging Levels:** Customizable verbosity (DEBUG, INFO, WARNING, ERROR).
+- **Custom Formats:** Define custom log message structures.
+- **Error-Focused Mode:** Optionally logs only errors.
+- **Function Tagging:** Tags logs with the originating function name.
+- **Highlight Errors:** Clearly identifies error locations.
+
+---
+
+## 📦 Installation
+
+```bash
+pip install easy-logger
+```
+
+---
+
+## ⚡ Quick Examples
+
+### Decorator Example
+
+```python
+from easy-logger import logg_it
+
+@logg_it(log_file='logs/example.log', level=logging.DEBUG)
+def sample_function():
+    print("Hello from function!")
+    raise ValueError("Example Exception")
+```
+
+### Context Manager Example
+
+```python
+with logg_it(log_file='logs/example.log', level=logging.INFO):
+    print("Hello from context!")
+    1 / 0  # Automatically logs exception
+```
+
+---
+
+## ⚙️ Parameters
+
+| Parameter        | Type   | Default         | Description                             |
+|------------------|---------|-----------------|------------------------------------------|
+| `log_file`       | `str`  | `None`          | Path for file logging. Optional.              |
+| `level`           | `int`  | `logging.INFO`  | Logging level.                               |
+| `log_to_console` | `bool` | `True`          | Output logs to console.                      |
+| `log_format`     | `str`  | Default format  | Customizable log format.                    |
+| `log_errors_only` | `bool` | `False`         | If true, logs only errors.                  |
+
+---
+
+## 🛠️ Development
+
+Clone repository for local development:
+
+```bash
+git clone https://github.com/brianvess/logg_it.git
+cd your-repo
+pip install -e .
+```
+
+---
+
+## 📄 Example Log Output
+
+```
+2024-03-10 10:15:00 - INFO - Captured Output: "Hello from function!"
+2024-03-10 10:15:01 - ERROR - Exception in [sample_function]: ValueError: Example Exception
+🔴 🔥 **sample.py, line 4**
+```
+
+---
+
+file.name
+🌟 Credits
+
+Developed by Brian Vess.
+If you find this useful, please ⭐ star this repository and contribute! 🚀
