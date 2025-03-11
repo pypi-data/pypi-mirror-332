@@ -1,0 +1,5 @@
+[console_scripts]
+ai = ai.main:main
+
+[gui_scripts]
+
