@@ -1,0 +1,163 @@
+# MySQL_F - 高效 MySQL 数据库操作封装库
+
+`MySQL_F` 是一个 Python 库，封装了 MySQL 数据库的常用操作，提供了简洁易用的 API，支持连接池、批量插入、条件查询、更新、删除等功能。通过智能分块插入和 LRU 缓存优化，大幅提升了数据库操作的性能。
+
+## 安装
+
+使用 pip 安装：
+
+```bash
+pip install mysql_f
+```
+
+## 快速开始
+
+### 初始化数据库连接
+
+```python
+from mysql_f import MySQL_F as my
+
+# 初始化数据库连接
+db = my.MySQL_F(
+    dbName="test_db",        # 数据库名
+    tableName="users",       # 默认表名
+    host='localhost',        # 数据库地址
+    user='root',             # 用户名
+    password='123456',       # 密码
+    charset='utf8mb4',       # 字符集
+    poolSize=20              # 连接池大小（默认CPU核心数×5）
+)
+```
+
+### 创建数据表
+
+```python
+# 创建表
+db.create({
+    "id": "INT AUTO_INCREMENT PRIMARY KEY",
+    "name": "VARCHAR(255) NOT NULL",
+    "age": "INT",
+})
+```
+
+### 插入数据
+
+```python
+# 单条插入
+db.add({"name": "张三", "age": 25})  
+
+# 批量插入（智能分块优化）
+db.add([
+    {"name": "李四", "age": 28},
+    {"name": "王五", "age": 32},
+    {"name": "赵六", "age": 30},
+    {"name": "钱七", "age": 22},
+    {"name": "孙八", "age": 27},
+]) 
+```
+
+### 查询数据
+
+#### 基础查询
+
+```python
+# 查询所有字段
+db.get()
+
+# 指定返回字段
+db.get(fields=["name", "age"]) 
+```
+
+#### 条件查询
+
+```python
+# 等值查询
+db.get({"age": 25})  # 查询 age = 25 的数据
+
+# IN 查询
+db.get({"id": [1, 3, 5]})  # 范围查询 id 是 (1, 3, 5)
+
+# LIKE 查询
+db.get({"name": ("LIKE", "%张%")})  # 模糊查询 name 包含 '张' 的数据
+
+# 组合条件查询
+db.get({
+    "age": (">=", 18),
+    "name": ("LIKE", "%张%"),
+})
+# 查询 年龄大于等于 18 且 name 包含 '张' 的数据
+```
+
+### 删除数据
+
+```python
+# 条件删除
+db.dels({"name": "张三"})  # 删除 name = '张三' 的数据
+
+# 清空表数据（慎用！）
+db.dels() 
+```
+
+### 更新数据
+
+```python
+# 单字段更新
+db.set({"age": 26}, {"name": "张三"}) # 修改 年龄 = 26 条件下 name = '张三' 的数据
+
+# 多字段更新
+db.set(
+    {
+        "age": 30,
+        "name": "new_name",
+    }, 
+    {
+        "id": ("BETWEEN", (5, 10))
+    }
+)  # 修改 id 在 (5, 10) 范围内的 age = 30, name = 'new_name' 的数据
+```
+
+### 执行原生 SQL
+
+```python
+# 查询操作
+db.sql("SELECT * FROM users WHERE age > %s", (20,))
+```
+
+## 功能特性
+
+- **连接池支持**：通过 `PooledDB` 实现高效的数据库连接池管理。
+- **智能分块插入**：自动将大批量数据分块插入，避免单次插入数据量过大。
+- **LRU 缓存优化**：对查询结果进行缓存，提升重复查询的性能。
+- **简洁易用的 API**：提供统一的 API，简化数据库操作。
+- **错误处理**：详细的错误日志输出，方便调试和排查问题。
+
+## 依赖
+
+- `mysqlclient`
+- `dbutils`
+
+## 许可证
+
+本项目采用 [MIT 许可证](LICENSE)。
+
+## 贡献
+
+欢迎提交 Issue 和 Pull Request！如有任何问题或建议，请随时联系作者。
+
+---
+
+**GitHub 仓库**: [https://github.com/cxfjh/mysql_f](https://github.com/cxfjh/mysql_f)  
+**PyPI 包**: [https://pypi.org/project/mysql_f](https://pypi.org/project/mysql_f)
+```
+
+### 说明：
+1. **标题和简介**：简洁明了地介绍了库的功能和特点。
+2. **安装**：提供了安装命令。
+3. **快速开始**：通过示例代码展示了库的基本用法。
+4. **功能特性**：列出了库的主要功能和优势。
+5. **依赖**：列出了项目的依赖项。
+6. **许可证**：声明了项目的许可证。
+7. **贡献**：鼓励用户提交 Issue 和 Pull Request。
+8. **GitHub 仓库和 PyPI 包**：提供了项目链接。
+
+将此内容保存为 `README.md` 文件，与 `setup.py` 放在同一目录下即可。
