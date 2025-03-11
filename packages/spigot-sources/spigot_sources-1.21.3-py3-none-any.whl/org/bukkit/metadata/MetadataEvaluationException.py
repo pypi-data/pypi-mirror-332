@@ -1,0 +1,20 @@
+"""
+Python module generated from Java source file org.bukkit.metadata.MetadataEvaluationException
+
+Java source file obtained from artifact spigot-api version 1.21.3-R0.1-20241203.162251-46
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from org.bukkit.metadata import *
+from typing import Any, Callable, Iterable, Tuple
+
+
+class MetadataEvaluationException(RuntimeException):
+    """
+    A MetadataEvaluationException is thrown any time a LazyMetadataValue fails to evaluate its value due to an exception. The
+    originating exception will be included as this exception's cause.
+    """
+
+
