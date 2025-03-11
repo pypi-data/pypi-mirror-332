@@ -1,0 +1,9 @@
+backend/__init__.py,sha256=_zjjGXMIi9VDg6QpG32SdvNoecnA1SYfnDmHpSP5CIo,81
+backend/build_binary.py,sha256=ncJIZ1pFttDaKRpJ_ABMh2BxqMzsSR64UgkycoT1-GA,3393
+backend/cli.py,sha256=yCR1i9SHz8CL4MF7uoCDN31o8VAfZqE7yY_XmEnilWE,2654
+backend/main.py,sha256=WTg6Y3aWI4fN2IIEiTWIj0jESA98kkVqrBLjdRycImk,10938
+deepread-0.0.1.dist-info/METADATA,sha256=axzYc991HmZTHgFhhRPGqSXOO3WH7rPiVfOfhYu6cJk,2679
+deepread-0.0.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+deepread-0.0.1.dist-info/entry_points.txt,sha256=CpBU564884wyhCxwImTd-1HFN3Hiijfw4hSrtXuQdW0,46
+deepread-0.0.1.dist-info/top_level.txt,sha256=o0r_qMzzBDDtK9APrv2QVcIw9oc00JRmCEsTE2-AFr0,8
+deepread-0.0.1.dist-info/RECORD,,
