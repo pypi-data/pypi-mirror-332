@@ -1,0 +1,46 @@
+Metadata-Version: 2.2
+Name: devshare
+Version: 1.0.0
+Summary: Secure peer-to-peer file transfer CLI with encryption.
+Home-page: https://github.com/ZayanKhan-12
+Author: Zayan Khan
+Author-email: khanzayan_123@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: websockets
+Requires-Dist: cryptography
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: python-dotenv
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# DevShare - Secure File Transfer via CLI
+
+DevShare is a peer-to-peer file transfer CLI with AES-256 encryption.
+
+## 🔹 Installation
+```bash
+pip install devshare
+
+🔹 Usage
+
+Send a File
+
+devshare send myfile.txt --password SecurePass123
+
+Receive a File
+
+devshare receive ABC123 --password SecurePass123

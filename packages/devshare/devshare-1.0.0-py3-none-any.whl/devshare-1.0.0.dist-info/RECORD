@@ -1,0 +1,10 @@
+backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backend/app.py,sha256=bdUO7Asuu2lwQmi_ziAjUe2dGlvdRk7YWE_ns7PSy2I,2091
+backend/chunk_handler.py,sha256=0nnGPwE0H6WOvi-FKC_eTB8Qlsai5Q2gL0LNSlJLckI,1219
+backend/config.py,sha256=Gfu-5vLPFbEn4u-wQtIlmGXm0mwJbnIiGGZROpMOoeg,1483
+backend/encryption.py,sha256=aMzI5Zo0Jka7R7eY_iF1g-8gxH0vToA5EF1J6h-Gu2Y,1029
+devshare-1.0.0.dist-info/METADATA,sha256=KhmlhbqnI2i2jv2j1LYjMvJ17Bt5PZp4Uwq2OuH8OPc,1104
+devshare-1.0.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+devshare-1.0.0.dist-info/entry_points.txt,sha256=gdw6xCunykfyIx3gn2rXLgbWIJA7CbY1mnZuKaPLLtc,47
+devshare-1.0.0.dist-info/top_level.txt,sha256=GgPc0nUfggtW0QRjw0JxNLTSmGxotuH8FKYQa5Bu_V4,17
+devshare-1.0.0.dist-info/RECORD,,
