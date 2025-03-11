@@ -1,0 +1,25 @@
+[project]
+name = "mitalex_project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Митрофаов Александр",email = "mitrofan7879@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+name = "mitalex_project"
+version = "0.1.0"
+description = "My first Python package"
+authors = ["Митрофанов Александр <mitrofan7879@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "mitalex_project", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
