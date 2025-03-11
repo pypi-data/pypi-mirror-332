@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: galamo
+Version: 0.1.0
+Summary: Galaxy Morphology Classification
+Home-page: https://github.com/jdingra11/galamo
+Author: Jashanpreet Singh Dingra
+Project-URL: Model Download (Zenodo), https://doi.org/10.5281/zenodo.15002609
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: joblib
+Requires-Dist: requests
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Galamo is a Python package that utilizes deep learning to classify galaxy morphologies based on input images. It is designed for astronomers, researchers, and space enthusiasts who want an easy-to-use tool for automatic galaxy classification.
