@@ -1,0 +1,12 @@
+docstring_parser
+pyyaml
+pygments
+structlog
+
+[test]
+freezegun
+pytest
+pytest-cov
+pytest-mock
+pytest-asyncio
+pytest-httpx
