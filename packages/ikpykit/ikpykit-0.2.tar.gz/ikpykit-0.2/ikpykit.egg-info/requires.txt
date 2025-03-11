@@ -1,0 +1,5 @@
+scikit-learn>=1.2
+pandas>=1.5
+numpy<=1.22
+numba>=0.54
+tqdm>=4.62.3
