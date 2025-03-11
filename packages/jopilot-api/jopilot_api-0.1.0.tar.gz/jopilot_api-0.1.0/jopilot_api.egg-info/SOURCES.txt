@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+jopilot_api.egg-info/PKG-INFO
+jopilot_api.egg-info/SOURCES.txt
+jopilot_api.egg-info/dependency_links.txt
+jopilot_api.egg-info/requires.txt
+jopilot_api.egg-info/top_level.txt
