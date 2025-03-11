@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+clusterdc/__init__.py
+clusterdc.egg-info/PKG-INFO
+clusterdc.egg-info/SOURCES.txt
+clusterdc.egg-info/dependency_links.txt
+clusterdc.egg-info/requires.txt
+clusterdc.egg-info/top_level.txt
+clusterdc/datasets/__init__.py
+clusterdc/examples/Examples.ipynb
+clusterdc/main/__init__.py
+clusterdc/main/clusterdc.py
+clusterdc/main/data.py
+clusterdc/main/kde.py
