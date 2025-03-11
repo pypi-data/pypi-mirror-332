@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: txtwrap
+Version: 1.0.0
+Summary: A simple text wrapping tool.
+Author: azzammuhyala
+License: MIT
+Keywords: wrap,wrapper,wrapping,wrapping tool,text wrap,text wrapper,simple wrap,align,aligner,aligning
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# TxTWrap 🔤
+A tool for wrapping a text.🔨
+
+> **⚠️All documents are in the each module.⚠️**
+
+All constants and functions❕:
+- `LOREM_IPSUM_W`
+- `LOREM_IPSUM_S`
+- `LOREM_IPSUM_P`
+- `mono`
+- `word`
+- `wrap`
+- `align`
+- `shorten`
+
+Mod `python -m txtwrap` Commands❗:
+```shell
+python -m txtwrap --help
+```
