@@ -1,0 +1,8 @@
+entities/point_2d.py,sha256=fy4CsDKu6fn5hN7ItOP5y7b4N-Hs97RcC4BpZkWHfbA,75
+entities/point_3d.py,sha256=Gok3mRU7T8JhhpEk04QtRiTHSPvwZ34ownMnsRuJM-A,94
+operations/line_segment.py,sha256=EC5R3PN3NIWJoH7DfTVhsQEZPCNiP8z-lFqgF1cVVrU,1180
+operations/matrixes.py,sha256=7eVkbsTCWsd_y0n0MHL8dIejydSrUVBx1zzdmtx2czg,330
+mathlib_cc_gbv-0.1.0.dist-info/METADATA,sha256=3sC-QnAxzyHswlMjTtjD5F_F_hZq10xqJy5b4fph54g,154
+mathlib_cc_gbv-0.1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+mathlib_cc_gbv-0.1.0.dist-info/top_level.txt,sha256=Bobn4cstXJDi1YmbrfuQdSsYtFTFq3Z5ajSFdwhVHhM,20
+mathlib_cc_gbv-0.1.0.dist-info/RECORD,,
