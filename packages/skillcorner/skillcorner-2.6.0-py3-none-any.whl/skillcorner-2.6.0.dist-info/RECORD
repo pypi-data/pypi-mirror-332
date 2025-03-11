@@ -1,0 +1,11 @@
+skillcorner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skillcorner/client.py,sha256=XalkAZ_Ijln_FAYItibcOMV3yofdLCWZe2L66scC_jU,156
+skillcorner/errors.py,sha256=CoSlvO-sA167yhEtYwnegmURRyAnsLb98UkXCZMFygA,626
+skillcorner/pagination.py,sha256=AcwOFu49Ubmel_qlnEh5jRiHAjK-gsaU0ByBqN81jmU,2566
+skillcorner/config/class_config.py,sha256=DrduQJbuNp6QofV1f11aeeE4xzS8qsvLpVx3aAjzzXg,706
+skillcorner/config/method_config_list.py,sha256=u601qUp0AbqcLqcONt7RBYyoWcqci13bG45M1TJycLY,5260
+skillcorner-2.6.0.dist-info/METADATA,sha256=rwJX7ThvNh7Mln_UHPQNalBq8wvmMLX5MJjf7CMjgvE,4189
+skillcorner-2.6.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+skillcorner-2.6.0.dist-info/entry_points.txt,sha256=7gNnlr1F7_VGx-fHGbxzoFQUcEjcO-_d2KnVaCh3U-o,81
+skillcorner-2.6.0.dist-info/licenses/LICENSE.md,sha256=Vjx0yaPxxoVJZA03bgw_4-dmyjsZO3aERJIVsJpEqJY,1068
+skillcorner-2.6.0.dist-info/RECORD,,
