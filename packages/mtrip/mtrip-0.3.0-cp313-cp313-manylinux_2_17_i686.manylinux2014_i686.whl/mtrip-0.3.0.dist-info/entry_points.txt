@@ -1,0 +1,4 @@
+[console_scripts]
+mtrip = mtrip.cli.mtrip_cmd:main
+mtrip-combine = mtrip.cli.mtrip_combine_cmd:main
+mtrip-suboptimal = mtrip.cli.mtrip_suboptimal_cmd:main
