@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "relari-otel"
+version = "0.0.1"
+description = "Relari Open-Telemetry package"
+authors = ["Pasquale Antonante <pasquale@relari.ai>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.14"
+opentelemetry-sdk = "^1.30.0"
+opentelemetry-exporter-otlp-proto-http = "^1.30.0"
+openinference-semantic-conventions = "^0.1.14"
+openinference-instrumentation-openai = { version = "^0.1.21", optional = true }
+openinference-instrumentation-langchain = { version = "^0.1.35", optional = true }
+redis = { version = "^5.2.1", optional = true }
+
+[tool.poetry.extras]
+openai = [ "openinference-instrumentation-openai" ]
+langchain = [ "openinference-instrumentation-langchain" ]
+certification = [ "redis" ]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
