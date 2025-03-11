@@ -1,0 +1,71 @@
+Metadata-Version: 2.2
+Name: deepread
+Version: 0.0.2
+Summary: A PDF reading and analysis application
+Author-email: Ngoc Khuat <qn.khuat@gmail.com>
+Project-URL: Homepage, https://github.com/qnkhuat/deepread
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi[standard]==0.115.8
+Requires-Dist: openai==1.65.2
+Requires-Dist: pymupdf==1.24.11
+Requires-Dist: pymupdf4llm==0.0.17
+
+# DeepRead
+
+A desktop application for reading and analyzing PDFs with LLM support.
+
+![Deep Read screenshot](./statics/demo.png)
+
+## Overview
+
+DeepRead helps you get more from your PDF documents by combining a clean reading experience with AI-powered analysis. With DeepRead, you can:
+- Read PDF documents in a distraction-free interface
+- Chat with AI about document content to gain deeper insights
+- Extract and process text from complex PDFs
+
+## Installation
+
+### Option 1: Install via pip
+
+```bash
+pip install deepread
+```
+
+After installation, launch the application with:
+
+```bash
+deepread serve
+```
+
+The server will start at http://127.0.0.1:8000 by default.
+
+### Option 2: Download desktop application
+
+Pre-built desktop applications are available for:
+- Windows
+- macOS
+- Linux
+
+Download the latest version from our [Releases](https://github.com/yourusername/DeepRead/releases) page.
+
+## Development
+
+For local development, you can run:
+
+```bash
+# Start the frontend and backend for web development
+npm run dev:web
+
+# Start with Electron support
+npm run dev:electron
+```
