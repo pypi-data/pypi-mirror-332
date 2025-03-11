@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=UzwnB60i-AqrvyFYj3Fkv16wdED9jsaSm3HkAuA5rzw,26
+tests/test_cli.py,sha256=iUZscxN8fkZXNSLI4t82y52z_v_wwIRUyZ6uTGc7XAE,6661
+tests/test_formatter.py,sha256=6l-fxkJCi7ll6QVIylyy5pirKapbYMHcek18qp-ItRU,16749
+tests/fixtures/large.csv,sha256=Mo1O052lO5ggRngrW0FP_3sN4jJthnqUtkVa3WhB6Gg,3353
+tests/fixtures/small.csv,sha256=tv6-OSrzl1ryvQWq5N7qXn1D0rpihNqh3L6cEOepwMg,127
+vl/__init__.py,sha256=MoMTQOH19xG1vQC-LZVr5ty9BsdWz36t8rN8yN55gZs,84
+vl/cli.py,sha256=q75mmoKP0jBTb2aDQKjV5kKK3JOi91uR9quefn9dBgU,3263
+vl/formatter.py,sha256=NrloDLScv4qvb-ykNw4mB7mhILt0oVUW54ukC9ahA3o,12130
+vl/py.typed,sha256=Z8aFMHbEEcMtnQ43apgeYi9IErTQngBk7aZIj0q6xIg,82
+vl_csv_viewer-0.2.0.dist-info/METADATA,sha256=VRWDgI5gFeRYBuI3GCAK_z7vW9LlmivoKCsKSe_8Rck,5490
+vl_csv_viewer-0.2.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+vl_csv_viewer-0.2.0.dist-info/entry_points.txt,sha256=jktG1dXIwU5K_R3OksrgMUTmPy4q-IQbazUbCa1qVuM,35
+vl_csv_viewer-0.2.0.dist-info/top_level.txt,sha256=uCfQtg0ImJJc0wQQLP3-0O5NzJAghV_3UDChocba568,9
+vl_csv_viewer-0.2.0.dist-info/RECORD,,

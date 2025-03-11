@@ -1,0 +1,2 @@
+[console_scripts]
+vl = vl.cli:main
