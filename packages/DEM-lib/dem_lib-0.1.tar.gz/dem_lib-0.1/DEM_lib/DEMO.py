@@ -1,0 +1,1 @@
+def exit(*args): return f"{args}"
