@@ -1,0 +1,139 @@
+level,parent_code,code,name,prefixed_id
+0,,_T,Total,23def2d6-2cd4-4123-bb07-798a599be272
+1,_T,A,"Products of agriculture, forestry and fishing",8748d19f-297b-4535-b946-b42357cb6d3c
+2,A,A01,"Products of agriculture, hunting and related services",35bd2edb-2c66-423a-871a-e39e7ca85f73
+2,A,A02,"Products of forestry, logging and related services",e0bc1682-7d17-4dc1-b837-ebf5f2af27e0
+2,A,A03,Fish and other fishing products; aquaculture products; support services to fishing,9c19a895-34ea-43b2-be9b-c9758c5143aa
+1,_T,B,Mining and quarrying,040843fb-d037-4d38-bb79-9aa8ccf2b2e0
+2,B,B05,Coal and lignite,f08bc683-e8dd-488f-9f5a-e0eafa19ef20
+2,B,B06,Crude petroleum and natural gas,fd5756e1-859d-4ae2-a87b-04be6d90aea7
+2,B,B07,Metal ores,239fd899-0f3c-4a8b-8d3a-5b3c3d17a215
+2,B,B08,Other mining and quarrying products,bfe88a36-f76b-421d-b5e9-2dcc33cf7a18
+2,B,B09,Mining support services,17ba2bf7-1358-4b50-b9ff-dc7713ee2bc6
+1,_T,C,Manufactured products,a30371eb-c8b8-404d-9b1c-b78b7ca4a7e0
+2,C,C10_12,"Food, beverages and tobacco products",0472a0f8-4777-4c08-a533-ff7da11cf8f5
+3,C10_12,C10,Food products,84540c06-c877-4bcc-82ec-518da38f9c85
+3,C10_12,C11,Beverages,ba8d84d2-6e8f-4e04-b2cc-cd5bee00b2f5
+3,C10_12,C12,Tobacco products,af3d9892-a79c-40db-a389-1cf56d1136f4
+2,C,C13_15,"Textiles, wearing apparel, leather and related products",ea38df61-eb95-48a3-929e-b99ab8d90ee8
+3,C13_15,C13,Textiles,00075932-be37-46d3-8e1f-8c92933cff53
+3,C13_15,C14,Wearing apparel,c46a84be-a4de-4901-babf-ad3f82a73f7c
+3,C13_15,C15,Leather and related products,68157325-e67c-4cb5-b0c8-1d2a9462aac1
+2,C,C16,"Wood and of products of wood and cork, except furniture; articles of straw and plaiting materials",3f2b5c61-34ce-4158-b644-f271ac21e5e3
+2,C,C17,Paper and paper products,29756c32-306c-4d6a-95b7-f325a5f5475e
+2,C,C18,Printing and recording services,33dea0b5-7a6a-4440-b12f-fb3215a2984c
+2,C,C19,Coke and refined petroleum products,325839e3-2aa6-494e-bd5b-43f2ca6ecd00
+2,C,C20,Chemicals and chemical products,52743a22-a495-4a7e-b3c0-b4e2f11c7628
+2,C,C21,Basic pharmaceutical products and pharmaceutical preparations,c30acdfe-40a6-4dd1-a3b3-f9be25125e29
+2,C,C22,Rubber and plastic products,cf3ce87b-dbd2-42a1-8b49-ed12058cad68
+2,C,C23,Other non-metallic mineral products,89d22935-fd18-48f6-b064-ce88b7a9b6cb
+2,C,C24,Basic metals,47d3b908-89e4-4e57-864b-59084251b353
+2,C,C25,"Fabricated metal products, except machinery and equipment",29806264-d9c7-454a-8159-db1573f130d0
+2,C,C26,"Computer, electronic and optical products",23c61ef7-4005-4ef6-9ed3-bd0eb417b444
+2,C,C27,Electrical equipment,6cd2065a-22e8-4c06-a4c3-0328f671815d
+2,C,C28,Machinery and equipment n.e.c.,3313858c-b63a-486b-bac0-5e1f7ae48ae6
+2,C,C29,"Motor vehicles, trailers and semi-trailers",90bbe4aa-d4ce-4bdf-9627-265734eeb060
+2,C,C30,Other transport equipment,d19a6d18-02be-474b-93ba-e0d9e7efd37b
+2,C,C31_32,Furniture and other manufactured goods,244adbb4-8ab3-4be0-bfb3-937a5f3a9374
+3,C31_32,C31,Furniture,88b2d1ea-9428-4e03-b9e3-60533f40a284
+3,C31_32,C32,Other manufactured goods,bb5d5073-bdec-4cb3-b244-8a570e1272e1
+2,C,C33,Repair and installation services of machinery and equipment,0ba34c77-1bd6-4f8f-88c8-68d9cfabe285
+1,_T,D,"Electricity, gas, steam and air conditioning",3e66086f-4d06-430c-be5a-445585fd2c98
+1,_T,E,"Water supply; sewerage, waste management and remediation services",0e989374-7698-4344-97ee-7e21e232ba9f
+2,E,E36,Natural water; water treatment and supply services,a2efd379-9cbe-46f3-b558-6ff2c00413eb
+2,E,E37_39,"Sewerage services; sewage sludge; waste collection, treatment and disposal services; materials recovery services; remediation services and other waste management services",82517852-6fcf-4ec6-89d4-ae682ba345b7
+3,E37_39,E37,Sewerage services; sewage sludge,32332d8c-d148-49ad-bb9f-3ccfc263e99b
+3,E37_39,E38,"Waste collection, treatment and disposal services; materials recovery services",8cac8101-524f-4558-aba6-ba838d8ea0e8
+3,E37_39,E39,Remediation services and other waste management services,f54420c1-777b-4199-a007-6b8ea53
+1,_T,F,Constructions and construction works,f54420c1-777b-4199-a007-6b8ea6ea95a9
+2,F,F41,Buildings and building construction works,9f94cc32-5b73-419b-afb8-7dd04d974031
+2,F,F42,Constructions and construction works for civil engineering,e29f8640-b71b-437b-a1ee-267e0a4ba94d
+2,F,F43,Specialised construction works,904e7000-50f2-4e56-9b4f-91c2504e7aad
+1,_T,G,Wholesale and retail trade services; repair services of motor vehicles and motorcycles,a19524af-e21d-482b-962a-ad928b82e82b
+2,G,G45,Wholesale and retail trade and repair services of motor vehicles and motorcycles,d6f62fcc-4c94-4173-8f47-05826f93703c
+2,G,G46,"Wholesale trade services, except of motor vehicles and motorcycles",d92c2b0a-d724-49da-a88f-eaa3a051b860
+2,G,G47,"Retail trade services, except of motor vehicles and motorcycles",a1f75cd6-1be1-41ba-85f4-ff7d8183f373
+1,_T,H,Transportation and storage services,c6e8bb31-834f-4c48-aae1-b3a5a36c8c6b
+2,H,H49,Land transport services and transport services via pipelines,16b2d2d7-c49d-4b02-9224-7e1476281aba
+2,H,H50,Water transport services,abd96e48-104e-4c0c-85a7-af46b9336fc0
+2,H,H51,Air transport services,2a892c1c-9251-4b0e-af39-7de9a4a9c813
+2,H,H52,Warehousing and support services for transportation,89d2b885-c9f2-4304-9587-fafcd2249b48
+2,H,H53,Postal and courier services,644f8625-510c-4af6-a228-6a91f142e229
+1,_T,I,Accommodation and food services,316fcfb3-2a4f-4850-8e09-a74aa248c0ce
+2,I,I55,Accommodation services,43c175ba-2d7b-4a08-bb19-831c2605643d
+2,I,I56,Food and beverage serving services,d5a9b590-2750-49fc-a1ef-1713c100e668
+1,_T,J,Information and communication services,bd6fc75a-0f9d-4473-b918-7b6fe65c1dc1
+2,J,J58,Publishing services,ecbb44d9-f28f-4c3b-b5b2-28f9feda3863
+2,J,J59_60,"Motion picture, video and television programme production services, sound recording and music publishing; programming and broadcasting services",13e6aa3f-fe08-4c21-b959-bbe1af8666f8
+3,J59_60,J59,"Motion picture, video and television programme production services, sound recording and music publishing",22acef36-f1e5-4f5b-b834-876e82c226c0
+3,J59_60,J60,Programming and broadcasting services,69524f96-8258-46b2-b333-02eac9f2f9d1
+2,J,J61,Telecommunications services,a697c368-b909-4c14-a646-a3d359e30deb
+2,J,J62_63,"Computer programming, consultancy and related services; Information services",5f7365e8-bb5c-48c9-bd77-a33ef43b10f2
+3,J62_63,J62,"Computer programming, consultancy and related services",95823e73-0edd-4885-a719-a71d3843d95f
+3,J62_63,J63,Information services,007edf48-dd14-4240-a407-8455e542cf4f
+1,_T,K,Financial and insurance services,2933f21f-f119-43c0-92cb-41c0de5e9522
+2,K,K64,"Financial services, except insurance and pension funding",c498fee5-fa55-4144-8199-e992e0b64e62
+2,K,K65,"Insurance, reinsurance and pension funding services, except compulsory social security",3d2b4978-3324-45a3-a750-cb6d445f94bf
+2,K,K66,Services auxiliary to financial services and insurance services,5b89f9f4-0beb-4b1b-b09f-059e727481f0
+1,_T,L,Real estate services,b7168b8e-dc08-4265-9dd5-3da7f18b348f
+2,L,L68A,Imputed rents of owner-occupied dwellings,40485e95-7ae5-4769-8e75-c78dad697bed
+2,L,L68B,Real estate services excluding imputed rents,8d3e0101-7c01-4124-b8c3-6e2b86156b0f
+1,_T,M,"Professional, scientific and technical services",2d83e092-29cc-4930-8e86-cfe2705c7c8b
+2,M,M69_70,Legal and accounting services; services of head offices; management consultancy services,4a8e9ea2-b353-49db-97fb-e74d4dd36f62
+3,M69_70,M69,Legal and accounting services,9ce83850-0c45-407e-8bef-d71e106ccc52
+3,M69_70,M70,Services of head offices; management consulting services,67a86f64-bc6d-4300-afb0-c3319c27f8e7
+2,M,M71,Architectural and engineering services; technical testing and analysis services,b0839183-d6d9-4513-97de-00e9887e6fe2
+2,M,M72,Scientific research and development services,d91254ab-0b8a-4842-8a90-0a3a12a8e5fb
+2,M,M73,Advertising and market research services,76a5abd4-093d-4fd3-8157-297c794d7081
+2,M,M74_75,"Other professional, scientific and technical services and veterinary services",8694b15b-eeba-4a50-9a85-1637cf264c31
+3,M74_75,M74,"Other professional, scientific and technical services",9079fdca-a771-4cbd-90cc-faa25b834b25
+3,M74_75,M75,Veterinary services,0a7c28cf-e8d5-42c5-af42-91432ceb7d0a
+1,_T,N,Administrative and support services,9ed37340-0acb-4ba9-819f-9fc4939a96d6
+2,N,N77,Rental and leasing services,3196f9b3-d9ab-4b65-9d1a-0e16f12e08f8
+2,N,N78,Employment services,7f74496f-f9a9-47d9-9ae3-c2e44e01a077
+2,N,N79,"Travel agency, tour operator and other reservation services and related services",8c58f9a9-b8cd-4cee-9f1f-c608144e011a
+2,N,N80_82,"Security and investigation services; services to buildings and landscape; office administrative, office support and other business support services",bfcd3621-7691-4606-8e16-a0432afcb226
+3,N80_82,N80,Security and investigation services,f57dc9d2-ac27-43c9-a669-cee319912e05
+3,N80_82,N81,Services to buildings and landscape,7792cafc-6a52-4dda-8e3c-6b0f42f5ca51
+3,N80_82,N82,"Office administrative, office support and other business support services",851e8a0d-194a-4d6a-8577-4550f2911cf6
+1,_T,O,Public administration and defence services; compulsory social security services,b735276f-1e7a-47ab-9bc4-9e87fe5d7cb3
+1,_T,P,Education services,e0e2689d-f076-4442-b20b-22d5a6dd1e56
+1,_T,Q,Human health and social work services,78aa6acb-d8e0-45b0-af29-42a4165074c8
+2,Q,Q86,Human health services,c9780d85-638c-49b1-88b0-c6ab09fef67e
+2,Q,Q87_88,Residential care services; social work services without accommodation,88e598be-1ca3-488f-9298-3de3a30cf038
+3,Q87_88,Q87,Residential care services,fdb86035-83c3-415b-8f8a-af986bce5ead
+3,Q87_88,Q88,Social work services without accommodation,14769c56-a1dd-43ea-9697-f9d2d8c7164f
+1,_T,R,"Arts, entertainment and recreation services",8e883d2a-a3fd-4bf6-888c-4499bd219f24
+2,R,R90_92,"Creative, arts, entertainment, library, archive, museum, other cultural services; gambling and betting services",7294e6dd-384b-45af-a818-9c01d08285d9
+3,R90_92,R90,"Creative, arts and entertainment services",57bd3ae3-16bd-4fcf-b31f-2a023d9858c0
+3,R90_92,R91,"Library, archive, museum and other cultural services",dff49970-3481-43f7-b86f-6fcafbbbce30
+3,R90_92,R92,Gambling and betting services,dc594740-fb68-4435-8bbc-6c947115020a
+2,R,R93,Sporting services and amusement and recreation services,35f5bd3e-4dea-42d1-9562-665793a42ab4
+1,_T,S,Other services,65a2e5cf-e0f9-4341-9feb-8028272ad593
+2,S,S94,Services furnished by membership organisations,6f5a9d59-2a9e-462d-a436-b7d377e8b706
+2,S,S95,Repair services of computers and personal and household goods,3be91010-33dc-42ac-a608-6bb6a4c75bf5
+2,S,S96,Other personal services,901ff530-1272-43e1-8782-0cc936dafbaa
+1,_T,T,Services of households as employers; undifferentiated goods and services produced by households for own use,a742d148-6243-4d43-8d50-ebcacc434315
+2,T,T97,Services of households as employers of domestic personnel,656ab834-290a-4150-844c-8f409e010df7
+2,T,T98,Undifferentiated goods and services produced by private households for own use,ba20733c-7b03-43a1-b982-67c6438735c2
+1,_T,U,Services provided by extraterritorial organizations and bodies,6f5a9d59-2a9e-a436-b7d377e8b706
+2,U,U99,Services provided by extraterritorial organizations and bodies,6f5a9d59-2a9e-a436-b7d377e8b707
+0,,ef,Economic flows,6f5a9d59-2a9e-a436-b7d377e8b708
+1,ef,B1G,"Value added, gross",6f5a9d59-2a9e-a436-b7d377e8b709
+1,ef,B2A3G,"Operating surplus and mixed income, gross",6f5a9d59-2a9e-a436-b7d377e8b710
+1,ef,B2A3N,"Operating surplus and mixed income, net",6f5a9d59-2a9e-a436-b7d377e8b711
+2,B2A3G,B3G,"Mixed income, gross",6f5a9d59-2a9e-a436-b7d377e8b712
+1,ef,D1,Compensation of employees,6f5a9d59-2a9e-a436-b7d377e8b713
+2,D1,D11,Wages and salaries,6f5a9d59-2a9e-a436-b7d377e8b714
+1,ef,D29X39,Other taxes less other subsidies on production,6f5a9d59-2a9e-a436-b7d377e8b715
+1,ef,P1,Output,6f5a9d59-2a9e-a436-b7d377e8b716
+1,ef,P2,Intermediate consumption,6f5a9d59-2a9e-a436-b7d377e8b717
+1,ef,P3,Final consumption expenditure,6f5a9d59-2a9e-a436-b7d377e8b718
+2,P3,P33,Direct purchases abroad by residents,6f5a9d59-2a9e-a436-b7d377e8b719
+2,P3,P34,Domestic purchases by non-residents,6f5a9d59-2a9e-a436-b7d377e8b720
+2,P3,P3S13,General government final consumption expenditure,6f5a9d59-2a9e-a436-b7d377e8b721
+2,P3,P3S14DC,Households final consumption expenditure domestic concept,6f5a9d59-2a9e-a436-b7d377e8b722
+2,P3,P3S15,NPISHs final consumption expenditure,6f5a9d59-2a9e-a436-b7d377e8b723
+1,ef,P5,Gross capital formation,6f5a9d59-2a9e-a436-b7d377e8b724
+2,P5,P51C,Consumption of fixed capital,6f5a9d59-2a9e-a436-b7d377e8b725
+2,P5,P51G,Gross fixed capital formation,6f5a9d59-2a9e-a436-b7d377e8b726

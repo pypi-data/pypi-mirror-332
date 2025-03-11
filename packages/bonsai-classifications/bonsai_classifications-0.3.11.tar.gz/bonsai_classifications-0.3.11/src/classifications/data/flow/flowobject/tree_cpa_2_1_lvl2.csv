@@ -1,0 +1,106 @@
+code,name,parent_code,level,prefixed_id
+TOTAL,Total,,0,a441c786-0bd8-4222-8ae3-6ad73f8901a0
+A,"Products of agriculture, forestry and fishing",TOTAL,1,f93029fe-4dff-4ae3-bf78-5ea620af5f40
+A01,"Products of agriculture, hunting and related services",A,2,3579cbff-f9be-448a-9753-bfac63112575
+A02,"Products of forestry, logging and related services",A,2,33e9a736-b0f4-437d-9c7c-db3f1d7f082f
+A03,Fish and other fishing products; aquaculture products; support services to fishing,A,2,3ed73e02-59a0-45c0-9077-28aea5ac49e9
+B,Mining and quarrying,TOTAL,1,a0435e00-f65b-40d6-918c-8ac317517200
+C,Manufactured products,TOTAL,1,01934f8a-18f1-43b6-b721-7f6fa6dd02d2
+C10_12,"Food, beverages and tobacco products",C,2,76f590f6-8df9-4877-92db-636e084e49a4
+C13_15,"Textiles, wearing apparel, leather and related products",C,2,942976b9-e41f-4f19-9692-c5760ba1bf8d
+C16,"Wood and of products of wood and cork, except furniture; articles of straw and plaiting materials",C,2,69ce520d-ebe6-423e-8df8-bb8389572dff
+C17,Paper and paper products,C,2,333d9092-19f6-4261-8f42-4082d802764a
+C18,Printing and recording services,C,2,e75d39fb-3e6c-46c5-82f1-651c21c75092
+C19,Coke and refined petroleum products,C,2,904aeaa6-0a38-4b96-acfc-786368cfaa0e
+C20,Chemicals and chemical products,C,2,5184cbf2-5179-4a9f-9bc7-08cbe479c0be
+C21,Basic pharmaceutical products and pharmaceutical preparations,C,2,96ac25a4-af7d-4dea-8f1a-96f4ffe0c9b3
+C22,Rubber and plastic products,C,2,883a27c2-62e9-4e56-b24e-1f90ead59132
+C23,Other non-metallic mineral products,C,2,d0f494c0-c5c4-4fea-a8dd-e81ea4eda909
+C24,Basic metals,C,2,e9d367b9-2692-446e-890b-5c8b77f3bff1
+C25,"Fabricated metal products, except machinery and equipment",C,2,3bceef8c-5310-4469-91f9-9abac7780e19
+C26,"Computer, electronic and optical products",C,2,460d31ff-2dc9-40b7-b20b-c649507ec9aa
+C27,Electrical equipment,C,2,1818480b-709c-405c-bd95-9c6bd2819043
+C28,Machinery and equipment n.e.c.,C,2,e1d2be39-a5b2-4a8b-85ec-1d259da78986
+C29,"Motor vehicles, trailers and semi-trailers",C,2,eadce1cf-4a75-4ebd-9588-441efcaa46c7
+C30,Other transport equipment,C,2,5d39a716-40a4-40c9-8f22-78e2210e054d
+C31_32,Furniture and other manufactured goods,C,2,d3273b14-c3ba-4234-89fe-60abd91cb678
+C33,Repair and installation services of machinery and equipment,C,2,b289711d-89ed-4430-a064-c2e7d5d0d819
+D,"Electricity, gas, steam and air conditioning",TOTAL,1,bbc97837-8f1b-40f9-bd5e-540315864578
+D35,"Electricity, gas, steam and air conditioning",D,2,82a1cf37-3a19-4c0c-a922-88d35b59b50d
+E,"Water supply; sewerage, waste management and remediation services",TOTAL,1,18fc04b3-fd59-4001-9cf2-9854e7e72934
+E36,Natural water; water treatment and supply services,E,2,cb877501-2ed1-4661-b3d4-26fcd29b79dd
+E37_39,"Sewerage services; sewage sludge; waste collection, treatment and disposal services; materials recovery services; remediation services and other waste management services",E,2,7b754efa-fd25-4949-b89c-ccc672d5f8ea
+F,Constructions and construction works,TOTAL,1,79d2285b-e1ee-482c-a550-52189b5f3ffb
+G,Wholesale and retail trade services; repair services of motor vehicles and motorcycles,TOTAL,1,5c9bb22d-cec8-4a1c-9529-add9f3aaff8d
+G45,Wholesale and retail trade and repair services of motor vehicles and motorcycles,G,2,d2ea3aad-8e7c-46b0-8342-5903fbc8dabd
+G46,"Wholesale trade services, except of motor vehicles and motorcycles",G,2,3d7ba590-f511-4d55-b6b2-25b0439d7750
+G47,"Retail trade services, except of motor vehicles and motorcycles",G,2,3825a88c-c327-4d5a-b174-bd6523f32c3b
+H,Transportation and storage services,TOTAL,1,e4218518-fcb1-46c0-8bd6-87c8de495292
+H49,Land transport services and transport services via pipelines,H,2,b41b8dbe-b2ab-48cb-b921-20e115b4664b
+H50,Water transport services,H,2,a9739b67-cc76-4e57-96db-59afddeaa300
+H51,Air transport services,H,2,096f395a-efd3-4e94-ae9a-a54d5f738a5c
+H52,Warehousing and support services for transportation,H,2,d2382507-f338-4d55-8800-0e1eae85f41d
+H53,Postal and courier services,H,2,d7fc6a5c-cd88-4000-8e73-35b32a53b256
+I,Accommodation and food services,TOTAL,1,911b14eb-8789-4b18-8094-4e2130a92e85
+I55,Accommodation services,I,2,07b39a88-cbfc-434d-8630-af6bd3f421a1
+I56,Food and beverage serving services,I,2,ea6aa8ac-de8c-42d1-8511-6175563f068f
+J,Information and communication services,TOTAL,1,e117f366-f3fe-4038-ba50-9bf73f57c5ef
+J58,Publishing services,J,2,19373718-a029-45dc-9a02-78f7e2076e5b
+J59_60,"Motion picture, video and television programme production services, sound recording and music publishing; programming and broadcasting services",J,2,ac06f18e-4259-4a7b-8378-9070f7f54461
+J61,Telecommunications services,J,2,793bbb90-6648-431f-a235-752998387366
+J62_63,"Computer programming, consultancy and related services; Information services",J,2,92fdc12d-eb7e-48fe-a987-491aee2d2db1
+K,Financial and insurance services,TOTAL,1,606d48b0-4440-4cd2-a8e6-1d469fe5f7da
+K64,"Financial services, except insurance and pension funding",K,2,cf65a10f-ff32-4a02-bb2f-590c07f0aae6
+K65,"Insurance, reinsurance and pension funding services, except compulsory social security",K,2,ada02f23-7d08-4017-98ff-fb713960c34e
+K66,Services auxiliary to financial services and insurance services,K,2,79d64190-bc71-41b6-8690-95c5a072ddc2
+L,Real estate services,TOTAL,1,96f9e69b-4877-497c-bfcc-2f7416a82fcf
+L68A,Imputed rents of owner-occupied dwellings,L,2,c499ea8d-bbc3-4dcb-bcfa-1a4fd7882092
+L68B,Real estate services excluding imputed rents,L,2,67718e23-bf5c-4f5c-93b4-a0883818564e
+M,"Professional, scientific and technical services",TOTAL,1,098e62fb-05ea-4fc2-9913-46452f97ad34
+M69_70,Legal and accounting services; services of head offices; management consultancy services,M,2,031be07d-2662-4576-84ad-34ed7e4ec437
+M71,Architectural and engineering services; technical testing and analysis services,M,2,80ded5ae-c64b-4933-a30e-f4efacea7ef8
+M72,Scientific research and development services,M,2,7f35da47-1bee-4505-8825-a5b9c21b86d4
+M73,Advertising and market research services,M,2,f141f4db-2a38-402c-a8f3-d16820994a02
+M74_75,"Other professional, scientific and technical services and veterinary services",M,2,55989693-9c6e-4644-a11d-6605e75d5a7d
+N,Administrative and support services,TOTAL,1,7b639c9b-9fed-42f0-80bb-2537d98d84ab
+N77,Rental and leasing services,N,2,e891d8be-132c-4776-baff-d5f3ab44c166
+N78,Employment services,N,2,ab6c50c7-f577-4cdb-94e5-a5e18c13b8eb
+N79,"Travel agency, tour operator and other reservation services and related services",N,2,94dfe734-428a-4495-9fb2-bc2e1a96cbea
+N80_82,"Security and investigation services; services to buildings and landscape; office administrative, office support and other business support services",N,2,36754bea-d4e7-45f0-901a-b2c65ee3c70b
+O,Public administration and defence services; compulsory social security services,TOTAL,1,43b85661-1315-4cc8-ad56-de6982726a8d
+O84,Public administration and defence services; compulsory social security services,O,2,6ec02e8a-61ad-4d5b-89ba-1eebbaa89295
+P,Education services,TOTAL,1,9cb7a8a9-1c94-46d4-a04e-bcc61825d5b3
+P85,Education services,P,2,91525e2c-7f33-43bf-8563-4f98c493e96b
+Q,Human health and social work services,TOTAL,1,4b02841a-2aa3-4f0b-8ce9-ea24c8028147
+Q86,Human health services,Q,2,5cc8ee19-ec7d-4a62-9e1d-5977d1a6c3f1
+Q87_88,Residential care services; social work services without accommodation,Q,2,789200cf-f83e-462d-8060-20b213cd81a4
+Q87,Residential care services,Q87_88,3,70fc0c62-8b38-4bd7-be9d-5b57d855558e
+Q88,Social work services without accommodation,Q87_88,3,894b67e2-a9c2-45d4-a05d-9c1c9b5a6080
+R,"Arts, entertainment and recreation services",TOTAL,1,86fd1aba-a8d8-4ba7-ba0e-b8ad154d088b
+R90_92,"Creative, arts, entertainment, library, archive, museum, other cultural services; gambling and betting services",R,2,d91a1c7d-7ac1-4574-bfa8-76cfb68cc260
+R93,Sporting services and amusement and recreation services,R,2,ec0339fb-d0ae-4e75-9170-440d17612361
+S,Other services,TOTAL,1,90ddd634-1220-47c0-942c-539956d894dc
+S94,Services furnished by membership organisations,S,2,b5e3bc9d-aef2-4e3c-a46d-6d1b83a92c3d
+S95,Repair services of computers and personal and household goods,S,2,e42356a2-835a-4b93-8fa5-b6eed32fe2f8
+S96,Other personal services,S,2,230dcadf-50b4-401c-b6dd-4ff1f61dc55f
+T,Services of households as employers; undifferentiated goods and services produced by households for own use,TOTAL,1,c5ab05f8-afe7-4adc-98e4-c8251364955e
+T97,Activities of households as employers of domestic personnel,T,2,7570676b-b134-4c35-b52d-deca10744770
+T98,Undifferentiated goods- and service-producing activities of private households for own use,T,2,5beb8656-b4df-41ba-b23e-ea60ca9a1187
+U,Services provided by extraterritorial organisations and bodies,TOTAL,1,06e0c258-01fa-47a2-9db4-943ad346fbbb
+U99,Services provided by extraterritorial organizations and bodies,U,2,97ae7d5d-fd94-4115-abef-421b3acdda62
+ef,Economic flow,,0,2c056328-934d-4ea6-9896-688cdf866a17
+D.1,Compensation of employees,ef,1,af6f12c6-9806-4e71-a859-32fbbf29360b
+D.21,Taxes less subsidies on products,ef,1,018eb348-1ed1-4cc0-bffe-5dc3bf2c5181
+D.29-D.39,Other net taxes on production,ef,1,c2207843-68c2-4487-b234-4d5e2db8b3c0
+D.29,Other taxes on production,D.29-D.39,2,03cc683c-c5c0-4be4-830e-4ae6fb26f86d
+D.39,Other subsidies on production,D.29-D.39,2,63ee3a61-3701-45b0-9ea2-f6ca7d558a2a
+DP7A,Cif/ fob adjustments,ef,1,8fc5f7c5-4ac4-4374-9a71-45d97954ad06
+P.1,Total output,ef,1,cc3a9f52-1207-4fb0-a8f2-48a0e895f17a
+P.11,Market output,P.1,2,022e6766-2f38-4525-a861-67f4f37e1978
+P.12,Output for own final use,P.1,2,97773cf7-2c4c-40f5-9496-2d966fbeccd5
+P.13,Other non-market output,P.1,2,3f1dda88-fb80-41b9-b863-7cef8585e2ac
+P.2,Intermediate consumption,ef,1,299b5f42-0d48-4158-b024-b868bd757429
+P.33,Direct purchases abroad by residents,ef,1,a1f621e0-7a7b-4b3f-9d31-212e5c40127f
+P.34,Purchases on the domestic territory by non-residents,ef,1,6b0edd9d-0a9a-4c5c-aa3c-be39cdc8c579
+P.51c,Consumption of fixed capital on operating surplus,ef,1,f796d772-a0f3-497d-a3b9-366a878aa296
+P.7,Imports cif,ef,1,18349f15-2ca7-41f0-afa7-acb32d1d12e4

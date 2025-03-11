@@ -1,0 +1,584 @@
+level,code,name,parent_code,prefixed_id
+0,TOTAL,Total,,bce0780e-a9df-457e-becd-921a606fb10d
+1,01,Agricultural and hunting products and services,TOTAL,379b9464-40b1-4399-8640-b94454069fa1
+1,02,"Products of forestry, logging and related services",TOTAL,7e7bbc17-533b-48f9-b10d-c68116613197
+1,05,Fish and other fishing products; services incidental to fishing,TOTAL,7d5a547f-356c-4c9d-943a-3790d62ab8ce
+1,10,Coal and brown coal; peat,TOTAL,ee340483-4cdb-43d2-872e-07bf900c6cde
+1,11,"Oil and natural gas; services incidental to oil and gas extraction, excluding surveying",TOTAL,40288bc2-650e-48d0-9382-ddfad3fc25f3
+1,12,Uranium and thorium ores,TOTAL,0734cdb0-0069-4137-89e0-ac1d9566547f
+1,13,Metal ores,TOTAL,df930943-a905-48ed-a8ec-a3922954a1cd
+1,14,Other mining and quarrying products,TOTAL,e7b49528-55b8-4496-98dc-05ba9b40fa49
+1,15,Food products and beverages,TOTAL,b9627a71-3c6a-4e7a-8d90-b0196b68b23f
+1,16,Tobacco products,TOTAL,69d21ab4-c69d-4608-bdb4-76198ace7b3e
+1,17,Textiles,TOTAL,31829bf0-02f3-49e1-bc8b-a73aa615e575
+1,18,Wearing apparel; furs,TOTAL,137d1e92-2dba-44d9-8d0a-937d1d765b75
+1,19,Leather and leather products,TOTAL,27ecaad3-f139-485d-9ebc-7da348351f85
+1,20,"Wood and products of wood and cork, articles of straw and plaiting materials",TOTAL,147e6485-28b8-4e20-9adf-e96c2d27d97b
+1,21,"Cellulose, paper, and paperboard",TOTAL,2ef6b0b5-b781-42ce-aa65-9331f2851dd1
+1,22,Printed products and media recorded,TOTAL,ca987726-de53-4c84-9163-20ad25cd7e12
+1,23,Coke oven products and petroleum products,TOTAL,2038c192-08b8-496d-aad6-4e728af0dace
+1,24,"Basic chemicals, chemical products and fibers",TOTAL,2c4765f1-3108-447b-b8c2-08f5b6c4351b
+1,25,Rubber and plastic products,TOTAL,8b72c099-e61b-44a6-8edd-b121e412e138
+1,26,Other mineral nonmetallic products,TOTAL,ffe56c8c-a1e6-4698-ba1c-0fa72a260c4f
+1,27,Metals,TOTAL,0885eec8-3f5d-493f-9ae5-051d4172aa17
+1,28,"Fabricated metal products, except machinery and equipment",TOTAL,f6f23e08-cd4a-4bac-bf72-18afbc3ce7b6
+1,29,Machinery and equipment n.e.c.,TOTAL,d551f9c4-fb1d-41ba-90dc-38eed548f11e
+1,30,Office machinery and computers,TOTAL,fd7ffc09-f6fe-4fd4-b387-a4a2a27c7261
+1,31,Electrical machinery and apparatus n.e.c.,TOTAL,4f1edd2b-016c-4228-826a-ccd83a61d88b
+1,32,"Radio, television and communication equipment and apparatus",TOTAL,d83f6124-4536-41cc-aa0a-74d219825a11
+1,33,"Medical equipment; Instruments and appliances for measuring, checking, testing, navigating and other purposes; optical instruments and photographic equipment; watches and clocks",TOTAL,18a6fd87-e94e-419a-ac1a-ee9971a44558
+1,34,"Motor vehicles, trailers and semi-trailers",TOTAL,73afbb8a-a653-4758-83f6-f7afc80f2ea7
+1,35,Other transport equipment,TOTAL,75b1de12-04c3-4744-a3e0-dc52539b763f
+1,36,Furniture; other manufactured goods n.e.c.,TOTAL,3bb77d12-a767-4fdd-9604-4bfa416856e3
+1,37,Secondary raw materials,TOTAL,c4496e71-d8b5-4b18-a308-ee9069ecb2ed
+1,40,"Electricity, gas, steam and hot water",TOTAL,460f6f9f-d204-4d93-84ac-32fd03c00a51
+1,41,Collected and purified water; distribution services of water,TOTAL,55d0b672-c890-4534-a4bb-64e1a92f6458
+1,45,Construction work,TOTAL,72379d48-966f-436a-b91b-4ef057239c7b
+1,50,"Trade, maintenance and repair services of motor vehicles and motorcycles",TOTAL,cfc68c67-b842-4b79-8f1a-8fd3e049c3af
+1,51,"Wholesale trade and commission trade services, except of motor vehicles and motorcycles",TOTAL,5b4bf5bd-c379-458c-85ac-e35540b521aa
+1,52,"Retail trade services, except of motor vehicles and motorcycles; repair services of personal and household goods; retail trade services of motor fuel",TOTAL,6ec85af4-7897-4a7d-9648-b0320bbab9de
+1,55,Hotel and restaurant services,TOTAL,3e2e4c5a-23f0-4fc8-bd2b-6e94869a31be
+1,60,Land and pipeline transportation services,TOTAL,2cbf21b1-70ac-4cb6-b125-049c0589f3d9
+1,61,Water transport services,TOTAL,6b844bae-1c69-4b0d-8c7d-496b15e4a5d9
+1,62,Air transport services,TOTAL,ecf6372c-6ded-49f2-9291-20c4a687a0f5
+1,63,Supporting and auxiliary transport services; travel agency services,TOTAL,00fd340f-6ffb-4cfd-9306-bad971f1a1fa
+1,64,Post and telecommunication services,TOTAL,b79c9335-115e-47df-b21f-367ff7d1d3d1
+1,65,"Financial intermediation services, except insurance and pension funding services",TOTAL,f619175a-7c7d-4eaa-b951-b43c319a5bcc
+1,66,"Insurance and pension funding services, except compulsory social security services",TOTAL,44eabb56-6d8e-481a-b1ff-187ab0967dbc
+1,67,Services auxiliary to financial intermediation,TOTAL,7c1b1d14-3390-460a-9711-694e070e8506
+1,70,Real estate services,TOTAL,f3aa8a7b-a94b-4e7b-84dc-d30680a6f5a2
+1,71,Renting services of machinery and equipment without operator and of personal and household goods,TOTAL,2dbdd92d-0b14-4964-b96d-f3aa34447ef2
+1,72,Computer and related services,TOTAL,87a1df9f-4450-477e-bb73-e0a092b5c5da
+1,73,Research and development services,TOTAL,d0e040c2-bbfb-49bf-a262-b8aacbf0839d
+1,74,Other business services,TOTAL,e777f8fc-f2ad-4132-9230-be4b42304b8b
+1,75,Public administration and defense services; compulsory social security services,TOTAL,bf6612ce-1c92-42c9-a6e4-f4d818195a8e
+1,80,Education services,TOTAL,f369fc76-3181-4bb3-951c-b035d3a93445
+1,85,Health and social work services,TOTAL,85291bdf-ac20-4a58-a0ae-a2770afeda4c
+1,90,"Sewage and refuse disposal services, sanitation and similar services",TOTAL,87b38cea-904e-4100-9b66-42b6a58ff387
+1,91,Membership organization services n.e.c.,TOTAL,ebde740d-36b1-45a9-a9db-f8d6a6f93391
+1,92,"Recreational, cultural and sporting services",TOTAL,68dede3e-d0cb-49e4-8776-820971f509e1
+1,93,Other personal services,TOTAL,85492840-b0f9-4bb6-8a5c-b2582c35c3ff
+1,95,Services of households as employers,TOTAL,c93e84fd-d219-4e91-98b5-01889bfdc070
+2,01.11,Growing of cereals and other crops n.e.c.,01,8e4ccd11-4102-434f-8157-09665aeda415
+2,01.12,"Growing of vegetables, horticultural specialities and nursery products",01,b515853b-77ed-411b-ae1b-109dab6ecb77
+2,01.13,"Growing of fruit, nuts, beverage and spice crops",01,8140bdc2-7c8c-4388-b1bc-5f061e29aae8
+2,01.21,"Farming of cattle, dairy farming",01,64b7ccf3-e62e-4567-b68f-de47ec8b80ae
+2,01.22,"Farming of sheep, goats, horses, asses, mules and hinnies",01,6c210aef-2508-44cc-b65a-c7aa90183687
+2,01.23,Farming of swine,01,1e2c1ed4-9534-4660-8678-4319d3458f79
+2,01.24,Farming of poultry,01,742421e1-0599-45e5-a919-d19c59c0d4a2
+2,01.25,Other farming of animals,01,bdb348d5-c611-42d7-b688-2c2cc1398fe0
+2,01.30,Growing of crops combined with farming of animals (mixed farming),01,0fb32914-d94c-4898-80b5-25f4bf98036a
+2,01.41,Agricultural service activities; landscape gardening,01,43b6cb71-e253-47c8-bf4a-ffde982aaa5a
+2,01.42,"Animal husbandry service activities, except veterinary activities",01,7993c205-4d8c-46c2-89c3-3c42283c3949
+2,01.50,"Hunting, trapping and game propagation, including related service activities",01,a6821d50-7cee-4be3-b3da-5645d92f6a9b
+2,02.01,Forestry and logging,02,f5f0f224-edf5-4eab-b1a9-fa6bb0fb93f5
+2,02.02,Forestry and logging related service activities,02,e2a4e2a0-35fe-48ff-b9c8-197eff1fa33f
+2,05.01,Fishing,05,8b0d8986-85cd-4797-b726-32195da1f0db
+2,05.02,Fish farming,05,5de12819-5d08-4f52-9105-3ad60dd17de0
+2,10.10,Mining and agglomeration of hard coal,10,77d2b1f6-6674-4306-9837-edc18f903733
+2,10.20,Mining and agglomeration of lignite,10,821bdd21-7049-44bb-8eeb-054ba52c0d68
+2,10.30,Extraction and agglomeration of peat,10,3a8b19fe-97e4-47b8-9952-9e2e33d9379c
+2,11.10,Extraction of crude petroleum and natural gas,11,47cabf02-43ef-458d-9893-a0d49b30eace
+2,11.20,"Service activities incidental to oil and gas extraction, excluding surveying",11,835b5bf7-e180-42e3-b4d8-3c85aaf0ff98
+2,12.00,Mining of uranium and thorium ores,12,579b4cb3-8c3e-4354-98f3-f4bebcd709f3
+2,13.10,Mining of iron ores,13,74cce9c8-ddab-4f7a-bbb2-732e77e57f6c
+2,13.20,"Mining of non-ferrous metal ores, except uranium and thorium ores",13,157fd20b-40b5-496a-b47b-6c0177df4357
+2,14.11,Quarrying of  ornamental and building stone,14,dfeddf71-5ef0-41af-a304-26180beb525f
+2,14.12,"Quarrying of limestone, gypsum and chalk",14,e604a726-0584-42bb-8dc0-5c65f6e27e36
+2,14.13,Quarrying of slate,14,3c188e95-89ab-4332-92c0-255fd53137db
+2,14.21,Operation of gravel and sand pits,14,8d70bfbe-98f0-491b-8f39-5c3cf547afcb
+2,14.22,Mining of clays and kaolin,14,c959df18-6737-4582-8047-6207710092ef
+2,14.30,Mining of chemical and fertilizer minerals,14,9b95a935-6c39-4749-9b24-1fb67f8739c4
+2,14.40,Production of salt,14,65eaebe9-44b9-468d-a5e9-21e5468d8b2d
+2,14.50,Other mining and quarrying n.e.c.,14,21cdb7d6-7b7f-4c8a-bade-9e613519255f
+2,15.11,Production and preserving of meat,15,123d2492-f866-4a6d-8ee0-ac8db9cef1b5
+2,15.12,Production and preserving of poultrymeat,15,61e04c31-ad29-4a92-a4ef-5f8a8fd3dc30
+2,15.13,Production of meat and poultrymeat products,15,c62e6ce9-1d0b-4a45-8506-4489e2b21795
+2,15.20,Processing and preserving of fish and fish products,15,c62f477b-aa6b-4276-af06-58ab836f33b5
+2,15.31,Processing and preserving of potatoes,15,8f73fe84-aa85-4ee8-b500-e28818e071b1
+2,15.32,Manufacture of fruit and vegetable juice,15,c3a8d2db-cab6-4dc8-be71-fc028a7a566a
+2,15.33,Processing and preserving of fruit and vegetables n.e.c.,15,81222d35-0b3c-47d8-a1cc-b2494881d6e3
+2,15.41,Manufacture of crude oils and fats,15,0790d3f5-9556-4cd4-b70f-d37c5a34447c
+2,15.42,Manufacture of refined oils and fats,15,ddcb2f20-47d0-490f-b538-bb4123867527
+2,15.43,Manufacture of margarine and similar edible fats,15,08d4c944-4cd6-4e59-937c-32f80641c921
+2,15.51,Operation of dairies and cheese making,15,191fe193-45bd-4033-ba25-54a4a448291c
+2,15.52,Manufacture of ice cream,15,2dbb113b-cc93-48e8-bd3f-0859eb0b3175
+2,15.61,Manufacture of grain mill products,15,011326e5-94c1-44c3-bb72-7d0efa8bdf4f
+2,15.62,Manufacture of starches and starch products,15,fb5e6527-84f2-47c9-af8c-5ffd743a79f9
+2,15.71,Manufacture of prepared feeds for farm animals,15,15a6c7f9-35f7-4536-bf05-5295083b70fe
+2,15.72,Manufacture of prepared pet foods,15,69fba779-553e-432e-9d26-9edc3ea58cdf
+2,15.81,Manufacture of bread; manufacture of fresh pastry goods and cakes,15,caa94ca2-976c-481c-8017-69813887ac72
+2,15.82,Manufacture of rusks and biscuits; manufacture of preserved pastry goods and cakes,15,a8eecaaa-ec27-4431-8713-e44451c434e6
+2,15.83,Manufacture of sugar,15,fbd590de-4d9c-4029-a69b-8ff9800fa659
+2,15.84,Manufacture of cocoa; chocolate and sugar confectionery,15,9c902e8a-2792-4621-99c1-8005de55ec3b
+2,15.85,"Manufacture of macaroni, noodles, couscous and similar farinaceous products",15,3262ffda-d7d0-473c-93e7-01b902fbb79a
+2,15.86,Processing of tea and coffee,15,c967b68c-86ea-4e31-b891-e00a79be8db8
+2,15.87,Manufacture of condiments and seasonings,15,98b3dc96-40fe-461e-984a-030f48b4e071
+2,15.88,Manufacture of homogenised food preparations and dietetic food,15,f761ab0b-a434-4cd5-bea9-041e00f23d5f
+2,15.89,Manufacture of other food products n.e.c.,15,42ca9f7d-7c94-4e36-9d4b-f063f2f6d814
+2,15.91,Manufacture of distilled potable alcoholic beverages,15,927f5525-f3c0-41a3-9f42-18f417b3fe4e
+2,15.92,Production of ethyl alcohol from fermented materials,15,5403835d-5055-443f-af1d-e6dee8d33198
+2,15.93,Manufacture of wines,15,57d31c50-9f05-4e2e-a2fb-66ad12a21d2b
+2,15.94,Manufacture of cider and other fruit wines,15,c06a709d-4567-4771-8ba2-257ee11b612c
+2,15.95,Manufacture of other non-distilled fermented beverages,15,3606d7b7-e9b6-4dff-921c-c41b590e1766
+2,15.96,Manufacture of beer,15,bc3e664b-90c1-417d-b268-3b28399bb117
+2,15.97,Manufacture of malt,15,2148f983-aab5-446b-8e33-acd2eb775090
+2,15.98,Production of mineral waters and soft drinks,15,bb3f5fe1-9401-4d88-aeaf-70a474bc4c09
+2,16.00,Manufacture of tobacco products,16,e3078532-f8da-4da7-b954-6b3476be48a5
+2,17.11,Preparation and spinning of cotton-type fibres,17,4e8f5857-fa81-480a-837f-fa9eecfb70ee
+2,17.12,Preparation and spinning of woollen-type fibres,17,87407fc2-5d32-4ce1-bf7a-64c99e7fd012
+2,17.13,Preparation and spinning of worsted-type fibres,17,f9872fc4-4f81-4332-8a8d-07b5d5e5002a
+2,17.14,Preparation and spinning of flax-type fibres,17,95d3e6dd-89fe-4250-8ac2-24418c30e517
+2,17.15,"Throwing and preparation of silk, including from noils, and throwing and texturing of synthetic or artificial filament yarns",17,661cd0a7-eb0c-4d26-9d6b-8d4e9e810cc2
+2,17.16,Manufacture of sewing threads,17,e2d045ca-e995-4ff8-bace-971ecc953317
+2,17.17,Preparation and spinning of other textile fibres,17,1b6fc12b-9562-4126-b0b6-e5f0801dcfe2
+2,17.21,Cotton-type weaving,17,a60e0018-9d83-419a-a7eb-621118a7c326
+2,17.22,Woollen-type weaving,17,eb2f82bd-09d5-4ca9-a23d-0a168b999d6c
+2,17.23,Worsted-type weaving,17,e7142e42-8e9f-47d2-8bde-f4a7acc5f7ba
+2,17.24,Silk-type weaving,17,8acf9162-42fb-4e0b-951a-e7daca53fe74
+2,17.25,Other textile weaving,17,f8e7823e-f7cc-4859-a3f6-2c2cb1d08637
+2,17.30,Finishing of textiles,17,550d907a-1cad-44eb-ac1a-c02fbc135cb4
+2,17.40,"Manufacture of made-up textile articles, except apparel",17,d7f1fd05-b293-4ab2-8dc5-0f9d0a2597f5
+2,17.51,Manufacture of carpets and rugs,17,017904f6-b3f7-4599-a276-f391561feb8c
+2,17.52,"Manufacture of cordage, rope, twine and netting",17,a11ed9d5-3bfb-44ce-b261-197ce3a349a6
+2,17.53,"Manufacture of non-wovens and articles made from non-wovens, except apparel",17,9ca15623-e8e7-43ba-8d4c-c98aa683f35c
+2,17.54,Manufacture of other textiles n.e.c.,17,8ad3804e-2ce1-4d5f-b050-fef00cf2eb93
+2,17.60,Manufacture of knitted and crocheted fabrics,17,996a56ed-a42f-4fe9-af3f-bfd5ce89eefa
+2,17.71,Manufacture of knitted and crocheted hosiery,17,b5667059-5a03-40ef-b035-d018d0302d0e
+2,17.72,"Manufacture of knitted and crocheted pullovers, cardigans and similar articles",17,a12d9de7-e82d-4e36-ac9d-e048396275e8
+2,18.10,Manufacture of leather clothes,18,51cd9b49-0029-412c-82ad-92cab3547f94
+2,18.21,Manufacture of workwear,18,c79c0d93-ee9d-407a-80e7-45b3fee39134
+2,18.22,Manufacture of other outerwear,18,89f56f85-6566-4c40-b793-8855095fe41e
+2,18.23,Manufacture of underwear,18,fd55994c-fb07-4015-94ec-cf7954e98e84
+2,18.24,Manufacture of other wearing apparel and accessories n.e.c.,18,0895bdac-a725-4e5d-b27c-e0b7c88b17dc
+2,18.30,Dressing and dyeing of fur; manufacture of articles of fur,18,2c53e733-002b-4906-b9ab-04459e516e6a
+2,19.10,Tanning and dressing of leather,19,7beb8890-70e2-4833-be29-0347d6c1708c
+2,19.20,"Manufacture of luggage, handbags and the like, saddlery and harness",19,47aee706-cc1e-42db-a806-677dc44ab0b2
+2,19.30,Manufacture of footwear,19,7ab0b9b2-1599-462b-9882-a2f9d470d436
+2,20.10,Sawmilling and planing of wood; impregnation of wood,20,17e41232-6d82-4d4a-b298-38243fab56df
+2,20.20,"Manufacture of veneer sheets; manufacture of plywood, laminboard, particle board, fibre board and other panels and boards",20,42be4b8d-69f0-4a21-9b10-e9648ecbd4df
+2,20.30,Manufacture of builders' carpentry and joinery,20,b8f1996d-f7a0-4e14-9499-09fa8d4086b9
+2,20.40,Manufacture of wooden containers,20,edf653b7-2e98-49bb-9f60-711cae082d00
+2,20.51,Manufacture of other products of wood,20,5523dfa7-25d4-4cb5-b492-dd255dd6dea1
+2,20.52,"Manufacture of articles of cork, straw and plaiting materials",20,b4bb176d-07fa-4c40-b130-6e18a8c72661
+2,21.11,Manufacture of pulp,21,c533554e-4c54-48f9-8fb6-c294d414706f
+2,21.12,Manufacture of paper and paperboard,21,894cf4f7-4b98-420b-91f3-be45d0fb9fde
+2,21.21,Manufacture of corrugated paper and paperboard and of containers of paper and paperboard,21,2597d14b-def6-4c12-8087-8660691433b8
+2,21.22,Manufacture of household and sanitary goods and of toilet requisites,21,e37c3326-c32d-4db1-b3dc-4cace573c9f6
+2,21.23,Manufacture of paper stationery,21,fa94d765-30d7-4cda-8307-458dc0d486ff
+2,21.24,Manufacture of wallpaper,21,a5080e5e-6df5-4d1b-9cc0-68778464cede
+2,21.25,Manufacture of other articles of paper and paperboard n.e.c.,21,923f8da0-5de2-483f-ae79-d98efe70019d
+2,22.11,Publishing of books,22,9db8c4f8-2170-4022-85f0-7ce02644a8c1
+2,22.12,Publishing of newspapers,22,ca935d4c-1210-4708-a3e3-e3c5144b89c8
+2,22.13,Publishing of journals and periodicals,22,7b9c857a-d275-4729-8c99-e9e9a829e436
+2,22.14,Publishing of sound recordings,22,50a0b89e-4206-4569-9cbe-9d852a4df0d7
+2,22.15,Other publishing,22,cdfb554a-2991-4dd6-a7f6-3dccd5a2737e
+2,22.21,Printing of newspapers,22,db159a08-6b1e-4989-84aa-2da60829ddf3
+2,22.22,Printing n.e.c.,22,7a2b5404-7b52-4a5a-bec1-a02c6f9f94a9
+2,22.23,Bookbinding,22,be5d1f45-038c-42cb-8b32-7461b8fe45d9
+2,22.24,Pre-press activities,22,30cce33c-2019-46a4-a726-db6283a98d96
+2,22.25,Ancillary activities related to printing,22,d3e35a8e-31b1-4b21-8a87-fd641eded58f
+2,22.31,Reproduction of sound recording,22,3d7cb110-b1ba-44f5-80ec-1084d9c4c55d
+2,22.32,Reproduction of video recording,22,223e6ca3-9be7-4a71-8877-c46f9f5dff84
+2,22.33,Reproduction of computer media,22,6016f6c3-fd21-4063-9bb2-f387a0e5d3a2
+2,23.10,Manufacture of coke oven products,23,fae211cb-c965-456f-a208-c81226a6457d
+2,23.20,Manufacture of refined petroleum products,23,94a4cea6-c4f0-4928-abe9-fdca9949de5b
+2,23.30,Processing of nuclear fuel,23,2a72eb94-2268-435f-812d-2111d9b98a19
+2,24.11,Manufacture of industrial gases,24,17e49977-362e-45de-8519-1619aff9b84b
+2,24.12,Manufacture of dyes and pigments,24,007aed5d-18aa-427d-b838-d553a4a11885
+2,24.13,Manufacture of other inorganic basic chemicals,24,6be1d23c-1fc9-46b0-87ab-95ce8fcdb57a
+2,24.14,Manufacture of other organic basic chemicals,24,f26934f1-d64e-4821-86d8-4cc68942add2
+2,24.15,Manufacture of fertilizers and nitrogen compounds,24,dcf185a3-590d-4e63-9c62-393480fb4708
+2,24.16,Manufacture of plastics in primary forms,24,b4120a66-348a-49dd-8bc1-d78eb167530c
+2,24.17,Manufacture of synthetic rubber in primary forms,24,41f2dcb2-3ce8-413f-8d58-8e175e9d4c62
+2,24.20,Manufacture of pesticides and other agro-chemical products,24,a5648656-58c4-482f-b21a-f86e733cad4d
+2,24.30,"Manufacture of paints, varnishes and similar coatings, printing ink and mastics",24,3cc32f86-c0d9-49c1-8c87-234c5978869a
+2,24.41,Manufacture of basic pharmaceutical products,24,40d1b06e-6550-4eec-b390-d97daa0f5133
+2,24.42,Manufacture of pharmaceutical preparations,24,ccb570c4-5567-442d-8cb0-e50386019dfe
+2,24.51,"Manufacture of soap and detergents, cleaning and polishing preparations",24,0082750b-b321-47a9-8bdc-d58a31ca4c33
+2,24.52,Manufacture of perfumes and toilet preparations,24,d9fe0cd7-d1c8-4db6-a843-07b62f5faf3c
+2,24.61,Manufacture of explosives,24,ff48397b-c71a-437f-9107-48db777f258c
+2,24.62,Manufacture of glues and gelatines,24,f1a8ce92-cc9e-4b67-ab69-b3d4526bca3b
+2,24.63,Manufacture of essential oils,24,09356078-4a51-4d4a-87bf-b66a2dbdfb00
+2,24.64,Manufacture of photographic chemical material,24,a8c417c5-422a-47bc-9c87-dc9c4a5037a7
+2,24.65,Manufacture of prepared unrecorded media,24,20f3482a-0ad6-4585-9c68-99313929a610
+2,24.66,Manufacture of other chemical products n.e.c.,24,45c047ce-4fc3-485d-bc02-0e294149d330
+2,24.70,Manufacture of man-made fibres,24,ba5844cb-8a1c-4db6-b1a3-5678b4777a48
+2,25.11,Manufacture of rubber tyres and tubes,25,e638fd8b-892b-438d-bfdd-7f4a0753125a
+2,25.12,Retreading and rebuilding of rubber tyres,25,0b68a766-5f69-44a3-bcde-5c9fce987623
+2,25.13,Manufacture of other rubber products,25,294c926e-72ff-414a-a8a5-a6c1b1c9bb78
+2,25.21,"Manufacture of plastic plates, sheets, tubes and profiles",25,b0063e38-fdd6-4a3a-a10d-4a5417a943b6
+2,25.22,Manufacture of plastic packing goods,25,3f6c3e24-ac8d-4039-85bd-b930eb9a7194
+2,25.23,Manufacture of builders' ware of plastic,25,7f1821a0-7914-4a1e-bbb6-17675fb083e1
+2,25.24,Manufacture of other plastic products,25,d1b1b715-35e9-4825-8d71-7ceb49ae4b6e
+2,26.11,Manufacture of flat glass,26,cec40c4c-c949-4781-a78c-acbcb44ef844
+2,26.12,Shaping and processing of flat glass,26,62b4daa8-4ce9-401c-9670-c11190292a2a
+2,26.13,Manufacture of hollow glass,26,16ee1b0f-c069-42bc-8a25-b9049cbf5bdb
+2,26.14,Manufacture of glass fibres,26,39cf2336-bbd0-4bfd-a4f1-08cb2d2821d2
+2,26.15,"Manufacture and processing of other glass, including technical glassware",26,699c9f49-0052-4783-b88b-9f166ba713cd
+2,26.21,Manufacture of ceramic household and ornamental articles,26,0a7344c9-591a-4831-a4de-7f174f35761b
+2,26.22,Manufacture of ceramic sanitary fixtures,26,66ba6d59-17d5-4dff-a489-6b43e28e50fa
+2,26.23,Manufacture of ceramic insulators and insulating fittings,26,e9c68516-d8f9-425a-919d-d5bb037c269a
+2,26.24,Manufacture of other technical ceramic products,26,b025f529-6030-42d4-b6c3-20950ccaad51
+2,26.25,Manufacture of other ceramic products,26,8996a52c-7ade-4588-ba57-90554b4ed461
+2,26.26,Manufacture of refractory ceramic products,26,ec503d4e-5369-403c-a443-b55c63c370dc
+2,26.30,Manufacture of ceramic tiles and flags,26,90d6f69a-8f32-41f8-9f28-a32b632c89c2
+2,26.40,"Manufacture of bricks, tiles and construction products, in baked clay",26,93b460af-3174-4543-906d-44a14f6e1d52
+2,26.51,Manufacture of cement,26,3a6fb4ae-6003-4945-999b-f09a4e16129d
+2,26.52,Manufacture of lime,26,e6c47a8f-284c-432f-90bd-3378b1724d51
+2,26.53,Manufacture of plaster,26,91088e94-4823-4a89-8bcc-17b4e8083f23
+2,26.61,Manufacture of concrete products for construction purposes,26,cb65ef6a-966d-4d3f-a085-4557d1ce057c
+2,26.62,Manufacture of plaster products for construction purposes,26,9014a816-132c-4a4a-b4e2-34d60f7fbda5
+2,26.63,Manufacture of ready-mixed concrete,26,f6e9e1e6-eeb6-48f1-a3cb-41ce6ae755d1
+2,26.64,Manufacture of mortars,26,d1a6db78-e2f7-4671-a28c-a65348224405
+2,26.65,Manufacture of fibre cement,26,e34419c9-a996-43bb-a153-825e6796c692
+2,26.66,"Manufacture of other articles of concrete, plaster and cement",26,7dbdb0f7-03a9-493c-a25b-67b08a3a1f4a
+2,26.70,"Cutting, shaping and finishing of ornamental and building stone",26,70b93b1b-9a11-494e-9577-aff6af533c6e
+2,26.81,Production of abrasive products,26,27d01ab2-d6a4-4c13-9344-29520ee35ce6
+2,26.82,Manufacture of other non-metallic mineral products n.e.c.,26,18784dbd-379a-4dd4-8e6b-505ec88ecd56
+2,27.10,Manufacture of basic iron and steel and of ferro-alloys,27,4c05f704-dfc2-427a-b146-e5e57d09957b
+2,27.21,Manufacture of cast iron tubes,27,27efe2ab-c264-4026-b8c7-334ea249e2fb
+2,27.22,Manufacture of steel tubes,27,431033f2-b804-4c9b-8c2b-2840ac1344e3
+2,27.31,Cold drawing,27,2f827873-daaf-4ff5-bdc1-634fd852b89c
+2,27.32,Cold rolling of narrow strip,27,d372289a-252e-49f7-8a6f-6cc177f6460d
+2,27.33,Cold forming or folding,27,878305a6-5a73-4b7a-9c7f-5b542b3ea8ce
+2,27.34,Wire drawing,27,f8c54b49-beb9-48d7-bf8d-9143cd4ac0e9
+2,27.41,Precious metals production,27,72b3ad0a-a343-4694-9a2a-195f4934d63c
+2,27.42,Aluminium production,27,3f535efb-d511-4f1e-8048-dd870590a53a
+2,27.43,"Lead, zinc and tin production",27,81a2c493-e4b1-458c-8b97-71dd27bc4df1
+2,27.44,Copper production,27,68760f67-5ae8-444a-b61e-343ea03baf13
+2,27.45,Other non-ferrous metal production,27,cf549bd5-cddf-44a7-8969-47c6e5587600
+2,27.51,Casting of iron,27,5137cf6a-6721-44f4-acbc-1623225ee504
+2,27.52,Casting of steel,27,9b5dd697-651d-4b7b-ae56-8335b95f89be
+2,27.53,Casting of light metals,27,74a00095-06ce-472b-ae88-74735bfb8e0c
+2,27.54,Casting of other non-ferrous metals,27,39185722-045f-4d30-929d-67104f37f265
+2,28.00,"Manufacture of fabricated metal products, except machinery and equipment",28,af1daa80-d6a5-4a28-9b1a-5e05871a93b1
+2,28.11,Manufacture of metal structures and parts of structures,28,5cd5b863-e63e-4ef6-810a-9690c4c93db5
+2,28.12,Manufacture of builders' carpentry and joinery of metal,28,271969cc-12c8-4f1e-a2da-7c2c301d286b
+2,28.21,"Manufacture of tanks, reservoirs and containers of metal",28,9c278042-e5b4-4651-9aee-dc84fb56d739
+2,28.22,Manufacture of central heating radiators and boilers,28,f8a4b912-4ff2-4f19-969e-7661c533e8be
+2,28.30,"Manufacture of steam generators, except central heating hot water boilers",28,23ee6a65-5307-4260-a0ce-5dc4a792a7e6
+2,28.40,"Forging, pressing, stamping and roll forming of metal; powder metallurgy",28,00b189c7-6e96-4f92-be6e-e2850bb54388
+2,28.51,Treatment and coating of metals,28,ee3cae59-008a-42e2-8c81-6cb18c55dd4c
+2,28.52,General mechanical engineering,28,ff9f41e7-2e2b-40b6-a08d-208bdb90db8f
+2,28.61,Manufacture of cutlery,28,9c61d5a9-975d-47db-bf60-ae84645802f5
+2,28.62,Manufacture of tools,28,a19fc130-41ac-42d0-a7c6-e839da921fb7
+2,28.63,Manufacture of locks and hinges,28,d90ce1ae-8682-47b4-8689-8b601cb0df7b
+2,28.71,Manufacture of steel drums and similar containers,28,ae9e5bad-36f3-4166-98c1-b3946e11e72d
+2,28.72,Manufacture of light metal packaging,28,09432fe5-5080-4d6d-8a8b-307c0a83b774
+2,28.73,Manufacture of wire products,28,27740b3f-3e14-4949-81cc-84415e3a3668
+2,28.74,"Manufacture of fasteners, screw machine products, chain and springs",28,1d575a72-bba3-457d-b440-886760839a1b
+2,28.75,Manufacture of other fabricated metal products n.e.c.,28,2199e19c-3540-4ace-b404-b1cb6ba2b1a3
+2,29.00,Manufacture of machinery and equipment n.e.c.,29,3a79b5fe-c106-4773-9105-236bf0add09f
+2,29.11,"Manufacture of engines and turbines, except aircraft, vehicle and cycle engines",29,499b4d9d-6d7c-4078-a29b-50a043eea251
+2,29.12,Manufacture of pumps and compressors,29,02fdf884-e376-494e-8301-87ffc130d7ff
+2,29.13,Manufacture of taps and valves,29,0e0e35c0-f762-4bca-a0c1-f670da152453
+2,29.14,"Manufacture of bearings, gears, gearing and driving elements",29,04b500f9-6c3a-4a99-84de-75261102703f
+2,29.21,Manufacture of furnaces and furnace burners,29,5671e503-bf26-4712-918e-81c5fd3ed93d
+2,29.22,Manufacture of lifting and handling equipment,29,53e5ab49-c38b-45e6-b2ec-270c1532c122
+2,29.23,Manufacture of non-domestic cooling and ventilation equipment,29,c173a13c-b288-4aac-9b7d-634e64aa9b77
+2,29.24,Manufacture of other general purpose machinery n.e.c.,29,4b5da358-0a46-4423-b9ec-cd7c4924d84a
+2,29.31,Manufacture of agricultural tractors,29,7726d535-0ca7-46db-bf16-957f91a9d55d
+2,29.32,Manufacture of other agricultural and forestry machinery,29,339ca40b-0985-4dc4-b013-c6e2b4b61b02
+2,29.41,Manufacture of portable hand held power tools,29,4755435c-01a1-4a68-ae10-07620a16c023
+2,29.42,Manufacture of other metalworking machine tools,29,40489f4a-492b-4b0d-8d99-d20ba1f71b1c
+2,29.43,Manufacture of other machine tools n.e.c.,29,6749b4f0-1186-45d8-9942-f2f6f0e92480
+2,29.51,Manufacture of machinery for metallurgy,29,fb29b4eb-45d8-4d2d-aab1-052ced5179ba
+2,29.52,"Manufacture of machinery for mining, quarrying and construction",29,2cb7e3a0-68ea-4b8b-993b-b4e6079b3c53
+2,29.53,"Manufacture of machinery for food, beverage and tobacco processing",29,57c20400-5361-41b1-b6a8-d27fdfae2a17
+2,29.54,"Manufacture of machinery for textile, apparel and leather production",29,b09fe0eb-5b0d-4ed5-ba54-d3184644af83
+2,29.55,Manufacture of machinery for paper and paperboard production,29,8867bd8b-a13d-475f-941b-a5ca93e042b9
+2,29.56,Manufacture of other special purpose machinery n.e.c.,29,868dd2c3-0650-4a08-bfd9-0af4b31aa5fc
+2,29.60,Manufacture of weapons and ammunition,29,4e1a57a1-c1d9-4043-8fe1-118573c9ad1a
+2,29.71,Manufacture of electric domestic appliances,29,33466d5e-1411-44f9-951f-157f44ded17e
+2,29.72,Manufacture of non-electric domestic appliances,29,6c019b0d-839f-47a6-bec3-3f0cb0127589
+2,30.00,Manufacture of office machinery and computers,30,5bb5ffb9-b044-472b-910c-0ce152e7c67d
+2,30.01,Manufacture of office machinery,30,6a843dfb-2bf0-46fb-a492-fc9a6fb116df
+2,30.02,Manufacture of computers and other information processing equipment,30,ad92af8d-eb6a-4bfb-bf54-408d771778bd
+2,31.00,Manufacture of electrical machinery and apparatus n.e.c.,31,f311937a-b01a-4141-a396-749b5f9204e7
+2,31.10,"Manufacture of electric motors, generators and transformers",31,e86e9b83-cf35-4b88-a228-14d9cef46ea4
+2,31.20,Manufacture of electricity distribution and control apparatus,31,1e1d8993-49ce-4da0-bdc9-037b6bda550f
+2,31.30,Manufacture of insulated wire and cable,31,7d1fa930-1b2a-459e-968f-1d8387f17a67
+2,31.40,"Manufacture of accumulators, primary cells and primary batteries",31,56460818-1eaf-44b4-95b0-87eb74c68bcd
+2,31.50,Manufacture of lighting equipment and electric lamps,31,97a4cb87-75c3-4ec5-929a-911411bcb2f7
+2,31.61,Manufacture of electrical equipment for engines and vehicles n.e.c.,31,63d2915a-d475-4574-882b-097bcf12ec12
+2,31.62,Manufacture of other electrical equipment n.e.c.,31,c8469d9b-7dea-43fa-8f14-5289331fd8a5
+2,32.00,"Manufacture of radio, television and communication equipment and apparatus",32,832c1927-8d17-43e1-9f3c-d0c2b565c2ee
+2,32.10,Manufacture of electronic valves and tubes and other electronic components,32,4cd7d55b-c429-457a-a723-7f7fab36fd58
+2,32.20,Manufacture of television and radio transmitters and apparatus for line telephony and line telegraphy,32,c4eaf26f-9925-417d-b55f-d3484b4cdb1a
+2,32.30,"Manufacture of television and radio receivers, sound or video recording or reproducing apparatus and associated goods",32,989002d1-3968-4c6a-a54a-98475ed6b2bb
+2,33.00,"Manufacture of medical, precision and optical instruments, watches and clocks",33,5e4c48fd-b946-4331-9d2f-e0da40d01ae3
+2,33.10,Manufacture of medical and surgical equipment and orthopaedic appliances,33,2d5e8355-34e2-48ce-8893-47009ddcbb18
+2,33.20,"Manufacture of instruments and appliances for measuring, checking, testing, navigating and other purposes, except industrial process control equipment",33,234b4b01-ea8f-4d10-92c3-5acf2d26fdbc
+2,33.30,Manufacture of industrial process control equipment,33,66211489-0513-4a06-8ffe-8df8e64f657c
+2,33.40,Manufacture of optical instruments and photographic equipment,33,685093a5-1251-4fc8-b279-4d2edaeeb06a
+2,33.50,Manufacture of watches and clocks,33,eab66939-3e55-4ed9-9a78-ea349b1c2d30
+2,34.00,"Manufacture of motor vehicles, trailers and semi-trailers",34,d54cb1fc-cbd5-4911-ab0c-be131a09bdb9
+2,34.10,Manufacture of motor vehicles,34,9e6d812c-4beb-4390-877d-8eac3acbf007
+2,34.20,Manufacture of bodies (coachwork) for motor vehicles; manufacture of trailers and semi-trailers,34,8b70b52a-4162-4552-b8ae-ca8e351ede1e
+2,34.30,Manufacture of parts and accessories for motor vehicles and their engines,34,606b171f-3e01-4eb7-9418-7ef1aad36fb0
+2,35.00,Manufacture of other transport equipment,35,09f04ef8-69bf-4263-a6d9-9f1553b24d11
+2,35.11,Building and repairing of ships,35,84db8fb0-12d4-4950-ba18-053b1ec4f5bd
+2,35.12,Building and repairing of pleasure and sporting boats,35,eb318862-1974-4035-9e52-a5cdd852f14e
+2,35.20,Manufacture of railway and tramway locomotives and rolling stock,35,381540e5-dafd-4770-9b6d-430bb2a08642
+2,35.30,Manufacture of aircraft and spacecraft,35,511021ca-fe76-4a4d-b641-8bcb32adb084
+2,35.41,Manufacture of motorcycles,35,efa2df24-d282-4758-ae19-0b1b718499ce
+2,35.42,Manufacture of bicycles,35,81912f0b-6d43-46fb-98ce-6c81d35fbeeb
+2,35.43,Manufacture of invalid carriages,35,82566232-7a6a-448d-81df-18af0d1d4f28
+2,35.50,Manufacture of other transport equipment n.e.c.,35,1adf956d-1005-4965-a2be-6523c0de493d
+2,36.00,Manufacture of furniture; manufacturing n.e.c.,36,0b49b0e1-d098-4dfa-b4cc-df09063b6119
+2,36.11,Manufacture of chairs and seats,36,8f405e26-2ca5-4933-b0de-66dc709812dd
+2,36.12,Manufacture of other office and shop furniture,36,33e57fd0-2843-43ef-87b1-39ae8514e335
+2,36.13,Manufacture of other kitchen furniture,36,71407942-b9f6-4ace-8070-2be875703968
+2,36.14,Manufacture of other furniture,36,6940fc45-3314-488f-9b86-0f310c93fb27
+2,36.15,Manufacture of mattresses,36,bc120792-dba6-4c86-985c-d5dc2655ac8c
+2,36.21,Striking of coins,36,a1981964-471e-45fd-a866-486a2af65b13
+2,36.22,Manufacture of jewellery and related articles n.e.c.,36,a1cc96ab-b0d0-4d7d-9caa-109f85cc1f18
+2,36.30,Manufacture of musical instruments,36,38848873-b9eb-402f-b800-8026a6958404
+2,36.40,Manufacture of sports goods,36,13657972-e993-4607-9b19-5c538e19c910
+2,36.50,Manufacture of games and toys,36,df9f4f6b-799e-4411-92d9-6fdad3f5a8d5
+2,36.61,Manufacture of imitation jewellery,36,d0a5e87f-b179-488d-8692-dd7668cbeef0
+2,36.62,Manufacture of brooms and brushes,36,678739ee-9c00-4e71-a08e-25310bbe5df6
+2,36.63,Other manufacturing n.e.c.,36,0b7dd208-097e-438e-ac3a-5ad647ee7f8c
+2,37.10,Recycling of metal waste and scrap,37,95ac9e0b-761a-4ef7-ac3b-e1c540e42c75
+2,37.20,Recycling of non-metal waste and scrap,37,4b78f843-2714-4e25-bf5f-b87a33d3cfd0
+2,40.11,Production of electricity,40,69f38e1c-d66d-48e2-84d1-e5bb019609ec
+2,40.12,Transmission of electricity,40,1fd87c6f-1783-4f7e-bd2c-b349fd07cf72
+2,40.13,Distribution and trade of electricity,40,8d91ec73-6295-4ed1-b780-a944271652dd
+2,40.21,Manufacture of gas,40,d62fc1ac-7665-44fb-b4ce-42997157526d
+2,40.22,Distribution and trade of gaseous fuels through mains,40,8e474aa3-3744-4632-b60c-81f71e4c1148
+2,40.30,Steam and hot water supply,40,134085b2-4195-4941-9fc6-1e764b1b141d
+2,41.00,"Collection, purification and distribution of water",41,e48d553f-fa0e-4ee4-965a-fcb16ae7c55e
+2,45.11,Demolition and wrecking of buildings; earth moving,45,db302adf-2a04-4ff4-95f3-c2f81f16872d
+2,45.12,Test drilling and boring,45,2c34f2a8-6c76-44d9-a979-d9b0b44de27c
+2,45.21,General construction of buildings and civil engineering works,45,f53c1823-1c17-4474-bf0d-54dec1f8208e
+2,45.22,Erection of roof covering and frames,45,8bbb3250-2071-4447-b0c1-62cdb75ccd17
+2,45.23,"Construction of motorways, roads, airfields and sport facilities",45,7f9ef5bb-4a4f-4847-bf7c-84a34a614c8c
+2,45.24,Construction of water projects,45,159ba36c-ee66-46bb-b451-d15f325fc155
+2,45.25,Other construction work involving special trades,45,c75eebf3-11d1-4436-9057-d948120dc8e1
+2,45.31,Installation of electrical wiring and fittings,45,f918d67f-3b09-45d9-8edd-35595c781c01
+2,45.32,Insulation work activities,45,be7f8543-0b9f-405e-a4d7-f6adf08e6bb3
+2,45.33,Plumbing,45,a099b403-dd5e-4ac3-9070-0cf3ca85efeb
+2,45.34,Other building installation,45,3acd71cb-f007-4157-a1c1-c671c383590c
+2,45.41,Plastering,45,88c31cc6-beb2-47a7-9208-6f84414f4eb4
+2,45.42,Joinery installation,45,b2819784-78a9-45eb-b4e3-80fc708bf006
+2,45.43,Floor and wall covering,45,9aadfda8-b5fe-45f0-bc6c-8d4f9fb2f239
+2,45.44,Painting and glazing,45,213ef910-0f77-4336-b2c9-1e43197c8829
+2,45.45,Other building completion,45,7e6d5c52-3ffb-42d0-8fb7-8f185be44041
+2,45.50,Renting of construction or demolition equipment with operator,45,592052f1-0d87-473d-a34a-34145605eb2a
+2,50.10,Sale of motor vehicles,50,88fb6fe6-b285-47b1-82f3-c21df72b8406
+2,50.20,Maintenance and repair of motor vehicles,50,592b07da-c30c-4ef5-98f9-7b21387506e7
+2,50.30,Sale of motor vehicle parts and accessories,50,9443e61e-1ca0-4f0b-9399-5bbf58591fa9
+2,50.40,"Sale, maintenance and repair of motorcycles and related parts and accessories",50,71cb0da0-5461-44ad-b59f-43b9d11d529e
+2,50.50,Retail sale of automotive fuel,50,1dd140a9-3eb6-408a-ae8f-974c6111bf0c
+2,51.11,"Agents involved in the sale of agricultural raw materials, live animals, textile raw materials and semi-finished goods",51,145a81a8-5095-4187-8771-1175a7a09e11
+2,51.12,"Agents involved in the sale of fuels, ores, metals and industrial chemicals",51,5c75a5aa-5213-4abf-af65-84faa6e9fe44
+2,51.13,Agents involved in the sale of timber and building materials,51,5f805ded-674f-4b77-92c1-2b63ae564a0e
+2,51.14,"Agents involved in the sale of machinery, industrial equipment, ships and aircraft",51,66a69507-40d6-4ab3-a649-4ca396944ae2
+2,51.15,"Agents involved in the sale of furniture, household goods, hardware and ironmongery",51,f633a69b-8f66-44c0-ac49-b4b66cb864ee
+2,51.16,"Agents involved in the sale of textiles, clothing, footwear and leather goods",51,6f9fbe53-3f6c-47b7-acb5-fae9b0b405e0
+2,51.17,"Agents involved in the sale of food, beverages and tobacco",51,9d32f192-f435-45b7-a30f-7623bf4ca80f
+2,51.18,Agents specialising in the sale of particular products or ranges of products n.e.c.,51,3458a373-334f-448c-9735-92f4ce267f70
+2,51.19,Agents involved in the sale of a variety of goods,51,ce612281-1111-463c-985d-18653314f17c
+2,51.21,"Wholesale of grain, seeds and animal feeds",51,be208a9e-983d-48c9-970a-765369719106
+2,51.22,Wholesale of flowers and plants,51,bc315cf5-c016-4d83-81f3-a00f1d5d15e8
+2,51.23,Wholesale of live animals,51,49fdbed4-47e5-4393-bcb7-9e638c3ac9ed
+2,51.24,"Wholesale of hides, skins and leather",51,560b5571-31e6-45b7-b296-232372808543
+2,51.25,Wholesale of unmanufactured tobacco,51,4458f861-f9bf-4835-8629-8115e27b8636
+2,51.31,Wholesale of fruit and vegetables,51,260614d8-6c59-4e1e-81b4-9ad98089a4b8
+2,51.32,Wholesale of meat and meat products,51,2cda06db-a2f8-4d58-a832-5353add172d6
+2,51.33,"Wholesale of dairy produce, eggs and edible oils and fats",51,1e3e029c-5c1f-4a0e-aaca-29e49a8ce972
+2,51.34,Wholesale of alcoholic and other beverages,51,8381325b-40d3-47ba-93b9-6fe5631c99aa
+2,51.35,Wholesale of tobacco products,51,1adf9bd4-d30c-427c-82a2-ce23bc3eb8e7
+2,51.36,Wholesale of sugar and chocolate and sugar confectionery,51,9ea77e4f-21ae-41e0-8a3b-33418e9d20cd
+2,51.37,"Wholesale of coffee, tea, cocoa and spices",51,b13ee85c-2247-480e-a069-a3744edb85c5
+2,51.38,"Wholesale of other food, including fish, crustaceans and molluscs",51,b5d1b348-c875-44fc-ab9b-4746b214c151
+2,51.39,"Non-specialised wholesale of food, beverages and tobacco",51,d22ace4b-71f1-44a6-98cc-f265cc13c35a
+2,51.41,Wholesale of textiles,51,3f8ffd97-9f97-46d3-9928-8517a647e1c8
+2,51.42,Wholesale of clothing and footwear,51,376b1334-0a75-4fc7-b17b-d8b554dd718b
+2,51.43,Wholesale of electrical household appliances and radio and television goods,51,fd469b42-1976-4680-9edd-9f0b2dca172c
+2,51.44,"Wholesale of china and glassware, wallpaper and cleaning materials",51,4a9fc67a-391e-43ba-acd5-93c6073f36a0
+2,51.45,Wholesale of perfume and cosmetics,51,3cfef7cd-68ef-4b31-aee6-d78fc4e59375
+2,51.46,Wholesale of pharmaceutical goods,51,b284c0ba-85af-4989-afd6-f97b7eb6d8b6
+2,51.47,Wholesale of other household goods,51,4ec4f3d6-6beb-40b2-a344-a0579eece4f8
+2,51.51,"Wholesale of solid, liquid and gaseous fuels and related products",51,aef760aa-4d80-4e3b-a29e-3843b767107f
+2,51.52,Wholesale of metals and metal ores,51,9a5ec3d4-09e7-4909-9e77-3f079c38e57a
+2,51.53,"Wholesale of wood, construction materials and sanitary equipment",51,7dcf5659-3e29-4c03-bf6d-562c20e176cc
+2,51.54,"Wholesale of hardware, plumbing and heating equipment and supplies",51,f0164a92-91c0-48c1-9237-91cf5b168e18
+2,51.55,Wholesale of chemical products,51,a5507d70-08c5-4f9e-957d-f8d4362fda16
+2,51.56,Wholesale of other intermediate products,51,e49f17f5-f1f6-428d-8a59-d5c2ac42aa81
+2,51.57,Wholesale of waste and scrap,51,55062b0f-583c-47e3-b12e-936ad667f7d7
+2,51.81,Wholesale of machine tools,51,002e3f42-bcfe-496c-8d0b-38b023926b5e
+2,51.82,"Wholesale of mining, construction and civil engineering machinery",51,17c3a383-3466-4402-872b-c632a0a15196
+2,51.83,Wholesale of machinery for the textile industry and of sewing and knitting machines,51,c9d036db-bcae-4b17-83ff-03ef30a5310d
+2,51.84,"Wholesale of computers, computer peripheral equipment and software",51,29a83176-7b40-4116-817a-9e16b1b755af
+2,51.85,Wholesale of other office machinery and equipment,51,6a1687d3-578b-4883-86ba-2e0b65932b63
+2,51.86,Wholesale of other electronic parts and equipment,51,08b905a2-305d-45c2-8a30-ac18031820ba
+2,51.87,"Wholesale of other machinery for use in industry, trade and navigation",51,cc10e847-adc4-403e-8293-f26a7e1f311f
+2,51.88,"Wholesale of agricultural machinery and accessories and implements, including tractors",51,e9e88d79-f8ae-4098-89eb-0b624034878f
+2,51.90,Other wholesale,51,457996f6-c2eb-47fc-ba27-3f3b085efd22
+2,52.11,"Retail sale in non-specialised stores with food, beverages or tobacco predominating",52,03cb6885-0d8f-4702-9a9a-975768fe7fe7
+2,52.12,Other retail sale in non-specialised stores,52,b5168d5f-0df4-4b15-8cb9-47a760481e71
+2,52.21,Retail sale of fruit and vegetables,52,4d1cd8b6-9fda-4691-a21d-6d930c31aee5
+2,52.22,Retail sale of meat and meat products,52,677ad5db-8b84-4f16-9928-7af0a8f01678
+2,52.23,"Retail sale of fish, crustaceans and molluscs",52,e76c1ac1-77db-494f-acab-b91a3d8e0e02
+2,52.24,"Retail sale of bread, cakes, flour confectionery and sugar confectionery",52,d8d433c6-496b-4430-a650-7225feb8f567
+2,52.25,Retail sale of alcoholic and other beverages,52,c733028e-cb7d-4f78-b774-765bd9f61eb4
+2,52.26,Retail sale of tobacco products,52,803f6654-0466-4a73-9451-fa3ee002548f
+2,52.27,"Other retail sale of food, beverages and tobacco in specialised stores",52,95997928-ab02-4cee-bc22-dceb6165ed2f
+2,52.31,Dispensing chemists,52,df2a54bd-2a78-4e14-a83f-1d7d8f5f8876
+2,52.32,Retail sale of medical and orthopaedic goods,52,8b6f4ca9-b176-4661-bbb1-bc3679c4b375
+2,52.33,Retail sale of cosmetic and toilet articles,52,4de8b56c-254c-4f3d-aa74-002e282863fc
+2,52.41,Retail sale of textiles,52,d2ed1015-12f5-40f0-bdf8-9b0a8145db66
+2,52.42,Retail sale of clothing,52,7bebeb5e-17e4-434e-abeb-be1c00277e1f
+2,52.43,Retail sale of footwear and leather goods,52,f42de48f-f8e7-463f-ae6f-511f3bd5b55e
+2,52.44,"Retail sale of furniture, lighting equipment and household articles n.e.c.",52,42441c7d-bf59-4f8c-ad6b-9cb6fcc1c0df
+2,52.45,Retail sale of electrical household appliances and radio and television goods,52,69428132-1bde-4502-a382-f4c29d171cb0
+2,52.46,"Retail sale of hardware, paints and glass",52,1f94da55-9cca-4a83-af1c-75b960df9634
+2,52.47,"Retail sale of books, newspapers and stationery",52,b2f9bebc-6c80-49a2-a3be-2197f7785909
+2,52.48,Other retail sale in specialised stores,52,6981d6fa-13dc-47e9-ac32-ede786610dbe
+2,52.50,Retail sale of second-hand goods in stores,52,25c9318e-ebc9-477b-913a-f9deb54dd572
+2,52.61,Retail sale via mail order houses,52,2a244025-1844-42c5-b1de-99294d730b16
+2,52.62,Retail sale via stalls and markets,52,6d431aea-852f-4db9-bc78-a97eeec65ac0
+2,52.63,Other non-store retail sale,52,3800684d-415a-44d9-a4ec-6a8d350ac17d
+2,52.71,"Repair of boots, shoes and other articles of leather",52,fdf35880-bb17-414f-90bb-cc865115b654
+2,52.72,Repair of electrical household goods,52,7afa2802-d114-4e0e-901c-2eed9580257e
+2,52.73,"Repair of watches, clocks and jewellery",52,d3532ad4-2bb9-43c4-a62b-3a7b93601e24
+2,52.74,Repair n.e.c.,52,971ab684-998d-4d87-b59b-530a19927506
+2,55.10,Hotels,55,cc8d9515-5709-4028-a6ac-532ee1dc128e
+2,55.21,Youth hostels and mountain refuges,55,f0802c53-8c96-41b7-8378-ebb844a51d75
+2,55.22,"Camping sites, including caravan sites",55,54ec6af0-be97-4229-a8c8-dcf4d49959a9
+2,55.23,Other provision of lodgings n.e.c.,55,ab5c6be6-dcd6-431d-9655-b208a0b7f535
+2,55.30,Restaurants,55,50a0d870-2f40-44ac-bc30-4d06a4c1f44c
+2,55.40,Bars,55,fb9bd5b0-05ce-4728-aa13-c02efbd3bf26
+2,55.51,Canteens,55,1171c1dd-f600-4649-acb9-2139ffaacba7
+2,55.52,Catering,55,2027a459-d574-4db3-84e1-d394d644ccdb
+2,60.10,Transport via railways,60,9cd957a9-4951-4939-88cd-5c9892d4275e
+2,60.21,Other scheduled passenger land transport,60,634970ab-52dc-49d1-8d62-2f544fab269d
+2,60.22,Taxi operation,60,a2b2ae8a-e12c-4880-836b-4ddeb9ebe2e0
+2,60.23,Other land passenger transport,60,93cd61b1-65f5-4932-adc8-c7d7292cd137
+2,60.24,Freight transport by road,60,b5df44a8-fca2-4012-b8e4-5851bad05912
+2,60.30,Transport via pipelines,60,5c038e8d-aab6-440b-b67c-627da1eb51aa
+2,61.10,Sea and coastal water transport,61,7dd74344-b1f8-41c0-9296-1440ef1907fe
+2,61.20,Inland water transport,61,dc353ad1-bf85-485b-a969-189633dcdf52
+2,62.10,Scheduled air transport,62,262315b7-4b45-4d01-9734-f18e5b579f36
+2,62.20,Non-scheduled air transport,62,0805c649-8aab-4195-b921-abbe7e055c6b
+2,62.30,Space transport,62,c4527566-19f0-4370-bb5a-3a1b4c9e1230
+2,63.11,Cargo handling,63,f8bce4e7-cab3-4026-b9c0-1741c941935f
+2,63.12,Storage and warehousing,63,7642ae99-413f-4040-b68b-d04acd1a4430
+2,63.21,Other supporting land transport activities,63,1389e00c-389a-4cc2-a898-b1ae21fb82af
+2,63.22,Other supporting water transport activities,63,9a6a5a68-0629-481a-a8cb-bfee0b823953
+2,63.23,Other supporting air transport activities,63,ae86ef7b-a872-415f-862d-067a5043528a
+2,63.30,Activities of travel agencies and tour operators; tourist assistance activities n.e.c.,63,4748f839-794b-4b95-bce8-b3b4d4ae350e
+2,63.40,Activities of other transport agencies,63,d19450ab-fb44-4479-b4bd-1673f24dfe37
+2,64.11,National post activities,64,c6cb0482-2dea-4942-a3c2-bb6aac283536
+2,64.12,Courier activities other than national post activities,64,36843f8e-f318-47f4-b1fb-d8014645c38d
+2,64.20,Telecommunications,64,8332e351-1811-4584-8881-d596fbce479e
+2,65.11,Central banking,65,39d42f50-cacc-4c31-8671-67508de659ac
+2,65.12,Other monetary intermediation,65,8d9002ea-246b-4add-a9d8-d3aef14a49ea
+2,65.21,Financial leasing,65,5e569c7e-9a45-4f22-8a4f-624b5abfbb45
+2,65.22,Other credit granting,65,90298a7d-5ea8-450b-8d5f-bd61bc93f7cd
+2,65.23,Other financial intermediation n.e.c.,65,f2215bb7-0f78-4440-bd48-ea440c4b914a
+2,66.01,Life insurance,66,1248d8ce-29ef-4058-81d8-1107a527a999
+2,66.02,Pension funding,66,32ac17ae-9530-4265-b3d3-778ee28c7ae0
+2,66.03,Non-life insurance,66,e2be1071-7157-4566-9939-49d7fab0b747
+2,67.11,Administration of financial markets,67,baee5f5b-488b-4e1b-82dc-0f891dc7df28
+2,67.12,Security broking and fund management,67,f5330004-af4b-4e8b-b207-09277d22e7ad
+2,67.13,Activities auxiliary to financial intermediation n.e.c.,67,af498820-e6e7-4cc9-af04-cad35e1a7cf5
+2,67.20,Activities auxiliary to insurance and pension funding,67,ebe781c9-f8da-4180-8775-c40e2043031f
+2,70.11,Development and selling of real estate,70,dee94dc7-ca7a-459f-855f-52a72946221a
+2,70.12,Buying and selling of own real estate,70,7c63ba73-1b2f-4c9c-8270-e54714bd4630
+2,70.20,Letting of own property,70,cd0ca31a-ba2d-48d0-934c-bbb49d44900c
+2,70.31,Real estate agencies,70,a2b0c269-9658-41c5-beeb-0fc3310b4a9a
+2,70.32,Management of real estate on a fee or contract basis,70,b444bfba-c415-481f-be7f-8cc7f093055f
+2,71.10,Renting of automobiles,71,cb9b745b-17b4-4b22-be10-74d07d7b3098
+2,71.21,Renting of other land transport equipment,71,fb3f0358-b746-4096-84a5-b6cf942042dd
+2,71.22,Renting of water transport equipment,71,7280f5fd-e20f-4f3a-a453-333457a8e298
+2,71.23,Renting of air transport equipment,71,921351d1-6b76-4dc9-84a2-a730a665fc4f
+2,71.31,Renting of agricultural machinery and equipment,71,d618dd07-e324-488d-bfc2-758b686ee22b
+2,71.32,Renting of construction and civil engineering machinery and equipment,71,5ea24f1f-7af2-4ff4-94ee-24bdb7077395
+2,71.33,"Renting of office machinery and equipment, including computers",71,a68bda0b-169a-45fa-ac34-ef5d139a751b
+2,71.34,Renting of other machinery and equipment n.e.c.,71,e3e75d98-9638-44f3-aeb0-4831854163e6
+2,71.40,Renting of personal and household goods n.e.c.,71,29882a94-450b-4099-9267-b63566a34aa6
+2,72.10,Hardware consultancy,72,f92c12c4-6d91-475f-91d6-447ba94f50c3
+2,72.21,Publishing of software,72,06099dc3-8dba-4f1a-8783-b3086a9623c8
+2,72.22,Other software consultancy and supply,72,75bfc0b4-530e-41f5-b8d7-8ac278d1f288
+2,72.30,Data processing,72,fc02433a-ce16-4fe8-84ef-446da1ad5ff2
+2,72.40,Database activities,72,e91a7dfa-7394-4e57-bdbb-074659af07e8
+2,72.50,"Maintenance and repair of office, accounting and computing machinery",72,e0d500f1-0f27-49cd-b4a7-cb0e7dfe2d21
+2,72.60,Other computer related activities,72,9919f980-6cce-48f3-9bd2-338154cd04ca
+2,73.10,Research and experimental development on natural sciences and engineering,73,2fbb9024-26ac-417f-af2b-5edd8d495b32
+2,73.20,Research and experimental development on social sciences and humanities,73,59bc13da-970e-477c-9d97-5a6ae8482a29
+2,74.11,Legal activities,74,b958adc0-8af2-4111-b8cc-441ff9d85aa0
+2,74.12,"Accounting, book-keeping and auditing activities; tax consultancy",74,9a2d9b7f-ad6a-46b2-8878-1872e9d57661
+2,74.13,Market research and public opinion polling,74,ea5e0ce3-543d-4812-9bca-11b4c67bba9b
+2,74.14,Business and management consultancy activities,74,8669c59e-1765-4db0-a6b6-1f6e9136b2cc
+2,74.15,Management activities of holding companies,74,5154bb6a-d988-4348-b738-cd2a83b0c65d
+2,74.20,Architectural and engineering activities and related technical consultancy,74,48435c16-761e-4064-a1c5-82b866bb4c8c
+2,74.30,Technical testing and analysis,74,0f301d46-de66-4d6d-8ff4-5ce75e93e031
+2,74.40,Advertising,74,c11856ff-7635-4561-bd81-3417cb863aee
+2,74.50,Labour recruitment and provision of personnel,74,490c7c2a-5bf0-44b3-8b37-470c93c80ef4
+2,74.60,Investigation and security activities,74,edce3edc-6d54-4477-8c35-61374b0363f1
+2,74.70,Industrial cleaning,74,445563f5-154f-4516-9383-bc3cd4ebc291
+2,74.81,Photographic activities,74,189ba102-d3ab-45c5-a3b9-747292b83f64
+2,74.82,Packaging activities,74,909145b1-6e29-4200-b7d9-4588d8b0512f
+2,74.85,Secretarial and translation activities,74,d09f45fc-e447-4098-8ec0-06b16b814771
+2,74.86,Call centre activities,74,c844a684-85b9-4182-9f75-b0ef7ee563b0
+2,74.87,Other business activities n.e.c.,74,232e464d-a655-462b-85ec-ff23364c4b19
+2,75.11,General (overall) public service activities,75,5f85b392-40e6-43ef-970b-d5fc456bea19
+2,75.12,"Regulation of the activities of agencies that provide health care, education, cultural services and other social services, excluding social security",75,e7ec9409-ff98-4f31-8c28-41a853f2f9c0
+2,75.13,Regulation of and contribution to more efficient operation of business,75,a7dab969-772c-4a7d-a38f-f9aab5cfc66b
+2,75.14,Supporting service activities for the government as a whole,75,2711850d-2bff-4a26-9582-dd65628b4858
+2,75.21,Foreign affairs,75,c462cd8a-51e9-4c8a-8d10-8b8ee5d3dff8
+2,75.22,Defence activities,75,3bd3a078-32e8-461a-8afe-fc2774e4cea5
+2,75.23,Justice and judicial activities,75,548c34f0-37d8-4174-89c1-f003b7dcbf7d
+2,75.24,"Public security, law and order activities",75,e4064423-a4d6-42d9-b1b4-2052792cb67d
+2,75.25,Fire service activities,75,e9494686-2822-4a6b-8fcb-63e79c86b04a
+2,75.30,Compulsory social security activities,75,2c9247eb-7ec0-4409-a795-a6b799ee94b0
+2,80.10,Primary education,80,b53ec670-d2ba-41e0-a034-4efe94d8b191
+2,80.21,General secondary education,80,4acb6c62-3d24-48c8-b79c-94a72f445467
+2,80.22,Technical and vocational secondary education,80,e0373fb5-11e0-40db-9024-a6dd4e9f45f1
+2,80.30,Higher education,80,c1eec8c5-6d7f-442b-b374-6bf60360a9f4
+2,80.41,Driving school activities,80,5add290f-3311-4e55-8585-fc3e9b5fd4ae
+2,80.42,Adult and other education n.e.c.,80,155f5195-ae21-4c34-88c2-0bcf1c86c54d
+2,85.11,Hospital activities,85,052af663-9a56-4799-9945-b2bd9f9a2a8a
+2,85.12,Medical practice activities,85,1c5dc95f-84fa-4388-976a-3f8c7ce4c3b0
+2,85.13,Dental practice activities,85,d10a331b-9670-47bc-9d57-c747b9a6ce6d
+2,85.14,Other human health activities,85,4962a58f-846c-4d15-ac69-07f83df8d5a9
+2,85.20,Veterinary activities,85,ffdb2e9e-c7e2-4fe7-bb07-7b8ceac21995
+2,85.31,Social work activities with accommodation,85,c63a545e-8c48-49dd-9893-ee75809ef3c1
+2,85.32,Social work activities without accommodation,85,397b7a5e-d464-470e-998c-ff2eebe2f28e
+2,90.01,Collection and treatment of sewage,90,bb02875c-1f46-4786-929c-2e2a6dc98c7f
+2,90.02,Collection and treatment of other waste,90,bea71066-9345-41e3-a6e5-dc31805eb38d
+2,90.03,"Sanitation, remediation and similar activities",90,42b1e45d-e476-41fa-9a64-bef46e8c8197
+2,91.11,Activities of business and employers' organizations,91,50fe543f-8e45-407a-99b5-c3a881eda38c
+2,91.12,Activities of professional organizations,91,128e2c88-c1fb-4dd5-97f9-49c3af9b2ec1
+2,91.20,Activities of trade unions,91,567117c6-15cb-416e-ae08-cef03b307734
+2,91.31,Activities of religious organizations,91,f476542a-86c0-4cdf-afc9-e1cedd752416
+2,91.32,Activities of political organizations,91,87e1e9e3-e694-4096-aef0-e01206fce069
+2,91.33,Activities of other membership organizations n.e.c.,91,e1b1212f-2c3a-4c3d-8807-b99807e1e4d8
+2,92.11,Motion picture and video production,92,3cec0d46-1979-47ec-bcef-aa3e57562c21
+2,92.12,Motion picture and video distribution,92,67b20227-5f27-4158-bd93-eccd38e17ebe
+2,92.13,Motion picture projection,92,f6fd64cd-84a4-44aa-a2d4-05698e6f6511
+2,92.20,Radio and television activities,92,d81cfec5-70aa-47df-8482-73ef02c7ec47
+2,92.31,Artistic and literary creation and interpretation,92,bff402c9-733d-4f80-987f-3e4ab9b7e8a2
+2,92.32,Operation of arts facilities,92,8372719e-815e-4b4e-b9f5-c016bbf189dc
+2,92.33,Fair and amusement park activities,92,f2628558-71b5-4f20-8883-d2e1adae75b7
+2,92.34,Other entertainment activities n.e.c.,92,58a6a7d7-94df-4a40-9fcc-ef720fce2a19
+2,92.40,News agency activities,92,b537ba98-4937-4269-a5d9-d07ade3c60cd
+2,92.51,Library and archives activities,92,bd1c10d9-a6a6-4f95-bae1-cb6748535872
+2,92.52,Museums activities and preservation of historical sites and buildings,92,6492e14a-544e-4ea1-a24b-211cc30ad6e4
+2,92.53,Botanical and zoological gardens and nature reserves activities,92,aa43c442-ceee-4482-920f-9afb3d617ed4
+2,92.61,Operation of sports arenas and stadiums,92,2b17880d-b1b2-4fad-ab42-687585916ed8
+2,92.62,Other sporting activities,92,6c871a9e-ee4c-4004-87a7-a12aa583b6d7
+2,92.71,Gambling and betting activities,92,f4f43b4c-8e85-4273-9f19-f493d1c43056
+2,92.72,Other recreational activities n.e.c.,92,ab8cd0a5-9dad-4711-a6e9-bb8d344b7573
+2,93.01,Washing and dry-cleaning of textile and fur products,93,dc1ec85c-0e81-48de-a9d4-ed11fdbe9679
+2,93.02,Hairdressing and other beauty treatment,93,92317c0c-5e9e-4e0e-9b18-d4496a8d0bf6
+2,93.03,Funeral and related activities,93,babb631e-681a-40e8-81b9-93e743dda68c
+2,93.04,Physical well-being activities,93,631e7f72-e8e0-4cc1-9b65-ad236961bc2f
+2,93.05,Other service activities n.e.c.,93,fb92b0cb-ac8b-4b90-b9c9-93bf4170b79f
+2,95.00,Activities of households as employers of domestic staff,95,061898e9-d8a1-40fa-9d18-024ed9a4123e
+2,96.00,Undifferentiated goods producing activities of private households for own use,96,49ac0ed5-c9f3-479f-a176-9f0b9c019e19
+2,97.00,Undifferentiated services producing activities of private households for own use,97,17e26984-9fad-4ae5-a83e-d3750f206b69
+2,99.00,Extra-territorial organizations and bodies,99,1fec9682-dbbc-49e3-8266-9e58684fd273

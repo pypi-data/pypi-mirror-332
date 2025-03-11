@@ -1,0 +1,9 @@
+code,name,parent,level,prefixed_id
+tot,Total,,0,6c479d6c-fc99-4cab-892c-d108168d9d63
+a,Class A,tot,1,1df8bbee-eacc-4008-be9b-56c5406023e1
+a1,group a1,a,2,b837245d-12da-466e-9511-38d1d40072e8
+a2,group a2,a,2,70af414f-db80-465f-a833-58c09c8b3854
+b,Class B,tot,1,5787f313-9e9c-447c-a49b-701615378473
+c,Class C,tot,1,b225020d-f50c-4744-a6e5-750ef64ee633
+x,Class X,tot,1,23538ff7-7364-4b77-aa22-d35aff85dc7f
+x2,group x2,x,2,53bdadba-3edb-4fc5-a582-fc7849977298

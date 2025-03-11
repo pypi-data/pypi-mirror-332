@@ -1,0 +1,24 @@
+flowobject_from,flowobject_to,classification_from,classification_to,comment,prefixed_id,skos_uri
+C_N_AmmNit,4003,bonsai,faostat,one-to-one correspondence,ca4846e0-f7f6-4f2e-8815-ff70c249da8a,http://www.w3.org/2004/02/skos/core#exactMatch
+C_N_AmmSol,4002,bonsai,faostat,one-to-one correspondence,2d1439c0-7b19-46b2-8a01-ea7cd723acd1,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_34659,4030,bonsai,faostat,one-to-one correspondence,347d05f4-4e24-4a65-855e-62cc49f0f722,http://www.w3.org/2004/02/skos/core#exactMatch
+C_NPK,4021,bonsai,faostat,one-to-one correspondence,b40652b3-bbd7-4adb-9db0-418cce306b7d,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_34619,4008,bonsai,faostat,one-to-one correspondence,6cec8dc7-d2d3-46dd-a2bc-d3d915cd4414,http://www.w3.org/2004/02/skos/core#exactMatch
+C_NP_fert,4024,bonsai,faostat,one-to-one correspondence,5683bde4-e1a2-49d0-90e6-b97f8fe96643,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_34639,4018,bonsai,faostat,one-to-one correspondence,1da594e8-fabf-436d-aa72-24f791997132,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_34631,4016,bonsai,faostat,one-to-one correspondence,cd88fe1a-0b90-40ba-aa08-65e559799823,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_34646,4025,bonsai,faostat,one-to-one correspondence,6e0c5981-45a1-4642-844a-ffd59f4ce8d7,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_34632,4017,bonsai,faostat,one-to-one correspondence,04bb0510-95c9-4b16-bb6d-699fc707d456,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_3103_11,4012,bonsai,faostat,one-to-one correspondence,8c2ba1a3-9874-432f-a910-73ece964f237,http://www.w3.org/2004/02/skos/core#exactMatch
+C_N_urea,4001,bonsai,faostat,one-to-one correspondence,89581531-0970-4c28-8176-07fd11048ad1,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_34651,4007,bonsai,faostat,one-to-one correspondence,efd2c5d3-5ad4-45b6-ab16-8ae85d750ea9,http://www.w3.org/2004/02/skos/core#exactMatch
+C_N_CaAmNit,4004,bonsai,faostat,one-to-one correspondence,523eb606-e547-455b-a7a2-3ea8441057df,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_34642,4022,bonsai,faostat,one-to-one correspondence,475354ab-6ece-4a9f-9b14-59fd9e6afc01,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_34643,4023,bonsai,faostat,one-to-one correspondence,7bd86495-8d8d-4075-a5e4-7d7009745f7f,http://www.w3.org/2004/02/skos/core#exactMatch
+C_Pfert,4014,bonsai,faostat,one-to-one correspondence,0bf7a1dc-2ecc-472d-8a47-b8aec555df62,http://www.w3.org/2004/02/skos/core#exactMatch
+fn_47,4011,bonsai,faostat,one-to-one correspondence,f6e7e8f1-2dde-4534-acb7-08b5b1904d30,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_3102_50 ,4005,bonsai,faostat,one-to-one correspondence,6277f8e9-79cb-4528-8f96-ad87c1845d13,http://www.w3.org/2004/02/skos/core#exactMatch
+C_PK_fert,4027,bonsai,faostat,one-to-one correspondence,a67cef25-085a-4274-82b1-4d45a88cb906,http://www.w3.org/2004/02/skos/core#exactMatch
+C_N_solution,4006,bonsai,faostat,one-to-one correspondence,1f9e1bc9-aef3-4b89-95f4-55add13a46d6,http://www.w3.org/2004/02/skos/core#exactMatch
+fi_3103_19,4013,bonsai,faostat,one-to-one correspondence,7296e6c5-54e1-4563-85c2-c7de75f14997,http://www.w3.org/2004/02/skos/core#exactMatch
+C_NK_fert,4026,bonsai,faostat,one-to-one correspondence,97846c45-fcd5-48cc-b2fe-36d09728d898,http://www.w3.org/2004/02/skos/core#exactMatch

@@ -1,0 +1,69 @@
+code,parent_code,name,level,prefixed_id
+4007,,"Ammonia, anhydrous",0,b09471b8-d6a7-4f3f-9401-2bd0646f5420
+4003,,Ammonium nitrate (AN),0,4c07e51d-bc5d-4969-a4f3-3f4a7d89f165
+4002,,Ammonium sulphate,0,68be4307-17e2-483f-a99b-dab9f454e596
+4004,,Calcium ammonium nitrate (CAN) and other mixtures with calcium carbonate,0,57fbd6f0-c9a5-4e4b-9f26-f9bb0363bf8d
+4022,,Diammonium phosphate (DAP),0,cfca34be-d24b-4c4e-b797-4a6c1fa89b5e
+4030,,Fertilizers n.e.c.,0,3c86d69c-0e6f-4528-b507-5d88e86f93d4
+4023,,Monoammonium phosphate (MAP),0,2145ab1f-91e0-469b-9057-620a3f9e3462
+4021,,NPK fertilizers,0,7908ea72-9732-4e33-a189-85a4fd9d93b2
+4008,,"Other nitrogenous fertilizers, n.e.c.",0,f2337bef-1058-4976-9048-f8ae5fe43b7c
+4026,,Other NK compounds,0,3e16ad9a-da38-4781-b77f-bbcccd701e72
+4024,,Other NP compounds,0,9a4653d4-dbaf-44e6-9a68-7296142d2031
+4014,,"Other phosphatic fertilizers, n.e.c.",0,e85c10df-2d2a-4db0-829b-e57368ea8112
+4018,,"Other potassic fertilizers, n.e.c.",0,3869e412-7786-434f-9785-e83caa8ef2e8
+4011,,Phosphate rock,0,55db9f19-44b7-4663-8fbb-df430264e163
+4027,,PK compounds,0,417b523e-3c16-4d74-b3d9-f93a0f61fd13
+4016,,Potassium chloride (muriate of potash) (MOP),0,1bac8e26-7dba-4e3a-a843-96c3219d0b52
+4025,,Potassium nitrate,0,584e428a-3067-49d9-857d-f354131d4571
+4017,,Potassium sulphate (sulphate of potash) (SOP),0,cb309a9d-848b-4388-80d7-686f5733fdf9
+4005,,Sodium nitrate,0,c12ba20f-1fe5-44dc-803c-3c650362c3f9
+4012,,Superphosphates above 35%,0,cef5caeb-2589-4e6f-927c-322eada43ffc
+4013,,"Superphosphates, other",0,576fd641-420d-4967-a404-e275e681410b
+4001,,Urea,0,a837f607-a209-497d-afdf-2424cdb569bc
+4006,,Urea and ammonium nitrate solutions (UAN),0,fce35ca5-66b7-46bf-b01b-aead97e67346
+6600,,Country area,0,72ead40f-2fcc-4666-a5f3-dd8c356556ba
+6601,,Land area,0,e70acf47-c562-4948-b6d2-eb0acf19dbf6
+6602,,Agriculture,0,b09eb902-5bfa-463d-9e0a-7cfea9529042
+6610,,Agricultural land,0,763b96d9-68eb-4921-abc9-e4863f5f333f
+6620,,Cropland,0,ffbdecd7-33df-486f-9623-ad9261216411
+6621,,Arable land,0,6b1701b9-167f-41e5-9655-b6630598a393
+6630,,Temporary crops,0,fc1473aa-4ca1-42b8-91a6-901b61be5c89
+6633,,Temporary meadows and pastures,0,1bc4fbad-a290-45c9-b439-7230850d4d19
+6640,,Temporary fallow,0,f68b5c65-d045-4028-8a2b-809a8e36a8ed
+6650,,Permanent crops,0,cd745a4d-2436-455a-a85a-59e32d736647
+6655,,Permanent meadows and pastures,0,a219db28-74fd-4d25-ae17-f53bc3c8a5e2
+6656,,Perm. meadows & pastures - Cultivated,0,2922ce1a-bc91-46f5-b798-1c850f2d3255
+6659,,Perm. meadows & pastures - Nat. growing,0,4652aa9b-ccb5-4a80-a735-4703ee58b863
+6649,,Farm buildings and Farmyards,0,eada784b-3a21-42ee-b827-ba98756a52ef
+6646,,Forest land,0,6f0aac5c-288e-4f76-9020-b852139a3292
+6717,,Naturally regenerating forest,0,b1be0c7e-5507-41a8-b468-f4d78c45b8ea
+6716,,Planted Forest,0,ef63e9e3-6d27-4085-88fe-3116b6b37ad5
+6670,,Other land,0,c5c1d428-bd1b-42a3-9d9d-34059110b2cc
+6680,,Inland waters,0,307f2fe9-26f3-4f0b-84e0-51c9566a7625
+6773,,Coastal waters,0,b2ef3467-8696-4478-b33a-9c2bb9b873c6
+6643,,Exclusive Economic Zone (EEZ),0,c580a613-7060-4c60-9d95-3e391e7081af
+6690,,Land area equipped for irrigation,0,73c91e59-ad10-42ac-be17-3382321b2c02
+6616,,Land area actually irrigated,0,d1a6d2e6-970b-4acb-b527-c5a63b8fa76c
+6611,,Agriculture area actually irrigated,0,bdc281bf-4cc4-4fa5-a2c5-ff274a38baac
+6694,,Cropland area actually irrigated,0,20841acb-ce00-4a13-b6eb-b9cf08efb850
+6657,,Perm. meadows & pastures area actually irrig.,0,6e3d63e9-2e9d-486f-bf1f-ea3402cb811c
+6695,,Forestry area actually irrigated,0,66615740-b5da-476f-b824-dd1855082ae4
+6671,,Agriculture area under organic agric.,0,ae9237f0-ca8d-4d87-ba1a-cbb9ac856bbd
+6672,,Agriculture area certified organic,0,8f249e83-5efb-49e2-9ed7-6669f066805d
+6668,,Cropland area under organic agric.,0,035efcdc-4c17-411c-bd01-fd34cdc1d904
+6669,,Cropland area certified organic,0,72552313-f771-4f6c-86ff-6199ab9eeb9e
+6681,,Perm. meadows & pastures area under organic agric.,0,b1e2e67e-fcdb-42e2-9555-a4cd0fa17486
+6682,,Perm. meadows & pastures area certified organic,0,bbbf0e47-2774-432a-8b2f-4498a539004f
+6664,,Cropland area under conventional tillage,0,67beab1d-e4c9-4caf-807a-374aa4153053
+6665,,Cropland area under conservation tillage,0,e6cafcc3-2305-429b-9f9d-bc3035e89d55
+6666,,Cropland area under zero or no tillage,0,6d821667-9b80-4fe7-a39e-dacf4ea0c487
+6774,,Cropland area under protective cover,0,6bdb3615-ec2f-4329-bd7e-8a74a452692f
+6762,,Land used for aquaculture,0,0edcd2d1-41db-4470-b845-42cc71c4084b
+6767,,Inland waters used for aquac. or holding facilities,0,ed5b63ef-3997-4b71-80a1-554edeef7708
+6771,,Inland waters used for capture fisheries,0,d70620f2-2a6f-475e-8139-ea984b22067d
+6641,,Coastal waters used for aquac. or holding facilities,0,c3d89003-5e10-438b-a9f6-a1fa8e17aff8
+6642,,Coastal waters used for capture fisheries,0,bfd0ccf7-8951-4cfb-b2fb-5b131ae8ef37
+6644,,EEZ used for aquac. or holding facilities,0,9aa57c92-6f7b-4587-983b-4dcb41bcfbfd
+6645,,EEZ used for capture fisheries,0,93888872-3d9e-45e9-b70d-03cc202a3f28
+6714,,Primary Forest,0,9c869818-5a1b-4e85-8096-4584b45553b9

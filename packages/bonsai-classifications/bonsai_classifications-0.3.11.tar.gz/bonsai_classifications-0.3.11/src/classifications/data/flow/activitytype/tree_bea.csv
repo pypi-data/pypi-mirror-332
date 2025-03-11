@@ -1,0 +1,582 @@
+code,name,parent_code,level,prefixed_id
+11,"AGRICULTURE, FORESTRY, FISHING, AND HUNTING",total,1,cffd606e-b5b8-44f7-9e6d-7e3bc75f1bd5
+111CA,Farms,11,2,ff1d771e-c484-4355-b9a3-3c0479e6a30e
+111,Crop production,111CA,3,5eaa59d7-7fdf-43be-bbe9-dc9ee17de195
+1111A0,Oilseed farming,111,4,c970af29-1664-4b10-bcb5-5c97ca6ebdb7
+1111B0,Grain farming,111,4,0fe6d0de-1358-4e41-a3b4-bc55fc4249f6
+111200,Vegetable and melon farming,111,4,24cb57f9-b916-4bd6-8db7-79fca8eefe36
+111300,Fruit and tree nut farming,111,4,ebad4d87-8056-4cd6-a15d-191e09f3135d
+111400,"Greenhouse, nursery, and floriculture production",111,4,a265a3d2-2d1f-44e7-9bdb-2c2787fa246e
+111900,Other crop farming,111,4,5f4703e6-8ac6-4b93-9066-23f3206cb9fb
+112,Animal production and aquaculture,111CA,3,82503003-7d3c-462d-9e56-70c5fa324573
+1121A0,"Beef cattle ranching and farming, including feedlots and dual-purpose ranching and farming",112,4,7c2f87da-c185-4afb-8810-7fd7ebc6d12c
+112120,Dairy cattle and milk production,112,4,eee6daf8-400c-4373-9e8e-86c319f9b1a1
+112A00,"Animal production, except cattle and poultry and eggs",112,4,42ee0b4e-bec7-41cc-90bf-b9c2084c0ea0
+112300,Poultry and egg production,112,4,02806d92-936d-4a16-baeb-591c52621a01
+113FF,"Forestry, fishing, and related activities",11,2,5535a4b4-303a-4114-b47b-9d1eba1b684e
+113000,Forestry and logging,113FF,4,1668bb0c-fa57-44d6-bbda-93633bc6414d
+114000,"Fishing, hunting and trapping",113FF,4,5e6cee27-6ee6-4c39-8cdc-2f5d9ad26fd5
+115000,Support activities for agriculture and forestry,113FF,4,af0e66dc-f82d-45eb-b215-04bc4916f494
+21,MINING,total,1,86993663-8c19-4c8f-96b3-f1d417d73830
+211,Oil and gas extraction,21,2,950e518a-4796-4d45-8acd-da99c747ecfe
+211000,Oil and gas extraction,211,4,173b183d-2c6f-49ee-b806-86145e976fac
+212,"Mining, except oil and gas",21,2,48f4b042-d74f-49b8-b60d-eeacb7169855
+212100,Coal mining,212,4,74647206-5db8-42b0-9fcd-984e02e4089f
+2122A0,"Iron, gold, silver, and other metal ore mining",212,4,fe7205f2-0fad-45cd-9ffc-c970ab54a919
+212230,"Copper, nickel, lead, and zinc mining",212,4,d0739d7c-3cec-455f-9a11-4f3ad3934730
+212310,Stone mining and quarrying,212,4,26d0f23d-4986-4619-9186-760ef2219d90
+2123A0,Other nonmetallic mineral mining and quarrying,212,4,790998cb-3098-4124-a87b-fcccd2739804
+213,Support activities for mining,21,2,f6e46435-f393-4620-a911-606bf3dfdc32
+213111,Drilling oil and gas wells,213,4,3a8f3fbf-1b7e-4929-b620-ab15664e3a4a
+21311A,Other support activities for mining,213,4,4197764a-3844-42ee-849f-c7f0fc4fb734
+22,UTILITIES,total,1,044f65fa-164d-4e02-b345-48a5302b78bd
+2211,"Electric power generation, transmission, and distribution",22,3,2027df49-4961-435b-bae0-ea73d0402d84
+221100,"Electric power generation, transmission, and distribution",2211,4,54268367-170d-4209-b728-55081285a784
+2212NW,"Natural gas distribution and water, sewage and other systems",22,3,60794cdc-1d9a-4254-a9af-1f8bb5643609
+221200,Natural gas distribution,2212NW,4,42231ce6-775c-4036-9627-c8b64d00aca4
+221300,"Water, sewage and other systems",2212NW,4,f00c9892-c315-43e5-bdef-7d00a4dabc71
+23,CONSTRUCTION,total,1,795c96af-ad88-421f-adcf-a78ecff2565e
+23EH,"Education, hospital, and health structures",23,3,0d422348-fac3-4adb-91e7-ecf535a75287
+233210,Health care structures,23EH,4,b63f9242-345d-4286-87a9-af27df5c1f07
+233262,Educational and vocational structures,23EH,4,456792b3-14ed-4749-9076-57a72dadfa06
+23OC,Office and commercial structures,23,3,41aba6f6-0dde-45a1-8a70-3e0dd12fccc9
+2332A0,Office and commercial structures,23OC,4,17fd50a3-5676-4904-9ecd-a21cb462ae9f
+23PC,Power and communication structures,23,3,c1df94ba-d60d-4072-8219-562eb93b714d
+233240,Power and communication structures,23PC,4,6923ebda-dabe-44b8-bb10-47dd126d97c7
+23TH,Transportation structures and highways and streets,23,3,57d00008-2513-43be-9ccf-be609956cf52
+2332C0,Transportation structures and highways and streets,23TH,4,6087fa50-01d8-418b-ba5d-f10cc7b3b941
+23OT,Other nonresidential structures,23,3,fa99b246-4fee-4efc-aead-3442f0940654
+233230,Manufacturing structures,23OT,4,2fa7455f-1287-4990-824f-73f51ba21c6e
+2332D0,Other nonresidential structures,23OT,4,3dc6c363-f821-4fef-b83a-98999935ed49
+23SF,Single-family residential structures,23,3,4ccc54f9-2ed7-41e2-a6ea-357e43bc80e2
+233411,Single-family residential structures,23SF,4,0ba90d94-09ef-4f66-9348-64d0d1a6a0d1
+23OR,Other residential construction,23,3,9161af44-803b-4b78-b07a-348a0cfebe92
+233412,Multifamily residential structures,23OR,4,2187c950-108f-478a-9ea8-cae445ba2d42
+2334A0,Other residential structures,23OR,4,5d7f84e3-bde3-430b-ae9c-8a48bde8f3e3
+23MR,Maintenance and repair construction,23,3,02d55cfe-2098-4352-a9c9-21db4d1df4db
+230301,Nonresidential maintenance and repair,23MR,4,f813ac2f-55f1-4dc1-85c8-c6a0a17d4efb
+230302,Residential maintenance and repair,23MR,4,f0994cd5-1a69-4218-8634-80e15b70a03b
+33DG,DURABLE GOODS,total,1,0fb13d2f-95bb-4e78-a728-a7fc3b883489
+321,Wood products,33DG,2,cdd94d84-1550-480e-b3ab-888c6b480357
+321100,Sawmills and wood preservation,321,4,5c1831c3-e514-4dfc-af43-9335d7b03271
+321200,"Veneer, plywood, and engineered wood product manufacturing",321,4,2200e20f-682b-4e91-94d9-12c0c835b059
+321910,Millwork,321,4,dcc24495-7069-450f-acc6-e41c4e641e18
+3219A0,All other wood product manufacturing,321,4,d17a41ae-1418-424a-9ac3-c236f8c3d898
+327,Nonmetallic mineral products,33DG,2,370365a5-40c3-4ccb-a897-62e4e1f01585
+327100,Clay product and refractory manufacturing,327,4,b78153d4-4bdf-4dad-a11c-fa9da5b694aa
+327200,Glass and glass product manufacturing,327,4,0af2f4db-8cc4-4513-8395-e7c7f79e8f03
+327310,Cement manufacturing,327,4,bce4bf6e-848d-4e99-ad6c-cde23f1cddcd
+327320,Ready-mix concrete manufacturing,327,4,3cca16d7-ede4-4ed9-93a8-f8190c54a50b
+327330,"Concrete pipe, brick, and block manufacturing",327,4,176da0e8-bf92-452c-b422-78d8d1aad37d
+327390,Other concrete product manufacturing,327,4,2242e81a-1ac6-4941-9b29-b3ccf8d96824
+327400,Lime and gypsum product manufacturing,327,4,4b60d1b0-cc25-4daf-bb7c-a2ba6dfe7c70
+327910,Abrasive product manufacturing,327,4,6f4fdf95-69ac-4280-9f3d-95916d715dd1
+327991,Cut stone and stone product manufacturing,327,4,eb8674a2-b8a7-4fe9-849d-ef646fbd800e
+327992,Ground or treated mineral and earth manufacturing,327,4,f1421cac-66dd-4493-b906-4bfb41e89259
+327993,Mineral wool manufacturing,327,4,100bda04-31fc-4286-b00c-973947568b08
+327999,Miscellaneous nonmetallic mineral products,327,4,82260b49-3591-4792-83d5-962a2eeee74b
+331,Primary metals,33DG,2,01fba91d-6182-482c-a97b-6fdeb2239b8c
+3311IS,Iron and steel mills and manufacturing from purchased steel,331,3,c16a3662-cd3e-4d07-ac42-47302185bbbb
+331110,Iron and steel mills and ferroalloy manufacturing,3311IS,4,91ed3df1-89da-420b-8793-64f70f067c22
+331200,Steel product manufacturing from purchased steel,3311IS,4,097d2e4c-bdae-40e8-b353-75d2e87afa8b
+3313NF,Nonferrous metal production and processing and foundries,331,3,82f28daf-13c7-4403-8372-e326c8acfc92
+331313,Alumina refining and primary aluminum production,3313NF,4,6b830ef3-2061-4c45-a40c-568498bf6e30
+331314,Secondary smelting and alloying of aluminum,3313NF,4,305d24aa-5f79-4aef-9d84-e906ee3322a5
+33131B,Aluminum product manufacturing from purchased aluminum,3313NF,4,ece71a12-eef3-497a-9528-fa41a60a54d8
+331410,Nonferrous metal (except aluminum) smelting and refining,3313NF,4,09ed8b7c-96e0-41cc-a215-7e352d291f9c
+331420,"Copper rolling, drawing, extruding and alloying",3313NF,4,bcf3755b-f0bd-4305-bd89-4dba1edf01ae
+331490,"Nonferrous metal (except copper and aluminum) rolling, drawing, extruding and alloying",3313NF,4,2bc9f7fe-196a-43dc-b812-0c866f13027d
+331510,Ferrous metal foundries,3313NF,4,1202e577-053f-4af9-8fb5-c4b60dad84c3
+331520,Nonferrous metal foundries,3313NF,4,04c8d8de-0290-4eaa-b673-bb0686063f84
+332,Fabricated metal products,33DG,2,347b2b02-cd89-43e3-a1ff-317bdc096203
+33211A,"All other forging, stamping, and sintering",332,4,2f197c09-bab8-4fa0-9809-1a66d35a53d6
+332114,Custom roll forming,332,4,b30c0b44-a7f7-4bb8-86f4-8ec444fdcf08
+332119,"Metal crown, closure, and other metal stamping (except automotive)",332,4,d4a41bd1-4bc4-4d67-9201-03c3fe09a82b
+332200,Cutlery and handtool manufacturing,332,4,8083d837-dadf-4a75-bc1d-821ee45b8246
+332310,Plate work and fabricated structural product manufacturing,332,4,879253b3-aa83-44b7-ad98-356b12b46fdf
+332320,Ornamental and architectural metal products manufacturing,332,4,03834800-fdd6-4167-9473-a182f45fa83e
+332410,Power boiler and heat exchanger manufacturing,332,4,6ceff26a-553e-44e2-8e1a-f401418aa188
+332420,Metal tank (heavy gauge) manufacturing,332,4,bf74d7a8-5c05-4876-9770-1e9046305c1d
+332430,"Metal can, box, and other metal container (light gauge) manufacturing",332,4,faa8fe2c-47a0-4d5d-9677-cb5b2b17161e
+332500,Hardware manufacturing,332,4,f433a1d3-50ff-4e09-a4f6-628e06bcef97
+332600,Spring and wire product manufacturing,332,4,92052a73-0d34-408f-9bc8-4a444b03b176
+332710,Machine shops,332,4,5c5558a3-c84b-44f8-a0d2-8f007d92c33a
+332720,"Turned product and screw, nut, and bolt manufacturing",332,4,c1a82b67-0d58-4c5d-88de-edf2ce243908
+332800,"Coating, engraving, heat treating and allied activities",332,4,51bb216c-3287-4166-8ff1-59233214dcaa
+33291A,Valve and fittings other than plumbing,332,4,313c96ca-a3ce-4cac-8e5c-ad5fed53011c
+332913,Plumbing fixture fitting and trim manufacturing,332,4,bbae1b3c-9ddd-42dc-ad14-171d933740b3
+332991,Ball and roller bearing manufacturing,332,4,915fb0aa-0ad2-468c-9e35-114d5cc340b2
+33299A,"Ammunition, arms, ordnance, and accessories manufacturing",332,4,96e79615-9bab-48d4-904c-b7f35eb31275
+332996,Fabricated pipe and pipe fitting manufacturing,332,4,8bf98d03-5223-4a07-95d0-242a975c5d32
+332999,Other fabricated metal manufacturing,332,4,220465a4-56e4-4d01-b284-7df7e8925f25
+333,Machinery,33DG,2,8215238d-acbe-4486-8a39-0769f55ad659
+33311,Agricultural implement manufacturing,333,3,22ce8e6c-b46d-45c3-b664-335a295c67b8
+333111,Farm machinery and equipment manufacturing,33311,4,ab903169-3b52-44f5-b57a-d71be07fce2e
+333112,Lawn and garden equipment manufacturing,33311,4,3f050c3c-bbf3-4f52-b16a-a85ca545009e
+33312,Construction machinery manufacturing,333,3,ec7bdc69-e9ae-443d-9d04-2a785084822d
+333120,Construction machinery manufacturing,33312,4,f0b2ea64-43a3-4a4a-8248-f9007332e73e
+33313,Mining and oil and gas field machinery manufacturing,333,3,1249ca29-ba02-4b96-84c5-a6819651b976
+333130,Mining and oil and gas field machinery manufacturing,33313,4,67548bcd-3811-4559-924a-65ef69111a82
+3332OM,Other machinery,333,3,f6ec5dfe-600d-4558-a2c5-f11cb2c249de
+333242,Semiconductor machinery manufacturing,3332OM,4,2929d595-abb0-4abd-8ed7-58ce33bf5d98
+33329A,Other industrial machinery manufacturing,3332OM,4,e4f195b7-42f5-4617-8d01-8c90206a9618
+333314,Optical instrument and lens manufacturing,3332OM,4,dbb3646d-62e6-42a6-a087-fbb48a0c1799
+333316,Photographic and photocopying equipment manufacturing,3332OM,4,2f99760d-9297-45e9-8c14-27204281412f
+333318,Other commercial and service industry machinery manufacturing,3332OM,4,66667bb9-cd44-4245-a876-42c13de71e04
+333413,Industrial and commercial fan and blower and air purification equipment manufacturing,3332OM,4,a603f07e-0e92-4414-a0c0-15889ffc086c
+333414,Heating equipment (except warm air furnaces) manufacturing,3332OM,4,b95765bb-8cf7-4505-95cb-8748adbcff71
+333415,"Air conditioning, refrigeration, and warm air heating equipment manufacturing",3332OM,4,3fe42fe3-f5be-41d4-8bde-ca3e1e603847
+333511,Industrial mold manufacturing,3332OM,4,85c28e2f-0068-411b-b750-d2cfb3147c11
+333517,Machine tool manufacturing,3332OM,4,145ec679-b720-4212-b1a1-71f947206397
+333514,"Special tool, die, jig, and fixture manufacturing",3332OM,4,b80c1d9c-b17b-4ca2-8a29-fa0cea0a5dba
+33351B,"Cutting and machine tool accessory, rolling mill, and other metalworking machinery manufacturing",3332OM,4,456ef480-ab74-4f62-865c-c61225d30de9
+333611,Turbine and turbine generator set units manufacturing,3332OM,4,516a943c-6131-4e32-843b-847dd84569cf
+333612,"Speed changer, industrial high-speed drive, and gear manufacturing",3332OM,4,f7739f80-6c58-475e-bf31-0b094f616e4f
+333613,Mechanical power transmission equipment manufacturing,3332OM,4,2137546f-29d2-4a03-acf3-08ce9f68d0e7
+333618,Other engine equipment manufacturing,3332OM,4,36c44966-5b31-4410-8f87-6e4818597c9b
+333914,"Measuring, dispensing, and other pumping equipment manufacturing",3332OM,4,5d4d81d0-20ac-4654-b346-cea8ea8dee6f
+333912,Air and gas compressor manufacturing,3332OM,4,5c13a48e-2506-49bf-86a4-66da0cd3f4f7
+333920,Material handling equipment manufacturing,3332OM,4,170e1488-3dd5-4761-a858-ca0e39044568
+333991,Power-driven handtool manufacturing,3332OM,4,27cbd588-f222-4f03-98ab-7e7c5cb65d9c
+33399A,Other general purpose machinery manufacturing,3332OM,4,a63e68f5-b078-4aa5-b8d3-7a340b78eb74
+333993,Packaging machinery manufacturing,3332OM,4,eff8b808-7a55-4f8a-b773-939ae7727089
+333994,Industrial process furnace and oven manufacturing,3332OM,4,5f9b1218-23c2-4c25-bbeb-0e32bc299669
+33399B,Fluid power process machinery,3332OM,4,a6d9865a-4b77-4748-a622-3517a0bc89d9
+334,Computer and electronic products,33DG,2,a333a294-18a7-4846-8e4f-baffcc8dc502
+3341,Computer and peripheral equipment manufacturing,334,3,78bd4171-6e66-418c-99f1-6f041ac9f03e
+334111,Electronic computer manufacturing,3341,4,2d1b6f94-520c-4dd9-ac52-8fa623c3c52c
+334112,Computer storage device manufacturing,3341,4,65d3ce14-bf8c-404b-bf85-3393b5902e24
+334118,Computer terminals and other computer peripheral equipment manufacturing,3341,4,7f4385a8-2f3e-43ae-94bd-bc6058cc3f1b
+3342,Communications equipment manufacturing,334,3,c8eea757-5893-4a21-84a7-2ec63e48dd60
+334210,Telephone apparatus manufacturing,3342,4,bf0bdfa5-c7fc-416f-a503-6f427c4195b6
+334220,Broadcast and wireless communications equipment,3342,4,db6efbf1-dc07-49da-af83-da91f4db7646
+334290,Other communications equipment manufacturing,3342,4,c6a83a38-f720-4b7e-8b19-e7b90fbbbb15
+3344,Semiconductor and other electronic component manufacturing,334,3,5ffb9383-b63d-4c9e-aee5-b4818e6a5ba1
+334413,Semiconductor and related device manufacturing,3344,4,59e64e9a-21d3-48c1-beca-70be4053c002
+334418,Printed circuit assembly (electronic assembly) manufacturing,3344,4,1047b0b9-05c6-4d2d-b529-e3cf8b257907
+33441A,Other electronic component manufacturing,3344,4,255adae8-a01d-4192-911e-1fbc55f0140d
+3345,"Navigational, measuring, electromedical, and control instruments manufacturing",334,3,74801bda-be1b-4214-b20c-1391eb50de39
+334510,Electromedical and electrotherapeutic apparatus manufacturing,3345,4,80584e8f-c298-4a4a-b1d0-17e094cc6eac
+334511,"Search, detection, and navigation instruments manufacturing",3345,4,8b5c3645-baef-4189-839c-3cb8ceb278bc
+334512,Automatic environmental control manufacturing,3345,4,4632bfdc-af44-4075-b433-4ab660af9cfb
+334513,Industrial process variable instruments manufacturing,3345,4,2eeea71d-48fb-4d11-916e-980dbdbd38ae
+334514,Totalizing fluid meter and counting device manufacturing,3345,4,2187d2a8-b111-40bb-b848-128634b93959
+334515,Electricity and signal testing instruments manufacturing,3345,4,003dd73a-8b7c-4fd4-b306-d9033f840967
+334516,Analytical laboratory instrument manufacturing,3345,4,6c58d919-6c84-4926-b8cf-99f3d2c33faa
+334517,Irradiation apparatus manufacturing,3345,4,6ad7f21d-596b-48e5-b4ba-9378baeb750b
+33451A,"Watch, clock, and other measuring and controlling device manufacturing",3345,4,edfe1a5e-0ae6-42cc-a970-82406ea4a1c3
+334X,Other computer and electronic product manufacturing,334,3,9ba41a9d-1278-4c4f-a43d-76a113d2a8a9
+334300,Audio and video equipment manufacturing,334X,4,2aad001e-6993-412f-99f0-0875d9c4d5ed
+334610,Manufacturing and reproducing magnetic and optical media,334X,4,458831bf-ccd7-4591-8c95-2d34b82eced9
+335,"Electrical equipment, appliances, and components",33DG,2,d97b13c6-7fb4-440e-8428-be3ccbf95783
+335110,Electric lamp bulb and part manufacturing,335,4,9da12e12-ca59-43ba-b409-5e6f26e029a1
+335120,Lighting fixture manufacturing,335,4,6d0dc90f-5fcb-49e4-a539-119b7d2533d9
+335210,Small electrical appliance manufacturing,335,4,71510ab4-156f-4abf-ba92-ec40340f1c38
+335220,Major household appliance manufacturing,335,4,d14a3add-67b2-49aa-b41c-6cccc4e8074e
+335311,"Power, distribution, and specialty transformer manufacturing",335,4,0851cb89-a24e-4570-bc0d-addc00d09e10
+335312,Motor and generator manufacturing,335,4,17b8f865-498e-4fc0-acb2-429904698976
+335313,Switchgear and switchboard apparatus manufacturing,335,4,9314f670-7fdb-4d4f-84e9-b6c3e10c288a
+335314,Relay and industrial control manufacturing,335,4,f43f7693-9fbf-485b-96d5-61ed69a17686
+335911,Storage battery manufacturing,335,4,97968e14-8cbc-42c5-9b80-9dfead33c822
+335912,Primary battery manufacturing,335,4,10fcb814-19f9-406a-bc63-894368ef5eb3
+335920,Communication and energy wire and cable manufacturing,335,4,ab860af3-b447-4846-b7e9-1d5ee2901699
+335930,Wiring device manufacturing,335,4,37e50529-0c32-4903-aa71-fb83939ab4ab
+335991,Carbon and graphite product manufacturing,335,4,a1c0d2ca-ecd6-46c5-9af5-89b69b8a469b
+335999,All other miscellaneous electrical equipment and component manufacturing,335,4,54ebc212-98b5-48de-9c0f-774713a58ad0
+3361MV,"Motor vehicles, bodies and trailers, and parts",33DG,2,f74eb011-f61b-4e31-8dd3-c3f4b8680fb7
+336111,Automobile manufacturing,3361MV,3,dce94298-4db3-474c-bb71-e4067b84220e
+336112,Light truck and utility vehicle manufacturing,3361MV,3,5ebaf486-f3c5-42af-b879-706d71299929
+33612,Heavy duty truck manufacturing,3361MV,3,28dd31f6-f043-4286-ac88-4867afb953a3
+336120,Heavy duty truck manufacturing,33612,4,8353caa6-a670-430a-9da9-d235d818bfef
+3362BP,"Motor vehicle body, trailer, and parts manufacturing",3361MV,3,b1cdb5af-793f-44ff-b128-e51ee856ee11
+336211,Motor vehicle body manufacturing,3362BP,4,3aa5e623-1191-407d-b980-c4f513cbe930
+336212,Truck trailer manufacturing,3362BP,4,d5e8e276-dfe2-49b1-bada-5dc5411819e3
+336213,Motor home manufacturing,3362BP,4,fb52f960-d5d4-4957-bb27-6e86b5816471
+336214,Travel trailer and camper manufacturing,3362BP,4,d48429fb-e0bc-4971-9553-181e65447da6
+336310,Motor vehicle gasoline engine and engine parts manufacturing,3362BP,4,212a6eb8-dd2f-49e4-8f13-343009527029
+336320,Motor vehicle electrical and electronic equipment manufacturing,3362BP,4,2622f6ea-f9fa-4f77-b63e-6153927498cb
+3363A0,"Motor vehicle steering, suspension component (except spring), and brake systems manufacturing",3362BP,4,8f100512-d067-4563-b7cb-e8eb20254ccd
+336350,Motor vehicle transmission and power train parts manufacturing,3362BP,4,2f675071-0cb4-4b74-82fd-f21813833b04
+336360,Motor vehicle seating and interior trim manufacturing,3362BP,4,1a2e8cf7-3443-4173-adf0-6eb828261e06
+336370,Motor vehicle metal stamping,3362BP,4,339aea32-4e67-4003-b9a9-2b792bbc9843
+336390,Other motor vehicle parts manufacturing,3362BP,4,177d3f75-b00e-4900-b21f-8e14e7707085
+3364OT,Other transportation equipment,33DG,2,83845854-2fdc-4762-a2e3-0edde90bec8c
+3364,Aerospace product and parts manufacturing,3364OT,3,e32c9da4-61f5-4de0-9ffb-c0470094a1f6
+336411,Aircraft manufacturing,3364,4,31037f1e-ca60-4dd7-ba8d-42f7cc24268a
+336412,Aircraft engine and engine parts manufacturing,3364,4,ec5ebd79-a921-4b80-9bcf-ed0c954d649d
+336413,Other aircraft parts and auxiliary equipment manufacturing,3364,4,908a320d-43fa-49b3-b120-b35e0ec2f527
+336414,Guided missile and space vehicle manufacturing,3364,4,28c54a8e-eaaa-4572-a944-3580b4de73d3
+3365AO,All other transportation equipment manufacturing,3364OT,3,03a6ffd2-9d7b-47ae-86dd-8547851f9631
+336500,Railroad rolling stock manufacturing,3365AO,4,3314c4da-637a-4865-b7f2-6b56731ef981
+336611,Ship building and repairing,3365AO,4,1f57797a-de22-46e8-bf60-88b992753cc6
+336612,Boat building,3365AO,4,2d1f08f3-b28a-4a94-b5ad-14663d717adc
+336991,"Motorcycle, bicycle, and parts manufacturing",3365AO,4,c051a3ff-f925-4002-9f7c-4d30eacaf8a0
+336992,"Military armored vehicle, tank, and tank component manufacturing",3365AO,4,a0e9d9cd-5877-426d-8963-a0b77f9bedcf
+336999,All other transportation equipment manufacturing,3365AO,4,ba5d1c45-0408-4710-82db-1c3e3fc5daab
+337,Furniture and related products,33DG,2,738bd994-d6ec-42dd-a427-7b454d032836
+337110,Wood kitchen cabinet and countertop manufacturing,337,4,7a1fa7af-c1e7-44c3-bc2c-b1e307c9ec32
+337121,Upholstered household furniture manufacturing,337,4,16f11f16-d28a-4f7b-bc98-08410d711df2
+337122,Nonupholstered wood household furniture manufacturing,337,4,f94b0ea5-70b8-45d8-9a79-1b3b977d745c
+33712N,Other household nonupholstered furniture,337,4,4ba37d5b-bc7c-49b8-8acd-ba5c51737f90
+337127,Institutional furniture manufacturing,337,4,a2dec1f5-1121-4c70-a71e-ff6d0c300de0
+33721A,Office furniture and custom architectural woodwork and millwork manufacturing,337,4,2e7f6a87-fb87-4a03-a021-424c1d2710e1
+337215,"Showcase, partition, shelving, and locker manufacturing",337,4,f1bca445-1495-49bd-9bda-c621aa37aa59
+337900,Other furniture related product manufacturing,337,4,ffde6564-8581-4589-8390-905069052a3a
+339,Miscellaneous manufacturing,33DG,2,55f180d7-bc99-4409-b495-feb3af3a4193
+3391,Medical equipment and supplies manufacturing,339,3,48f83c05-2761-4e42-a171-d32074e9a51d
+339112,Surgical and medical instrument manufacturing,3391,4,628985e8-fa13-4898-9ba6-d758ca34edab
+339113,Surgical appliance and supplies manufacturing,3391,4,94f212bf-a90d-4b15-bb1b-52649399125b
+339114,Dental equipment and supplies manufacturing,3391,4,c9ace7b6-0649-40ee-80ac-bf5f50ccb28b
+339115,Ophthalmic goods manufacturing,3391,4,8c573499-49b0-4987-8f2e-1e7e9136a086
+339116,Dental laboratories,3391,4,2401f9f6-6aa6-4d5c-8f6c-66bfbe792271
+3399,Other miscellaneous manufacturing,339,3,d0f156d6-e21a-4daa-b963-c4f68e2bcb8b
+339910,Jewelry and silverware manufacturing,3399,4,11e72fda-8991-4bf3-b0b9-e275eb71271b
+339920,Sporting and athletic goods manufacturing,3399,4,076dd9d6-45cc-4410-8258-1932a4066ab6
+339930,"Doll, toy, and game manufacturing",3399,4,4d9d08e9-17df-4346-b86b-2469ff1695d7
+339940,Office supplies (except paper) manufacturing,3399,4,876988e9-81db-4e77-a4a2-3b6d9d1221d3
+339950,Sign manufacturing,3399,4,9d3d7d1e-4e01-41be-979d-802d9d267b95
+339990,All other miscellaneous manufacturing,3399,4,838c235f-ace6-4807-9315-99e5add2f661
+31ND,NONDURABLE GOODS,total,1,eef0d5bf-26cb-4df8-9246-6b4c975f6224
+311FT,Food and beverage and tobacco products,31ND,2,b2da9c7b-bc9c-46c9-9f99-e5279ab1785a
+311,Food manufacturing,311FT,3,dfd28c70-82f8-4d92-ad88-e47fb845de11
+311111,Dog and cat food manufacturing,311,4,d25f4680-f0fc-45d3-b665-c0c205f819e4
+311119,Other animal food manufacturing,311,4,fff3b88e-da7a-48ef-b0ea-f226368db37a
+311210,Flour milling and malt manufacturing,311,4,0aaacfb8-f7f9-43bb-8d1a-bf6b824eafae
+311221,Wet corn milling,311,4,d74dd75a-f6d2-4836-be1e-d0d4a8eded60
+311224,Soybean and other oilseed processing,311,4,a3ca1b07-9db0-44a6-92b7-17889795294c
+311225,Fats and oils refining and blending,311,4,0d44e1ed-4ebc-4370-88b0-d31e07fd9a01
+311230,Breakfast cereal manufacturing,311,4,5a476f54-dee8-4693-a600-c3fa5fe56690
+311300,Sugar and confectionery product manufacturing,311,4,eaef25bc-9720-42e4-a488-1cc8d72ab548
+311410,Frozen food manufacturing,311,4,3e98b2db-b164-408e-bce6-1b1df385ba8e
+311420,"Fruit and vegetable canning, pickling, and drying",311,4,5c9c27bc-c8bc-4feb-bade-3219d9a41233
+31151A,Fluid milk and butter manufacturing,311,4,38c1d05c-753d-49f5-a93c-ce2048542b78
+311513,Cheese manufacturing,311,4,bb0bb358-5fea-4507-aded-5be1a2229d89
+311514,"Dry, condensed, and evaporated dairy product manufacturing",311,4,9b59c8ee-13dc-4c84-be3c-f78f13c5fcf8
+311520,Ice cream and frozen dessert manufacturing,311,4,b56ff6b0-11a4-46d6-aa8f-879891b83f7f
+31161A,"Animal (except poultry) slaughtering, rendering, and processing",311,4,d251c598-fe77-49d7-b4e7-cf4296365497
+311615,Poultry processing,311,4,3c5e38ae-6721-4163-8d7f-030f3b839b02
+311700,Seafood product preparation and packaging,311,4,26c0e91b-dc65-442e-8384-86842e9cd8d5
+311810,Bread and bakery product manufacturing,311,4,ba040431-c829-4ae0-b7e0-098db956f841
+3118A0,"Cookie, cracker, pasta, and tortilla manufacturing",311,4,9b0e59c2-d3f8-44ef-8df9-7a3d5fab5ed6
+311910,Snack food manufacturing,311,4,98f1487f-10cf-425f-980d-f3debb4a4ded
+311920,Coffee and tea manufacturing,311,4,f7a160ba-1ebd-4ed6-8255-d9630e3b6a6c
+311930,Flavoring syrup and concentrate manufacturing,311,4,5ddfbea3-de27-4d4a-a779-99f9dd50523a
+311940,Seasoning and dressing manufacturing,311,4,2e69be4d-e8e5-4f3a-aa16-4efb644d0ef3
+311990,All other food manufacturing,311,4,9c1153b6-49fa-4b13-b373-56f63b4d4e35
+3121,Beverage manufacturing,311FT,3,5b1bf19e-e095-4aa2-b2a5-1af4df4642ac
+312110,Soft drink and ice manufacturing,3121,4,5cd96a01-0d13-4ccd-82fd-e819d8b9397e
+312120,Breweries,3121,4,cfac2575-91cb-4549-be25-ad3364e8f5fd
+312130,Wineries,3121,4,47261458-2eea-4573-ad9c-282a0a756961
+312140,Distilleries,3121,4,efbe6570-4297-4e16-a817-2170b8721a91
+3122,Tobacco manufacturing,311FT,3,782d13d2-4cee-4724-b5cf-511ec75c7066
+312200,Tobacco manufacturing,3122,4,06ddc076-b6e9-4ac4-adc5-e02f300b3da4
+313TT,Textile mills and textile product mills,31ND,2,8735e759-506d-424f-8e3b-012bfaba5293
+313100,"Fiber, yarn, and thread mills",313TT,4,5e204b5d-25b7-4ec3-aeb4-f0b96e8820d0
+313200,Fabric mills,313TT,4,3ec05786-1522-456b-9424-d1d735857878
+313300,Textile and fabric finishing and fabric coating mills,313TT,4,031d81c6-0565-47d3-a562-be798ea1f0d8
+314110,Carpet and rug mills,313TT,4,e50f56b8-d72e-41ce-a069-3d04fbebc52d
+314120,Curtain and linen mills,313TT,4,5c3b72b3-42e4-43ce-bff4-eea29c472d76
+314900,Other textile product mills,313TT,4,3656f25e-4790-4f0a-8d2f-bea0014090c4
+315AL,Apparel and leather and allied products,31ND,2,18891b8b-c258-453b-9b6e-402f9aaf249f
+315000,Apparel manufacturing,315AL,4,f5ad3f1f-ebd3-4452-9dea-c2f502f08e8a
+316000,Leather and allied product manufacturing,315AL,4,d97706cd-7e90-4881-ba51-37759b0bf5f3
+322,Paper products,31ND,2,c8bc9e3c-a1a3-408f-8da7-005f0dbfe1cb
+322110,Pulp mills,322,4,c0ae8d3a-c1b3-45bd-b817-3cfdb0eb832d
+322120,Paper mills,322,4,6fba859b-441a-41de-b55e-84459ea006e6
+322130,Paperboard mills,322,4,c64cf4b4-e3ac-4770-abfb-7e0cc3c57579
+322210,Paperboard container manufacturing,322,4,576910c7-da56-45d5-afcf-ad017fa4fbf6
+322220,Paper bag and coated and treated paper manufacturing,322,4,8da21b1b-1100-4f36-b200-ce9393b8ab3e
+322230,Stationery product manufacturing,322,4,5d701c66-baf7-4fe4-98c1-a78d7c2b1e4c
+322291,Sanitary paper product manufacturing,322,4,13b77f37-8ef3-4b2e-b5c5-41688cae548f
+322299,All other converted paper product manufacturing,322,4,cd2b3054-c282-4940-9dfb-009288f79717
+323,Printing and related support activities,31ND,2,bb59eb20-575f-45c9-beff-0b8c3c85a255
+323110,Printing,323,4,cd25e6be-9c38-4dab-9bfa-561f92b08c0a
+323120,Support activities for printing,323,4,cdb4a084-432c-4831-93c2-88bb49d952b5
+324,Petroleum and coal products,31ND,2,78a67ffe-04d6-41fd-a300-ab51cd8f0a7a
+324110,Petroleum refineries,324,4,3fa1c61c-afbd-446b-abe4-68d675e33d01
+324121,Asphalt paving mixture and block manufacturing,324,4,bb98d665-0d55-4c25-bef3-29122e62e272
+324122,Asphalt shingle and coating materials manufacturing,324,4,de6f190e-756a-4214-baa8-c8dddd12ab74
+324190,Other petroleum and coal products manufacturing,324,4,b6778d20-8bc7-40a6-8c37-3ae21f18839c
+325,Chemical products,31ND,2,ea4aeba1-bf0d-40a1-a167-c9440d336552
+3251,Basic chemical manufacturing,325,3,c8d031d3-1b20-4db4-943b-164a9dd3972c
+325110,Petrochemical manufacturing,3251,4,9c116b0e-59f4-4ee1-9c1f-55922564d4a0
+325120,Industrial gas manufacturing,3251,4,267610da-3df7-4de5-a22d-78fe51c9fbb5
+325130,Synthetic dye and pigment manufacturing,3251,4,a9d67a01-4e85-4bc2-8fc5-7a419e090df1
+325180,Other basic inorganic chemical manufacturing,3251,4,7d041be7-13c4-4fd6-a26c-6843c2a60894
+325190,Other basic organic chemical manufacturing,3251,4,cc64c49a-7cb6-4257-a1ae-2a9fe2057661
+3252,"Resin, rubber, and artificial fibers manufacturing",325,3,18c429d5-34b9-43f5-b969-b4d468058d79
+325211,Plastics material and resin manufacturing,3252,4,0e3ee42c-3bc1-41bf-89ea-a214bec7a79e
+3252A0,Synthetic rubber and artificial and synthetic fibers and filaments manufacturing,3252,4,27ec908d-6e82-48d2-ab8f-df7e215212d7
+3254,Pharmaceutical and medicine manufacturing,325,3,5ffcc480-166e-4002-aee6-8474fa3f4bd3
+325411,Medicinal and botanical manufacturing,3254,4,bba8d02e-a795-4c5d-a1bb-c8d15b6bb451
+325412,Pharmaceutical preparation manufacturing,3254,4,44f58a00-dac5-48aa-9abb-8162150cc559
+325413,In-vitro diagnostic substance manufacturing,3254,4,f6c073c3-3ca6-45b5-9445-c5c85532d866
+325414,Biological product (except diagnostic) manufacturing,3254,4,6e6ae276-0f07-4ccc-9834-7b48c4cf253b
+325X,Other chemical manufacturing,325,3,08bfece1-62fc-4fcd-a84a-222113073abb
+325310,Fertilizer manufacturing,325X,4,693c2f84-b77a-43eb-89bd-9af4b293da2b
+325320,Pesticide and other agricultural chemical manufacturing,325X,4,6fe49ca4-486f-41a9-86a8-3bc3b27be4d3
+325510,Paint and coating manufacturing,325X,4,7fab8b09-fe93-440f-91f3-a54fe5b43941
+325520,Adhesive manufacturing,325X,4,cb846c57-11c3-494b-a88b-25adaf7b0fad
+325610,Soap and cleaning compound manufacturing,325X,4,47acbcef-8ef2-4020-aebd-875dd7abbd2a
+325620,Toilet preparation manufacturing,325X,4,fc00c259-eef6-4cb2-8393-3a71a9a3b946
+325910,Printing ink manufacturing,325X,4,9ff2c60f-1ffd-407d-afcd-cf72392aea3f
+3259A0,All other chemical product and preparation manufacturing,325X,4,c4a395a2-b56b-483e-91a6-c26e4601225a
+326,Plastics and rubber products,31ND,2,1bff4d7f-ca75-4c27-a834-43095c0508cd
+326110,Plastics packaging materials and unlaminated film and sheet manufacturing,326,4,79fb1bee-38d6-4b71-9752-83b3e4f3e4e9
+326120,"Plastics pipe, pipe fitting, and unlaminated profile shape manufacturing",326,4,4c672b9f-bab2-49a6-aced-c1022a1fde21
+326130,"Laminated plastics plate, sheet (except packaging), and shape manufacturing",326,4,6d785c7d-5f55-4de0-84a8-074bf0e38e6b
+326140,Polystyrene foam product manufacturing,326,4,34a09ad7-10e2-47f7-9eb4-0206edf84a3b
+326150,Urethane and other foam product (except polystyrene) manufacturing,326,4,ea786f3b-ef4d-4e70-a954-4b4b9d1879f8
+326160,Plastics bottle manufacturing,326,4,acf8b867-48c1-4d8b-a743-a4d3856be31c
+326190,Other plastics product manufacturing,326,4,e33f419d-159c-4e45-9733-ce37f49407d3
+326210,Tire manufacturing,326,4,84af04c7-ab06-4b9c-873e-5a413373ae03
+326220,Rubber and plastics hoses and belting manufacturing,326,4,4447f5d1-869b-4d9e-8a47-30a649791cb6
+326290,Other rubber product manufacturing,326,4,62c350a5-7bac-42c7-9de8-dceb2d7fb67d
+42,WHOLESALE TRADE,total,1,0057f12c-a392-4d76-9a51-354e008d1452
+4231,Motor vehicle and motor vehicle parts and supplies,42,3,0035e161-e01e-49f7-b8a2-6e58a859d53e
+423100,Motor vehicle and motor vehicle parts and supplies,4231,4,5e787b3e-09b9-4b43-b34c-10c768c32451
+4234,Professional and commercial equipment and supplies,42,3,6e50ba5a-e6c7-4eb1-b07a-2538d6dc7bce
+423400,Professional and commercial equipment and supplies,4234,4,7c49f924-0e43-4411-baaa-640c5227364b
+4236,Household appliances and electrical and electronic goods,42,3,794e96bb-608a-4b04-8473-57fe545818a2
+423600,Household appliances and electrical and electronic goods,4236,4,732a918f-9e16-4959-b687-f65ccaa7b92f
+4238,"Machinery, equipment, and supplies",42,3,b1fdacec-c678-4aa8-bc0a-82f15025f7d2
+423800,"Machinery, equipment, and supplies",4238,4,0169e61c-932b-489b-aeb4-1dc39e06797e
+423X,Other durable goods merchant wholesalers,42,3,be51b497-ce3e-41fc-b659-270f6a272641
+423A00,Other durable goods merchant wholesalers,423X,4,0764d707-f55d-4fd8-8936-f8265869269c
+4242,Drugs and druggists' sundries,42,3,1e6210ff-43d0-4061-a9cd-b5294a2ccefd
+424200,Drugs and druggists' sundries,4242,4,dbfd5e72-dd51-4d5f-bdcc-ee3d8ab24e36
+4244,Grocery and related product wholesalers,42,3,5177e080-e7d8-403f-b706-d4c09f2c2c0f
+424400,Grocery and related product wholesalers,4244,4,138697e4-994a-4681-bdda-f20d55f6812d
+4247,Petroleum and petroleum products,42,3,6fbf1ebf-eb10-4651-9040-f2f9d241044c
+424700,Petroleum and petroleum products,4247,4,213f0e42-8f7c-40f8-8c00-a3439211975f
+424X,Other nondurable goods merchant wholesalers,42,3,49c3c81c-f512-47cc-8809-84828f97c159
+424A00,Other nondurable goods merchant wholesalers,424X,4,ca50068a-c61f-442c-b5cc-6f3e8fd7a4ed
+425,Wholesale electronic markets and agents and brokers,42,3,3d1f3bf2-b568-482c-a8f9-a7cc31b7bfa1
+425000,Wholesale electronic markets and agents and brokers,425,4,9e3b6782-e963-43d8-8b80-98f867e391a4
+42ID,Customs duties,42,3,fafa277d-a048-4467-be14-b4150ee307c9
+4200ID,Customs duties,42ID,4,f719035d-d42e-4fbf-9a90-488bbcb477f2
+44RT,RETAIL TRADE,total,1,db4b4dd0-d99a-433b-a754-357185d3553a
+441,Motor vehicle and parts dealers,44RT,2,f6a69cd7-ad1d-498d-a105-e1ea1ab6cead
+441000,Motor vehicle and parts dealers,441,4,6e51d3ce-d55b-4bab-82c7-0c37c46b2950
+445,Food and beverage stores,44RT,2,50bc5bc0-e602-44e4-9860-f8087bdd0509
+445000,Food and beverage stores,445,4,dae6eb06-631d-48cd-9065-8a87e65af5a8
+452,General merchandise stores,44RT,2,c406fefe-1dde-4ad3-9cd5-73dcea572460
+452000,General merchandise stores,452,4,69a88e1a-07a1-4b3e-b80f-c8597cb38efb
+4A0,Other retail,44RT,2,380fb6e2-01b6-4b76-9f28-b583f1636c47
+444,Building material and garden equipment and supplies dealers,4A0,3,00188da1-5b24-4a4e-b731-2b44a00fadad
+444000,Building material and garden equipment and supplies dealers,444,4,2572c6de-faf5-4907-8921-72790f3b14b0
+446,Health and personal care stores,4A0,3,7e3691cb-0d9e-4b43-925f-28ba0d125490
+446000,Health and personal care stores,446,4,14d6e7ed-9aca-421a-be9d-67e5a1efa082
+447,Gasoline stations,4A0,3,58c2a6cd-8ebc-491b-bccd-d9ea71d91a42
+447000,Gasoline stations,447,4,dcf77b71-2c4e-430d-a2c9-b77bf842e282
+448,Clothing and clothing accessories stores,4A0,3,b2466bb8-e513-4ba5-947e-7a814df7a13d
+448000,Clothing and clothing accessories stores,448,4,27fd3ff7-2848-4d29-9c10-3d813e0920b6
+454,Nonstore retailers,4A0,3,ff84cb3a-fa9b-42ff-93be-912cb7c70b71
+454000,Nonstore retailers,454,4,6e7bc017-1210-450d-ba3f-c176138fd01b
+4A0X,All other retail,4A0,3,c05e92f7-277f-4b54-87fd-f5b30d4e75c1
+4B0000,All other retail,4A0X,4,f4bdc53a-feca-44db-afde-5d21f1d5fd02
+48TW,"TRANSPORTATION AND WAREHOUSING, EXCLUDING POSTAL SERVICE",total,1,4d57a22d-c4c0-4d31-b2ce-53e8ce374d95
+481,Air transportation  ,48TW,2,831dc61f-0923-4eff-942d-ed4e1f29d884
+481000,Air transportation,481,4,8b2d45eb-0a1b-4106-b243-36b0dd8df204
+482,Rail transportation ,48TW,2,4403d18c-28da-4af3-8790-8e5c08387ee1
+482000,Rail transportation,482,4,a526767c-7928-404a-99a4-8ee44999be3e
+483,Water transportation,48TW,2,06f92c90-2b96-4d47-a070-d68b20ff7bd1
+483000,Water transportation,483,4,e606f0f8-715d-4226-b09f-84adb4047d4b
+484,Truck transportation,48TW,2,1a9a749f-7fb3-4ca0-8369-6467c627d528
+484000,Truck transportation,484,4,be719fdb-014d-49d8-b7db-35b83764227d
+485,Transit and ground passenger transportation ,48TW,2,4bf82ec5-02de-4d09-b74d-2e500f5a932e
+485000,Transit and ground passenger transportation,485,4,0ab1306f-3f57-4aaf-988b-2b32c49df0f4
+486,Pipeline transportation,48TW,2,a4bf3163-0cdd-4320-a732-1e518febe546
+486000,Pipeline transportation,486,4,dd0ce6f0-debc-4244-b73f-2bbedf23482b
+487OS,Other transportation and support activities,48TW,2,03c23bba-1e0d-46b9-ad6c-f4710b2558de
+48A,Scenic and sightseeing transportation and support activities,487OS,3,2c52fbb3-7c55-4107-8111-8c1b59415241
+48A000,Scenic and sightseeing transportation and support activities,48A,4,c5a51ae2-ac39-43e8-bfb1-7f7f141d18dd
+492,Couriers and messengers,487OS,3,aabb06b2-2992-4b61-b963-248a1d18efea
+492000,Couriers and messengers,492,4,d09cfbab-1767-42a4-a0a0-9dddb83373ab
+493,Warehousing and storage,48TW,2,a14aa996-79d4-4022-9ab8-98f9b5b26b40
+493000,Warehousing and storage,493,4,aea2d2d6-5b83-4298-bc17-cfa72a542544
+51,INFORMATION,total,1,8e40e7f6-8fab-405a-8c51-3ac7cb852ac3
+511,"Publishing industries, except internet (includes software)",51,2,be76377d-1ae8-40fe-b1f7-6f092ab5d633
+5111,"Newspaper, periodical, book, and directory publishers",511,3,7bd00ea2-5a37-4da0-965a-e4da2a19c268
+511110,Newspaper publishers,5111,4,e92531b3-d24c-4942-ab16-c3d800cb02d7
+511120,Periodical publishers,5111,4,6ee6c090-ce0b-446f-9316-13a591abdd31
+511130,Book publishers,5111,4,3b24d4b6-f779-4626-aeb5-81bf4f58cdda
+5111A0,"Directory, mailing list, and other publishers",5111,4,cec3f84e-4c7c-4e4e-b3d0-d84bb4048ef8
+5112,Software publishers,511,3,7925eefe-05f3-476b-bda6-bc956cc8252e
+511200,Software publishers,5112,4,17e9a3fd-7d36-4e24-bd75-02e007e0aeb9
+512,Motion picture and sound recording industries,51,2,3c3c299f-d3ce-4e2d-a1b8-f8e9292a3c38
+512100,Motion picture and video industries,512,4,fd526deb-f2cf-4090-81d8-f1d09bbc3174
+512200,Sound recording industries,512,4,3da8ab08-0b38-422d-9a81-0b18a679cea1
+513,Broadcasting and telecommunications,51,2,064fa201-b6bb-4878-b408-79a654aa05d1
+515,Broadcasting (except Internet),513,3,c18f3e44-a1ec-40c1-8a20-b194194789b9
+515100,Radio and television broadcasting,515,4,5f49c9ef-83e8-4f11-8e05-bdb30021b5b3
+515200,Cable and other subscription programming,515,4,82ce94f9-c792-49d9-8945-e38e2401dd38
+5171,Wired telecommunications carriers,513,3,be73f802-44aa-41a8-bd33-095792fe0e1f
+517110,Wired telecommunications carriers,5171,4,e4a30707-85c9-4646-af0d-ae6b5c5bf8a0
+5172,Wireless telecommunications carriers (except satellite),513,3,138cf0f9-b839-4e99-924a-e278874e655e
+517210,Wireless telecommunications carriers (except satellite),5172,4,775643ef-efc4-4149-bb3e-5c6f5daf3a1a
+5174OT,"Other telecommunications, including satellite",513,3,04dda371-5d0c-4b4b-b593-a5f43a45a5b6
+517A00,"Satellite, telecommunications resellers, and all other telecommunications",5174OT,4,f665ebea-c36b-4349-8b14-0855eb65824b
+514,"Data processing, internet publishing, and other information services",51,2,c7f23ae1-f655-428c-98ef-582fc6ee48bc
+518,"Data processing, hosting, and related services",514,3,857f26e6-1d3b-4b0e-a535-98f9685bad17
+518200,"Data processing, hosting, and related services",518,4,b64384e9-7431-43bd-818f-a3c095118eac
+519,Other information services,514,3,5ef988bf-d97b-48d6-897e-f294b9a9d9af
+519130,Internet publishing and broadcasting and Web search portals,519,4,0e3d3e76-1471-4bc8-8fd3-02d76eb60dba
+5191A0,"News syndicates, libraries, archives and all other information services",519,4,ab79d765-40e4-4c2f-b90c-d5604aa7f917
+52,FINANCE AND INSURANCE,total,1,86bbce17-8a0c-4a3c-95cd-45964b2990f9
+521CI,"Federal Reserve banks, credit intermediation, and related activities",52,2,38d4fab2-85d0-47ee-9df2-4743d0a09cba
+52A000,Monetary authorities and depository credit intermediation,521CI,4,019db834-6006-425c-ab9c-d071f10fa766
+522A00,Nondepository credit intermediation and related activities,521CI,4,177e57fe-9ff5-4209-8ef1-fa4b7101cbd0
+523,"Securities, commodity contracts, and investments",52,2,902c65df-ab60-406d-b39f-da8a02cf06c1
+523A00,Securities and commodity contracts intermediation and brokerage,523,4,b6bff490-b87e-47e1-8f64-a293efe79da4
+523900,Other financial investment activities,523,4,0799f008-d929-477b-83d5-9b22ae6fb7da
+524,Insurance carriers and related activities,52,2,86cd2656-3ed1-4a3e-8219-cb7b693fa164
+524113,Direct life insurance carriers,524,3,8bb69521-d299-40be-9e14-a483631e036b
+5241X,"Insurance carriers, except direct life",524,3,8066cb2e-174e-4dfd-a59d-89f4cfdc9934
+5241XX,"Insurance carriers, except direct life",5241X,4,3843a879-2b7e-40e7-8dfd-b81978d08cac
+5242,"Agencies, brokerages, and other insurance related activities",524,3,44a9a8ec-fbe5-42db-87a1-08ba8d1dc6bf
+524200,"Insurance agencies, brokerages, and related activities",5242,4,a10031c3-7390-4be9-aca8-0a93136cd13a
+525,"Funds, trusts, and other financial vehicles",52,2,e293cfe2-d972-4cca-9ac9-605762de00d0
+525000,"Funds, trusts, and other financial vehicles",525,4,b1f8e70f-026e-4756-8605-076acfb52886
+53,REAL ESTATE AND RENTAL AND LEASING,total,1,5e7a42f5-b9cf-4f22-913c-c2d58d5e01bc
+HS,Housing,53,2,00ae4a8c-f02a-485f-b2af-b16caa2fd797
+HSO,Owner-occupied housing,HS,3,e48eefcd-3abd-4c70-b735-250d4229cdaf
+531HSO,Owner-occupied housing,HSO,4,d634ffcc-dec3-4dff-a120-47513e1ecbe3
+HST,Tenant-occupied housing,HS,3,2f9b2111-73b9-4955-bb89-2c88676884e1
+531HST,Tenant-occupied housing,HST,4,dfc47b45-59a8-4791-ac82-4175ed080a52
+ORE,Other real estate,53,2,80d47c2e-198a-4f2f-a085-1510a0f0c31b
+531ORE,Other real estate,ORE,4,de6e62f9-dd1e-4eb5-8e54-69ef177657d6
+532RL,Rental and leasing services and lessors of intangible assets,53,2,53c8903e-76fe-4a51-abf8-5b20dcb9c0ba
+532100,Automotive equipment rental and leasing,532RL,4,7568840d-4b5e-45f1-ae3c-77ac571dcda1
+532A00,General and consumer goods rental,532RL,4,ca9284ad-eab0-42c0-ba1c-e6214156c5a3
+532400,Commercial and industrial machinery and equipment rental and leasing,532RL,4,0df0617d-fe1d-4d13-95be-717839ac1a14
+533000,Lessors of nonfinancial intangible assets,532RL,4,9c73268f-ed3f-43c5-b227-02a7833149cd
+54,PROFESSIONAL AND TECHNICAL SERVICES,total,1,8aedb7d4-f7e6-441b-ba31-77f442156de2
+5411,Legal services,54,2,3a861de5-b178-4bc3-a4c9-4cc9165ae67a
+541100,Legal services,5411,4,8302ee17-7e9c-4003-b710-9794d636646e
+5412OP,"Miscellaneous professional, scientific, and technical services",54,2,1584e9bf-4f00-4c37-b24d-2861b765dd5b
+5412,"Accounting, tax preparation, bookkeeping, and payroll services",5412OP,3,af5bb475-cda6-4652-9bb3-f4f20968f982
+541200,"Accounting, tax preparation, bookkeeping, and payroll services",5412,4,445b0603-bac4-41dd-8655-e31b21add6e5
+5413,"Architectural, engineering, and related services",5412OP,3,f3139d50-0563-4bc7-85ad-8586fa89391f
+541300,"Architectural, engineering, and related services",5413,4,4f78609e-e0fa-4c23-881a-358085db4007
+5416,"Management, scientific, and technical consulting services",5412OP,3,ca66c87a-0394-4dde-b107-8529bfbe2faa
+541610,Management consulting services,5416,4,a86d4b90-4fbb-4706-8e46-f16fc3739a4d
+5416A0,Environmental and other technical consulting services,5416,4,e8a9db76-ec15-4c8f-83c7-e3be16172e48
+5417,Scientific research and development services,5412OP,3,44316559-c164-4061-86a9-e3f1c06ec75c
+541700,Scientific research and development services,5417,4,7ce6ad18-aa73-4651-b497-eca8b0a8c808
+5418,"Advertising, public relations, and related services",5412OP,3,626559ef-b9ba-4d2c-a832-644042920ca0
+541800,"Advertising, public relations, and related services",5418,4,302fe94a-e316-43cd-bcaa-729429ca7173
+541X,"Specialized design services and other professional, scientific, and technical services",5412OP,3,4242e358-bdbb-4547-8631-58028566e6dd
+541400,Specialized design services,541X,4,568849d4-703e-4ecd-b70a-30535ac21396
+5419A0,"All other miscellaneous professional, scientific, and technical services",541X,4,ef2ae4c1-c3d6-449f-b0ab-6721bbd6bc80
+541920,Photographic services,541X,4,8f0f2415-afd4-4fd8-9598-f04752077aa6
+541940,Veterinary services,541X,4,34bbc4f7-a339-44cb-a89e-723e94c55390
+5415,Computer systems design and related services,54,2,0cec9a8d-5909-4578-987b-5b4c3a2d8203
+541511,Custom computer programming services,5415,4,ba8c07da-d13d-462c-9796-460228eddbb3
+541512,Computer systems design services,5415,4,9f4200ab-ab4a-4648-96a3-23fe2b6a40e5
+54151A,"Other computer related services, including facilities management",5415,4,b90421e9-f093-4877-9f0c-c65931eebba7
+55,MANAGEMENT OF COMPANIES AND ENTREPRISES,total,1,a4b3da87-bd0a-4741-8910-fccaeb2adb2a
+550000,Management of companies and enterprises,55,4,a028e5ef-fd89-44a2-847d-ed3c1c638a2f
+56,ADMINISTRATIVE AND WASTE SERVICES,total,1,60e79447-0904-4c8d-99f8-d5e2f9fd075a
+561,Administrative and support services,56,2,20d155fd-b630-4dd1-95b3-66f747a16a7b
+5613,Employment services,561,3,b575c190-4215-4ea3-90f6-f759d68e4956
+561300,Employment services,5613,4,4aa04cd2-ad51-441d-817b-b48e20a20e27
+5617,Services to buildings and dwellings,561,3,1b894ea6-90ec-471e-a37b-6f027aeae3e1
+561700,Services to buildings and dwellings,5617,4,9607d1b5-4692-453f-8464-81b1d918eadb
+561X,Other administrative and support services,561,3,cc16a366-d297-4f03-8997-dd476286c403
+561100,Office administrative services,561X,4,bad51575-8799-4250-8381-aeedca653293
+561200,Facilities support services,561X,4,295e4eb8-81ac-46dc-82bc-0371ce56f0c5
+561400,Business support services,561X,4,19da43b2-85be-4ce2-a64b-51641f3b9feb
+561500,Travel arrangement and reservation services,561X,4,1c4e4893-ec81-43c8-9e31-3d28ab33e8d2
+561600,Investigation and security services,561X,4,af0faf17-87c5-47da-825c-9b833db5e0e9
+561900,Other support services,561X,4,88ddcdf5-acfa-4021-9a0f-1116f93e2550
+562,Waste management and remediation services,56,2,8303b408-fe32-454c-96c8-806c1ff9130a
+562000,Waste management and remediation services,562,4,41d7f1c6-2a36-45e7-8a95-aa675017783f
+61,EDUCATIONAL SERVICES,total,1,66f73a82-ab80-4c69-83bc-cf3aa4fbdb83
+611100,Elementary and secondary schools,61,4,c6247a81-14f8-4a91-9b3c-fdb581b0c787
+611A00,"Junior colleges, colleges, universities, and professional schools",61,4,939de033-af58-4510-927b-203c9e9abb14
+611B00,Other educational services,61,4,483659c5-438f-49cc-9827-51949a5eab25
+62,HEALTH CARE AND SOCIAL ASSISTANCE,total,1,06022e12-2061-4d00-bab0-88fc990b1d7a
+621,Ambulatory health care services,62,2,3bf817e0-6cbd-4201-b752-a5a77621bb6c
+6211,Offices of physicians,621,3,8cd8a8f9-302a-4129-a76c-58fe2fb2187d
+621100,Offices of physicians,6211,4,95bda955-85a0-4624-b95f-0f9567a87b15
+6212,Offices of dentists,621,3,5f05b5c5-c8cc-42b8-96c5-ffff03711d1f
+621200,Offices of dentists,6212,4,ebd6b4f4-a740-422a-b36a-e68bd115caf3
+6213,Offices of other health practitioners,621,3,cd1f835f-2a09-43e4-b9a3-360118c4beb4
+621300,Offices of other health practitioners,6213,4,c888b619-4f3f-4b1e-81ce-02c9960b7b28
+6214,Outpatient care centers,621,3,dc94280d-8e86-4721-9a1a-d8f1339a7d82
+621400,Outpatient care centers,6214,4,08ebbf84-2e8f-4fb9-b69b-8bf6fb899d5d
+6215OH,Other ambulatory health care services,621,3,2d91eb00-9c71-4ea8-b74d-8829e056a787
+621500,Medical and diagnostic laboratories,6215OH,4,ccf9fc01-bc35-4d8b-bc60-ecf3c97d374a
+621600,Home health care services,6215OH,4,e69ccac7-3252-499e-9ae9-3f5c37969ba0
+621900,Other ambulatory health care services,6215OH,4,6f8949d7-1ded-4f1b-9840-7a413ec01119
+622,Hospitals,62,2,d26515ec-6516-4ff1-967d-1ceac904d240
+622000,Hospitals,622,4,6a8a97a6-e62b-4cc2-824d-67af703286b4
+623,Nursing and residential care facilities,62,2,032db21e-7233-4001-b49f-878d44aec605
+623A00,Nursing and community care facilities,623,4,84beb068-cbcd-4234-8dc9-bf5c5cd51c9e
+623B00,"Residential mental health, substance abuse, and other residential care facilities",623,4,9196456f-9c31-4a4c-8c90-bae82000a25a
+624,Social assistance,62,2,57940341-f439-44e3-ac3d-71e864562a3b
+624100,Individual and family services,624,4,06264109-eff0-4d46-a53e-795303b7c7c8
+624A00,"Community food, housing, and other relief services, including vocational rehabilitation services",624,4,590b8584-0851-427a-85b9-98f81525aa0b
+624400,Child day care services,624,4,f09c1537-8e27-476f-9eb5-ddb049559a59
+71,"ARTS, ENTERTAINMENT, AND RECREATION",total,1,56c4152a-2672-46ad-b2ca-fe76a5014ada
+711AS,"Performing arts, spectator sports, museums, and related activities",71,2,47447677-9618-4065-be09-b1965cd142f5
+711100,Performing arts companies,711AS,4,dce5fbd3-5932-4123-8c0b-d542df8888a3
+711200,Spectator sports,711AS,4,93c68b3e-6c1a-4f13-a10c-5374bfed3eb0
+711A00,Promoters of performing arts and sports and agents for public figures,711AS,4,02b4a1cd-c400-4082-ad11-6ed81c0c1b3c
+711500,"Independent artists, writers, and performers",711AS,4,2d6f07ee-dd4f-42e5-852e-b6da17408bd0
+712000,"Museums, historical sites, zoos, and parks",711AS,4,8079cdc7-80c1-4ffd-87ff-1864774fbb89
+713,"Amusements, gambling, and recreation industries",71,2,b6c6bb66-3120-402b-b5bb-b8b026c88398
+713100,Amusement parks and arcades,713,4,54dab755-f592-423f-b31d-fd7b1c4d1758
+713200,Gambling industries (except casino hotels),713,4,91006414-b14d-4a92-bb3a-89ad84ccc364
+713900,Other amusement and recreation industries,713,4,daab754e-1791-4a09-b17b-e501182f7f66
+72,ACCOMMODATION AND FOOD SERVICES,total,1,482d55cf-73b9-4ee4-a45a-64b62d9d064e
+721,Accommodation,72,2,f2770b94-b637-4532-838f-218a96d91c6c
+721000,Accommodation,721,4,49d1e480-9329-429f-8646-4144d04bc8eb
+722,Food services and drinking places,72,2,5d102265-00da-469b-9608-841761586883
+722110,Full-service restaurants,722,4,2d593461-59b4-471b-9d00-9512f0412234
+722211,Limited-service restaurants,722,4,c0392032-dd46-4df0-a0b1-d824037ad3f6
+722A00,All other food and drinking places,722,4,35ea8ee5-a4f7-45a7-9ece-6d0f6086e618
+81,"OTHER SERVICES, EXCEPT GOVERNMENT",total,1,c1d61687-0aa9-4021-9878-fbe33078c065
+811,Repair and maintenance,81,3,b994db79-69cd-4f92-ab2e-6b223bfedc2e
+811100,Automotive repair and maintenance (including car washes),811,4,b8c77fa2-e6f4-4959-9fe5-84eba6d10303
+811200,Electronic and precision equipment repair and maintenance,811,4,eaf7060b-1345-4dc3-a93e-9b8d8a39bf91
+811300,Commercial and industrial machinery and equipment repair and maintenance,811,4,3bd0fdb3-c6d9-4869-a407-c634bba3bef9
+811400,Personal and household goods repair and maintenance,811,4,762d9486-7f1a-4acd-851e-6136df9dbcba
+812,Personal and laundry services,81,3,6710cd22-eabe-4222-ac54-4b7d68a7ed28
+812100,Personal care services,812,4,606bacc8-1c23-4409-85ed-386eb672bb0c
+812200,Death care services,812,4,48905a5f-d8fc-463c-ad97-07267bfb6140
+812300,Dry-cleaning and laundry services,812,4,50262654-967e-4494-a458-33a2f815308f
+812900,Other personal services,812,4,b250d69e-fc69-4c73-b1c6-1a499149e674
+813,"Religious, grantmaking, civic, professional, and similar organizations",81,3,4e212db3-b248-487a-9fa8-2dbd5cfafdfc
+813100,Religious organizations,813,4,33802d6b-6384-49f0-a0ac-7ec55d773677
+813A00,"Grantmaking, giving, and social advocacy organizations",813,4,8159eb6e-9eb5-41fa-b96e-b462265ef95a
+813B00,"Civic, social, professional, and similar organizations",813,4,92796f61-75d9-4a20-922d-795baf612ecf
+814,Private households,81,3,b75c8e4d-220d-4b8a-9154-128aa41e6663
+814000,Private households,814,4,3abec45b-dbbc-4d77-b54e-583e8026faa7
+G,GOVERNMENT,total,1,e1a75006-f0e0-4885-8780-9aa494796b44
+GFGD,Federal general government (defense),G,2,b460282a-a6c4-411f-aabb-7a0349bbf764
+S00500,Federal general government (defense),GFGD,4,69247540-505f-48d5-b7cd-9d3853b3f655
+GFGN,Federal general government (nondefense),G,2,fa5d7aae-3ee6-4780-a3b5-09f62adc7bdc
+S00600,Federal general government (nondefense),GFGN,4,5e36e31a-8a26-49d1-a20e-dd4932ba56f3
+GFE,Federal government enterprises,G,2,e676ccd4-0de8-45e9-a1cb-857e048f6f5e
+491000,Postal service,GFE,4,8ad48370-aae9-4f43-9650-11393437e849
+S00101,Federal electric utilities,GFE,4,a01e71eb-afa1-4e49-92ab-2f336c0bea7a
+S00102,Other federal government enterprises,GFE,4,1b87476a-ed29-4518-83a7-0c7b357801d0
+GSLG,State and local general government,G,2,66b59bbd-23ee-46ce-8e3b-80832d77efbe
+GSLGE,State and local government (educational services),GSLG,3,0df9eb3f-bb9a-4daf-b199-157c514dcd82
+GSLGH,State and local government (hospitals and health services),GSLG,3,f40bbdbc-3c37-4fe3-82f0-0f00ec6a3bf4
+GSLGO,State and local government (other services),GSLG,3,18a40fe3-91ce-467c-bda9-da4e356c4953
+GSLE,State and local government enterprises,G,2,49b02a29-16f0-4bf8-a5df-e903b3f62faa
+S00201,State and local government passenger transit,GSLE,4,f5042c4f-4c85-49c5-aa3b-cc5054ba9341
+S00202,State and local government electric utilities,GSLE,4,f260b9c1-3260-4bbf-b23e-5310b32a0b53
+S00203,Other state and local government enterprises,GSLE,4,90a01873-b9b6-47f4-8164-e3771ddcdcaa
+Used,"SCRAP, USED AND SECONDHAND GOODS",total,1,72f7a655-3bea-465c-a824-c9f6166f3ecb
+S004,"Scrap, used and secondhand goods",Used,3,4db9cfb3-b052-4829-b74a-c9bd93a290a4
+S00401,Scrap,S004,4,25b1e457-05de-4f15-acc8-8fcfb0a012a1
+S00402,Used and secondhand goods,S004,4,a2b47ec8-04b2-4778-80a1-5a244bd928b6
+Other,NONCOMPARABLE IMPORTS AND REST-OF-THE-WORLD ADJUSTMENT,total,1,dbd31bbb-4cec-42af-910b-ba506c72e7a5
+S003,Noncomparable imports,Other,3,2920d23e-151b-442a-8190-27ae6e05e0db
+S00300,Noncomparable imports,S003,4,f1fff487-ec6b-485a-a7bc-621c3d416f60
+S009,Rest of the world adjustment,Other,3,2da27430-128b-430c-8a80-9bab78b1f760
+S00900,Rest of the world adjustment,S009,4,27c10a59-6de2-4064-ae19-ec4a961dad3c

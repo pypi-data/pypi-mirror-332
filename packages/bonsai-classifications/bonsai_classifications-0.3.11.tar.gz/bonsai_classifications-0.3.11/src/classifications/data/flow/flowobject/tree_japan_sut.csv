@@ -1,0 +1,128 @@
+code,name,parent_code,level,prefixed_id
+001,Crop cultivation,150,2,55f2f805-a194-4cd9-b9bf-74228524dc06
+002,Livestock,150,2,2b00f76e-3576-413c-b67e-bb8dbe0b42cd
+003,Agricultural services,150,2,0aef6232-3b22-48bb-97fe-75b9d1901f15
+004,Forestry,150,2,1ca0c82d-cfd2-4847-b998-ae45010460d7
+005,Fishery,150,2,d43d6734-0d59-4b6f-b010-0696d9ddef2f
+006,"Coal mining, crude petroleum and natural gas",150,2,b636c444-ebc0-4a4b-9143-26d5abf2280c
+007,Miscellaneous mining industry,150,2,b39f4634-9e23-4edd-a06a-c993cc6ad346
+008,Dairy products,150,2,23f39530-631d-4a6f-ab2a-6c7d1219827e
+009,Processed seafood,150,2,705ca269-ad87-4b72-a9ba-2fdee9682ac6
+010,Grain milling,150,2,576411e7-68e7-4c8e-981e-55c2336a4cb5
+011,"Noodles, bread, confectionery",150,2,b7133ddf-ae41-4f9f-96a3-776a70b2814b
+012,Preserved agricultural foodstuffs,150,2,7692f4cd-6014-4041-9e6d-f8dcec7a843e
+013,"Sugar, oils, condiments and seasoning",150,2,1d86523d-ee27-46ae-8309-dfd2846ab816
+014,Miscellaneous foods,150,2,28955e4b-e286-4768-8e15-8fef6ed561d5
+015,Beverage,150,2,be6f4dc7-5872-4792-9457-05fecc031008
+016,"Feeds and organic fertilizers, n.e.c.",150,2,49a80504-67b2-4589-a3d3-b7be14d70ed2
+017,Tobacco,150,2,c66461b0-f893-4c22-ad9d-941bb1ca6dae
+018,Textile products,150,2,43e0ec7e-b233-4e69-8b7f-036fcf63d8ef
+019,Wearing apparel and miscellaneous ready-made textile products,150,2,daab2c0e-0b2e-4cd8-ade0-0980722c06de
+020,Lumber and wood products,150,2,353f94dd-8ac5-4880-b736-aa7c16e9f621
+021,Furniture and fixtures,150,2,a9fd0392-9742-49e2-9a28-74b1ee794538
+022,"Pulp, paper, paperboard, coated and glazed paper",150,2,89bcdc52-1458-46a6-a17a-412f973eafba
+023,Paper products,150,2,7abf6806-a8f2-4659-a29c-5ef1c5218402
+024,"Printing, plate making and book binding",150,2,02cf6dfa-28fb-446e-b1d7-fb51631e1bd7
+025,Chemical fertilizer,150,2,6a5e17c9-00fb-40af-983c-812ac92cc77f
+026,Industrial inorganic chemicals,150,2,8013a1f6-1c8d-4dbb-9a64-46bc19a3fae0
+027,Petrochemical basic products,150,2,b0dd310c-8ecc-489f-9f30-95d21160261c
+028,Organic chemical products (except petrochemical basic products or synthetic resins),150,2,b6cb9790-bbc8-4ff7-9bb6-4317721f287f
+029,Synthetic resins,150,2,92540dbe-244f-4b50-8af5-0559f5c0cd42
+030,Chemical fibers,150,2,05a60f52-7fde-4731-92e7-d0d09961362c
+031,Medicaments,150,2,9758c261-bd2b-42b4-96fb-eed0cecae035
+032,Final chemical products (except medicaments),150,2,489ee453-196b-4703-a25b-8d802947f78c
+033,Petroleum refinery products,150,2,4f20843a-1120-4375-a805-fdefb86176f5
+034,Coal products,150,2,64fc814c-bd56-45c7-bd0c-7582202332b3
+035,Plastic products,150,2,eba81a2b-4673-4244-9079-5d9e074d1220
+036,Rubber products,150,2,a37e3834-1f55-4612-bcbf-d9717d40dc45
+037,"Tanned leather, leather products and fur skins",150,2,c56ac527-e6ef-423d-b5d3-766c034d9322
+038,Glass and glass products,150,2,7bed5da1-4c8e-41f5-a9f6-8ac3511ab029
+039,Cement and cement products,150,2,6a058963-1f47-416b-af6f-d407f99bfc55
+040,"Pottery, china and earthenware",150,2,969ad8a1-6039-4cef-8865-b29b7c4dc561
+041,"Miscellaneous ceramic, stone and clay products",150,2,23c4f93a-1d30-4739-96af-a57db6075182
+042,Pig iron and crude steel,150,2,c124bf48-87b1-4c46-be6d-a280fe226293
+043,Steel products,150,2,d5409627-0149-4d74-b48e-1787d39eb830
+044,Cast and forged steel products (iron),150,2,d7d9396a-29eb-4468-836f-375215ad616e
+045,Miscellaneous iron or steel products,150,2,8246265c-4b8e-4047-87aa-93a736f88d18
+046,Non-ferrous metals,150,2,a5a56fe6-313b-4a75-985f-79b1d87c21bd
+047,Non-ferrous metal products,150,2,5c57e8a1-00b9-49f6-8bc0-a0215f70a512
+048,Fabricated constructional and architectural metal products,150,2,8a12e90e-8c87-4fc4-a896-8635315bab1d
+049,Miscellaneous metal products,150,2,dec9a563-a081-49db-a4f5-b3aa89d14326
+050,General-purpose machinery,150,2,4317a633-d4ba-4820-860a-32560f7841df
+051,Production machinery,150,2,c8c30ddc-30eb-400d-8b67-758ac3157af0
+052,Business oriented machinery,150,2,15a81c0c-6a10-44d5-b53f-b05ac71c688d
+053,Electronic devices,150,2,f7ff0684-9564-43ce-b8d9-886770debf8a
+054,Miscellaneous electronic components,150,2,4a648ce9-c140-41c6-9a9e-009ebc425ba8
+055,Electrical devices and parts,150,2,de188c39-ec8f-40bb-b378-4c774a23d41a
+056,Household electric appliances,150,2,6e8c1c19-31e3-4697-9862-fc53995edaa9
+057,Applied electronic equipment and electric measuring instruments,150,2,62707522-358d-4f3e-8b34-af502327727f
+058,Miscellaneous electrical machinery,150,2,1c2d2b32-0b23-49a5-9903-fbd3ca3a6ea7
+059,"Communication, image and audio equipment",150,2,053dbfd6-91ed-457a-b560-7160c4a29a3d
+060,Electronic computing equipment and accessory equipment of electronic computing equipment,150,2,7dbcff00-5d6f-425a-ba91-623b72617e82
+061,Cars,150,2,186acad2-3727-4e49-818d-daaf1c8b3126
+062,Motor vehicle parts and accessories,150,2,872c8872-6f59-40fa-bdb0-95ff42149fb3
+063,Ships and repair of ships,150,2,521b12ba-1bbe-45da-a469-c5ee624cfde1
+064,Miscellaneous transportation equipment and repair of transportation equipment,150,2,121499cc-6d9f-4209-a81d-517986264a55
+065,Miscellaneous manufacturing products,150,2,6bc4b801-50b5-453a-a83a-4bc5217c89c1
+066,Reuse and recycling,150,2,b58584cb-dafd-40f9-808d-7ad2ae503c00
+067,Construction,150,2,f98bb6ef-5901-4a64-b110-359a0beee63b
+068,Electricity,150,2,dfebfacd-f0b2-4402-baca-979b7ec5c94f
+069,Gas and heat supply,150,2,70a94ab1-7b64-4abb-b98b-89c924233ae5
+070,Water supply,150,2,64d7bfe5-c334-4f63-b106-adeaf1307414
+071,Waste management services,150,2,e8a07bac-3f45-4700-958e-65f547c57b88
+072,Wholesale trade,150,2,c279b7cc-4e70-4ea4-85ff-d82ec57a8b06
+073,Retail trade,150,2,c75c1fdf-7cda-470d-94b4-a9ecf9e31bf7
+074,Finance and insurance,150,2,742f6fc7-933b-4e9c-8f1e-dc062076e3c5
+075,Real estate agencies and rental services,150,2,2da90028-65df-48a4-8e60-832414aef109
+076,House rent,150,2,95791f4a-854f-4513-8afb-701caac9b689
+077,Transport,150,2,9fb660f9-607e-446b-ae28-ddb74b52aa18
+078,Postal services and mail delivery,150,2,37340edb-af31-4a0e-be8d-f2eac69c51cb
+079,Communications,150,2,5c6d6318-d1f5-4660-84b8-c75dd1b58f97
+080,Broadcasting,150,2,d75ec953-5e4d-43df-98c9-47b20b92ce32
+081,Information services,150,2,dc09ea86-981c-4d7f-a27e-4d2ad5559da0
+082,Internet based services,150,2,3ab88419-6896-4e32-a4de-ea386806d204
+083,"Image information, sound information and character information production",150,2,be81cb7d-cdd1-4526-bed0-2089575669bc
+084,Education,150,2,5a24fece-7bfd-4c56-8b8e-8de38ee30e97
+085,Research,150,2,3b684e2a-43a6-43e3-a108-5c2d36944306
+086,Medical service,150,2,b9f2dd3b-c00e-4bff-a7a1-a3d844c4cc23
+087,Medical service （pharmacies）,150,2,23d704de-823b-484c-aae2-ee58b08b6841
+088,Health and hygiene,150,2,9f386ba8-bd1d-4d7c-94a2-347d8c645686
+089,Social insurance and social welfare,150,2,3138a447-0031-4466-ba18-f9d3603278ec
+090,Nursing care,150,2,7b0903bb-c974-44e2-b408-660635ae6b1e
+091,"Membership-based associations, n.e.c.",150,2,236ec001-23a6-414b-96a3-930dd8ed9bd2
+092,Goods rental and leasing services,150,2,67883f67-914b-471d-b96b-86923f137495
+093,Advertising services,150,2,18e09bc2-183d-49c1-8ddf-8c52ed6bec68
+094,Motor vehicle maintenance and machine repair services,150,2,0dcdaf49-d9b4-44c1-b1fa-4017847d07b4
+095,Miscellaneous business services,150,2,ce28890b-64b6-49a2-80ef-fc5104066f86
+096,Hotels,150,2,f1c312ca-aecc-4e62-8fa7-9348f04cf3c9
+097,Eating and drinking services,150,2,8999580d-27ca-4640-8fab-a65a33957504
+098,"Cleaning, barber shops, beauty shops and public baths",150,2,80565cd5-bdd8-40ef-8d55-6b0e28bf9232
+099,Amusement and recreational services,150,2,833c846b-f631-4c46-aa15-b6c94e4cc918
+100,Veterinary service,150,2,fcd043c8-fe39-4264-be31-21e8327dd9cf
+101,Miscellaneous personal services,150,2,ba2a7a37-ed27-4a2e-b8dc-bc9bd81f40d4
+102,Activities not elsewhere classified,150,2,dd5e09d9-96e1-4183-ae29-ce3870a57cbe
+120,Sewage disposal **,150,2,6ef81b6e-cab0-4c52-81c7-3df6179ab029
+121,Waste management services (public corporation) **,150,2,4469fb06-7b3c-45e7-ac2e-a1c526287a15
+122,Services relating to transport (public corporation) **,150,2,8b451c56-d799-457d-b027-1fb8335dd556
+123,Public administration  **,150,2,aea40daa-3fb0-43b7-9f47-9f18040cf20b
+124,Education (public institution) **,150,2,653f102f-a402-4eaa-aa2a-a37aede38171
+125,School lunch (public institution) **,150,2,f79b8242-9f03-4647-ada1-5179502ebad8
+126,Research (public institution) **,150,2,8a5695e1-babc-491a-a204-4d74732d59bf
+127,Health and hygiene (public institution) **,150,2,6daebc13-180a-4217-a836-6d19851f71a9
+128,Social insurance and social welfare **,150,2,02b5dce1-1b58-4e83-8e54-6b0c3cfd2669
+129,Slaughterhouse **,150,2,7e304c52-2651-43ff-8102-270f7ac3b2ed
+130,Education (NPI) *,150,2,374006ce-0509-43d1-9c27-a51e676414d8
+131,School lunch (NPI) *,150,2,a77e16aa-3410-4fa3-a80b-0a9a619aaf97
+132,Research (NPI) *,150,2,96bf3a34-d13e-4bef-a375-98dcaf092703
+133,Social welfare (NPI) *,150,2,b1288e06-09a2-4cd8-89e3-21ac4ecddee9
+134,"Membership-based associations, n.e.c. *",150,2,a9132a19-a19f-41f3-97c2-375327bc63f3
+150,Total of intermediate sectors,220,1,8c490b30-9a87-4338-9f94-8b16529df54a
+201,Consumption expenditure outside households (row),210,2,c93aa558-b170-41a0-8645-83264188bbe2
+202,Compensation of employees,210,2,aae451cb-c65b-46bf-8153-090c05ded03d
+203,Operating surplus,210,2,4dbc7175-2e96-4805-88db-64814f214120
+204,Consumption of fixed capital,210,2,be9e348f-d063-4f96-a6fb-46a34fc32d1b
+205,Consumption of fixed capital (social fixed capital),210,2,28cb78a6-444f-4a6e-9d10-90f9315bcde8
+206,Indirect taxes (except custom duties and commodity taxes on imported goods),210,2,e2254012-0777-4cec-8fa6-5705056ceab7
+207,(less) Current subsidies,210,2,9ca08e91-d7c3-4cef-9887-5b0377937f07
+210,Total of gross value added sectors,220,1,42371b0e-6fcb-45b7-ade9-d524d1e95cd0
+220,Gross output,,0,56ead46d-5941-4b09-b543-091d92b67bc7
