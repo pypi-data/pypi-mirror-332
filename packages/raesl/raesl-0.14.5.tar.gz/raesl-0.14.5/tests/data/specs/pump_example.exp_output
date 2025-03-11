@@ -1,0 +1,422 @@
+
+TYPES:
+type#1 = type
+type#2 = type
+type#3 = type
+type#4 = type
+type#5 = type
+    intervals: (=> Value(Pressed), <= Value(Pressed))
+               (=> Value(NotPressed), <= Value(NotPressed))
+type#6 = type <-- type#1
+    units: Nm
+type#7 = type <-- type#1
+    units: W
+type#8 = type <-- type#1
+    units: L/s
+type#9 = type <-- type#1
+type#10 = type <-- type#1
+    intervals: (=> Value(0.0), <= *)
+type#11 = type <-- type#1
+type#12 = type <-- type#1
+    intervals: (=> Value(0.0), <= *)
+type#13 = type <-- type#1
+    intervals: (=> Value(0.0), <= Value(1.0))
+type#14 = type <-- type#1
+
+typedef real: type#1
+typedef integer: type#2
+typedef string: type#3
+typedef boolean: type#4
+typedef status-signal: type#5
+typedef mechanical-energy-flow: type#6
+typedef electrical-energy-flow: type#7
+typedef liquid-material-flow: type#8
+typedef magnetic-energy-flow: type#9
+typedef chemical-energy-flow: type#10
+typedef thermal-energy-flow: type#11
+typedef spatial: type#12
+typedef efficiency: type#13
+typedef constant: type#14
+
+VERBS:
+    VerbPrepos('provide', 'to')
+      #< No doc-comments found.
+    VerbPrepos('convert', 'into')
+      #< No doc-comments found.
+    VerbPrepos('send', 'to')
+      #< No doc-comments found.
+
+RELATION-DEFINITIONS:
+    def battery-efficiency-model:
+      #< No doc-comments found.
+        inp_out potential: type#10
+        inp_out output: type#7
+    def battery-heat-generation-model:
+      #< No doc-comments found.
+        input output: type#7
+        input heat-coefficient: type#1
+        output heat-flux: type#11
+
+COMPONENTS:
+    world:
+      #< No doc-comments found.
+        var torque
+          - type#6
+            #< must be high.
+        var water-flow
+          - type#8
+            #< No doc-comments found.
+        var drive-length
+          - type#12
+            #< No doc-comments found.
+        var pump-length
+          - type#12
+            #< No doc-comments found.
+        child-component pump: def=centrifugal-pump
+          #< Can be sourced by manufacturer XYZ. Part number CFG.PMP.0.1
+            arg torque <-> param torque
+              - type#6
+                #< must be high.
+            arg water-flow <-> param water-flow
+              - type#8
+                #< No doc-comments found.
+            arg pump-length <-> param length
+              - type#12
+                #< No doc-comments found.
+        child-component drive-mechanism: def=electrical-drive-mechanism
+          #< No doc-comments found.
+            arg torque <-> param torque
+              - type#6
+                #< must be high.
+            arg drive-length <-> param length
+              - type#12
+                #< No doc-comments found.
+        requirement goal provide-torque:
+          #< Dummy comment.
+            comp 'drive-mechanism' must (provide to) comp 'pump'
+            flow 'torque':
+              - type#6
+                #< must be high.
+        need IP68: subject drive-mechanism
+          #< No doc-comments found.
+        need cost: subject drive-mechanism
+          #< No doc-comments found.
+        need reliability: subject provide-torque
+          #< No doc-comments found.
+        need stability: subject water-flow
+          #< No doc-comments found.
+        requirement design min-water-flow
+          #< No doc-comments found.
+            water-flow must >= 1.0[L/s]
+            - type#8
+              #< No doc-comments found.
+        requirement design max-water-flow
+          #< No doc-comments found.
+            water-flow must <= 3.0[L/s]
+            - type#8
+              #< No doc-comments found.
+        constraint design drive-length-target
+          #< No doc-comments found.
+            drive-length must == pump-length
+            - type#12
+              #< No doc-comments found.
+            - type#12
+              #< No doc-comments found.
+    def component Rotor:
+      #< No doc-comments found.
+        param magnetic-flux
+          - type#9
+            #< No doc-comments found.
+        param power
+          - type#7
+            #< No doc-comments found.
+        param torque
+          - type#6
+            #< No doc-comments found.
+        requirement transform ba-convert-flux-and-power:
+          #< No doc-comments found.
+          must (convert into)
+          in-flow 'magnetic-flux':
+          - type#9
+            #< No doc-comments found.
+          in-flow 'power':
+          - type#7
+            #< No doc-comments found.
+          out-flow 'torque':
+          - type#6
+            #< No doc-comments found.
+    def component Stator:
+      #< No doc-comments found.
+        param magnetic-flux
+          - type#9
+            #< No doc-comments found.
+    def component battery:
+      #< No doc-comments found.
+        var heat-generation-coefficient
+          - type#14
+            #< No doc-comments found.
+        var heat-flux
+          - type#11
+            #< No doc-comments found.
+        param power-out
+          - type#7
+            #< No doc-comments found.
+        param power-potential
+          - type#10
+            #< No doc-comments found.
+        param power-button-state
+          - type#5
+            #< No doc-comments found.
+        param kill-switch-state
+          - type#5
+            #< No doc-comments found.
+        relation-instance efficiency-model: def=battery-efficiency-model
+          #< No doc-comments found.
+            ['power-potential'] <-> param('potential', inp_out, multi=False)
+              - type#10
+                #< No doc-comments found.
+            ['power-out'] <-> param('output', inp_out, multi=False)
+              - type#7
+                #< No doc-comments found.
+        relation-instance heat-model: def=battery-heat-generation-model
+          #< No doc-comments found.
+            ['power-out'] <-> param('output', input, multi=False)
+              - type#7
+                #< No doc-comments found.
+            ['heat-generation-coefficient'] <-> param('heat-coefficient', input, multi=False)
+              - type#14
+                #< No doc-comments found.
+            ['heat-flux'] <-> param('heat-flux', output, multi=False)
+              - type#11
+                #< No doc-comments found.
+        constraint transform convert-potential:
+          #< No doc-comments found.
+          does (convert into)
+          in-flow 'power-potential':
+          - type#10
+            #< No doc-comments found.
+          out-flow 'power-out':
+          - type#7
+            #< No doc-comments found.
+        requirement design max-power
+          #< No doc-comments found.
+            power-out must <= 400[W]
+            - type#7
+              #< No doc-comments found.
+        requirement behavior toggle-power:
+          #< No doc-comments found.
+            case on:
+                c1: if
+                  power-button-state is == Pressed[-]
+                  - type#5
+                    #< No doc-comments found.
+                r1: then
+                  power-out must >= 300[W]
+                  - type#7
+                    #< No doc-comments found.
+            default:
+                r2: then
+                  power-out must == 0[W]
+                  - type#7
+                    #< No doc-comments found.
+        requirement behavior kill-power:
+          #< No doc-comments found.
+            case emergency:
+                c1: if
+                  kill-switch-state is == Pressed[-]
+                  - type#5
+                    #< No doc-comments found.
+                r1: then
+                  power-out must == 0[W]
+                  - type#7
+                    #< No doc-comments found.
+            no default case.
+    def component brushless-motor:
+      #< No doc-comments found.
+        var conversion
+          - type#13
+            #< No doc-comments found.
+        var magnetic-flux
+          - type#9
+            #< No doc-comments found.
+        param power
+          - type#7
+            #< No doc-comments found.
+        param torque
+          - type#6
+            #< No doc-comments found.
+        child-component rotor: def=Rotor
+          #< No doc-comments found.
+            arg magnetic-flux <-> param magnetic-flux
+              - type#9
+                #< No doc-comments found.
+            arg power <-> param power
+              - type#7
+                #< No doc-comments found.
+            arg torque <-> param torque
+              - type#6
+                #< No doc-comments found.
+        child-component stator: def=Stator
+          #< No doc-comments found.
+            arg magnetic-flux <-> param magnetic-flux
+              - type#9
+                #< No doc-comments found.
+        requirement goal st-provide-flux:
+          #< No doc-comments found.
+            comp 'stator' must (provide to) comp 'rotor'
+            flow 'magnetic-flux':
+              - type#9
+                #< No doc-comments found.
+        requirement transform convert-power:
+          #< No doc-comments found.
+          must (convert into)
+          in-flow 'power':
+          - type#7
+            #< No doc-comments found.
+          out-flow 'torque':
+          - type#6
+            #< No doc-comments found.
+            subclause c1:
+              conversion must >= 0.8[-]
+              - type#13
+                #< No doc-comments found.
+    def component button:
+      #< No doc-comments found.
+        var button-position
+          - type#12
+            #< No doc-comments found.
+        var actuation-force
+          - type#6
+            #< No doc-comments found.
+        param button-state: property
+          - type#5
+            #< No doc-comments found.
+        requirement transform convert-force-01:
+          #< No doc-comments found.
+          must (convert into)
+          in-flow 'actuation-force':
+          - type#6
+            #< No doc-comments found.
+          out-flow 'button-state':
+          - type#5
+            #< No doc-comments found.
+        requirement behavior button-state-behavior:
+          #< No doc-comments found.
+            case Pressed:
+                s1: if
+                  button-position is < 0[-]
+                  - type#12
+                    #< No doc-comments found.
+                r1: then
+                  button-state must == "Pressed"[-]
+                  - type#5
+                    #< No doc-comments found.
+            case NotPressed:
+                s1: if
+                  button-position is >= 0[-]
+                  - type#12
+                    #< No doc-comments found.
+                r1: then
+                  button-state must == "NotPressed"[-]
+                  - type#5
+                    #< No doc-comments found.
+            no default case.
+    def component centrifugal-pump:
+      #< No doc-comments found.
+        param torque
+          - type#6
+            #< No doc-comments found.
+        param water-flow
+          - type#8
+            #< No doc-comments found.
+        param length: property
+          - type#12
+            #< No doc-comments found.
+        requirement transform convert-torque:
+          #< No doc-comments found.
+          must (convert into)
+          in-flow 'torque':
+          - type#6
+            #< No doc-comments found.
+          out-flow 'water-flow':
+          - type#8
+            #< No doc-comments found.
+    def component electrical-drive-mechanism:
+      #< No doc-comments found.
+        var power
+          - type#7
+            #< No doc-comments found.
+        var power-button-state
+          - type#5
+            #< No doc-comments found.
+        var kill-switch-state
+          - type#5
+            #< No doc-comments found.
+        var power-potential
+          - type#10
+            #< No doc-comments found.
+        param torque
+          - type#6
+            #< No doc-comments found.
+        param length: property
+          - type#12
+            #< No doc-comments found.
+        child-component power-button: def=button
+          #< No doc-comments found.
+            arg power-button-state <-> param button-state
+              - type#5
+                #< No doc-comments found.
+        child-component kill-switch: def=button
+          #< No doc-comments found.
+            arg kill-switch-state <-> param button-state
+              - type#5
+                #< No doc-comments found.
+        child-component power-source: def=battery
+          #< No doc-comments found.
+            arg power <-> param power-out
+              - type#7
+                #< No doc-comments found.
+            arg power-potential <-> param power-potential
+              - type#10
+                #< No doc-comments found.
+            arg power-button-state <-> param power-button-state
+              - type#5
+                #< No doc-comments found.
+            arg kill-switch-state <-> param kill-switch-state
+              - type#5
+                #< No doc-comments found.
+        child-component motor: def=brushless-motor
+          #< No doc-comments found.
+            arg power <-> param power
+              - type#7
+                #< No doc-comments found.
+            arg torque <-> param torque
+              - type#6
+                #< No doc-comments found.
+        requirement goal pb-send-signal-01:
+          #< No doc-comments found.
+            comp 'power-button' must (send to) comp 'power-source'
+            flow 'power-button-state':
+              - type#5
+                #< No doc-comments found.
+        requirement goal ks-send-signal-02:
+          #< No doc-comments found.
+            comp 'kill-switch' must (send to) comp 'power-source'
+            flow 'kill-switch-state':
+              - type#5
+                #< No doc-comments found.
+        requirement goal bs-provide-power:
+          #< No doc-comments found.
+            comp 'power-source' must (provide to) comp 'motor'
+            flow 'power':
+              - type#7
+                #< No doc-comments found.
+        requirement transform convert-power-potential:
+          #< No doc-comments found.
+          must (convert into)
+          in-flow 'power-potential':
+          - type#10
+            #< No doc-comments found.
+          out-flow 'torque':
+          - type#6
+            #< No doc-comments found.

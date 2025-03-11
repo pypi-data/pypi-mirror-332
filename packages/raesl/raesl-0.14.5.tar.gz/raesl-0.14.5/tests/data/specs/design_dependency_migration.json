@@ -1,0 +1,806 @@
+{
+    "annotations": {},
+    "edges": {
+        "00000000-0000-0000-0000-000000000222": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000222",
+            "source": "00000000-0000-0000-0000-00000000021c",
+            "target": "00000000-0000-0000-0000-000000000220",
+            "uuid": "00000000-0000-0000-0000-000000000222",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000223": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000223",
+            "source": "00000000-0000-0000-0000-000000000220",
+            "target": "00000000-0000-0000-0000-00000000021c",
+            "uuid": "00000000-0000-0000-0000-000000000223",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000224": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000224",
+            "source": "00000000-0000-0000-0000-00000000021b",
+            "target": "00000000-0000-0000-0000-00000000021f",
+            "uuid": "00000000-0000-0000-0000-000000000224",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000225": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000225",
+            "source": "00000000-0000-0000-0000-00000000021b",
+            "target": "00000000-0000-0000-0000-00000000021d",
+            "uuid": "00000000-0000-0000-0000-000000000225",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000226": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000226",
+            "source": "00000000-0000-0000-0000-00000000021b",
+            "target": "00000000-0000-0000-0000-000000000216",
+            "uuid": "00000000-0000-0000-0000-000000000226",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000227": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000227",
+            "source": "00000000-0000-0000-0000-000000000219",
+            "target": "00000000-0000-0000-0000-00000000021f",
+            "uuid": "00000000-0000-0000-0000-000000000227",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000228": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000228",
+            "source": "00000000-0000-0000-0000-000000000219",
+            "target": "00000000-0000-0000-0000-00000000021d",
+            "uuid": "00000000-0000-0000-0000-000000000228",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000229": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000229",
+            "source": "00000000-0000-0000-0000-000000000219",
+            "target": "00000000-0000-0000-0000-000000000216",
+            "uuid": "00000000-0000-0000-0000-000000000229",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-00000000022a": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-00000000022a",
+            "source": "00000000-0000-0000-0000-000000000216",
+            "target": "00000000-0000-0000-0000-00000000021f",
+            "uuid": "00000000-0000-0000-0000-00000000022a",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-00000000022b": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-00000000022b",
+            "source": "00000000-0000-0000-0000-000000000216",
+            "target": "00000000-0000-0000-0000-00000000021d",
+            "uuid": "00000000-0000-0000-0000-00000000022b",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-00000000022c": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-00000000022c",
+            "source": "00000000-0000-0000-0000-00000000021f",
+            "target": "00000000-0000-0000-0000-00000000021b",
+            "uuid": "00000000-0000-0000-0000-00000000022c",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-00000000022d": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-00000000022d",
+            "source": "00000000-0000-0000-0000-00000000021f",
+            "target": "00000000-0000-0000-0000-000000000219",
+            "uuid": "00000000-0000-0000-0000-00000000022d",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-00000000022e": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-00000000022e",
+            "source": "00000000-0000-0000-0000-00000000021f",
+            "target": "00000000-0000-0000-0000-000000000216",
+            "uuid": "00000000-0000-0000-0000-00000000022e",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-00000000022f": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-00000000022f",
+            "source": "00000000-0000-0000-0000-00000000021d",
+            "target": "00000000-0000-0000-0000-00000000021b",
+            "uuid": "00000000-0000-0000-0000-00000000022f",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000230": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000230",
+            "source": "00000000-0000-0000-0000-00000000021d",
+            "target": "00000000-0000-0000-0000-000000000219",
+            "uuid": "00000000-0000-0000-0000-000000000230",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000231": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000231",
+            "source": "00000000-0000-0000-0000-00000000021d",
+            "target": "00000000-0000-0000-0000-000000000216",
+            "uuid": "00000000-0000-0000-0000-000000000231",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000232": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000232",
+            "source": "00000000-0000-0000-0000-000000000216",
+            "target": "00000000-0000-0000-0000-00000000021b",
+            "uuid": "00000000-0000-0000-0000-000000000232",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000233": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "design_specifications": [
+                            "world.dr1"
+                        ]
+                    }
+                }
+            },
+            "kind": "design_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000233",
+            "source": "00000000-0000-0000-0000-000000000216",
+            "target": "00000000-0000-0000-0000-000000000219",
+            "uuid": "00000000-0000-0000-0000-000000000233",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000234": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {}
+                }
+            },
+            "kind": "mapping_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000234",
+            "source": "00000000-0000-0000-0000-00000000021b",
+            "target": "00000000-0000-0000-0000-00000000021c",
+            "uuid": "00000000-0000-0000-0000-000000000234",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000235": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {}
+                }
+            },
+            "kind": "mapping_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000235",
+            "source": "00000000-0000-0000-0000-00000000021f",
+            "target": "00000000-0000-0000-0000-000000000220",
+            "uuid": "00000000-0000-0000-0000-000000000235",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000236": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "shared_variables": [
+                            "world.x1"
+                        ]
+                    }
+                }
+            },
+            "kind": "mapping_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000236",
+            "source": "00000000-0000-0000-0000-00000000021b",
+            "target": "00000000-0000-0000-0000-000000000221",
+            "uuid": "00000000-0000-0000-0000-000000000236",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000237": {
+            "annotations": {
+                "esl_info": {
+                    "reason": {
+                        "shared_variables": [
+                            "world.x2"
+                        ]
+                    }
+                }
+            },
+            "kind": "mapping_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000237",
+            "source": "00000000-0000-0000-0000-00000000021f",
+            "target": "00000000-0000-0000-0000-000000000221",
+            "uuid": "00000000-0000-0000-0000-000000000237",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000238": {
+            "annotations": {},
+            "kind": "mapping_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000238",
+            "source": "00000000-0000-0000-0000-00000000021c",
+            "target": "00000000-0000-0000-0000-000000000221",
+            "uuid": "00000000-0000-0000-0000-000000000238",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000239": {
+            "annotations": {},
+            "kind": "mapping_dependency",
+            "labels": [
+                "real"
+            ],
+            "name": "00000000-0000-0000-0000-000000000239",
+            "source": "00000000-0000-0000-0000-000000000220",
+            "target": "00000000-0000-0000-0000-000000000221",
+            "uuid": "00000000-0000-0000-0000-000000000239",
+            "weights": {
+                "default": 1
+            }
+        }
+    },
+    "kind": "default",
+    "labels": [
+        "default"
+    ],
+    "name": "00000000-0000-0000-0000-00000000023a",
+    "nodes": {
+        "00000000-0000-0000-0000-000000000212": {
+            "annotations": {
+                "esl_info": {
+                    "comments": [],
+                    "domain": null,
+                    "tagged_comments": {},
+                    "units": []
+                }
+            },
+            "children": [],
+            "is_bus": false,
+            "kind": "variable_type",
+            "labels": [
+                "default"
+            ],
+            "name": "real",
+            "parent": null,
+            "uuid": "00000000-0000-0000-0000-000000000212",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000213": {
+            "annotations": {
+                "esl_info": {
+                    "comments": [],
+                    "domain": null,
+                    "tagged_comments": {},
+                    "units": []
+                }
+            },
+            "children": [],
+            "is_bus": false,
+            "kind": "variable_type",
+            "labels": [
+                "default"
+            ],
+            "name": "integer",
+            "parent": null,
+            "uuid": "00000000-0000-0000-0000-000000000213",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000214": {
+            "annotations": {
+                "esl_info": {
+                    "comments": [],
+                    "domain": null,
+                    "tagged_comments": {},
+                    "units": []
+                }
+            },
+            "children": [],
+            "is_bus": false,
+            "kind": "variable_type",
+            "labels": [
+                "default"
+            ],
+            "name": "string",
+            "parent": null,
+            "uuid": "00000000-0000-0000-0000-000000000214",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000215": {
+            "annotations": {
+                "esl_info": {
+                    "comments": [],
+                    "domain": null,
+                    "tagged_comments": {},
+                    "units": []
+                }
+            },
+            "children": [],
+            "is_bus": false,
+            "kind": "variable_type",
+            "labels": [
+                "default"
+            ],
+            "name": "boolean",
+            "parent": null,
+            "uuid": "00000000-0000-0000-0000-000000000215",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000216": {
+            "annotations": {
+                "esl_info": {
+                    "comments": [],
+                    "definition_name": "world",
+                    "property_variables": [],
+                    "tagged_comments": {}
+                }
+            },
+            "children": [
+                "00000000-0000-0000-0000-000000000219",
+                "00000000-0000-0000-0000-00000000021d"
+            ],
+            "is_bus": false,
+            "kind": "component",
+            "labels": [
+                "default"
+            ],
+            "name": "world",
+            "parent": null,
+            "uuid": "00000000-0000-0000-0000-000000000216",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000219": {
+            "annotations": {
+                "esl_info": {
+                    "comments": [],
+                    "definition_name": "Blab",
+                    "property_variables": [],
+                    "tagged_comments": {}
+                }
+            },
+            "children": [
+                "00000000-0000-0000-0000-00000000021b"
+            ],
+            "is_bus": false,
+            "kind": "component",
+            "labels": [
+                "default"
+            ],
+            "name": "world.blab1",
+            "parent": "00000000-0000-0000-0000-000000000216",
+            "uuid": "00000000-0000-0000-0000-000000000219",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-00000000021b": {
+            "annotations": {
+                "esl_info": {
+                    "comments": [],
+                    "definition_name": "Blob",
+                    "property_variables": [
+                        "world.x1"
+                    ],
+                    "tagged_comments": {}
+                }
+            },
+            "children": [],
+            "is_bus": false,
+            "kind": "component",
+            "labels": [
+                "default"
+            ],
+            "name": "world.blab1.blob",
+            "parent": "00000000-0000-0000-0000-000000000219",
+            "uuid": "00000000-0000-0000-0000-00000000021b",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-00000000021c": {
+            "annotations": {
+                "esl_info": {
+                    "comments": [],
+                    "is_property": true,
+                    "tagged_comments": {},
+                    "type_ref": "real"
+                }
+            },
+            "children": [],
+            "is_bus": false,
+            "kind": "variable",
+            "labels": [
+                "default"
+            ],
+            "name": "world.x1",
+            "parent": null,
+            "uuid": "00000000-0000-0000-0000-00000000021c",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-00000000021d": {
+            "annotations": {
+                "esl_info": {
+                    "comments": [],
+                    "definition_name": "Blab",
+                    "property_variables": [],
+                    "tagged_comments": {}
+                }
+            },
+            "children": [
+                "00000000-0000-0000-0000-00000000021f"
+            ],
+            "is_bus": false,
+            "kind": "component",
+            "labels": [
+                "default"
+            ],
+            "name": "world.blab2",
+            "parent": "00000000-0000-0000-0000-000000000216",
+            "uuid": "00000000-0000-0000-0000-00000000021d",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-00000000021f": {
+            "annotations": {
+                "esl_info": {
+                    "comments": [],
+                    "definition_name": "Blob",
+                    "property_variables": [
+                        "world.x2"
+                    ],
+                    "tagged_comments": {}
+                }
+            },
+            "children": [],
+            "is_bus": false,
+            "kind": "component",
+            "labels": [
+                "default"
+            ],
+            "name": "world.blab2.blob",
+            "parent": "00000000-0000-0000-0000-00000000021d",
+            "uuid": "00000000-0000-0000-0000-00000000021f",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000220": {
+            "annotations": {
+                "esl_info": {
+                    "comments": [],
+                    "is_property": true,
+                    "tagged_comments": {},
+                    "type_ref": "real"
+                }
+            },
+            "children": [],
+            "is_bus": false,
+            "kind": "variable",
+            "labels": [
+                "default"
+            ],
+            "name": "world.x2",
+            "parent": null,
+            "uuid": "00000000-0000-0000-0000-000000000220",
+            "weights": {
+                "default": 1
+            }
+        },
+        "00000000-0000-0000-0000-000000000221": {
+            "annotations": {
+                "esl_info": {
+                    "body": [
+                        {
+                            "auxiliary": "shall be",
+                            "bound": {
+                                "unit": null,
+                                "value": "world.x2"
+                            },
+                            "comparison": "equal to",
+                            "subject": "world.x1"
+                        }
+                    ],
+                    "comments": [],
+                    "form": "requirement",
+                    "sub_clauses": [],
+                    "tagged_comments": {}
+                }
+            },
+            "children": [],
+            "is_bus": false,
+            "kind": "design_spec",
+            "labels": [
+                "default"
+            ],
+            "name": "world.dr1",
+            "parent": null,
+            "uuid": "00000000-0000-0000-0000-000000000221",
+            "weights": {
+                "default": 1
+            }
+        }
+    },
+    "uuid": "00000000-0000-0000-0000-00000000023a",
+    "weights": {
+        "default": 1
+    }
+}

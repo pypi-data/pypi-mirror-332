@@ -1,0 +1,51 @@
+// TEST
+digraph G {
+	graph [rankdir=TD]
+	subgraph cluster_world {
+		label=world
+		subgraph "cluster_world.pump" {
+			label="world.pump"
+			"world.pump.convert-torque" [shape=ellipse]
+		}
+		subgraph "cluster_world.drive-mechanism" {
+			label="world.drive-mechanism"
+			subgraph "cluster_world.drive-mechanism.power-button" {
+				label="world.drive-mechanism.power-button"
+				"world.drive-mechanism.power-button.convert-force-01" [shape=ellipse]
+			}
+			"world.drive-mechanism.pb-send-signal-01" [shape=hexagon]
+			subgraph "cluster_world.drive-mechanism.kill-switch" {
+				label="world.drive-mechanism.kill-switch"
+				"world.drive-mechanism.kill-switch.convert-force-01" [shape=ellipse]
+			}
+			"world.drive-mechanism.ks-send-signal-02" [shape=hexagon]
+			subgraph "cluster_world.drive-mechanism.power-source" {
+				label="world.drive-mechanism.power-source"
+				"world.drive-mechanism.power-source.convert-potential" [shape=ellipse]
+			}
+			"world.drive-mechanism.bs-provide-power" [shape=hexagon]
+			subgraph "cluster_world.drive-mechanism.motor" {
+				label="world.drive-mechanism.motor"
+				subgraph "cluster_world.drive-mechanism.motor.rotor" {
+					label="world.drive-mechanism.motor.rotor"
+					"world.drive-mechanism.motor.rotor.ba-convert-flux-and-power" [shape=ellipse]
+				}
+				"world.drive-mechanism.motor.stator" [label=stator shape=rectangle]
+				"world.drive-mechanism.motor.st-provide-flux" [shape=hexagon]
+			}
+		}
+		"world.provide-torque" [shape=hexagon]
+	}
+	"world.drive-mechanism.power-button.convert-force-01" -> "world.drive-mechanism.pb-send-signal-01" [style=solid]
+	"world.drive-mechanism.power-button.convert-force-01" -> "world.drive-mechanism.bs-provide-power" [style=dashed]
+	"world.drive-mechanism.kill-switch.convert-force-01" -> "world.drive-mechanism.ks-send-signal-02" [style=solid]
+	"world.drive-mechanism.kill-switch.convert-force-01" -> "world.drive-mechanism.bs-provide-power" [style=dashed]
+	"world.drive-mechanism.power-source.convert-potential" -> "world.drive-mechanism.bs-provide-power" [style=solid]
+	"world.drive-mechanism.motor.rotor.ba-convert-flux-and-power" -> "world.provide-torque" [style=solid]
+	"world.drive-mechanism.motor.st-provide-flux" -> "world.drive-mechanism.motor.rotor.ba-convert-flux-and-power" [style=solid]
+	"world.drive-mechanism.pb-send-signal-01" -> "world.drive-mechanism.power-source.convert-potential" [style=dashed]
+	"world.drive-mechanism.ks-send-signal-02" -> "world.drive-mechanism.power-source.convert-potential" [style=dashed]
+	"world.drive-mechanism.bs-provide-power" -> "world.drive-mechanism.motor.rotor.ba-convert-flux-and-power" [style=solid]
+	"world.provide-torque" -> "world.pump.convert-torque" [style=solid]
+	"world.drive-mechanism.motor.stator" -> "world.drive-mechanism.motor.st-provide-flux" [style=solid]
+}

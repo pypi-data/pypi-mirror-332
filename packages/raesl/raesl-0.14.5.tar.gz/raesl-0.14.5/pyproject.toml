@@ -1,0 +1,106 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "raesl"
+version = "0.14.5"
+description = "Ratio ESL support in Python."
+keywords = [
+    "systems",
+    "engineering",
+    "specification",
+    "requirements",
+    "management",
+    "language",
+]
+authors = [{ name = "Ratio Innovations B.V.", email = "info@ratio-case.nl" }]
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE.md"]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1.8",
+    "click-log>=0.4.0",
+    "graphviz>=0.20.3",
+    "openpyxl>=3.1.5",
+    "ragraph>=1.22.7",
+    "sly>=0.5",
+]
+
+[project.optional-dependencies]
+all = [
+    "pandoc-fignos>=2.4.0",
+    "pluggy>=1.5.0",
+    "pypandoc>=1.15",
+    "ipykernel>=6.29.5",
+    "ipython>=8.32.0",
+    "jupyter-client>=8.6.3",
+    "jupyter-server>=2.15.0",
+    "pygments>=2.19.1",
+    "kaleido==0.2.1",
+    "plotly>=6.0.0",
+    "lsprotocol>=2023.0.1",
+    "pygls>=1.3.1",
+]
+doc = ["pandoc-fignos>=2.4.0", "pluggy>=1.5.0", "pypandoc>=1.15"]
+jupyter = [
+    "ipykernel>=6.29.5",
+    "ipython>=8.32.0",
+    "jupyter-client>=8.6.3",
+    "jupyter-server>=2.15.0",
+]
+pygments = ["pygments>=2.19.1"]
+rich = ["kaleido==0.2.1", "plotly>=6.0.0"]
+server = ["lsprotocol>=2023.0.1", "pygls>=1.3.1"]
+
+[project.scripts]
+raesl = "raesl.cli:cli"
+
+[project.entry-points."pygments.lexers"]
+elephant = "raesl.pygments:EslLexer"
+
+[dependency-groups]
+test = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "pytest-examples>=0.0.15",
+    "pytest-watcher>=0.4.3",
+]
+experiment = ["jupyterlab>=4.3.5", "pandas>=2.2.3"]
+
+[tool.uv]
+package = true
+default-groups = ["experiment", "test"]
+
+[project.urls]
+Homepage = "https://raesl.ratio-case.nl"
+Repository = "https://gitlab.com/ratio-case-os/python/raesl"
+"Bug Tracker" = "https://gitlab.com/ratio-case-os/python/raesl/-/issues"
+Changelog = "https://raesl.ratio-case.nl/CHANGELOG/"
+
+[tool.pytest.ini_options]
+addopts = "-s --cov --cov-report xml:./.pytest_cache/coverage.xml --cov-report term-missing --basetemp ./tests/.temp"
+testpaths = ["tests"]
+markers = ["slow", "format"]
+
+[tool.coverage.run]
+source = ["raesl"]
+disable_warnings = ["module-not-imported"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.raver]
+ref = "origin/main"
+module = "./src/raesl/__init__.py"
+changelog = "./docs/CHANGELOG.md"
+
+[tool.ruff]
+line-length = 100
+lint.select = [
+    "E", # pycodestyle
+    "F", # pyflakes
+]
+target-version = "py311"
