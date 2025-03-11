@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/arxiv_query_fluent/__init__.py
+src/arxiv_query_fluent.egg-info/PKG-INFO
+src/arxiv_query_fluent.egg-info/SOURCES.txt
+src/arxiv_query_fluent.egg-info/dependency_links.txt
+src/arxiv_query_fluent.egg-info/requires.txt
+src/arxiv_query_fluent.egg-info/top_level.txt
+tests/test_helper.py
