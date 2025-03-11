@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+charset_generator.egg-info/PKG-INFO
+charset_generator.egg-info/SOURCES.txt
+charset_generator.egg-info/dependency_links.txt
+charset_generator.egg-info/requires.txt
+charset_generator.egg-info/top_level.txt
+src/charset_generator/__init__.py
+src/charset_generator/ai.py
+src/charset_generator/yielding.py
+tests/test_gen_charset.py
