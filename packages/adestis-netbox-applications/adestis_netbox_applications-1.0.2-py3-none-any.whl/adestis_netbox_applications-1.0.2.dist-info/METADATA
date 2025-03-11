@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: adestis-netbox-applications
+Version: 1.0.2
+Summary: ADESTIS Applications
+Author: ADESTIS GmbH
+Author-email: pypi@adestis.de
+License: MIT License
+Keywords: netbox,netbox-plugin,plugin
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: keywords
+Dynamic: license
+Dynamic: summary
