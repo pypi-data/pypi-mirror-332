@@ -1,0 +1,2 @@
+[console_scripts]
+polyvirt = polyvirt.main:main

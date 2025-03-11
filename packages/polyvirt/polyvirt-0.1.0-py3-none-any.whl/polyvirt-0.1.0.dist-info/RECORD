@@ -1,0 +1,16 @@
+polyvirt/__init__.py,sha256=p4MxVO8ih2-hnh7INVBkrqMKBDGTkMso1LEbM6mx3jg,23
+polyvirt/decorators.py,sha256=inEZJghPOd0jPahMsUOdayaykUMebhEUyVGWBtAtUpQ,588
+polyvirt/environment_registry.py,sha256=uJXkIhJDJRllJadbr7_AKrScFuD15FKJRm1fRxLbQYI,6019
+polyvirt/main.py,sha256=K7y5ZhW_tJDvVCxaNU379WbdnwU3DkIw1ULil-cA7DA,6928
+polyvirt/utils.py,sha256=suoASgZ5nNCEJVKgaLIcRgfOkvwXwx_RIjxMW8GhNdI,908
+polyvirt/managers/__init__.py,sha256=iFo-qaE8rA0nXJMmpXqWkcGPS0cq7PQI2poMOs8gCsI,871
+polyvirt/managers/base_manager.py,sha256=WqUNOiULMOQcZHgo9DeQMUeIkeDbgHCFMNDLrTg4iNg,1093
+polyvirt/managers/conda_manager.py,sha256=wOrU2On0TQzlxb2uK70eq2bKKTIUK5jRKG99eVZYS1Q,506
+polyvirt/managers/venv_manager.py,sha256=NREqr4DiZEix_G8xsBytfpqGy6KNP21ZNRa783DnkzM,918
+polyvirt/managers/virtualenv_manager.py,sha256=Lxz14jg_9EiMLzgWt-NXIhoC6aXBUmrpearlDUpfG-U,481
+polyvirt-0.1.0.dist-info/LICENSE,sha256=aV3hak2Ct_S-Vg3jBzXgFIfpOFTPDbj2_FVIBZMwD-M,1069
+polyvirt-0.1.0.dist-info/METADATA,sha256=gpSfz8HF3_jKqYtwjeFx3Odm22eHVjzEfcjS5b-V5fQ,3116
+polyvirt-0.1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+polyvirt-0.1.0.dist-info/entry_points.txt,sha256=5aV101U6-s1xbGtxK6CL-QYOaoNbxrrOpZMV2eXqLT0,48
+polyvirt-0.1.0.dist-info/top_level.txt,sha256=nRJKcW02_SUQJzBAzQBN9dpFXUkgCexB-B8MFKFvm3g,9
+polyvirt-0.1.0.dist-info/RECORD,,
