@@ -1,0 +1,2 @@
+[console_scripts]
+zbyte-polyfile = polyfile.__main__:main
