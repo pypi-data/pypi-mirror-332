@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: adif2callhistory
+Version: 25.3.10
+Summary: Converts and ADIF file to a call history file usable by Not1MM and N1MM
+Author-email: Michael Bridak <michael.bridak@gmail.com>
+Project-URL: Homepage, https://github.com/mbridak/adif2callhistory
+Project-URL: Bug Tracker, https://github.com/mbridak/adif2callhistory/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Topic :: Communications :: Ham Radio
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyQt6
+Requires-Dist: PyADIF-File
+
+# adif2callhistory
+
+## Recent Changes
+
+- [25-3-10] Initial push.
