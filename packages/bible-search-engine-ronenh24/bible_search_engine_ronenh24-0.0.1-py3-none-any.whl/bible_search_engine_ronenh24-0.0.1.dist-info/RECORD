@@ -1,0 +1,14 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bible_search_engine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bible_search_engine/document_preprocessor.py,sha256=WamSijPz4DGm318QW09aBgj2pyWkZpoYcgjPmApPK5I,2111
+bible_search_engine/indexing.py,sha256=JMXXWEBARPrgDUKzvT-IH8k3f6df4zkdnTZ_9LURFDI,17351
+bible_search_engine/l2r.py,sha256=3xkbqWAMtYcZGjvK0BoW0l00C0t7X8Ks8BdQmSmUkoU,9556
+bible_search_engine/pipeline.py,sha256=fNg440SGPqdg2CkMCZjGgphNg0EKOF3Z3Ygi-HH2z_0,7199
+bible_search_engine/preprocess_bible_data.py,sha256=Xo0b9LUHHgOKV3FTZO7t1mNAysgGvWw7GS55XoYYj4E,5193
+bible_search_engine/ranker.py,sha256=5JXHympWZsyhOEwOwPTnN0FVyXpdkjDT4kE0jkvlxcQ,15161
+bible_search_engine/relevance.py,sha256=JY3ZAdNmXDmccaBdUCDlHVakSZ6Gxgho38vj8MmL948,2521
+bible_search_engine_ronenh24-0.0.1.dist-info/LICENSE,sha256=brCdQ_R_tKluVmaDwibnYmtFO4M_nJgBSAIxXjHlP5c,1083
+bible_search_engine_ronenh24-0.0.1.dist-info/METADATA,sha256=yrm1K305mI7w85UIVguzzhTSjEg22V3Whz29LGF8qHU,5509
+bible_search_engine_ronenh24-0.0.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+bible_search_engine_ronenh24-0.0.1.dist-info/top_level.txt,sha256=n_cnZF7_3RD5u0VRv6gbftZkEnwz7k8oSoeIq6IvwN8,29
+bible_search_engine_ronenh24-0.0.1.dist-info/RECORD,,
