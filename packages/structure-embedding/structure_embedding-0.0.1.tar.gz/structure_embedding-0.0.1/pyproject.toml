@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "structure-embedding"
+version = "0.0.1"
+description = "Simplifying workflows for generating embeddings of structures."
+readme = "README.md"
+authors = [{ name = "Thomas Nicholas", email = "tcnicholas@me.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "scipy>=1.15.2",
+    "umap-learn>=0.5.7",
+]
+requires-python = ">=3.12"
+
+[project.optional-dependencies]
+publish = ["build", "twine"]
+
+[tool.bumpver]
+current_version = "0.0.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/structure_embedding/__init__.py" = ["{version}"]
+
+[tool.ruff]
+line-length = 80
+indent-width = 4
+target-version = "py38"
+extend-include = ["*.ipynb", "*.pyi", "*.toml"]
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "B", "SIM", "I"]
+ignore = ["SIM300", "E402", "E703", "F722", "UP037", "F821", "B018", "E741"]
+fixable = ["ALL"]
+unfixable = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[dependency-groups]
+dev = [
+    "notebook>=7.3.2",
+    "ruff>=0.9.7",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"

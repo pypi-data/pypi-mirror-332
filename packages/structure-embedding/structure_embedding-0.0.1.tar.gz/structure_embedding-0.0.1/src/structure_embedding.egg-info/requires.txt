@@ -1,0 +1,6 @@
+scipy>=1.15.2
+umap-learn>=0.5.7
+
+[publish]
+build
+twine
