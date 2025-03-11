@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cfcommander"
+version = "0.1.2"
+description = "A simple Cloudflare DNS CLI tool"
+authors = [{ name = "Jakub Jim Zacek", email = "jakub@zacekj.cz" }]
+license = "MIT"
+readme = "README.md"
+dependencies = [
+    "requests",
+    "tabulate",
+    "twine>=6.1.0",
+]
+
+[project.scripts]
+cf = "cf.__main__:main"
+
+[tool.hatch.build.targets.sdist]
+include = ["cf/**"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["cf"]
