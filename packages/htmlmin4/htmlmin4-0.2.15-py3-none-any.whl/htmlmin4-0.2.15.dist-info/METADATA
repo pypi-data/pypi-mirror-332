@@ -1,0 +1,39 @@
+Metadata-Version: 2.2
+Name: htmlmin4
+Version: 0.2.15
+Project-URL: Homepage, https://github.com/tatianass/htmlmin
+Project-URL: Issues, https://github.com/tatianass/htmlmin/issues
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: ruff>=0.9.9; extra == "dev"
+Requires-Dist: pyright>=1.1.396; extra == "dev"
+Requires-Dist: pip-tools>=7.4.1; extra == "dev"
+Requires-Dist: pytest>=8.3.5; extra == "dev"
+Requires-Dist: pytest-cov>=6.0.0; extra == "dev"
+Requires-Dist: pre-commit>=4.1.0; extra == "dev"
+Requires-Dist: bandit>=1.8.3; extra == "dev"
+Requires-Dist: setuptools; extra == "dev"
+Requires-Dist: ipdb; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+[![codecov](https://codecov.io/gh/tatianass/htmlmin/graph/badge.svg?token=B5NF1L4QYG)](https://codecov.io/gh/tatianass/htmlmin)
+
+Project forked from [mankyd](https://github.com/mankyd/htmlmin)'s project in order to fix it for Python 13.3
+
+A configurable HTML Minifier with safety features.
+
+## Prerequisites
+
+- `just`: [see here](https://github.com/cajsey/just)
+- `python3` (>=3.13)
+- `uv` [see here](https://github.com/astral-sh/uv)
+- `pre-commit`
+
+Activate the virtual environment with :
+```bash
+source .venv/bin/activate
+```
+
+Documentation: https://htmlmin.readthedocs.io/en/latest/
