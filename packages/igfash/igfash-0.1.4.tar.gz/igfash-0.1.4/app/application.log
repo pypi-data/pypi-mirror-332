@@ -1,0 +1,931 @@
+18:35:27,2 igfash DEBUG Number of physical cores: 14
+18:35:27,3 igfash.io DEBUG Looking for magnitudes with label Mw
+18:35:27,333 igfash INFO M mode - Magnitude distribution modeling
+18:35:27,333 igfash WARNING Must be either CTL or CNE for windowing. Use all events in catalog.
+18:35:33,297 igfash INFO Magnitude KDE Computation time: 6.0 seconds
+18:35:33,524 igfash INFO L mode - Location distribution modeling
+18:35:33,525 igfash INFO Computing KDE of each window...
+18:35:33,801 igfash INFO 2D KDE Computation time: 0.3 seconds
+18:35:35,567 igfash INFO R mode - activity Rate modeling
+18:35:35,567 igfash.io DEBUG Looking for magnitudes with label Mw
+18:35:38,23 igfash DEBUG Activity rates [4.966666666666667, 4.666666666666667] with percentages [0.5, 0.5]
+18:35:38,23 igfash INFO Forecast mode - seismic hazard asssessment
+18:35:38,23 igfash DEBUG Verification that f(x,y) is normalized; Sum of all f(x,y) values = 1.0
+18:35:38,138 igfash INFO Estimating ground motion at 95 grid points...
+18:35:38,138 igfash INFO Estimating PGA
+2025-03-10 18:37:55,553 - igfash.gm - INFO - Receiver: 52
+2025-03-10 18:37:55,554 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:55,554 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999999523745
+2025-03-10 18:37:55,554 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:55,555 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:55,959 - igfash.gm - INFO - Receiver: 66
+2025-03-10 18:37:55,960 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:55,960 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999959515
+2025-03-10 18:37:55,960 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:55,961 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:56,142 - igfash.gm - INFO - Receiver: 72
+2025-03-10 18:37:56,142 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:56,142 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999937817
+2025-03-10 18:37:56,143 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:56,143 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:56,203 - igfash.gm - INFO - Receiver: 86
+2025-03-10 18:37:56,203 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:56,203 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999822122
+2025-03-10 18:37:56,203 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:56,203 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:56,235 - igfash.gm - INFO - Receiver: 284
+2025-03-10 18:37:56,236 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:56,236 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999454588
+2025-03-10 18:37:56,236 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:56,236 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:56,301 - igfash.gm - INFO - Receiver: 305
+2025-03-10 18:37:56,302 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:56,302 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999906854
+2025-03-10 18:37:56,302 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:56,303 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:56,522 - igfash.gm - INFO - Receiver: 105
+2025-03-10 18:37:56,522 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:56,522 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999823165
+2025-03-10 18:37:56,523 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:56,523 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:56,548 - igfash.gm - INFO - Receiver: 110
+2025-03-10 18:37:56,548 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:56,549 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999994309194
+2025-03-10 18:37:56,549 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:56,549 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:57,137 - igfash.gm - INFO - Receiver: 185
+2025-03-10 18:37:57,138 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:57,138 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999998054795
+2025-03-10 18:37:57,138 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:57,138 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:57,216 - igfash.gm - INFO - Receiver: 92
+2025-03-10 18:37:57,216 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:57,217 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999959079
+2025-03-10 18:37:57,217 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:57,217 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:57,307 - igfash.gm - INFO - Receiver: 88
+2025-03-10 18:37:57,308 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:57,308 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999999756746
+2025-03-10 18:37:57,308 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:57,309 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:57,336 - igfash.gm - INFO - Receiver: 70
+2025-03-10 18:37:57,336 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:57,337 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999871269
+2025-03-10 18:37:57,337 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:57,337 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:57,416 - igfash.gm - INFO - Receiver: 146
+2025-03-10 18:37:57,417 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:57,417 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999461253
+2025-03-10 18:37:57,417 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:57,417 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:57,474 - igfash.gm - INFO - Receiver: 90
+2025-03-10 18:37:57,475 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:57,475 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999594737
+2025-03-10 18:37:57,475 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:57,475 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:58,151 - igfash.gm - INFO - Receiver: 323
+2025-03-10 18:37:58,152 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:58,152 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999999481314
+2025-03-10 18:37:58,152 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:58,152 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:37:58,484 - igfash.gm - INFO - Receiver: 107
+2025-03-10 18:37:58,484 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:37:58,484 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999997927876
+2025-03-10 18:37:58,484 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:37:58,484 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:42:24,242 - igfash.gm - INFO - Ground motion estimation computation time: 265.8 seconds
+2025-03-10 18:42:24,242 - igfash.gm - INFO - Estimated PGA: 0.24985276060193115
+2025-03-10 18:42:25,610 - igfash.gm - DEBUG - CPU LOAD% [27.3, 44.8, 55.6, 65.4, 72.7, 79.8, 74.0, 23.5, 45.7, 60.3, 68.6, 67.2, 32.9, 64.3, 34.6, 56.1, 74.9, 85.7, 91.6, 93.6]
+2025-03-10 18:43:51,992 - igfash.gm - INFO - Ground motion estimation computation time: 355.8 seconds
+2025-03-10 18:43:51,992 - igfash.gm - INFO - Estimated PGA: 0.24170706859948915
+2025-03-10 18:43:53,279 - igfash.gm - DEBUG - CPU LOAD% [26.6, 45.3, 56.4, 66.4, 73.6, 80.2, 73.7, 23.2, 45.7, 60.0, 68.9, 69.1, 32.4, 64.2, 35.0, 56.7, 76.2, 86.9, 92.5, 94.2]
+2025-03-10 18:43:54,148 - igfash.gm - INFO - Ground motion estimation computation time: 356.8 seconds
+2025-03-10 18:43:54,149 - igfash.gm - INFO - Estimated PGA: 0.15121381551555588
+2025-03-10 18:43:54,420 - igfash.gm - INFO - Ground motion estimation computation time: 357.9 seconds
+2025-03-10 18:43:54,421 - igfash.gm - INFO - Estimated PGA: 0.24150211496476384
+2025-03-10 18:43:55,629 - igfash.gm - DEBUG - CPU LOAD% [26.5, 45.2, 56.4, 66.5, 73.7, 80.3, 73.8, 23.2, 45.6, 60.1, 69.0, 69.2, 32.3, 64.3, 34.9, 56.6, 76.1, 87.0, 92.5, 94.2]
+2025-03-10 18:43:55,890 - igfash.gm - DEBUG - CPU LOAD% [26.5, 45.2, 56.4, 66.5, 73.7, 80.3, 73.8, 23.1, 45.7, 60.1, 69.0, 69.2, 32.3, 64.3, 34.9, 56.6, 76.1, 87.0, 92.5, 94.2]
+2025-03-10 18:43:57,769 - igfash.gm - INFO - Ground motion estimation computation time: 360.6 seconds
+2025-03-10 18:43:57,769 - igfash.gm - INFO - Estimated PGA: 0.24312724583260956
+2025-03-10 18:43:59,094 - igfash.gm - DEBUG - CPU LOAD% [26.5, 45.1, 56.5, 66.6, 73.8, 80.4, 73.9, 23.2, 45.7, 60.2, 69.0, 69.3, 32.3, 64.4, 35.0, 56.7, 76.2, 87.0, 92.6, 94.2]
+2025-03-10 18:44:30,633 - igfash.gm - INFO - Receiver: 188
+2025-03-10 18:44:30,634 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:44:30,634 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999996562516
+2025-03-10 18:44:30,634 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:44:30,634 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:44:36,657 - igfash.gm - INFO - Ground motion estimation computation time: 400.4 seconds
+2025-03-10 18:44:36,657 - igfash.gm - INFO - Estimated PGA: 0.20988255570255063
+2025-03-10 18:44:37,979 - igfash.gm - DEBUG - CPU LOAD% [26.2, 45.2, 56.4, 66.8, 74.2, 80.8, 74.7, 23.4, 46.3, 60.8, 70.5, 70.0, 32.5, 64.5, 35.3, 56.6, 76.1, 86.9, 92.4, 94.2]
+2025-03-10 18:44:38,562 - igfash.gm - INFO - Ground motion estimation computation time: 401.1 seconds
+2025-03-10 18:44:38,562 - igfash.gm - INFO - Estimated PGA: 0.27255545930245867
+2025-03-10 18:44:39,706 - igfash.gm - DEBUG - CPU LOAD% [26.2, 45.2, 56.3, 66.8, 74.2, 80.8, 74.7, 23.4, 46.4, 60.9, 70.6, 70.0, 32.4, 64.5, 35.3, 56.6, 76.1, 86.9, 92.4, 94.2]
+2025-03-10 18:44:40,070 - igfash.gm - INFO - Ground motion estimation computation time: 403.9 seconds
+2025-03-10 18:44:40,070 - igfash.gm - INFO - Estimated PGA: 0.1921350689064576
+2025-03-10 18:44:41,384 - igfash.gm - DEBUG - CPU LOAD% [26.2, 45.2, 56.3, 66.9, 74.2, 80.8, 74.8, 23.5, 46.4, 60.9, 70.6, 70.1, 32.4, 64.4, 35.3, 56.6, 76.1, 87.0, 92.4, 94.2]
+2025-03-10 18:44:41,999 - igfash.gm - INFO - Ground motion estimation computation time: 406.4 seconds
+2025-03-10 18:44:41,999 - igfash.gm - INFO - Estimated PGA: 0.17917119215042207
+2025-03-10 18:44:42,201 - igfash.gm - INFO - Ground motion estimation computation time: 406.2 seconds
+2025-03-10 18:44:42,201 - igfash.gm - INFO - Estimated PGA: 0.16898765723620884
+2025-03-10 18:44:42,697 - igfash.gm - INFO - Ground motion estimation computation time: 405.4 seconds
+2025-03-10 18:44:42,697 - igfash.gm - INFO - Estimated PGA: 0.22296170317307956
+2025-03-10 18:44:43,435 - igfash.gm - DEBUG - CPU LOAD% [26.2, 45.2, 56.4, 66.9, 74.3, 80.9, 74.8, 23.5, 46.5, 61.0, 70.7, 70.1, 32.3, 64.4, 35.3, 56.7, 76.1, 87.0, 92.4, 94.2]
+2025-03-10 18:44:43,584 - igfash.gm - INFO - Ground motion estimation computation time: 406.4 seconds
+2025-03-10 18:44:43,585 - igfash.gm - INFO - Estimated PGA: 0.16988057359404102
+2025-03-10 18:44:43,589 - igfash.gm - DEBUG - CPU LOAD% [26.2, 45.2, 56.4, 66.9, 74.2, 80.8, 74.8, 23.5, 46.5, 61.0, 70.7, 70.1, 32.3, 64.3, 35.3, 56.6, 76.1, 86.9, 92.4, 94.1]
+2025-03-10 18:44:44,096 - igfash.gm - DEBUG - CPU LOAD% [26.2, 45.2, 56.4, 66.9, 74.3, 80.9, 74.9, 23.5, 46.5, 61.1, 70.7, 70.2, 32.3, 64.4, 35.3, 56.7, 76.2, 87.0, 92.4, 94.2]
+2025-03-10 18:44:44,931 - igfash.gm - DEBUG - CPU LOAD% [26.2, 45.2, 56.4, 66.9, 74.3, 80.9, 74.9, 23.6, 46.6, 61.1, 70.7, 70.2, 32.3, 64.3, 35.3, 56.7, 76.2, 87.0, 92.4, 94.2]
+2025-03-10 18:44:45,266 - igfash.gm - INFO - Ground motion estimation computation time: 407.1 seconds
+2025-03-10 18:44:45,267 - igfash.gm - INFO - Estimated PGA: 0.18230606100761088
+2025-03-10 18:44:46,567 - igfash.gm - DEBUG - CPU LOAD% [26.2, 45.2, 56.5, 67.0, 74.4, 80.9, 74.9, 23.6, 46.6, 61.2, 70.8, 70.2, 32.3, 64.3, 35.3, 56.7, 76.2, 87.1, 92.5, 94.2]
+2025-03-10 18:45:22,521 - igfash.gm - INFO - Ground motion estimation computation time: 446.3 seconds
+2025-03-10 18:45:22,521 - igfash.gm - INFO - Estimated PGA: 0.27561905774584233
+2025-03-10 18:45:23,895 - igfash.gm - DEBUG - CPU LOAD% [26.4, 45.2, 56.6, 67.6, 74.9, 81.1, 75.7, 24.2, 48.0, 62.3, 72.1, 71.1, 32.5, 64.2, 35.8, 57.2, 76.6, 87.3, 92.6, 94.3]
+2025-03-10 18:45:27,328 - igfash.gm - INFO - Ground motion estimation computation time: 450.8 seconds
+2025-03-10 18:45:27,328 - igfash.gm - INFO - Estimated PGA: 0.27711697499396404
+2025-03-10 18:45:28,635 - igfash.gm - DEBUG - CPU LOAD% [26.5, 45.3, 56.5, 67.5, 74.9, 81.1, 75.7, 24.3, 48.1, 62.3, 72.1, 71.1, 32.6, 64.3, 35.9, 57.2, 76.5, 87.3, 92.6, 94.3]
+2025-03-10 18:45:28,709 - igfash.gm - INFO - Ground motion estimation computation time: 451.3 seconds
+2025-03-10 18:45:28,709 - igfash.gm - INFO - Estimated PGA: 0.2751864009710579
+2025-03-10 18:45:29,984 - igfash.gm - DEBUG - CPU LOAD% [26.5, 45.3, 56.5, 67.5, 74.9, 81.0, 75.7, 24.3, 48.1, 62.4, 72.1, 71.1, 32.6, 64.4, 35.9, 57.2, 76.6, 87.3, 92.6, 94.3]
+2025-03-10 18:45:58,475 - igfash.gm - INFO - Receiver: 71
+2025-03-10 18:45:58,475 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:45:58,475 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999762023
+2025-03-10 18:45:58,475 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:45:58,476 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:46:00,987 - igfash.gm - INFO - Receiver: 287
+2025-03-10 18:46:00,987 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:46:01,003 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999999454016
+2025-03-10 18:46:01,003 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:46:01,003 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:46:02,332 - igfash.gm - INFO - Receiver: 189
+2025-03-10 18:46:02,342 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:46:02,342 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999823765
+2025-03-10 18:46:02,342 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:46:02,342 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:46:03,168 - igfash.gm - INFO - Receiver: 262
+2025-03-10 18:46:03,168 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:46:03,168 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999999114905
+2025-03-10 18:46:03,168 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:46:03,168 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:46:40,911 - igfash.gm - INFO - Receiver: 186
+2025-03-10 18:46:40,911 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:46:40,911 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999827352
+2025-03-10 18:46:40,911 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:46:40,911 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:46:44,299 - igfash.gm - INFO - Receiver: 85
+2025-03-10 18:46:44,299 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:46:44,299 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999942593
+2025-03-10 18:46:44,299 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:46:44,299 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:46:45,129 - igfash.gm - INFO - Receiver: 89
+2025-03-10 18:46:45,129 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:46:45,129 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999926998
+2025-03-10 18:46:45,129 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:46:45,129 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:46:48,050 - igfash.gm - INFO - Receiver: 225
+2025-03-10 18:46:48,050 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:46:48,051 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999996150804
+2025-03-10 18:46:48,051 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:46:48,051 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:46:48,104 - igfash.gm - INFO - Receiver: 145
+2025-03-10 18:46:48,105 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:46:48,105 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999994954324
+2025-03-10 18:46:48,105 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:46:48,105 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:46:48,554 - igfash.gm - INFO - Receiver: 130
+2025-03-10 18:46:48,554 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:46:48,554 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999674694
+2025-03-10 18:46:48,554 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:46:48,554 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:46:49,611 - igfash.gm - INFO - Receiver: 111
+2025-03-10 18:46:49,612 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:46:49,612 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999800965
+2025-03-10 18:46:49,612 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:46:49,612 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:46:52,509 - igfash.gm - INFO - Receiver: 285
+2025-03-10 18:46:52,509 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:46:52,509 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999567123
+2025-03-10 18:46:52,509 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:46:52,509 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:47:28,466 - igfash.gm - INFO - Receiver: 125
+2025-03-10 18:47:28,466 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:47:28,466 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999995729925
+2025-03-10 18:47:28,466 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:47:28,467 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:47:31,679 - igfash.gm - INFO - Receiver: 286
+2025-03-10 18:47:31,680 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:47:31,680 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999998566205
+2025-03-10 18:47:31,680 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:47:31,680 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:47:33,649 - igfash.gm - INFO - Receiver: 51
+2025-03-10 18:47:33,649 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:47:33,649 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999913122
+2025-03-10 18:47:33,650 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:47:33,650 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:50:22,773 - igfash.gm - INFO - Ground motion estimation computation time: 264.3 seconds
+2025-03-10 18:50:22,773 - igfash.gm - INFO - Estimated PGA: 0.24985276060193115
+2025-03-10 18:50:22,802 - igfash.gm - DEBUG - System Idle Process, 31.47
+2025-03-10 18:50:22,977 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:50:23,685 - igfash.gm - DEBUG - python.exe, 4.04
+2025-03-10 18:50:23,875 - igfash.gm - DEBUG - python.exe, 4.05
+2025-03-10 18:50:23,886 - igfash.gm - DEBUG - python.exe, 4.045
+2025-03-10 18:50:23,919 - igfash.gm - DEBUG - python.exe, 4.035
+2025-03-10 18:50:23,983 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:50:24,005 - igfash.gm - DEBUG - python.exe, 4.04
+2025-03-10 18:50:24,006 - igfash.gm - DEBUG - python.exe, 4.075
+2025-03-10 18:50:24,027 - igfash.gm - DEBUG - python.exe, 4.035
+2025-03-10 18:50:24,038 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:50:24,038 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:50:24,057 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:50:24,061 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:50:24,077 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:50:24,077 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:50:24,093 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:50:24,220 - igfash.gm - DEBUG - CPU LOAD% [28.4, 46.4, 60.3, 75.6, 82.6, 85.2, 87.7, 31.0, 62.4, 75.1, 89.9, 83.0, 34.6, 61.1, 41.4, 62.6, 82.7, 92.1, 95.1, 96.1]
+2025-03-10 18:51:09,419 - igfash.gm - INFO - Ground motion estimation computation time: 259.8 seconds
+2025-03-10 18:51:09,419 - igfash.gm - INFO - Estimated PGA: 0.24985276060193115
+2025-03-10 18:51:09,435 - igfash.gm - DEBUG - System Idle Process, 31.580000000000002
+2025-03-10 18:51:09,577 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:51:10,258 - igfash.gm - DEBUG - python.exe, 4.025
+2025-03-10 18:51:10,427 - igfash.gm - DEBUG - python.exe, 4.029999999999999
+2025-03-10 18:51:10,443 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:51:10,490 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:51:10,553 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:51:10,589 - igfash.gm - DEBUG - python.exe, 4.025
+2025-03-10 18:51:10,589 - igfash.gm - DEBUG - python.exe, 4.0600000000000005
+2025-03-10 18:51:10,601 - igfash.gm - DEBUG - python.exe, 4.025
+2025-03-10 18:51:10,616 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:51:10,616 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:51:10,632 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:51:10,648 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:51:10,664 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:51:10,664 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:51:10,694 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:51:10,856 - igfash.gm - DEBUG - CPU LOAD% [29.2, 46.5, 60.5, 75.0, 82.1, 84.4, 86.9, 31.3, 62.3, 74.6, 90.0, 82.8, 35.3, 61.0, 41.8, 62.9, 82.6, 91.7, 94.8, 95.8]
+2025-03-10 18:51:11,551 - igfash.gm - INFO - Ground motion estimation computation time: 400.9 seconds
+2025-03-10 18:51:11,551 - igfash.gm - INFO - Estimated PGA: 0.2628541817956103
+2025-03-10 18:51:11,566 - igfash.gm - DEBUG - System Idle Process, 32.735
+2025-03-10 18:51:11,732 - igfash.gm - DEBUG - python.exe, 3.9549999999999996
+2025-03-10 18:51:12,410 - igfash.gm - DEBUG - python.exe, 3.96
+2025-03-10 18:51:12,584 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:51:12,598 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:51:12,633 - igfash.gm - DEBUG - python.exe, 3.965
+2025-03-10 18:51:12,707 - igfash.gm - DEBUG - python.exe, 3.935
+2025-03-10 18:51:12,733 - igfash.gm - DEBUG - python.exe, 3.9799999999999995
+2025-03-10 18:51:12,734 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:51:12,761 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:51:12,774 - igfash.gm - DEBUG - python.exe, 3.94
+2025-03-10 18:51:12,775 - igfash.gm - DEBUG - python.exe, 3.95
+2025-03-10 18:51:12,802 - igfash.gm - DEBUG - python.exe, 3.9450000000000003
+2025-03-10 18:51:12,816 - igfash.gm - DEBUG - python.exe, 3.95
+2025-03-10 18:51:12,830 - igfash.gm - DEBUG - python.exe, 3.965
+2025-03-10 18:51:12,830 - igfash.gm - DEBUG - python.exe, 3.9450000000000003
+2025-03-10 18:51:12,854 - igfash.gm - DEBUG - python.exe, 3.9200000000000004
+2025-03-10 18:51:13,001 - igfash.gm - DEBUG - CPU LOAD% [27.6, 46.5, 60.1, 74.1, 81.3, 84.3, 84.5, 29.3, 58.7, 71.7, 86.6, 81.8, 34.1, 61.9, 40.6, 61.7, 81.9, 91.5, 94.8, 95.8]
+2025-03-10 18:51:57,513 - igfash.gm - INFO - Ground motion estimation computation time: 355.2 seconds
+2025-03-10 18:51:57,513 - igfash.gm - INFO - Estimated PGA: 0.2413842791186306
+2025-03-10 18:51:57,533 - igfash.gm - DEBUG - System Idle Process, 31.869999999999997
+2025-03-10 18:51:57,684 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:51:58,343 - igfash.gm - DEBUG - python.exe, 4.029999999999999
+2025-03-10 18:51:58,503 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:51:58,518 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:51:58,556 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:51:58,627 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:51:58,648 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:51:58,649 - igfash.gm - DEBUG - python.exe, 4.045
+2025-03-10 18:51:58,667 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:51:58,675 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:51:58,675 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:51:58,697 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:51:58,708 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:51:58,719 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:51:58,719 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:51:58,743 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:51:58,874 - igfash.gm - DEBUG - CPU LOAD% [28.7, 46.5, 60.1, 74.9, 82.2, 84.6, 87.1, 30.8, 61.3, 74.4, 89.7, 82.7, 34.8, 61.2, 41.2, 62.3, 82.1, 91.3, 94.6, 95.7]
+2025-03-10 18:52:31,303 - igfash.gm - INFO - Receiver: 167
+2025-03-10 18:52:31,303 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:52:31,303 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999998467624
+2025-03-10 18:52:31,304 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:52:31,304 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:52:33,658 - igfash.gm - INFO - Ground motion estimation computation time: 352.7 seconds
+2025-03-10 18:52:33,658 - igfash.gm - INFO - Estimated PGA: 0.24067740838380702
+2025-03-10 18:52:33,674 - igfash.gm - DEBUG - System Idle Process, 31.595
+2025-03-10 18:52:33,818 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:52:34,387 - igfash.gm - DEBUG - python.exe, 4.035
+2025-03-10 18:52:34,522 - igfash.gm - DEBUG - python.exe, 4.029999999999999
+2025-03-10 18:52:34,531 - igfash.gm - DEBUG - python.exe, 4.035
+2025-03-10 18:52:34,556 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:52:34,609 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:52:34,626 - igfash.gm - DEBUG - python.exe, 4.025
+2025-03-10 18:52:34,627 - igfash.gm - DEBUG - python.exe, 4.055
+2025-03-10 18:52:34,648 - igfash.gm - DEBUG - python.exe, 4.025
+2025-03-10 18:52:34,656 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:52:34,656 - igfash.gm - DEBUG - python.exe, 3.975
+2025-03-10 18:52:34,677 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:52:34,686 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:52:34,696 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:52:34,696 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:52:34,717 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:52:34,841 - igfash.gm - DEBUG - CPU LOAD% [29.1, 46.6, 60.7, 75.4, 82.3, 84.5, 87.3, 31.3, 62.0, 74.6, 89.7, 83.2, 34.8, 60.4, 41.2, 62.8, 82.7, 91.8, 94.9, 95.9]
+2025-03-10 18:52:39,412 - igfash.gm - INFO - Ground motion estimation computation time: 396.2 seconds
+2025-03-10 18:52:39,412 - igfash.gm - INFO - Estimated PGA: 0.20662750661084991
+2025-03-10 18:52:39,435 - igfash.gm - DEBUG - System Idle Process, 31.839999999999996
+2025-03-10 18:52:39,599 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:52:40,216 - igfash.gm - DEBUG - python.exe, 4.025
+2025-03-10 18:52:40,390 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:52:40,396 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:52:40,446 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:52:40,515 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:52:40,541 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:52:40,542 - igfash.gm - DEBUG - python.exe, 4.045
+2025-03-10 18:52:40,567 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:52:40,578 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:52:40,579 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:52:40,595 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:52:40,610 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:52:40,617 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:52:40,617 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:52:40,642 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:52:40,783 - igfash.gm - DEBUG - CPU LOAD% [28.7, 46.5, 60.2, 75.0, 82.1, 84.7, 87.1, 31.0, 61.4, 74.2, 89.7, 82.8, 34.8, 60.9, 41.0, 62.3, 82.1, 91.4, 94.6, 95.8]
+2025-03-10 18:52:42,123 - igfash.gm - INFO - Ground motion estimation computation time: 401.1 seconds
+2025-03-10 18:52:42,123 - igfash.gm - INFO - Estimated PGA: 0.1863845943652535
+2025-03-10 18:52:42,139 - igfash.gm - DEBUG - System Idle Process, 31.869999999999997
+2025-03-10 18:52:42,297 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:52:42,912 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:52:43,068 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:52:43,084 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:52:43,116 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:52:43,179 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:52:43,191 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:52:43,191 - igfash.gm - DEBUG - python.exe, 4.045
+2025-03-10 18:52:43,197 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:52:43,213 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:52:43,213 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:52:43,244 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:52:43,246 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:52:43,260 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:52:43,260 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:52:43,276 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:52:43,402 - igfash.gm - DEBUG - CPU LOAD% [28.6, 46.4, 60.2, 75.0, 82.1, 84.7, 87.2, 30.9, 61.3, 74.1, 89.7, 82.8, 34.7, 61.0, 41.0, 62.3, 82.1, 91.4, 94.6, 95.8]
+2025-03-10 18:53:15,489 - igfash.gm - INFO - Receiver: 283
+2025-03-10 18:53:15,489 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:53:15,489 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999626837
+2025-03-10 18:53:15,489 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:53:15,489 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:53:16,102 - igfash.gm - INFO - Receiver: 106
+2025-03-10 18:53:16,102 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:53:16,102 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999479355
+2025-03-10 18:53:16,102 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:53:16,102 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:53:25,668 - igfash.gm - INFO - Ground motion estimation computation time: 400.5 seconds
+2025-03-10 18:53:25,668 - igfash.gm - INFO - Estimated PGA: 0.19905144517156545
+2025-03-10 18:53:25,686 - igfash.gm - DEBUG - System Idle Process, 31.814999999999998
+2025-03-10 18:53:25,825 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:53:25,904 - igfash.gm - INFO - Ground motion estimation computation time: 401.6 seconds
+2025-03-10 18:53:25,904 - igfash.gm - INFO - Estimated PGA: 0.18611797033069008
+2025-03-10 18:53:25,919 - igfash.gm - DEBUG - System Idle Process, 31.814999999999998
+2025-03-10 18:53:26,093 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:53:26,219 - igfash.gm - INFO - Ground motion estimation computation time: 397.7 seconds
+2025-03-10 18:53:26,219 - igfash.gm - INFO - Estimated PGA: 0.25989100611727806
+2025-03-10 18:53:26,219 - igfash.gm - INFO - Ground motion estimation computation time: 398.2 seconds
+2025-03-10 18:53:26,219 - igfash.gm - INFO - Estimated PGA: 0.2693160835988143
+2025-03-10 18:53:26,250 - igfash.gm - DEBUG - System Idle Process, 31.82
+2025-03-10 18:53:26,250 - igfash.gm - DEBUG - System Idle Process, 31.82
+2025-03-10 18:53:26,503 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:53:26,503 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:53:26,598 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:53:26,803 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:53:26,819 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:53:26,866 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:53:26,930 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:53:26,930 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:53:26,945 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:26,945 - igfash.gm - DEBUG - python.exe, 4.029999999999999
+2025-03-10 18:53:26,976 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:53:26,992 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:53:26,992 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:53:27,024 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,024 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,041 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,041 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:53:27,071 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:53:27,118 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:53:27,134 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:53:27,166 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:53:27,229 - igfash.gm - DEBUG - CPU LOAD% [29.2, 46.8, 60.8, 75.5, 82.3, 84.9, 86.9, 31.3, 61.4, 73.6, 89.8, 81.9, 35.7, 61.4, 40.9, 62.0, 81.3, 90.7, 94.4, 95.7]
+2025-03-10 18:53:27,246 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:53:27,246 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:53:27,261 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,277 - igfash.gm - DEBUG - python.exe, 4.029999999999999
+2025-03-10 18:53:27,277 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:53:27,292 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:53:27,310 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:53:27,310 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:53:27,324 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,342 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:53:27,356 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,356 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:53:27,371 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:53:27,420 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:53:27,442 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:53:27,451 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:53:27,467 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:53:27,467 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:53:27,506 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:53:27,530 - igfash.gm - DEBUG - CPU LOAD% [29.2, 46.9, 60.8, 75.5, 82.3, 84.9, 86.9, 31.4, 61.5, 73.7, 89.8, 82.0, 35.6, 61.4, 40.9, 62.0, 81.3, 90.7, 94.4, 95.7]
+2025-03-10 18:53:27,547 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:53:27,547 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:53:27,562 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,578 - igfash.gm - DEBUG - python.exe, 4.029999999999999
+2025-03-10 18:53:27,578 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,578 - igfash.gm - DEBUG - python.exe, 4.029999999999999
+2025-03-10 18:53:27,594 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:53:27,610 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:53:27,610 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:53:27,610 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:53:27,625 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,625 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,640 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,642 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,642 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,642 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:53:27,656 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:53:27,656 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:53:27,672 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:53:27,688 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:53:27,809 - igfash.gm - DEBUG - CPU LOAD% [29.3, 46.8, 60.8, 75.5, 82.3, 84.9, 86.9, 31.3, 61.4, 73.6, 89.8, 81.9, 35.7, 61.5, 41.0, 62.0, 81.3, 90.7, 94.4, 95.7]
+2025-03-10 18:53:27,814 - igfash.gm - DEBUG - CPU LOAD% [29.3, 46.8, 60.8, 75.5, 82.3, 84.9, 86.9, 31.3, 61.4, 73.6, 89.8, 81.9, 35.7, 61.5, 41.0, 62.0, 81.3, 90.7, 94.4, 95.7]
+2025-03-10 18:54:01,770 - igfash.gm - INFO - Receiver: 126
+2025-03-10 18:54:01,770 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:54:01,771 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999316512
+2025-03-10 18:54:01,771 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:54:01,771 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:54:10,318 - igfash.gm - INFO - Ground motion estimation computation time: 396.7 seconds
+2025-03-10 18:54:10,318 - igfash.gm - INFO - Estimated PGA: 0.20526691915700415
+2025-03-10 18:54:10,334 - igfash.gm - DEBUG - System Idle Process, 31.95
+2025-03-10 18:54:10,476 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:54:11,070 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:54:11,227 - igfash.gm - DEBUG - python.exe, 4.025
+2025-03-10 18:54:11,239 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:54:11,252 - igfash.gm - INFO - Ground motion estimation computation time: 443.1 seconds
+2025-03-10 18:54:11,252 - igfash.gm - INFO - Estimated PGA: 0.27287453080125673
+2025-03-10 18:54:11,270 - igfash.gm - DEBUG - System Idle Process, 31.895
+2025-03-10 18:54:11,271 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:54:11,329 - igfash.gm - DEBUG - python.exe, 3.975
+2025-03-10 18:54:11,358 - igfash.gm - DEBUG - python.exe, 3.9799999999999995
+2025-03-10 18:54:11,359 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:54:11,381 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:54:11,395 - igfash.gm - DEBUG - python.exe, 3.975
+2025-03-10 18:54:11,396 - igfash.gm - DEBUG - python.exe, 3.965
+2025-03-10 18:54:11,420 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:54:11,429 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:54:11,451 - igfash.gm - DEBUG - python.exe, 3.9799999999999995
+2025-03-10 18:54:11,451 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:54:11,456 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:54:11,476 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:54:11,623 - igfash.gm - DEBUG - CPU LOAD% [29.3, 46.7, 61.0, 75.1, 82.3, 85.2, 87.1, 31.1, 60.6, 73.3, 89.7, 81.9, 35.8, 61.5, 40.8, 61.8, 81.1, 90.5, 94.3, 95.6]
+2025-03-10 18:54:12,097 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:54:12,238 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:54:12,251 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:54:12,283 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:54:12,362 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:54:12,385 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:54:12,386 - igfash.gm - DEBUG - python.exe, 4.029999999999999
+2025-03-10 18:54:12,409 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:54:12,420 - igfash.gm - DEBUG - python.exe, 3.9799999999999995
+2025-03-10 18:54:12,420 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:54:12,444 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:54:12,456 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:54:12,478 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:54:12,478 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:54:12,500 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:54:12,624 - igfash.gm - DEBUG - CPU LOAD% [29.4, 46.6, 60.8, 75.0, 82.2, 85.0, 87.0, 31.3, 61.1, 73.6, 89.6, 81.9, 35.7, 61.7, 41.0, 61.9, 81.1, 90.5, 94.3, 95.6]
+2025-03-10 18:54:14,210 - igfash.gm - INFO - Ground motion estimation computation time: 402.5 seconds
+2025-03-10 18:54:14,211 - igfash.gm - INFO - Estimated PGA: 0.22855103524018186
+2025-03-10 18:54:14,228 - igfash.gm - DEBUG - System Idle Process, 31.955000000000002
+2025-03-10 18:54:14,370 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:54:15,013 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:54:15,154 - igfash.gm - DEBUG - python.exe, 4.025
+2025-03-10 18:54:15,154 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:54:15,201 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:54:15,264 - igfash.gm - DEBUG - python.exe, 3.975
+2025-03-10 18:54:15,281 - igfash.gm - DEBUG - python.exe, 3.9799999999999995
+2025-03-10 18:54:15,281 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:54:15,297 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:54:15,312 - igfash.gm - DEBUG - python.exe, 3.975
+2025-03-10 18:54:15,312 - igfash.gm - DEBUG - python.exe, 3.965
+2025-03-10 18:54:15,344 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:54:15,344 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:54:15,377 - igfash.gm - DEBUG - python.exe, 3.9799999999999995
+2025-03-10 18:54:15,377 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:54:15,391 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:54:15,532 - igfash.gm - DEBUG - CPU LOAD% [29.3, 46.7, 61.0, 75.1, 82.2, 85.1, 87.1, 31.1, 60.7, 73.3, 89.6, 81.9, 35.7, 61.5, 40.8, 61.8, 81.1, 90.5, 94.3, 95.6]
+2025-03-10 18:54:15,611 - igfash.gm - INFO - Ground motion estimation computation time: 443.1 seconds
+2025-03-10 18:54:15,611 - igfash.gm - INFO - Estimated PGA: 0.2675601330777006
+2025-03-10 18:54:15,645 - igfash.gm - DEBUG - System Idle Process, 31.880000000000003
+2025-03-10 18:54:15,833 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:54:16,455 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:54:16,626 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:54:16,640 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:54:16,675 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:54:16,746 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:54:16,770 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:54:16,771 - igfash.gm - DEBUG - python.exe, 4.029999999999999
+2025-03-10 18:54:16,794 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:54:16,807 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:54:16,807 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:54:16,832 - igfash.gm - DEBUG - python.exe, 4.0
+2025-03-10 18:54:16,845 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:54:16,871 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:54:16,872 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:54:16,895 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:54:17,038 - igfash.gm - DEBUG - CPU LOAD% [29.4, 46.6, 60.8, 75.0, 82.2, 85.0, 87.0, 31.3, 61.1, 73.6, 89.6, 81.9, 35.7, 61.8, 41.0, 61.9, 81.1, 90.5, 94.3, 95.6]
+2025-03-10 18:54:36,811 - igfash.gm - INFO - Receiver: 165
+2025-03-10 18:54:36,811 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:54:36,812 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999633485
+2025-03-10 18:54:36,812 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:54:36,812 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:54:43,631 - igfash.gm - INFO - Receiver: 263
+2025-03-10 18:54:43,631 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:54:43,631 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999994831235
+2025-03-10 18:54:43,631 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:54:43,632 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:54:46,358 - igfash.gm - INFO - Receiver: 127
+2025-03-10 18:54:46,358 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:54:46,359 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999997627054
+2025-03-10 18:54:46,359 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:54:46,359 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:54:56,162 - igfash.gm - INFO - Ground motion estimation computation time: 447.7 seconds
+2025-03-10 18:54:56,162 - igfash.gm - INFO - Estimated PGA: 0.2679601456265136
+2025-03-10 18:54:56,178 - igfash.gm - DEBUG - System Idle Process, 31.9
+2025-03-10 18:54:56,336 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:54:56,907 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:54:57,042 - igfash.gm - DEBUG - python.exe, 4.025
+2025-03-10 18:54:57,058 - igfash.gm - DEBUG - python.exe, 4.01
+2025-03-10 18:54:57,089 - igfash.gm - DEBUG - python.exe, 4.015
+2025-03-10 18:54:57,152 - igfash.gm - DEBUG - python.exe, 3.9799999999999995
+2025-03-10 18:54:57,183 - igfash.gm - DEBUG - python.exe, 3.9850000000000003
+2025-03-10 18:54:57,183 - igfash.gm - DEBUG - python.exe, 4.0200000000000005
+2025-03-10 18:54:57,207 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:54:57,215 - igfash.gm - DEBUG - python.exe, 3.9799999999999995
+2025-03-10 18:54:57,215 - igfash.gm - DEBUG - python.exe, 3.975
+2025-03-10 18:54:57,231 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:54:57,246 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:54:57,262 - igfash.gm - DEBUG - python.exe, 3.9899999999999998
+2025-03-10 18:54:57,262 - igfash.gm - DEBUG - python.exe, 4.005
+2025-03-10 18:54:57,278 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:54:57,419 - igfash.gm - DEBUG - CPU LOAD% [29.3, 46.6, 60.9, 75.1, 82.5, 84.9, 87.4, 31.1, 60.7, 73.7, 89.4, 82.2, 35.4, 61.2, 40.7, 61.8, 81.5, 90.7, 94.5, 95.7]
+2025-03-10 18:55:29,240 - igfash.gm - INFO - Receiver: 229
+2025-03-10 18:55:29,240 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:55:29,240 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999815026
+2025-03-10 18:55:29,240 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:55:29,240 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:55:30,830 - igfash.gm - INFO - Receiver: 164
+2025-03-10 18:55:30,830 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:55:30,830 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999914087
+2025-03-10 18:55:30,830 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:55:30,830 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:55:30,846 - igfash.gm - INFO - Receiver: 246
+2025-03-10 18:55:30,846 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:55:30,846 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999994408406
+2025-03-10 18:55:30,846 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:55:30,846 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:55:31,643 - igfash.gm - INFO - Receiver: 149
+2025-03-10 18:55:31,643 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:55:31,643 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999998246815
+2025-03-10 18:55:31,643 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:55:31,643 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:56:15,769 - igfash.gm - INFO - Receiver: 245
+2025-03-10 18:56:15,769 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:56:15,769 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999405527
+2025-03-10 18:56:15,769 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:56:15,769 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:56:17,664 - igfash.gm - INFO - Receiver: 184
+2025-03-10 18:56:17,664 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:56:17,664 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999928893
+2025-03-10 18:56:17,664 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:56:17,664 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:56:20,646 - igfash.gm - INFO - Receiver: 267
+2025-03-10 18:56:20,646 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:56:20,646 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999722858
+2025-03-10 18:56:20,646 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:56:20,646 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:56:22,333 - igfash.gm - INFO - Receiver: 67
+2025-03-10 18:56:22,333 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:56:22,333 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999964904
+2025-03-10 18:56:22,333 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:56:22,333 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:57:05,063 - igfash.gm - INFO - Receiver: 223
+2025-03-10 18:57:05,063 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 18:57:05,063 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999998867055
+2025-03-10 18:57:05,063 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 18:57:05,063 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 18:58:28,603 - igfash.gm - INFO - Ground motion estimation computation time: 357.3 seconds
+2025-03-10 18:58:28,603 - igfash.gm - INFO - Estimated PGA: 0.23919435367946285
+2025-03-10 18:58:28,619 - igfash.gm - DEBUG - System Idle Process, 32.510000000000005
+2025-03-10 18:58:28,761 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:58:29,398 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:58:29,556 - igfash.gm - DEBUG - python.exe, 3.9549999999999996
+2025-03-10 18:58:29,572 - igfash.gm - DEBUG - python.exe, 3.96
+2025-03-10 18:58:29,620 - igfash.gm - DEBUG - python.exe, 3.965
+2025-03-10 18:58:29,696 - igfash.gm - DEBUG - python.exe, 3.94
+2025-03-10 18:58:29,716 - igfash.gm - DEBUG - python.exe, 3.9299999999999997
+2025-03-10 18:58:29,716 - igfash.gm - DEBUG - python.exe, 3.935
+2025-03-10 18:58:29,730 - igfash.gm - DEBUG - python.exe, 3.935
+2025-03-10 18:58:29,761 - igfash.gm - DEBUG - python.exe, 3.9450000000000003
+2025-03-10 18:58:29,761 - igfash.gm - DEBUG - python.exe, 3.925
+2025-03-10 18:58:29,761 - igfash.gm - DEBUG - python.exe, 3.965
+2025-03-10 18:58:29,777 - igfash.gm - DEBUG - python.exe, 3.9549999999999996
+2025-03-10 18:58:29,797 - igfash.gm - DEBUG - python.exe, 3.9549999999999996
+2025-03-10 18:58:29,797 - igfash.gm - DEBUG - python.exe, 3.935
+2025-03-10 18:58:29,840 - igfash.gm - DEBUG - python.exe, 3.9549999999999996
+2025-03-10 18:58:29,982 - igfash.gm - DEBUG - CPU LOAD% [31.3, 49.5, 61.3, 75.5, 81.8, 85.2, 84.6, 31.7, 58.2, 70.0, 88.8, 79.4, 38.1, 63.7, 41.0, 60.3, 77.6, 87.5, 92.8, 94.9]
+2025-03-10 18:59:09,927 - igfash.gm - INFO - Ground motion estimation computation time: 263.6 seconds
+2025-03-10 18:59:09,927 - igfash.gm - INFO - Estimated PGA: 0.24985276060193115
+2025-03-10 18:59:09,937 - igfash.gm - DEBUG - System Idle Process, 32.475
+2025-03-10 18:59:10,110 - igfash.gm - DEBUG - python.exe, 3.995
+2025-03-10 18:59:10,788 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:59:10,945 - igfash.gm - DEBUG - python.exe, 3.965
+2025-03-10 18:59:10,959 - igfash.gm - DEBUG - python.exe, 3.965
+2025-03-10 18:59:10,993 - igfash.gm - DEBUG - python.exe, 3.96
+2025-03-10 18:59:11,059 - igfash.gm - DEBUG - python.exe, 3.95
+2025-03-10 18:59:11,071 - igfash.gm - DEBUG - python.exe, 3.9299999999999997
+2025-03-10 18:59:11,086 - igfash.gm - DEBUG - python.exe, 3.9299999999999997
+2025-03-10 18:59:11,102 - igfash.gm - DEBUG - python.exe, 3.9299999999999997
+2025-03-10 18:59:11,118 - igfash.gm - DEBUG - python.exe, 3.9549999999999996
+2025-03-10 18:59:11,118 - igfash.gm - DEBUG - python.exe, 3.9450000000000003
+2025-03-10 18:59:11,140 - igfash.gm - DEBUG - python.exe, 3.97
+2025-03-10 18:59:11,150 - igfash.gm - DEBUG - python.exe, 3.9450000000000003
+2025-03-10 18:59:11,166 - igfash.gm - DEBUG - python.exe, 3.9450000000000003
+2025-03-10 18:59:11,181 - igfash.gm - DEBUG - python.exe, 3.925
+2025-03-10 18:59:11,212 - igfash.gm - DEBUG - python.exe, 3.9549999999999996
+2025-03-10 18:59:11,359 - igfash.gm - DEBUG - CPU LOAD% [32.5, 51.4, 62.2, 76.5, 82.2, 86.2, 83.6, 32.1, 58.1, 68.7, 88.7, 77.0, 39.3, 64.5, 41.5, 59.7, 76.1, 86.2, 92.3, 94.6]
+2025-03-10 18:59:53,419 - igfash.gm - INFO - Ground motion estimation computation time: 397.9 seconds
+2025-03-10 18:59:53,419 - igfash.gm - INFO - Estimated PGA: 0.26735355953937123
+2025-03-10 18:59:53,434 - igfash.gm - DEBUG - System Idle Process, 32.795
+2025-03-10 18:59:53,603 - igfash.gm - DEBUG - python.exe, 3.96
+2025-03-10 18:59:54,223 - igfash.gm - DEBUG - python.exe, 3.965
+2025-03-10 18:59:54,375 - igfash.gm - DEBUG - python.exe, 3.9450000000000003
+2025-03-10 18:59:54,389 - igfash.gm - DEBUG - python.exe, 3.95
+2025-03-10 18:59:54,419 - igfash.gm - DEBUG - python.exe, 3.94
+2025-03-10 18:59:54,488 - igfash.gm - DEBUG - python.exe, 3.925
+2025-03-10 18:59:54,514 - igfash.gm - DEBUG - python.exe, 3.9200000000000004
+2025-03-10 18:59:54,515 - igfash.gm - DEBUG - python.exe, 3.9200000000000004
+2025-03-10 18:59:54,540 - igfash.gm - DEBUG - python.exe, 3.925
+2025-03-10 18:59:54,572 - igfash.gm - DEBUG - python.exe, 3.9299999999999997
+2025-03-10 18:59:54,573 - igfash.gm - DEBUG - python.exe, 3.905
+2025-03-10 18:59:54,586 - igfash.gm - DEBUG - python.exe, 3.9549999999999996
+2025-03-10 18:59:54,600 - igfash.gm - DEBUG - python.exe, 3.9200000000000004
+2025-03-10 18:59:54,623 - igfash.gm - DEBUG - python.exe, 3.9450000000000003
+2025-03-10 18:59:54,624 - igfash.gm - DEBUG - python.exe, 3.915
+2025-03-10 18:59:54,646 - igfash.gm - DEBUG - python.exe, 3.935
+2025-03-10 18:59:54,812 - igfash.gm - DEBUG - CPU LOAD% [31.4, 49.6, 61.5, 75.6, 81.7, 85.4, 83.6, 31.8, 58.0, 69.3, 87.5, 77.6, 37.9, 63.6, 40.5, 59.8, 77.2, 87.2, 92.7, 95.0]
+2025-03-10 19:00:35,162 - igfash.gm - INFO - Receiver: 87
+2025-03-10 19:00:35,163 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 19:00:35,163 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.049999999998745444
+2025-03-10 19:00:35,163 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 19:00:35,163 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 19:00:40,532 - igfash.gm - INFO - Ground motion estimation computation time: 444.4 seconds
+2025-03-10 19:00:40,532 - igfash.gm - INFO - Estimated PGA: 0.2739856270821317
+2025-03-10 19:00:40,550 - igfash.gm - DEBUG - System Idle Process, 33.185
+2025-03-10 19:00:40,708 - igfash.gm - DEBUG - python.exe, 3.9450000000000003
+2025-03-10 19:00:41,298 - igfash.gm - DEBUG - python.exe, 3.95
+2025-03-10 19:00:41,444 - igfash.gm - DEBUG - python.exe, 3.9299999999999997
+2025-03-10 19:00:41,458 - igfash.gm - DEBUG - python.exe, 3.935
+2025-03-10 19:00:41,494 - igfash.gm - DEBUG - python.exe, 3.925
+2025-03-10 19:00:41,559 - igfash.gm - DEBUG - python.exe, 3.91
+2025-03-10 19:00:41,580 - igfash.gm - DEBUG - python.exe, 3.905
+2025-03-10 19:00:41,581 - igfash.gm - DEBUG - python.exe, 3.915
+2025-03-10 19:00:41,604 - igfash.gm - DEBUG - python.exe, 3.915
+2025-03-10 19:00:41,629 - igfash.gm - DEBUG - python.exe, 3.91
+2025-03-10 19:00:41,630 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:00:41,644 - igfash.gm - DEBUG - python.exe, 3.94
+2025-03-10 19:00:41,656 - igfash.gm - DEBUG - python.exe, 3.905
+2025-03-10 19:00:41,680 - igfash.gm - DEBUG - python.exe, 3.925
+2025-03-10 19:00:41,680 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:00:41,700 - igfash.gm - DEBUG - python.exe, 3.925
+2025-03-10 19:00:41,863 - igfash.gm - DEBUG - CPU LOAD% [30.9, 49.1, 61.1, 74.6, 80.9, 84.3, 82.2, 31.4, 57.5, 69.3, 85.4, 77.5, 37.3, 63.9, 40.4, 60.1, 77.8, 87.7, 92.9, 94.9]
+2025-03-10 19:00:42,845 - igfash.gm - INFO - Ground motion estimation computation time: 401.1 seconds
+2025-03-10 19:00:42,845 - igfash.gm - INFO - Estimated PGA: 0.289900010571806
+2025-03-10 19:00:42,862 - igfash.gm - DEBUG - System Idle Process, 33.355000000000004
+2025-03-10 19:00:43,009 - igfash.gm - DEBUG - python.exe, 3.935
+2025-03-10 19:00:43,643 - igfash.gm - DEBUG - python.exe, 3.935
+2025-03-10 19:00:43,792 - igfash.gm - DEBUG - python.exe, 3.915
+2025-03-10 19:00:43,806 - igfash.gm - DEBUG - python.exe, 3.925
+2025-03-10 19:00:43,835 - igfash.gm - DEBUG - python.exe, 3.915
+2025-03-10 19:00:43,891 - igfash.gm - DEBUG - python.exe, 3.905
+2025-03-10 19:00:43,915 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:00:43,915 - igfash.gm - DEBUG - python.exe, 3.905
+2025-03-10 19:00:43,935 - igfash.gm - DEBUG - python.exe, 3.905
+2025-03-10 19:00:43,960 - igfash.gm - DEBUG - python.exe, 3.9
+2025-03-10 19:00:43,961 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:00:43,972 - igfash.gm - DEBUG - python.exe, 3.9200000000000004
+2025-03-10 19:00:43,983 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:00:44,004 - igfash.gm - DEBUG - python.exe, 3.915
+2025-03-10 19:00:44,005 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:00:44,025 - igfash.gm - DEBUG - python.exe, 3.91
+2025-03-10 19:00:44,172 - igfash.gm - INFO - Ground motion estimation computation time: 263.5 seconds
+2025-03-10 19:00:44,173 - igfash.gm - INFO - Estimated PGA: 0.24985276060193115
+2025-03-10 19:00:44,192 - igfash.gm - DEBUG - System Idle Process, 33.54
+2025-03-10 19:00:44,213 - igfash.gm - DEBUG - CPU LOAD% [30.9, 49.2, 61.1, 74.3, 80.5, 84.3, 81.5, 31.5, 57.3, 68.7, 85.1, 76.9, 37.6, 64.3, 40.6, 59.9, 77.4, 87.4, 92.6, 94.8]
+2025-03-10 19:00:44,351 - igfash.gm - DEBUG - python.exe, 3.91
+2025-03-10 19:00:44,981 - igfash.gm - DEBUG - python.exe, 3.94
+2025-03-10 19:00:45,140 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:00:45,154 - igfash.gm - DEBUG - python.exe, 3.9
+2025-03-10 19:00:45,191 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:00:45,266 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:00:45,290 - igfash.gm - DEBUG - python.exe, 3.905
+2025-03-10 19:00:45,290 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:00:45,314 - igfash.gm - DEBUG - python.exe, 3.905
+2025-03-10 19:00:45,335 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:00:45,336 - igfash.gm - DEBUG - python.exe, 3.87
+2025-03-10 19:00:45,346 - igfash.gm - DEBUG - python.exe, 3.9
+2025-03-10 19:00:45,357 - igfash.gm - DEBUG - python.exe, 3.8600000000000003
+2025-03-10 19:00:45,382 - igfash.gm - DEBUG - python.exe, 3.905
+2025-03-10 19:00:45,383 - igfash.gm - DEBUG - python.exe, 3.8549999999999995
+2025-03-10 19:00:45,409 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:00:45,603 - igfash.gm - DEBUG - CPU LOAD% [31.3, 50.1, 61.0, 74.3, 80.0, 83.3, 79.7, 31.3, 56.8, 68.1, 83.7, 76.5, 37.5, 64.1, 41.0, 60.3, 77.9, 87.6, 92.7, 94.8]
+2025-03-10 19:01:15,730 - igfash.gm - INFO - Ground motion estimation computation time: 398.9 seconds
+2025-03-10 19:01:15,731 - igfash.gm - INFO - Estimated PGA: 0.2662548161506133
+2025-03-10 19:01:15,750 - igfash.gm - DEBUG - System Idle Process, 33.730000000000004
+2025-03-10 19:01:15,929 - igfash.gm - DEBUG - python.exe, 3.9200000000000004
+2025-03-10 19:01:16,592 - igfash.gm - DEBUG - python.exe, 3.925
+2025-03-10 19:01:16,652 - igfash.gm - INFO - Receiver: 266
+2025-03-10 19:01:16,652 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 19:01:16,652 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999561821
+2025-03-10 19:01:16,653 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 19:01:16,653 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 19:01:16,751 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:01:16,765 - igfash.gm - DEBUG - python.exe, 3.905
+2025-03-10 19:01:16,794 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:01:16,864 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:01:16,886 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:01:16,887 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:01:16,906 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:01:16,926 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:01:16,927 - igfash.gm - DEBUG - python.exe, 3.875
+2025-03-10 19:01:16,938 - igfash.gm - DEBUG - python.exe, 3.9
+2025-03-10 19:01:16,949 - igfash.gm - DEBUG - python.exe, 3.87
+2025-03-10 19:01:16,970 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:01:16,970 - igfash.gm - DEBUG - python.exe, 3.8649999999999998
+2025-03-10 19:01:16,990 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:01:17,155 - igfash.gm - DEBUG - CPU LOAD% [30.7, 49.4, 61.1, 73.7, 80.1, 83.7, 79.9, 30.7, 56.5, 67.7, 83.4, 76.6, 37.2, 64.7, 40.5, 60.0, 77.5, 87.4, 92.7, 94.7]
+2025-03-10 19:01:21,326 - igfash.gm - INFO - Ground motion estimation computation time: 352.1 seconds
+2025-03-10 19:01:21,326 - igfash.gm - INFO - Estimated PGA: 0.24221221297350634
+2025-03-10 19:01:21,344 - igfash.gm - DEBUG - System Idle Process, 33.765
+2025-03-10 19:01:21,519 - igfash.gm - DEBUG - python.exe, 3.9
+2025-03-10 19:01:22,191 - igfash.gm - DEBUG - python.exe, 3.9299999999999997
+2025-03-10 19:01:22,340 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:01:22,354 - igfash.gm - DEBUG - python.exe, 3.9
+2025-03-10 19:01:22,387 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:01:22,458 - igfash.gm - DEBUG - python.exe, 3.88
+2025-03-10 19:01:22,483 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:01:22,484 - igfash.gm - DEBUG - python.exe, 3.9
+2025-03-10 19:01:22,507 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:01:22,531 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:01:22,532 - igfash.gm - DEBUG - python.exe, 3.87
+2025-03-10 19:01:22,544 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:01:22,557 - igfash.gm - DEBUG - python.exe, 3.8649999999999998
+2025-03-10 19:01:22,579 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:01:22,580 - igfash.gm - DEBUG - python.exe, 3.8600000000000003
+2025-03-10 19:01:22,604 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:01:22,782 - igfash.gm - DEBUG - CPU LOAD% [30.8, 49.4, 61.1, 73.4, 79.7, 83.1, 79.4, 30.5, 56.4, 67.8, 82.4, 77.2, 36.6, 64.1, 40.6, 60.5, 78.5, 88.2, 93.0, 94.9]
+2025-03-10 19:01:27,165 - igfash.gm - INFO - Ground motion estimation computation time: 355.5 seconds
+2025-03-10 19:01:27,165 - igfash.gm - INFO - Estimated PGA: 0.24120375499660068
+2025-03-10 19:01:27,184 - igfash.gm - DEBUG - System Idle Process, 33.785000000000004
+2025-03-10 19:01:27,350 - igfash.gm - DEBUG - python.exe, 3.9
+2025-03-10 19:01:27,996 - igfash.gm - DEBUG - python.exe, 3.925
+2025-03-10 19:01:28,184 - igfash.gm - DEBUG - python.exe, 3.88
+2025-03-10 19:01:28,199 - igfash.gm - DEBUG - python.exe, 3.9
+2025-03-10 19:01:28,236 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:01:28,310 - igfash.gm - DEBUG - python.exe, 3.88
+2025-03-10 19:01:28,335 - igfash.gm - DEBUG - python.exe, 3.9
+2025-03-10 19:01:28,336 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:01:28,360 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:01:28,385 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:01:28,386 - igfash.gm - DEBUG - python.exe, 3.87
+2025-03-10 19:01:28,399 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:01:28,412 - igfash.gm - DEBUG - python.exe, 3.8649999999999998
+2025-03-10 19:01:28,435 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:01:28,435 - igfash.gm - DEBUG - python.exe, 3.8600000000000003
+2025-03-10 19:01:28,457 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:01:28,627 - igfash.gm - DEBUG - CPU LOAD% [30.7, 49.5, 61.1, 73.4, 79.6, 83.1, 79.2, 30.4, 56.4, 67.7, 82.2, 77.2, 36.5, 64.1, 40.6, 60.6, 78.7, 88.2, 93.0, 94.9]
+2025-03-10 19:01:58,764 - igfash.gm - INFO - Receiver: 207
+2025-03-10 19:01:58,764 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 19:01:58,765 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999585876
+2025-03-10 19:01:58,765 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 19:01:58,765 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 19:02:08,549 - igfash.gm - INFO - Ground motion estimation computation time: 397.7 seconds
+2025-03-10 19:02:08,549 - igfash.gm - INFO - Estimated PGA: 0.20445173560805116
+2025-03-10 19:02:08,566 - igfash.gm - DEBUG - System Idle Process, 34.055
+2025-03-10 19:02:08,734 - igfash.gm - DEBUG - python.exe, 3.88
+2025-03-10 19:02:09,349 - igfash.gm - DEBUG - python.exe, 3.905
+2025-03-10 19:02:09,501 - igfash.gm - DEBUG - python.exe, 3.875
+2025-03-10 19:02:09,514 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:02:09,553 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:02:09,614 - igfash.gm - DEBUG - python.exe, 3.8600000000000003
+2025-03-10 19:02:09,632 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:02:09,632 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:02:09,654 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:02:09,677 - igfash.gm - DEBUG - python.exe, 3.88
+2025-03-10 19:02:09,677 - igfash.gm - DEBUG - python.exe, 3.8600000000000003
+2025-03-10 19:02:09,688 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:02:09,700 - igfash.gm - DEBUG - python.exe, 3.8549999999999995
+2025-03-10 19:02:09,723 - igfash.gm - DEBUG - python.exe, 3.875
+2025-03-10 19:02:09,723 - igfash.gm - DEBUG - python.exe, 3.845
+2025-03-10 19:02:09,746 - igfash.gm - DEBUG - python.exe, 3.875
+2025-03-10 19:02:09,917 - igfash.gm - DEBUG - CPU LOAD% [30.0, 49.4, 61.1, 73.2, 79.1, 83.1, 78.3, 29.9, 56.1, 67.2, 80.8, 76.6, 35.8, 63.9, 40.2, 60.8, 79.2, 88.6, 93.2, 95.0]
+2025-03-10 19:02:10,487 - igfash.gm - INFO - Ground motion estimation computation time: 446.9 seconds
+2025-03-10 19:02:10,488 - igfash.gm - INFO - Estimated PGA: 0.2737307432090242
+2025-03-10 19:02:10,507 - igfash.gm - DEBUG - System Idle Process, 34.075
+2025-03-10 19:02:10,680 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:02:11,347 - igfash.gm - DEBUG - python.exe, 3.9
+2025-03-10 19:02:11,500 - igfash.gm - DEBUG - python.exe, 3.88
+2025-03-10 19:02:11,514 - igfash.gm - DEBUG - python.exe, 3.8899999999999997
+2025-03-10 19:02:11,543 - igfash.gm - DEBUG - python.exe, 3.88
+2025-03-10 19:02:11,611 - igfash.gm - DEBUG - python.exe, 3.8600000000000003
+2025-03-10 19:02:11,633 - igfash.gm - DEBUG - python.exe, 3.875
+2025-03-10 19:02:11,634 - igfash.gm - DEBUG - python.exe, 3.88
+2025-03-10 19:02:11,658 - igfash.gm - DEBUG - python.exe, 3.88
+2025-03-10 19:02:11,681 - igfash.gm - DEBUG - python.exe, 3.8850000000000002
+2025-03-10 19:02:11,682 - igfash.gm - DEBUG - python.exe, 3.8649999999999998
+2025-03-10 19:02:11,695 - igfash.gm - DEBUG - python.exe, 3.8950000000000005
+2025-03-10 19:02:11,707 - igfash.gm - DEBUG - python.exe, 3.8600000000000003
+2025-03-10 19:02:11,727 - igfash.gm - DEBUG - python.exe, 3.875
+2025-03-10 19:02:11,727 - igfash.gm - DEBUG - python.exe, 3.845
+2025-03-10 19:02:11,747 - igfash.gm - DEBUG - python.exe, 3.88
+2025-03-10 19:02:11,915 - igfash.gm - DEBUG - CPU LOAD% [30.0, 49.4, 61.2, 73.5, 79.3, 83.6, 78.6, 30.0, 56.1, 67.0, 81.5, 76.0, 36.4, 64.5, 40.1, 60.2, 78.3, 87.9, 92.9, 94.8]
+2025-03-10 19:02:45,798 - igfash.gm - INFO - Receiver: 50
+2025-03-10 19:02:45,798 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 19:02:45,798 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999974318
+2025-03-10 19:02:45,799 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 19:02:45,799 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 19:02:48,924 - igfash.gm - INFO - Receiver: 302
+2025-03-10 19:02:48,924 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 19:02:48,924 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999908685
+2025-03-10 19:02:48,924 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 19:02:48,925 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 19:02:51,188 - igfash.gm - INFO - Receiver: 322
+2025-03-10 19:02:51,188 - igfash.gm - INFO - Function value at PGA = 0.0 : 84.8457559182304
+2025-03-10 19:02:51,188 - igfash.gm - INFO - Function value at PGA = 1.0 : -0.04999999999962932
+2025-03-10 19:02:51,188 - igfash.gm - INFO - Function value at PGA = 2.0 : -0.05
+2025-03-10 19:02:51,188 - igfash.gm - DEBUG - Pyroots Brenth, 0.01 precision
+2025-03-10 19:02:53,426 - igfash.gm - INFO - Ground motion estimation computation time: 442.6 seconds
+2025-03-10 19:02:53,427 - igfash.gm - INFO - Estimated PGA: 0.27649621497819693
+2025-03-10 19:02:53,445 - igfash.gm - DEBUG - System Idle Process, 34.515
+2025-03-10 19:02:53,617 - igfash.gm - DEBUG - python.exe, 3.8649999999999998
+2025-03-10 19:02:54,294 - igfash.gm - DEBUG - python.exe, 3.875
+2025-03-10 19:02:54,448 - igfash.gm - DEBUG - python.exe, 3.85
+2025-03-10 19:02:54,459 - igfash.gm - DEBUG - python.exe, 3.87
+2025-03-10 19:02:54,490 - igfash.gm - DEBUG - python.exe, 3.8549999999999995
+2025-03-10 19:02:54,559 - igfash.gm - DEBUG - python.exe, 3.835
+2025-03-10 19:02:54,580 - igfash.gm - DEBUG - python.exe, 3.8649999999999998
+2025-03-10 19:02:54,581 - igfash.gm - DEBUG - python.exe, 3.8649999999999998
+2025-03-10 19:02:54,600 - igfash.gm - DEBUG - python.exe, 3.8649999999999998
+2025-03-10 19:02:54,618 - igfash.gm - DEBUG - python.exe, 3.8649999999999998
+2025-03-10 19:02:54,618 - igfash.gm - DEBUG - python.exe, 3.835
+2025-03-10 19:02:54,630 - igfash.gm - DEBUG - python.exe, 3.8649999999999998
+2025-03-10 19:02:54,642 - igfash.gm - DEBUG - python.exe, 3.825
+2025-03-10 19:02:54,663 - igfash.gm - DEBUG - python.exe, 3.8549999999999995
+2025-03-10 19:02:54,663 - igfash.gm - DEBUG - python.exe, 3.825
+2025-03-10 19:02:54,686 - igfash.gm - DEBUG - python.exe, 3.845
+2025-03-10 19:02:54,843 - igfash.gm - DEBUG - CPU LOAD% [29.1, 48.3, 60.5, 72.7, 78.4, 82.5, 77.6, 29.5, 55.3, 67.2, 79.5, 76.2, 35.2, 63.8, 39.5, 60.4, 79.3, 88.7, 93.3, 95.0]
+2025-03-10 19:02:58,529 - igfash.gm - INFO - Ground motion estimation computation time: 400.8 seconds
+2025-03-10 19:02:58,530 - igfash.gm - INFO - Estimated PGA: 0.19716915963174514
+2025-03-10 19:02:58,548 - igfash.gm - DEBUG - System Idle Process, 34.72
+2025-03-10 19:02:58,722 - igfash.gm - DEBUG - python.exe, 3.85
+2025-03-10 19:02:59,403 - igfash.gm - DEBUG - python.exe, 3.8600000000000003
+2025-03-10 19:02:59,551 - igfash.gm - DEBUG - python.exe, 3.835
+2025-03-10 19:02:59,564 - igfash.gm - DEBUG - python.exe, 3.8549999999999995
+2025-03-10 19:02:59,592 - igfash.gm - DEBUG - python.exe, 3.835
+2025-03-10 19:02:59,651 - igfash.gm - DEBUG - python.exe, 3.8200000000000003
+2025-03-10 19:02:59,672 - igfash.gm - DEBUG - python.exe, 3.87
+2025-03-10 19:02:59,673 - igfash.gm - DEBUG - python.exe, 3.8549999999999995
+2025-03-10 19:02:59,694 - igfash.gm - DEBUG - python.exe, 3.8600000000000003
+2025-03-10 19:02:59,715 - igfash.gm - DEBUG - python.exe, 3.8549999999999995
+2025-03-10 19:02:59,716 - igfash.gm - DEBUG - python.exe, 3.8200000000000003
+2025-03-10 19:02:59,728 - igfash.gm - DEBUG - python.exe, 3.85
+2025-03-10 19:02:59,739 - igfash.gm - DEBUG - python.exe, 3.81
+2025-03-10 19:02:59,761 - igfash.gm - DEBUG - python.exe, 3.85
+2025-03-10 19:02:59,761 - igfash.gm - DEBUG - python.exe, 3.8049999999999997
+2025-03-10 19:02:59,781 - igfash.gm - DEBUG - python.exe, 3.835
+2025-03-10 19:02:59,937 - igfash.gm - DEBUG - CPU LOAD% [28.9, 48.5, 60.4, 72.9, 78.1, 82.2, 76.6, 29.3, 55.1, 66.6, 78.8, 75.6, 35.1, 63.9, 39.3, 60.3, 79.4, 88.8, 93.3, 95.1]
+2025-03-10 19:03:05,787 - igfash.gm - INFO - Ground motion estimation computation time: 403.4 seconds
+2025-03-10 19:03:05,787 - igfash.gm - INFO - Estimated PGA: 0.16811990918452657
+2025-03-10 19:03:05,804 - igfash.gm - DEBUG - System Idle Process, 34.87
+2025-03-10 19:03:05,968 - igfash.gm - DEBUG - python.exe, 3.84
+2025-03-10 19:03:06,600 - igfash.gm - DEBUG - python.exe, 3.8549999999999995
+2025-03-10 19:03:06,752 - igfash.gm - DEBUG - python.exe, 3.8200000000000003
+2025-03-10 19:03:06,766 - igfash.gm - DEBUG - python.exe, 3.845
+2025-03-10 19:03:06,797 - igfash.gm - DEBUG - python.exe, 3.825
+2025-03-10 19:03:06,860 - igfash.gm - DEBUG - python.exe, 3.815
+2025-03-10 19:03:06,883 - igfash.gm - DEBUG - python.exe, 3.8649999999999998
+2025-03-10 19:03:06,884 - igfash.gm - DEBUG - python.exe, 3.85
+2025-03-10 19:03:06,905 - igfash.gm - DEBUG - python.exe, 3.85
+2025-03-10 19:03:06,926 - igfash.gm - DEBUG - python.exe, 3.845
+2025-03-10 19:03:06,926 - igfash.gm - DEBUG - python.exe, 3.815
+2025-03-10 19:03:06,935 - igfash.gm - DEBUG - python.exe, 3.84
+2025-03-10 19:03:06,947 - igfash.gm - DEBUG - python.exe, 3.8049999999999997
+2025-03-10 19:03:06,979 - igfash.gm - DEBUG - python.exe, 3.835
+2025-03-10 19:03:06,979 - igfash.gm - DEBUG - python.exe, 3.7950000000000004
+2025-03-10 19:03:07,001 - igfash.gm - DEBUG - python.exe, 3.8299999999999996
+2025-03-10 19:03:07,161 - igfash.gm - DEBUG - CPU LOAD% [28.9, 48.4, 60.2, 72.7, 77.9, 82.0, 76.4, 29.2, 54.9, 66.5, 78.6, 75.5, 34.9, 63.8, 39.1, 60.1, 79.2, 88.6, 93.3, 95.0]
