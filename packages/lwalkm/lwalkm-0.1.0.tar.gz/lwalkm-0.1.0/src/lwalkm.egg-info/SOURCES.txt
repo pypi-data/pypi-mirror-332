@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/lwalkm.egg-info/PKG-INFO
+src/lwalkm.egg-info/SOURCES.txt
+src/lwalkm.egg-info/dependency_links.txt
+src/lwalkm.egg-info/entry_points.txt
+src/lwalkm.egg-info/requires.txt
+src/lwalkm.egg-info/top_level.txt
+tests/test_lwalkm.py
