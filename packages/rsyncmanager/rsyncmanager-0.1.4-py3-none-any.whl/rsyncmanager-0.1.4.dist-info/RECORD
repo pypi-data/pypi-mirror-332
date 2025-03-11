@@ -1,0 +1,10 @@
+rsyncmanager/__init__.py,sha256=sG-LAqxhUoMPVhiV6SkmZYpWUKDF4Ac6FJqHPlhTSMU,39
+rsyncmanager/rsyncmanager.py,sha256=t2jiDBd6IPLGBZn8clMLuMTBUusN4DdtnZMG-7tctNs,20503
+rsyncmanager/utils.py,sha256=-7gvG4sxnv7yqmGVbdy_ossID8h0CWLXlyMxfJQhlU8,1547
+rsyncmanager/version.py,sha256=M5h6APi0z4vEqeFBILlEaTaZqkKVv5Ituw_j11Ycg_4,4459
+rsyncmanager/test/__init__.py,sha256=msNAJ6Tw6wZ_MOqNEjmecxdGjBBqF2jCeCFfiFi8Gq8,1621
+rsyncmanager/test/test_rsyncmanager.py,sha256=3kQOxgnGYT-56dThSscOjsNNtkc7e9i8gf5DRmRJJVM,8059
+rsyncmanager-0.1.4.dist-info/METADATA,sha256=QaBQXtFQ9ZflcJhZlR4WG66qQ6ZQn3z6z8_KWE3lySc,649
+rsyncmanager-0.1.4.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+rsyncmanager-0.1.4.dist-info/top_level.txt,sha256=aJD1RaV37FHSNGtSumSg7XXTku9bm0Z63LuwyKxsmaA,13
+rsyncmanager-0.1.4.dist-info/RECORD,,
