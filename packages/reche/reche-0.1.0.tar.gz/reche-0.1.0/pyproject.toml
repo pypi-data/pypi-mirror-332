@@ -1,0 +1,16 @@
+[project]
+name = "reche"
+version = "0.1.0"
+description = "Reche (Redis Cache) is a Python library that provides a simple interface for caching data in Redis."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["redis>=5.2.1"]
+
+[dependency-groups]
+dev = ["pytest>=8.3.5", "pytest-asyncio>=0.25.3"]
+
+
+[tool.pyright]
+executionEnvironments = [{ root = "reche" }]
+venvPath = "."
+venv = ".venv"
