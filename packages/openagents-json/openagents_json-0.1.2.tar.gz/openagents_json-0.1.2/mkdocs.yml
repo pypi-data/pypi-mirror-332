@@ -1,0 +1,75 @@
+site_name: OpenAgents JSON
+site_description: A modern framework for building AI agents in Python
+site_author: OpenAgents Team
+repo_url: https://github.com/openagents/openagents-json
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  favicon: assets/favicon.ico
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - attr_list
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          selection:
+            docstring_style: google
+          rendering:
+            show_source: true
+            show_signature_annotations: true
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Architecture: architecture.md
+  - Components:
+      - Jobs: jobs.md
+      - Execution Control: execution-control.md
+      - Monitoring and Observability: monitoring.md
+      - Workflow: workflow.md
+      - Workflow Schema: workflow-schema.md
+  - Integrations:
+      - Database Integrations: integrations/database.md
+      - API Integrations: integrations/api.md
+      - FastAPI Integration: fastapi-integration.md
+  - Examples:
+      - Basic Usage: examples/basic.md
+      - Advanced Usage: examples/advanced.md
+  - API Reference:
+      - Job: api/job.md
+      - Workflow: api/workflow.md
+      - Storage: api/storage.md
+      - Events: api/events.md
+      - Monitoring: api/monitoring.md
+  - Contributing: 
+      - Guide: contributing.md
+      - Development Setup: development.md
+      - CI/CD Pipeline: ci-cd.md
+      - Settings: settings.md 

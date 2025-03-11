@@ -1,0 +1,112 @@
+/**
+ * Styles for page components
+ */
+
+/* Common styles for loading, error, and not found states */
+.loading,
+.error,
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background-color: #f5f8fa;
+  color: #586069;
+  font-size: 1rem;
+}
+
+.error {
+  color: #cb2431;
+  background-color: #ffeef0;
+}
+
+.not-found {
+  color: #6a737d;
+  background-color: #f6f8fa;
+}
+
+/* Workflow detail page */
+.workflow-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.workflow-detail-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.workflow-detail-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.75rem;
+  color: #24292e;
+}
+
+.workflow-detail-header p {
+  margin: 0 0 1rem 0;
+  color: #586069;
+  font-size: 1rem;
+}
+
+.workflow-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #6a737d;
+}
+
+.workflow-version,
+.workflow-author {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background-color: #f1f8ff;
+  border-radius: 3px;
+}
+
+/* Workflow sections */
+.workflow-visualization,
+.workflow-details {
+  margin-bottom: 2rem;
+}
+
+.workflow-visualization h2,
+.workflow-details h2,
+.workflow-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #24292e;
+}
+
+.workflow-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+}
+
+.workflow-inputs,
+.workflow-outputs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.workflow-inputs li,
+.workflow-outputs li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eaecef;
+}
+
+.workflow-inputs li:last-child,
+.workflow-outputs li:last-child {
+  border-bottom: none;
+}
+
+.required {
+  color: #cb2431;
+  margin-left: 0.25rem;
+} 

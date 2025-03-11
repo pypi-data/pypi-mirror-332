@@ -1,0 +1,226 @@
+{
+  "title": "OpenAgents JSON Settings Schema",
+  "description": "Schema for OpenAgents JSON settings",
+  "type": "object",
+  "properties": {
+    "app": {
+      "type": "object",
+      "description": "Application-wide settings",
+      "properties": {
+        "app_name": {
+          "type": "string",
+          "description": "Name of the application",
+          "default": "OpenAgents JSON"
+        },
+        "debug": {
+          "type": "boolean",
+          "description": "Enable debug mode with detailed logging and error messages",
+          "default": false
+        },
+        "log_level": {
+          "type": "string",
+          "description": "Logging level for the application",
+          "enum": ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
+          "default": "INFO"
+        },
+        "secret_key": {
+          "type": "string",
+          "description": "Secret key for cryptographic signing. Must be set in production",
+          "format": "password"
+        },
+        "environment": {
+          "type": "string",
+          "description": "Application environment",
+          "enum": ["development", "testing", "production"],
+          "default": "development"
+        },
+        "api_prefix": {
+          "type": "string",
+          "description": "Prefix for API routes",
+          "default": "/api"
+        }
+      }
+    },
+    "registry": {
+      "type": "object",
+      "description": "Settings for component registry",
+      "properties": {
+        "auto_discover": {
+          "type": "boolean",
+          "description": "Automatically discover agents in the specified modules",
+          "default": true
+        },
+        "modules": {
+          "type": "array",
+          "description": "Modules to scan for agent registrations",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        }
+      }
+    },
+    "workflow": {
+      "type": "object",
+      "description": "Settings for workflow management",
+      "properties": {
+        "validation_mode": {
+          "type": "string",
+          "description": "Validation mode for workflows: strict, lenient, or none",
+          "enum": ["strict", "lenient", "none"],
+          "default": "strict"
+        }
+      }
+    },
+    "agent": {
+      "type": "object",
+      "description": "Settings for AI agents and models",
+      "properties": {
+        "default_llm_provider": {
+          "type": "string",
+          "description": "Default LLM provider to use when not specified explicitly",
+          "enum": ["openai", "anthropic", "local"],
+          "default": "openai"
+        },
+        "openai_api_key": {
+          "type": "string",
+          "description": "OpenAI API key for accessing OpenAI models. Required if using OpenAI",
+          "format": "password"
+        },
+        "anthropic_api_key": {
+          "type": "string",
+          "description": "Anthropic API key for accessing Claude models. Required if using Anthropic",
+          "format": "password"
+        },
+        "default_model": {
+          "type": "string",
+          "description": "Default model identifier to use when not specified explicitly",
+          "default": "gpt-3.5-turbo"
+        },
+        "timeout_seconds": {
+          "type": "integer",
+          "description": "Default timeout in seconds for agent operations",
+          "default": 30,
+          "minimum": 1,
+          "maximum": 300
+        },
+        "max_retries": {
+          "type": "integer",
+          "description": "Maximum number of retries for agent operations",
+          "default": 3,
+          "minimum": 0,
+          "maximum": 10
+        }
+      }
+    },
+    "job": {
+      "type": "object",
+      "description": "Settings for job management and execution",
+      "properties": {
+        "job_retention_days": {
+          "type": "integer",
+          "description": "Number of days to retain completed jobs before cleanup",
+          "default": 30,
+          "minimum": 1
+        },
+        "max_concurrent_jobs": {
+          "type": "integer",
+          "description": "Maximum number of concurrent jobs to execute",
+          "default": 100,
+          "minimum": 1
+        },
+        "default_job_timeout_seconds": {
+          "type": "integer",
+          "description": "Default timeout in seconds for job execution",
+          "default": 3600,
+          "minimum": 1
+        },
+        "default_max_retries": {
+          "type": "integer",
+          "description": "Default maximum number of retries for failed jobs",
+          "default": 3,
+          "minimum": 0
+        },
+        "default_retry_delay_seconds": {
+          "type": "integer",
+          "description": "Default delay in seconds between job retries",
+          "default": 30,
+          "minimum": 1
+        },
+        "store_type": {
+          "type": "string",
+          "description": "Storage type for jobs: memory, file, database",
+          "default": "memory"
+        },
+        "store_path": {
+          "type": "string",
+          "description": "Path for file-based job storage"
+        }
+      }
+    },
+    "storage": {
+      "type": "object",
+      "description": "Settings for data storage and persistence",
+      "properties": {
+        "storage_type": {
+          "type": "string",
+          "description": "Type of storage backend to use for job and state persistence",
+          "enum": ["memory", "file", "redis", "postgres", "sqlite", "mysql"],
+          "default": "memory"
+        },
+        "file_storage_path": {
+          "type": "string",
+          "description": "Path to directory for file storage. Required if storage_type is 'file'"
+        },
+        "redis_url": {
+          "type": "string",
+          "description": "Redis connection URL. Required if storage_type is 'redis'"
+        },
+        "database": {
+          "type": "object",
+          "description": "Database connection settings",
+          "properties": {
+            "dialect": {
+              "type": "string",
+              "description": "Database dialect: sqlite, postgresql, mysql",
+              "enum": ["sqlite", "postgresql", "mysql"],
+              "default": "sqlite"
+            },
+            "path": {
+              "type": "string",
+              "description": "Path for SQLite database",
+              "default": "./openagents.db"
+            },
+            "host": {
+              "type": "string",
+              "description": "Database host",
+              "default": "localhost"
+            },
+            "port": {
+              "type": "integer",
+              "description": "Database port"
+            },
+            "username": {
+              "type": "string",
+              "description": "Database username"
+            },
+            "password": {
+              "type": "string",
+              "description": "Database password",
+              "format": "password"
+            },
+            "name": {
+              "type": "string",
+              "description": "Database name",
+              "default": "openagents"
+            },
+            "connection_string": {
+              "type": "string",
+              "description": "Direct database connection string (overrides other settings)"
+            }
+          }
+        }
+      }
+    }
+  }
+} 
