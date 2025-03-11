@@ -1,0 +1,194 @@
+# common_library
+
+**common_library** is a centralised repository for shared logic and utilities across microservices. It consolidates core functionalities—such as unique ID generation, constructing nodes/diagrams/relationships, and managing Neo4j connections—into one versioned package. This approach enables each microservice to explicitly declare and manage its dependencies while ensuring consistency, reducing redundancy, and allowing controlled updates.
+
+---
+
+## Overview
+
+The **common_library** provides the following components:
+
+- **Factories:**  
+  - **DiagramFactory:** Creates standardised diagram payloads. It supports an optional builder callback (or registration) so that consuming microservices can convert these payloads into their own domain-specific model instances (e.g. IDEF0 diagrams).
+  - **NodeFactory:** Generates node payloads for various node types (such as "function" or "element") with customisable builders.
+  - **RelationshipFactory:** Constructs relationship (edge) payloads to standardise the formation of graph database queries.
+
+- **BaseRepository:**  
+  An abstract repository that encapsulates common operations for interacting with a Neo4j database. It handles driver initialisation, session management, logging, error handling, and query execution. Microservices can inherit from this class to implement domain-specific data access methods while reusing core functionality.
+
+---
+
+## Architecture & Workflow
+
+Below are Mermaid diagrams illustrating how the library interacts with microservices.
+
+### 1. Package Publishing & Consumption
+
+```mermaid
+flowchart TD
+    A[common_library Repository] -->|Build & Publish Package| B[GitHub Packages Registry]
+    B -->|Import Package| C[Microservice A]
+    B -->|Import Package| D[Microservice B]
+    C -->|Uses shared code| E[Domain-Specific Logic]
+    D -->|Uses shared code| E
+```
+
+### 2. Diagram Creation Workflow
+
+```mermaid
+flowchart LR
+    A[Diagram Microservice] --> B[Import DiagramFactory]
+    B --> C[Call DiagramFactory.create_diagram("IDEF0", ...)]
+    C --> D[Generic Diagram Payload is Generated]
+    D --> E{Is a builder supplied?}
+    E -- Yes --> F[Convert payload into a domain-specific IDEF0Diagram model]
+    E -- No --> G[Return generic dictionary payload]
+```
+
+### 3. Node and Relationship Generation
+
+```mermaid
+flowchart TD
+    A[Node Microservice] --> B[Import NodeFactory & RelationshipFactory]
+    B --> C[Create a "function" node using NodeFactory.create_node("function", ...)]
+    B --> D[Create an "element" node using NodeFactory.create_node("element", ...)]
+    B --> E[Generate a relationship using RelationshipFactory.create_relationship(...)]
+```
+
+### 4. BaseRepository Integration
+
+```mermaid
+flowchart LR
+    A[Microservice Repository Layer] --> B[Import BaseRepository]
+    B --> C[Subclass BaseRepository in a CustomRepo]
+    C --> D[CustomRepo Executes Domain-Specific Queries]
+    D --> E[Interacts with Neo4j via GraphDatabase.driver]
+```
+
+---
+
+## Installation & Setup
+
+Install the package (once available) via:
+
+```sh
+pip install common_library==<version>
+```
+
+Alternatively, configure the internal package manager (e.g. GitHub Packages) in a microservice’s dependency file (such as `pyproject.toml`):
+
+```toml
+[project]
+dependencies = [
+    "common_library==<version>"
+]
+
+[tool.uv.sources]
+common_library = { index = "your-internal-pypi" }
+```
+
+---
+
+## Usage Examples
+
+### Importing the Library in a Microservice
+
+```python
+# Import factories and the base repository
+from common_library.factories.diagram_factory import DiagramFactory
+from common_library.factories.node_factory import NodeFactory
+from common_library.factories.relationship_factory import RelationshipFactory
+from common_library.repositories.base_repository import BaseRepository
+
+# Example: Create a diagram with an inline builder (if needed)
+def idef0_builder(**payload):
+    # Convert payload into a service-specific IDEF0Diagram instance
+    from my_diagram_service.models.idef0_diagram import IDEF0Diagram
+    return IDEF0Diagram(**payload)
+
+diagram = DiagramFactory.create_diagram(
+    diagram_type="IDEF0",
+    name="Operational Diagram",
+    project_id="Proj-123",
+    builder=idef0_builder  # Omit if a plain payload is preferred
+)
+print("Diagram:", diagram)
+
+# Example: Create a function node
+node = NodeFactory.create_node("function", name="Data Processor")
+print("Node:", node)
+
+# Example: Create a relationship between nodes
+relationship = RelationshipFactory.create_relationship(
+    rel_type="CONNECTS", source_id="N-abc", target_id="N-def"
+)
+print("Relationship:", relationship)
+
+# Example: Using BaseRepository to interact with Neo4j
+class MyNeo4jRepository(BaseRepository):
+    def create_node_in_db(self, node_payload):
+        query = "CREATE (n $props) RETURN n"
+        return self.execute_query(query, {"props": node_payload})
+
+# Initialise repository with connection details
+repo = MyNeo4jRepository(uri="bolt://neo4j:7687", user="neo4j", password="secret")
+result = repo.create_node_in_db(node)
+print("Query result:", result)
+repo.close()
+```
+
+---
+
+## Explaining the Flow
+
+- **Diagram Service:**  
+  - Imports `DiagramFactory` and registers (or supplies inline) a builder function.
+  - Calls `create_diagram` to obtain either a generic payload or a fully instantiated domain model.
+
+- **Node Service:**  
+  - Uses `NodeFactory` to create nodes and `RelationshipFactory` to establish relationships.
+
+- **Repository Layer:**  
+  - Inherits from `BaseRepository` to manage Neo4j connectivity, execute queries, and log errors robustly.
+
+---
+
+## Additional Mermaid Diagrams
+
+### Overall Interaction Diagram
+
+```mermaid
+flowchart TD
+    A[Microservice Script] -->|Imports| B[common_library Components]
+    B --> C[Generate Payloads for Diagrams, Nodes, Relationships]
+    C --> D[Optional: Convert Payloads via Builder Functions]
+    D --> E[Domain-Specific Models]
+    B --> F[BaseRepository Operations]
+    F --> G[Execute Cypher Queries on Neo4j]
+```
+
+### Microservice Import & Usage Example
+
+```mermaid
+sequenceDiagram
+    participant M as Microservice
+    participant CL as common_library
+    participant DB as Neo4j
+    M->>CL: import factories & BaseRepository
+    M->>CL: create node/diagram via factories
+    M->>CL: optionally register builder functions
+    M->>DB: execute queries via custom repository subclassing BaseRepository
+```
+
+---
+
+## Future Enhancements
+
+- **Extensibility:**  
+  New builder functions can be registered to support additional diagram or node types without modifying the core library.
+
+- **Enhanced Documentation:**  
+  Future releases may include auto-generated documentation from docstrings (e.g. via Sphinx) with more detailed examples.
+
+- **Robust Testing:**  
+  The library is thoroughly tested using `pytest`, ensuring reliability as features and integrations evolve.

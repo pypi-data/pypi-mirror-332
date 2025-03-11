@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "std_methods"
+version = "0.1.0"
+description = "A central repository for shared logic and utilities across microservices."
+authors = [{name="Mattyboy", email="meowmew@cat.com"}]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "build>=1.2.2.post1",
+    "neo4j>=5.28.1",
+    "pytest>=8.3.5",
+    "ruff>=0.9.10",
+    "twine>=6.1.0",
+]
+
+[tool.uv.sources]
+common_library = { index = "abcd" }
