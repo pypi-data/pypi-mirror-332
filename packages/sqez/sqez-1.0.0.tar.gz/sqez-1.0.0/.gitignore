@@ -1,0 +1,16 @@
+# Python
+__pycache__
+.mypy_cache
+/dist
+
+# Test outputs
+.pytest_cache
+
+# TLA+
+*_TTrace_*.tla
+*_TTrace_*.bin
+.tlacache
+states
+
+# Etc.
+/.mk
