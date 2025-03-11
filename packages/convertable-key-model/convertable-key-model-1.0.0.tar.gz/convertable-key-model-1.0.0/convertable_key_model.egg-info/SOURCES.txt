@@ -1,0 +1,6 @@
+setup.py
+convertable_key_model.egg-info/PKG-INFO
+convertable_key_model.egg-info/SOURCES.txt
+convertable_key_model.egg-info/dependency_links.txt
+convertable_key_model.egg-info/requires.txt
+convertable_key_model.egg-info/top_level.txt
