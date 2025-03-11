@@ -1,0 +1,51 @@
+[package]
+name = "nitor-vault"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "Encrypted AWS key-value storage utility"
+license = "Apache-2.0"
+repository = "https://github.com/nitorcreations/vault"
+keywords = ["secrets", "s3", "cli"]
+authors = [
+    "Kalle Ahlström <kalle.ahlstrom@nitor.com",
+    "Akseli Lukkarila <akseli.lukkarila@nitor.com>",
+]
+readme = "README.md"
+
+[dependencies]
+aes-gcm = "0.10.3"
+anyhow = "1.0.97"
+aws-config = { version = "1.5.18", features = ["behavior-version-latest", "rustls"] }
+aws-sdk-cloudformation = { version = "1.68.0", features = ["rustls"] }
+aws-sdk-kms = { version = "1.62.0", features = ["rustls"] }
+aws-sdk-s3 = { version = "1.78.0", features = ["rustls"] }
+aws-sdk-sts = { version = "1.60.0", features = ["behavior-version-latest", "rustls"] }
+base64 = "0.22.1"
+clap = { version = "4.5.30", features = ["derive", "env"] }
+clap_complete = "4.5.45"
+colored = "3.0.0"
+dirs = "6.0.0"
+rand = "0.9.0"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+thiserror = "2.0.12"
+tokio = { version = "1.44.0", features = ["full"] }
+
+[[bin]]
+name = "vault"
+path = "src/main.rs"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+# https://rust-lang.github.io/rust-clippy/master/index.html
+enum_glob_use = "deny"
+unwrap_used = "deny"
+nursery = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
+module_name_repetitions = "allow"
+too_many_arguments = "allow"
