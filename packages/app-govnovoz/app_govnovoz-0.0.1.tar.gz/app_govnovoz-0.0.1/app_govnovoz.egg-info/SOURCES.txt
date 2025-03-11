@@ -1,0 +1,9 @@
+setup.py
+app_govnovoz/__init__.py
+app_govnovoz/math.py
+app_govnovoz/matrica.py
+app_govnovoz.egg-info/PKG-INFO
+app_govnovoz.egg-info/README.md
+app_govnovoz.egg-info/SOURCES.txt
+app_govnovoz.egg-info/dependency_links.txt
+app_govnovoz.egg-info/top_level.txt

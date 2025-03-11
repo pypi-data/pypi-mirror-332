@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: app_govnovoz
+Version: 0.0.1
+Summary: My Package
+Author: Kirill
+Author-email: mumu.moscow@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
