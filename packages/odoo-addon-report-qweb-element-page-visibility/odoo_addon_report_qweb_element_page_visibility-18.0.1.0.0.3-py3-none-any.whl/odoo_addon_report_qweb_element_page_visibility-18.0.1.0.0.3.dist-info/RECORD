@@ -1,0 +1,16 @@
+odoo/addons/report_qweb_element_page_visibility/README.rst,sha256=kAyrSPW4hb4_-PwbTfUZKDadmgLuBnvJftKrMLmWOvI,4454
+odoo/addons/report_qweb_element_page_visibility/__init__.py,sha256=R-EQSzVLf3pixtCULgwNhuvJ9JR-npUvEJcqWPUYAGI,102
+odoo/addons/report_qweb_element_page_visibility/__manifest__.py,sha256=50Ro_mqj4raz-5t5Tawf-NHYSTiUqMaZZFZtzKZpQuk,477
+odoo/addons/report_qweb_element_page_visibility/i18n/it.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/report_qweb_element_page_visibility/i18n/report_qweb_element_page_visibility.pot,sha256=2nkV-O77dcHWhLBfGldb2hwKdpsp_Iq_PU5QMeyP-mo,341
+odoo/addons/report_qweb_element_page_visibility/readme/CONTRIBUTORS.md,sha256=ncqOE9KRrJg1ytAj7nuTLc7b-eR9c77W7PYYBSrt83Q,551
+odoo/addons/report_qweb_element_page_visibility/readme/CREDITS.md,sha256=XjLqtKqZtKJdHH_EHzh9FEPovGjoFti-eWmOoccUgM4,87
+odoo/addons/report_qweb_element_page_visibility/readme/DESCRIPTION.md,sha256=oXpYFbKopNFVtv_0y--AgjjV65LfiMBAfRgvM-dx3mo,260
+odoo/addons/report_qweb_element_page_visibility/readme/USAGE.md,sha256=Vz-FNtPaqGpC8G2yX3UBvel9ECoMncUY5cm3LJa-Muk,651
+odoo/addons/report_qweb_element_page_visibility/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/report_qweb_element_page_visibility/static/description/index.html,sha256=s_LQb-1_EBkOHVScOPnKyhTneKk_EPWiH7oN0njxnhQ,15235
+odoo/addons/report_qweb_element_page_visibility/views/layouts.xml,sha256=9-L1rrtEB_0MjRVQd-CSeoo-LbQyuVNV1oWdP7CugAE,3132
+odoo_addon_report_qweb_element_page_visibility-18.0.1.0.0.3.dist-info/METADATA,sha256=7in8ldCdqQXzqx4NdbY4wHXYX8W2ZY_-heIp6H0UKIM,5007
+odoo_addon_report_qweb_element_page_visibility-18.0.1.0.0.3.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_report_qweb_element_page_visibility-18.0.1.0.0.3.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_report_qweb_element_page_visibility-18.0.1.0.0.3.dist-info/RECORD,,
