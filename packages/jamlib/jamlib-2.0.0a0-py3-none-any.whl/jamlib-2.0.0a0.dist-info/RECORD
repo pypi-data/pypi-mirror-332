@@ -1,0 +1,11 @@
+jam/__core_staffs__.py,sha256=XK0qlAfBETt2TNiec4NrTyWYiKYv4l_oO0hP4jzf-Ig,2883
+jam/__init__.py,sha256=pn-10dJJw3_vW_clPs7lNueGhsj00LhHB3pw6p7Dhpw,261
+jam/exceptions/__init__.py,sha256=T4IOEd6B1gXFWCr05o80Qp1mj1EaPqGRC95ndO3X-5k,102
+jam/exceptions/jwt.py,sha256=JbNRlNEWR10X4AryLsHCg2Gj0VrwG_WapSCUg1sdWOk,532
+jam/jwt/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+jam/jwt/__tools__.py,sha256=veAo8TajvCDeDiQr6mTkiDyEj5rvep9DAVRn0BwXZYQ,2157
+jam/jwt/__utils__.py,sha256=U2baMgsSY_rqNuOuk7j7-Q6AwBRGv7mxF4ATl7GZEQA,270
+jamlib-2.0.0a0.dist-info/LICENSE.md,sha256=kQAAVsgYjezirsBLiqC1sjLCgppIc4Q-WXe_ToZUcR8,1086
+jamlib-2.0.0a0.dist-info/METADATA,sha256=bfo6OtLFVt5ajO6vjORCDQ7FB-dbMxrUh_TOZoXqeXE,1347
+jamlib-2.0.0a0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+jamlib-2.0.0a0.dist-info/RECORD,,
