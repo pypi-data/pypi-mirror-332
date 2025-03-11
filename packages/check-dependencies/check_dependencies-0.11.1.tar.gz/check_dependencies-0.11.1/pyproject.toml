@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "check-dependencies"
+version = "0.11.1"
+authors = ["Micha Scholl <schollm-git@gmx.com>"]
+readme = "README.md"
+description = "Check dependencies of a python project against pyproject.toml requirements"
+homepage = "https://github.com/schollm/check-dependencies"
+repository = "https://github.com/schollm/check-dependencies"
+documentation = "https://github.com/schollm/check-dependencies/blob/main/README.md"
+license = "MIT"
+keywords = ["packaging", "development", "requirements", "dependencies"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Utilities",
+]
+[tool.poetry.scripts]
+check-dependencies = 'check_dependencies.__main__:main'
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/schollm/check-dependencies/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+toml = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.2"
+mypy = "^1.10.0"
+ruff = "^0.9.6"
+types-toml = "^0.10.8.20240310"
+
+[tool.ruff]
+exclude =["src/tests/data"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["COM812", "D213", "D203"]
+
+
+[tool.ruff.lint.per-file-ignores]
+"src/tests/**" = [
+    "S101",  # use of assert
+    "FBT001",  # Boolean-typed positional argument in function definition
+    "FBT002",  # Boolean default positional argument in function definition
+    "PLR0913",  # Too many arguments in function definition (7 > 5)
+    "D400"   # docstring should end with a period
+]
+
+[tool.ruff.lint.flake8-pytest-style]
+parametrize-names-type = "csv"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
