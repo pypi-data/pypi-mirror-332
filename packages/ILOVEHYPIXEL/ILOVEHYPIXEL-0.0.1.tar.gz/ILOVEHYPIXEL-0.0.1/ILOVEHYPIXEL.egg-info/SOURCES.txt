@@ -1,0 +1,8 @@
+setup.py
+ILOVEHYPIXEL/__init__.py
+ILOVEHYPIXEL/i_love_hypixel.py
+ILOVEHYPIXEL/i_play_hypixel_every_day.py
+ILOVEHYPIXEL.egg-info/PKG-INFO
+ILOVEHYPIXEL.egg-info/SOURCES.txt
+ILOVEHYPIXEL.egg-info/dependency_links.txt
+ILOVEHYPIXEL.egg-info/top_level.txt
