@@ -1,0 +1,23 @@
+component:
+  flow_name: elt
+  metadata:
+    source:
+      first_line_number: 6
+      path: flows/elt/components/weather.py
+  name: weather
+  tests: {}
+  transform:
+    inputs:
+    - flow: elt
+      name: weather_routes
+    - flow: elt
+      name: weather_sensors
+    lookback: 1
+    materialization:
+      partitioned:
+        enable_substitution_by_partition_name: false
+        output_type: table
+    microbatch: false
+    python:
+      entrypoint: weather.weather
+      source: flows/elt/components/weather.py

@@ -1,0 +1,19 @@
+component:
+  flow_name: elt
+  metadata:
+    source:
+      first_line_number: 7
+      path: flows/elt/components/task_send_staff_reports.py
+  name: task_send_staff_reports
+  task:
+    dependencies:
+    - flow: elt
+      name: ascenders
+    - flow: elt
+      name: staff
+    - flow: elt
+      name: sales
+    python:
+      entrypoint: task_send_staff_reports.task_send_staff_reports
+      source: flows/elt/components/task_send_staff_reports.py
+  tests: {}

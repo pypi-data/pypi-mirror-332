@@ -1,0 +1,13 @@
+component:
+  custom_python_read:
+    python:
+      entrypoint: read_guides.read_guides
+      source: flows/elt/components/read_guides.py
+    strategy: full
+  flow_name: elt
+  metadata:
+    source:
+      first_line_number: 7
+      path: flows/elt/components/read_guides.py
+  name: read_guides
+  tests: {}
