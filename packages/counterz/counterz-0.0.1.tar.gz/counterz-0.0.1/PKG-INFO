@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: counterz
+Version: 0.0.1
+Summary: counts
+Home-page: https://github.com/sagarparker/counterz
+Author: SagarParker
+Author-email: sagar8parker@gmail.com
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+counts words in a list
