@@ -1,0 +1,16 @@
+uv_workon/__init__.py,sha256=23464ISsOlu0bwn8FrO6hhLk5C26eQ1IZq6MeCt3_CA,424
+uv_workon/__main__.py,sha256=o7h8eumSlWdJiPLafGUknmFuHa_EDTh9uGWoyMxDeFc,101
+uv_workon/_click.py,sha256=PB5cx4lvMjuzr9qitNQN-h3f_JDqqtiw710VNkIKu-w,88
+uv_workon/_compat.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uv_workon/_logger.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uv_workon/_typing.py,sha256=feGVBHYu9TW8kMgZf0ivBXgLl6uXZs666YQanafZSFg,263
+uv_workon/_typing_compat.py,sha256=KJJ9e_d4SIMwcIXu0ggada0DkdMzaaYgyesfvA1YdRY,145
+uv_workon/cli.py,sha256=pFEjmTo5oFBSgrnoK_HplAKI3BGr7uFp_t8IYrcdXDI,15747
+uv_workon/core.py,sha256=BwaorRmgAg0eMfz3dpJ-acX6PqG2Y-GJea3lvqLtu-s,6683
+uv_workon/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uv_workon/scripts/workon.sh,sha256=85faO3d48eNFsmjgWbrJBohbGO_Hlxn_yiY9VxkCL4Q,1652
+uv_workon-0.2.0.dist-info/METADATA,sha256=oy7BsCU8nQS0dHCL_7cxQFRMQ3Oyo_6IgNxfMt9vK9g,8468
+uv_workon-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+uv_workon-0.2.0.dist-info/entry_points.txt,sha256=g5EMen3RB8EDXfBKJM5qptFGwcYOVZSdXKNA2cA_Pds,48
+uv_workon-0.2.0.dist-info/licenses/LICENSE,sha256=j_sUyRmuUbF_c9KR7g_uTdRv-cBn65wjYQpmusAzyT0,1645
+uv_workon-0.2.0.dist-info/RECORD,,
