@@ -1,0 +1,42 @@
+"""
+Python module generated from Java source file org.bukkit.event.player.PlayerLinksSendEvent
+
+Java source file obtained from artifact spigot-api version 1.21.2-R0.1-20241023.084343-5
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from org.bukkit import ServerLinks
+from org.bukkit.entity import Player
+from org.bukkit.event import HandlerList
+from org.bukkit.event.player import *
+from typing import Any, Callable, Iterable, Tuple
+
+
+class PlayerLinksSendEvent(PlayerEvent):
+    """
+    This event is called when the list of links is sent to the player.
+    """
+
+    def __init__(self, player: "Player", links: "ServerLinks"):
+        ...
+
+
+    def getLinks(self) -> "ServerLinks":
+        """
+        Gets the links to be sent, for modification.
+
+        Returns
+        - the links
+        """
+        ...
+
+
+    def getHandlers(self) -> "HandlerList":
+        ...
+
+
+    @staticmethod
+    def getHandlerList() -> "HandlerList":
+        ...
