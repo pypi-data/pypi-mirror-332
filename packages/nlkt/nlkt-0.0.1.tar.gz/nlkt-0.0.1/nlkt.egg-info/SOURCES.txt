@@ -1,0 +1,10 @@
+README.md
+setup.py
+corpus/1.py
+corpus/__init__.py
+corpus/code_printer.py
+nlkt.egg-info/PKG-INFO
+nlkt.egg-info/SOURCES.txt
+nlkt.egg-info/dependency_links.txt
+nlkt.egg-info/requires.txt
+nlkt.egg-info/top_level.txt
