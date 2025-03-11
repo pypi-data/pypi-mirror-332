@@ -1,0 +1,31 @@
+[build-system]
+requires = [
+    "hatchling",
+    "httpx",
+    "pydantic",
+    "aiofiles"
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "async-lark-http-client"
+version = "1.0.0"
+authors = [
+  { name="moodpanda", email="jdluciano@spmadridlaw.com" },
+]
+description = "Async HTTP Client for Lark Base"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/moodpanda/async-lark-http-client"
+Issues = "https://github.com/moodpanda/async-lark-http-client/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
