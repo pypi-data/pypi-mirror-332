@@ -1,0 +1,8 @@
+setup.py
+old_money_147/__init__.py
+old_money_147/module1.py
+old_money_147/module2.py
+old_money_147.egg-info/PKG-INFO
+old_money_147.egg-info/SOURCES.txt
+old_money_147.egg-info/dependency_links.txt
+old_money_147.egg-info/top_level.txt

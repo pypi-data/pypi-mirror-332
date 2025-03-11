@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: old_money_147
+Version: 0.0.1
+Summary: My Package
+Author: Dmitry Panov
+Author-email: dpanov2302@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
