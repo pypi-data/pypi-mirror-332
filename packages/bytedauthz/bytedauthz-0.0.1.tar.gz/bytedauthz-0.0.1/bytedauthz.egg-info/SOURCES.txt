@@ -1,0 +1,6 @@
+setup.py
+bytedauthz/__init__.py
+bytedauthz.egg-info/PKG-INFO
+bytedauthz.egg-info/SOURCES.txt
+bytedauthz.egg-info/dependency_links.txt
+bytedauthz.egg-info/top_level.txt
