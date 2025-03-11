@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: yathoo
+Version: 0.2.0
+Summary: A short description of your package
+Home-page: UNKNOWN
+Author: Yathartha Santosh Yadav
+Author-email: yathartha.ys@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+# Yathoo
+
+`Yathoo` is a Python package designed for encoding, decoding, and cloaking files. It provides functions to encode text into a unique format, decode it back, and manage cloaked files for secure storage.
+
+## Installation
+
+You can install Yathoo using `pip`:
+
+```bash
+pip install yathoo
+```
+
+## Usage
+
+Hereâ€™s an example of how to use the `yathoo` package:
+
+```python
+from yathoo import yathoo
+
+# Example of encoding a string
+encoded_string = yathoo.encode("Hello, world!")
+print(f"Encoded: {encoded_string}")
+
+# Example of decoding the string back
+decoded_string = yathoo.decode(encoded_string)
+print(f"Decoded: {decoded_string}")
+```
+
+### Cloaking Example:
+
+IMP: You compulsorily need to use the function init_cloaker() before you encode or decode
+     DO NOT DELETE yathoo_cloaker DIRECTORY AFTER CLOAKING OR YOU MAY LOSE FILES! SAFELY DECLOAK THEM! DATE AND TIME
+     OF CREATION OF FILES ALTERS WITH THE CLOAK-DECLOAK PROCESS BUT NOT THE DATA LOCATION AND NAME!
+
+```python
+# Example of cloaking a file
+file_id = yathoo.cloak("path/to/your/file.txt")
+print(f"File cloaked with ID: {file_id}")
+
+# Example of decloaking the file
+yathoo.decloak(file_id)
+print("File decloaked successfully.")
+```
+
+### Author:Yathartha Santosh Yadav ; yathartha.ys@gmail.com
+
+## License
+
+MIT License
+
+Copyright (c) 2025 Yathartha Santosh Yadav
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+```
+

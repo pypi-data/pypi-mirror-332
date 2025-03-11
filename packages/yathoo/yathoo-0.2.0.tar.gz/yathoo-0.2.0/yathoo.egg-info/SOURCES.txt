@@ -1,0 +1,8 @@
+README.md
+setup.py
+yathoo/__init__.py
+yathoo/yathoo.py
+yathoo.egg-info/PKG-INFO
+yathoo.egg-info/SOURCES.txt
+yathoo.egg-info/dependency_links.txt
+yathoo.egg-info/top_level.txt
