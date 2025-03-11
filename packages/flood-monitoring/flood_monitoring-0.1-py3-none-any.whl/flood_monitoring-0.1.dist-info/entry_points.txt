@@ -1,0 +1,2 @@
+[console_scripts]
+flood_monitoring = flood_monitoring.main:main
