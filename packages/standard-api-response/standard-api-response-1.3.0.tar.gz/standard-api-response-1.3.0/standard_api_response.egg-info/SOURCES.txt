@@ -1,0 +1,6 @@
+setup.py
+standard_api_response.egg-info/PKG-INFO
+standard_api_response.egg-info/SOURCES.txt
+standard_api_response.egg-info/dependency_links.txt
+standard_api_response.egg-info/requires.txt
+standard_api_response.egg-info/top_level.txt
