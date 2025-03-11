@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: nesegodnapp_123
+Version: 0.0.1
+Summary: My Package
+Author: Your Name
+Author-email: mambas32584@gamil.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary

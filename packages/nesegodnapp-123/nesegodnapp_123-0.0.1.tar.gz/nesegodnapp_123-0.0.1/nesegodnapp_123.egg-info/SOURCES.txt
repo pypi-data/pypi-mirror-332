@@ -1,0 +1,8 @@
+setup.py
+nesegodnapp_123/First.py
+nesegodnapp_123/Second.py
+nesegodnapp_123/__init__.py
+nesegodnapp_123.egg-info/PKG-INFO
+nesegodnapp_123.egg-info/SOURCES.txt
+nesegodnapp_123.egg-info/dependency_links.txt
+nesegodnapp_123.egg-info/top_level.txt
