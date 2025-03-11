@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: RlGlue-andnp
+Version: 2.0.0
+Summary: A tiny re-implementation of the rl-glue interface
+Project-URL: Homepage, https://github.com/andnp/RlGlue.git
+Author-email: Andy Patterson <andnpatterson@gmail.com>
+License: MIT
+Requires-Python: >=3.10
