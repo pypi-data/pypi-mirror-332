@@ -1,0 +1,17 @@
+dolomite_matrix/DelayedMask.py,sha256=6M0K0AaCZsKmHGYypQo7kkuweRvNfUTPhoSljgMEla4,4662
+dolomite_matrix/ReloadedArray.py,sha256=Fo9Vp1-D6KS2hrUBwoimDItVGNT6wcw16JffKgm7XVU,4231
+dolomite_matrix/WrapperArraySeed.py,sha256=6wrqsox4OvftsK4YMtUq8x6BS40ZAf6GaRR9Nna0MX0,2581
+dolomite_matrix/__init__.py,sha256=WWaf7cD0q5wF3atxKStouzAFmBaIU4_3zRPvm0ROj1I,1071
+dolomite_matrix/_optimize_storage.py,sha256=U765q-ocmms6JPsY1q8Y5MD8F-EhfBSJ3DRAHExO5uk,27985
+dolomite_matrix/_utils.py,sha256=1RU5HzEKzQTmKdbJyRgxTo83wZDZxENAHnis7_U_msE,396
+dolomite_matrix/choose_chunk_dimensions.py,sha256=XjtLV3japPkWJKr5gQX_Fh5uFpcMV-Id2yhCRhtK454,1694
+dolomite_matrix/read_compressed_sparse_matrix.py,sha256=p5ZNh0_D833WppJtzMlattkWGCqqr9cqVgj8B8efvSc,2017
+dolomite_matrix/read_dense_array.py,sha256=wPr8d8eiTiEXZBFb0LfQ7tfceyp2wOA2Wlbj--_xG4Y,2923
+dolomite_matrix/save_compressed_sparse_matrix.py,sha256=Y_YLDcT3hlBS1Dpz2l4nm3reRFD58hzqYZYAB4oioW8,12833
+dolomite_matrix/save_delayed_array.py,sha256=AHG0AFu2orexLHskGSA0ZBtRA9dteqaDDb0I9ey_2S0,1860
+dolomite_matrix/save_dense_array.py,sha256=hTpO7dAGVUesLNNM3UoV2pNZSeCB32q-FJRG6yIhDX8,10568
+dolomite_matrix-0.4.1.dist-info/LICENSE.txt,sha256=RIPdBQEJwWOOJRmpXhEoW-hpkid8PbhtdBskBXyNkq0,1071
+dolomite_matrix-0.4.1.dist-info/METADATA,sha256=SQboI6RqblVm_wbWKBJWUwv7memUTho0i7DaAHjDdTE,4890
+dolomite_matrix-0.4.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+dolomite_matrix-0.4.1.dist-info/top_level.txt,sha256=Qfwk0wqjBsE4PkUDxCyDliQstULv1TvCZKjcMoFanh8,16
+dolomite_matrix-0.4.1.dist-info/RECORD,,
