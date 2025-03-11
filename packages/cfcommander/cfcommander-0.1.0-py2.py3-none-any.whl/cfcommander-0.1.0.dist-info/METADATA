@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: cfcommander
+Version: 0.1.0
+Summary: A simple Cloudflare DNS CLI tool
+Author-email: Jakub Jim Zacek <jakub@zacekj.cz>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: tabulate
+Requires-Dist: twine>=6.1.0

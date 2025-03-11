@@ -1,0 +1,2 @@
+[console_scripts]
+cfcli = cf.__main__:main
