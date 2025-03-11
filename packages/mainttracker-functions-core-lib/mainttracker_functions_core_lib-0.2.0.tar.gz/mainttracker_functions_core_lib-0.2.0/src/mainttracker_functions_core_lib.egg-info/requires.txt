@@ -1,0 +1,7 @@
+loguru>=0.7.3
+stripe>=11.5.0
+
+[dev]
+pytest
+ruff
+dotenv

@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: mainttracker_functions_core_lib
+Version: 0.2.0
+Summary: Lib containing core python for google cloud functions
+Author-email: Sean Cahill <sjoscahill@gmail.com>
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: loguru>=0.7.3
+Requires-Dist: stripe>=11.5.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: dotenv; extra == "dev"
+
+## Functions Core Lib
+
+Just to make my life easier I am currently using this repo to implement functionality used by Google Cloud Functions.
+
