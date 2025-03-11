@@ -1,0 +1,15 @@
+gittales/__init__.py,sha256=dwT6SyMwUH9ocUGPAELdJXZYkG6NvxvuLI1WQDDAQUU,212
+gittales/cli.py,sha256=2KL7KN4UKoPyJg_46uJkMl_aM723AHrneSMMrp54dio,3566
+gittales/core/__init__.py,sha256=1VvV2FIDUdlOyHFvRcZhiIK_Ea6RiajFavfJTPaKdzc,209
+gittales/core/analyzer.py,sha256=pD6fVyijO_SIKyJ6HdGjMcvY3kUz7hwmH5hpzFoYRNQ,2265
+gittales/core/models.py,sha256=9JnmT0DvkBLRCISV_IX-EqYS-TGg5NTwBj7RRTV-cIE,365
+gittales/core/reader.py,sha256=9eDB3AKKE7F1BB3hhQ3eol-oH83VeXlf7Ne081SsFcY,1041
+gittales/reports/__init__.py,sha256=KhLbrDHxGxPz8Uf8O7kwPmm5-QTh_mNRSLvIvXR9FqA,80
+gittales/reports/console.py,sha256=iz1iyxOjt4FNL23fsmaE1ScVHE9NqfcIL8TvXkq5le0,927
+gittales/utils/__init__.py,sha256=VOjP5dImhnGbjhwSUMzCuQvm6SUYA3IyYQT_RMnWgu0,100
+gittales/utils/helpers.py,sha256=iJ4pF7NudFCseA9b3fuq7tRcJJHC-BdJSxnDIHEWtic,360
+gittales-0.1.7.dist-info/METADATA,sha256=JRSNCijiwifC0k4reAvQb9ZI3O-uAeh4qh8ENj_RE9o,3303
+gittales-0.1.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gittales-0.1.7.dist-info/entry_points.txt,sha256=1CfPjQfDMEy2UiIpUM5TbCrwOMFk2_RpJ912POp6RFA,47
+gittales-0.1.7.dist-info/licenses/LICENSE,sha256=AnKbtco4XiF4KQheM8jNX3VBSGbqypOzXdjwhNuHg6c,1072
+gittales-0.1.7.dist-info/RECORD,,
