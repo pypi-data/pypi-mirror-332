@@ -1,0 +1,16 @@
+tspmetrics/__init__.py,sha256=lv5lrESOB9Hxamhg7-BBOb1ZizwbJUfV9JXCnElvuPc,526
+tspmetrics/__meta__.py,sha256=cC-o_VL5FDloGboWRQMY-NHhn-2mbmkyWBO-7hebEEc,96
+tspmetrics/alt.py,sha256=RBHTRp2KXjNoVj8rPQOR9Z-TBQhqAUiLbqMQ72jqLAc,13687
+tspmetrics/amplitude.py,sha256=v2A4EaEnDok5l5mO0J0zPYYNxw4y5UIwcxJEfVGVv2A,3007
+tspmetrics/classification.py,sha256=iUp7LPayELdNp_CQmwjWoI5DtarkUKGSUE6qjZZDlxs,8541
+tspmetrics/flags.py,sha256=jPiqSof4CKxkndKubJhCfR_YKCkHpGqQoFIhsazzZTo,172
+tspmetrics/labels.py,sha256=UwozYZI4SeJ5RF5EaL-YkjtDEKahIlrhm2zlrJkCz6M,726
+tspmetrics/thaw_depth_duration.py,sha256=4nAc7EljyrTVxJwooEXfSl_OrhmNYpzdjmzi12_mu_U,2909
+tspmetrics/thermal_integral.py,sha256=yJwkiFfqh6m-3Qqd_EsAy3KIxHdw7GAP-z4CGxpc1Nk,1493
+tspmetrics/zero_amplitude.py,sha256=WblpeEqczOlza-xVbWZCGeu7OrkQG80J1ICmyycV-98,5823
+tspmetrics/demos/demo_data/B755-Arctic_Village-Dataset.csv,sha256=UGWPWmzOa38x4HhgT6f-Y2uXBFMWTEtCSOWh8ZgQEyk,1054503
+tspmetrics/demos/demo_data/soil.txt,sha256=lz6BcFWcymf0BAnZ6klPMSl5eAzOovUkVdyTeno4Zw0,1869684
+tspmetrics-0.0.5.dist-info/METADATA,sha256=c1YMF32obIyQVWDDaS0o6FzMOE14o4Vhhk18I26wJ9Y,750
+tspmetrics-0.0.5.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+tspmetrics-0.0.5.dist-info/top_level.txt,sha256=ew6Wt_T8ofaEFiRSKKyiUIb-pb97b1LFecBBtsr8MVA,11
+tspmetrics-0.0.5.dist-info/RECORD,,

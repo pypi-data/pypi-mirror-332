@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: tspmetrics
+Version: 0.0.5
+Summary: Calculation of temperature-derived metrics from borehole observations
+Author-email: Nick Brown <nick.brown@carleton.ca>
+License: GNU General Public License (GPL)
+Project-URL: homepage, https://github.com/geocryology/tspmetrics
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: tsp
+Requires-Dist: scipy
