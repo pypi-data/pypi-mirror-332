@@ -1,0 +1,16 @@
+nano_manus/__init__.py,sha256=mQS8g72C_J8lqWkgtrtHiVieMFAtiOBPQsib_EPx998,56
+nano_manus/env.py,sha256=w9M8DwURvK3a4xn7u9NyiLBF3v4eHLlA6AGiimVa4zo,942
+nano_manus/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nano_manus/types.py,sha256=BHAEW_hACHS1YtoCwVaKlabdz1D4YSuFXVikt5Qz9SE,1440
+nano_manus/mcp_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nano_manus/mcp_client/local_session.py,sha256=tiLFr5N_foJzR6763Oa36Y75JVKr4bcL9jQ2ceFWarY,4309
+nano_manus/prebuilt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nano_manus/prebuilt/general.py,sha256=WWeY7I6-IGsa32yzRMx41bNTnBvFi8ZM349Iaaf4-A0,1009
+nano_manus/prebuilt/mcp.py,sha256=ZLjFsp5MEVN1X1wObO7CB2rm4DQYBeBt-RV07H5TR00,3903
+nano_manus/prebuilt/planner/__init__.py,sha256=WX4Hl6yKE8_KbtvUtMY2tTW-4bbisYAc0r6yAhjtGT0,430
+nano_manus/prebuilt/planner/parser.py,sha256=hBotvQ-k_W-ci1CWtL4sGzgHtFxAfavR9FlGKoExGfs,1766
+nano_manus/prebuilt/planner/planner.py,sha256=hBvJxcbR9hKU-pM50o9Ao_zbIgdRdTZGnwA_Jz8xW8c,1902
+nano_manus/prebuilt/planner/prompts.py,sha256=i_wMTHlgIOmDWvEK76fAR7GKsg99Umrff9dpU0Ld6RM,4142
+nano_manus-0.0.1.dist-info/METADATA,sha256=TMogm7i-JAZn2GJLqxScvvFeo7_8laILCCIu1WMxJoU,1143
+nano_manus-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+nano_manus-0.0.1.dist-info/RECORD,,
