@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+xtu/edu/captcha/CharMap.py
+xtu/edu/captcha/__init__.py
+xtu/edu/captcha/api.py
+xtu_edu_captcha_solver.egg-info/PKG-INFO
+xtu_edu_captcha_solver.egg-info/SOURCES.txt
+xtu_edu_captcha_solver.egg-info/dependency_links.txt
+xtu_edu_captcha_solver.egg-info/requires.txt
+xtu_edu_captcha_solver.egg-info/top_level.txt
