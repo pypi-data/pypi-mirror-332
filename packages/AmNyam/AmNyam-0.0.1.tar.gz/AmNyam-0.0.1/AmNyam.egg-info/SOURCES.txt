@@ -1,0 +1,8 @@
+setup.py
+AmNyam/__init__.py
+AmNyam/one.py
+AmNyam/two.py
+AmNyam.egg-info/PKG-INFO
+AmNyam.egg-info/SOURCES.txt
+AmNyam.egg-info/dependency_links.txt
+AmNyam.egg-info/top_level.txt
