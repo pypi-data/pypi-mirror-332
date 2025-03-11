@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: unicorn_8642_fu
+Version: 0.0.1
+Summary: My Package
+Author: Your Name
+Author-email: valentinadvel@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
