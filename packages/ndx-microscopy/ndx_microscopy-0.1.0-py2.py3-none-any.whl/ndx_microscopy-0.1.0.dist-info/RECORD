@@ -1,0 +1,10 @@
+ndx_microscopy/spec/ndx-microscopy.extensions.yaml,sha256=kiSauu9Sp2iCpzlv_OL-_Tp7eTZMO_aD9mUvxIHnGsY,14614
+ndx_microscopy/spec/ndx-microscopy.namespace.yaml,sha256=GKOOBfLq3FPq0eHHRi0mvZiD47ncGeWL87XZCM1zsQA,809
+ndx_microscopy/__init__.py,sha256=Sm_l5lYxFb_u9IAlahLALvQxCNKryBt9mvj4tI2GfL0,2627
+ndx_microscopy/ndx_microscopy.py,sha256=U6mJqvxBxqGWSRHgRyXB4qfJbM70aLuXel4HZmocit0,14416
+ndx_microscopy/testing/__init__.py,sha256=xwFr-5AJE_bFhqTIn2IWtn1LlE0_lvjQnfKrW-b6YcM,969
+ndx_microscopy/testing/_mock.py,sha256=nbn4QcoJSonDwzewQ_j-cofvlAazjMZUgdydJlgfPF8,16879
+ndx_microscopy-0.1.0.dist-info/METADATA,sha256=nRcbrgKwMiHnra5eV82opqNCjd2T0_BbgmwE36qzitY,17357
+ndx_microscopy-0.1.0.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+ndx_microscopy-0.1.0.dist-info/licenses/LICENSE.txt,sha256=L8GuVcGDV5y8XY2FsLOUXM7Eqo0ceFDvWPsMpojH8lI,1111
+ndx_microscopy-0.1.0.dist-info/RECORD,,
