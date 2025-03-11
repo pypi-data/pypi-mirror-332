@@ -1,0 +1,6 @@
+setup.py
+bytedbytegraph_consumer/__init__.py
+bytedbytegraph_consumer.egg-info/PKG-INFO
+bytedbytegraph_consumer.egg-info/SOURCES.txt
+bytedbytegraph_consumer.egg-info/dependency_links.txt
+bytedbytegraph_consumer.egg-info/top_level.txt
