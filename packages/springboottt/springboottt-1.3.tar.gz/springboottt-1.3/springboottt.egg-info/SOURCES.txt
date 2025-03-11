@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+springboottt/__init__.py
+springboottt.egg-info/PKG-INFO
+springboottt.egg-info/SOURCES.txt
+springboottt.egg-info/dependency_links.txt
+springboottt.egg-info/top_level.txt
