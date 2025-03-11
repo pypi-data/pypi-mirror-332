@@ -1,0 +1,6 @@
+setup.py
+byteddatasets/__init__.py
+byteddatasets.egg-info/PKG-INFO
+byteddatasets.egg-info/SOURCES.txt
+byteddatasets.egg-info/dependency_links.txt
+byteddatasets.egg-info/top_level.txt
