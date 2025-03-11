@@ -1,0 +1,15 @@
+torch>=1.11.0
+matplotlib
+numpy
+scipy
+scikit-learn
+torchdyn>=1.0.6
+pot
+torchdiffeq
+absl-py
+pandas>=2.2.2
+
+[forest-flow]
+xgboost
+scikit-learn
+ForestDiffusion
