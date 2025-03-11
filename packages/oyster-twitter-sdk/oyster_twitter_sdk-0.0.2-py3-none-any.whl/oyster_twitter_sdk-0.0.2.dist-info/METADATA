@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: oyster-twitter-sdk
+Version: 0.0.2
+Summary: Oyster twitter SDK
+Home-page: https://github.com/marlinprotocol/OysterTwitterSDK
+Author: SagarParker
+Author-email: sagar@marlin.org
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+SDK to interact with encumbered twitter account inside Oyster enclaves.
