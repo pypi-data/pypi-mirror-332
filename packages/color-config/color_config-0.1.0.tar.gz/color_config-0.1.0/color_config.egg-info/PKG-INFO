@@ -1,0 +1,43 @@
+Metadata-Version: 2.2
+Name: color_config
+Version: 0.1.0
+Summary: Ein einfaches Farb-Config-Modul für CLI-Programme.
+Home-page: https://github.com/deinusername/color_config
+Author: Dein Name
+Author-email: deine.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# color_config
+
+Ein einfaches Modul fÃ¼r konsistente CLI-Farbkonfiguration mit `colorama`.
+
+## Installation
+
+```sh
+pip install color_config
+```
+
+## Nutzung
+
+```python
+from color_config import COLORS
+print(COLORS["success"] + "Erfolg!" + COLORS["reset"])
+```
+
+## Lizenz
+MIT
