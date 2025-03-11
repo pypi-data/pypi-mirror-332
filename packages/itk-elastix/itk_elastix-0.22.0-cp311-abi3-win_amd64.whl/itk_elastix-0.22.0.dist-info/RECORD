@@ -1,0 +1,15 @@
+itk/ElastixPython.py,sha256=2lBFqqardheDqjVoZdx3HkwfBJI1qnebW2LhukDA_QQ,4866
+itk/_ElastixPython.pyd,sha256=MAluiugJTDbL_VaqyPhZ12XCzCTI0ACpo989x8zbDqk,26891264
+itk/__init_elastix__.py,sha256=6kInt3nPo3z0FER1g3tOqwuuvQDqMcNMvqYGmcktxBo,331
+itk/elxParameterObjectPython.py,sha256=jrKtvTfEBzm5F9zsSgKH6fHF5pHwhH-nc_K3kBD2YUA,24627
+itk/itkElastixRegistrationMethodPython.py,sha256=EGu_SNzwTBISBWNEcTpsq1tq5utzBqtcQEfzkfDVLd0,307266
+itk/itkTransformixFilterPython.py,sha256=kZVbQl6GB0yPH_gsjQ7FHMvGBgiOdGd9cJ8KYAQ6ves,222412
+itk/Configuration/ElastixConfig.py,sha256=iiTnC_GUCf3QsxZgLfahLQGkSGU5v6tpe-QJvytqIG8,4624
+itk/Configuration/Elastix_snake_case.py,sha256=t_oGCgwg8wzMcaE9kCGjWFY34d5u6f9SLfHyDaFVVrM,157
+itk_elastix-0.22.0.dist-info/licenses/LICENSE,sha256=6N4ac5NFfpyIdot45rp5BiL777BAzkgZTCyw8bbU6f8,11562
+itk_elastix.libs/msvcp140.dll,sha256=cDrXxV8uCWYH7Gp3qLX1LVNdvnH93wIel8vLvCP3SSo,576128
+itk_elastix.libs/tbb12.dll,sha256=zuAiz2XZI4SM_Pw9nUjn7o8Ed2BDNFdKwHF4QzKYKTM,314368
+itk_elastix-0.22.0.dist-info/DELVEWHEEL,sha256=ImNhr5nWyKM5sXQMRhV_RaITAyNK_HF5LrRbPPnTkm0,276
+itk_elastix-0.22.0.dist-info/METADATA,sha256=13sBfPSFe2BCExBsb2NRJdqK7kzh2jf_EBVW5fo3ASw,23606
+itk_elastix-0.22.0.dist-info/WHEEL,sha256=e1HB08biITvTalN7Kk_juMM4Ua7Pg1Hpmdg2DaHE0Ic,105
+itk_elastix-0.22.0.dist-info/RECORD,,
