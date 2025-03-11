@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "paperfetch"
+version = "0.1.0"
+description = "Python script to fetch research papers from PubMed API and save as CSV."
+authors = ["RasiJeon <rasijeon@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pubmed_fetcher"}]
+
+[tool.poetry.dependencies]
+python = ">=3.13"
+requests = "^2.32.3"
+pandas = "^2.2.3"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "get_papers_list:main"
