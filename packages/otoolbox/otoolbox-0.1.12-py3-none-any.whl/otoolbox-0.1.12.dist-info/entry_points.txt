@@ -1,0 +1,4 @@
+[console_scripts]
+otoolbox = otoolbox:_main
+otoolbox-repo = otoolbox.addons.repositories:_main
+otoolbox-workspace = otoolbox.addons.workspace:_main
