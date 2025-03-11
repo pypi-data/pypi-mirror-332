@@ -1,0 +1,17 @@
+aigeodb/__init__.py,sha256=sq-N-UygMKblzR8bKuLqs15fDlseTbOzgnygw2b1xuU,166
+aigeodb/core/__init__.py,sha256=0ATN8YiSBU-CVOaPRtOTX4Bv0S0ko7Io4ACnDZLl5jY,32
+aigeodb/core/analytics.py,sha256=AXaU-TMpUCle3PIPvLahiL0sBwg3xa_AacL2J6XE6Cc,2646
+aigeodb/core/database.py,sha256=2w5kkyLhL83Bmq6-m83iIzFZj3NSrr-3eug_4u915a8,6924
+aigeodb/core/downloader.py,sha256=wToFyGOW8c4H9WjarpE79pxsN6vLixf5cXqNnqfqGjs,2282
+aigeodb/core/models.py,sha256=_8DI5Vj72GyqmheoDJPO3Aj50CkXx0u_b0p5lwpF3ug,3980
+aigeodb/sqlite/cities.sqlite3,sha256=dkQFbDSG2vye_x-upKFbGraKiVp8Dv9S0PncI05R9M8,18898944
+aigeodb/sqlite/countries.sqlite3,sha256=7jCiO0ufD0F2XYV3_AfR9SVnu-m7AX3UnECN4daFb44,237568
+aigeodb/sqlite/regions.sqlite3,sha256=fXtFhl-uA3jy3SenNDs72ugKWNOBU5oYeWUuRQidSzA,12288
+aigeodb/sqlite/states.sqlite3,sha256=r9LxiA-I5dxoaIDnpQLVqYqTuAyQcuutQgXBRHoGxZA,630784
+aigeodb/sqlite/subregions.sqlite3,sha256=sijPJe6qwl8rNVF2iEtA93US4g10VZdHjjcDoATohKY,28672
+aigeodb/sqlite/world.sqlite3,sha256=n4iqrOAB9vHyXY9tvb94QbnQ2o5oChXfSl0h06wG_nw,19779584
+aigeodb-0.1.0.dist-info/LICENSE,sha256=IdqObBVOJDtL1_NzuvFutjaNbKb1ot1iKxhDJU-lpdQ,1070
+aigeodb-0.1.0.dist-info/METADATA,sha256=D8YUHpcfpEtdTYXZ-6S5Xl8ehnS-04DiAh_mdrRTJlY,3707
+aigeodb-0.1.0.dist-info/WHEEL,sha256=SrDKpSbFN1G94qcmBqS9nyHcDMp9cUS9OC06hC0G3G0,109
+aigeodb-0.1.0.dist-info/top_level.txt,sha256=S_47QbDuezED_3Q7S9EOsO0KpNSQ4SUejTqSIDdA3JM,8
+aigeodb-0.1.0.dist-info/RECORD,,
