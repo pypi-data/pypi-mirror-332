@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: uidis
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Requires-Dist: fastapi[standard]>=0.115.8
+Requires-Dist: msgspec>=0.19.0
+Requires-Dist: requests>=2.32.3
