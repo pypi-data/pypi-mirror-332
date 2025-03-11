@@ -1,0 +1,3 @@
+setuptools>=18.0
+cython<=0.29.36
+matplotlib>=2.1.0
