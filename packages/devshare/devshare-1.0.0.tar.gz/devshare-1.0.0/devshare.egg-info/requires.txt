@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+websockets
+cryptography
+requests
+tqdm
+python-dotenv
