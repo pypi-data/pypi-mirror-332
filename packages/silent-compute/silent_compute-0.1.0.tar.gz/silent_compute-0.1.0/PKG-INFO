@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: silent-compute
+Version: 0.1.0
+Summary: A dynamic multi-protocol FFI interface for Rust-based libraries
+Home-page: https://github.com/aboggm/python-silent-compute
+Author: Your Name
+Author-email: your.email@example.com
+License: Silence Laboratories’ Non-Commercial Use License Agreement (SLL)
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Security
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Silent Compute
+
+`silent-compute` is a dynamic FFI interface in python for Silent Compute protocols in Rust.
+
+## Installation
+
+```sh
+pip install silent-compute

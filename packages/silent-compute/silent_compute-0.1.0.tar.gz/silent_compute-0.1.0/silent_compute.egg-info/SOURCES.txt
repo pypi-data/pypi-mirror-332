@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+lib_binaries/libcfm_lib.so
+lib_binaries/libsanction_check_lib_single_thread_x86.so
+silent_compute/__init__.py
+silent_compute.egg-info/PKG-INFO
+silent_compute.egg-info/SOURCES.txt
+silent_compute.egg-info/dependency_links.txt
+silent_compute.egg-info/top_level.txt
+silent_compute/sil_compute/__init__.py
+silent_compute/sil_compute/cfm.py
+silent_compute/sil_compute/core.py
+silent_compute/sil_compute/psi.py
