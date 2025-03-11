@@ -1,0 +1,2 @@
+[console_scripts]
+composio-framework = cli:main
