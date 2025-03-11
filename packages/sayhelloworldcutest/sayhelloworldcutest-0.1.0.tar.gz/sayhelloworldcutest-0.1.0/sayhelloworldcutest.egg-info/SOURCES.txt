@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+sayhelloworldcutest/__init__.py
+sayhelloworldcutest/main.py
+sayhelloworldcutest.egg-info/PKG-INFO
+sayhelloworldcutest.egg-info/SOURCES.txt
+sayhelloworldcutest.egg-info/dependency_links.txt
+sayhelloworldcutest.egg-info/top_level.txt

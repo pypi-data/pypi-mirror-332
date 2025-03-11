@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sayhelloworldcutest"
+version = "0.1.0"
+authors = [{ name = "kilbakis", email = "kilbakis@inbox.lv" }]
+description = "Automatically detects OS and opens terminal with 'Hello, World!' message."
+readme = "README.md"
+requires-python = ">=3.7"
+
+[tool.setuptools]
+packages = ["sayhelloworldcutest"]
