@@ -1,0 +1,13 @@
+rxinferclient/__init__.py,sha256=iFZa_xrYO7Cj2pCpjlRwikjcKoHzmnsUeDYjCickHdM,59
+rxinferclient/_base_client.py,sha256=Pgyz-gtRcGqcCMMw8utB_ss_qqzmsNlDNhssguWK-yg,475
+rxinferclient/_client.py,sha256=mAA1AWWD4KS3J4gpR111agzCU0kBtr9YGctYLhdlHkA,307
+rxinferclient/_constants.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rxinferclient/_resource.py,sha256=fhn8RvhTRAK9oaUljiF9UucQA-UOovTUpe8T9IXhbss,371
+rxinferclient/resources/__init__.py,sha256=H7H25TAZO_XOBtqoZCeAtuivcr04vG0TEWv7Z2W5jWk,88
+rxinferclient/resources/learn/__init__.py,sha256=YvCMSuwIXwu2SigGblkPyZ_B7dxVxU83j0qpGalQl2g,53
+rxinferclient/resources/learn/learn.py,sha256=Bncsm9ZeCCNB0RFNoYmPgERVGzSouYQw9MRtd3MXb_c,74
+rxinferclient/resources/plan/__init__.py,sha256=QDj1dZ3PXCvNjv_ByKZ_OyAytzEZTUmsRXRwwKRY3JQ,50
+rxinferclient/resources/plan/plan.py,sha256=GcmlPKw_eOf9hDVHfvwqJVAQ_ry-o2ihZw2_z7H4t2A,73
+rxinferclient-0.0.1.dist-info/METADATA,sha256=x9Tf3jrNh2H1EhwrgTTvx24Hswp1qd9Gom4UacLIGXQ,1604
+rxinferclient-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+rxinferclient-0.0.1.dist-info/RECORD,,
