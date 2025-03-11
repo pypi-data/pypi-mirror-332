@@ -1,0 +1,6 @@
+setup.py
+bytedance_live_tool/__init__.py
+bytedance_live_tool.egg-info/PKG-INFO
+bytedance_live_tool.egg-info/SOURCES.txt
+bytedance_live_tool.egg-info/dependency_links.txt
+bytedance_live_tool.egg-info/top_level.txt
