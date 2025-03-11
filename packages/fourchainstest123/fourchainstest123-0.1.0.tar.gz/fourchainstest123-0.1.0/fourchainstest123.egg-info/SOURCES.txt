@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fourchainstest/__init__.py
+fourchainstest/example.py
+fourchainstest123.egg-info/PKG-INFO
+fourchainstest123.egg-info/SOURCES.txt
+fourchainstest123.egg-info/dependency_links.txt
+fourchainstest123.egg-info/top_level.txt
+tests/test_example.py
