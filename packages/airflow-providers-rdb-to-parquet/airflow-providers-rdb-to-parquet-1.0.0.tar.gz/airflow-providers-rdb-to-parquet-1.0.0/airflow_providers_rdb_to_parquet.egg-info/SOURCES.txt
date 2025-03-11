@@ -1,0 +1,8 @@
+setup.py
+airflow_providers_rdb_to_parquet/__init__.py
+airflow_providers_rdb_to_parquet/sql_to_s3_parquet_operator.py
+airflow_providers_rdb_to_parquet.egg-info/PKG-INFO
+airflow_providers_rdb_to_parquet.egg-info/SOURCES.txt
+airflow_providers_rdb_to_parquet.egg-info/dependency_links.txt
+airflow_providers_rdb_to_parquet.egg-info/requires.txt
+airflow_providers_rdb_to_parquet.egg-info/top_level.txt
