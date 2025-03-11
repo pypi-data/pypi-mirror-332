@@ -1,0 +1,15 @@
+oceanprotocol_job_details/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oceanprotocol_job_details/job_details.py,sha256=DfdRaoytvfFflp0nAFvCKzEm_fk4aMHHM9mC8Gs1vtU,1250
+oceanprotocol_job_details/dataclasses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oceanprotocol_job_details/dataclasses/constants.py,sha256=GgOxQpw1_9lz4ZBuBKPQwsCBiFWN7wS0ccRQ9yv4oxk,838
+oceanprotocol_job_details/dataclasses/job_details.py,sha256=jho4PQLyqh1iB6e5wlM9ATSZreqAo7J9hOeFdETSHgo,2311
+oceanprotocol_job_details/dataclasses/ocean.py,sha256=u4Mc5cHPnJz9oc1a43kkWfwEqRgsFsb-Y3UP2eBpoN4,2480
+oceanprotocol_job_details/loaders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oceanprotocol_job_details/loaders/loader.py,sha256=JwR6OSkzIQQkeeyAU-ad_F89W9WNvoRwvHQY7Q3zIXI,256
+oceanprotocol_job_details/loaders/impl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oceanprotocol_job_details/loaders/impl/map.py,sha256=2-NscnF9saL6KTOoPBTh3UIjawvc2OdOwoGuXZpJ00U,4128
+oceanprotocol_job_details/loaders/impl/utils.py,sha256=rxoG8PrXRSKKDYPZh-wkWOXzMfdWXrkZs0f04OfDCIs,1446
+oceanprotocol_job_details-0.0.12.dist-info/METADATA,sha256=nNXagh8zuofDlgKUaY29XWkrghqcX-Rp1rxIn-Y-pNo,3382
+oceanprotocol_job_details-0.0.12.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+oceanprotocol_job_details-0.0.12.dist-info/licenses/LICENSE,sha256=ni3ix7P_GxK1W3VGC4fJ3o6QoCngCEpSuTJwO4nkpbw,1055
+oceanprotocol_job_details-0.0.12.dist-info/RECORD,,
