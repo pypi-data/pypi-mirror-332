@@ -1,0 +1,11 @@
+aimsg/__init__.py,sha256=XiJttNLNAql-PqFJrKj0bVKf3YOnfTz0VVSgKqbpv7Y,66
+aimsg/cli.py,sha256=1Wm4fa7FTJn3EFWdJzrwI8ARX3ikDze33srF4YvmTt0,11686
+aimsg/config.py,sha256=LJvTL7OVw7PElFPI3eiwJbuViu3Wg7JegdKKhJ8HcIA,3267
+aimsg/git_utils.py,sha256=1HY5THGeZ1XXLIkug4judBAGCPEcFbLyL-b2tdJZbvY,3922
+aimsg/openai_utils.py,sha256=nfyQDeW0S7AL6TyS17_6DTB_17xB80ccAccc-ul-m6g,11154
+aimsg/utils.py,sha256=ImuLuSyPyLjhsaowjyfaNL_nrn0knF0Yp3lPDj-2N4c,1632
+aimsg-0.2.2.dist-info/METADATA,sha256=jD8vJY37uaytSRbdVVlTBi1BHXXiywtsONqsL9TsHy0,4773
+aimsg-0.2.2.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+aimsg-0.2.2.dist-info/entry_points.txt,sha256=a8f8WW-k3CPbT_PyQZlrENDm3K-aIXCsfw5XWmDqU_Y,40
+aimsg-0.2.2.dist-info/top_level.txt,sha256=--ZJ02KVMxHHeuKxVsa7NWK52B86-jadViNNb2i2UTk,6
+aimsg-0.2.2.dist-info/RECORD,,
