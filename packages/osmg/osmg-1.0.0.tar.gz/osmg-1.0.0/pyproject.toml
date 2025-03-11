@@ -1,0 +1,47 @@
+[tool.mypy]
+python_version = '3.12'
+mypy_path = "src"
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+ignore_missing_imports = true
+implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = false
+warn_unused_configs = true
+no_implicit_reexport = true
+namespace_packages = false
+
+[tool.ruff]
+line-length = 85
+
+[tool.ruff.lint]
+# Enable all known categories
+select = ["ALL"]
+ignore = ["ANN101", "CPY001", "D211", "D212", "Q000", "Q003", "COM812", "D203", "ISC001", "E501", "ERA001", "PGH003", "FIX002", "TD003", "S101", "N801", "S311", "G004", "SIM102", "SIM108", "NPY002", "E501", "T201", "DOC201"]
+preview = true
+[tool.ruff.lint.per-file-ignores]
+"docs/source/notebooks/*" = ["E402"]
+"docs/source/*" = ["INP001"]
+"src/osmg/tests/*" = ["D103", "PLR2004", "PLR6301"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.pylint]
+max-args=15
+max-locals=50
+max-returns=11
+max-branches=50
+max-statements=150
+max-bool-expr=5
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.codespell]
+ignore-words = ["ignore_words.txt"]
+skip = ["*.html", "./htmlcov/*", "./docs/build/*"]
