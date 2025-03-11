@@ -1,0 +1,8 @@
+setup.py
+Laci/__init__.py
+Laci/perviy.py
+Laci/vtoroy.py
+Laci.egg-info/PKG-INFO
+Laci.egg-info/SOURCES.txt
+Laci.egg-info/dependency_links.txt
+Laci.egg-info/top_level.txt

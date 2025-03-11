@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: Laci
+Version: 0.0.1
+Summary: My Package
+Author: Yulia
+Author-email: y_nikolotova06@mail.ru
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
