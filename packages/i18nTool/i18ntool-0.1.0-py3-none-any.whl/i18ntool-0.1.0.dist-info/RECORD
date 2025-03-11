@@ -1,0 +1,10 @@
+i18nTool/__init__.py,sha256=7m4vKoZHbr_Pa4K0seEbQC3KHRhJye-M3rDZm_nE26Q,99
+i18nTool/copyright.py,sha256=J4yPxW16wnXeJ3GqNLQrGG5uEhOAql7Pjyt6pWsrFJY,1260
+i18nTool/flags.py,sha256=JPZiZ5p5HLyE0A9dI3-QnS2rpusDNmfe54ckgou7yHI,121
+i18nTool/i18n.py,sha256=nebHeMPpksZp6bQZeVa0xiiCIjm78iYbB0dh5NYqf5M,3559
+i18nTool/read.py,sha256=Vkkar99m8vvMrWkUkSSCdkLK-hVELyuocrJwIa8ePHE,2403
+i18ntool-0.1.0.dist-info/METADATA,sha256=3D_Q0iXE53FSUXr0NewrxeTf2fnBJlGLYNku9kk02Tk,1389
+i18ntool-0.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+i18ntool-0.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+i18ntool-0.1.0.dist-info/licenses/LICENSE,sha256=3htSnmJAp0RTo72n2jXhoVB4LUL9VAaAZMZJgOueOsI,1067
+i18ntool-0.1.0.dist-info/RECORD,,
