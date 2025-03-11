@@ -1,0 +1,7 @@
+get_papers_list/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+get_papers_list/get_papers.py,sha256=WW7Ua325owizv3ig8fw2wxycRYHE7MrJqlKQ6bJdg7Q,1609
+get_papers_list/pubmed_api.py,sha256=J_Je3z9_3q9hDEorEQ6qfnOidzys3vy_0bApXWNtJV8,4746
+get_papers_list-0.1.4.dist-info/entry_points.txt,sha256=vXq8JuFPIJhU1V-mMry_LhUPkKWzurXsW4CmarUw-P4,67
+get_papers_list-0.1.4.dist-info/METADATA,sha256=091tb4H4zJmy8PrVKXu69WPV1D8LrKZIigBYi9deGd8,2270
+get_papers_list-0.1.4.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+get_papers_list-0.1.4.dist-info/RECORD,,
