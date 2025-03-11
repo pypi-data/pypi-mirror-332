@@ -1,0 +1,17 @@
+{
+  "title": "AI provider",
+  "description": "Provider registry settings",
+  "jupyter.lab.setting-icon": "@jupyterlite/ai:jupyternaut-lite",
+  "jupyter.lab.setting-icon-label": "JupyterLite AI Chat",
+  "type": "object",
+  "properties": {
+    "AIprovider": {
+      "type": "object",
+      "title": "AI provider",
+      "description": "The AI provider configuration",
+      "default": {},
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
