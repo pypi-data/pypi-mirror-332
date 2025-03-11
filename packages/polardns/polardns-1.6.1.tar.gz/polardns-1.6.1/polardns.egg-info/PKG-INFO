@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: polardns
+Version: 1.6.1
+Summary: A specialized authoritative DNS server for penetration testing and vulnerability research.
+Author-email: Ivan Jedek <ivan.jedek@oryxlabs.com>
+Requires-Python: >=3.11
+License-File: LICENSE
