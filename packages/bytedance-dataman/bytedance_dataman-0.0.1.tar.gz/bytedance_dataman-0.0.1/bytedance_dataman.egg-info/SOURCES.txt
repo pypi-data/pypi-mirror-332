@@ -1,0 +1,6 @@
+setup.py
+bytedance_dataman/__init__.py
+bytedance_dataman.egg-info/PKG-INFO
+bytedance_dataman.egg-info/SOURCES.txt
+bytedance_dataman.egg-info/dependency_links.txt
+bytedance_dataman.egg-info/top_level.txt
