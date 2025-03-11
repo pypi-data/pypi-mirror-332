@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: Pogorelov_lib
+Version: 0.0.1
+Summary: My Package
+Author: Your Name
+Author-email: ivan.pogorelov.1999@mail.ru
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary

@@ -1,0 +1,8 @@
+setup.py
+Pogorelov_lib/__init__.py
+Pogorelov_lib/one.py
+Pogorelov_lib/two.py
+Pogorelov_lib.egg-info/PKG-INFO
+Pogorelov_lib.egg-info/SOURCES.txt
+Pogorelov_lib.egg-info/dependency_links.txt
+Pogorelov_lib.egg-info/top_level.txt
