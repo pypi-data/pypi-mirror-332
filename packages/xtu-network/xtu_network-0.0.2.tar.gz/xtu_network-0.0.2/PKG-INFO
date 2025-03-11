@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: xtu-network
+Version: 0.0.2
+Summary: 湘潭大学校园网登录 API
+Author-email: YangRucheng <admin@yangrucheng.top>
+License: AGPL-3.0
+Project-URL: homepage, https://github.com/xtu-org/xtu-network
+Project-URL: repository, https://github.com/xtu-org/xtu-network
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: httpx>0.28.0
