@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: llemacs-python
+Version: 0.1.0
+Summary: Python Utilities for LLEmacs
+Home-page: https://github.com/ywatanabe1989/llemacs-python
+Author: Yusuke Watanabe
+Author-email: ywatanabe@alumni.u-tokyo.ac.jp
+License: MIT
+Keywords: llemacs,llm,agent
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<!-- ---
+!-- Timestamp: 2025-03-11 08:51:01
+!-- Author: ywatanabe
+!-- File: /home/ywatanabe/proj/llemacs/llemacs-py/README.md
+!-- --- -->
+
+# LLEmacs-Python
+
+<!-- EOF -->
+
