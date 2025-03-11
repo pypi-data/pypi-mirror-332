@@ -1,0 +1,534 @@
+Metadata-Version: 2.4
+Name: openagents-json
+Version: 0.1.3
+Summary: OpenAgents JSON framework
+Project-URL: Homepage, https://github.com/nznking/openagents-json
+Project-URL: Bug Tracker, https://github.com/nznking/openagents-json/issues
+Author-email: OpenAgents Team <info@openagents.ai>
+License: MIT License
+        
+        Copyright (c) 2023 OpenAgents Team
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE. 
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: alembic>=1.12.0
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: jsonschema>=4.17.3
+Requires-Dist: pydantic-settings>=2.0.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: sqlalchemy-utils>=0.41.0
+Requires-Dist: sqlalchemy>=2.0.0
+Requires-Dist: uvicorn>=0.23.0
+Provides-Extra: dev
+Requires-Dist: black>=23.3.0; extra == 'dev'
+Requires-Dist: flake8>=6.0.0; extra == 'dev'
+Requires-Dist: isort>=5.12.0; extra == 'dev'
+Requires-Dist: mypy>=1.3.0; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs-material>=9.1.15; extra == 'docs'
+Requires-Dist: mkdocs>=1.4.3; extra == 'docs'
+Requires-Dist: mkdocstrings-python>=1.1.2; extra == 'docs'
+Requires-Dist: mkdocstrings>=0.22.0; extra == 'docs'
+Provides-Extra: mysql
+Requires-Dist: pymysql>=1.0.0; extra == 'mysql'
+Provides-Extra: postgres
+Requires-Dist: psycopg2>=2.9.0; extra == 'postgres'
+Provides-Extra: test
+Requires-Dist: pytest-asyncio>=0.21.0; extra == 'test'
+Requires-Dist: pytest-cov>=4.1.0; extra == 'test'
+Requires-Dist: pytest-mock>=3.10.0; extra == 'test'
+Requires-Dist: pytest>=7.3.1; extra == 'test'
+Description-Content-Type: text/markdown
+
+# OpenAgents JSON
+
+A FastAPI extension for building AI agent workflows, distributed as a Python package.
+
+## Project Overview
+
+OpenAgents JSON provides a structured framework for building intelligent workflows using a three-stage model:
+
+1. **Agent & Asset Definition** - Define and register AI components like agents, tools, and assets
+2. **Workflow Definition** - Compose agents into reusable workflows with validation and templating
+3. **Job Management** - Execute, monitor, and control workflow instances as jobs
+
+This approach enables developers to build sophisticated AI applications by composing components into workflows and managing their execution with minimal boilerplate code.
+
+## Installation
+
+```bash
+pip install openagents-json
+```
+
+For development:
+
+```bash
+pip install -e ".[dev,docs]"
+```
+
+## Development
+
+### Setting Up the Development Environment
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/nznking/openagents-json.git
+   cd openagents-json
+   ```
+2. Set up the development environment:
+
+   ```bash
+   make setup
+   ```
+3. Run tests:
+
+   ```bash
+   make test
+   ```
+
+### Package Distribution
+
+The package is distributed on PyPI. To build and publish:
+
+1. Update the version in `openagents_json/__init__.py`
+2. Build the package:
+   ```bash
+   make build
+   ```
+3. Publish to TestPyPI (for testing):
+   ```bash
+   make publish-test
+   ```
+4. Publish to PyPI:
+   ```bash
+   make publish
+   ```
+
+## Quick Start
+
+### 1. Define an agent
+
+```python
+from openagents_json import OpenAgentsApp
+
+agents_app = OpenAgentsApp()
+
+@agents_app.agent("text_processor")
+class TextProcessor:
+    def __init__(self, config):
+        self.model = config.get("model", "gpt-3.5-turbo")
+      
+    @agents_app.capability("summarize")
+    async def summarize(self, text: str, max_length: int = 100) -> str:
+        """Summarize text to the specified length."""
+        # Implementation
+        return summarized_text
+```
+
+### 2. Define a workflow
+
+```python
+agents_app.register_workflow({
+    "id": "document-processing",
+    "description": "Process documents with branching logic",
+    "steps": [
+        {
+            "id": "extract-text",
+            "component": "document_processor.extract_text",
+            "inputs": {"document": "{{input.document}}"}
+        },
+        {
+            "id": "analyze-sentiment",
+            "component": "text_analyzer.sentiment",
+            "inputs": {"text": "{{extract-text.output}}"},
+            "condition": "{{extract-text.success}}"
+        }
+    ],
+    "output": {
+        "sentiment": "{{analyze-sentiment.output}}",
+        "status": "{{workflow.status}}"
+    }
+})
+```
+
+### 3. Execute a job
+
+```python
+# Create and run a job
+job = await agents_app.create_job(
+    workflow_id="document-processing",
+    inputs={"document": "https://example.com/doc.pdf"}
+)
+
+# Monitor job status
+status = await agents_app.get_job_status(job.id)
+
+# Get job results when complete
+if status.state == "COMPLETED":
+    results = await agents_app.get_job_results(job.id)
+```
+
+### 4. FastAPI Integration
+
+```python
+from fastapi import FastAPI
+from openagents_json import OpenAgentsApp
+
+app = FastAPI()
+agents_app = OpenAgentsApp()
+
+# Register the OpenAgents router
+app.include_router(agents_app.router, prefix="/agents", tags=["agents"])
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+```
+
+## Features
+
+- **Component Registry:** Register and manage AI components with a simple decorator-based API
+- **Workflow Composition:** Define workflows using a JSON schema with templating and conditional logic
+- **Job Management:** Create, monitor, and control jobs with comprehensive state tracking
+- **FastAPI Integration:** Seamlessly integrate with FastAPI applications
+
+## Documentation
+
+Comprehensive documentation is available at [Read the Docs](https://openagents-json.readthedocs.io/).
+
+## License
+
+MIT License
+
+## Database Storage
+
+OpenAgents JSON supports multiple database backends for job storage with optimized connection pooling:
+
+### Supported Databases
+
+- **SQLite**: Simple file-based database for development and small applications
+- **PostgreSQL**: Robust enterprise-grade database for production deployments
+- **MySQL**: Popular alternative with good performance characteristics
+
+### Basic Usage
+
+```python
+from openagents_json.job.manager import JobManager
+from openagents_json.job.storage import SQLAlchemyJobStore
+
+# SQLite example
+job_store = SQLAlchemyJobStore(
+    dialect="sqlite",
+    path="jobs.db"
+)
+
+# PostgreSQL example
+job_store = SQLAlchemyJobStore(
+    dialect="postgresql",
+    host="localhost",
+    port=5432,
+    username="postgres",
+    password="password",
+    database="openagents"
+)
+
+# MySQL example
+job_store = SQLAlchemyJobStore(
+    dialect="mysql",
+    host="localhost",
+    port=3306,
+    username="mysql_user",
+    password="password",
+    database="openagents"
+)
+
+# Initialize the JobManager with the job store
+job_manager = JobManager(job_store=job_store)
+```
+
+### Connection Pooling
+
+Connection pooling is enabled by default for all database backends, with optimized settings for each:
+
+```python
+job_store = SQLAlchemyJobStore(
+    dialect="postgresql",
+    # Database connection parameters...
+  
+    # Connection pooling settings
+    pooling=True,              # Enable connection pooling
+    pool_size=5,               # Number of connections to keep open
+    max_overflow=10,           # Maximum number of connections above pool_size
+    pool_timeout=30,           # Seconds to wait for a connection from the pool
+    pool_recycle=3600          # Seconds after which connections are recycled
+)
+```
+
+### Installation Requirements
+
+To use the database backends, install the required dependencies:
+
+```bash
+# For PostgreSQL
+pip install "openagents-json[database]"
+
+# For MySQL
+pip install "openagents-json[database]"
+```
+
+For more detailed information, see the [database storage documentation](docs/database_storage.md).
+
+## Job Dependencies
+
+OpenAgents JSON supports creating complex job workflows through dependencies:
+
+```python
+# Create a chain of dependent jobs
+job1 = await agents_app.create_job(
+    workflow_id="data-extraction",
+    inputs={"source": "https://example.com/data.csv"}
+)
+
+job2 = await agents_app.create_job(
+    workflow_id="data-processing",
+    inputs={"data": "{{data-extraction.output}}"},
+    dependencies=[job1.id]  # job2 will only start after job1 completes
+)
+
+job3 = await agents_app.create_job(
+    workflow_id="generate-report",
+    inputs={"processed_data": "{{data-processing.output}}"},
+    dependencies=[job2.id]  # job3 will only start after job2 completes
+)
+```
+
+## Execution Control
+
+The Execution Control system provides sophisticated retry policies and distributed execution capabilities.
+
+### Retry Policies
+
+Retry policies define how failed jobs are retried, with configurable delays and strategies:
+
+```python
+from openagents_json.job.model import Job
+from openagents_json.job.retry import FixedDelayRetryPolicy, ExponentialBackoffRetryPolicy
+
+# Job with fixed delay retry policy
+job = Job(
+    name="Process Images",
+    max_retries=3,  # Maximum number of retry attempts
+    retry_policy=FixedDelayRetryPolicy(
+        delay=5,     # 5 seconds between retries
+        jitter=0.2   # Add random jitter (±20%) to avoid thundering herd
+    )
+)
+
+# Job with exponential backoff retry policy
+job = Job(
+    name="API Integration",
+    max_retries=5,
+    retry_policy=ExponentialBackoffRetryPolicy(
+        initial_delay=1,  # Start with 1 second delay
+        max_delay=60,     # Cap at 60 seconds
+        multiplier=2,     # Double the delay each attempt
+        jitter=0.3        # Add random jitter (±30%)
+    )
+)
+```
+
+### Distributed Execution
+
+For high-throughput applications, OpenAgents JSON supports distributed execution across multiple worker processes:
+
+```python
+from openagents_json.job.manager import JobManager
+from openagents_json.job.worker import Worker, WorkerManager
+from openagents_json.job.storage import SQLiteJobStore
+
+# Create a shared job store
+job_store = SQLiteJobStore()
+
+# Create a job manager in distributed mode
+manager = JobManager(job_store=job_store, distributed_mode=True)
+
+# Create and start a worker manager
+worker_manager = WorkerManager(job_store=job_store)
+await worker_manager.start()
+
+# Create workers with different tag capabilities
+worker1 = Worker(
+    job_store=job_store,
+    tags=["high-priority", "text-processing"],
+    max_concurrent_jobs=5
+)
+await worker1.start()
+
+worker2 = Worker(
+    job_store=job_store,
+    tags=["data-processing", "background"],
+    max_concurrent_jobs=10
+)
+await worker2.start()
+
+# Create jobs with tags to route them to specific workers
+job = Job(
+    name="Process Text Batch",
+    payload={"batch_id": "12345"},
+    tags=["text-processing"]  # Will be picked up by worker1
+)
+job_store.save(job)
+```
+
+Worker features include:
+
+- Automatic worker registration and heartbeat monitoring
+- Job claiming with tag-based routing
+- Automatic retry for failed jobs
+- Worker failure detection and job reassignment
+- Concurrent job execution within each worker
+
+For a complete example, see the [distributed execution demo](examples/execution_control_demo.py).
+
+For more detailed information, check out the [execution control documentation](docs/execution_control.md).
+
+## Monitoring and Observability
+
+OpenAgents JSON provides comprehensive monitoring and observability for job execution through a built-in event system and metrics collection:
+
+### Event System
+
+The event system enables components to publish and subscribe to job lifecycle events:
+
+```python
+from openagents_json.job import event_emitter, EventType, Event
+
+# Subscribe to job completion events
+def on_job_completed(event: Event):
+    print(f"Job {event.job_id} completed successfully!")
+    print(f"Result: {event.data.get('result')}")
+
+event_emitter.on(EventType.JOB_COMPLETED, on_job_completed)
+
+# Subscribe to all events
+def log_all_events(event: Event):
+    print(f"Event: {event.event_type.value} - Job ID: {event.job_id}")
+
+event_emitter.on_any(log_all_events)
+```
+
+Available event types include:
+
+- Job lifecycle: created, queued, started, completed, failed, cancelled, retrying
+- Worker lifecycle: registered, heartbeat, claimed job, offline
+- System: startup, shutdown, error
+
+### Monitoring System
+
+A centralized monitoring system collects metrics on job execution, worker performance, and system health:
+
+```python
+from openagents_json.job import monitor
+
+# Get complete system status
+status = monitor.get_complete_status()
+
+# Get job metrics summary
+job_metrics = monitor.job_metrics.get_summary()
+
+# Get worker status
+worker_status = monitor.worker_metrics.get_worker_status("worker-123")
+
+# Update queue metrics
+monitor.update_queue_depth(10)
+```
+
+### REST API for Monitoring
+
+A FastAPI-based REST API provides easy access to monitoring data:
+
+```python
+from openagents_json.job.monitoring_api import monitoring_app
+import uvicorn
+
+# Run the monitoring API
+uvicorn.run(monitoring_app, host="0.0.0.0", port=8000)
+```
+
+This exposes endpoints for:
+
+- `/status` - Complete system status
+- `/jobs/summary` - Job execution metrics
+- `/jobs/recent` - Recent job executions
+- `/workers` - Worker status information
+- `/system` - System-wide metrics
+
+### Example
+
+See `examples/job_monitoring.py` for a complete demonstration of the event system and monitoring capabilities.
+
+## Settings System
+
+OpenAgents JSON provides a robust and flexible settings system based on Pydantic Settings v2. This system allows you to configure all aspects of the framework through environment variables, `.env` files, or programmatically.
+
+### Basic Usage
+
+```python
+from openagents_json import settings
+
+# Access nested settings
+if settings.app.debug:
+    print("Debug mode is enabled")
+  
+# Access agent settings
+openai_key = settings.agent.openai_api_key.get_secret_value()
+```
+
+### Configuration Methods
+
+Settings can be configured using:
+
+1. **Environment Variables**: With the `OPENAGENTS_` prefix and `__` as a separator for nested settings
+
+   ```bash
+   export OPENAGENTS_APP__DEBUG=true
+   export OPENAGENTS_AGENT__OPENAI_API_KEY=sk-your-api-key
+   ```
+2. **.env File**: In your project root
+
+   ```ini
+   OPENAGENTS_APP__DEBUG=true
+   OPENAGENTS_AGENT__OPENAI_API_KEY=sk-your-api-key
+   ```
+3. **Programmatic Configuration**:
+
+   ```python
+   from openagents_json import configure_from_dict
+
+   configure_from_dict({
+       "app__debug": True,
+       "agent__openai_api_key": "sk-your-api-key",
+   })
+   ```
+
+For more details, see the [Settings Documentation](docs/settings.md).
