@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/buildtwine/__init__.py
+src/buildtwine.egg-info/PKG-INFO
+src/buildtwine.egg-info/SOURCES.txt
+src/buildtwine.egg-info/dependency_links.txt
+src/buildtwine.egg-info/top_level.txt
