@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: fair_kmeans_uchicago
+Version: 0.1.0
+Summary: A Fair K-Means clustering algorithm with fairness constraints.
+Home-page: https://github.com/yourusername/fair_kmeans
+Author: Ashwin Ram Venkataraman
+Author-email: ashwinram232@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: openai
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Fair K-Means
+
+A Python package for fairness-aware K-Means clustering.
+
+## Installation
+```bash
+pip install fair_kmeans_ashwinram
