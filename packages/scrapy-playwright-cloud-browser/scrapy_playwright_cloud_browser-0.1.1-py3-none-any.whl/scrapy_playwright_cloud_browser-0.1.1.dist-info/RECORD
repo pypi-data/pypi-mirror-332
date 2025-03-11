@@ -1,0 +1,10 @@
+scrapy_playwright_cloud_browser/__about__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+scrapy_playwright_cloud_browser/__init__.py,sha256=p85pdPGw5yR4gpiyVFvSJqdeL3_F0CR7D4EvIT9a2B8,179
+scrapy_playwright_cloud_browser/download_handler.py,sha256=sNAK5Jguxr_At29CxrEedK3Q7atzcXCKe0X8ioJiYlM,13124
+scrapy_playwright_cloud_browser/extension.py,sha256=yGVBZoe5ebURUavVAE3oSVlv3bEPvpkpFh01S2fiLRA,1638
+scrapy_playwright_cloud_browser/schemas.py,sha256=wutJnGUWjxHXVgDHDbocbZELuYmlCs3QaUW1FyV3i0s,887
+scrapy_playwright_cloud_browser-0.1.1.dist-info/LICENSE.txt,sha256=rgVnJPmrSF1-w9gpxQo1nP5TsvCsHE7Yj6UbqKxH4g0,1105
+scrapy_playwright_cloud_browser-0.1.1.dist-info/METADATA,sha256=F12ITWO_4PS-efO03Fsg5QOdrUXAF36l-TAWvuBbQzQ,4393
+scrapy_playwright_cloud_browser-0.1.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+scrapy_playwright_cloud_browser-0.1.1.dist-info/top_level.txt,sha256=DizJS747ucSJwTUStaykC6TLb3GLLLZlqfsox4LVtRI,32
+scrapy_playwright_cloud_browser-0.1.1.dist-info/RECORD,,
