@@ -1,0 +1,102 @@
+name: Checks
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Formatting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with: 
+          fetch-depth: 0
+
+      - name: Install linters
+        run: pip install -r .meta/requirements/requirements-lint.txt
+
+      - name: Run Format Checks
+        run: make format-check RUN_GLOBAL=1
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.11", "3.12", "3.13"]
+        pkg:
+          - torch: "1.13.1"
+            numpy: "1.24.4"
+            group: "legacy"
+          - torch: ""
+            numpy: ""
+            group: "latest"
+        exclude:
+          - python: "3.12"
+            pkg:
+              group: "legacy"
+          - python: "3.13"
+            pkg:
+              group: "legacy"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with: 
+          fetch-depth: 1
+
+      - name: Set up python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+
+      - name: set up uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+  
+      - name: check dependencies
+        run: make dep-check
+
+      - name: install dependencies and package
+        run: make dep
+
+      - name: Install different pytorch version
+        if: ${{ matrix.pkg.torch != '' }}
+        run: |
+          uv pip install torch==${{ matrix.pkg.torch }}+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+      
+      - name: Install different numpy version
+        if: ${{ matrix.pkg.numpy != '' }}
+        run: uv pip install numpy==${{ matrix.pkg.numpy }}
+      
+      - name: info
+        run: |
+          make info-long
+          make dep-check-torch
+
+      - name: format check
+        run: make format-check
+
+      - name: Unit tests
+        run: make unit
+      
+      - name: Notebook tests
+        run: make test_notebooks
+        # see https://github.com/understanding-search/maze-dataset/issues/48
+        if: ${{ matrix.python != '3.13' }}
+      
+      - name: Test Tokenizer Hashes
+        run: make test_tok_hashes
+        
+      - name: check typing (3.11+)
+        run: make typing
+        if: ${{ matrix.python != '3.10' }}
+
+      - name: run benchmarks
+        run: make benchmark-test
