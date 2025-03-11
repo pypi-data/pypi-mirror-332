@@ -1,0 +1,12 @@
+setup.py
+cansible/__init__.py
+cansible/action.py
+cansible/playbook.py
+cansible/pytest.py
+cansible/variables.py
+cli2_ansible.egg-info/PKG-INFO
+cli2_ansible.egg-info/SOURCES.txt
+cli2_ansible.egg-info/dependency_links.txt
+cli2_ansible.egg-info/entry_points.txt
+cli2_ansible.egg-info/requires.txt
+cli2_ansible.egg-info/top_level.txt
