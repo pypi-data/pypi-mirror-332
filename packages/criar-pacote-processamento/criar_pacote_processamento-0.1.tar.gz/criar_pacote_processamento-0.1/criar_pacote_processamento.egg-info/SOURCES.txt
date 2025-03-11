@@ -1,0 +1,9 @@
+README.md
+setup.py
+criar_pacote_processamento.egg-info/PKG-INFO
+criar_pacote_processamento.egg-info/SOURCES.txt
+criar_pacote_processamento.egg-info/dependency_links.txt
+criar_pacote_processamento.egg-info/top_level.txt
+package_name/__init__.py
+package_name/file1_name.py
+package_name/file2_name.py
