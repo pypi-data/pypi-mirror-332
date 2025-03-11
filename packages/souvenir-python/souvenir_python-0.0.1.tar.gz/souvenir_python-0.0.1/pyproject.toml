@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "souvenir-python"
+version = "0.0.1"
+description = "A tag identifier library based on https://github.com/j5pr/souvenir"
+authors = [
+  {name = "BriHan", email="brihan.tech@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "tests.py", "test.py"]
+python_functions = ["test_*"]
+pythonpath = ["."]
+
+[project.optional-dependencies]
+dev = [
+  "black==24.10.0", 
+  "flake8==7.1.1", 
+  "flake8-import-order==0.18.2", 
+  "pytest==8.3.3", 
+  "sphinx==8.1.3", 
+  "sphinx_rtd_theme==3.0.2",
+  "twine==5.1.1"
+]
+

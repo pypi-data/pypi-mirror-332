@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+souvenir_python/__init__.py
+souvenir_python/base32.py
+souvenir_python/id.py
+souvenir_python.egg-info/PKG-INFO
+souvenir_python.egg-info/SOURCES.txt
+souvenir_python.egg-info/dependency_links.txt
+souvenir_python.egg-info/requires.txt
+souvenir_python.egg-info/top_level.txt
