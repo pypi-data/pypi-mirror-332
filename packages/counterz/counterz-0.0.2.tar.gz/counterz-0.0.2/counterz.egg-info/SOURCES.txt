@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+counterz/__init__.py
+counterz.egg-info/PKG-INFO
+counterz.egg-info/SOURCES.txt
+counterz.egg-info/dependency_links.txt
+counterz.egg-info/top_level.txt
+test/test.py
