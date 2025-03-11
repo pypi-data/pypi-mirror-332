@@ -1,0 +1,44 @@
+[tool]
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "2.0.2"
+tag_format = "$version"
+version_files = ["pyproject.toml"]
+
+[tool.mypy]
+mypy_path = "typings"
+
+[tool.hatch.build.targets.wheel]
+packages = ["PyRlEnvs"]
+
+[project]
+name = "PyRlEnvs-andnp"
+version = "2.0.2"
+description = "A handful of fast environments for running RL experiments"
+authors = [
+    {name = "Andy Patterson", email = "andnpatterson@gmail.com"},
+]
+dependencies = [
+    "numpy>=1.23.5",
+    "numba>=0.56.4",
+    "scipy>=1.9.3",
+    "RlGlue-andnp>=2.0.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[dependency-groups]
+dev = [
+    "mypy",
+    "flake8",
+    "commitizen",
+    "pre-commit",
+    "twine",
+    "gym>=0.26.2",
+    "pygame>=2.1.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,13 @@
+__pycache__/
+.vscode/
+*.pyc
+.mypy_cache
+.token
+
+.pdm.toml
+.venv/
+env/
+dist/
+PyRlEnvs_andnp*
+test.py
+uv.lock
