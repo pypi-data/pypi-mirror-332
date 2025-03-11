@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: starlette-caches
+site_description: Server-side HTTP caching for ASGI applications, inspired by Django's cache framework
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - content.tabs.link
+
+repo_name: mattmess1221/starlette-caches
+repo_url: https://github.com/mattmess1221/starlette-caches
+edit_uri: ""
+
+watch:
+  - src
+
+nav:
+  - Introduction: "index.md"
+  - User Guide:
+      - Getting Started: "usage/index.md"
+      - Caching Rules: "usage/rules.md"
+  - API Reference: "reference.md"
+  - Changelog: "changelog.md"
+
+plugins:
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          import:
+            - https://docs.python.org/3/objects.inv
+            - https://www.starlette.io/objects.inv
+            - https://aiocache.aio-libs.org/en/latest/objects.inv
+          paths:
+            - src
+          options:
+            # headings
+            show_root_heading: true
+            show_root_toc_entry: true
+            show_root_full_path: true
+            # docstrings
+            merge_init_into_class: true
+            # signatures
+            show_signature_annotations: true
+            separate_signature: true
+            signature_crossrefs: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: mattmess1221
+      repo: starlette-caches
+  - codehilite:
+      guess_lang: false

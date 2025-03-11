@@ -1,0 +1,8 @@
+#!/usr/bin/env -S uv run --group test bash
+# shellcheck shell=bash
+set -euo pipefail
+set -x
+
+coverage run -m pytest "$@"
+coverage report || true
+coverage xml || true
