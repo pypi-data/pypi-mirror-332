@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+modelsdk.egg-info/PKG-INFO
+modelsdk.egg-info/SOURCES.txt
+modelsdk.egg-info/dependency_links.txt
+modelsdk.egg-info/top_level.txt

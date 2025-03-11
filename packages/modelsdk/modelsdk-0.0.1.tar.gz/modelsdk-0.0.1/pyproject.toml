@@ -1,0 +1,17 @@
+[project]
+name = "modelsdk"
+version = "0.0.1"
+authors = [
+  { name="cloudwalk", email="mihir@cloudwalk.io" },
+]
+description = "A flexible SDK for interacting with various models"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/modelsdk"
+Issues = "https://github.com/pypa/modelsdk/issues"
