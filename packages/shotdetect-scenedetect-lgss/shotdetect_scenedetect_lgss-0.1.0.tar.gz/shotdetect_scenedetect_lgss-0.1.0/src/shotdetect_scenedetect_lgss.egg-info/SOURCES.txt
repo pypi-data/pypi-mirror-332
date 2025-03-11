@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/shotdetect-scenedetect-lgss/__init__.py
+src/shotdetect_scenedetect_lgss.egg-info/PKG-INFO
+src/shotdetect_scenedetect_lgss.egg-info/SOURCES.txt
+src/shotdetect_scenedetect_lgss.egg-info/dependency_links.txt
+src/shotdetect_scenedetect_lgss.egg-info/top_level.txt
