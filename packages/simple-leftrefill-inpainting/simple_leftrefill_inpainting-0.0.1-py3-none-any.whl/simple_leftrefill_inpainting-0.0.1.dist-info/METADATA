@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: simple-leftrefill-inpainting
+Version: 0.0.1
+Summary: This is a wrapper api of paper LeftRefill
+Author: jingwei xu
+Author-email: davidxujw@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: diffusers (==0.27.2)
+Requires-Dist: easydict
+Requires-Dist: einops
+Requires-Dist: fire (>=0.5.0,<0.6.0)
+Requires-Dist: huggingface_hub (==0.20.2)
+Requires-Dist: kornia (==0.5.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: omegaconf
+Requires-Dist: open_clip_torch (==2.16.0)
+Requires-Dist: opencv-python (>=4.8.0.74,<5.0.0.0)
+Requires-Dist: pillow (>=9.5.0,<10.0.0)
+Requires-Dist: pytorch_lightning (==1.5.0)
+Requires-Dist: scikit-image
+Requires-Dist: timm (==0.4.12)
+Requires-Dist: torch (>=1.13.1,!=2.0.1)
+Requires-Dist: torchvision (>=0.14.1)
+Requires-Dist: transformers (==4.39.3)
+Requires-Dist: webdataset
+Requires-Dist: yacs (==0.1.8)
+Description-Content-Type: text/markdown
+
+
+# Simple-lama-inpainting
+
+Simple pip package originally from [LeftRefill](https://github.com/ewrfcas/LeftRefill)[1] inpainting with reference. Edited from the [wrapper](https://github.com/DavidXu-JJ/StreetUnveiler/blob/main/utils/left_refill_utils.py) from StreetUnveiler[2]
+
+The API design is similar to [simple-lama-inpainting](https://github.com/enesmsahin/simple-lama-inpainting).
+
+## Installation
+
+```bash
+pip install simple-leftrefill-inpainting
+```
+
+# CLI
+
+```bash
+simple_leftrefill <path_to_inpainted_image> <path_to_mask_image> <path_to_reference_image> <path_to_output_image>
+```
+
+# How to use in your code
+
+```python
+from diffusers.utils import load_image
+from simple_leftrefill_inpainting import LeftRefillGuidance
+
+model = LeftRefillGuidance()
+
+result = model.predict(
+    load_image("./assets/inpainted.png"),
+    load_image("./assets/mask.png"),
+    load_image("./assets/reference.png"),
+)
+
+result.save("./assets/result.png")
+```
+
+# Illustration
+
+Inpainted Input:
+
+![](./assets/inpainted.png)
+
+Inpainting Mask:
+
+![](./assets/mask.png)
+
+Reference Mask:
+
+![](./assets/reference.png)
+
+Result:
+
+![](./assets/result.png)
+
+# License
+
+Please follow both LeftRefill license and the license in this repo.
+
+# Reference
+
+[1] Cao et al. LeftRefill: Filling Right Canvas based on Left Reference through Generalized Text-to-Image Diffusion Model. CVPR 2024
+
+```
+@inproceedings{cao2024leftrefill,
+      title={LeftRefill: Filling Right Canvas based on Left Reference through Generalized Text-to-Image Diffusion Model}, 
+      author={Chenjie Cao and Yunuo Cai and Qiaole Dong and Yikai Wang and Yanwei Fu},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+      year={2024},
+}
+```
+
+[2] Xu et al. 3D StreetUnveiler with Semantic-aware 2DGS - a simple baseline. ICLR 2025
+
+```
+@inproceedings{xu2025streetunveiler,
+  author       = {Jingwei Xu and Yikai Wang and Yiqun Zhao and Yanwei Fu and Shenghua Gao},
+  title        = {3D StreetUnveiler with Semantic-aware 2DGS - a simple baseline},
+  booktitle    = {The International Conference on Learning Representations (ICLR)},
+  year         = {2025},
+}
+```
+
