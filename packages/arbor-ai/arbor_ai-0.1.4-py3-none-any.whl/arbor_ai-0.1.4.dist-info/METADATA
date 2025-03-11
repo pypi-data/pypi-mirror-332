@@ -1,0 +1,97 @@
+Metadata-Version: 2.3
+Name: arbor-ai
+Version: 0.1.4
+Summary: A framework for fine-tuning and managing language models
+License: MIT
+Keywords: machine learning,fine-tuning,language models
+Author: Noah Ziems
+Author-email: nziems2@nd.edu
+Requires-Python: >=3.9, <3.14
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click
+Requires-Dist: fastapi
+Requires-Dist: peft (>=0.14.0,<0.15.0)
+Requires-Dist: pydantic-settings (>=2.8.1,<3.0.0)
+Requires-Dist: python-multipart (>=0.0.20,<0.0.21)
+Requires-Dist: torch (>=2.6.0,<3.0.0)
+Requires-Dist: transformers (>=4.49.0,<5.0.0)
+Requires-Dist: trl (>=0.15.2,<0.16.0)
+Requires-Dist: uvicorn
+Project-URL: Repository, https://github.com/arbor-ai/arbor
+Description-Content-Type: text/markdown
+
+# Arbor 🌳
+
+A drop-in replacement for OpenAI's fine-tuning API that lets you fine-tune and manage open-source language models locally. Train and deploy custom models with the same API you already know.
+
+## Installation
+
+```bash
+pip install arbor-ai
+```
+
+## Quick Start
+
+1. Start the Arbor server:
+
+```bash
+arbor serve
+```
+
+2. The server will be available at `http://localhost:8000`.
+
+3. Upload your training data:
+
+```python
+import requests
+
+requests.post('http://127.0.0.1:8000/api/files', files={'file': open('your_file.jsonl', 'rb')})
+```
+
+4. Submit a fine-tuning job:
+
+```python
+requests.post('http://127.0.0.1:8000/api/fine-tune', json={'model': 'HuggingFaceTB/SmolLM2-135M-Instruct', 'training_file': 'Returned file ID from Step 3'})
+```
+
+5. Monitor the job status:
+
+```python
+requests.get('http://127.0.0.1:8000/api/jobs/{Returned job ID from Step 4}')
+```
+
+
+
+## Development Setup
+
+```bash
+poetry install
+```
+
+```bash
+poetry run arbor serve
+```
+
+```bash
+poetry run pytest
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+If you encounter any issues or have questions, please file an issue on the [GitHub repository](https://github.com/Ziems/arbor/issues).
