@@ -1,0 +1,10 @@
+numpy
+napari[pyqt]
+qtpy
+matplotlib
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
