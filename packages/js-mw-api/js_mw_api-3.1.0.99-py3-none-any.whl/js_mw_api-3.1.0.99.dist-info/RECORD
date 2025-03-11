@@ -1,0 +1,5 @@
+js_mw_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+js_mw_api/mwapi.py,sha256=OicEN7f0H71RhJoHa3tmsfnYhTWuT7nGk49slZCNE78,57633
+js_mw_api-3.1.0.99.dist-info/METADATA,sha256=KRXjn6yIcy4FgSxuadSiI8FWs6UfPDgbPnIEoc8hC1U,506
+js_mw_api-3.1.0.99.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+js_mw_api-3.1.0.99.dist-info/RECORD,,
