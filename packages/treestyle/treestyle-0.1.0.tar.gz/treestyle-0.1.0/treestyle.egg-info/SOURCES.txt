@@ -1,0 +1,13 @@
+.gitignore
+.python-version
+README.md
+pyproject.toml
+uv.lock
+.github/workflows/ci.yml
+tests/test_treestyle.py
+tests/__snapshots__/test_treestyle.ambr
+treestyle/__init__.py
+treestyle.egg-info/PKG-INFO
+treestyle.egg-info/SOURCES.txt
+treestyle.egg-info/dependency_links.txt
+treestyle.egg-info/top_level.txt
