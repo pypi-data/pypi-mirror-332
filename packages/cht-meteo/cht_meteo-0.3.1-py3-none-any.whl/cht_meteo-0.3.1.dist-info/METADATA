@@ -1,0 +1,35 @@
+Metadata-Version: 2.2
+Name: cht_meteo
+Version: 0.3.1
+Summary: Downloading meteorological data from various sources
+Author-email: Maarten van Ormondt <maarten.vanormondt@deltares.nl>, Panos Athanasiou <Panos.Athanasiou@deltares.nl>, Luuk Blom <Luuk.Blom@deltares.nl>
+License: MIT
+Project-URL: Source, https://github.com/Deltares/cht_meteo
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: siphon
+Requires-Dist: xarray
+Requires-Dist: pyproj
+Requires-Dist: metpy
+Requires-Dist: toml
+Requires-Dist: tomli
+Requires-Dist: netCDF4
+Requires-Dist: cht_utils
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+
+# Coastal Hazards Toolkit - Meteo
+
+A package to download meteorological forecasts and hindcasts from different sources.
+
+Right now, GFS hindcasts and forecasts are available.
+
+Coamps-TC forecast data is also available.
+
+The package is designed to be easily extensible to other sources.
