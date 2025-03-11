@@ -1,0 +1,626 @@
+Metadata-Version: 2.2
+Name: ikpykit
+Version: 0.1.dev156
+Summary: Isolation Kernel Toolkit in Python.
+Author-email: Xin Han <xhan197@outlook.com>, Yixiao Ma <mayx@lamda.nju.edu.cn>, Ye Zhu <ye.zhu@ieee.org>, Kaiming Ting <tingkm@nju.edu.cn>
+License: ikpykit (c) by Xin Han
+        
+        Attribution-NonCommercial-NoDerivatives 4.0 International
+        
+        =======================================================================
+        
+        Creative Commons Corporation ("Creative Commons") is not a law firm and
+        does not provide legal services or legal advice. Distribution of
+        Creative Commons public licenses does not create a lawyer-client or
+        other relationship. Creative Commons makes its licenses and related
+        information available on an "as-is" basis. Creative Commons gives no
+        warranties regarding its licenses, any material licensed under their
+        terms and conditions, or any related information. Creative Commons
+        disclaims all liability for damages resulting from their use to the
+        fullest extent possible.
+        
+        Using Creative Commons Public Licenses
+        
+        Creative Commons public licenses provide a standard set of terms and
+        conditions that creators and other rights holders may use to share
+        original works of authorship and other material subject to copyright
+        and certain other rights specified in the public license below. The
+        following considerations are for informational purposes only, are not
+        exhaustive, and do not form part of our licenses.
+        
+             Considerations for licensors: Our public licenses are
+             intended for use by those authorized to give the public
+             permission to use material in ways otherwise restricted by
+             copyright and certain other rights. Our licenses are
+             irrevocable. Licensors should read and understand the terms
+             and conditions of the license they choose before applying it.
+             Licensors should also secure all rights necessary before
+             applying our licenses so that the public can reuse the
+             material as expected. Licensors should clearly mark any
+             material not subject to the license. This includes other CC-
+             licensed material, or material used under an exception or
+             limitation to copyright. More considerations for licensors:
+            wiki.creativecommons.org/Considerations_for_licensors
+        
+             Considerations for the public: By using one of our public
+             licenses, a licensor grants the public permission to use the
+             licensed material under specified terms and conditions. If
+             the licensor's permission is not necessary for any reason--for
+             example, because of any applicable exception or limitation to
+             copyright--then that use is not regulated by the license. Our
+             licenses grant only permissions under copyright and certain
+             other rights that a licensor has authority to grant. Use of
+             the licensed material may still be restricted for other
+             reasons, including because others have copyright or other
+             rights in the material. A licensor may make special requests,
+             such as asking that all changes be marked or described.
+             Although not required by our licenses, you are encouraged to
+             respect those requests where reasonable. More considerations
+             for the public:
+            wiki.creativecommons.org/Considerations_for_licensees
+        
+        =======================================================================
+        
+        Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+        International Public License
+        
+        By exercising the Licensed Rights (defined below), You accept and agree
+        to be bound by the terms and conditions of this Creative Commons
+        Attribution-NonCommercial-NoDerivatives 4.0 International Public
+        License ("Public License"). To the extent this Public License may be
+        interpreted as a contract, You are granted the Licensed Rights in
+        consideration of Your acceptance of these terms and conditions, and the
+        Licensor grants You such rights in consideration of benefits the
+        Licensor receives from making the Licensed Material available under
+        these terms and conditions.
+        
+        Section 1 -- Definitions.
+        
+          a. Adapted Material means material subject to Copyright and Similar
+             Rights that is derived from or based upon the Licensed Material
+             and in which the Licensed Material is translated, altered,
+             arranged, transformed, or otherwise modified in a manner requiring
+             permission under the Copyright and Similar Rights held by the
+             Licensor. For purposes of this Public License, where the Licensed
+             Material is a musical work, performance, or sound recording,
+             Adapted Material is always produced where the Licensed Material is
+             synched in timed relation with a moving image.
+        
+          b. Copyright and Similar Rights means copyright and/or similar rights
+             closely related to copyright including, without limitation,
+             performance, broadcast, sound recording, and Sui Generis Database
+             Rights, without regard to how the rights are labeled or
+             categorized. For purposes of this Public License, the rights
+             specified in Section 2(b)(1)-(2) are not Copyright and Similar
+             Rights.
+        
+          c. Effective Technological Measures means those measures that, in the
+             absence of proper authority, may not be circumvented under laws
+             fulfilling obligations under Article 11 of the WIPO Copyright
+             Treaty adopted on December 20, 1996, and/or similar international
+             agreements.
+        
+          d. Exceptions and Limitations means fair use, fair dealing, and/or
+             any other exception or limitation to Copyright and Similar Rights
+             that applies to Your use of the Licensed Material.
+        
+          e. Licensed Material means the artistic or literary work, database,
+             or other material to which the Licensor applied this Public
+             License.
+        
+          f. Licensed Rights means the rights granted to You subject to the
+             terms and conditions of this Public License, which are limited to
+             all Copyright and Similar Rights that apply to Your use of the
+             Licensed Material and that the Licensor has authority to license.
+        
+          g. Licensor means the individual(s) or entity(ies) granting rights
+             under this Public License.
+        
+          h. NonCommercial means not primarily intended for or directed towards
+             commercial advantage or monetary compensation. For purposes of
+             this Public License, the exchange of the Licensed Material for
+             other material subject to Copyright and Similar Rights by digital
+             file-sharing or similar means is NonCommercial provided there is
+             no payment of monetary compensation in connection with the
+             exchange.
+        
+          i. Share means to provide material to the public by any means or
+             process that requires permission under the Licensed Rights, such
+             as reproduction, public display, public performance, distribution,
+             dissemination, communication, or importation, and to make material
+             available to the public including in ways that members of the
+             public may access the material from a place and at a time
+             individually chosen by them.
+        
+          j. Sui Generis Database Rights means rights other than copyright
+             resulting from Directive 96/9/EC of the European Parliament and of
+             the Council of 11 March 1996 on the legal protection of databases,
+             as amended and/or succeeded, as well as other essentially
+             equivalent rights anywhere in the world.
+        
+          k. You means the individual or entity exercising the Licensed Rights
+             under this Public License. Your has a corresponding meaning.
+        
+        Section 2 -- Scope.
+        
+          a. License grant.
+        
+               1. Subject to the terms and conditions of this Public License,
+                  the Licensor hereby grants You a worldwide, royalty-free,
+                  non-sublicensable, non-exclusive, irrevocable license to
+                  exercise the Licensed Rights in the Licensed Material to:
+        
+                    a. reproduce and Share the Licensed Material, in whole or
+                       in part, for NonCommercial purposes only; and
+        
+                    b. produce and reproduce, but not Share, Adapted Material
+                       for NonCommercial purposes only.
+        
+               2. Exceptions and Limitations. For the avoidance of doubt, where
+                  Exceptions and Limitations apply to Your use, this Public
+                  License does not apply, and You do not need to comply with
+                  its terms and conditions.
+        
+               3. Term. The term of this Public License is specified in Section
+                  6(a).
+        
+               4. Media and formats; technical modifications allowed. The
+                  Licensor authorizes You to exercise the Licensed Rights in
+                  all media and formats whether now known or hereafter created,
+                  and to make technical modifications necessary to do so. The
+                  Licensor waives and/or agrees not to assert any right or
+                  authority to forbid You from making technical modifications
+                  necessary to exercise the Licensed Rights, including
+                  technical modifications necessary to circumvent Effective
+                  Technological Measures. For purposes of this Public License,
+                  simply making modifications authorized by this Section 2(a)
+                  (4) never produces Adapted Material.
+        
+               5. Downstream recipients.
+        
+                    a. Offer from the Licensor -- Licensed Material. Every
+                       recipient of the Licensed Material automatically
+                       receives an offer from the Licensor to exercise the
+                       Licensed Rights under the terms and conditions of this
+                       Public License.
+        
+                    b. No downstream restrictions. You may not offer or impose
+                       any additional or different terms or conditions on, or
+                       apply any Effective Technological Measures to, the
+                       Licensed Material if doing so restricts exercise of the
+                       Licensed Rights by any recipient of the Licensed
+                       Material.
+        
+               6. No endorsement. Nothing in this Public License constitutes or
+                  may be construed as permission to assert or imply that You
+                  are, or that Your use of the Licensed Material is, connected
+                  with, or sponsored, endorsed, or granted official status by,
+                  the Licensor or others designated to receive attribution as
+                  provided in Section 3(a)(1)(A)(i).
+        
+          b. Other rights.
+        
+               1. Moral rights, such as the right of integrity, are not
+                  licensed under this Public License, nor are publicity,
+                  privacy, and/or other similar personality rights; however, to
+                  the extent possible, the Licensor waives and/or agrees not to
+                  assert any such rights held by the Licensor to the limited
+                  extent necessary to allow You to exercise the Licensed
+                  Rights, but not otherwise.
+        
+               2. Patent and trademark rights are not licensed under this
+                  Public License.
+        
+               3. To the extent possible, the Licensor waives any right to
+                  collect royalties from You for the exercise of the Licensed
+                  Rights, whether directly or through a collecting society
+                  under any voluntary or waivable statutory or compulsory
+                  licensing scheme. In all other cases the Licensor expressly
+                  reserves any right to collect such royalties, including when
+                  the Licensed Material is used other than for NonCommercial
+                  purposes.
+        
+        Section 3 -- License Conditions.
+        
+        Your exercise of the Licensed Rights is expressly made subject to the
+        following conditions.
+        
+          a. Attribution.
+        
+               1. If You Share the Licensed Material, You must:
+        
+                    a. retain the following if it is supplied by the Licensor
+                       with the Licensed Material:
+        
+                         i. identification of the creator(s) of the Licensed
+                            Material and any others designated to receive
+                            attribution, in any reasonable manner requested by
+                            the Licensor (including by pseudonym if
+                            designated);
+        
+                        ii. a copyright notice;
+        
+                       iii. a notice that refers to this Public License;
+        
+                        iv. a notice that refers to the disclaimer of
+                            warranties;
+        
+                         v. a URI or hyperlink to the Licensed Material to the
+                            extent reasonably practicable;
+        
+                    b. indicate if You modified the Licensed Material and
+                       retain an indication of any previous modifications; and
+        
+                    c. indicate the Licensed Material is licensed under this
+                       Public License, and include the text of, or the URI or
+                       hyperlink to, this Public License.
+        
+                  For the avoidance of doubt, You do not have permission under
+                  this Public License to Share Adapted Material.
+        
+               2. You may satisfy the conditions in Section 3(a)(1) in any
+                  reasonable manner based on the medium, means, and context in
+                  which You Share the Licensed Material. For example, it may be
+                  reasonable to satisfy the conditions by providing a URI or
+                  hyperlink to a resource that includes the required
+                  information.
+        
+               3. If requested by the Licensor, You must remove any of the
+                  information required by Section 3(a)(1)(A) to the extent
+                  reasonably practicable.
+        
+        Section 4 -- Sui Generis Database Rights.
+        
+        Where the Licensed Rights include Sui Generis Database Rights that
+        apply to Your use of the Licensed Material:
+        
+          a. for the avoidance of doubt, Section 2(a)(1) grants You the right
+             to extract, reuse, reproduce, and Share all or a substantial
+             portion of the contents of the database for NonCommercial purposes
+             only and provided You do not Share Adapted Material;
+        
+          b. if You include all or a substantial portion of the database
+             contents in a database in which You have Sui Generis Database
+             Rights, then the database in which You have Sui Generis Database
+             Rights (but not its individual contents) is Adapted Material; and
+        
+          c. You must comply with the conditions in Section 3(a) if You Share
+             all or a substantial portion of the contents of the database.
+        
+        For the avoidance of doubt, this Section 4 supplements and does not
+        replace Your obligations under this Public License where the Licensed
+        Rights include other Copyright and Similar Rights.
+        
+        Section 5 -- Disclaimer of Warranties and Limitation of Liability.
+        
+          a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE
+             EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS
+             AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF
+             ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS,
+             IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION,
+             WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR
+             PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,
+             ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT
+             KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT
+             ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.
+        
+          b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE
+             TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION,
+             NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT,
+             INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES,
+             COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR
+             USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN
+             ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR
+             DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR
+             IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.
+        
+          c. The disclaimer of warranties and limitation of liability provided
+             above shall be interpreted in a manner that, to the extent
+             possible, most closely approximates an absolute disclaimer and
+             waiver of all liability.
+        
+        Section 6 -- Term and Termination.
+        
+          a. This Public License applies for the term of the Copyright and
+             Similar Rights licensed here. However, if You fail to comply with
+             this Public License, then Your rights under this Public License
+             terminate automatically.
+        
+          b. Where Your right to use the Licensed Material has terminated under
+             Section 6(a), it reinstates:
+        
+               1. automatically as of the date the violation is cured, provided
+                  it is cured within 30 days of Your discovery of the
+                  violation; or
+        
+               2. upon express reinstatement by the Licensor.
+        
+             For the avoidance of doubt, this Section 6(b) does not affect any
+             right the Licensor may have to seek remedies for Your violations
+             of this Public License.
+        
+          c. For the avoidance of doubt, the Licensor may also offer the
+             Licensed Material under separate terms or conditions or stop
+             distributing the Licensed Material at any time; however, doing so
+             will not terminate this Public License.
+        
+          d. Sections 1, 5, 6, 7, and 8 survive termination of this Public
+             License.
+        
+        Section 7 -- Other Terms and Conditions.
+        
+          a. The Licensor shall not be bound by any additional or different
+             terms or conditions communicated by You unless expressly agreed.
+        
+          b. Any arrangements, understandings, or agreements regarding the
+             Licensed Material not stated herein are separate from and
+             independent of the terms and conditions of this Public License.
+        
+        Section 8 -- Interpretation.
+        
+          a. For the avoidance of doubt, this Public License does not, and
+             shall not be interpreted to, reduce, limit, restrict, or impose
+             conditions on any use of the Licensed Material that could lawfully
+             be made without permission under this Public License.
+        
+          b. To the extent possible, if any provision of this Public License is
+             deemed unenforceable, it shall be automatically reformed to the
+             minimum extent necessary to make it enforceable. If the provision
+             cannot be reformed, it shall be severed from this Public License
+             without affecting the enforceability of the remaining terms and
+             conditions.
+        
+          c. No term or condition of this Public License will be waived and no
+             failure to comply consented to unless expressly agreed to by the
+             Licensor.
+        
+          d. Nothing in this Public License constitutes or may be interpreted
+             as a limitation upon, or waiver of, any privileges and immunities
+             that apply to the Licensor or You, including from the legal
+             processes of any jurisdiction or authority.
+        
+        =======================================================================
+        
+        Creative Commons is not a party to its public
+        licenses. Notwithstanding, Creative Commons may elect to apply one of
+        its public licenses to material it publishes and in those instances
+        will be considered the “Licensor.” The text of the Creative Commons
+        public licenses is dedicated to the public domain under the CC0 Public
+        Domain Dedication. Except for the limited purpose of indicating that
+        material is shared under a Creative Commons public license or as
+        otherwise permitted by the Creative Commons policies published at
+        creativecommons.org/policies, Creative Commons does not authorize the
+        use of the trademark "Creative Commons" or any other trademark or logo
+        of Creative Commons without its prior written consent including,
+        without limitation, in connection with any unauthorized modifications
+        to any of its public licenses or any other arrangements,
+        understandings, or agreements concerning use of licensed material. For
+        the avoidance of doubt, this paragraph does not form part of the
+        public licenses.
+        
+        Creative Commons may be contacted at creativecommons.org.
+        
+Project-URL: Homepage, https://isolationkernel.github.io/ikpykit/
+Project-URL: Repository, https://github.com/IsolationKernel/ikpykit
+Project-URL: Documentation, https://isolationkernel.github.io/ikpykit/
+Project-URL: Release Notes, https://isolationkernel.github.io/ikpykit/latest/releases/releases
+Keywords: data-science,machine-learning,data-mining,anomaly detection,scikit-learn,cluster,graph embedding,isolation kernel
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scikit-learn>=1.2
+Requires-Dist: pandas>=1.5
+Requires-Dist: numpy<=1.22
+Requires-Dist: numba>=0.54
+Requires-Dist: tqdm>=4.62.3
+
+<!-- <script src="https://kit.fontawesome.com/d20edc211b.js" crossorigin="anonymous"></script>
+
+<div style="margin-bottom: 10px;">
+    <img src="img/ikpykit_logo_1.jpg#only-light" align="left" style="margin-bottom: 20px; margin-top: 0px;">
+    <img src="img/ikpykit_logo_1.jpg#only-dark" align="left" style="margin-bottom: 20px; margin-top: 0px;">
+</div> -->
+
+<!-- <div style="clear: both;"></div> -->
+
+![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)
+[![PyPI](https://img.shields.io/pypi/v/ikpykit)](https://pypi.org/project/ikpykit/)
+[![codecov](https://codecov.io/gh/IsolationKernel/ikpykit/branch/master/graph/badge.svg)](https://codecov.io/gh/IsolationKernel/ikpykit)
+[![Build status](https://github.com/IsolationKernel/ikpykit/actions/workflows/python-app.yml/badge.svg)](https://github.com/IsolationKernel/ikpykit/actions/workflows/python-app.yml/badge.svg)
+[![Project Status: Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/IsolationKernel/ikpykit/graphs/commit-activity)
+[![Downloads](https://static.pepy.tech/badge/ikpykit)](https://pepy.tech/project/ikpykit)
+[![Downloads](https://static.pepy.tech/badge/ikpykit/month)](https://pepy.tech/project/ikpykit)
+[![License](https://img.shields.io/github/license/IsolationKernel/ikpykit)](https://github.com/IsolationKernel/ikpykit/blob/master/LICENSE)
+
+## About The Project
+
+**IKPyKit** (Isolation Kernel Python toolKit) is an intuitive Python library designed for a variety of machine learning tasks including kernel similarity calculation, anomaly detection, clustering, and change detection—all powered by the innovative **Isolation Kernel (IK)** . Isolation Kernel is a data-dependent kernel that measures similarity by isolating data points using an isolation mechanism. It uniquely adapts to the data distribution, with the property that points in sparse regions are more similar than those in dense regions. Notably, it requires no learning or closed-form expression, making it efficient and scalable.
+
+---
+
+### Why use Isolation Kernel?
+
+- **Data-Dependent Similarity**: Unlike traditional kernels (e.g., Gaussian, Laplacian), Isolation Kernel adapts to the structure of the data rather than assuming a fixed similarity function.
+- **Handles Sparse and Dense Regions**: Isolation Kernel effectively accounts for varying data densities, making it ideal for datasets with non-uniform distributions.
+- **No Learning Required**: It eliminates the need for training or parameter tuning, simplifying implementation while reducing computational cost.
+- **Effective in High Dimensions**: It uniquely addresses the curse of dimensionality, being the only known measure capable of finding exact nearest neighbors in high-dimensional spaces.
+- **Versatile Applications**: Isolation Kernel has been successfully applied to tasks like anomaly detection, clustering, and processing stream data, graph data, trajectory data, and more.
+
+Learn more about its history and development on the [IsolationKernel GitHub page](https://github.com/IsolationKernel).
+
+---
+
+### Why use IKPyKit?
+
+IKPyKit is specifically built to harness the power of Isolation Kernel, providing specialized algorithms for a wide range of data types and tasks. Its seamless integration with the scikit-learn API allows easy adoption and compatibility with scikit-learn tools.
+
+- **Tailored for Isolation Kernel**: IKPyKit directly leverages the unique properties of Isolation Kernel for efficient and effective machine learning solutions.
+- **Efficient and User-Friendly**: Designed for simplicity and performance, IKPyKit offers an intuitive interface built on the scikit-learn API.
+- **Support for Diverse Data Types**: It supports graph data, group data, stream data, time series, and trajectory data, making it versatile for various domains.
+- **Comprehensive Resources**: Users benefit from rich documentation and examples to quickly understand and apply the library’s features.
+- **Ideal for Research and Industry**: IKPyKit is suitable for both academic research and industrial applications, providing scalable and cutting-edge tools for modern machine learning challenges.
+
+---
+
+## Installation & Dependencies
+
+To install the basic version of `ikpykit` with core dependencies, run the following:
+
+```bash
+pip install ikpykit
+```
+
+For more installation options, including dependencies and additional features, check out our [Installation Guide](https://isolationkernel.github.io/ikpykit/quick-start/how-to-install.html).
+
+---
+
+## Example
+
+```py
+# Anomaly Detection using inne.
+import numpy as np
+from ikpykit.anomaly import INNE
+X = np.array([[-1.1, 0.2], [0.3, 0.5], [0.5, 1.1], [100, 90]])
+clf = INNE(contamination=0.25).fit(X)
+clf.predict([[0.1, 0.3], [0, 0.7], [90, 85]])
+```
+
+---
+
+## Implemented Algorithms
+
+#### Summary
+
+| Algorithms      | Kernel Similarity              | Anomaly Detection          | Clustering           | Change Detection |
+| --------------- | ------------------------------ | -------------------------- | -------------------- | ---------------- |
+| Point Data      | IsoKernel (AAAI'19, SIGKDD'18) | IForest (ICDM'08, TKDD'12) | IDKC (IS'23)         |                  |
+|                 |                                | INNE (CIJ'18)              | PSKC (TKDE'23)       |                  |
+|                 |                                | IDKD (TKDE'22)             | IKAHC (PRJ'23)       |                  |
+| Graph Data      | IsoGraphKernel (AAAI'21)       | IKGOD (SIAM'23)            |                      |                  |
+| Group Data      | IsodisKernel （SIGKDD'22）     | IKGAD （SIGKDD'22）        |                      |                  |
+| Stream Data     |                                |                            | StreaKHC (SIGKDD'22) | ICID (JAIR'24)   |
+| Time Series     |                                | IKTOD (VLDB'22)            |                      |                  |
+| Trajectory Data |                                | IKAT (JAIR'24)             | TIDKC (ICDM'23)      |                  |
+
+**(i) Isolation Kernel** :
+
+| Abbr                                                                                         | Algorithm                     | Utilization                                   | Published            |
+| -------------------------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------- | -------------------- |
+| [IsoKernel](https://isolationkernel.github.io/ikpykit/api/kernel/isolation_kernel.html)        | Isolation Kernel              | IK feature mapping and similarity calculating | AAAI2019, SIGKDD2018 |
+| [IsodisKernel](https://isolationkernel.github.io/ikpykit/api/kernel/isolation_dis_kernel.html) | Isolation Distribution Kernel | Distribution similarity calculating           | SIGKDD2022           |
+
+**(ii) Point Anomaly detection** :
+
+| Abbr                                                                        | Algorithm                                                          | Utiliztion        | Published          |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------ | ----------------- | ------------------ |
+| [IForest](https://isolationkernel.github.io/ikpykit/api/anomaly/iforest.html) | Isolation forest                                                   | Anomaly Detection | ICDM2008, TKDD2022 |
+| [INNE](https://isolationkernel.github.io/ikpykit/api/anomaly/inne.html)       | Isolation-based anomaly detection using nearest-neighbor ensembles | Anomaly Detection | CIJ2018            |
+| [IDKD](https://isolationkernel.github.io/ikpykit/api/anomaly/idkd.html)       | Isolation Distributional Kernel for point anomaly detections       | Anomaly Detection | TKDE2022           |
+
+**(iii) Point Clustering** :
+
+| Abbr                                                                    | Algorithm                                                    | Utiliztion              | Published |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------- | --------- |
+| [IDKC](https://isolationkernel.github.io/ikpykit/api/cluster/idkc.html)   | Kernel-based Clustering via Isolation Distributional Kernel. | Point Clustering        | IS2023    |
+| [PSKC](https://isolationkernel.github.io/ikpykit/api/cluster/pskc.html)   | Point-set Kernel Clustering                                  | Point Clustering        | TKDE2023  |
+| [IKAHC](https://isolationkernel.github.io/ikpykit/api/cluster/ikahc.html) | Isolation Kernel for Agglomerative Hierarchical Clustering   | Hierarchical Clustering | PR2023    |
+
+**(IV) Graph Data** :
+
+| Abbr                                                                                    | Algorithm                                                              | Utiliztion                                    | Published |
+| --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------- | --------- |
+| [IKGOD](https://isolationkernel.github.io/ikpykit/api/graph/ikgod.html)                   | Subgraph Centralization: A Necessary Step for Graph Anomaly Detection. | Graph Anomaly Detection                       | SIAM2023  |
+| [IsoGraphKernel](https://isolationkernel.github.io/ikpykit/api/graph/IsoGraphKernel.html) | Isolation Graph Kernel                                                 | Graph IK embedding and similarity calculating | AAAI2021  |
+
+**(V) Group Data** :
+
+| Abbr                                                                  | Algorithm                                                    | Utiliztion              | Published |
+| --------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------- | --------- |
+| [IKGAD](https://isolationkernel.github.io/ikpykit/api/group/ikgad.html) | Isolation Distributional Kernel for group anomaly detections | Group Anomaly Detection | TKDE2022  |
+
+**(VI) Stream Data** :
+
+| Abbr                                                                         | Algorithm                                                       | Utiliztion                     | Published  |
+| ---------------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------ | ---------- |
+| [StreaKHC](https://isolationkernel.github.io/ikpykit/api/stream/streakhc.html) | Isolation Distribution Kernel for Trajectory Anomaly Detections | Online Hierarchical Clustering | SIGKDD2022 |
+| [ICID](https://isolationkernel.github.io/ikpykit/api/stream/icid.html)         | Detecting change intervals with isolation distributional kernel | Change Intervals Detection     | JAIR2024   |
+
+**(VII) Trajectory Data** :
+
+| Abbr                                                                       | Algorithm                                                       | Utiliztion                   | Published |
+| -------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------- | --------- |
+| [TIDKC](https://isolationkernel.github.io/ikpykit/api/trajectory/tidkc.html) | Distribution-based Tajectory Clustering                         | Trajectory Clustering        | ICDM2023  |
+| [IKAT](https://isolationkernel.github.io/ikpykit/api/trajectory/ikat.html)   | Isolation Distribution Kernel for Trajectory Anomaly Detections | Trajectory Anomaly Detection | JAIR2024  |
+
+**(VIII) Time Series**
+
+| Abbr                                                                        | Algorithm                                                       | Utiliztion        | Published |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------- | --------- |
+| [IKTOD](https://isolationkernel.github.io/ikpykit/api/time_series/iktod.html) | Isolation distribution kernel for Time Series Anomaly Detection | Anomaly detection | VLDB2022  |
+
+---
+
+## Features
+
+ikpykit provides a set of key features designed to make time series forecasting with machine learning easy and efficient. For a detailed overview, see the [User Guides](https://isolationkernel.github.io/ikpykit/user_guides/table-of-contents.html).
+
+---
+
+## Examples and tutorials
+
+Explore our extensive list of examples and tutorials (English and Spanish) to get you started with ikpykit. You can find them [here](https://isolationkernel.github.io/ikpykit/examples/examples_english.html).
+
+---
+
+## How to contribute
+
+Primarily, ikpykit development consists of adding and creating new *Forecasters*, new validation strategies, or improving the performance of the current code. However, there are many other ways to contribute:
+
+- Submit a bug report or feature request on [GitHub Issues](https://github.com/IsolationKernel/ikpykit/issues).
+- Contribute a Jupyter notebook to our [examples](https://isolationkernel.github.io/ikpykit/examples/examples_english.html).
+- Write [unit or integration tests](https://docs.pytest.org/en/latest/) for our project.
+- Answer questions on our issues, Stack Overflow, and elsewhere.
+- Translate our documentation into another language.
+- Write a blog post, tweet, or share our project with others.
+
+For more information on how to contribute to ikpykit, see our [Contribution Guide](https://isolationkernel.github.io/ikpykit/contributing/contribution.html).
+
+Visit our [authors section](https://isolationkernel.github.io/ikpykit/authors/authors.html) to meet all the contributors to ikpykit.
+
+---
+
+## Citation
+
+If you use ikpykit for a scientific publication, we would appreciate citations to the published software.
+
+**BibTeX**:
+
+```
+@software{IKPyKit,
+author = {Xin Han, Yixiao Ma, Ye Zhu, and Kaiming Ting},
+title = {IKPyKit：A Python Library for Isolation Kernel Toolkit},
+version = {0.1.0},
+month = {3},
+year = {2025},
+license = {BSD-3-Clause},
+url = {https://github.com/IsolationKernel/ikpykit}
+}
+```
+
+---
+
+## License
+
+[BSD-3-Clause License](https://github.com/IsolationKernel/ikpykit/blob/master/LICENSE)
