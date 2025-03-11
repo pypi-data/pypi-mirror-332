@@ -1,0 +1,74 @@
+ #
+ # This file is part of the moom distribution (https://github.com/iscito/moom).
+ # Copyright (c) 2025 Iscito
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+ # the Free Software Foundation, version 3.
+ #
+ # This program is distributed in the hope that it will be useful, but
+ # WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ # General Public License for more details.
+ #
+ # You should have received a copy of the GNU General Public License
+ # along with this program. If not, see <http://www.gnu.org/licenses/>.
+ #
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]  # list of folders that contain the packages (["."] by default)
+include = ["moom*"]  # package names should match these glob patterns (["*"] by default)
+#exclude = ["my_package.tests*"]  # exclude packages matching these glob patterns (empty by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+[tool.setuptools.package-data]
+moom = ["*.csv"]
+
+[project]
+name = "moom"
+description = "Useless Quotes for Controls Engineers"
+version = "0.2.0"
+readme = "README.md"
+dependencies = [
+]
+classifiers = [
+        "Development Status :: 3 - Alpha",
+        "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+        "Programming Language :: Python :: 3.8",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords=["moom", "controls", "engineer", "SCADA", "PLC"]
+authors=[
+    {name='"Iscito <>"', email="hutcheb@iscito.com"}
+]
+
+[project.urls]
+Repository="https://github.com/iscito/moom"
+
+[project.optional-dependencies]
+dev = [
+        "pytest-asyncio>=0.18.3",
+        "pip-tools",
+        "black",
+        "pip",
+        "deptry",
+        "requires",
+        "pre-commit>=2.6.0",
+        "pytest-mock>=3.8.1",
+        "mock>=4.0.2",
+        "mypy>=0.942",
+        "flake8>=4.0.1",
+        "pytest-asyncio",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+asyncio_mode = "auto"
+log_cli = "true"
