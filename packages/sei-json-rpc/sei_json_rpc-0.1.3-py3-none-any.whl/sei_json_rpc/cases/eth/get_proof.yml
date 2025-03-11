@@ -1,0 +1,103 @@
+test_cases:
+# ---------------------------
+# 正常场景
+# ---------------------------
+- description: "正常场景 - 单个存储位置证明（最新区块）"
+  method_name: "get_proof"
+  params:
+  - "0x388C818CA8B9251b393131C08a736A67ccB19297" # 有效合约地址
+  - [ "0x0" ] # 存储位置slot 0
+
+- description: "正常场景 - 多个存储位置证明"
+  method_name: "get_proof"
+  params:
+  - "0xContractAddress"
+  - [ "0x1", "0x2" ] # 多个存储slot
+  kwargs: { block_identifier: 123456 }
+
+- description: "正常场景 - 使用区块哈希查询"
+  method_name: "get_proof"
+  params:
+  - "0xContractAddress"
+  - [ "0x123" ]
+  kwargs:
+    block_identifier: "0xab12cd34ef56ab12cd34ef56ab12cd34ef56ab12cd34ef56ab12cd34ef56ab12"
+
+- description: "正常场景 - 整数存储位置参数"
+  method_name: "get_proof"
+  params:
+  - "0xContractAddress"
+  - [ 65535 ] # 整数位置（自动转为hex）
+
+- description: "正常场景 - ENS域名合约地址"
+  method_name: "get_proof"
+  params:
+  - "contract.eth"
+  - [ "0x0" ]
+
+# ---------------------------
+# 异常场景
+# ---------------------------
+- description: "异常场景 - 无效合约地址"
+  method_name: "get_proof"
+  params:
+  - "0xINVALID"
+  - [ "0x0" ]
+  expected_error: "InvalidAddress"
+
+- description: "异常场景 - 非合约地址查询"
+  method_name: "get_proof"
+  params:
+  - "0x742d35Cc6634C0532925a3b844Bc454e4438f44e" # EOA地址
+  - [ "0x0" ]
+  expected_error: "ContractNotAvailable"
+
+- description: "异常场景 - 不存在的区块号"
+  method_name: "get_proof"
+  params:
+  - "0xContractAddress"
+  - [ "0x0" ]
+  kwargs: { block_identifier: 99999999 }
+  expected_error: "BlockNotFound"
+
+- description: "异常场景 - 无效存储位置格式"
+  method_name: "get_proof"
+  params:
+  - "0xContractAddress"
+  - [ "invalid_slot" ]
+  expected_error: "Web3ValidationError"
+
+- description: "异常场景 - 空存储位置数组"
+  method_name: "get_proof"
+  params:
+  - "0xContractAddress"
+  - []
+  expected_error: "EmptyPositions"
+
+# ---------------------------
+# 边界场景
+# ---------------------------
+- description: "边界场景 - 最大存储位置值（2^256-1）"
+  method_name: "get_proof"
+  params:
+  - "0xContractAddress"
+  - [ "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" ]
+
+- description: "边界场景 - 零地址查询"
+  method_name: "get_proof"
+  params:
+  - "0x0000000000000000000000000000000000000000"
+  - [ "0x0" ]
+  expected_error: "AccountNotFound"
+
+- description: "边界场景 - 超大位置数组（超过1000个）"
+  method_name: "get_proof"
+  params:
+  - "0xContractAddress"
+  expected_error: "RequestLimitExceeded"
+
+- description: "边界场景 - 已销毁合约的证明"
+  method_name: "get_proof"
+  params:
+  - "0xDestroyedContract"
+  - [ "0x0" ]

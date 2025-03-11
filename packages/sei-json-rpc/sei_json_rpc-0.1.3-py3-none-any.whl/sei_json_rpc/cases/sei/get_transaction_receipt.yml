@@ -1,0 +1,29 @@
+test_cases:
+  # ---------------------------
+  # 正常场景测试
+  # ---------------------------
+  - description: "正常场景 - 查询已确认交易的回执"
+    method_name: "get_transaction_receipt"
+    params: ["0x1516aa6a8e47130827efed36abe2f2f2f81d97744a9f94813c4a25ec5b5e7524"]
+    expected_result:
+      tx_hash: "0x1516aa6a8e47130827efed36abe2f2f2f81d97744a9f94813c4a25ec5b5e7524"
+
+  - description: "正常场景 - 查询合约部署交易的回执"
+    method_name: "get_transaction_receipt"
+    params: ["0x4f47be02b19a570482acbdca3de279a395d8b3a12797ec1c42345cdb1a6affb2"]
+    expected_result:
+      tx_hash: "0x4f47be02b19a570482acbdca3de279a395d8b3a12797ec1c42345cdb1a6affb2"
+
+  # ---------------------------
+  # 异常场景测试
+  # ---------------------------
+  # - description: "异常场景 - 查询不存在的交易哈希"
+  #   method_name: "get_transaction_receipt"
+  #   params: ["0x0000000000000000000000000000000000000000000000000000000000000000"]
+  #   expected_error: "ERROR: {'code': -32000, 'message': 'receipt not found'}"
+
+  # - description: "异常场景 - 交易哈希格式错误"
+  #   method_name: "get_transaction_receipt"
+  #   params: ["0x1234"]
+  #   expected_error: "ERROR: {'code': -32602, 'message': 'invalid argument 0: hex string has length 4, want 64 for common.Hash'}"
+
