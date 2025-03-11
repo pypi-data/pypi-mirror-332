@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: sayhelloworldcutest
+Version: 0.1.0
+Summary: Automatically detects OS and opens terminal with 'Hello, World!' message.
+Author-email: kilbakis <kilbakis@inbox.lv>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
