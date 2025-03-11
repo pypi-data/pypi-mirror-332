@@ -1,0 +1,10 @@
+taxicab/__init__.py,sha256=wBtsXeHrbgBRxQOTeXhZ3xeMXM_WmH2MkT657f5Y81c,83
+taxicab/_about.py,sha256=QiocsVSZpLsq0XNFuMR87ZjPIlZeyWeCKxZkKz_t8_Y,109
+taxicab/_api.py,sha256=brBuF53djfcB3w-qTTktXkF9u-NmQsCg4_weocZk5A8,70
+taxicab/distance.py,sha256=r_B78GsVm_la2XvGpqrflMECsAaLzSpgyVpZrqXwj0o,5880
+taxicab/plot.py,sha256=rXYPSA1X71yWEBz_lTqYPVisapBOE64bH__03V_oYLE,2807
+taxicab-0.1.1.dist-info/LICENSE,sha256=Y4egaJVT8mjEnBXtJUNycUox7LCNR4GkNyhs5tRYIEw,1068
+taxicab-0.1.1.dist-info/METADATA,sha256=_gir1FDUGcu9qJhWc_gj8Ixb3qY-92vXHz2cehyZzQU,6073
+taxicab-0.1.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+taxicab-0.1.1.dist-info/top_level.txt,sha256=r5fRtI0gZ7MT6tzmUawxA4SfWEUR_zbTWjsKbvS1XmI,8
+taxicab-0.1.1.dist-info/RECORD,,
