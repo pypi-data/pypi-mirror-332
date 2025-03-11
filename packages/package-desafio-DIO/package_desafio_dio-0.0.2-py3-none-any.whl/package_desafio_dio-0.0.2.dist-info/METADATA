@@ -1,0 +1,49 @@
+Metadata-Version: 2.2
+Name: package_desafio_DIO
+Version: 0.0.2
+Summary: estudo de criação de pacotes
+Home-page: https://github.com/nhoblumer/desafio_estudo.git
+Author: Nelson Henrique
+Author-email: nhoblumer@hotmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scikit-image>=0.16.1
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# package_desafio_DIO
+
+Description. 
+The package package_desafio_DIO is used to:
+	- Processing:
+		- Histrogram matching
+		- Structural similarity
+		- Reseze image
+	- Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histrogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to installpackage_desafio_DIO
+
+```bash
+pip install package_desafio_DIO
+```
+
+## Author
+Henrique Blumer
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

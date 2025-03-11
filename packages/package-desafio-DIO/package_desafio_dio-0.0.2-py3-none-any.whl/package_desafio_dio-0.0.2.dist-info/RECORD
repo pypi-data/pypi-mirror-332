@@ -1,0 +1,11 @@
+package_desafio_DIO/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_desafio_DIO/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_desafio_DIO/processing/combination.py,sha256=y2jcVO6rFRaRx2UutnmMOBjbxTvFG0z6ZsL0dgVrhTA,797
+package_desafio_DIO/processing/transformation.py,sha256=sxr01snA7jlzs9r9aaFUsbtyd0Ga-8VGWHGxTckvo38,351
+package_desafio_DIO/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_desafio_DIO/utils/io.py,sha256=xIZDQ_rqSswiJi2tuLWuuAJUe1hhwwkjCiyV-YuhnhQ,200
+package_desafio_DIO/utils/plot.py,sha256=y2hh6zYQJTb-JzuE-p6KpIriF4BovUI2SlwPCgK3PJI,1006
+package_desafio_dio-0.0.2.dist-info/METADATA,sha256=eGXPvDvlmQZTr0MM9gLYgRmHhLIV95MTUjmp5U_Ub8s,1091
+package_desafio_dio-0.0.2.dist-info/WHEEL,sha256=EaM1zKIUYa7rQnxGiOCGhzJABRwy4WO57rWMR3_tj4I,91
+package_desafio_dio-0.0.2.dist-info/top_level.txt,sha256=bxx2tZlnuAKSeIypypOr6hhtCUCgqthg88Mn86FNNbo,20
+package_desafio_dio-0.0.2.dist-info/RECORD,,
