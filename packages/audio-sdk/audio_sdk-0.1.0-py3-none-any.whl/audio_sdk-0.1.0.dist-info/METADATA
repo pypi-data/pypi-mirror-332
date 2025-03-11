@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: audio-sdk
+Version: 0.1.0
+Summary: A Python SDK for audio transcription
+Home-page: https://github.com/your_username/audio_sdk
+Author: zhangying
+Author-email: imuzhangying@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: dashscope
+Requires-Dist: requests
+Requires-Dist: python-docx
+
+# Audio SDK
+
+Audio SDK 是一个用于音频转录的 Python 库，基于 DashScope 的语音识别 API 构建。
+
+## 安装
+
+使用 pip 安装：
+
+```bash
+pip install audio_sdk

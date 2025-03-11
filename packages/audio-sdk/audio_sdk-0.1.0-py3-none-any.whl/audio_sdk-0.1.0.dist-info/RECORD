@@ -1,0 +1,10 @@
+audio_sdk/__init__.py,sha256=CVgsFPMAvJgcB749sfddd7C-aGFIgoyY6CqylvtqpIQ,68
+audio_sdk/save_to_word_srt.py,sha256=conpNeyfVTvwzNCeaWBFcc76rGAC6s1xKzLwfeXN-yA,3098
+audio_sdk/transcriber.py,sha256=2CsAlIcDcNb6usztvgVp5ZAryQjtRDewkAC5L_Hbwv4,7194
+audio_sdk/video_utils.py,sha256=GRKCrTRaqem57kE2RCbko0eXjqHsK6hIBSZUfWVtffM,2305
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_transcriber.py,sha256=CsDsmd918HcIYaMZYWRf5hWE1IygmvKxuifsXsp6Q40,1488
+audio_sdk-0.1.0.dist-info/METADATA,sha256=km68jLpWHwxvoDyfFbl96PXNNPZljq1oUSNDclGm3ew,696
+audio_sdk-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+audio_sdk-0.1.0.dist-info/top_level.txt,sha256=5HLzUsqnPnLNYX0Q36GffvoNVU_Frmc0unqegxHyOC8,16
+audio_sdk-0.1.0.dist-info/RECORD,,
