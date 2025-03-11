@@ -1,0 +1,8 @@
+setup.py
+f_task_5_test/__init__.py
+f_task_5_test/abc.py
+f_task_5_test/de.py
+f_task_5_test.egg-info/PKG-INFO
+f_task_5_test.egg-info/SOURCES.txt
+f_task_5_test.egg-info/dependency_links.txt
+f_task_5_test.egg-info/top_level.txt
