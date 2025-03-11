@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: tanh_sinh
+Version: 0.3.11
+Summary: tanh-sinh quadrature for Python
+Author-email: Nico =?utf-8?q?Schl=C3=B6mer?= <nico.schloemer@gmail.com>
+Project-URL: Homepage, https://github.com/sigma-py/tanh_sinh
+Project-URL: Issues, https://github.com/sigma-py/tanh_sinh/issues
+Keywords:
+ mathematics,physics,engineering,quadrature,integration,numerical integration
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: stonefish-license-manager>=0.5.17
+Requires-Dist: x22>=0.1.7
+Requires-Dist: mpmath
+Requires-Dist: numpy
+Requires-Dist: scipy
+
