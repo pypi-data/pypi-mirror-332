@@ -1,0 +1,56 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "color_parser_py"
+version = "0.1.6"
+description = "Python bindings for color parsing and conversion"
+authors = [{ name = "Aman Rusia", email = "rusia.aman@gmail.com" }]
+requires-python = ">=3.7,<3.13"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed",
+]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+python-source = "python"
+
+[tool.mypy]
+python_version = "3.8"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "B", "Q"]
+ignore = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
+
+[tool.cibuildwheel]
+# Skip trying to build wheels for PyPy
+skip = "pp*"
+# Build for all supported Python versions
+build = ["cp38-*", "cp39-*", "cp310-*", "cp311-*", "cp312-*"]
+# Testing requires the package to be installed
+test-requires = ["pytest"]
+# Run pytest after building
+test-command = "pytest {package}/tests"
