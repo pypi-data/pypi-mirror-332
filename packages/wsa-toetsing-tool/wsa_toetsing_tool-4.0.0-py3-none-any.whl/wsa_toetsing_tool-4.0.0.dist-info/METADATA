@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: wsa-toetsing-tool
+Version: 4.0.0
+Summary: Postprocessing tool voor WSA toetsing
+Home-page: https://hhdelfland.visualstudio.com/Waterhuishouding/_git/WSA_toetsing_tool
+Author: Emiel Verstegen
+Author-email: emiel.verstegen@rhdhv.com
+License: GPL-3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rasterio==1.3.4
+Requires-Dist: shapely==2.0.1
+Requires-Dist: geopandas==0.12.2
+Requires-Dist: pandas==1.5.3
+Requires-Dist: xarray==2023.2.0
+Requires-Dist: numpy==1.24.2
+Requires-Dist: plotly==5.13.0
+Requires-Dist: jupyterlab
+Requires-Dist: scipy==1.10.0
+Requires-Dist: gdal==3.6.2
+Requires-Dist: fiona==1.9.1
+Requires-Dist: ipywidgets==8.1.3
+Requires-Dist: tqdm==4.66.4
+Requires-Dist: pyyaml==6.0.1
+Requires-Dist: matplotlib==3.8.4
+Requires-Dist: netCDF4==1.6.2
+Requires-Dist: setuptools==59.8
+Requires-Dist: openpyxl==3.1.2
+Requires-Dist: rasterstats==0.19.0
+Requires-Dist: fire==0.6.0
+Requires-Dist: rioxarray==0.15.5
+Requires-Dist: pyarrow==17.0.0
+Requires-Dist: pytest==7.4.3
+Requires-Dist: pytest-ordering==0.6
+
+# wsa-toetsing-tool
+This is the `wsa-toetsing-tool`, a Python package designed to facilitate testing and evaluation processes.
+
+## Installation
+You can install the package using pip. Run the following command in your terminal:
+
+```
+pip install wsa-toetsing-tool
+```
+
+## Usage
+After installation, you can use the package in your Python scripts. Here is a simple example of how to use the tool:
+
+```python
+from wsa_toetsing_tool import main
+
+# Example usage of the main functionality
+result = main.some_function()
+print(result)
+```
+
+## Contributing
+If you would like to contribute to this project, please fork the repository and submit a pull request. 
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
