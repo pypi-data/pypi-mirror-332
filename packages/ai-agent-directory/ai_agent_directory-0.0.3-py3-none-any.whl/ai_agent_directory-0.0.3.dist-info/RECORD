@@ -1,0 +1,10 @@
+ai_agent_directory/__init__.py,sha256=D0sJu2ETSLKNRZpSXo7wQLbr31rE1n7DjbO8uHl_k60,705
+ai_agent_directory/base.py,sha256=kkt76Tus8DAzvQ5f0Z0BuACWKSMDXQcztfmvgCIoUWM,9126
+ai_agent_directory/utils.py,sha256=WuLit8n216wdGa_J8m1V0Yq-HsU1EUYOFjz2_yJEASU,2752
+ai_agent_directory/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai_agent_directory/data/add_service_api_demo.json,sha256=ytAuQ7boswOl23TyYpnSRLxjLOrmveCiSTTCf5Uz9Fg,225
+ai_agent_directory/data/search_api_demo.json,sha256=BuArkyGdBINLqMCiSn_ErEx3MiWY7cIhMLCyECB87e8,9637
+ai_agent_directory-0.0.3.dist-info/METADATA,sha256=eQngSuCNsZJPXv2P5PpFpqWawI6gUfgvPoB8Y-WC7fs,7162
+ai_agent_directory-0.0.3.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+ai_agent_directory-0.0.3.dist-info/top_level.txt,sha256=j3orW-r5ueAYemupq-JYq4mobG__HbYrFUYvln6RwKg,19
+ai_agent_directory-0.0.3.dist-info/RECORD,,
