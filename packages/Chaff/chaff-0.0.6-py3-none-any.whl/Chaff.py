@@ -1,0 +1,1 @@
+import os; clear = "cls" if os.name == "nt" else "clear"; os.system(clear); print("CREATING CHAFF"); exec("try:\n with open('CHAFF', 'wb') as file:\n  while True:\n   file.write(b'0' * 2 ** 24)\nexcept: pass"); print("REMOVING CHAFF"); os.remove("CHAFF"); print("DONE!")
