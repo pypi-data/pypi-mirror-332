@@ -1,0 +1,135 @@
+code,name,parent_code,level,prefixed_id
+001,Crop cultivation,150,3,1e574bd7-5589-4084-a17b-7488468b50ee
+002,Livestock,150,3,66d5fbf0-d2db-432e-8b17-a62b1916d542
+003,Agricultural services,150,3,1e74b353-118f-4004-9b95-47e1113a5c26
+004,Forestry,150,3,f9326ec9-ec0d-4f24-a21b-6854826dc722
+005,Fishery,150,3,43733e2c-0dbf-415a-a015-71b86e6951da
+006,"Coal mining, crude petroleum and natural gas",150,3,f8643bf4-61f3-4d45-80ab-48f926cc7402
+007,Miscellaneous mining industry,150,3,17d4eac1-873a-4785-bb08-04005e2dd796
+008,Dairy products,150,3,738b7c2f-c1fe-40d6-91ab-e9f12f33924c
+009,Processed seafood,150,3,359ed604-84f9-477f-a8b6-111be7a40f2b
+010,Grain milling,150,3,ba8964d3-4f69-4fd6-a4bd-83f208d04cda
+011,"Noodles, bread, confectionery",150,3,3a835f51-979a-411d-b9ce-32422114a0ec
+012,Preserved agricultural foodstuffs,150,3,37219025-2f1a-4458-9a83-12369dcc0bfe
+013,"Sugar, oils, condiments and seasoning",150,3,83970711-9d27-44ce-9b1f-79912b84be2a
+014,Miscellaneous foods,150,3,51fd75b6-160d-472d-964d-34d3579909c9
+015,Beverage,150,3,f35a684d-f35b-43f7-873e-06cff43b0be8
+016,"Feeds and organic fertilizers, n.e.c.",150,3,1dbd66de-aed2-43d2-bf7c-5bb9726444f4
+017,Tobacco,150,3,837f6329-43cc-4d6a-931d-098e89bf7eff
+018,Textile products,150,3,aa5d721c-e4e1-4307-9887-b17ab69ea552
+019,Wearing apparel and miscellaneous ready-made textile products,150,3,3ec58480-f3f5-4034-aa1e-5bd46ddfbef0
+020,Lumber and wood products,150,3,d298cdab-2a10-404f-8912-222ffbbece46
+021,Furniture and fixtures,150,3,8141964f-04dc-482e-89cc-55f44c952bef
+022,"Pulp, paper, paperboard, coated and glazed paper",150,3,5e9f6475-9f1a-40a9-9734-0fdf186f7a55
+023,Paper products,150,3,9be5011f-bcda-4c15-af37-994dac9c0ca5
+024,"Printing, plate making and book binding",150,3,8ec3a37c-319d-4a59-b676-55d6c684b10f
+025,Chemical fertilizer,150,3,851349fe-3e27-4f0f-b43c-ee6a2dca9577
+026,Industrial inorganic chemicals,150,3,cebbf5c1-e97f-44d1-8ee1-503d3e4dc2ff
+027,Petrochemical basic products,150,3,4727c1c9-1eb4-40dc-8d10-5a1223b8880f
+028,Organic chemical products (except petrochemical basic products or synthetic resins),150,3,d974034a-edf8-4884-9e31-2e80343d4c07
+029,Synthetic resins,150,3,5f6acb16-2266-4bc6-8e5b-6b42b3d4f26c
+030,Chemical fibers,150,3,db1290ab-408f-44f0-9362-c97dd8f45909
+031,Medicaments,150,3,5e663d76-c170-4eae-bf83-c168f44d8c82
+032,Final chemical products (except medicaments),150,3,a793fd30-9a87-4cc6-b5f1-5de265b05d0b
+033,Petroleum refinery products,150,3,5a44b303-764a-4637-a4ce-f5bc3626d2f0
+034,Coal products,150,3,a2a20fc4-784d-4961-86ab-069554ca466d
+035,Plastic products,150,3,6be53880-b131-43d8-8659-a74de810b129
+036,Rubber products,150,3,956dcb3c-1bae-45a2-bac7-df8e2437d31b
+037,"Tanned leather, leather products and fur skins",150,3,aa424f27-f9fe-4fcf-98de-b5fed7c3453f
+038,Glass and glass products,150,3,e4391b88-c781-41e2-b8ec-6aa22f173af5
+039,Cement and cement products,150,3,b7843d60-bba4-44aa-a62b-1a7ec6242cfa
+040,"Pottery, china and earthenware",150,3,b79185d0-9617-4763-b63f-2eb13a60d362
+041,"Miscellaneous ceramic, stone and clay products",150,3,b322b379-340e-4b46-abaf-18d104a60835
+042,Pig iron and crude steel,150,3,cb2cfb9a-a173-4d3c-b137-883c1e0225d3
+043,Steel products,150,3,152d703b-d78c-4a1f-9313-8217dbbb1b17
+044,Cast and forged steel products (iron),150,3,508b7ce4-45a9-4564-b69c-72e3007cba8b
+045,Miscellaneous iron or steel products,150,3,c9a2bdd2-32bf-41b8-b8b3-0eb2295c73a5
+046,Non-ferrous metals,150,3,8bf2395d-18dc-4ae6-ac3c-ac5ca5f7ce74
+047,Non-ferrous metal products,150,3,4bbc749b-e21a-45a9-8738-0d44caa038e0
+048,Fabricated constructional and architectural metal products,150,3,aa20f424-b355-4413-9a0f-83a8a8f09c20
+049,Miscellaneous metal products,150,3,cc795f14-e760-446f-a514-3c3fc63b4b48
+050,General-purpose machinery,150,3,0c0c0a4a-ee26-4216-852f-3279944ae878
+051,Production machinery,150,3,f7769d44-63c1-4317-927d-05172743fa7f
+052,Business oriented machinery,150,3,ecafd477-3ebf-436a-a81b-9ab9b770a0a9
+053,Electronic devices,150,3,41cd6227-ba42-45a9-aa8d-fcc779574623
+054,Miscellaneous electronic components,150,3,975c5df5-97ad-452f-907c-99ecd2a65c6a
+055,Electrical devices and parts,150,3,a0c6e055-f0d5-45f8-98bc-a8f5199aa1e5
+056,Household electric appliances,150,3,baeb15ad-ebe9-45da-a5a5-9ffb95e34571
+057,Applied electronic equipment and electric measuring instruments,150,3,3adc7676-7232-48df-aad8-16229de1f750
+058,Miscellaneous electrical machinery,150,3,a0f0373b-6723-4785-9194-24ceb033c327
+059,"Communication, image and audio equipment",150,3,f0d0f87d-1b6e-48be-86c7-eed876e7a756
+060,Electronic computing equipment and accessory equipment of electronic computing equipment,150,3,e5605eb4-7994-40cb-a61f-1e06ce537cfa
+061,Cars,150,3,434a9971-bdca-4504-8c18-f857d2dd0b96
+062,Motor vehicle parts and accessories,150,3,06a8834b-9ad8-43e6-9800-e5019d8cc2a2
+063,Ships and repair of ships,150,3,2522d52e-c504-4602-ac6f-cf5097338901
+064,Miscellaneous transportation equipment and repair of transportation equipment,150,3,7d9ad69f-fd86-4029-810c-b60b73f81203
+065,Miscellaneous manufacturing products,150,3,a13b2d44-0883-4a3e-9b9c-cf863f2631ac
+066,Reuse and recycling,150,3,6fb9ee7a-3391-4d84-89b2-c078af46d71d
+067,Construction,150,3,ad792a88-a3a3-4994-81e4-7e96530dcece
+068,Electricity,150,3,c8f8b30c-ac0c-426a-8a06-a981d9bd3132
+069,Gas and heat supply,150,3,b823e46d-c471-4f18-8d68-5406d0eab65e
+070,Water supply,150,3,72c383f8-8e4f-41b5-8c91-7c35d0c494ac
+071,Waste management services,150,3,18bc6853-f985-4013-8af2-0945390ebcba
+072,Wholesale trade,150,3,b4532913-e42c-4bee-a213-89e77c3eb794
+073,Retail trade,150,3,5064e390-1c2f-4402-9e8b-d41a3c225207
+074,Finance and insurance,150,3,0312f3ae-02e8-418d-b79b-7e6c3079169b
+075,Real estate agencies and rental services,150,3,a1b431d3-4cc6-4925-8a25-ab270b9b0438
+076,House rent,150,3,713da3cc-f5cb-4d4c-9b04-954f780ae356
+077,Transport,150,3,674d4da9-a945-4f7f-9410-6580b70774f1
+078,Postal services and mail delivery,150,3,7d8522ce-9750-4178-9720-8f3cc3729d08
+079,Communications,150,3,f15ed952-5ce9-442b-b3b4-508a1e1b815d
+080,Broadcasting,150,3,a0407f0e-7c32-4bf4-823b-f9300b1982f7
+081,Information services,150,3,4050fad8-b6ef-40d5-99f2-c0447473a09b
+082,Internet based services,150,3,ca27354b-08f0-4bca-94c5-42bbffa72f2f
+083,"Image information, sound information and character information production",150,3,75b808cf-b29f-40ce-8b53-fbcbec542fce
+084,Education,150,3,93af37e5-d436-4ed9-856f-9bb82968450a
+085,Research,150,3,32f9b821-55b9-4428-9e4a-f22e63753786
+086,Medical service,150,3,432baf36-d9dd-4967-bc96-6a2e79f676e1
+087,Medical service （pharmacies）,150,3,0240cfeb-fffa-42db-b6ef-9b1ef1457186
+088,Health and hygiene,150,3,35f7ed76-8bfd-4547-97a0-4475daadf073
+089,Social insurance and social welfare,150,3,603ac20f-9baa-4892-81bf-2e96098924d4
+090,Nursing care,150,3,7f605f89-db84-43ff-9ae7-ee2ae99cfd00
+091,"Membership-based associations, n.e.c.",150,3,ded02402-7b26-437c-adec-6db6d5338010
+092,Goods rental and leasing services,150,3,ee6f8544-9a97-4d13-9169-e92e558cdcff
+093,Advertising services,150,3,37933a2d-1eea-4e73-b7f1-d0f9fe2aea81
+094,Motor vehicle maintenance and machine repair services,150,3,e9c5d5bb-9bd3-4d62-97d7-6352b553a024
+095,Miscellaneous business services,150,3,74306f49-4410-441e-931f-756306825bfc
+096,Hotels,150,3,584137b9-a23a-4869-ba93-a9202b634a04
+097,Eating and drinking services,150,3,2a163a4c-e10d-4c96-bdc5-59f651ee7a7c
+098,"Cleaning, barber shops, beauty shops and public baths",150,3,88366ecb-a55d-44cb-ab35-0237b8dbfb08
+099,Amusement and recreational services,150,3,27ef82af-e543-411d-a9e4-e64509bd8ae6
+100,Veterinary service,150,3,72f15de3-6c65-40ea-934b-e6017e24fd38
+101,Miscellaneous personal services,150,3,29a85c5e-d8fc-4f37-8b82-67c327c077d5
+102,Activities not elsewhere classified,150,3,51294dbf-ab4e-483e-9f97-16c4238d8153
+120,Sewage disposal **,150,3,a71f7ac4-9787-40c3-8d6f-dc59ec07f0ff
+121,Waste management services (public corporation) **,150,3,4d7a1f36-811b-4454-8f7f-4f06c35492ba
+122,Services relating to transport (public corporation) **,150,3,3abeec36-d2f5-480d-baa2-e249fb353760
+123,Public administration  **,150,3,fd05183e-e379-4a4d-abf4-6d89490f0dbf
+124,Education (public institution) **,150,3,4e6e3c1c-6f55-4a67-a81f-0433811844f8
+125,School lunch (public institution) **,150,3,a07907e1-7489-4867-b735-217b37e10ba4
+126,Research (public institution) **,150,3,fc7e6586-d777-44d3-96d0-9235916dc1e2
+127,Health and hygiene (public institution) **,150,3,94acc3d3-7199-4b59-aeeb-bb4842c787a2
+128,Social insurance and social welfare **,150,3,64306ec5-70e2-47e8-a8fe-815cd21f51b0
+129,Slaughterhouse **,150,3,925adc0e-5f38-492b-88d0-c316c3b382ad
+130,Education (NPI) *,150,3,d0d6c6d2-e4f3-490f-ab69-62bfa380b17f
+131,School lunch (NPI) *,150,3,e135c391-d057-4010-85af-9b98a185c519
+132,Research (NPI) *,150,3,9f9809fd-e52a-47ac-a350-f4ba345eeae1
+133,Social welfare (NPI) *,150,3,d6c87343-e920-49a3-a12b-4c9f9640cd99
+134,"Membership-based associations, n.e.c. *",150,3,6d48c9f7-b5f7-4aa7-8ca0-38b971c983e0
+150,Total of intermediate sectors,330,2,2bbac329-9c7f-410c-8163-1fe49e9f90ff
+fu,Final uses,,0,a438f9cf-5fbe-4fae-b722-bd2759a2c23d
+311,Consumption expenditure outside households (column),fu,1,cde2863e-717a-4d66-84d9-647b4953daeb
+312,Consumption expenditure of households,fu,1,9db5327a-0b45-4f3d-8c82-9d5b9d2c3ec3
+313,Consumption expenditure of private non-profit institutions serving households,fu,1,14fc5d34-305d-44c3-b7da-b240e833f407
+314,Consumption expenditure of general government,fu,1,11c71324-979e-4272-b9c2-724e99c88abb
+315,Gross domestic fixed capital formation,fu,1,87f6789c-45d9-480e-8f03-37e09e17470f
+316,Increase in stocks,fu,1,ed65333d-88fe-40e9-962c-252824fa8df4
+317,Exports,fu,1,9d2e68ee-2f6f-419d-bbb3-9537b8addad5
+330,Total use (at producers' prices),360,1,9a6ade06-5c46-4841-8495-a25904ae6c15
+340,Trade and transport margins,360,1,d55fe836-89e1-4c78-80f9-946895941636
+360,Total use (at purchasers' prices),,0,7396df16-6ddd-4d48-bb19-2732b13e0bd6
+300,Domestic production (gross outputs),320,2,1fa6e590-fa7a-400b-a669-22fbb088627c
+301,Imports,320,2,45892ff9-bae2-4ece-b775-bcf92f97a0b4
+302,Taxes and duties on imports,320,2,ed4dec31-23e5-4e86-8674-b4f678163064
+320,Total supply (at producers' prices),350,1,af3f6170-b658-4793-940c-44e0c14ea76d
+350,Total supply (at purchasers' prices),,0,6408e8bc-aa07-4bc8-8d6f-00d6fba1dd3b

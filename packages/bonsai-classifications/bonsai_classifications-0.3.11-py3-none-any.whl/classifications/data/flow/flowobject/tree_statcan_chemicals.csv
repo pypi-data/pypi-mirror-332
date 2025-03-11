@@ -1,0 +1,28 @@
+code,parent_code,name,level,prefixed_id
+Ammonia_anhydrous,,Ammonia anhydrous,0,132559c8-ae0d-4eea-b7db-8ba7dce92ae6
+Ammonium_nitrate,,Ammonium nitrate,0,a2f88d3f-20d9-4d58-a751-226dcf233b16
+Ammonium_phosphate,,Ammonium phosphate,0,d9601639-4270-4547-a633-9bfd504d5eea
+Benzene,,Benzene,0,aae1c301-6045-4e52-b232-5e8926d36664
+Chlorine,,Chlorine,0,39cb9866-08fc-4400-a1fa-7c44f9d3143c
+Ethylene,,Ethylene,0,5757f05e-06d6-43c8-ad79-ef0ef6f65e56
+Formaldehyde,,Formaldehyde,0,ad67bbb6-72d6-46ba-9c5e-d70dacf6e4cd
+Polyethylene_resins,,"Polyethylene resins, total",0,57a91653-3103-471d-a501-8c6c23c004d4
+LDPE_LLDPE_resins,Polyethylene_resins,Low-density polyethylene (LDPE) resins and Linear low-density polyethylene (LLDPE) resins,1,b171d8da-0dd9-4e63-9aef-9413f2966a6d
+HDPE_resins,Polyethylene_resins,High-density polyethylene (HDPE) resins,1,6ad7835d-1ba1-4445-96e9-2700b56e4bd4
+PS_ABS_resins,,Polystyrene (PS) resins and Acrylonitrile-butadiene-styrene (ABS) resins,0,505c1b2e-dac5-455d-abdb-154d7652fd13
+PVC_resins,,Polyvinyl chloride (PVC) resins,0,42ebd9de-0f3d-44d9-9a96-f6b3ba07ab0e
+UPR_resins,,Thermosetting unsaturated polyester (UPR) resins,0,22f1d23e-ca2b-405f-8938-5bc8f6af7161
+Urea,,Urea,0,1b4206c1-28b5-4b14-b53d-be5b49a97467
+Phosphoric_acid_wet_process,,Phosphoric acid; wet process,0,c684efea-6d76-4ff6-9def-90b6ea554016
+Butadiene,,Butadiene,0,134e9e57-1106-46f7-aae7-cf7af8dc08f3
+Butylene,,Butylene,0,9f2f06ac-bb35-4e94-b4b6-50658e8e6418
+Propylene,,Propylene,0,d9157f1d-9b9c-4b28-ad2d-78494e9a9200
+Styrene_monomer,,Styrene monomer,0,fe3600ad-d412-4216-8f2b-149f3521032d
+Toluene,,Toluene,0,7a1ee466-430e-4264-8cbb-57c83436da14
+Xylene,,Xylene,0,55f65878-cbb8-4723-81df-630a7a3d3869
+Methanol,,Methyl alcohol (methanol),0,f2d1cc8e-1d22-41da-b392-bef5f1ca8439
+Nitric_acid,,Nitric acid,0,39ef5fe2-c112-41ca-84d1-cc4ac7f083bd
+Carbon_black,,Carbon black,0,309be51b-120c-412e-af9f-b8db78039eca
+Hydrogen_peroxide,,Hydrogen peroxide,0,ff1e41c1-1e12-487f-aab4-7727c1f12161
+Zinc_oxide,,Zinc oxide,0,7ff3d926-c15d-4471-9ba1-986a621f8653
+Ethylene_oxide,,Ethylene oxide,0,fbadfb87-66d1-42f9-b596-851d41ea8a2e
