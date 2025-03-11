@@ -1,0 +1,1 @@
+SQLALCHEMY_POSTGRESQL_DATABASE_URI=postgresql://devuser:devpass@127.0.0.1:5432/db
