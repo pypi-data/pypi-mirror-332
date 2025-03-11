@@ -1,0 +1,11 @@
+unbrowsed/__init__.py,sha256=V8BdJ28zN-JCgVziBlInb55dcvubxeyhfAb4X1C7nCw,644
+unbrowsed/exceptions.py,sha256=EyngRwsYRVbCqUJ_S1V33HB5-kq-Bi5ZPymrBWDUc6A,562
+unbrowsed/matchers.py,sha256=wET0cnbSikSbjkcIITqu93n5-UAjayJAO_6PxDnjVZY,2327
+unbrowsed/parser.py,sha256=E8rDjY7eC8l8BKO3cidFVTvZGhD7wXM6eCc3PVuYtL0,155
+unbrowsed/queries.py,sha256=2tZn414hO9ZxzAroXgqMuYZ6dUD50s73_FIVnmQ7eH8,13121
+unbrowsed/utils.py,sha256=Dmn6dBMvo00VnrZBscP7til7OtLmgfE5t8xXMoFvAfs,378
+unbrowsed-0.1.0a15.dist-info/LICENSE,sha256=OuXHmu0jTCQ7DmINwnSLP7FIQKPT9YxeJaVq-i6QOYY,1076
+unbrowsed-0.1.0a15.dist-info/METADATA,sha256=ZHhS0NpUSN_jCU9OW6LnEX8db5PHuhBHZWdzwusGzsA,4258
+unbrowsed-0.1.0a15.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+unbrowsed-0.1.0a15.dist-info/top_level.txt,sha256=V3ax3pKkSkATdZmhFqGwvp7vY9glZOYkIqIkiK6W-3s,10
+unbrowsed-0.1.0a15.dist-info/RECORD,,
