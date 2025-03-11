@@ -1,0 +1,11 @@
+llm2dict/__init__.py,sha256=AmaQl1_UBVx9GLZgAydSdAlWGC1Z9ytkl6AlsaEwVDE,250
+llm2dict/api.py,sha256=lmEHcY5HwxVJcviGi8t_iH-20MWzM8rykC6dI-sWKTY,6085
+llm2dict/execute.py,sha256=a9tlyQasdxUxoxuX7kNOWK1d1MQ-c8Ujf5Gk2WlnOcs,3510
+llm2dict/llm2dict.py,sha256=Ts-5reG0Vs3QYJrXivHUdcraGtLMkElVCV_DRLiq-YM,2149
+llm2dict/prompt.py,sha256=nDRGTmvUcsrPNWBxc5imNjCbli_nYDeOrSNjegZj7u0,589
+llm2dict/validate.py,sha256=gBouaPOSA_U4xz9Ib9LdZyhZDgfKcU78hKy1q--QNsM,5006
+llm2dict-0.0.2.dist-info/LICENSE,sha256=y1jseZHLQyUDZNWXMPh88RF3sVlS89cp12Z4DQYKyec,1082
+llm2dict-0.0.2.dist-info/METADATA,sha256=pyh7AjA_F6mBDCI-_-R89nZwGjQlM7Ut010n2RNf28U,10571
+llm2dict-0.0.2.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+llm2dict-0.0.2.dist-info/top_level.txt,sha256=fZ-aOlCXwAD9MbnnmFiLl8Ly7dcQFKA07oNVXoEkK3w,9
+llm2dict-0.0.2.dist-info/RECORD,,
