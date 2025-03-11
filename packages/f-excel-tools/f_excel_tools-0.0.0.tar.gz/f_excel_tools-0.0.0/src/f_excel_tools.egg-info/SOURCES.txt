@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/email_splitter_ui.py
+src/main.py
+src/f_excel_tools.egg-info/PKG-INFO
+src/f_excel_tools.egg-info/SOURCES.txt
+src/f_excel_tools.egg-info/dependency_links.txt
+src/f_excel_tools.egg-info/entry_points.txt
+src/f_excel_tools.egg-info/requires.txt
+src/f_excel_tools.egg-info/top_level.txt
