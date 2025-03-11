@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+melonn_cli_project.egg-info/PKG-INFO
+melonn_cli_project.egg-info/SOURCES.txt
+melonn_cli_project.egg-info/dependency_links.txt
+melonn_cli_project.egg-info/entry_points.txt
+melonn_cli_project.egg-info/requires.txt
+melonn_cli_project.egg-info/top_level.txt
+src/__init__.py
+src/main.py
