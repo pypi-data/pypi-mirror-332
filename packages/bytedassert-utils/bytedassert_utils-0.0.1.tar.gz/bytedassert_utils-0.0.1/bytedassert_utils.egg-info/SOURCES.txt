@@ -1,0 +1,6 @@
+setup.py
+bytedassert_utils/__init__.py
+bytedassert_utils.egg-info/PKG-INFO
+bytedassert_utils.egg-info/SOURCES.txt
+bytedassert_utils.egg-info/dependency_links.txt
+bytedassert_utils.egg-info/top_level.txt
