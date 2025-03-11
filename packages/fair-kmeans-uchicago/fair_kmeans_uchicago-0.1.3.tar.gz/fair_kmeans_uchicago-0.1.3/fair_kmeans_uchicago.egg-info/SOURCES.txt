@@ -1,0 +1,9 @@
+README.md
+setup.py
+fair_kmeans/__init__.py
+fair_kmeans/fair_kmeans.py
+fair_kmeans_uchicago.egg-info/PKG-INFO
+fair_kmeans_uchicago.egg-info/SOURCES.txt
+fair_kmeans_uchicago.egg-info/dependency_links.txt
+fair_kmeans_uchicago.egg-info/requires.txt
+fair_kmeans_uchicago.egg-info/top_level.txt
