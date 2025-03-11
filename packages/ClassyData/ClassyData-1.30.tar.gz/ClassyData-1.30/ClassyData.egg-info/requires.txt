@@ -1,0 +1,10 @@
+Argumental
+Baubles
+GoldenChild
+Perdy
+Spanners
+faker
+jsonweb
+mysql-connector
+sqlalchemy
+sqlalchemy-utils
