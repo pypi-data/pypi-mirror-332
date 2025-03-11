@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = ["serial-triggers"]
+
+# patch wgpu to git d9e9c3a
+[patch.crates-io]
+wgpu = { path = "../wgpu/wgpu" }
