@@ -1,0 +1,2 @@
+def funcy():
+    print("rofls")
