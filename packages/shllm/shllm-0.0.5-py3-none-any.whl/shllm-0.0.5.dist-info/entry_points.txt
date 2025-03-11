@@ -1,0 +1,3 @@
+[console_scripts]
+shllm=shllm:main
+
