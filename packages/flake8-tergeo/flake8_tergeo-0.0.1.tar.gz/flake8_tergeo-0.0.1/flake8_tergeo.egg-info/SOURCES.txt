@@ -1,0 +1,6 @@
+README.md
+setup.py
+flake8_tergeo.egg-info/PKG-INFO
+flake8_tergeo.egg-info/SOURCES.txt
+flake8_tergeo.egg-info/dependency_links.txt
+flake8_tergeo.egg-info/top_level.txt
