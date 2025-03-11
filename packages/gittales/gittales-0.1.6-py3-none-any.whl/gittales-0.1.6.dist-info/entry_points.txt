@@ -1,0 +1,2 @@
+[console_scripts]
+gittales = gittales.cli:main
