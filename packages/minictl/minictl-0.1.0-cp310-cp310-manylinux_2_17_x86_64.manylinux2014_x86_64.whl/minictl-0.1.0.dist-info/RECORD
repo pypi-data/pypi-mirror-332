@@ -1,0 +1,7 @@
+minictl-0.1.0.dist-info/METADATA,sha256=0RKLs4ISRc2C_unviLn0796I_jJjpqJ5hf7zQ8fel9g,1689
+minictl-0.1.0.dist-info/WHEEL,sha256=oMsEGM-x12gy2flor14aWW9jgfLPTN4QW2Cwia3s8OI,129
+minictl/__init__.py,sha256=DYeeSZHG1ZV8EGurfzQ4N1TqcPd1oZ_wTemHeeqLTjw,111
+minictl/__init__.pyi,sha256=3qav5AdcqjUvkuFRA6btHxSiAv4_hfvWxcmtuiq3AZE,1785
+minictl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minictl/minictl.cpython-310-x86_64-linux-gnu.so,sha256=sFbhXU70ohCyhtUzgXK2E8oc3xEBuZo0f0AMaOhf8F4,1002704
+minictl-0.1.0.dist-info/RECORD,,
