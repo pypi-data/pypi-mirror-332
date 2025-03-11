@@ -1,0 +1,2 @@
+[console_scripts]
+pyharry100 = pyharry100.main:main
