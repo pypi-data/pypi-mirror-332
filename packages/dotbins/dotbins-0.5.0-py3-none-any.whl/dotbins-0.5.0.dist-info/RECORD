@@ -1,0 +1,13 @@
+dotbins/__init__.py,sha256=0yrgXMkctzJq1w7kN02pHsqiwHYB3xY96fpNuC1OR-c,686
+dotbins/analyze.py,sha256=GTNrSFq0rQ8rTb8kxgi9GXXNeZQW3i6ws8MrxrWHPTk,14474
+dotbins/cli.py,sha256=WWACi7Us0eTEAo4DfeKgRy7GfmbTCkdVxMbEoHRdTi8,6538
+dotbins/config.py,sha256=QkMv2FGsc0F_o07Vcu3LYl8Uk6RTon0uAG6oUJzQAJg,9082
+dotbins/download.py,sha256=T8NymbHbDWgzVxK9j_NUr-lNR8iNmSG47buGuAec6HA,21013
+dotbins/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dotbins/utils.py,sha256=pq294wvIB43MbdGvJFwB2BNzSIYEd0l4ILmbUFThj3I,3599
+dotbins-0.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dotbins-0.5.0.dist-info/METADATA,sha256=ywSm5_yR37PdNBSjR55m7-yT4nOBt_dYnfVasJ7rQV0,16069
+dotbins-0.5.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+dotbins-0.5.0.dist-info/entry_points.txt,sha256=89bPl07gPZgdOZM5y-mc5EVxeJAOFXuNjVON_sqNYdc,45
+dotbins-0.5.0.dist-info/top_level.txt,sha256=PR1DmDRrM8WBcW_v9lRO5QLK3zeZonHYGjY3nPUFto0,8
+dotbins-0.5.0.dist-info/RECORD,,
