@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include requirements.txt
+include dataset.csv
+include fraud_detection.egg-info
+include fraud_model.pkl 
+recursive-include fraud_detection *.py
