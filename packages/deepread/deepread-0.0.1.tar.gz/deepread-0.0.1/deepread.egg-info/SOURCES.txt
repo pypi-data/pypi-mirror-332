@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+backend/__init__.py
+backend/build_binary.py
+backend/cli.py
+backend/main.py
+deepread.egg-info/PKG-INFO
+deepread.egg-info/SOURCES.txt
+deepread.egg-info/dependency_links.txt
+deepread.egg-info/entry_points.txt
+deepread.egg-info/requires.txt
+deepread.egg-info/top_level.txt
