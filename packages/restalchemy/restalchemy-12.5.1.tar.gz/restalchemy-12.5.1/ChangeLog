@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+12.5.1
+------
+
+* Refactor RESTService Initialization and WSGI Application Setup (#31)
