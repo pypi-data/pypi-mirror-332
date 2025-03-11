@@ -1,0 +1,6 @@
+setup.py
+bytedance_primus_torch_io/__init__.py
+bytedance_primus_torch_io.egg-info/PKG-INFO
+bytedance_primus_torch_io.egg-info/SOURCES.txt
+bytedance_primus_torch_io.egg-info/dependency_links.txt
+bytedance_primus_torch_io.egg-info/top_level.txt
