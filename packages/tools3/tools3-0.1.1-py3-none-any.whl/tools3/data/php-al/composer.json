@@ -1,0 +1,11 @@
+{
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  },
+  "require": {
+    "nikic/php-parser": "^4.19"
+  }
+}
