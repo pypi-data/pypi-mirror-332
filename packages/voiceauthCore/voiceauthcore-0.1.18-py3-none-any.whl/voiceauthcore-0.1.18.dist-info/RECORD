@@ -1,0 +1,9 @@
+voiceauthCore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+voiceauthCore/core.py,sha256=5q4M-k2BJgAEESXxjkoq4SHqC1C8volTij-jZlG2XSY,7777
+voiceauthCore/database.py,sha256=ITmusfNjAmlnbmdQmtY_doLmQyEY-yA34w8PllnxL1Y,794
+voiceauthCore/utils.py,sha256=pOpEyjXduChEeLvLuVfEXyuqxUiEjdgdy6VgjLai7lk,4719
+voiceauthcore-0.1.18.dist-info/METADATA,sha256=0FPBj7j5cAcM0E3tqJMox4qiqxhUlmT-XI02u97AsW0,4863
+voiceauthcore-0.1.18.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+voiceauthcore-0.1.18.dist-info/entry_points.txt,sha256=ixLCV9Glj4U5hJnj-lD9rv97V02Lj3urOncuAa2Jvow,58
+voiceauthcore-0.1.18.dist-info/top_level.txt,sha256=osy8E3wU6up7NGrJMmYHcAQe7sOL89HuWV382jh0_jc,14
+voiceauthcore-0.1.18.dist-info/RECORD,,
