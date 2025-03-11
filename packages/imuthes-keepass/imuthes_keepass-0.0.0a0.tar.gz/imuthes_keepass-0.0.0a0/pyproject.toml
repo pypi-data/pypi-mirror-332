@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "imuthes-keepass"
+version = "0.0.0a0"
+description = "Keepass Tools"
+authors = ["Bernhard Radermacher <bernhard.radermacher@netlink-consulting.com>"]
+readme = "README.md"
+packages = [ { include = "imuthes/keepass" } ]
+
+
+[tool.poetry.dependencies]
+python = ">=3.13,<3.14" 
+#hakisto = ">=0.3.3"
+#setuptools = ">=75.6.0"
+#pykeepass = ">=4.1.0.post1,<5.0.0"
+#fastapi = ">=0.115.8,<0.116.0"
+#click = ">=8.1.8,<9.0.0"
+#uvicorn = ">=0.34.0,<0.35.0"
+imuthes-crypt = "^0.0.0a0"
+pykeepass = "^4.1.1.post1"
+uvicorn = "^0.34.0"
+fastapi = "^0.115.11"
+
+[build-system] 
+requires = ["poetry-core"] 
+build-backend = "poetry.core.masonry.api"
+
+
+#[tool.poetry.scripts]
+#netlink-keepass-rest-reader = 'netlink.keepass.cli:reader_cli'
+#netlink-keepass-rest-get = 'netlink.keepass.cli:rest_get_cli'
+#netlink-keepass-rest-shutdown = 'netlink.keepass.cli:rest_shutdown_cli'
+
+
+#[tool.poetry.group.dev.dependencies]
+#pyinstaller = "^6.12.0"
+
