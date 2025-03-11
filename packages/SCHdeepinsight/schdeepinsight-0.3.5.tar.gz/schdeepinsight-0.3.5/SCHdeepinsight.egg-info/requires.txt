@@ -1,0 +1,13 @@
+anndata
+pandas
+numpy
+scanpy
+scipy
+torch
+torchvision
+Pillow
+efficientnet_pytorch
+scikit-learn
+opencv-python
+huggingface_hub
+rpy2
