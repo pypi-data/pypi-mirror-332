@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: simul
+Version: 0.1.0
+Summary: A Python library for parallelism and parallelism analysis
+Project-URL: Homepage, https://github.com/tnarayanan/simul
+Project-URL: Repository, https://github.com/tnarayanan/simul
+Author-email: Tejas Narayanan <tejasn100@gmail.com>
+License: MIT
+License-File: LICENSE
+Keywords: analysis,parallel
+Requires-Python: >=3.13
