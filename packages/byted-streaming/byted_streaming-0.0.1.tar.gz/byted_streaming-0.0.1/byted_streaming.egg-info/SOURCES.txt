@@ -1,0 +1,6 @@
+setup.py
+byted_streaming/__init__.py
+byted_streaming.egg-info/PKG-INFO
+byted_streaming.egg-info/SOURCES.txt
+byted_streaming.egg-info/dependency_links.txt
+byted_streaming.egg-info/top_level.txt
