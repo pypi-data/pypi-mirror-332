@@ -1,0 +1,2 @@
+[console_scripts]
+dd-healthcheck = datadog_healthcheck_deployer.cli:main
