@@ -1,0 +1,11 @@
+libcsdfgen.so,sha256=AV6XI8j3MXfkDDAViW3fBxVaj7eFHMDrP1X9WIOWaj8,5405352
+libcsdfgen.so.0.22.0,sha256=AV6XI8j3MXfkDDAViW3fBxVaj7eFHMDrP1X9WIOWaj8,5405352
+csdfgen.cpython-310-x86_64-linux-gnu.so,sha256=AV6XI8j3MXfkDDAViW3fBxVaj7eFHMDrP1X9WIOWaj8,5405352
+libcsdfgen.so.0,sha256=AV6XI8j3MXfkDDAViW3fBxVaj7eFHMDrP1X9WIOWaj8,5405352
+sdfgen-0.22.0.dist-info/WHEEL,sha256=2JiXcU0-Qfy9gwog3WAIw4e5slUs9ReZ9xqrxqqbExM,224
+sdfgen-0.22.0.dist-info/RECORD,,
+sdfgen-0.22.0.dist-info/top_level.txt,sha256=M3gUW9vTMij10peQKgv1Qs0jZkdsk_PG0REFxuv6jNY,15
+sdfgen-0.22.0.dist-info/METADATA,sha256=phqKxupxisTZjheW8ucL9qT4e6Z_K-Rj-n_TRX7WgoQ,4458
+sdfgen/module.py,sha256=muoa7d4_LCOESh1DjxiQ1m5w9W-J-JtdwuhcJeWSljE,44458
+sdfgen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdfgen/__init__.py,sha256=_d7GGV8GhadIAEYP8uiJlez0yKtXnHMHdRkRzVMKS3c,143
