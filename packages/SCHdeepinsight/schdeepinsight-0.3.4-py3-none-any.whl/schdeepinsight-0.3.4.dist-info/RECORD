@@ -1,0 +1,12 @@
+SCHdeepinsight/__init__.py,sha256=CSVSzM21OwvEroth0kZ_RBjqv2ASBLNLS7sikcW4nOs,57
+SCHdeepinsight/immune.py,sha256=zMvbOd_CLO2i58vQX9xA3JYuEJ2TOmWIAVUMhOA9Pyk,18850
+SCHdeepinsight/pretrained_files_immune/img_transformer_immune.obj,sha256=HT9FlFwiPY5_f29xH6uUl1dr04k-w_2sCJpP5_DMt5k,160946
+SCHdeepinsight/pretrained_files_immune/label_encoder_immune_base.obj,sha256=DRTZzkhVFiEpgV3M8EuYxUBmPb4NUkur_4I56zV-I5M,1679
+SCHdeepinsight/pretrained_files_immune/label_encoder_immune_detailed.obj,sha256=lHRxfR59ksPLbJsIhTYDBoFZ9JtWRvZnRmVMWAnBn0Y,5039
+SCHdeepinsight/pretrained_files_immune/minmax_scaler_immune.pkl,sha256=-SWswDCUezAO9DTyZY1iIOfLDsGIhzBsxpBtXr8Ct0U,242653
+SCHdeepinsight/pretrained_files_immune/pretrained_genes_immune.csv,sha256=SGyoOuCuW1HtFv-NQKkuI9YwjkpNNiqlT5EpCEMezP4,55911
+SCHdeepinsight/r_scripts/process_data.R,sha256=w9rwxzClQJgARo3vcbhnLOVJuDKqn2obOAuFaXzZ-XE,3664
+schdeepinsight-0.3.4.dist-info/METADATA,sha256=sFCS5TP9H3Z2FW-z1KnOzQELltjBdW5a7jdRxlCoBfg,3894
+schdeepinsight-0.3.4.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+schdeepinsight-0.3.4.dist-info/top_level.txt,sha256=YVciNm2mnTz4SQyQu62Qsl562FbLhHRzFmJDIDJTUT4,15
+schdeepinsight-0.3.4.dist-info/RECORD,,
