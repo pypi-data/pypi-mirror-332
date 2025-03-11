@@ -1,0 +1,3 @@
+[console_scripts]
+mdp = mdp.cli:main
+mdp-language-server = mdp:lsp_server
