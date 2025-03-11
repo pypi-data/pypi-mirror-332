@@ -1,0 +1,10 @@
+tardiff2/__init__.py,sha256=mV51xrHDeSJym45wgvbQ7xRwq57Et_NM0HyveJCmcMI,84
+tardiff2/__main__.py,sha256=eDcpM4JyZpOMBTpBzVGAx6Z3W8y-fVDTxczi6kBirzU,3056
+tardiff2/defs.py,sha256=UY6Gxn8mXjRfCE4FJ7xLCLdSTl0zr7y8SLFBtum9UFs,522
+tardiff2/opts.py,sha256=GLCDKUAsFl6wKkcwSRqZPyqoX6lW-WouIm1ELoECCdA,377
+tardiff2/tardiff.py,sha256=PQgNP4YrHhifcs2pHU12QDEbNH4qAkrC7rGHmxa1UTM,8709
+tardiff2-0.1.1.dist-info/entry_points.txt,sha256=4zY5mo1zYErjAmB7Uoy3L7W8q526Klzvx-TqHtlHIR8,51
+tardiff2-0.1.1.dist-info/licenses/LICENSE,sha256=u6ZC5S5x_AQ7OdwUWVcPBcmyo5mrq9s0OzvZxEFGNf4,1270
+tardiff2-0.1.1.dist-info/WHEEL,sha256=_2ozNFCLWc93bK4WKHCO-eDUENDlo-dgc9cU3qokYO4,82
+tardiff2-0.1.1.dist-info/METADATA,sha256=HKnoakSXEBFwd9h5QaIqc-D8YLYip0bx23UL5nZoMJE,1688
+tardiff2-0.1.1.dist-info/RECORD,,

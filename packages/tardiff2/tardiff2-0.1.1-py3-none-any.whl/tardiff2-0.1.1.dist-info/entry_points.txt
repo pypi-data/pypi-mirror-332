@@ -1,0 +1,3 @@
+[console_scripts]
+tardiff2=tardiff2.__main__:main
+
