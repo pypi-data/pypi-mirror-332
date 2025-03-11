@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: SelfPackageMirea1003
+Version: 0.0.2
+Summary: My Package
+Author: Your Name
+Author-email: attezive@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary

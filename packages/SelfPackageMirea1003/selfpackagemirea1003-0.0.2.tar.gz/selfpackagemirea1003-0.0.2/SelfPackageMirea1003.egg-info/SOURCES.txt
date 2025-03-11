@@ -1,0 +1,8 @@
+setup.py
+SelfPackageMirea1003/__init__.py
+SelfPackageMirea1003/main.py
+SelfPackageMirea1003/worker.py
+SelfPackageMirea1003.egg-info/PKG-INFO
+SelfPackageMirea1003.egg-info/SOURCES.txt
+SelfPackageMirea1003.egg-info/dependency_links.txt
+SelfPackageMirea1003.egg-info/top_level.txt
