@@ -1,0 +1,9 @@
+setup.py
+pingsss/__init__.py
+pingsss/pingsss.py
+pingsss.egg-info/PKG-INFO
+pingsss.egg-info/SOURCES.txt
+pingsss.egg-info/dependency_links.txt
+pingsss.egg-info/entry_points.txt
+pingsss.egg-info/requires.txt
+pingsss.egg-info/top_level.txt

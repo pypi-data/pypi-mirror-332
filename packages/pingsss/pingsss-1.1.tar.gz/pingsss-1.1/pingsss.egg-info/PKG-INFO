@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: pingsss
+Version: 1.1
+Requires-Dist: colorama
+Requires-Dist: ipaddress
+Dynamic: requires-dist
