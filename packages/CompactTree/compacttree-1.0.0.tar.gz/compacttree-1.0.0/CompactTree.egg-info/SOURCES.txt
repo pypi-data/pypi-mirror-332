@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+CompactTree/__init__.py
+CompactTree/compact_tree.h
+CompactTree/compact_tree.i
+CompactTree.egg-info/PKG-INFO
+CompactTree.egg-info/SOURCES.txt
+CompactTree.egg-info/dependency_links.txt
+CompactTree.egg-info/not-zip-safe
+CompactTree.egg-info/top_level.txt
