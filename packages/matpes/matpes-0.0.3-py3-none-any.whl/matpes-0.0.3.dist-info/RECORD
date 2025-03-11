@@ -1,0 +1,10 @@
+matpes/__init__.py,sha256=fphP867oR6E0c7va-sn9tkBQOvFkZm9j0p5u7EHNt2Q,331
+matpes/cli.py,sha256=AbxIsvRZfBBbH9o8zl7yDVUPYeilc4PxlfyUoByGNr0,5196
+matpes/data.py,sha256=vOWU3qevyPk9gfnJu0-KEpTOf70VWBvtRy3TMN8c1bg,2503
+matpes/db.py,sha256=zDvmuxKFjDfGimJLxGl1i1SxyNleP5ezb-cjqqDka9k,3655
+matpes-0.0.3.dist-info/LICENSE,sha256=ofleCNfv6OkRrtBLiR1RuQukYpFYX0OTkTSAZnDuKjg,1529
+matpes-0.0.3.dist-info/METADATA,sha256=VR_zdbh5iA6-h732FUz63fEc24kI1d6MuIe4NiaH3NU,4537
+matpes-0.0.3.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+matpes-0.0.3.dist-info/entry_points.txt,sha256=XHocKDf5-bJNYjfNdxQ0wS0_4WrrkvNN1PiOHrBdaWE,43
+matpes-0.0.3.dist-info/top_level.txt,sha256=RNyOzjFWCo2-qB4J76OQLALulhplHC7OOZFy-uvqBhU,7
+matpes-0.0.3.dist-info/RECORD,,
