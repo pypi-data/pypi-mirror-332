@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: imuthes-keepass
+Version: 0.0.0a0
+Summary: Keepass Tools
+Author: Bernhard Radermacher
+Author-email: bernhard.radermacher@netlink-consulting.com
+Requires-Python: >=3.13,<3.14
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fastapi (>=0.115.11,<0.116.0)
+Requires-Dist: imuthes-crypt (>=0.0.0a0,<0.0.1)
+Requires-Dist: pykeepass (>=4.1.1.post1,<5.0.0)
+Requires-Dist: uvicorn (>=0.34.0,<0.35.0)
+Description-Content-Type: text/markdown
+
+# imuthes-keepass
+
+**Warning - very ALPHA!!**
+
