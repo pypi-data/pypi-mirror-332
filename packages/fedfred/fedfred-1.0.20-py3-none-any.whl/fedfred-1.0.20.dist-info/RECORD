@@ -1,0 +1,11 @@
+fedfred/__init__.py,sha256=bPBCcOsDodWKPwimAdX5tdOHp-PU47kgl6k6tOSzOwY,625
+fedfred/__init__.pyi,sha256=P_ybcsLMeym6cHNPnkdijccTl7OSZ4SMmI48SySvsHU,355
+fedfred/fedfred.py,sha256=953YF_oiZ0mX2MhNeDP5G4CF978QEfRWACpw2mzuvWw,98383
+fedfred/fedfred.pyi,sha256=1QJpKO4NOKj-P9uL3llOz_iuc1DcdDLicb_NutWly3Q,14269
+fedfred/fred_data.py,sha256=Bn_sZVMbhiVatcUfU-_TjahFMgf4GwEwjNI6QwxFujo,11365
+fedfred/fred_data.pyi,sha256=L--n_5qy3VRo_SczA7Jj5qKZlp4hK-oo4JXHnFRAHWE,4891
+fedfred/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fedfred-1.0.20.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fedfred-1.0.20.dist-info/METADATA,sha256=b7vxxmSu2sxs-EF_0xdBsrOzTGQWc9v41NqyhqV4Ro4,4330
+fedfred-1.0.20.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+fedfred-1.0.20.dist-info/RECORD,,
