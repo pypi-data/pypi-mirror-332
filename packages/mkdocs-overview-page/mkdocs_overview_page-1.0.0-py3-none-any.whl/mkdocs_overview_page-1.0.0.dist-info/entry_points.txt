@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+overview-page=src.plugin:OverviewPagePlugin
+
