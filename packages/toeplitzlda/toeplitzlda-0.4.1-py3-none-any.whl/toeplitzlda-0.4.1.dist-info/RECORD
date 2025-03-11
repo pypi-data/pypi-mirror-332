@@ -1,0 +1,9 @@
+toeplitzlda/__init__.py,sha256=ZoySAGFfs82scZZqZy-m5QdaPkqOh0dVQJZEKDYyFtU,52
+toeplitzlda/classification/__init__.py,sha256=dp7HLgqLNP6Ck1hyGBXcn2MOvxVtAi0ZS3JCQUlbH-c,134
+toeplitzlda/classification/covariance.py,sha256=_YQQ3CjWI9wKMH5Lhht2dtfUeRY01SFR7MEi_kYh3vk,6119
+toeplitzlda/classification/toeplitzlda.py,sha256=MKRBw72XJ3KY2IfXBy7aDJizB5DzXx_mSg3sBTjvTjA,14923
+toeplitzlda/classification/unsupervised.py,sha256=2IE6XeVBxqYVPQrh-JIut1wjE0vPiRfPh27wVHRa6a0,1443
+toeplitzlda-0.4.1.dist-info/LICENSE,sha256=Ch-rPKUD4taHO_Tftk9WS7uopLU8u6IJtE5Ed60UbiE,1635
+toeplitzlda-0.4.1.dist-info/METADATA,sha256=MhJA5-XIh2zojVaBhz4K6NMWPBPSa6l1PqLM1VkZaLg,8250
+toeplitzlda-0.4.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+toeplitzlda-0.4.1.dist-info/RECORD,,
