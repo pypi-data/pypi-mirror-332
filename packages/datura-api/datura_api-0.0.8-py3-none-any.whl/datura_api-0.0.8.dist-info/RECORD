@@ -1,0 +1,7 @@
+datura_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datura_api/datura_api_sdk.py,sha256=UArlORRbN3bfrzzKCgckq5lYeMvZU3D27y6Bb1fzh1E,2203
+datura_api/protocol.py,sha256=IaFsNO4XHqY07ekSvELeN6DHsmju_uKk5ACELVX1T20,28175
+datura_api-0.0.8.dist-info/METADATA,sha256=8lpx4394Cb6HbXSJ688NnSnDakk8ou9lqVgclzINaqo,458
+datura_api-0.0.8.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+datura_api-0.0.8.dist-info/top_level.txt,sha256=FcCRVRPlB02BZTfWQkQCvYvnxSowV0tf1FaFcrzHhFc,11
+datura_api-0.0.8.dist-info/RECORD,,
