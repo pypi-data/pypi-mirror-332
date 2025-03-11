@@ -1,0 +1,12 @@
+structure_embedding/__init__.py,sha256=y4AxlzUzcsHzZeK9lGcTMYFwgKBDEhe9HLEgN8FSQyY,161
+structure_embedding/data.py,sha256=8cHiUjGHcBScbXqtIDjePVl7X7CXRHIfBY4KpD7Zna4,4374
+structure_embedding/plot.py,sha256=-eXJqgXY61G2YVErfw2M58AX8YgcQxbN8h3LFszkhq4,2357
+structure_embedding/transformer.py,sha256=98uW5AsxFXwD4GO5NuvurYf2gy9xvGsphTGvnr7nhp0,10196
+structure_embedding/utils.py,sha256=_d1YRahWjtwVP36Om9Ze2085jRAcgX91Fnnx-p-Se_c,3530
+structure_embedding/transformers/__init__.py,sha256=nIC0Ug9kKXJmn0_eKYp_fWu12-OrdtznlnrzjhLMq7k,135
+structure_embedding/transformers/umap.py,sha256=2YbfMPsjkGVV_3vbDl8Xxo1IyXAafjwKjssLMWJy8Uo,1347
+structure_embedding-0.0.8.dist-info/LICENSE,sha256=9vHXcyvWr6MoS2aUEg3VYNQhQxSmJJvJeYCjoysTwVM,1071
+structure_embedding-0.0.8.dist-info/METADATA,sha256=9sSpurGN3kRyr6GNlRY85hZnGLqUSU40jK86NBwW784,2164
+structure_embedding-0.0.8.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+structure_embedding-0.0.8.dist-info/top_level.txt,sha256=LMMdZd3OsuC1KlW2AmPbjS5ZW1VvmAfRq8A1XUOxFZg,20
+structure_embedding-0.0.8.dist-info/RECORD,,
