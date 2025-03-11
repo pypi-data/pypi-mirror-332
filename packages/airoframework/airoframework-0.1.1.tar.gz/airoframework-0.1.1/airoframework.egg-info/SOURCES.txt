@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+airoframework/__init__.py
+airoframework/cli.py
+airoframework.egg-info/PKG-INFO
+airoframework.egg-info/SOURCES.txt
+airoframework.egg-info/dependency_links.txt
+airoframework.egg-info/entry_points.txt
+airoframework.egg-info/top_level.txt
+airoframework/template/README.md
+airoframework/template/alembic.ini
+airoframework/template/database.db
+airoframework/template/main.py
+airoframework/template/requirements.txt
