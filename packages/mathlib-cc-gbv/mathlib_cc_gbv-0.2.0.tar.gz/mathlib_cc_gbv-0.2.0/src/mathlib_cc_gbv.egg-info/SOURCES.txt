@@ -1,0 +1,10 @@
+pyproject.toml
+src/entities/point_2d.py
+src/entities/point_3d.py
+src/mathlib_cc_gbv.egg-info/PKG-INFO
+src/mathlib_cc_gbv.egg-info/SOURCES.txt
+src/mathlib_cc_gbv.egg-info/dependency_links.txt
+src/mathlib_cc_gbv.egg-info/top_level.txt
+src/operations/line_segment.py
+src/operations/matrixes.py
+src/operations/utils.py
