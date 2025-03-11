@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+moom/__init__.py
+moom/api.py
+moom/quotes.csv
+moom.egg-info/PKG-INFO
+moom.egg-info/SOURCES.txt
+moom.egg-info/dependency_links.txt
+moom.egg-info/requires.txt
+moom.egg-info/top_level.txt
+tests/test_moom.py
