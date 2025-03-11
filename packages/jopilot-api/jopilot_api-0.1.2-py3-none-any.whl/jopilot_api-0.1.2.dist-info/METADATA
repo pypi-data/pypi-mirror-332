@@ -1,0 +1,88 @@
+Metadata-Version: 2.2
+Name: jopilot-api
+Version: 0.1.2
+Summary: Python wrapper for the JoPilot API.
+Home-page: https://jopilot.net/
+Author: JoPilot
+Author-email: developers@jopilot.net
+Project-URL: Homepage, https://jopilot.net/
+Project-URL: Documentation, https://api.jopilot.net/swagger/index.html
+Project-URL: Source Code, https://github.com/jopilot-net/JoPilotAPI-python
+Project-URL: Bug Tracker, https://github.com/jopilot-net/JoPilotAPI-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.28.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# JoPilotAPI-Python
+
+## Overview
+JoPilotAPI-Python is a Python wrapper for the JoPilot API, enabling developers to integrate AI-powered job search functionality into their applications with ease.
+
+## API Documentation
+For detailed API documentation, visit:  
+[JoPilot API Documentation](https://api.jopilot.net/swagger/index.html)
+
+## What is JoPilot?
+JoPilot is an advanced AI-driven job search assistant that helps users find the best job opportunities tailored to their needs. By integrating with JoPilot, you gain access to intelligent job search capabilities through a simple API.
+
+To learn more, visit:  
+[JoPilot Official Website](https://jopilot.net/)
+
+## ChatGPT Plugin
+JoPilot is also available as a ChatGPT plugin to enhance your job search experience:  
+[JoPilot ChatGPT Plugin](https://chatgpt.com/g/g-OMF6BEtGB-jopilot)
+
+## Installation
+To install JoPilotAPI-Python via pip, use the following command:
+```sh
+pip install jopilot-api
+```
+
+## Usage
+Here's a basic example of how to use the library to perform a job search:
+
+```python
+from jopilot_api.job_search import JobSearchService, JobSearchRequest
+
+request = JobSearchRequest(title="Software Engineer", size=5)
+
+try:
+    results = JobSearchService.search_jobs(request)  # Returns a dictionary
+    print("Job Search Results:")
+    
+    for job in results.get("jobs", []):  # Iterate over jobs as dictionaries
+        print(f"Job: {job.get('name')} at {job.get('companyName')}")
+        print(f"Location: {job.get('location', {}).get('city')}, {job.get('location', {}).get('state')}, {job.get('location', {}).get('country')}")
+        print(f"Source: {job.get('feed')}")
+        print(f"Posted: {job.get('created')}")
+        print('-' * 50)
+except Exception as e:
+    print(f"Error: {e}")
+```
+
+## Features
+- **Easy API Integration**: Seamlessly interact with JoPilot's API using simple Python methods.
+- **Advanced Job Search**: Search for jobs based on title, location, company name, and more.
+- **Real-time Updates**: Fetch the latest job listings with API requests.
+
+## Contributing
+We welcome contributions! Feel free to open issues or submit pull requests to improve the library.
+
+## License
+This project is licensed under the MIT License.
+
+---
+Leverage the power of JoPilot and bring AI-driven job search to your Python applications today!
