@@ -1,0 +1,16 @@
+estim8/__init__.py,sha256=Xd0Cs1e1TCLj0QBUfkxlp6bkGx2RdkL9bWT90xBETpk,404
+estim8/datatypes.py,sha256=8GqaYjQObX-ZMrWpC1WmwByqjPxRbdER1Dm6-Fw_yWo,17870
+estim8/error_models.py,sha256=8A-ygHJTxN_Wubny8vNcBXHxDOsEHvVle_a7h3iWQY0,5690
+estim8/estimator.py,sha256=Q1i5vWK2cQts25fRzhIzCohTHy-C9UPjXa3hMfrWVDE,40084
+estim8/generalized_islands.py,sha256=J4M-uPVYv27PmCNZnmNpZALoYKuApJ7WsDvjMPwl88U,19343
+estim8/models.py,sha256=scF0y71eGEsEIOnAJQkZtE_q92Bs1nX2Lj5KOLrJT6U,8652
+estim8/objective.py,sha256=Mb3zaj8dPvbGMiesvAnLM97rjYkLY0Xf9WekFfDu1kM,4671
+estim8/optimizers.py,sha256=ibAm5Q2r5mCnqB8zffB7oGEXQoSVM6cZc_yTt3E97So,13097
+estim8/profile.py,sha256=4QNzf30tXzS-UcV4Ca3ZiVGYtzk6nqO4M8OOtm6wyJU,7295
+estim8/utils.py,sha256=NTxLzO_R2i3RYq6vhYW8Ras2P5lBhCWXHOrq47iLiVw,15628
+estim8/visualization.py,sha256=g_NkSxt2HujCiU02SmoaufA-XQful6lhyyTJ0ILRGUM,17466
+estim8/workers.py,sha256=lzGHkuv5HTtYoL6IEnF57TtreuxnBLXquOqbEHg7P3A,6664
+estim8-0.1.0.dist-info/METADATA,sha256=QsWvUjCKUh7VRKStujhEyPFyznD01H3jnPEbAFJa-48,4570
+estim8-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+estim8-0.1.0.dist-info/top_level.txt,sha256=BnfsOtZud28T1ZJbv5rdfA5GmaUkzdzGJ2Enn0EFY4s,7
+estim8-0.1.0.dist-info/RECORD,,
