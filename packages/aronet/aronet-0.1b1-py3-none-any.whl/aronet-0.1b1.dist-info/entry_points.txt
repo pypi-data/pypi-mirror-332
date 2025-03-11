@@ -1,0 +1,3 @@
+[console_scripts]
+aronet = aronet.main:main
+
