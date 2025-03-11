@@ -1,0 +1,13 @@
+sphinx_fediverse/__init__.py,sha256=i3qrn082TpAo6BwFDKDRdWAPv55Jtax-56PJRFmWrwM,74
+sphinx_fediverse/package.json,sha256=5YRE2o_sgiXMgaZd-WqDYDzscggzm7pbubksFs09z7M,602
+sphinx_fediverse/requirements.txt,sha256=57uFjyXyv3YWxacQD2xsNbawMiMmObtqczLLD_kVPy8,47
+sphinx_fediverse/sphinx_fediverse.py,sha256=DkBbUpg1M8khLC9cPo8aLabvpAvVdh3xPQmc8n5UL5E,8665
+sphinx_fediverse/_static/boost.svg,sha256=jpVKkh2ixEKA-qARjxD10VxXpdLiSL3KUMYrP3q2mUk,251
+sphinx_fediverse/_static/fedi_layout.css,sha256=UOFv9oQ9EpH5FqIYpG5rMM8-Q2MfQnJr552l8LJOh4g,2194
+sphinx_fediverse/_static/fedi_script.js,sha256=K3lAGRNhSCe4m1-AJT_8-ev5pdZHHW_D4P4qR1YxT0A,6769
+sphinx_fediverse/_static/like.svg,sha256=JKXGGLwuR7N1ur7OQ3Rp7CpK7_UvZdmtQu2m7p6z4GE,285
+sphinx_fediverse-0.5.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sphinx_fediverse-0.5.1.dist-info/METADATA,sha256=_8yeBBZe8B-VSbI2ANUrrmWcYkXVURyaX447icQg7As,6901
+sphinx_fediverse-0.5.1.dist-info/WHEEL,sha256=dNGUHIMxKM4x1dKVS1BhZvXON6Ckt3nWnGsmZdxhrJU,104
+sphinx_fediverse-0.5.1.dist-info/top_level.txt,sha256=0JcMb9WVf61kPfn6eP76vbbOKZJXx3nZWFru5pr6yVM,17
+sphinx_fediverse-0.5.1.dist-info/RECORD,,
