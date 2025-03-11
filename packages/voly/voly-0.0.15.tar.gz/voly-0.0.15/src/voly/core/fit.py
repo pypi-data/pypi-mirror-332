@@ -1,0 +1,293 @@
+"""
+Model fitting and calibration module for the Voly package.
+
+This module handles fitting volatility models to market data and
+calculating fitting statistics.
+"""
+
+import numpy as np
+import pandas as pd
+from typing import List, Tuple, Dict, Optional, Union, Any
+from scipy.optimize import least_squares
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+from voly.utils.logger import logger, catch_exception
+from voly.exceptions import VolyError
+from voly.models import SVIModel
+import warnings
+
+warnings.filterwarnings("ignore")
+
+
+@catch_exception
+def calculate_residuals(params: List[float],
+                        time_to_expiry: float,
+                        market_data: pd.DataFrame,
+                        model: Any = SVIModel) -> np.ndarray:
+    """
+    Calculate the residuals between market and model implied volatilities.
+
+    Parameters:
+    - params: Model parameters (e.g., SVI parameters [a, b, sigma, rho, m])
+    - time_to_expiry: The time to expiry in years
+    - market_data: DataFrame with market data
+    - model: Model class to use (default: SVIModel)
+
+    Returns:
+    - Array of residuals
+    """
+    # Filter market data for the specific time to expiry
+    specific_expiry_data = market_data[market_data['yte'] == time_to_expiry]
+
+    # Calculate the total implied variance using the model for filtered data
+    w_model = np.array([model.svi(x, *params) for x in specific_expiry_data['log_moneyness']])
+
+    # Extract the actual market implied volatilities
+    iv_actual = specific_expiry_data['mark_iv'].values
+
+    # Calculate residuals between market implied volatilities and model predictions
+    residuals = iv_actual - np.sqrt(w_model / time_to_expiry)
+
+    return residuals
+
+
+@catch_exception
+def fit_svi_parameters(market_data: pd.DataFrame,
+                       initial_params: Optional[List[float]] = None,
+                       param_bounds: Optional[Tuple] = None) -> Tuple[pd.DataFrame, Dict[str, Dict]]:
+    """
+    Fit SVI parameters for all unique expiries in the market data.
+
+    Parameters:
+    - market_data: DataFrame with market data
+    - initial_params: Initial guess for SVI parameters (default: from SVIModel)
+    - param_bounds: Bounds for parameters (default: from SVIModel)
+
+    Returns:
+    - Tuple of (fit_performance DataFrame, params_dict)
+    """
+    # Use defaults if not provided
+    if initial_params is None:
+        initial_params = SVIModel.DEFAULT_INITIAL_PARAMS
+
+    if param_bounds is None:
+        param_bounds = SVIModel.DEFAULT_PARAM_BOUNDS
+
+    # Initialize data for fit performance
+    fit_data = {
+        'Maturity': [],
+        'DTE': [],
+        'YTE': [],
+        'Success': [],
+        'Cost': [],
+        'Optimality': [],
+        'RMSE': [],
+        'MAE': [],
+        'R²': [],
+        'Max Error': [],
+        'Number of Points': []
+    }
+
+    # Dictionary to store parameters
+    params_dict = {}
+
+    # Get unique expiries
+    unique_expiries = sorted(market_data['yte'].unique())
+
+    for yte in unique_expiries:
+        # Get maturity name for reporting
+        expiry_data = market_data[market_data['yte'] == yte]
+        maturity_name = expiry_data['maturity_name'].iloc[0]
+        dte_value = expiry_data['dte'].iloc[0]
+
+        logger.info(f"Optimizing for {maturity_name} (DTE: {dte_value:.1f})...")
+
+        # Optimize SVI parameters
+        try:
+            result = least_squares(
+                calculate_residuals,
+                initial_params,
+                args=(yte, market_data, SVIModel),
+                bounds=param_bounds,
+                max_nfev=1000
+            )
+        except Exception as e:
+            raise VolyError(f"Optimization failed for {maturity_name}: {str(e)}")
+
+        # Get parameters
+        params = result.x
+        params_dict[maturity_name] = {
+            'params': params,
+            'dte': dte_value,
+            'yte': yte
+        }
+
+        # Calculate model predictions for statistics
+        w_svi = np.array([SVIModel.svi(x, *params) for x in expiry_data['log_moneyness']])
+        iv_model = np.sqrt(w_svi / yte)
+        iv_market = expiry_data['mark_iv'].values
+
+        # Calculate statistics
+        rmse = np.sqrt(mean_squared_error(iv_market, iv_model))
+        mae = mean_absolute_error(iv_market, iv_model)
+        r2 = r2_score(iv_market, iv_model)
+        max_error = np.max(np.abs(iv_market - iv_model))
+        num_points = len(expiry_data)
+
+        # Add to fit data - make sure all arrays get the same number of items
+        fit_data['Maturity'].append(maturity_name)
+        fit_data['DTE'].append(dte_value)
+        fit_data['YTE'].append(yte)
+        fit_data['Success'].append(result.success)
+        fit_data['Cost'].append(result.cost)
+        fit_data['Optimality'].append(result.optimality)
+        fit_data['RMSE'].append(rmse)
+        fit_data['MAE'].append(mae)
+        fit_data['R²'].append(r2)
+        fit_data['Max Error'].append(max_error)
+        fit_data['Number of Points'].append(num_points)
+
+        if result.success:
+            logger.info(f'Optimization for {maturity_name} (DTE: {dte_value:.1f}): SUCCESS')
+        else:
+            logger.warning(f'Optimization for {maturity_name} (DTE: {dte_value:.1f}): FAILED')
+
+        logger.info('------------------------------------------')
+
+    # Create DataFrame with all fit performance data
+    fit_performance = pd.DataFrame(fit_data)
+
+    return fit_performance, params_dict
+
+
+@catch_exception
+def create_parameters_matrix(params_dict: Dict[str, Dict]) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """
+    Create matrices of optimized parameters for each expiry.
+    Uses maturity names as column names.
+
+    Parameters:
+    - params_dict: Dictionary of parameter results by maturity name
+
+    Returns:
+    - Tuple of DataFrames with optimized parameters:
+      1. Raw SVI parameters (a, b, sigma, rho, m)
+      2. Jump-Wing parameters (nu, psi, p, c, nu_tilde)
+    """
+    # Get maturity names in order by DTE
+    maturity_names = sorted(params_dict.keys(),
+                            key=lambda x: params_dict[x]['dte'])
+
+    # Create DataFrame for raw parameters with maturity names as columns
+    raw_param_matrix = pd.DataFrame(
+        columns=maturity_names,
+        index=SVIModel.PARAM_NAMES
+    )
+
+    # Create DataFrame for JW parameters
+    jw_param_matrix = pd.DataFrame(
+        columns=maturity_names,
+        index=SVIModel.JW_PARAM_NAMES
+    )
+
+    # Store YTE and DTE values for reference
+    yte_values = {}
+    dte_values = {}
+
+    # Fill the matrices with optimized parameters
+    for maturity_name in maturity_names:
+        result = params_dict[maturity_name]
+
+        # Extract raw SVI parameters
+        a, b, sigma, rho, m = result['params']
+        raw_param_matrix[maturity_name] = [a, b, sigma, rho, m]
+
+        # Get time to expiry
+        yte = result['yte']
+        yte_values[maturity_name] = yte
+        dte_values[maturity_name] = result['dte']
+
+        # Calculate JW parameters
+        nu, psi, p, c, nu_tilde = SVIModel.raw_to_jw_params(a, b, sigma, rho, m, yte)
+        jw_param_matrix[maturity_name] = [nu, psi, p, c, nu_tilde]
+
+    # Store YTE and DTE as attributes in all DataFrames for reference
+    attrs = {
+        'yte_values': yte_values,
+        'dte_values': dte_values
+    }
+
+    raw_param_matrix.attrs.update(attrs)
+    jw_param_matrix.attrs.update(attrs)
+
+    return raw_param_matrix, jw_param_matrix
+
+
+@catch_exception
+def fit_model(market_data: pd.DataFrame,
+              model_name: str = 'svi',
+              initial_params: Optional[List[float]] = None,
+              param_bounds: Optional[Tuple] = None) -> Dict[str, Any]:
+    """
+    Fit a volatility model to market data.
+
+    Parameters:
+    - market_data: DataFrame with market data
+    - model_name: Type of model to fit (default: 'svi')
+    - initial_params: Optional initial parameters for optimization (default: model's defaults)
+    - param_bounds: Optional parameter bounds for optimization (default: model's defaults)
+
+    Returns:
+    - Dictionary with fitting results
+    """
+    if model_name.lower() != 'svi':
+        raise VolyError(f"Model type '{model_name}' is not supported. Currently only 'svi' is available.")
+
+    # Step 1: Fit model parameters and get performance metrics in one step
+    fit_performance, params_dict = fit_svi_parameters(
+        market_data,
+        initial_params=initial_params,
+        param_bounds=param_bounds
+    )
+
+    # Step 2: Create parameter matrices
+    raw_param_matrix, jw_param_matrix = create_parameters_matrix(params_dict)
+
+    return {
+        'raw_param_matrix': raw_param_matrix,
+        'jw_param_matrix': jw_param_matrix,
+        'fit_performance': fit_performance,
+    }
+
+
+@catch_exception
+def get_surface(
+        param_matrix: pd.DataFrame,
+        log_moneyness: Tuple[float, float, int] = (-2, 2, 500)
+) -> Tuple[np.ndarray, Dict[float, np.ndarray], np.ndarray]:
+    """
+    Generate implied volatility surface using optimized SVI parameters.
+
+    Parameters:
+    - param_matrix: Matrix of optimized SVI parameters from fit_results
+    - log_moneyness: Tuple of (min, max, num_points) for the moneyness grid
+
+    Returns:
+    - Tuple of (moneyness_grid, iv_surface, unique_expiries)
+    """
+    # Extract moneyness parameters
+    min_m, max_m, num_points = log_moneyness
+
+    # Generate moneyness grid
+    moneyness_values = np.linspace(min_m, max_m, num=num_points)
+    implied_volatility_surface = {}
+
+    # Get YTE values from the parameter matrix attributes
+    yte_values = param_matrix.attrs['yte_values']
+
+    # Generate implied volatility for each expiry
+    for maturity_name, yte in yte_values.items():
+        svi_params = param_matrix[maturity_name].values
+        w_svi = [SVIModel.svi(x, *svi_params) for x in moneyness_values]
+        implied_volatility_surface[yte] = np.sqrt(np.array(w_svi) / yte)
+
+    return moneyness_values, implied_volatility_surface
