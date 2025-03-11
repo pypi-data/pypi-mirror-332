@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+ieeefp/__init__.py
+ieeefp/ieeefp.py
+ieeefp.egg-info/PKG-INFO
+ieeefp.egg-info/SOURCES.txt
+ieeefp.egg-info/dependency_links.txt
+ieeefp.egg-info/entry_points.txt
+ieeefp.egg-info/top_level.txt
