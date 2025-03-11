@@ -1,0 +1,68 @@
+name: Update Kubiya Runner Helm Chart
+
+on:
+  push:
+    tags:
+        - "v[0-9]+.[0-9]+.[0-9]+"
+env:
+  REPO_NAME: ${{ github.event.repository.name }}
+  COMPONENT_NAME: sdkServer
+
+jobs:
+  update-helm-chart:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+
+    - name: Extract Component Version
+      run: |
+        # Extract the new version from the tag
+        COMPONENT_NEW_VERSION=${GITHUB_REF#refs/tags/}
+
+        echo "COMPONENT_NEW_VERSION: $COMPONENT_NEW_VERSION"
+        echo "COMPONENT_NEW_VERSION=$COMPONENT_NEW_VERSION" >> $GITHUB_ENV
+
+    - name: Checkout Helm Charts repository
+      uses: actions/checkout@v3
+      with:
+        repository: kubiyabot/helm-charts
+        ref: main
+        token: ${{ secrets.KUBIYA_GITHUB_TOKEN }}
+
+    - name: Get Helm Chart version and bump patch version
+      run: |
+        HELM_CURRENT_VERSION=$(yq e '.appVersion' charts/kubiya-runner/Chart.yaml)
+        HELM_CURRENT_PATCH_VERSION=$(echo $HELM_CURRENT_VERSION | cut -d. -f3)
+        HELM_NEW_PATCH_VERSION=$(($HELM_CURRENT_PATCH_VERSION + 1))
+        HELM_NEW_VERSION=$(echo $HELM_CURRENT_VERSION | cut -d. -f1-2).$HELM_NEW_PATCH_VERSION
+
+        echo "HELM_NEW_VERSION: $HELM_NEW_VERSION"
+        echo "HELM_NEW_VERSION=$HELM_NEW_VERSION" >> $GITHUB_ENV
+
+    - name: Update Helm Chart and push
+      run: |
+        echo "Updating Helm Chart to version ${{ env.COMPONENT_NEW_VERSION }} for ${{ env.COMPONENT_NAME }}"
+        yq e '.${{ env.COMPONENT_NAME }}.image.tag = "${{ env.COMPONENT_NEW_VERSION }}"' -i charts/kubiya-runner/values.yaml
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        COMMIT_MSG="Update $GITHUB_REPOSITORY image tag to ${{ env.COMPONENT_NEW_VERSION }} for ${{ env.COMPONENT_NAME }} by $GITHUB_ACTOR"
+
+        # Update Chart.yaml - only first version occurrence and appVersion
+        sed -i "0,/version: .*/s//version: $HELM_NEW_VERSION/" charts/kubiya-runner/Chart.yaml
+        sed -i "s/appVersion: .*/appVersion: \"$HELM_NEW_VERSION\"/" charts/kubiya-runner/Chart.yaml
+
+        # Check if there are changes
+        git add charts/kubiya-runner/values.yaml charts/kubiya-runner/Chart.yaml
+        git diff --staged --quiet || HAS_CHANGES=1
+
+        if [ "$HAS_CHANGES" ]; then
+            git commit -m "$COMMIT_MSG"
+            git push origin main
+        else
+            echo "No changes to commit."
+            echo "NOTHING_TO_COMMIT=1" >> "$GITHUB_ENV"
+        fi
+    
