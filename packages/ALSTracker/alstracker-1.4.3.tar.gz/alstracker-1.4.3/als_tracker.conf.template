@@ -1,0 +1,6 @@
+command=~/ALSTracker/gunicorn_start.sh
+stdout_logfile=~/ALSTracker/gunicorn-error.log
+user=XXXUSERXXX
+autostart=true
+autorestart=true
+redirect_stderr=true
