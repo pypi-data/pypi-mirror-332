@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: ieeefp
+Version: 0.1.2
+Summary: A tool to convert floating-point numbers to IEEE 754 format
+Home-page: https://github.com/sagniknath91/ieeefp
+Author: Sagnik Nath
+Author-email: sanath@ucsc.edu
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# IEEE Floating Point Converter
+
+This Python package converts floating-point numbers to IEEE 754 format in both 32-bit and 64-bit representations.
+
+## Installation
+```sh
+pip install ieeefp
