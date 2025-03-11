@@ -1,0 +1,6 @@
+setup.py
+byted_operators_eo/__init__.py
+byted_operators_eo.egg-info/PKG-INFO
+byted_operators_eo.egg-info/SOURCES.txt
+byted_operators_eo.egg-info/dependency_links.txt
+byted_operators_eo.egg-info/top_level.txt
