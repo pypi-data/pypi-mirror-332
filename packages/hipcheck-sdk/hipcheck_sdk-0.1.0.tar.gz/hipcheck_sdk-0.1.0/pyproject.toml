@@ -1,0 +1,31 @@
+[project]
+name = "hipcheck-sdk"
+version = "0.1.0"
+description = "An SDK for developing Hipcheck plugins"
+readme = "README.md"
+authors = [
+    { name = "j-lanson", email = "jlanson@mitre.org" }
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+license = "Apache-2.0"
+
+dependencies = [
+    "asyncio>=3.4.3",
+    "grpcio>=1.70.0",
+    "grpcio-tools>=1.70.0",
+    "pydantic>=2.10.6",
+    "pytest>=8.3.5",
+    "wheel>=0.45.1",
+]
+
+[project.urls]
+Homepage = "https://hipcheck.mitre.org/"
+Issues = "https://github.com/mitre/hipcheck/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
