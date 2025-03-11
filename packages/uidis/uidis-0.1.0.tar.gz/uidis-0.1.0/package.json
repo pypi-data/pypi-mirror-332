@@ -1,0 +1,26 @@
+{
+  "source": "web/index.html",
+  "scripts": {
+    "update": "ncu -u && npm install",
+    "build": "parcel build --no-cache --no-source-maps --no-content-hash web/index.html --dist-dir uidis/assets",
+    "start": "parcel web/index.html --open --no-cache --dist-dir .localapp --watch-dir web"
+  },
+  "dependencies": {
+    "@msgpack/msgpack": "^3.1.0",
+    "@solid-primitives/storage": "^4.3.1",
+    "@thisbeyond/solid-dnd": "^0.7.5",
+    "material-dynamic-colors": "^1.1.2",
+    "solid-js": "^1.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26",
+    "babel-preset-solid": "^1.9",
+    "npm-check-updates": "^17.1",
+    "parcel": "^2.12",
+    "parcel-namer-hashless": "^1.0.7",
+    "solid-refresh": "0.7"
+  },
+  "@parcel/resolver-default": {
+    "packageExports": true
+  }
+}

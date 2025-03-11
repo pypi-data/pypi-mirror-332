@@ -1,0 +1,22 @@
+[project]
+name = "uidis"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.115.8",
+    "msgspec>=0.19.0",
+    "requests>=2.32.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "ipykernel>=6.29.5",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["uidis"]

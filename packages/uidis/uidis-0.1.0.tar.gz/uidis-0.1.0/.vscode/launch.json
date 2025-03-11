@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "command": "npm start",
+            "name": "Frontend",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "name": "Backend (DEV)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "fastapi",
+            "args": ["dev", "app.py", "--reload"],
+            "cwd": "${workspaceFolder}/uidis",
+            "env": {
+                "DEV": "true"
+            }
+        },
+        {
+            "name": "Backend (PROD)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "fastapi",
+            "args": ["dev", "app.py", "--reload"],
+            "cwd": "${workspaceFolder}/uidis"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Full Stack",
+            "configurations": ["Frontend", "Backend (DEV)"]
+        }
+    ]
+}
