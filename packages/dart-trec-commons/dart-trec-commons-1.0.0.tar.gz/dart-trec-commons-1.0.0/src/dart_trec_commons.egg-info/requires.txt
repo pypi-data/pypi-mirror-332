@@ -1,0 +1,6 @@
+importlib-metadata==4.13.0
+minio==6.0.2
+numpy<2,>=1.22.0
+pandas==1.5.3
+pymongo==4.6.3
+scikit-learn>=1.2.2
