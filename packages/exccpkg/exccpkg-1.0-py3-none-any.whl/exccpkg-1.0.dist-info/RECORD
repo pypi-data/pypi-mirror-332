@@ -1,0 +1,8 @@
+exccpkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exccpkg/exccpkg.py,sha256=kun3m2ox1IHu8fKB0KFXRwHaMGoSERbtMW15_OaX4QM,1281
+exccpkg/tools.py,sha256=qgzQLCPmPlkvW82Ek19k7U0auBNnmDpLyb4Etsx2G6w,2054
+exccpkg-1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+exccpkg-1.0.dist-info/METADATA,sha256=Y1DT70jBzJjK5MwXtHhJnLkTGn3oBRXur54ZBQg6VeE,267
+exccpkg-1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+exccpkg-1.0.dist-info/top_level.txt,sha256=5iH5iHDXog4ory3jY9_ANczn9vLh6_6efqf1aOO1V4I,8
+exccpkg-1.0.dist-info/RECORD,,
