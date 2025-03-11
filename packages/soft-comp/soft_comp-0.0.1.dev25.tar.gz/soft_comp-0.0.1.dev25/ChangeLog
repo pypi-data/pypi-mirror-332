@@ -1,0 +1,28 @@
+CHANGES
+=======
+
+* Fixed import
+* gitignore
+* Build instructions
+* Renamed to soft\_comp '-' not allowed as package name
+* Renamed for upload
+* missing file
+* new dependencies
+* interactive 1d gradient descent
+* Adjacency matrix interactive
+* Interactive sigmoid neuron
+* Added module for interactive notebooks
+* Mark1Perceptron
+* Simple perceptron implementation
+* docstrings and authorship
+* Added fuzzy framework functions
+* more robust COM
+* centre\_of\_mass
+* Adjusted membership functions to return functions
+* membership functions
+* forgotten changes
+* new submodule for solvers
+* European cities dataset
+* EA basic functions
+* Modified README
+* Initial commit
