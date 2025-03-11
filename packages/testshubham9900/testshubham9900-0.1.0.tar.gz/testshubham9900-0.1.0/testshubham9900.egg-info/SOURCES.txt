@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+testshubham9900/__init__.py
+testshubham9900/example.py
+testshubham9900.egg-info/PKG-INFO
+testshubham9900.egg-info/SOURCES.txt
+testshubham9900.egg-info/dependency_links.txt
+testshubham9900.egg-info/entry_points.txt
+testshubham9900.egg-info/top_level.txt

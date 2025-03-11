@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testshubham9900"
+version = "0.1.0"
+description = "A simple test package by Shubham"
+readme = "README.md"
+authors = [{ name = "Shubham Mittal", email = "your@email.com" }]
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+testshubham9900 = "testshubham9900:hello"
+
