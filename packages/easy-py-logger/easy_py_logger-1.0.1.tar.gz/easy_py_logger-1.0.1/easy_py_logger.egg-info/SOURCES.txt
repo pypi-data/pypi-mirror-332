@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+easy_py_logger.egg-info/PKG-INFO
+easy_py_logger.egg-info/SOURCES.txt
+easy_py_logger.egg-info/dependency_links.txt
+easy_py_logger.egg-info/top_level.txt
+logg_it/__init__.py
+logg_it/loggit_function.py
