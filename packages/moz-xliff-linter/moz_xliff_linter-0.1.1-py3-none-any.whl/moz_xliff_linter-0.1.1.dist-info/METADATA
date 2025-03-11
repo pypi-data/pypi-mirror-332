@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: moz-xliff-linter
+Version: 0.1.1
+Summary: Linter package used to check XLIFF files
+Home-page: https://github.com/mozilla-l10n/moz-xliff-linter
+Author: Francesco Lodolo
+Author-email: flod@mozilla.com
+Project-URL: Bug Tracker, https://github.com/mozilla-l10n/moz-xliff-linter/issues
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Localization
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+
+# XLIFF Linter
+
+[![PyPI version](https://badge.fury.io/py/moz-xliff-linter.svg)](https://badge.fury.io/py/moz-xliff-linter)
+
+[![Unit Tests](https://github.com/mozilla-l10n/moz-xliff-linter/actions/workflows/tests.yml/badge.svg)](https://github.com/mozilla-l10n/moz-xliff-linter/actions/workflows/tests.yml)
+
+It allows to check reference FTL XLIFF for common issues:
+* Use of incorrect characters (e.g. `'` instead of `’`).
+* Lack of localization comments for strings with placeables.
+* Use of hard-coded brand names.
+
+See [config.json](src/xliff_linter/config.json) for a bare config file.
