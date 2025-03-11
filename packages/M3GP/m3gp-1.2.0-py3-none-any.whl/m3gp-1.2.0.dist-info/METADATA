@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: M3GP
+Version: 1.2.0
+Summary: Python implementation of M3GP
+Home-page: https://github.com/jespb/Python-M3GP
+Author: João Batista
+Author-email: João Batista <joao.batista@riken.jp>
+License: https://opensource.org/licenses/MIT
+Project-URL: homepage, https://github.com/jespb/Python-M3GP
+Project-URL: repository, https://github.com/jespb/Python-M3GP
+Project-URL: documentation, https://github.com/jespb/Python-M3GP
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
