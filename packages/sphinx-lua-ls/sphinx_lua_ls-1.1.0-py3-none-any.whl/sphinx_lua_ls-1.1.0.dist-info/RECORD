@@ -1,0 +1,13 @@
+sphinx_lua_ls/__init__.py,sha256=grQZpMtTTQruZh0jNERUbGluD5CSz0Kuf2u8M7iNfoI,6445
+sphinx_lua_ls/_version.py,sha256=UNO7UaKPam6Zugzw6NMt_RQBnRzrv9GVeKUjWt-tl6I,511
+sphinx_lua_ls/autodoc.py,sha256=fk5rDmgIm_9hMWmqkBkl9gyxdjgICUWxB4aa73HY1Is,22722
+sphinx_lua_ls/doctree.py,sha256=SMYy7upx8oygEWNhLrr8vrYcAGGCzHjbzexWES8N4ZY,15533
+sphinx_lua_ls/domain.py,sha256=YXytz6Cvi98W9lKEQoRrTJk5TAMLCoMTA24phqPOJSU,38511
+sphinx_lua_ls/intersphinx.py,sha256=0ts1pPycipyea9KckRxHZW1tovKIp_UP6vqb607V40Y,7086
+sphinx_lua_ls/lua_ls.py,sha256=uSztL7iFybTJi-j92sUC1OZncUNaFZScPpZH24aI6_s,20484
+sphinx_lua_ls/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinx_lua_ls-1.1.0.dist-info/LICENSE,sha256=YGUN1Ht_F1SQ7RVPZCEjnviKjicvJ3GWdRXYgdHFRSM,1070
+sphinx_lua_ls-1.1.0.dist-info/METADATA,sha256=MivbKqFMM8if51Qob0EjVwjfktcJZrdaeQsXByR1-9M,3891
+sphinx_lua_ls-1.1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+sphinx_lua_ls-1.1.0.dist-info/top_level.txt,sha256=tUWPSW_Ct2MrczoHpb6w2zI7dUxbIl9D0fGiCCiG28Q,14
+sphinx_lua_ls-1.1.0.dist-info/RECORD,,
