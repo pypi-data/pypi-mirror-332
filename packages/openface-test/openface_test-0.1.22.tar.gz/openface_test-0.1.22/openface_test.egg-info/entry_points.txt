@@ -1,0 +1,2 @@
+[console_scripts]
+openface-cli = openface.cli:cli
