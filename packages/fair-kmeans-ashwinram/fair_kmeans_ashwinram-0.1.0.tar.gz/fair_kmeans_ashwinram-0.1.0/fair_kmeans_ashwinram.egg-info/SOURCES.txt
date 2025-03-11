@@ -1,0 +1,6 @@
+README.md
+setup.py
+fair_kmeans_ashwinram.egg-info/PKG-INFO
+fair_kmeans_ashwinram.egg-info/SOURCES.txt
+fair_kmeans_ashwinram.egg-info/dependency_links.txt
+fair_kmeans_ashwinram.egg-info/top_level.txt
