@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: betterbib
+Version: 7.5.6
+Summary: Better bibliography data
+Author-email: Nico =?utf-8?q?Schl=C3=B6mer?= <nico.schloemer@gmail.com>
+Project-URL: Homepage, https://github.com/texworld/betterbib
+Project-URL: Issues, https://github.com/texworld/betterbib/issues
+Keywords: bibtex,latex
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: stonefish-license-manager>=0.5.1
+Requires-Dist: x22>=0.1.7
+Requires-Dist: bibtexparser>=2.0.0b5
+Requires-Dist: platformdirs>=3.2
+Requires-Dist: pylatexenc>=2.10
+Requires-Dist: python-package-info>=0.0.10
+Requires-Dist: requests>=2
+Requires-Dist: requests-cache>=1
+Requires-Dist: rich>=9.4
+Requires-Dist: rich-argparse>=1
+Requires-Dist: tomli>=2; python_version < "3.11"
+Requires-Dist: unidecode>=1
+Requires-Dist: xmltodict>=0.14
+
