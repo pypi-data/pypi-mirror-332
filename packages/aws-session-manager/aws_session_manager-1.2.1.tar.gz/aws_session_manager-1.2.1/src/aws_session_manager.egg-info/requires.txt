@@ -1,0 +1,10 @@
+PyYAML
+
+[:platform_system == "Darwin"]
+curses
+
+[:platform_system == "Linux"]
+curses
+
+[:platform_system == "Windows"]
+windows-curses

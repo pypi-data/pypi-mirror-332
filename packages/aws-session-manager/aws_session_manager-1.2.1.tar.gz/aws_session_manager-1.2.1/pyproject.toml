@@ -1,0 +1,24 @@
+[project]
+name = "aws_session_manager"
+version = "1.2.1"
+authors = [
+    { name="Hélio Santos", email="heliosantos99@gmail.com" },
+]
+description = "A command line UI to manage AWS Session Manager sessions"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'PyYAML',
+  'curses; platform_system == "Linux"',
+  'curses; platform_system == "Darwin"',
+  'windows-curses; platform_system == "Windows"',
+]
