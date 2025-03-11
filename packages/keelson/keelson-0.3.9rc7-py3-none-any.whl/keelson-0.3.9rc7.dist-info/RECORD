@@ -1,0 +1,10 @@
+keelson/Envelope_pb2.py,sha256=sld-QwePGnU56lUhExbqGhlU_YzKgpdO_CgapQFIj8c,1473
+keelson/__init__.py,sha256=_AQb-Ugc0plRhK5mJ5YYTZSgeDiu8FFfFhslsN3AqO8,7447
+keelson/codec.py,sha256=cTTlgVBxpRtBIvSXiy9KBynR4Ot5ZUvB07EpWujV5xo,3335
+keelson/subjects.yaml,sha256=MFsVq4fCXQHxpWvoK6NOkx7r66iBrRNsWw-QImZXRAI,16657
+keelson/payloads/Envelope_pb2.pyi,sha256=XtFHDn9qAgyDE1W_Sa_0UEqBt5g7_fdDfqXfPMVqoHI,672
+keelson-0.3.9rc7.dist-info/METADATA,sha256=tvW9pG2nrs5YqwZQIhHjQMUXMSs1BjdcSgy-qEe58Bg,1299
+keelson-0.3.9rc7.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+keelson-0.3.9rc7.dist-info/entry_points.txt,sha256=zjUw7zUIUDruhRSSJGkA6jjvja2kMj07DKyARa9qn4I,413
+keelson-0.3.9rc7.dist-info/top_level.txt,sha256=CyBwGPhq3oBgFE9cp0fPTr9udD3jEM2NcHzx4K_0Z88,8
+keelson-0.3.9rc7.dist-info/RECORD,,
