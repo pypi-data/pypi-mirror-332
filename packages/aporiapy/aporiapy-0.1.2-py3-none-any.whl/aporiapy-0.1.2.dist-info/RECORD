@@ -1,0 +1,12 @@
+aporiapy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aporiapy/main.py,sha256=r0ZKXOM1COdnkjP4Fy5Dw-zVeFVaXc63Fq2dWBwNcMQ,2041
+aporiapy/compilers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aporiapy/compilers/compiler_01_sc.py,sha256=hP7zDybtVuotXYY4X_s9PasWslgEP7DSnxg7qzvoVso,5180
+aporiapy/compilers/compiler_02_flat.py,sha256=nOu9S7uRPc_QDLtTYsiWV8zSiD-Rvr3YHecBBJ7muYU,1322
+aporiapy/compilers/compiler_03_cfi.py,sha256=g333SsllpWDah6Wd40L9D4jb-d7e0Q9GxMLlr3_CImY,9386
+aporiapy/compilers/utils.py,sha256=8o_J2Vw_aJf-L4jHBnv5lOfmTQpDhZ0ahSloinWQvTc,139
+aporiapy-0.1.2.dist-info/METADATA,sha256=BTapMWPIIblE2LHB_UMXtYomRHNQb0so2B0VfxCm6Q4,1534
+aporiapy-0.1.2.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+aporiapy-0.1.2.dist-info/entry_points.txt,sha256=ioaCiSJi1YtJw1bOclx8pjSiacSqprUfgIrQV0MzNuc,47
+aporiapy-0.1.2.dist-info/top_level.txt,sha256=hhB73wHaTVUqxSJRg18bNqqeMN4nHZz1gRv8hN0Qg5s,9
+aporiapy-0.1.2.dist-info/RECORD,,
