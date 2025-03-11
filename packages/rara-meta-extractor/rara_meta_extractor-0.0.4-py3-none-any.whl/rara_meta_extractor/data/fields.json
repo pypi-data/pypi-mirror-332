@@ -1,0 +1,81 @@
+[
+    {
+        "name": "pealkiri",
+        "restrictions": {}
+    },
+    {
+        "name": "originaalpealkiri",
+        "restrictions": {}
+    },
+    {
+        "name": "autor",
+        "restrictions": {}
+    },
+    {
+        "name": "illustreerija",
+        "restrictions": {}
+    },
+    {
+        "name": "toimetaja",
+        "restrictions": {}
+    },
+    {
+        "name": "kujundaja",
+        "restrictions": {}
+    },
+    {
+        "name": "kirjastus",
+        "restrictions": {}
+    },
+    {
+        "name": "originaalne ilmumisaasta",
+        "restrictions": {
+            "maxLength": 4,
+            "minLength": 4,
+            "type": "integer"
+        }
+    },
+    {
+        "name": "ilmumisaasta",
+        "restrictions": {
+            "maxLength": 4,
+            "minLength": 4,
+            "type": "integer"
+        }
+    },
+    {
+        "name": "tr\u00fckikoht",
+        "restrictions": {
+            "enum": [
+                "Eesti",
+                "Hiina",
+                "Jaapan",
+                "Uus-Meremaa"
+            ]
+        }
+    },
+    {
+        "name": "keel",
+        "restrictions": {}
+    },
+    {
+        "name": "isbn",
+        "restrictions": {
+            "maxLength": 13,
+            "minLength": 13,
+            "type": "integer"
+        }
+    },
+    {
+        "name": "issn",
+        "restrictions": {}
+    },
+    {
+        "name": "fotograaf",
+        "restrictions": {}
+    },
+    {
+        "name": "keeletoimetaja",
+        "restrictions": {}
+    }
+]

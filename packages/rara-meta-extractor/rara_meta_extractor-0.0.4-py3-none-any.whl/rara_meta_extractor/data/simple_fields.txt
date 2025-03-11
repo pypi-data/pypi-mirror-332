@@ -1,0 +1,15 @@
+pealkiri
+originaalpealkiri
+autor
+illustreerija
+kirjastus
+originaalne ilmumisaasta
+ilmumisaasta
+trükikoht
+keel
+isbn
+issn
+toimetaja
+kujundaja
+keeletoimetaja
+fotograaf

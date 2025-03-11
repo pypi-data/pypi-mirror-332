@@ -1,0 +1,14 @@
+rara_meta_extractor/config.py,sha256=qu04qMSANj5NEkOL3VoCaq56cFqp7CuwG8Bq4JD9thI,715
+rara_meta_extractor/llama_api_wrapper.py,sha256=d9RzGMN6YIMiEvCkfeY7uf9V1zzNErUO2MO_NY8OQzg,2726
+rara_meta_extractor/llama_meta_extractor.py,sha256=vJ4LLwN-qz-yjjNpzdceAMwLTrJbk-69O1ZuTsiT3xc,2634
+rara_meta_extractor/schema_generator.py,sha256=Y9PDf-wLKMUIAq5_Bwg8vPgkb4vrUrMu0gO1Svv4QzQ,3476
+rara_meta_extractor/utils.py,sha256=hJZBaypp2kCn8Ki00syiPzhw0k8T7KOhMbL0_oXkwe4,888
+rara_meta_extractor/data/fields.json,sha256=GUutc-oOq8LDbvOe_OLVdY8Y12dInBUwfvMfFXxEm3M,1495
+rara_meta_extractor/data/simple_fields.txt,sha256=ZDs3GPyBG1bhaYie7buU3FwFv7GbpWh0ebm2KOMIx_M,165
+rara_meta_extractor/data/test_text.txt,sha256=TKuA6Hu9RFRL6ou9zlmJlA3q3LadHVw39kjkgJiZji8,1043
+tests/test_meta_extractor.py,sha256=txD4REWKZ0QOR2GbvbhBWVD3KLf73Bzd2jR_m_-qeic,51
+rara_meta_extractor-0.0.4.dist-info/LICENSE,sha256=RbLVV3sSFrrBE9dijdcFKBNAl94ugdUpVB2hYBWgcZc,34511
+rara_meta_extractor-0.0.4.dist-info/METADATA,sha256=LjPFTG7amFRpSSGqAb1ZnzCwQCT_upmQPsbyn8qilgo,44280
+rara_meta_extractor-0.0.4.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+rara_meta_extractor-0.0.4.dist-info/top_level.txt,sha256=1kZYpfZbVLtnryvVlYz22uMhWW43k96--jktuJdclOY,26
+rara_meta_extractor-0.0.4.dist-info/RECORD,,
