@@ -1,0 +1,6 @@
+
+[ai]
+openai<2,>=1.65
+
+[yielding]
+keyboard<1,>=0.13
