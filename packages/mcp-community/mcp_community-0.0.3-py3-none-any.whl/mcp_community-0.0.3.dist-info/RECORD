@@ -1,0 +1,13 @@
+mcp_community/__init__.py,sha256=6vkk_8hUVOHU-U51iJ40XG0SdXWJL72HiiAF90eJHPA,381
+mcp_community/run.py,sha256=9sF98qBRKND23OEOMbPCqZlYIGzbp_lzp1PETAi0o1E,3490
+mcp_community/examples/duckduckgo_search_bot.py,sha256=HYnaYqN3_cNuse8P_FMG54YPka5e0FrFTLHEVJp3z8A,5594
+mcp_community/examples/mcp_client.py,sha256=3BThanXsDEbbqQveAqm2PR0Dlj175Us-S4VxxH7Y6LI,4119
+mcp_community/examples/ruff.toml,sha256=vH89kRupXz9M_qCrP9iC-cUlZjeBl_Ebe7FYdVKRWyk,51
+mcp_community/servers/README.md,sha256=8re5t3AO5vwAmzSNIkcCcTNkTCHVYJe3UVIdiDJwRsM,107
+mcp_community/servers/__init__.py,sha256=-mEWAUzDLmj3WhNlZvtYYWRGZGaeJ3V0UG3Nnnxzw18,236
+mcp_community/servers/calculator.py,sha256=Z931EojW-85XwOscDu37tUHOWVnoFyy6H8bvdmnvzno,675
+mcp_community/servers/duckduckgo.py,sha256=gxXwtlplV0u4e4FG7avLBkvI0dW7mro4VWtmioTJJhc,4772
+mcp_community-0.0.3.dist-info/METADATA,sha256=w1Cr6AK90gGrl-57klrn3bTFhY7AWu8y1uDwRsfkcIo,16528
+mcp_community-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_community-0.0.3.dist-info/licenses/LICENSE,sha256=h0EvgT1TdS9kSAZK9_DCBCWkxNldkgn6jUj3wyvDI_8,11339
+mcp_community-0.0.3.dist-info/RECORD,,
