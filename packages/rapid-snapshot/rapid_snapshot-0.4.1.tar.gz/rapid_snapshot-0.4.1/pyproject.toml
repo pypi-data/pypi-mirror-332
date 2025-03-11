@@ -1,0 +1,20 @@
+[project]
+name = "rapid_snapshot"
+version = "0.4.1"
+description = "A Diagnostics over Internet Protocol (DoIP) snapshot tool."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["maturin"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+# "extension-module" tells pyo3 we want to build an extension module (skips linking against libpython.so)
+features = ["pyo3/extension-module"]

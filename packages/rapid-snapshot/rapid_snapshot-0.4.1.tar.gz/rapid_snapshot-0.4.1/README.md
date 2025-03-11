@@ -1,0 +1,52 @@
+# Parallel Snapshot
+
+## Mission Statement
+
+To speed up snapshotting vehicle hardware so you have more time to work on your project.
+
+## About
+
+### Language
+
+Rust is the preferred language of choice due to its speed and security.
+
+### Method
+
+This program utilises the the cores and threads available on rig machines to connect to vehicle ECUs and communicate simultaneously.
+
+## Documentation
+
+- [Confluence](https://confluence.devops.jlr-apps.com/display/VVI/Parallel+Snapshot+Strategy)
+- [JIRA EPIC](https://jira.devops.jlr-apps.com/browse/VV-44630)
+
+## GitLab Pipeline
+
+The pipeline for this simply runs the build and test steps built into the Rust Cargo command line tool. In the future I am looking at adding an additional step which will perform code quality checks and output these into badges in which we can display on the repository.
+
+## Contribution
+
+To contribute to this product please raise a [issue](https://git-gdd.sdo.jlrmotor.com/SBR/taas_framework/parallel_snapshot/-/issues/new) or a [merge request](https://git-gdd.sdo.jlrmotor.com/SBR/taas_framework/parallel_snapshot/-/merge_requests/new) with your issue or code. For contribution guidelines please follow the [CONTRIBUTING.md](/CONTRIBUTING.md) file.
+
+## Logging
+
+Fern is the library utilised to generate logs within this tool. The code for which initialises this is stored in [logging.rs](/src/logging.rs).
+
+### Logging Levels
+
+From the highest of level to the least:
+
+**Emergency** (`ermeg`): indicates that the system is unusable and requires immediate attention.
+
+**Alert** (`alert`): indicates that the system is unusable and requires immediate attention.
+
+**Critical** (`crit`): signifies critical conditions in the program that demand intervention to prevent system failure.
+
+**Error** (`error`): indicates error conditions that impair some operation but are less severe than critical situations.
+
+**Warning** (`warn`): signifies potential issues that may lead to errors or unexpected behavior in the future if not addressed.
+
+**Notice** (`notice`): applies to normal but significant conditions that may require monitoring.
+
+**Informational** (`info`): includes messages that provide a record of the normal operation of the system.
+
+**Debug** (`debug`): intended for logging detailed information about the system for debugging purposes.

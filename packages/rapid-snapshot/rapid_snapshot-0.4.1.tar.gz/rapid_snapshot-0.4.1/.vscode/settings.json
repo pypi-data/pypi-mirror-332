@@ -1,0 +1,4 @@
+{
+  "cSpell.words": ["dids", "Doip", "humantime"],
+  "python.analysis.extraPaths": [".venv/Lib/site-packages"]
+}

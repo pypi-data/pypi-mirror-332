@@ -1,0 +1,63 @@
+# Feature Request
+
+Thank you for contributing to our project! Please provide the following details to help us understand your feature request and its impact.
+
+## 📋 Description
+
+**What is the feature or improvement you are requesting?**
+Provide a clear and concise description of the feature.
+
+---
+
+## 🎯 Motivation
+
+**Why is this feature important?**
+- What problem does it solve?
+- Who would benefit from this feature?
+
+---
+
+## 🔍 Context
+
+**Is this feature related to any existing issues, workflows, or areas of improvement?**
+- Reference any related GitLab issues (e.g., `#123`) or discussions.
+- Include details about your current workflow and how this feature fits in.
+
+---
+
+## 🛠️ Proposed Solution
+
+**How do you envision this feature working?**
+- Provide any mockups, diagrams, or examples if available.
+- Highlight key components or steps involved.
+
+---
+
+## 🚦 Success Criteria
+
+**What would success look like for this feature?**
+- Define measurable outcomes or metrics that indicate the feature's success.
+
+---
+
+## 🧩 Alternatives Considered
+
+**Have you explored other approaches or workarounds?**
+- Share any alternative solutions you've tried or thought about.
+- Explain why these alternatives are not sufficient.
+
+---
+
+## 💡 Additional Information
+
+**Is there anything else we should know?**
+- Include links, screenshots, or documentation relevant to the request.
+
+---
+
+## 📝 Checklist
+
+Please confirm the following before submitting:
+- [ ] I have checked that this feature does not already exist or have an open request.
+- [ ] I have provided a detailed description and context for the feature.
+- [ ] I have tagged this issue appropriately for triage.

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Functional",
+    "acronym": "FUNC",
+    "logical_address": "e400",
+    "architecture": ["eva25", "eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Core Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "calibration Software Number"
+      },
+      {
+        "did": "f111",
+        "name": "core assembly Number"
+      }
+    ]
+  }
+]
