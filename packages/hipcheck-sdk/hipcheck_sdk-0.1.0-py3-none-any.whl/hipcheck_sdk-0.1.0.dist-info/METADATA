@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: hipcheck-sdk
+Version: 0.1.0
+Summary: An SDK for developing Hipcheck plugins
+Project-URL: Homepage, https://hipcheck.mitre.org/
+Project-URL: Issues, https://github.com/mitre/hipcheck/issues
+Author-email: j-lanson <jlanson@mitre.org>
+License-Expression: Apache-2.0
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: asyncio>=3.4.3
+Requires-Dist: grpcio-tools>=1.70.0
+Requires-Dist: grpcio>=1.70.0
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: pytest>=8.3.5
+Requires-Dist: wheel>=0.45.1
+Description-Content-Type: text/markdown
+
+**NOTE**: This package is not ready for public use. We have published this
+package on PyPI to reserve the package name.
+
+You must have `uv` installed. Installation instructions can be found
+[here](https://docs.astral.sh/uv/getting-started/installation/).
+
+# Running unit tests
+
+From `sdk/python`, run
+```bash
+uv run pytest ./tests
+```
+
+# Testing example plugin listening on port
+
+From `sdk/python`, run
+```bash
+uv run tests/example-plugin/main.py --port <PORT>`.
+```
+
+Or from `hipcheck` repository root, run
+```bash
+uv run --project sdk/python sdk/python/tests/example-plugin/main.py --port <PORT>
+```
+
+# Testing example plugin in Hipcheck analysis
+
+From the Hipcheck repository root, use a policy with the following `plugins`
+entry:
+
+```
+    plugin "mitre/example" version="0.0.0" manifest="sdk/python/tests/example-plugin/local-plugin.kdl"
+```
