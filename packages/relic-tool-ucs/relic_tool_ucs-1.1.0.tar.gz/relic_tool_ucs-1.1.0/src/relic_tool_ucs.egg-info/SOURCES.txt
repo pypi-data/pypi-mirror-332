@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/relic/ucs/__init__.py
+src/relic/ucs/py.typed
+src/relic_tool_ucs.egg-info/PKG-INFO
+src/relic_tool_ucs.egg-info/SOURCES.txt
+src/relic_tool_ucs.egg-info/dependency_links.txt
+src/relic_tool_ucs.egg-info/requires.txt
+src/relic_tool_ucs.egg-info/top_level.txt
+tests/test_regressions.py
+tests/test_ucs.py
