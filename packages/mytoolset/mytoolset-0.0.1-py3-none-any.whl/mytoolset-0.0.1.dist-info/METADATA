@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mytoolset
+Version: 0.0.1
+Summary: wget & pydockerNpygit2 env is my tool set
+Home-page: https://github.com/FarAway6834/mytoolset
+Author: du7ec
+Author-email: dutec6834@gmail.com
+Keywords: py,docker,pydocker,and,N,n,&,pygit,git,pygit2,pydockerNpygit2,dockerNpygit2,docker&git,wget,pywget,my,tooo,set,mytool,mytoolset,toolset,tools,mytools
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Requires-Python: >=3.4
+License-File: LICENSE
+Requires-Dist: wget
+Requires-Dist: dockerNpygit2
