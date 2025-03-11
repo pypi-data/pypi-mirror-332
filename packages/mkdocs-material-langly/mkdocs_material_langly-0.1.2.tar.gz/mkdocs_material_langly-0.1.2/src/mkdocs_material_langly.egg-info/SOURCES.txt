@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/mkdocs_material_langly.egg-info/PKG-INFO
+src/mkdocs_material_langly.egg-info/SOURCES.txt
+src/mkdocs_material_langly.egg-info/dependency_links.txt
+src/mkdocs_material_langly.egg-info/entry_points.txt
+src/mkdocs_material_langly.egg-info/requires.txt
+src/mkdocs_material_langly.egg-info/top_level.txt
