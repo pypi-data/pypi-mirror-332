@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: tomassi-memegen
+Version: 0.1.0
+Summary: A module to create memes with text on images
+Author: Tomáš Ivan
+Author-email: tomas.ivan.it@gmail.com
+Requires-Dist: Pillow
+Requires-Dist: requests
+Requires-Dist: io
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
