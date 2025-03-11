@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/MinDAEC/__init__.py
+src/MinDAEC.egg-info/PKG-INFO
+src/MinDAEC.egg-info/SOURCES.txt
+src/MinDAEC.egg-info/dependency_links.txt
+src/MinDAEC.egg-info/top_level.txt
