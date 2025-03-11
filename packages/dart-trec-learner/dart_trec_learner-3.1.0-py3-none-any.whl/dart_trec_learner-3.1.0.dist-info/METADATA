@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: dart-trec-learner
+Version: 3.1.0
+Summary: T-REC learner libs
+Home-page: https://github.sec.samsung.net/SOL/dart-trec-learner
+Author: SIDIA
+Author-email: sidia@sidia.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: accelerate (==1.1.0)
+Requires-Dist: apscheduler (==3.10.1)
+Requires-Dist: boto3 (==1.34.0)
+Requires-Dist: dart-trec-commons (==2.8.3)
+Requires-Dist: datasets (==3.1.0)
+Requires-Dist: diffusers (==0.31.0)
+Requires-Dist: evaluate (==0.4.3)
+Requires-Dist: isort (==5.13.2)
+Requires-Dist: loguru (==0.7.2)
+Requires-Dist: pynvml (==11.5.3)
+Requires-Dist: python-dotenv (==1.0.1)
+Requires-Dist: scikit-learn (==1.5.2)
+Requires-Dist: tabulate (==0.9.0)
+Requires-Dist: torch (==2.3.0)
+Requires-Dist: torchvision (==0.18.0)
+Requires-Dist: tqdm (==4.67.0)
+Requires-Dist: transformers (==4.46.3)
+Requires-Dist: typer (==0.13.0)
+Requires-Dist: tzlocal (==2.1)
+
+# TREC Learner
+
+For production config, set ENV to production
+
+## How to Run
+
+1. Install requeriments
+    - `python3 -m venv .venv`
+    - `source ./.venv/bin/activate`
+    - `pip install -r requirements.txt`
+   
+2. Config parameters
+    - `cp .env.example .env`
+    - `cp pytest.ini.example pytest.ini`
+    - fill .env and pytest.ini
+
+3. Run learner
+    - `./run.sh`
+
+## How to Setup
+
+All application variables are exposed in `src/config.py`. Container variables are exposed in `.env`:
+
+- Learner Options:
+
+    | Option | Description |
+    |--------|-------------|
+    | LEARNER_DAYS_INTERVAL | Learner interval in days |
+    | LEARNER_ROOT_MODEL_DIR | Temporary root dir used during trainning |
+    | LEARNER_MODEL_DIR | Temporary dir used store model files |
+
+- Connection Options:
+
+    | Option | Description |
+    |--------|-------------|
+    | MONGODB_URI | Mongo URI (without database name) |
+    | MONGODB_DATABASE | Mongo database with PLM data |
+    | MONGODB_COLLECTION | Mongo collection with issue-document data |
+    | MINIO_HOST | MinIO host (without http://) |
+    | MINIO_ACCESS_KEY | MinIO Key |
+    | MINIO_SECRET_KEY | MinIO Secret |
+    | MINIO_RECOMMENDER_BUCKET | MinIO recommender bucket |
+
+- Scheduler Options:
+
+    | Option | Description |
+    |--------|-------------|
+    | JOB_FREQUENCY | Frequency to run job _(seconds interval for dev mode)_ |
+    | JOB_FREQUENCY | Frequency to run job _(hour of day for production mode)_ |
+
+
