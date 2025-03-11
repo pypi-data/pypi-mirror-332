@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: threeviz
+Version: 0.0.8
+Requires-Dist: tornado
+Requires-Dist: numpy
+Requires-Dist: tiny_tf
+Requires-Dist: msgpack
