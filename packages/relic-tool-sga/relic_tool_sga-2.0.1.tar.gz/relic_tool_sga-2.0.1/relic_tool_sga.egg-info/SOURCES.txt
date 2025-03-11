@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+relic_tool_sga.egg-info/PKG-INFO
+relic_tool_sga.egg-info/SOURCES.txt
+relic_tool_sga.egg-info/dependency_links.txt
+relic_tool_sga.egg-info/requires.txt
+relic_tool_sga.egg-info/top_level.txt
