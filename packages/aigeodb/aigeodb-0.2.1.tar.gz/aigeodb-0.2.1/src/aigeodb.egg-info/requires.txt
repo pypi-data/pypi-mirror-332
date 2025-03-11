@@ -1,0 +1,16 @@
+geopy
+SQLAlchemy
+requests
+python-dotenv
+
+[dev]
+pytest
+pytest-cov
+black
+flake8
+isort
+build
+twine
+
+[django]
+Django
