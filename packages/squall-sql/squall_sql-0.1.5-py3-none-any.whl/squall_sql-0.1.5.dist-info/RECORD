@@ -1,0 +1,14 @@
+squall/__init__.py,sha256=NGuwYq4NJRuS1UYZxs8Vsqn5KB4A4kGlouQlxQ3TgaE,439
+squall/database_structure_tree.py,sha256=aarSMoQop9qONQtddDMWJNCSgmjVfBHpBKaOE2fdgNA,916
+squall/db_utility.py,sha256=VT0VmpTXobrIk1RWZBiOJ7G__FwnxZzGTVOj2gG-6Yw,5917
+squall/edit_row.py,sha256=aLNzqI4wGEAnRfoUJvh9Ew3qW5L8wgIkE50dzpp9FCs,3445
+squall/execute_sql.py,sha256=GxNi0nylsAD0z0cjVrAI2fW60i8PLd1UP5cquAuX18s,2733
+squall/screens.py,sha256=TN5k6qgx5c5PZkMabb54SQCkOLF49Y-iBWd-6OlTXoE,2474
+squall/squall.py,sha256=oai4nHujRfqbHny1CeJs-7J0qNtYZyBu80iXuCdLiTs,2386
+squall/squall.tcss,sha256=ct1m5dG6FFAAVnQ33eT1_cwzytxdfjl3Mvz50qm8rdM,893
+squall/table_viewer.py,sha256=fx_llC3zzEeV7yY-FUz5Lk1zlt9f6vLgBhX3SU62m6c,2251
+squall_sql-0.1.5.dist-info/METADATA,sha256=L3JDOipwxY6D9XfCVLaZTUPISA6nM-MBroDU81y7AxA,3918
+squall_sql-0.1.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+squall_sql-0.1.5.dist-info/entry_points.txt,sha256=oRmetO96My0Tkmq1HQyluLfbbdfIPVXja29oTdX0jqE,46
+squall_sql-0.1.5.dist-info/licenses/LICENSE,sha256=07kM7Su2RYMKK4L9Hb6iKLgxlZ4PikZd0IrfBzCjfsk,1070
+squall_sql-0.1.5.dist-info/RECORD,,
