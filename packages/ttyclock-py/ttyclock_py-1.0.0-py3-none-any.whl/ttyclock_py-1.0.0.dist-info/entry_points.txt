@@ -1,0 +1,3 @@
+[console_scripts]
+ttyclock-py=clock.py.__main__:main
+
