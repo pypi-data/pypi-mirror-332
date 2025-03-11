@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+securin-aspm/__init__.py
+securin-aspm/__main__.py
+securin-aspm/main.py
+securin_aspm.egg-info/PKG-INFO
+securin_aspm.egg-info/SOURCES.txt
+securin_aspm.egg-info/dependency_links.txt
+securin_aspm.egg-info/requires.txt
+securin_aspm.egg-info/top_level.txt
