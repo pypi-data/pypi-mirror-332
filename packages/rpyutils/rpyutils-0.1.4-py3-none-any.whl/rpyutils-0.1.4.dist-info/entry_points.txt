@@ -1,0 +1,2 @@
+[console_scripts]
+rpyutils = rpyutils.__main__:main
