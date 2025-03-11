@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+chacha20_utils/__init__.py
+chacha20_utils/chacha20_utils.py
+chacha20_utils.egg-info/PKG-INFO
+chacha20_utils.egg-info/SOURCES.txt
+chacha20_utils.egg-info/dependency_links.txt
+chacha20_utils.egg-info/requires.txt
+chacha20_utils.egg-info/top_level.txt
