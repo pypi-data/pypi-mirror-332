@@ -1,0 +1,14 @@
+amlcompass_api/__pycache__/
+amlcompass_api/services/__pycache__/
+aml_api/__pycache__/
+aml_api/services/__pycache__/
+aml_api/helpers/__pycache__/
+tests/__pycache__/
+.pytest_cache/*
+aml_api_python.egg-info/
+dist/
+.env
+.venv/*
+venv/*
+.idea/
+.vscode/
