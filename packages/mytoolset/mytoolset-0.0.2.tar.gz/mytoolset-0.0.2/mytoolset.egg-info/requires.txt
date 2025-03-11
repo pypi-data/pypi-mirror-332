@@ -1,0 +1,2 @@
+wget
+dockerNpygit2
