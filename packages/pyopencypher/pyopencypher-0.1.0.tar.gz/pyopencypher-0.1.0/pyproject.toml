@@ -1,0 +1,35 @@
+[project]
+name = "pyopencypher"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Tal Kain",email = "tal@velocity.tech"}
+]
+license = {text = "Apache License 2.0"}
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "build (>=1.2.2.post1,<2.0.0)",
+    "twine (>=6.1.0,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+"Homepage" = "https://github.com/techvelocity/pyopencypher"
+"Bug Tracker" = "https://github.com/techvelocity/pyopencypher/issues"
+
+[tool.poetry]
+name = "pyopencypher"
+version = "0.1.0"
+description = ""
+authors = ["Tal Kain <tal@velocity.tech>"]
+readme = "README.md"
+packages = [{ include = "src/pyopencypher"}]
