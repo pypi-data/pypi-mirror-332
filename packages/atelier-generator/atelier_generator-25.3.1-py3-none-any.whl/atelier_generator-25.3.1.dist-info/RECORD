@@ -1,0 +1,10 @@
+atelier_generator/__init__.py,sha256=WU1xeYE4lLslX16NlF1gBfxpD8yu9d55Itwsu_eRWLA,61221
+atelier_generator/api.py,sha256=hgSpk0tS6k6hU2v__x2cisKrHDzAt8lP9qSeZPXHMOk,33982
+atelier_generator/data.py,sha256=01EwrNX2mK8A0KxFirDRskuWdTueL67OjcoK4OobI0E,546164
+atelier_generator/webui.py,sha256=QRm5MzDBRbntylT-_mbgfTlUN4VbSPYUHuBgVX3rhQM,42844
+atelier_generator/templates/index.py,sha256=3yHiOu1xrnZ4kaTHLRUje1E-wMzHHl24a8iy6lgkFJk,25304
+atelier_generator-25.3.1.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+atelier_generator-25.3.1.dist-info/METADATA,sha256=27V66aLnaWDzj22Qvg89j2H0iNFITwg2ZdgE6L7vrQs,7942
+atelier_generator-25.3.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+atelier_generator-25.3.1.dist-info/top_level.txt,sha256=onya-IzIXIl4J4n8SwaCkt7C4nFnCwqiGBebErsG4Ew,18
+atelier_generator-25.3.1.dist-info/RECORD,,
