@@ -1,0 +1,8 @@
+explicit_agent/__init__.py,sha256=ACwpwq7yVcLn2wuVDfDgLb5Bs2Sde0FDorySo8XKHjU,641
+explicit_agent/agent.py,sha256=Q3sqjzWz8BY1WM58j3a8Di_vu_ibZGa5CtWhE9unpaA,11977
+explicit_agent/tools.py,sha256=-MAtEHh36fHwXxMWgx2LPrsQFhv3XVe5js8tVq2xELY,1624
+explicit_agent-0.2.1.dist-info/LICENSE,sha256=0QIy_5mhxNv6ALWdGpONKiRVgEBFU3Q_YMUDWMSkQaQ,1073
+explicit_agent-0.2.1.dist-info/METADATA,sha256=hMk8EdjwS-GVrAGETl4z3Facdc6gSJ-sRNzo7p5LXpU,9755
+explicit_agent-0.2.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+explicit_agent-0.2.1.dist-info/top_level.txt,sha256=ZAP9xQBEQQahAkY31SuCW1WISnyhrh3seMLzzGicXN8,15
+explicit_agent-0.2.1.dist-info/RECORD,,
