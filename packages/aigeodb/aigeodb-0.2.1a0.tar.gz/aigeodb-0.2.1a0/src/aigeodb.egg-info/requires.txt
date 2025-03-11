@@ -1,0 +1,15 @@
+geopy==2.4.1
+SQLAlchemy==2.0.38
+python-dotenv==1.0.1
+
+[dev]
+pytest
+pytest-cov
+black
+flake8
+isort
+build
+twine
+
+[django]
+Django
