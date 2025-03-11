@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: konnyaku
+Version: 1.0.4
+Summary: A simple and robust LLM workflow for anime subtitle file translation.
+License: MIT
+Author: SomeBottle
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: openai (>=1.61.1)
+Requires-Dist: pysubs2 (>=1.8.0)
+Requires-Dist: requests (>=2.32.3)
+Project-URL: Repository, https://github.com/SomeBottle/Konnyaku
+Description-Content-Type: text/markdown
+
+# Konnyaku
+
+![Konnyaku](https://raw.githubusercontent.com/SomeBottle/Konnyaku/refs/heads/main/image/translate_konnyaku.jpg)   
+
+A simple and **robust** LLM workflow for anime subtitle file translation.
+
+简单而稳定的动画字幕翻译脚本。
+
+* Github: https://github.com/SomeBottle/Konnyaku  

@@ -1,0 +1,14 @@
+konnyaku/__init__.py,sha256=_CQqf1WXlEpPXQovYObanv-E75XeADFmabkMIi3YG8o,60
+konnyaku/__main__.py,sha256=VDL8Ca6fnPfRO6ZpnJoLRcUnwzW3EzSc5NPE8iiiDrI,3215
+konnyaku/bangumi.py,sha256=6f6WTifSstTT2zPUQHjGFuAswb3eQYZQrua78nEcluA,4330
+konnyaku/config.py,sha256=RPIn9yzgLwkMJNw0k0hWQPIZHm4G87t-4hSd3Y0spGk,2610
+konnyaku/errors.py,sha256=cmZwekkBvi7yAqmkzvEftTYu-l2IFESXdysBKD79oGk,1510
+konnyaku/llm.py,sha256=Jpe5lPdygh-1uNCrrcj9JvFgLM5jUeuFvl1bzPXOP8c,3902
+konnyaku/subs.py,sha256=AP7fAgdSztrcgmfS1zgzjyyymau32okjXIjtnhb0WfM,6836
+konnyaku/translator.py,sha256=WDilgrxHgJNWMoEsheCwsGGWQI4m9ie8De3gclh0Pso,15127
+konnyaku/utils.py,sha256=cjZ9-IEQKPBYMr1yaX2WqvazrOB6jOHzueqXY9wyAxI,4447
+konnyaku-1.0.4.dist-info/entry_points.txt,sha256=2CCXl7xy1Vm6y81l8WrOZcTxorWKos4k8t6H-IFulFA,51
+konnyaku-1.0.4.dist-info/LICENSE,sha256=dfk7uVgTTtp9PoJIOwC3ZCRz_PocbGXdd7aZpTGoBcs,1067
+konnyaku-1.0.4.dist-info/METADATA,sha256=9GM2cqzMahH2uQJ6PDzcLOG5xut1lXbg4espYW5nNN8,1196
+konnyaku-1.0.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+konnyaku-1.0.4.dist-info/RECORD,,

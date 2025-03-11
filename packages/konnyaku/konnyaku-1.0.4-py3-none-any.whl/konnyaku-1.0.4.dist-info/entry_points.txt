@@ -1,0 +1,3 @@
+[console_scripts]
+konnyaku=konnyaku.__main__:main
+
