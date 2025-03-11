@@ -1,0 +1,2 @@
+[console_scripts]
+docauto = docauto.cli:main
