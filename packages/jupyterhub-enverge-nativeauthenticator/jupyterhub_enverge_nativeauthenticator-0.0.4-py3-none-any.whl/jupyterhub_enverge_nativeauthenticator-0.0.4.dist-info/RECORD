@@ -1,0 +1,10 @@
+enverge_nativeauthenticator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+enverge_nativeauthenticator/media/.DS_Store,sha256=X5qDskgNRl0QzUpSXjCzuRb24yz3kKZ69mNX8_kPWoA,6148
+enverge_nativeauthenticator/media/images/enverge-logo-only.svg,sha256=hJBSodsF0QQtq9VyF-ws--jt_qt5FcMJzAre3_JUZJA,897
+enverge_nativeauthenticator/media/images/enverge-logo.svg,sha256=JSN5fhXvITlCpEA9x3fzy2pwQ80cNpnjvmsPDVXbebA,8109
+enverge_nativeauthenticator/templates/page.html,sha256=vT5_0F2o8BC7jnbFysZcEhT32Ma9oOJ9Z1mK63L0DFo,7489
+enverge_nativeauthenticator/templates/signup.html,sha256=a4c33C0JWKedIGMCzOZKuWDPC-0fy2aJfPhqQYG8p88,4859
+jupyterhub_enverge_nativeauthenticator-0.0.4.dist-info/METADATA,sha256=dCdBcyH61GaHvEbMzxGp4I-faZ3jZ4q7mf46e6GzKPg,899
+jupyterhub_enverge_nativeauthenticator-0.0.4.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+jupyterhub_enverge_nativeauthenticator-0.0.4.dist-info/top_level.txt,sha256=3wQkN93R2JUF1HYa3w5PJIpeACSt93tw8nlZEF0KhbE,28
+jupyterhub_enverge_nativeauthenticator-0.0.4.dist-info/RECORD,,
