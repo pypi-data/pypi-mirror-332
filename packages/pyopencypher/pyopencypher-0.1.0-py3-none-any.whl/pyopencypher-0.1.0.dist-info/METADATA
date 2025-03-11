@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: pyopencypher
+Version: 0.1.0
+Summary: 
+License: Apache-2.0
+Author: Tal Kain
+Author-email: tal@velocity.tech
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: build (>=1.2.2.post1,<2.0.0)
+Requires-Dist: twine (>=6.1.0,<7.0.0)
+Project-URL: Bug Tracker, https://github.com/techvelocity/pyopencypher/issues
+Project-URL: Homepage, https://github.com/techvelocity/pyopencypher
+Description-Content-Type: text/markdown
+
+# pyopencypher
