@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: datura_py
+Version: 0.0.3
+Summary: A Python SDK for interacting with the Datura API service.
+Author: Datura
+Author-email: 
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: typing-extensions
+
