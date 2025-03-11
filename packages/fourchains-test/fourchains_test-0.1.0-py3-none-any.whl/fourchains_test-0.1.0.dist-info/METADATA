@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: fourchains-test
+Version: 0.1.0
+Summary: A sample PyPI package
+Home-page: https://github.com/fourchainswork/fourchains
+Author: fourchains
+Author-email: fourchains.work@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.15
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# MyPackage
+
+This is a sample Python package for PyPI.
+
+## Installation
+
+```sh
+pip install mypackage
