@@ -1,0 +1,6 @@
+# Include all Python files in the moduflow package and its submodules
+recursive-include moduflow *.py
+recursive-include moduflow/*/*.py
+
+# Exclude tests
+exclude tests/*
