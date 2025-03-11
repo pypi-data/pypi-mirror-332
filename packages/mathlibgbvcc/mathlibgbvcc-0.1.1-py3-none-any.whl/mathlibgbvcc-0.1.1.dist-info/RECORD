@@ -1,0 +1,11 @@
+mathlib/entities/__init__.py,sha256=B4Gqgqz0ytAhOmiAvvRbK68zqa-eWSXnX7DtDEiUJ68,25
+mathlib/entities/point_2d.py,sha256=fy4CsDKu6fn5hN7ItOP5y7b4N-Hs97RcC4BpZkWHfbA,75
+mathlib/entities/point_3d.py,sha256=Gok3mRU7T8JhhpEk04QtRiTHSPvwZ34ownMnsRuJM-A,94
+mathlib/operations/__init__.py,sha256=RqffQDBXxO3YXq0Si8jUMvncBp1u0ZtvlgQHksbWwLA,36
+mathlib/operations/line_segment.py,sha256=EC5R3PN3NIWJoH7DfTVhsQEZPCNiP8z-lFqgF1cVVrU,1180
+mathlib/operations/matrixes.py,sha256=7eVkbsTCWsd_y0n0MHL8dIejydSrUVBx1zzdmtx2czg,330
+mathlib/operations/utils.py,sha256=e3J7X1kjuzgHoYKuVr-GFsE8dAkRtcoYiPRjb-fp62c,248
+mathlibgbvcc-0.1.1.dist-info/METADATA,sha256=u3tyIg4Ou7sqv0xLwK2W6wWMCcCH411dk9cf0EhwXCs,152
+mathlibgbvcc-0.1.1.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+mathlibgbvcc-0.1.1.dist-info/top_level.txt,sha256=WPDD4_HiwkUrjb7aDI2C29_4xMiHmG7tj7bld3aRT0U,8
+mathlibgbvcc-0.1.1.dist-info/RECORD,,
