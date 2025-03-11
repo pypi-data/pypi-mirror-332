@@ -1,0 +1,14 @@
+relari_otel/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+relari_otel/__init__.py,sha256=HTR089jAYP_j_ess2tv9qf7xV4jih4HwPEQVg9At_WQ,47
+relari_otel/otel.py,sha256=hlzTk7V_LD1DwGW1M-LBgmrM8wYhagMHlPY16xSerx4,10985
+relari_otel/semcov.py,sha256=h81uF4LomNqt9xM5sCUBJWKYSJX40a6QgHjWnbQEcKE,368
+relari_otel/specifications/__init__.py,sha256=ooBduqJrYN3MaE1dIsU2I3ccp_xCyQWUSv6zNkHTL_M,304
+relari_otel/specifications/contract.py,sha256=sSiMKXkK6CJ8BS-MV-6i4n-AejvBXtN2U8gnt5zuhXU,2396
+relari_otel/specifications/requirements.py,sha256=dlQAeXdvv0qvH2GIuSw-wZ2HMPE7ZVohQ20kNYEJEyM,3633
+relari_otel/specifications/specifications.py,sha256=ZTgjWW2KO61wGJmaTN8fxdQX3j71ma0CKQwCZK8zGWU,4377
+relari_otel/tracing.py,sha256=uJd_eNABna9qqSfKBP0MT119jKaS_luKhOuV_qVudR4,939
+relari_otel/utils.py,sha256=h5WxN5JWbkQlGq3yj6Zbult2l_4TyIufUxZQsPQikYM,909
+relari_otel-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+relari_otel-0.0.1.dist-info/METADATA,sha256=jh7C37QqFRxKwnEFxTNhSXOGT4MQrRoJw-Y6AsKMbxE,2643
+relari_otel-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+relari_otel-0.0.1.dist-info/RECORD,,
