@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyrilog"
+version = "0.1.4"
+authors = [
+    { name = "NightWatcher", email = "hitszzzf@gmail.com" },
+]
+description = "A Python-based Verilog code generator"
+readme = "README.md"
+license = {text = "GPL-3.0-or-later"}
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v"
+
+[project.urls]
+Homepage = "https://gitea.nightwatcher.cn/NightWatcher/pyrilog"
+Repository = "https://gitea.nightwatcher.cn/NightWatcher/pyrilog.git"
+Documentation = "https://gitea.nightwatcher.cn/NightWatcher/pyrilog/wiki"
+"Bug Tracker" = "https://gitea.nightwatcher.cn/NightWatcher/pyrilog/issues"
+
+[tool.hatch.build]
+packages = ["src/pyrilog"] 
