@@ -1,0 +1,28 @@
+from .capsman import (
+    CapsmanChannelDeleteView,
+    CapsmanChannelEditView,
+    CapsmanChannelListView,
+    CapsmanChannelView,
+    CapsmanDatapathDeleteView,
+    CapsmanDatapathEditView,
+    CapsmanDatapathListView,
+    CapsmanDatapathView,
+    CapsmanInstanceDeleteView,
+    CapsmanInstanceEditView,
+    CapsmanInstanceListView,
+    CapsmanInstanceView,
+    CapsmanServerConfigDeleteView,
+    CapsmanServerConfigEditView,
+    CapsmanServerConfigListView,
+    CapsmanServerConfigView,
+)
+from .routeros import (
+    RouterosInstanceDeleteView,
+    RouterosInstanceEditView,
+    RouterosInstanceListView,
+    RouterosInstanceView,
+    RouterosTypeDeleteView,
+    RouterosTypeEditView,
+    RouterosTypeListView,
+    RouterosTypeView,
+)
