@@ -1,0 +1,12 @@
+py_disinfection/__init__.py,sha256=-xOSTS_aZGzkGtaNonJN9MLNtCzEyvR5ZB9XAcwtQe8,148
+py_disinfection/cli.py,sha256=LkkmFrgo-6HgpBLW8DSbAqg0Qjgg_5hH_UOrNhTohyQ,3709
+py_disinfection/core.py,sha256=dXvHmeb1DLuFR_63_XLimcweKbE-bM7xvRgCEIGhMLA,9194
+py_disinfection/estimation.py,sha256=zKNJChUoeusLCOuvzeDqCNIFn5GEPmVLiNud9FfgOms,5985
+py_disinfection/tables.py,sha256=I7PSz-4nZaXkzqlwM-r3A0e44Vfkgw6jbxixlUVcnA4,18553
+py_disinfection-0.1.11.dist-info/AUTHORS.rst,sha256=Z3wRUzrHY9yp-RGs_jaadE0VGZZLQWW4d_wugTc42wM,156
+py_disinfection-0.1.11.dist-info/LICENSE,sha256=HBrsdP92us6BjmjFPM0nwP6hcgYA-QHHCT1GXjPsnTc,1532
+py_disinfection-0.1.11.dist-info/METADATA,sha256=z8Bek2jPHimOonHGiaBLWuhsHyEObFgKmf5P8tGcQf0,7027
+py_disinfection-0.1.11.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+py_disinfection-0.1.11.dist-info/entry_points.txt,sha256=1pK4xfgm2jf4EKs2sb3iWdINb6zWGkqUpmdRx5RglqQ,54
+py_disinfection-0.1.11.dist-info/top_level.txt,sha256=GOcump76Uplg3ppUnTTFVOjx7tLBOkoxOOLI0YBCPfY,16
+py_disinfection-0.1.11.dist-info/RECORD,,
