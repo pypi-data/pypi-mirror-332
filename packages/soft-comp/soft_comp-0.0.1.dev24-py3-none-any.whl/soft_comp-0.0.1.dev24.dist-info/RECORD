@@ -1,0 +1,14 @@
+soft_comp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soft_comp/datasets.py,sha256=vdhfnTmkZN6OqGyn_MLUbSfiCWj0fFu3xJdufh7QdQw,3516
+soft_comp/ea.py,sha256=k5DjDXK-d7PRy--QF2lbTI4yyDHtndkNsMQNswmnm2E,2328
+soft_comp/fuzzy.py,sha256=ulleCMv2B_cKW57eui8fxvDUBr9TtWN_bhobKp-85c0,7060
+soft_comp/notebook.py,sha256=fbNoYoRUZjjFcU7okPo1vL9DOF8ObkI5azXi7a6WQuw,6762
+soft_comp/perceptron.py,sha256=da57rdGuWo8UJKx__Ol_8Kk6xfIbnDTd8YBh4z-HR-w,4875
+soft_comp/sigmoid_mlp.py,sha256=CibGbZY7vjcX9M7CakSSuMnwPabZBIfN3LU77M7jmjk,5263
+soft_comp/solver.py,sha256=oP57yXKbD69tcGn7u6Hxk-KKJXq55yUAEtDOc_UE2i4,189
+soft_comp-0.0.1.dev24.dist-info/AUTHORS,sha256=ZVGOnQWsVnIZKs7z-oL25QYU_orJ4tiL6At_s1sgv7k,81
+soft_comp-0.0.1.dev24.dist-info/METADATA,sha256=vOGB80J0ZtObeUiejXY0oUgJ-kdop_lstLJd2xFVsIE,1279
+soft_comp-0.0.1.dev24.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+soft_comp-0.0.1.dev24.dist-info/pbr.json,sha256=MTAFoXwK4HsMPv3khNekyC9Ce-D_JDJaAPN_y_9qNkI,47
+soft_comp-0.0.1.dev24.dist-info/top_level.txt,sha256=rQcnFcF0GVW6iRw9kDsunZK9-Djy-h2A94Y2zMza9vI,10
+soft_comp-0.0.1.dev24.dist-info/RECORD,,
