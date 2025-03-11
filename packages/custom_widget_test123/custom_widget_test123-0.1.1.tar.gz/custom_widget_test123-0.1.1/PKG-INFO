@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: custom_widget_test123
+Version: 0.1.1
+Summary: Jupyter widget test
+Home-page: https://github.com/adusachev/test-package
+License: MIT
+Keywords: jupyter,widget,test
+Author: usacheval
+Author-email: usachev.alexe@gmail.com
+Requires-Python: >=3.8,<3.13
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anywidget (==0.9.15)
+Requires-Dist: numpy (==1.24.4)
+Project-URL: Repository, https://github.com/adusachev/test-package
+Description-Content-Type: text/markdown
+
+# test-jupyter-widget-package
+
+some description
+
