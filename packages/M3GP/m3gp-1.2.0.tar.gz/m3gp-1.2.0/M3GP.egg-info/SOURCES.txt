@@ -1,0 +1,14 @@
+README.txt
+pyproject.toml
+setup.cfg
+setup.py
+M3GP.egg-info/PKG-INFO
+M3GP.egg-info/SOURCES.txt
+M3GP.egg-info/dependency_links.txt
+M3GP.egg-info/top_level.txt
+m3gp/GeneticOperators.py
+m3gp/Individual.py
+m3gp/M3GP.py
+m3gp/MahalanobisDistanceClassifier.py
+m3gp/Node.py
+m3gp/__init__.py
