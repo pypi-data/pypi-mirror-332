@@ -1,0 +1,8 @@
+vsdpir/__init__.py,sha256=OI5F1K0BRaZ45JHmW7N2lJxPgrBJhj86yWI7nelL7Og,18955
+vsdpir/__main__.py,sha256=qxIOxg74cKrQJcvia-Qs4hg0U_tecUyHzoinA36z9nI,1006
+vsdpir/basicblock.py,sha256=9VzV_2UD8YrpoCO-mEF98W1H_gcj1EpsTHCK_uHQR9I,22715
+vsdpir/network_unet.py,sha256=6jgBhHoPbBY4k3xrUaR8dNuKAzm4fG6zM1dzZRTV7tY,3118
+vsdpir-4.3.0.dist-info/METADATA,sha256=S-2_FlOCKjTXqpv85MoeNj9IZsACeXU1uXRsqAxdowU,1767
+vsdpir-4.3.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+vsdpir-4.3.0.dist-info/licenses/LICENSE,sha256=TOnHjjjk72COaBl3aWUvIQWIiDASReAL7xEEGPSGN3E,1084
+vsdpir-4.3.0.dist-info/RECORD,,
