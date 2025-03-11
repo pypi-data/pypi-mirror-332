@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: django-invoke
+Version: 0.0.0.dev1
+Summary: Collection of frequently used tasks for Django development
+Author-email: hoangquochung1110 <arsenalforeversince2007@gmail.com>
+Project-URL: Homepage, https://github.com/hoangquochung1110/django-invoke
+Project-URL: Documentation, https://github.com/hoangquochung1110/django-invoke
+Project-URL: Repository, https://github.com/hoangquochung1110/django-invoke
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: invoke>=2.2.0
+Requires-Dist: rich>=13.9.4
+
+## django-invoke
+Collection of frequently used tasks for Django development

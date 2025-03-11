@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/django_invoke/__init__.py
+src/django_invoke/_config.py
+src/django_invoke/django.py
+src/django_invoke/docker.py
+src/django_invoke/printer.py
+src/django_invoke/py.typed
+src/django_invoke/python.py
+src/django_invoke.egg-info/PKG-INFO
+src/django_invoke.egg-info/SOURCES.txt
+src/django_invoke.egg-info/dependency_links.txt
+src/django_invoke.egg-info/requires.txt
+src/django_invoke.egg-info/top_level.txt
