@@ -1,0 +1,9 @@
+polars_utils/__init__.py,sha256=I1CPa0V5TbgZSJMFn-UMf_vjR95FwkSsPOocx5YTaTw,806
+polars_utils/fixed_effects.py,sha256=w7Sh4kx_PKNd0JtsYwHHL9NpVx9-P1l_F2mRpdi6SFE,698
+polars_utils/quantile.py,sha256=ho4EMqhDe17NzTmC5OMzwwak6EnUMBza0wJzNQxDe7U,1354
+polars_utils/shrinkage.py,sha256=Dd3dhB7K1RVYFQxOo9Qmq4aRYhnVNUNEAn9ODZfb1RE,1128
+polars_utils/stats.py,sha256=GZz_Nbm3KuQxFC4W6BcR8VqyA5aVQoCZ13cvWMFLZP4,1981
+polars_utils/weights.py,sha256=yfhy8Xo4A7i0FAJdbq5AMTv0VXIoWagHHGwjvtTljWI,330
+polars_utils-0.1.7.dist-info/METADATA,sha256=7XVPmeWLXYhWE5VwaGUQ_OTDrtdpCphy1McaE5nbAOw,252
+polars_utils-0.1.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+polars_utils-0.1.7.dist-info/RECORD,,
