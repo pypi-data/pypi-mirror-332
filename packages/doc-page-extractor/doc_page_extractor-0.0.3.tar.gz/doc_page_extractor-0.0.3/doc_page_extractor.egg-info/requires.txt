@@ -1,0 +1,7 @@
+opencv-python<5.0,>=4.11.0
+pillow<11.0,>=10.3
+shapely<3.0,>=2.0.0
+transformers<5.0,>=4.48.0
+doclayout_yolo>=0.0.3
+paddlepaddle<3.0,>=2.6.0
+paddleocr==2.9.0
