@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/bmt-clipit/__init__.py
+src/bmt_clipit.egg-info/PKG-INFO
+src/bmt_clipit.egg-info/SOURCES.txt
+src/bmt_clipit.egg-info/dependency_links.txt
+src/bmt_clipit.egg-info/top_level.txt
