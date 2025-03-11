@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+enverge_nativeauthenticator/__init__.py
+jupyterhub_enverge_nativeauthenticator.egg-info/PKG-INFO
+jupyterhub_enverge_nativeauthenticator.egg-info/SOURCES.txt
+jupyterhub_enverge_nativeauthenticator.egg-info/dependency_links.txt
+jupyterhub_enverge_nativeauthenticator.egg-info/requires.txt
+jupyterhub_enverge_nativeauthenticator.egg-info/top_level.txt
