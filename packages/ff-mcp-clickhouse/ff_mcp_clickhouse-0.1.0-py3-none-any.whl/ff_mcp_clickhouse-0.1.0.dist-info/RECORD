@@ -1,0 +1,9 @@
+mcp_clickhouse/__init__.py,sha256=IBPlIK25z7ginM2VjZenu2FbaAtkjAqBA14tTG6aKAE,299
+mcp_clickhouse/main.py,sha256=iiWHYyAYd_4-aaTjNGhopPRQIWSwnp5ZhmKOoPKR4qs,121
+mcp_clickhouse/mcp_env.py,sha256=vOMkuzPsLDlLwqKt85r_IBpdVP9dc8ANPqFcFMFkStc,4522
+mcp_clickhouse/mcp_server.py,sha256=6-sOfodgUrhWIfXdU5fifj7pLCwyxH-PjwATsCQKkvE,6114
+ff_mcp_clickhouse-0.1.0.dist-info/METADATA,sha256=DQPoLyWokdZ9S8a-ZF9htMWWFSlXukUj0R9vTmOwAtE,6424
+ff_mcp_clickhouse-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ff_mcp_clickhouse-0.1.0.dist-info/entry_points.txt,sha256=Xraj--lvLVkSE5IlfSvx3C_BJXQ24DLeVLt25Xq9SiU,60
+ff_mcp_clickhouse-0.1.0.dist-info/licenses/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+ff_mcp_clickhouse-0.1.0.dist-info/RECORD,,
