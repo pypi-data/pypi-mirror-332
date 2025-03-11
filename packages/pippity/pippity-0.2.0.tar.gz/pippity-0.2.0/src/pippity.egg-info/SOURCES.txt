@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pippity/__init__.py
+src/pippity/module.py
+src/pippity.egg-info/PKG-INFO
+src/pippity.egg-info/SOURCES.txt
+src/pippity.egg-info/dependency_links.txt
+src/pippity.egg-info/top_level.txt
+tests/test1.py
