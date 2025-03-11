@@ -1,0 +1,10 @@
+pytest_capsqlalchemy/__init__.py,sha256=rA_J1ZkOYvnixFowq_q95CohUYNA5UcMUJyR9Xb2-A0,406
+pytest_capsqlalchemy/capturer.py,sha256=drzU1zSNEWguWepzeNRaf1I0lDV5NnidBXg2v3QJCec,6356
+pytest_capsqlalchemy/context.py,sha256=ZcZJNhzXUHggItgvI2cBGUP0V713R0qvMFYnPc33iUA,3078
+pytest_capsqlalchemy/expression.py,sha256=pgsjU-o43R07LlDWYJ-oMIJwiIJN5mK4bEqMmdB6wHE,2182
+pytest_capsqlalchemy/plugin.py,sha256=SoEyQP9Bs-8rQYmt7zVj5Id3xFiEScwsUtzIzZX5v80,577
+pytest_capsqlalchemy/utils.py,sha256=pxq5d1ozoKxbPrut-eqgabSVqvnpoh-WbnI1Ye7Tc04,450
+pytest_capsqlalchemy-0.1.1.dist-info/METADATA,sha256=SdDtjZ4QYXRYNSHW9XFfdbDA18re5qhl9YyVPxAcYIY,4785
+pytest_capsqlalchemy-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytest_capsqlalchemy-0.1.1.dist-info/licenses/LICENSE,sha256=h27LMJCdnlCqlrmpt3fluOJryF5pkXirSS7WOHz7G3E,11344
+pytest_capsqlalchemy-0.1.1.dist-info/RECORD,,
