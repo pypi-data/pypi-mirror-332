@@ -1,0 +1,60 @@
+import subprocess
+import click
+import glob
+import os
+
+from pathlib import Path
+
+GREEN = '\033[0;32m'
+RED = '\033[0;31m'
+NC = '\033[0m'
+
+@click.command()
+def test():
+    current_dir = os.getcwd()
+    cpp_files = glob.glob('*.cpp', root_dir=current_dir)
+    if not cpp_files:
+        click.echo("Error: No .cpp files found in current directory")
+        return 1
+
+    latest_cpp = Path(sorted(cpp_files, key=os.path.getmtime, reverse=True)[0]).stem
+    click.echo(f"Running tests for '{latest_cpp}'...")
+    make_process = subprocess.run(['make', '-s', latest_cpp],
+                                  stdout=subprocess.PIPE,
+                                  stderr=subprocess.STDOUT,
+                                  text=True,
+                                  cwd=current_dir)
+
+    test_input = glob.glob(f"in/{latest_cpp}[0-9]*", root_dir=current_dir)
+    test_output = glob.glob(f"out/{latest_cpp}[0-9]*", root_dir=current_dir)
+
+    for i in range(len(test_input)):
+        with open(test_input[i], 'r') as infile:
+            result = subprocess.run(f'./{latest_cpp}', stdin=infile,
+                                    capture_output=True,
+                                    text=True,
+                                    cwd=current_dir)
+
+        actual_output = result.stdout
+        actual_lines = actual_output.strip().split('\n')
+
+        with open(test_output[i], 'r') as f:
+            expected_content = f.read().strip()
+            expected_lines = expected_content.split('\n')
+
+        while expected_lines and not expected_lines[-1]:
+            expected_lines.pop()
+        while actual_lines and not actual_lines[-1]:
+            actual_lines.pop()
+
+        if expected_lines == actual_lines:
+            click.echo(f"{GREEN}Test {i+1}: PASSED{NC}")
+        else:
+            click.echo(f"{RED}Test {i+1}: FAILED{NC}")
+            click.echo("Expected:")
+            click.echo(expected_content)
+            click.echo("Got:")
+            click.echo(actual_output)
+
+    os.unlink(latest_cpp)
+    return make_process.returncode
