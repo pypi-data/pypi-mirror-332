@@ -1,0 +1,19 @@
+name: Barkley 1991
+description: |
+  A model for fast computer simulation of waves in excitable media
+dois:
+  - https://doi.org/10.1016/0167-2789(91)90194-E
+variables:
+  u: 0.
+  v: 0.
+diffusivity:
+  u: 1.
+parameters:
+  a: 0.75
+  b: 0.02
+  eps: 0.02
+source: |
+  const Real _react_u = u*(1 - u)*(u - (v + b)/a)/eps;
+  const Real _react_v = u - v;
+  *_new_u = u + dt * (_react_u + _diffuse_u);
+  *_new_v = v + dt * _react_v;
