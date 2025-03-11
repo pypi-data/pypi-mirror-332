@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: nlkt
+Version: 0.0.1
+Summary: A Python library for building ML models and printing code.
+Author: CrypticX
+Author-email: srdeepak78@gamil.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: nltk
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
