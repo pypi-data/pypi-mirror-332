@@ -1,0 +1,7 @@
+azure_switchboard/__init__.py,sha256=uSpdiVYveXYUgl6do4S3jP10BgeM9kLOyTKXHfWxMLo,270
+azure_switchboard/client.py,sha256=ksZeg0OsEe7m34okSsmV0KfGoZTbrJPruGosldVH8JE,8191
+azure_switchboard/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azure_switchboard/switchboard.py,sha256=xBHChK4Z2GIArgW0vKvh4hX3GqXiKG-TXsoFS5wGCqs,5569
+azure_switchboard-2025.3.17.dist-info/METADATA,sha256=NHwi4RxY2R4_bex48XT_Z7BHCotV0QtKs-oOsFik5WE,8181
+azure_switchboard-2025.3.17.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+azure_switchboard-2025.3.17.dist-info/RECORD,,
