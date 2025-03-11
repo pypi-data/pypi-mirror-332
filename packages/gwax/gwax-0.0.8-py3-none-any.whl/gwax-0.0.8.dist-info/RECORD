@@ -1,0 +1,8 @@
+gwax/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gwax/flows.py,sha256=LyFWUrv2JMbxvgkaMjXfYAoSmsYu2JdztO6vzUF1sc4,2245
+gwax/variational.py,sha256=uO829rHCaM3zwSxbXYMVBQQOmeiyj4fCq1oNa3VMN0g,7130
+gwax-0.0.8.dist-info/LICENSE,sha256=AZLlj3JLP-hJFJJrTlF2LpSusnbCud7E0d2Xjo-6WJM,1070
+gwax-0.0.8.dist-info/METADATA,sha256=LSx_dN0CmgKmau-qXtgsaWZZJFACSeWX-BkRgAMegiE,1380
+gwax-0.0.8.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+gwax-0.0.8.dist-info/top_level.txt,sha256=hgTVuBKreS9cDMJQkeamoBbcqRC5uviYvlkk_W-lUiA,5
+gwax-0.0.8.dist-info/RECORD,,
