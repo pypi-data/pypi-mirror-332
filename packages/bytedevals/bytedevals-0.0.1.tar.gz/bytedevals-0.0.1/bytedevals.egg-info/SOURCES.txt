@@ -1,0 +1,6 @@
+setup.py
+bytedevals/__init__.py
+bytedevals.egg-info/PKG-INFO
+bytedevals.egg-info/SOURCES.txt
+bytedevals.egg-info/dependency_links.txt
+bytedevals.egg-info/top_level.txt
