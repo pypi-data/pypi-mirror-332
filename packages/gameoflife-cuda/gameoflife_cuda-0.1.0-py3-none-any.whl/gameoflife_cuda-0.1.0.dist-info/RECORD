@@ -1,0 +1,7 @@
+gameoflife-cuda/__init__.py,sha256=mSKhjlLEUaW8O0-SPmOwX9HAkOrTw72KaZ79TjC31R8,61
+gameoflife-cuda/gameoflife_cuda.py,sha256=SHRjziITLXD1pvz-CZQ4sM5lA2AXVLOb5IGMe52cuLg,2436
+gameoflife_cuda-0.1.0.dist-info/METADATA,sha256=VmPKJ4VtNHpL4BqlgkGfyQhAqAiioEfkjGICVpMoo88,1023
+gameoflife_cuda-0.1.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+gameoflife_cuda-0.1.0.dist-info/entry_points.txt,sha256=NFZiu5L26tAqVyR0DeBbsuU0tYm2Vb2ngoUuYXF8jbs,68
+gameoflife_cuda-0.1.0.dist-info/top_level.txt,sha256=6XDqlJ0qtiRxg0YJH0YERtiiL5UUOQBsT8wumueFVGE,16
+gameoflife_cuda-0.1.0.dist-info/RECORD,,
