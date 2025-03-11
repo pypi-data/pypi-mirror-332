@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/videofeatures-clipit/__init__.py
+src/videofeatures_clipit.egg-info/PKG-INFO
+src/videofeatures_clipit.egg-info/SOURCES.txt
+src/videofeatures_clipit.egg-info/dependency_links.txt
+src/videofeatures_clipit.egg-info/top_level.txt
