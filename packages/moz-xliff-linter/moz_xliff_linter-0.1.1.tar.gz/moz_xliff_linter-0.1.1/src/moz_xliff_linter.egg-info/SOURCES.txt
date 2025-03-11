@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+src/moz_xliff_linter.egg-info/PKG-INFO
+src/moz_xliff_linter.egg-info/SOURCES.txt
+src/moz_xliff_linter.egg-info/dependency_links.txt
+src/moz_xliff_linter.egg-info/entry_points.txt
+src/moz_xliff_linter.egg-info/requires.txt
+src/moz_xliff_linter.egg-info/top_level.txt
+src/xliff_linter/__init__.py
+src/xliff_linter/linter.py
+tests/test_brands.py
+tests/test_ellipsis.py
+tests/test_placeables.py
+tests/test_placeables_qt.py
+tests/test_quotes.py

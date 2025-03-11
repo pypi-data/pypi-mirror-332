@@ -1,0 +1,2 @@
+[console_scripts]
+moz-xliff-lint = xliff_linter.linter:main
