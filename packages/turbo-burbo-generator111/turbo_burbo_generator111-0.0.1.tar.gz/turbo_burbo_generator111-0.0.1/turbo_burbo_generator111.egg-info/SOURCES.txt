@@ -1,0 +1,8 @@
+setup.py
+turbo_burbo_generator111/__init__.py
+turbo_burbo_generator111/work_module1.py
+turbo_burbo_generator111/work_module2.py
+turbo_burbo_generator111.egg-info/PKG-INFO
+turbo_burbo_generator111.egg-info/SOURCES.txt
+turbo_burbo_generator111.egg-info/dependency_links.txt
+turbo_burbo_generator111.egg-info/top_level.txt
