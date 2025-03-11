@@ -1,0 +1,2 @@
+[console_scripts]
+melonn-python-cli = src.main:app
