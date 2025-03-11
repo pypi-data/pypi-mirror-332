@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: graph-service
+Version: 1.0.0.5.dev4
+Summary: sdk in python for skill
+Home-page: http://www.ai.com
+Author: duanshichao
+Author-email: duanshichao@baidu.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+
