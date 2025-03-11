@@ -1,0 +1,207 @@
+stages:
+  - prepare
+  - check
+  - build
+  - test
+  - release
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE != 'push' || $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH || $CI_COMMIT_TAG
+      when: always
+    - when: never
+
+prepare:
+  stage: prepare
+  script:
+    - VERSION=v$(awk -F ' = ' '$1 ~ /version/ { gsub(/["]/, "", $2); printf("%s",$2) }' Cargo.toml)
+    - echo $VERSION
+    - echo "VERSION=$VERSION" >> variables.env # Store VERSION in a file
+  artifacts:
+    reports:
+      dotenv: variables.env # Save the environment variable to be used in the next job
+
+.rust-default:
+  image: rust:latest
+  cache:
+    - key: $CI_COMMIT_REF
+      paths: [target/]
+  interruptible: true
+  timeout: 30m
+  variables:
+    CACHE_FALLBACK_KEY: $CI_DEFAULT_BRANCH
+  parallel:
+    matrix:
+      - CHANNEL: [stable]
+  rules:
+    - if: $CHANNEL == "stable"
+      allow_failure: false
+    - allow_failure: true
+  before_script:
+    - rustup --version && rustc --version && cargo --version && echo $RUSTFLAGS && echo $CARGO_OPTS
+    # Add the Windows target
+    - rustup target add x86_64-pc-windows-gnu
+    - rustup install stable-x86_64-unknown-linux-gnu
+    - rustup target add x86_64-unknown-linux-gnu
+    - rustup component add --toolchain stable-x86_64-unknown-linux-gnu clippy
+    - rustup component add rustfmt
+    - cargo install cargo-audit --locked
+    # Install the necessary tools for cross-compilation
+    - apt-get update && apt-get install -y mingw-w64
+
+check:clippy:
+  extends: .rust-default
+  stage: check
+  script:
+    - rustup component add clippy
+    - "cargo clippy
+      --color always
+      --verbose
+      --all-targets
+      --all-features
+      --message-format=json"
+
+check:fmt:
+  extends: .rust-default
+  stage: check
+  rules:
+    - if: $RUN_RUST_FMT
+  script:
+    - cargo +stable fmt $CARGO_OPTS -- --check
+  allow_failure: true
+
+check:audit:
+  extends: .rust-default
+  stage: check
+  script:
+    - cargo audit --color=always --json $CARGO_OPTS > gl-sast-report.json
+  artifacts:
+    when: always
+    reports:
+      sast: gl-sast-report.json
+
+build:
+  extends: .rust-default
+  stage: build
+  needs: ["check:clippy"]
+  timeout: 1h
+  parallel:
+    matrix:
+      - CHANNEL: [stable]
+        PROFILE: [release]
+        TARGET:
+          - x86_64-pc-windows-gnu
+          - x86_64-unknown-linux-gnu
+  script:
+    - cargo build --verbose --color always --target $TARGET $([[ $PROFILE == "release" ]] && echo "--release" || echo "") $CARGO_OPTS
+    # Build for Windows (cross-compiling)
+    # - cargo build --verbose --release --target x86_64-pc-windows-gnu
+  artifacts:
+    paths:
+      - target/$TARGET/$PROFILE/*
+
+build:docs:
+  extends: .rust-default
+  stage: build
+  needs: ["check:clippy"]
+  script:
+    - cargo +stable doc --color=always --verbose --no-deps $CARGO_OPTS
+  artifacts:
+    paths:
+      - target/doc
+
+# Test Stage
+test:test:
+  extends: .rust-default
+  stage: test
+  needs: [build]
+  script:
+    - cargo test --all-features --verbose $CARGO_OPTS
+
+test:bench:
+  extends: .rust-default
+  stage: test
+  needs: [build]
+  script:
+    - "cargo bench
+      --verbose
+      --color always
+      --workspace
+      --all-targets
+      --all-features
+      $CARGO_OPTS > metrics.txt"
+  artifacts:
+    when: always
+    reports:
+      metrics: metrics.txt
+
+tag:generate:
+  stage: release
+  image: alpine/git:latest
+  needs: ["prepare", "test:test", "test:bench", build]
+  script:
+    - echo "CI_COMMIT_TAG = $CI_COMMIT_TAG"
+    - git config user.name "Samuel Preston"
+    - git config user.email "spresto3@jaguarlandrover.com"
+    - git tag -a "$VERSION" -m "Release $VERSION"
+    # Push the specific tag to the remote repository
+    - git push https://root:$PUSH_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git "$VERSION"
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_TAG == null # Ensure this only runs on push events
+
+release:pages:
+  stage: release
+  image: alpine:latest
+  needs: ["check:audit", "build:docs", "test:test"]
+  variables:
+    GIT_STRATEGY: none
+  rules:
+    - if: $CI_COMMIT_TAG
+  script:
+    - mv target/doc public/
+    - echo '<meta http-equiv="refresh" content="0; url={{ LIBRARY NAME }}">' > public/index.html
+  artifacts:
+    paths:
+      - public/
+
+release:registry:
+  stage: release
+  image: curlimages/curl:latest
+  needs: ["prepare", "check:audit", "build", "test:test"]
+  timeout: 5m
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - ls
+    - ls target
+    - 'cd target
+      && find . -mindepth 3 -maxdepth 3 -type f
+      | tar -czv -T -
+      | curl --fail --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file . $CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/rapid_snapshot_tool/$VERSION/package.tar.gz'
+  rules:
+    - if: $CI_COMMIT_TAG
+
+release:gitlab:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  needs: ["prepare", "check:audit", "build", "test:test"]
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - apt-get update && apt-get install -y jq
+  script:
+    - echo "Running Release"
+  release:
+    name: $VERSION
+    description: "CHANGELOG.md"
+    tag_name: $VERSION
+    ref: $CI_COMMIT_SHA
+    assets:
+      links:
+        - name: "Rapid Snapshot Tool"
+          url: "$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/rapid_snapshot_tool/$VERSION/package.tar.gz"
+          link_type: "package"
+        - name: "Docs"
+          url: "$CI_PAGES_URL"
+  rules:
+    - if: $CI_COMMIT_TAG

@@ -1,0 +1,1206 @@
+[
+  {
+    "name": "Battery Management Control Module",
+    "acronym": "BMCM",
+    "logical_address": "17e5",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "Inverter Front",
+    "acronym": "INVA",
+    "logical_address": "17e7",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Inverter Rear",
+    "acronym": "INVB",
+    "logical_address": "1743",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Anti-Lock Brake System Control Module",
+    "acronym": "ABS",
+    "logical_address": "17e6",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      },
+      {
+        "did": "f120",
+        "name": "f120"
+      }
+    ]
+  },
+  {
+    "name": "Power Steering Control Module",
+    "acronym": "PSCM",
+    "logical_address": "1730",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      },
+      {
+        "did": "f120",
+        "name": "f120"
+      }
+    ]
+  },
+  {
+    "name": "TPM",
+    "acronym": "TPM",
+    "logical_address": "1751",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      },
+      {
+        "did": "f120",
+        "name": "f120"
+      }
+    ]
+  },
+  {
+    "name": "Seatbelt Pretensioner Control Module 'A'",
+    "acronym": "SPMA",
+    "logical_address": "17d1",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Seatbelt Pretensioner Control Module 'B'",
+    "acronym": "SPMB",
+    "logical_address": "17d4",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "Steering Wheel Auxiliary Module",
+    "acronym": "SWAM",
+    "logical_address": "17f5",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "Driver Assistance Domain Controller",
+    "acronym": "DADC",
+    "logical_address": "1416",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Chassis Control Module",
+    "acronym": "CHCM",
+    "logical_address": "1710",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "CCCM",
+    "acronym": "CCCM",
+    "logical_address": "14f0",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "TCUA",
+    "acronym": "TCUA",
+    "logical_address": "14b1",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "VCM",
+    "acronym": "VCM",
+    "logical_address": "17f6",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Steering Wheel Switch Left",
+    "acronym": "SWSL",
+    "logical_address": "17f3",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "Steering Wheel Switch Right",
+    "acronym": "SWSR",
+    "logical_address": "17f4",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "Phone Key Controller Module",
+    "acronym": "PKCM",
+    "logical_address": "1737",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "Wireless Device Charger Module",
+    "acronym": "WDCM",
+    "logical_address": "1707",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "FDD",
+    "acronym": "FDD",
+    "logical_address": "14f3",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "FCD",
+    "acronym": "FCD",
+    "logical_address": "14f1",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Driver Front Seat Module",
+    "acronym": "DSM",
+    "logical_address": "1744",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Passenger Front Seat Module",
+    "acronym": "PSM",
+    "logical_address": "17a3",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Rear Left Seat Module",
+    "acronym": "RLSM",
+    "logical_address": "1702",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Rear Right Seat Module",
+    "acronym": "RRSM",
+    "logical_address": "1763",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Restraints Control Module",
+    "acronym": "RCM",
+    "logical_address": "1737",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Driver Front Door Module",
+    "acronym": "DDM",
+    "logical_address": "1740",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Driver Rear Door Module",
+    "acronym": "DRDM",
+    "logical_address": "1742",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Passenger Front Door Module",
+    "acronym": "PDM",
+    "logical_address": "1741",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Passenger Rear Door Module",
+    "acronym": "PRDM",
+    "logical_address": "1743",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Headlamp Control Module A",
+    "acronym": "HCMA",
+    "logical_address": "1734",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Headlamp Control Module B",
+    "acronym": "HCMB",
+    "logical_address": "17c3",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      }
+    ]
+  },
+  {
+    "name": "Body Control Module A",
+    "acronym": "BCMA",
+    "logical_address": "1726",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      },
+      {
+        "did": "f120",
+        "name": "f120"
+      },
+      {
+        "did": "f171",
+        "name": "f171"
+      }
+    ]
+  },
+  {
+    "name": "Body Control Module B",
+    "acronym": "BCMB",
+    "logical_address": "17e3",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      },
+      {
+        "did": "f171",
+        "name": "f171"
+      }
+    ]
+  },
+  {
+    "name": "Electronic Power Distribution Unit",
+    "acronym": "EPDU",
+    "logical_address": "1791",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "Wireless Device Charger Module 'B'",
+    "acronym": "WDCMB",
+    "logical_address": "17a7",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "Wireless Device Charger Module B2",
+    "acronym": "WDCMB2",
+    "logical_address": "14b0",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "Wireless Device Charger Module C",
+    "acronym": "WDCMC",
+    "logical_address": "1705",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "Rear Gate / Trunk Module",
+    "acronym": "RGTM",
+    "logical_address": "1775",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      }
+    ]
+  },
+  {
+    "name": "Phone Key Satellite Module 2",
+    "acronym": "PKSM2",
+    "logical_address": "1713",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      }
+    ]
+  },
+  {
+    "name": "Phone Key Satellite Module 3",
+    "acronym": "PKSM3",
+    "logical_address": "1414",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      }
+    ]
+  },
+  {
+    "name": "Phone Key Satellite Module 4",
+    "acronym": "PKSM4",
+    "logical_address": "1415",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      }
+    ]
+  },
+  {
+    "name": "Phone Key Satellite Module B2",
+    "acronym": "PKSMB2",
+    "logical_address": "1721",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      }
+    ]
+  },
+  {
+    "name": "Phone Key Satellite Module B",
+    "acronym": "PKSMB",
+    "logical_address": "1720",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      }
+    ]
+  },
+  {
+    "name": "Phone Key Satellite Module C",
+    "acronym": "PKSMC",
+    "logical_address": "1423",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      }
+    ]
+  },
+  {
+    "name": "Phone Key Satellite Module",
+    "acronym": "PKSM",
+    "logical_address": "1712",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      }
+    ]
+  },
+  {
+    "name": "Power Steering Control Module 'B'",
+    "acronym": "PSCMB",
+    "logical_address": "1464",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      }
+    ]
+  },
+  {
+    "name": "TBM",
+    "acronym": "TBM",
+    "logical_address": "1757",
+    "architecture": ["eva25"],
+    "dids": [
+      {
+        "did": "f111",
+        "name": "f111"
+      },
+      {
+        "did": "f113",
+        "name": "f113"
+      },
+      {
+        "did": "f188",
+        "name": "f188"
+      },
+      {
+        "did": "f10e",
+        "name": "f10e"
+      },
+      {
+        "did": "f124",
+        "name": "f124"
+      },
+      {
+        "did": "f120",
+        "name": "f120"
+      },
+      {
+        "did": "f171",
+        "name": "f171"
+      }
+    ]
+  }
+]

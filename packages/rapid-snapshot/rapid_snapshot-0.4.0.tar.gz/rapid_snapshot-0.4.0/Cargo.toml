@@ -1,0 +1,37 @@
+[package]
+name = "rapid_snapshot"
+version = "0.3.3"
+edition = "2021"
+authors = ["Samuel Preston"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+bytes = "1.10.1"
+clap = { version = "4.5.31", features = ["derive"] }
+fern = { version = "0.7.1", features = ["date-based"] }
+flate2 = "1.1.0"
+futures = "0.3.31"
+hex = "0.4.3"
+hostname = "0.4.0"
+humantime = "2.1.0"
+log = "0.4.26"
+network-interface = "2.0.0"
+os_info = "3.10.0"
+pyo3 = { version = "0.24.0", features = ["abi3-py311", "extension-module", "experimental-async"] }
+rand = "0.9.0"
+rayon = "1.10.0"
+reqwest = "0.12.12"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+simple_logger = "5.0.0"
+tar = "0.4.44"
+tokio = { version = "1.44.0", features = ["full"] }
+tokio-util = { version = "0.7.13", features = ["full"] }
+uuid = { version = "1.15.1", features = ["v4", "fast-rng", "macro-diagnostics"] }
+whoami = "1.5.2"
+winapi = { version = "0.3.9", features = ["winsock2"] }
+
+# [features]
+# pyo3 = ["dep:pyo3"]

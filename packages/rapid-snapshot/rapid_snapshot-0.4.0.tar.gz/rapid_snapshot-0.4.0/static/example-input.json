@@ -1,0 +1,1142 @@
+[
+  {
+    "logical_address": "17A4",
+    "acronym": "AAM",
+    "name": "Audio Amplifier",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1716",
+    "acronym": "GWM",
+    "name": "Gateway Module (GWM)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17E6",
+    "acronym": "ABS",
+    "name": "Anti-Lock Brake System (ABS) Control Module",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1703",
+    "acronym": "AWD",
+    "name": "All Wheel Drive Module (Flexray)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1433",
+    "acronym": "AWDB",
+    "name": "All Wheel Drive Module B (FlexRay)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1726",
+    "acronym": "BCM",
+    "name": "Body Control Module (PT CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17E5",
+    "acronym": "BCCM",
+    "name": "Battery Charge Control Module - Hybrid Only  (PMZ CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17E4",
+    "acronym": "BECM",
+    "name": "Battery Electric Control Module (PMZ CAN - MHEV Only)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1764",
+    "acronym": "CCM",
+    "name": "Adaptive Cruise Control Module (ACC) (UN CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1710",
+    "acronym": "CHCM",
+    "name": "Chassis Control Module (CHCM) (FlexRay)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17C0",
+    "acronym": "CHCMC",
+    "name": "Chassis Control Module C (CHCMC) (FlexRAY)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1416",
+    "acronym": "DADC",
+    "name": "Driver Assistance Domain Controller (FR)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1437",
+    "acronym": "DDCM",
+    "name": "Driveline Disconnect Control Module (AWD CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1740",
+    "acronym": "DDM",
+    "name": "Driver Door Module (DDM) (BO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1742",
+    "acronym": "DRDM",
+    "name": "Driver Rear Door Module (DRDM) (BO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1744",
+    "acronym": "DSM",
+    "name": "Driver Seat Module (DSM) (BO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17E7",
+    "acronym": "EPIC",
+    "name": "Electronic Power Inverter Converter (PMZ CAN - MHEV Only)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1747",
+    "acronym": "EPICB",
+    "name": "Electronic Power Inverter Converter B (PMZ CAN - MHEV Only)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1753",
+    "acronym": "EPICD",
+    "name": "Electronic Power Inverter Converter (DCDC converter)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17A7",
+    "acronym": "FCIM",
+    "name": "HVAC Front Control panel (Via HVAC)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1732",
+    "acronym": "GSM",
+    "name": "Gear Shift Module / Electronic Transmission Shifter (ETS) (PT CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1734",
+    "acronym": "HCMA",
+    "name": "Head Lamp Control Module A",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17C3",
+    "acronym": "HCMB",
+    "name": "Head Lamp Control Module B",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17B2",
+    "acronym": "HUD",
+    "name": "Head Up Display (HMI CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1733",
+    "acronym": "HVAC",
+    "name": "Heating & Ventilation Control / Climate Control Module (HVAC) (PMZ CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17E3",
+    "acronym": "HVAC_IT9",
+    "name": "Heating & Ventilation Control / Climate Control Module (IT9 GWM onwards)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "14B4",
+    "acronym": "ICCM",
+    "name": "Infotainment Compute Control Module",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17A6",
+    "acronym": "ICDM",
+    "name": "Interactive Control Display Module [Lower Screen] (CO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17A2",
+    "acronym": "IDMA",
+    "name": "Interactive Display Module A (IDMA)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "14B3",
+    "acronym": "IGM",
+    "name": "Infotainment Gateway Module",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1720",
+    "acronym": "IPC",
+    "name": "Instrument Panel Cluster",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1706",
+    "acronym": "IPMA",
+    "name": "IMAGE PROCESSING MODULE A (CH CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "14B2",
+    "acronym": "IPCB",
+    "name": "Instrument Panel Cluster (IPC) Control Module 'B' (IPCB)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1434",
+    "acronym": "NFSM",
+    "name": "Near Field Sensing Module (FR)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1457",
+    "acronym": "NFSMB",
+    "name": "Near Field Sensor Module B",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1765",
+    "acronym": "OCS",
+    "name": "Occupant Classification System (OCS) (Via RCM)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17E0",
+    "acronym": "PCM",
+    "name": "Powertrain / Engine Control Module (ECM)(FlexRAY - Non HEV) or (PMZ - MHEV)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1741",
+    "acronym": "PDM",
+    "name": "Passenger Door Module (PDM) (BO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1743",
+    "acronym": "PRDM",
+    "name": "Passenger Rear Door Module (PRDM) (BO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1730",
+    "acronym": "PSCM",
+    "name": "Power Steering Control Module (EPAS) (CH CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17A3",
+    "acronym": "PSM",
+    "name": "Passenger Seat Module (PSM) (BO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17B3",
+    "acronym": "PIVI",
+    "name": "Front Infotainment Control Module (PIVI) (HMI CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1737",
+    "acronym": "RCM",
+    "name": "Restraints Control Module (FlexRay)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1731",
+    "acronym": "RFA",
+    "name": "Remote Function Actuator / Keyless Vehicle Module (KVM) (BO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1775",
+    "acronym": "RGTM",
+    "name": "Rear Gate/Trunk Module (RGTM) (BO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1785",
+    "acronym": "RHVAC",
+    "name": "Rear Heating & Ventilation Control / Remote Climate Control Module (RCCM) (CO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1797",
+    "acronym": "SASM",
+    "name": "Steering Angle Sensor Module (SAS) (FlexRay)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1780",
+    "acronym": "SGCM",
+    "name": "Starter/Generator Control Module",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17C4",
+    "acronym": "SODL",
+    "name": "Side Object Detection Left / Blind Spot Monitoring (BSM)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17C6",
+    "acronym": "SODR",
+    "name": "Side Object Detection Right/ Blind Spot Monitoring (BSM)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1757",
+    "acronym": "TBM",
+    "name": "Towbar Module (TBM) (BO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "17E1",
+    "acronym": "TCM",
+    "name": "Transmission Control Module (TCM) (FlexRAY)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1754",
+    "acronym": "TCU",
+    "name": "Telematics Control Unit",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1791",
+    "acronym": "TRM",
+    "name": "Trailer Module (TRM) (BO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1751",
+    "acronym": "TPM",
+    "name": "Tire Pressure Monitoring(PT CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1722",
+    "acronym": "VIM",
+    "name": "VIM Steering Column Lock (BO CAN)",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  },
+  {
+    "logical_address": "1407",
+    "acronym": "WDC",
+    "name": "Wireless Device Charger",
+    "architecture": ["eva2"],
+    "dids": [
+      {
+        "did": "f188",
+        "name": "Vehicle Manufacturer ECU Software Number"
+      },
+      {
+        "did": "f124",
+        "name": "ECU Main Calibration Data Number"
+      },
+      {
+        "did": "f111",
+        "name": "ECU Core Assembly Number"
+      }
+    ]
+  }
+]
