@@ -1,0 +1,6 @@
+httpx
+pydantic>=2.10
+websockets
+scrapy~=2.12.0
+scrapy-playwright>=0.0.26
+anyio
