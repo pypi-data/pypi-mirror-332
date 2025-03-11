@@ -1,0 +1,12 @@
+msservice_advisor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msservice_advisor/__main__.py,sha256=yvXxy39bxNVKo7n2D_lWUAo6XgNmJ9ovKKCCbqKX6hU,8276
+msservice_advisor/profiling_analyze/__init__.py,sha256=EgrUW_5VzX2lx5aXEdw1tvzDMb7CxP5y1gxntHE5rRQ,751
+msservice_advisor/profiling_analyze/base_analyze.py,sha256=rZHYmfAmUJDHGVRPivM7Ldh4SMg563u-2rB2uP8QKUk,4396
+msservice_advisor/profiling_analyze/batch_analyze.py,sha256=Y2yQ2E7n20r13EPczlEbCZOFRll80eoUA8WIYpFx3QI,7717
+msservice_advisor/profiling_analyze/register.py,sha256=wdp9aDDysJbmh5rBguoL8jDf-3khhoZuEyXaZgJ2UpY,1662
+msservice_advisor/profiling_analyze/utils.py,sha256=ac2pqr6BrRKQg-ytyePSHOhyLz_9W85IM8LEbhJUxqM,2557
+msservice_advisor-0.0.1a6.dist-info/METADATA,sha256=WijW5WKCbWLJ4DcHLEzs5mIaYHC42tigob2BcwklIBc,3023
+msservice_advisor-0.0.1a6.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+msservice_advisor-0.0.1a6.dist-info/entry_points.txt,sha256=2kVKfPFvMwNNOV7dQzeH8wBb0hWBAUp_PtBE8jzEqDk,70
+msservice_advisor-0.0.1a6.dist-info/top_level.txt,sha256=I_9TZnVexNiturN47r2wDFOLmADn3_mJ1bix8egwYso,18
+msservice_advisor-0.0.1a6.dist-info/RECORD,,
