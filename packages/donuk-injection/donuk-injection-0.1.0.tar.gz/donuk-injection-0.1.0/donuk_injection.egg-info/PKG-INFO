@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: donuk-injection
+Version: 0.1.0
+Home-page: https://github.com/donuk/injection
+Author: Don Benjamin
+Author-email: don@webhammer.co.uk
+License: Apache v2
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.14
