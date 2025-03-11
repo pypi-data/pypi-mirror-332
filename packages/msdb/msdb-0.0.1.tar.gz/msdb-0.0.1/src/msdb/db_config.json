@@ -1,0 +1,16 @@
+{
+    "databases": {
+        "db4": {
+            "path_folder": "/home/gpatin/Documents"
+        },
+        "db2": {
+            "path_folder": "/home/gpatin/Documents/RCE/test/"
+        },
+        "db3": {
+            "path_folder": "/home/gpatin/Documents/PhD/"
+        },
+        "db5": {
+            "path_folder": "/home/gpatin/Documents/RCE/test"
+        }
+    }
+}
