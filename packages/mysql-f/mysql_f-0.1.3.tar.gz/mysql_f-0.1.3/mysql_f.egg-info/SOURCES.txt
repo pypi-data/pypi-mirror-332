@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+mysql_f.egg-info/PKG-INFO
+mysql_f.egg-info/SOURCES.txt
+mysql_f.egg-info/dependency_links.txt
+mysql_f.egg-info/requires.txt
+mysql_f.egg-info/top_level.txt
