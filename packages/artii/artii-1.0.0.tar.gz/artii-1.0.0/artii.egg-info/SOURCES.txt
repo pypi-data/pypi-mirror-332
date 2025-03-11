@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+artii/__init__.py
+artii/artii.py
+artii.egg-info/PKG-INFO
+artii.egg-info/SOURCES.txt
+artii.egg-info/dependency_links.txt
+artii.egg-info/entry_points.txt
+artii.egg-info/requires.txt
+artii.egg-info/top_level.txt
