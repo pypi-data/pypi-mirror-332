@@ -1,0 +1,6 @@
+setup.py
+django_fakeuser/__init__.py
+django_fakeuser.egg-info/PKG-INFO
+django_fakeuser.egg-info/SOURCES.txt
+django_fakeuser.egg-info/dependency_links.txt
+django_fakeuser.egg-info/top_level.txt
