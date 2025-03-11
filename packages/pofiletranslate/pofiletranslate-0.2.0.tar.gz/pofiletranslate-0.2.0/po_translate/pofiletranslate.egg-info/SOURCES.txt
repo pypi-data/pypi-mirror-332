@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+po_translate/pofiletranslate.egg-info/PKG-INFO
+po_translate/pofiletranslate.egg-info/SOURCES.txt
+po_translate/pofiletranslate.egg-info/dependency_links.txt
+po_translate/pofiletranslate.egg-info/entry_points.txt
+po_translate/pofiletranslate.egg-info/requires.txt
+po_translate/pofiletranslate.egg-info/top_level.txt
+tests/test_po_translate.py
