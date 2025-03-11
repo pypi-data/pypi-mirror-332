@@ -1,0 +1,28 @@
+name: Build and Publish Python Package
+
+on:
+  push:
+    tags:
+      - "*" # This will trigger on any tag that starts with 'v'
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python (version from .python-version file)
+        uses: actions/setup-python@v5
+
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Build package
+        run: uv build
+
+      - name: Publish to PyPi
+        run: uv publish -v dist/*
