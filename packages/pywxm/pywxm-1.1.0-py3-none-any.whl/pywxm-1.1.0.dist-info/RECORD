@@ -1,0 +1,9 @@
+pywxm-1.1.0.dist-info/METADATA,sha256=NhVbgzCwqah8tjD4knpM-KLzpOPXww90oZ34OR68yD0,1468
+pywxm-1.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+pywxm-1.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+pywxm-1.1.0.dist-info/licenses/LICENSE,sha256=_v2y-E1egsz_daUMhpYj0M25HUDhFuRz1xBlxRZagTs,1089
+pywxm/__init__.py,sha256=2sNrNyZIlbuo_OTuGgnbRqEGhMCwy0PXHkyzb1dW1d4,876
+pywxm/api.py,sha256=Tx0FkO-bC7_W8qs2yX7oaOvYp73afR9NX-JMRklBQCw,10000
+pywxm/model.py,sha256=j8IZDaMv7lwZPCyklKwYVbMXo1KUwCg9uVcXAxPfRGA,9117
+pywxm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywxm-1.1.0.dist-info/RECORD,,
