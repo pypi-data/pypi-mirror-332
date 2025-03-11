@@ -1,0 +1,9 @@
+toggl2jira/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toggl2jira/cli.py,sha256=cqZisgP1P-PPWctUmYLiMrCNv5pi-I2tpwYf6dGvgvQ,5509
+toggl2jira/config.py,sha256=MYHZChR9gsmEhZlr7x8LveciDwopJoS3svXuHxMd0Pc,1268
+toggl2jira/jira.py,sha256=pUmgbCHCKfGGccbYDfvttY_OaaYv_03meMmPPSK6UXs,4084
+toggl2jira/toggl.py,sha256=rTgfSNJuNMLMR9z6l-QguOG0mAiqprq16zPiz7KA7ZY,2044
+toggl2jira-1.0.0.dist-info/METADATA,sha256=bEZw8ctd9U0px8ii8O2NOJEieoIsXLzEg4-r72glWwE,3947
+toggl2jira-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+toggl2jira-1.0.0.dist-info/entry_points.txt,sha256=hRkX-FjKl2_NAoNdexNkIaSJDvDlUcrQJuVp6nON8XA,50
+toggl2jira-1.0.0.dist-info/RECORD,,
