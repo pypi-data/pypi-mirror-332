@@ -1,0 +1,2 @@
+[console_scripts]
+officechunker = officechunker.cli:main

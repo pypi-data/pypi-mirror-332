@@ -1,0 +1,11 @@
+officechunker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+officechunker/chunkers.py,sha256=tW2NyuIbIg5yu_ryM0B0qScZHhC9R8uW9yQglVtlcKE,3217
+officechunker/cli.py,sha256=0GZpO0NbXns-Fb4D6J8dviowqL2YvacJob3XELP8zWs,1923
+officechunker/converter.py,sha256=-Zz9JiOPUGXqsk9-QCGhyerF90UR_W2NmL4gonLR9oo,10046
+officechunker/file_handlers.py,sha256=NtbrV_NewHE04yMkS1tY0NKDh9j29euHCVXMxtEgrhU,1298
+officechunker/process.py,sha256=1Y57IBgO4-rGLJ1VRk0_JAKC6KNp9wUYkmlx8lvcXrk,470
+officechunker-0.2.0.dist-info/METADATA,sha256=7v75onUrBgii61jCUMNCCNfXfQWdbsuura2jli9r6_8,368
+officechunker-0.2.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+officechunker-0.2.0.dist-info/entry_points.txt,sha256=-x1-yD40cnMdXktcOCVUEMB42YVmz2xmE1KlCNGJpls,57
+officechunker-0.2.0.dist-info/top_level.txt,sha256=5_IlUSN_PNMN_BbUu14xaYnjTD4bV0csBtQJSUq4ZkY,14
+officechunker-0.2.0.dist-info/RECORD,,
