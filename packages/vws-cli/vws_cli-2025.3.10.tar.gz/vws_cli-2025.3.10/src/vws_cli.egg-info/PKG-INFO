@@ -1,0 +1,172 @@
+Metadata-Version: 2.2
+Name: vws-cli
+Version: 2025.3.10
+Summary: A CLI for the Vuforia Web Services (VWS) API.
+Author-email: Adam Dangoor <adamdangoor@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2019 Adam Dangoor
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Documentation, https://vws-python.github.io/vws-cli/
+Project-URL: Source, https://github.com/VWS-Python/vws-cli
+Keywords: cli,vuforia,vws
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.13
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: beartype==0.19.0
+Requires-Dist: click==8.1.8
+Requires-Dist: pyyaml==6.0.2
+Requires-Dist: vws-python==2025.3.10
+Provides-Extra: dev
+Requires-Dist: actionlint-py==1.7.7.23; extra == "dev"
+Requires-Dist: check-manifest==0.50; extra == "dev"
+Requires-Dist: deptry==0.23.0; extra == "dev"
+Requires-Dist: doc8==1.1.2; extra == "dev"
+Requires-Dist: doccmd==2025.3.6; extra == "dev"
+Requires-Dist: docformatter==1.7.5; extra == "dev"
+Requires-Dist: freezegun==1.5.1; extra == "dev"
+Requires-Dist: furo==2024.8.6; extra == "dev"
+Requires-Dist: interrogate==1.7.0; extra == "dev"
+Requires-Dist: mypy[faster-cache]==1.15.0; extra == "dev"
+Requires-Dist: mypy-strict-kwargs==2024.12.25; extra == "dev"
+Requires-Dist: pre-commit==4.1.0; extra == "dev"
+Requires-Dist: pylint==3.3.4; extra == "dev"
+Requires-Dist: pyproject-fmt==2.5.1; extra == "dev"
+Requires-Dist: pyright==1.1.393; extra == "dev"
+Requires-Dist: pyroma==4.2; extra == "dev"
+Requires-Dist: pytest==8.3.5; extra == "dev"
+Requires-Dist: pytest-cov==6.0.0; extra == "dev"
+Requires-Dist: pytest-regressions==2.7.0; extra == "dev"
+Requires-Dist: ruff==0.9.10; extra == "dev"
+Requires-Dist: setuptools-scm==8.2.0; extra == "dev"
+Requires-Dist: shellcheck-py==0.10.0.1; extra == "dev"
+Requires-Dist: shfmt-py==3.7.0.1; extra == "dev"
+Requires-Dist: sphinx==8.2.3; extra == "dev"
+Requires-Dist: sphinx-click==6.0.0; extra == "dev"
+Requires-Dist: sphinx-copybutton==0.5.2; extra == "dev"
+Requires-Dist: sphinx-inline-tabs==2023.4.21; extra == "dev"
+Requires-Dist: sphinx-lint==1.0.0; extra == "dev"
+Requires-Dist: sphinx-pyproject==0.3.0; extra == "dev"
+Requires-Dist: sphinx-substitution-extensions==2025.3.3; extra == "dev"
+Requires-Dist: sphinxcontrib-spelling==8.0.1; extra == "dev"
+Requires-Dist: types-pyyaml==6.0.12.20241230; extra == "dev"
+Requires-Dist: vulture==2.14; extra == "dev"
+Requires-Dist: vws-python-mock==2025.3.10; extra == "dev"
+Requires-Dist: vws-test-fixtures==2023.3.5; extra == "dev"
+Requires-Dist: yamlfix==1.17.0; extra == "dev"
+Provides-Extra: packaging
+Requires-Dist: pyinstaller==6.12.0; extra == "packaging"
+Provides-Extra: release
+Requires-Dist: check-wheel-contents==0.6.1; extra == "release"
+Requires-Dist: homebrew-pypi-poet==0.10.0; extra == "release"
+
+|Build Status| |codecov| |PyPI|
+
+vws-cli
+=======
+
+A CLI for `Vuforia Web Services`_.
+
+.. _Vuforia Web Services: https://developer.vuforia.com/library/web-api/cloud-targets-web-services-api
+
+.. contents::
+   :local:
+
+Installation
+------------
+
+With ``pip``
+^^^^^^^^^^^^
+
+Requires Python |minimum-python-version|\+.
+
+.. code-block:: console
+
+   $ pip install VWS-CLI
+
+With Homebrew (macOS, Linux, WSL)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Requires `Homebrew`_.
+
+.. code-block:: console
+
+   $ brew tap VWS-Python/vws
+   $ brew install vws-cli
+
+.. _Homebrew: https://docs.brew.sh/Installation
+
+Pre-built Linux binaries
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+See the `full documentation`_ for details on how to install pre-built Linux binaries.
+
+.. _full documentation: https://vws-python.github.io/vws-cli/install.html#pre-built-linux-x86-binaries
+
+Usage example
+-------------
+
+.. skip doccmd[shellcheck]: next
+
+.. code-block:: console
+
+   $ vws add-target \
+       --server-access-key "$SERVER_ACCESS_KEY" \
+       --server-secret-key "$SERVER_SECRET_KEY" \
+       --name my_image_name \
+       --width 2 \
+       --image ~/Documents/my_image.png \
+       --application-metadata "$(echo 'my_metadata' | base64)" \
+       --active-flag true
+   03b99df0-78cf-4b01-b929-f1860d4f8ed1
+   $ vws --help
+   ...
+   $ vuforia-cloud-reco my_image.jpg \
+       --max-num-results 5 \
+       --include-target-data none
+   - target_id: b60f60121d37418eb1de123c381b2af9
+   - target_id: e3a6e1a216ad4df3aaae1f6dd309c800
+   $
+
+Full documentation
+------------------
+
+See the `full documentation <https://vws-python.github.io/vws-cli/>`__ for information on:
+
+* All available commands.
+* Setting up autocompletion.
+* How to contribute to this project.
+* Release notes.
+
+.. |Build Status| image:: https://github.com/VWS-Python/vws-cli/actions/workflows/ci.yml/badge.svg?branch=main
+   :target: https://github.com/VWS-Python/vws-cli/actions
+.. |codecov| image:: https://codecov.io/gh/VWS-Python/vws-cli/branch/main/graph/badge.svg
+   :target: https://codecov.io/gh/VWS-Python/vws-cli
+.. |PyPI| image:: https://badge.fury.io/py/VWS-CLI.svg
+   :target: https://badge.fury.io/py/VWS-CLI
+.. |minimum-python-version| replace:: 3.13
