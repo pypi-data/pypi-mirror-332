@@ -1,0 +1,132 @@
+"""
+Python module generated from Java source file dev.magicmq.pyspigot.manager.script.Script
+
+Java source file obtained from artifact pyspigot version 0.5.0
+
+Because this Python module is automatically generated, it may contain errors
+and/or code that cannot be parsed. Please report these issues at
+https://github.com/magicmq/docs-translator/issues
+"""
+from dev.magicmq.pyspigot import PySpigot
+from dev.magicmq.pyspigot.manager.script import *
+from dev.magicmq.pyspigot.util import ScriptLogger
+from dev.magicmq.pyspigot.util import ScriptUtils
+from java.io import File
+from java.io import IOException
+from org.python.util import PythonInterpreter
+from typing import Any, Callable, Iterable, Tuple
+
+
+class Script:
+    """
+    An object that represents a loaded script. Because this object is instantiated some time before the script is actually executed (in order to fetch its options and order scripts to load according to dependencies), there may be a brief time when this object represents a loaded *but not running * script. To check if this script object represents a running script, call ScriptManager.isScriptRunning(String).
+    """
+
+    def __init__(self, name: str, file: "File", options: "ScriptOptions"):
+        """
+        Arguments
+        - name: The name of this script. Should contain its extension (.py)
+        - file: The file where this script lives
+        - options: The ScriptOptions for this script
+        """
+        ...
+
+
+    def prepare(self) -> None:
+        """
+        Prepares this script for execution by initializing its interpreter and logger. Called just prior to executing the script's code.
+        """
+        ...
+
+
+    def close(self) -> None:
+        """
+        Closes this script's file logger and interpreter. Called when a script is unloaded/stopped.
+        """
+        ...
+
+
+    def getFile(self) -> "File":
+        """
+        Get the File associated with this script.
+
+        Returns
+        - The File associated with this script
+        """
+        ...
+
+
+    def getName(self) -> str:
+        """
+        Get the name associated with this script.
+
+        Returns
+        - The name associated with this script. Will contain its extension (.py)
+        """
+        ...
+
+
+    def getSimpleName(self) -> str:
+        """
+        Get the simple name (without the file extension, .py) associated with this script.
+
+        Returns
+        - The simple name associated with this script. Will contain only the file name, without the extension (.py)
+        """
+        ...
+
+
+    def getOptions(self) -> "ScriptOptions":
+        """
+        Get the ScriptOptions for this script, which contains various runtime options associated with this script.
+
+        Returns
+        - The ScriptOptions for this script
+        """
+        ...
+
+
+    def getInterpreter(self) -> "PythonInterpreter":
+        """
+        Get the org.python.util.PythonInterpreter associated wtih this script.
+
+        Returns
+        - The org.python.util.PythonInterpreter associated with this script
+        """
+        ...
+
+
+    def getLogger(self) -> "ScriptLogger":
+        """
+        Get this scripts logger.
+
+        Returns
+        - This script's logger
+
+        See
+        - ScriptLogger
+        """
+        ...
+
+
+    def getLogFileName(self) -> str:
+        """
+        Get the log file name for this script.
+
+        Returns
+        - The log file name for this script. Will contain its extension (.log)
+        """
+        ...
+
+
+    def equals(self, other: "Object") -> bool:
+        """
+        Check if this script is the same as another script. Will check the names of both scripts to see if they match.
+
+        Arguments
+        - other: The other script to check against this script
+
+        Returns
+        - True if the scripts are equal, False if otherwise
+        """
+        ...
