@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+shrijuu/__init__.py
+shrijuu/core.py
+shrijuu/exceptions.py
+shrijuu/utils.py
+shrijuu.egg-info/PKG-INFO
+shrijuu.egg-info/SOURCES.txt
+shrijuu.egg-info/dependency_links.txt
+shrijuu.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py
