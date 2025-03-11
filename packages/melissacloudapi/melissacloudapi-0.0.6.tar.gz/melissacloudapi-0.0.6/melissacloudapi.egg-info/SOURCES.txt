@@ -1,0 +1,5 @@
+setup.py
+melissacloudapi.egg-info/PKG-INFO
+melissacloudapi.egg-info/SOURCES.txt
+melissacloudapi.egg-info/dependency_links.txt
+melissacloudapi.egg-info/top_level.txt
