@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/structure_embedding/__init__.py
+src/structure_embedding/data.py
+src/structure_embedding/model.py
+src/structure_embedding/plot.py
+src/structure_embedding/utils.py
+src/structure_embedding.egg-info/PKG-INFO
+src/structure_embedding.egg-info/SOURCES.txt
+src/structure_embedding.egg-info/dependency_links.txt
+src/structure_embedding.egg-info/requires.txt
+src/structure_embedding.egg-info/top_level.txt
+src/structure_embedding/models/__init__.py
+src/structure_embedding/models/umap.py
