@@ -1,0 +1,15 @@
+SIDISH/DEEP_COX.py,sha256=1mna15IxZdUOX6nGK3bBNNb1dz3d51x6u9vB2Rho0Tw,6177
+SIDISH/DEEP_COX_ARCHITECTURE.py,sha256=E0NbU0cQiGnRez636bxolloPszaPysLliwxJlfQN2wQ,753
+SIDISH/SIDISH.py,sha256=SRNlFh005uMwe_s2jA-NAtEdcdaOgIDjdno5PvS3KZw,26936
+SIDISH/Utils.py,sha256=nIHNfZf5gc8yZ_87cPjOBkydBnUIX45o-tefXz_lmV8,5779
+SIDISH/VAE.py,sha256=7hRhRwZGlxYg07xs1_A5Ce_9BrWQPyzRuQU1WuOFt5s,5236
+SIDISH/VAE_ARCHITECTURE.py,sha256=Av-EXyGRsKnupvVWGz8HvC_G_puqU-dE1OsbpQJIhmY,5272
+SIDISH/__init__.py,sha256=2DfJerssavHe4DJQ71WgpiFAhbIbTmCC9kXxxox_xa8,27
+SIDISH/gene_perturbation_utils.py,sha256=2bom6aa0R1uNpJkfv55whNHl5wAIbyZlNhop3EOdMRE,2603
+SIDISH/in_silico_perturbation.py,sha256=uiCr6mq4SiPfZPdbm0MFur9Ydc1-Y0jumj78IE6dSo0,3406
+SIDISH/ppi_network_handler.py,sha256=MdQ7dHBHjW-HMuvdTHEJFBjOf-pRiuOcf-rGLB7T-7E,6020
+sidish-1.0.0.dist-info/LICENSE,sha256=kQEomH4RAg3837VONclUmXcd6DxXkSiaRz4-zSbsLVw,1072
+sidish-1.0.0.dist-info/METADATA,sha256=qEN-BiJPl4lwWgwTWaaYV2P-8eHpQr65u0dvR70loDA,832
+sidish-1.0.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+sidish-1.0.0.dist-info/top_level.txt,sha256=hef1sfpaxheUhx9eIBNLndDuTJuzuT4Ku2OfAdVdZJI,7
+sidish-1.0.0.dist-info/RECORD,,
