@@ -1,0 +1,15 @@
+xlc/__init__.py,sha256=708DJBK71HDhgaI4sDSa5HgQMSRlPRIYwacdtz86BAs,575
+xlc/attribute.py,sha256=7cDwCbMMGUB_wm8fjRJ3Ar0nv619OQMMFQcmLOny5Y0,423
+xlc/database/__init__.py,sha256=vyQAV2iQ3q9FyfAGFREPDPS-Dz_xKs3TL4SrclZfPGA,663
+xlc/database/langtags.py,sha256=_JrCopWA38Z3kdU3Sh8tFKIPkxuiTI5QbCB9bRJagmg,7073
+xlc/database/langtags.toml,sha256=mcQiW4zZPDV5hKRFFjVGhPCWUBVhi6KHV001DxQNj-U,1485
+xlc/database/subtags.py,sha256=roifJ3E6gnOm644G6Ij3GY9ooepj_Y3dIpYSMzI0yUk,2856
+xlc/language/__init__.py,sha256=YsHCrgAJzow99mq-2qI9HzvnZVoTyOeChxW_yXIxluQ,178
+xlc/language/message.py,sha256=Q72KsmIIZxlabrpuXTbsVbrNxbv88umxym6l0iQ9bWk,1807
+xlc/language/segment.py,sha256=CfLAKihyu_E7iamkXsvJe2J0FJK8mdJYunhIbEgLCc8,2329
+xlc-0.1.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+xlc-0.1.0.dist-info/METADATA,sha256=ilx--7KtI1NKRlqI6mvY9zuVDgJyv8sTFjyjR34OZck,2048
+xlc-0.1.0.dist-info/WHEEL,sha256=pWvVuNuBTVmNV7Lp2jMAgt1NplTICeFdl1SW8U3MWN4,109
+xlc-0.1.0.dist-info/top_level.txt,sha256=4QCvaHERrtj3mNLCsgHuWpk3HnPfDWlPu1sHKvi2ia4,4
+xlc-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+xlc-0.1.0.dist-info/RECORD,,
