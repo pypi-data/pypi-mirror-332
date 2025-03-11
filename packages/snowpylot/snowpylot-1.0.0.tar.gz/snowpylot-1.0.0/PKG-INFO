@@ -1,0 +1,169 @@
+Metadata-Version: 2.2
+Name: snowpylot
+Version: 1.0.0
+Summary: A Python library for working CAAML.XML files from SnowPilot
+Author-email: Mary Kate Connelly <connellymarykate@gmail.com>
+License: 
+        ## UPDATE THIS
+        
+        MIT License
+        
+        Copyright (c) 2024 Mary Kate Connelly
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE. 
+Project-URL: Homepage, https://github.com/connellymk/snowpylot
+Keywords: snowpit,caaml,snowpilot
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SnowPylot
+
+A Python library for working with CAAML snow profile data from SnowPilot.org.
+
+## Installation
+
+```bash
+pip install snowpylot
+```
+
+## Usage
+
+```python
+from snowpylot import caaml_parser
+
+# Parse a CAAML file
+snowpit = caaml_parser("path/to/snowpit.caaml.xml")
+
+# Access snow pit data
+print(f"Pit ID: {snowpit.coreInfo.pitID}")
+print(f"Date: {snowpit.coreInfo.date}")
+print(f"Location: {snowpit.coreInfo.location}")
+
+# Work with layers
+for layer in snowpit.snowProfile.layers:
+    print(f"Layer at depth {layer.depthTop}")
+    print(f"Grain form: {layer.grainFormPrimary.grainForm}")
+
+# Access stability tests
+for test in snowpit.stabilityTests.ECT:
+    print(f"ECT at depth {test.depthTop}: {test.testScore}")
+```
+
+## Features
+
+- Parse CAAML snow profile data from SnowPilot.org
+- Access core information (pit ID, date, location, etc.)
+- Work with snow layers and grain types
+- Access stability test results
+- Handle whumpf observations
+
+## Development
+
+To set up the development environment:
+
+```bash
+git clone https://github.com/yourusername/snowpylot.git
+cd snowpylot
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+pip install -e ".[dev]"
+```
+
+Run tests:
+```bash
+pytest
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Mary Kate's SP2025 Independent Study
+
+ The data for this project comes from Snowpilot.org
+
+
+ ## Setting up Jupyter Notebook
+
+ 1. Install Jupyter Notebook
+    
+    ```
+    python3 -m venv .venv
+    .venv\Scripts\activate
+    pip install jupyter
+
+    ```
+
+2. Install necessary libraries
+
+   ```
+   choco install python
+   pip install pandas
+   pip install numpy
+   pip install matplotlib
+   pip install seaborn
+   pip install scikit-learn
+   ```
+
+Resources:
+
+https://snowpilot.org/
+
+https://github.com/SnowpitData/AvscienceServer
+
+https://github.com/abkfenris/snowpit/tree/master/snowpit
+
+https://github.com/ArcticSnow/snowpyt
+
+http://caaml.org/Schemas/V4.2/Doc/#complexType_RescuedByBaseType_Link0BC1FC30
+
+https://github.com/ronimos/snowpack/tree/main
+
+
+Project Objectives:
+
+1. Create a data model and GitHub repository for working with CAAML files from the SnowPilot database (SnowPylot?)
+2. Use Jupyter Notebooks to analyze the data and answer research questions
+3. Summarize and present results at the Western Snow Conference in May 2025
+
+
+
+To do
+*Testing*
+1. Add tests to check if updating library (Explore Pytest)
+2. Add tests to make sure parsing matches caaml file
+3. Test process
+   Load file
+   parse file
+   check if parsing matches expected output
+4. Set up smaller tests
+   ex. "test get_longitude"
+
+*Structure*
+1. Make snowPilotObs class a shell
+2. Make separate caaml-parser class
+* Input: caaml file, version. return: snowpit object
+
+*Create Package*
+https://www.freecodecamp.org/news/build-your-first-python-package/
+https://realpython.com/pypi-publish-python-package/
