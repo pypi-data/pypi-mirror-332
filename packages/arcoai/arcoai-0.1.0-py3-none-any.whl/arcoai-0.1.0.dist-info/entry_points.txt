@@ -1,0 +1,2 @@
+[console_scripts]
+arcoai = arcoai.cli:main
