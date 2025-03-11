@@ -1,0 +1,158 @@
+Metadata-Version: 2.2
+Name: wshuyi-nb2pdf
+Version: 0.1.1
+Summary: 将Jupyter Notebook转换为优化的PDF格式，确保代码完整显示且不被截断
+Home-page: https://github.com/yourusername/wshuyi-nb2pdf
+Author: WSY
+Author-email: wsy@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: jupyter
+Requires-Dist: nbconvert>=6.0.0
+Requires-Dist: playwright>=1.20.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# wshuyi-nb2pdf
+
+将Jupyter Notebook转换为优化的PDF格式，特别关注：
+- 确保代码不会在右侧被截断
+- 使用合适的字体大小
+- 优化分页和布局
+- 支持中文和其他非拉丁字符
+
+## 安装
+
+```bash
+# 从PyPI安装
+pip install wshuyi-nb2pdf
+
+# 安装Playwright浏览器依赖
+playwright install chromium
+```
+
+## 使用方法
+
+### 命令行使用
+
+```bash
+# 基本用法
+wshuyi-nb2pdf notebook.ipynb
+
+# 指定输出文件
+wshuyi-nb2pdf notebook.ipynb output.pdf
+
+# 使用纵向布局
+wshuyi-nb2pdf --portrait notebook.ipynb
+
+# 调整缩放比例
+wshuyi-nb2pdf --scale 0.9 notebook.ipynb
+
+# 使用不同纸张大小
+wshuyi-nb2pdf --paper-size A4 notebook.ipynb
+
+# 查看所有选项
+wshuyi-nb2pdf --help
+```
+
+### Python中使用
+
+```python
+from wshuyi_nb2pdf import convert_notebook
+
+# 基本用法
+convert_notebook('notebook.ipynb')
+
+# 指定输出文件
+convert_notebook('notebook.ipynb', 'output.pdf')
+
+# 自定义选项
+options = {
+    'landscape': True,
+    'scale': 0.95,
+    'format': 'Letter',
+    'margin': {"top": "0.5in", "right": "0.5in", "bottom": "0.5in", "left": "0.5in"},
+    'wait_time': 2000,
+}
+convert_notebook('notebook.ipynb', 'output.pdf', options=options)
+```
+
+## 主要特性
+
+1. **智能代码换行**：自动对长代码行进行换行，而不是截断
+2. **优化的字体大小**：使用合适的字体大小，确保代码可读性
+3. **防止代码块分割**：确保代码块不会在页面之间被分割
+4. **横向布局**：默认使用横向布局以提供更多水平空间
+5. **语法高亮保留**：在PDF中保留代码的语法高亮
+6. **适合中文环境**：完全支持中文和其他非拉丁字符
+
+## 要求
+
+- Python 3.7+
+- Jupyter Notebook
+- nbconvert 6.0+
+- Playwright
+
+## 常见问题
+
+### 安装问题
+
+1. **安装Playwright失败**
+
+   ```bash
+   # 尝试单独安装
+   pip install playwright
+   playwright install chromium
+   ```
+
+2. **nbconvert依赖问题**
+
+   确保您的环境中已安装了完整的Jupyter套件：
+   
+   ```bash
+   pip install jupyter nbconvert
+   ```
+
+### 使用问题
+
+1. **PDF生成为空白或代码缺失**
+
+   尝试增加等待时间：
+   
+   ```python
+   options = {'wait_time': 5000}  # 5秒
+   convert_notebook('notebook.ipynb', options=options)
+   ```
+
+2. **中文字符显示为方块**
+
+   确保您的环境中已安装了中文字体，或者尝试使用不同的字体。
+
+## 版本历史
+
+### 0.1.1 (2025-03-10)
+- 修复：解决代码单元格在转换过程中丢失的问题
+- 改进：确保输入单元格（代码段）在HTML和PDF中正确显示
+
+### 0.1.0
+- 初始版本
+- 实现基本的Jupyter Notebook转PDF功能
+- 支持自定义CSS样式和页面设置
+
+## 许可证
+
+MIT
+
+## 作者
+
+WSY
