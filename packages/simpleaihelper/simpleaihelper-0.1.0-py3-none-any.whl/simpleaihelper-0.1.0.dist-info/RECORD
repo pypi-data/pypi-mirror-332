@@ -1,0 +1,10 @@
+simpleaihelper/__init__.py,sha256=a1dL0Q47mP1R84kE2mIfdGeehHay_-EzrwQaG5DPdrs,473
+simpleaihelper/client.py,sha256=GZl0aPtqq2GdO1Yg8cxe7xUqhSllE-LSkzgDliS0Gvs,15010
+simpleaihelper/session.py,sha256=lj6ReHjMLYnGXE5sMHTNwBgIlepy9aSLv1KVAEfqp98,9456
+simpleaihelper/db/__init__.py,sha256=_cPOZcrZQYle-7I7UOLTx9-mryS_Jg5avGCG_IVN_3A,182
+simpleaihelper/db/json_manager.py,sha256=BkjsW9r8Oyxr94OvU-RrA4NucjzOeOf5KdSiPvyalmw,7445
+simpleaihelper/db/sqlite_manager.py,sha256=Y8JWhMmKA0u5LIjfzScN0F2yBwMkzoxUgi5ndSqRoCs,9559
+simpleaihelper-0.1.0.dist-info/METADATA,sha256=Uuwn__6q9fda00GGa0y7-6PjEqcJm8GCP9tKxXemyD4,15481
+simpleaihelper-0.1.0.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+simpleaihelper-0.1.0.dist-info/top_level.txt,sha256=_WGEN-3GtIuaguOVdRq2PDkbM3JOBj8dUPgnLtBoroM,15
+simpleaihelper-0.1.0.dist-info/RECORD,,
