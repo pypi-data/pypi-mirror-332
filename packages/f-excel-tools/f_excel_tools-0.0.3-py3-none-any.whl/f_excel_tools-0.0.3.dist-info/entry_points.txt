@@ -1,0 +1,4 @@
+[console_scripts]
+f-excel=f_excel_tools.main:main
+f-excel-tools=f_excel_tools.main:main
+
