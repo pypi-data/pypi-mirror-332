@@ -1,0 +1,1 @@
+{"project_name": "mnist_training", "experiment_description": "Training MNIST Model", "file_name": "emission.csv", "measure_period": 10, "pue": 1}
