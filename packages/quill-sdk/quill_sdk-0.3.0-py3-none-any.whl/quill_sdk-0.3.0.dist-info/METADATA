@@ -1,0 +1,121 @@
+Metadata-Version: 2.3
+Name: quill-sdk
+Version: 0.3.0
+Summary: A text-based adventure game engine with natural language processing
+License: MIT
+Keywords: game,text-adventure,interactive-fiction,education
+Author: Timothy Pidashev
+Author-email: pidashev.tim@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Games/Entertainment :: Role-Playing
+Provides-Extra: neural
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: openai (>=1.65.4,<2.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: torch (>=1.10.0,<2.0.0) ; extra == "neural"
+Requires-Dist: transformers (>=4.20.0,<5.0.0) ; extra == "neural"
+Project-URL: Repository, https://github.com/timmypidashev/quill
+Description-Content-Type: text/markdown
+
+# Quill
+A modern text-based adventure engine that transforms natural writing into interactive experiences.
+
+## Features
+
+- Simple YAML-based game definition
+- Modern terminal UI with text effects and colors
+- Natural language command processing
+- Character dialogue system
+- Inventory management
+- Game state tracking with flags
+- Hidden objects and secret passages
+- Events and conditional triggers
+
+## Installation
+
+```bash
+pip install quill-sdk
+```
+
+For neural language processing features (optional):
+```bash
+pip install quill-sdk[neural]
+```
+
+## Quick Start
+
+Create a new game:
+```bash
+quill create "My Adventure"
+```
+
+Run your game:
+```bash
+quill run my_adventure
+```
+
+## Game Structure
+
+A quill game consists of YAML files organized in the following structure:
+
+```
+game.yaml                # Main game configuration
+scenes/                  # Scene definitions
+  starting_room.yaml
+  ...
+items/                   # Item definitions
+  key.yaml
+  ...
+characters/              # Character definitions
+  npc.yaml
+  ...
+achievements/            # Achievement definitions
+  explorer.yaml
+  ...
+```
+
+See the documentation for detailed information on creating your own adventures.
+
+## Example
+
+Here's a simple example of a scene definition:
+
+```yaml
+name: "Forest Clearing"
+description: "A peaceful clearing in the forest. Sunlight filters through the canopy, illuminating a stone pedestal in the center."
+
+exits:
+  north:
+    target: "deep_forest"
+    description: "A narrow path leads deeper into the forest."
+  
+  south:
+    target: "forest_entrance"
+    description: "The path back to the forest entrance."
+
+objects:
+  pedestal:
+    description: "A weathered stone pedestal with a small indentation on top, perfectly sized for a gem."
+  
+  flowers:
+    description: "Colorful wildflowers dot the clearing."
+
+events:
+  place_gem:
+    trigger: "place gem on pedestal"
+    condition:
+      has_flags: ["has_gem"]
+    message: "You place the gem on the pedestal. It begins to glow, and a hidden door opens in a nearby tree trunk!"
+    flags_set: ["door_revealed"]
+```
+
