@@ -1,0 +1,4 @@
+include README.md
+recursive-include schema *
+recursive-include src *
+recursive-include style *
