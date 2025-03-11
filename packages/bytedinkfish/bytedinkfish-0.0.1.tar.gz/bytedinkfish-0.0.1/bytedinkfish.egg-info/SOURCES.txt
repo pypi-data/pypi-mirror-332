@@ -1,0 +1,6 @@
+setup.py
+bytedinkfish/__init__.py
+bytedinkfish.egg-info/PKG-INFO
+bytedinkfish.egg-info/SOURCES.txt
+bytedinkfish.egg-info/dependency_links.txt
+bytedinkfish.egg-info/top_level.txt
