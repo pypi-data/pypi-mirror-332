@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/ttsfrd/__init__.py
+src/ttsfrd.egg-info/PKG-INFO
+src/ttsfrd.egg-info/SOURCES.txt
+src/ttsfrd.egg-info/dependency_links.txt
+src/ttsfrd.egg-info/top_level.txt
