@@ -1,0 +1,11 @@
+flake8
+pytest
+merakicommons>=1.0.7
+datapipelines>=1.0.7
+Pillow
+arrow
+requests
+dotenv>=0.9.9
+matplotlib>=3.10.1
+sortedcontainers>=2.4.0
+setuptools>=76.0.0
