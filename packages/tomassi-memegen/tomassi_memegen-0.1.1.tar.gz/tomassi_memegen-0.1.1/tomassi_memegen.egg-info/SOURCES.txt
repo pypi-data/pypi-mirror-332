@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+tomassi_memegen.egg-info/PKG-INFO
+tomassi_memegen.egg-info/SOURCES.txt
+tomassi_memegen.egg-info/dependency_links.txt
+tomassi_memegen.egg-info/entry_points.txt
+tomassi_memegen.egg-info/requires.txt
+tomassi_memegen.egg-info/top_level.txt
