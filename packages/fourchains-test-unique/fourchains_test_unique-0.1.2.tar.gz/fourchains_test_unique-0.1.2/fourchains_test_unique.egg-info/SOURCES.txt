@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fourchains_test_unique.egg-info/PKG-INFO
+fourchains_test_unique.egg-info/SOURCES.txt
+fourchains_test_unique.egg-info/dependency_links.txt
+fourchains_test_unique.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/module.py
