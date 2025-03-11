@@ -1,0 +1,8 @@
+setup.py
+xlazypipka/__init__.py
+xlazypipka/first.py
+xlazypipka/second.py
+xlazypipka.egg-info/PKG-INFO
+xlazypipka.egg-info/SOURCES.txt
+xlazypipka.egg-info/dependency_links.txt
+xlazypipka.egg-info/top_level.txt
