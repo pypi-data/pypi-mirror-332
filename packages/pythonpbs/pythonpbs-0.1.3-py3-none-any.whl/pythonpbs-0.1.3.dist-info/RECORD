@@ -1,0 +1,17 @@
+pybs/.DS_Store,sha256=roQ1spVxYdTWqf4Z3WDk0_W-91dd8qIPg8hHlLoLCL8,6148
+pybs/__init__.py,sha256=JS9BoyH8PSq4YU7EtvvNWZmHGfExMoxpn--x4DBMbog,333
+pybs/console/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybs/console/console.py,sha256=yJp6NUZnn7aaiw7m1DBgzVxPYH_U15g1R-sQksH8mBk,412
+pybs/console/local/__init__.py,sha256=4QivcEax4Wixa4OQzeIfQjWJ_9E2K0s4KbManihhpkA,1719
+pybs/console/local/commands.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybs/console/remote/README.md,sha256=nqfmAItAhT9YbbmYoO2RJUZyr8IttgDzSA8NbhnQiW8,467
+pybs/console/remote/__init__.py,sha256=_s2WOeaVjh9gUnhYZLKjz6PPuem_bWVGtUqKx5KiwE0,41
+pybs/console/remote/code.py,sha256=_1Pnvn5nlx080UAPYGvaPu_IvIndmOF4BqTGOypGweA,15303
+pybs/console/remote/commands.py,sha256=1CUOZt0QBnFuwyjR3dN5DvlMi5M0Zm5KUHEq-tGLeWs,1143
+pybs/console/tabcomplete.py,sha256=Igv1VYCCnZR4w6yNnNWfO2_tHkbUtE-XPLpXEN21oJY,1447
+pybs/server/__init__.py,sha256=7HXbybmavDa5rNs1BZzem4ES7jlwflv_5uU4TqJ3yqQ,9278
+pythonpbs-0.1.3.dist-info/LICENSE,sha256=m5BdPIONZ4e12kE5VTIG2I0pH34KN2lWgUE6xl-WTh8,11345
+pythonpbs-0.1.3.dist-info/METADATA,sha256=tMmrVVWFBgx_NxafPer-FNkKcJ6Ki1sOaC8-TrjciF8,2720
+pythonpbs-0.1.3.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pythonpbs-0.1.3.dist-info/entry_points.txt,sha256=BZHol1IJLdVHjXhJgkHfqCEafaKUU8xvTfiw-Ney8gk,57
+pythonpbs-0.1.3.dist-info/RECORD,,
