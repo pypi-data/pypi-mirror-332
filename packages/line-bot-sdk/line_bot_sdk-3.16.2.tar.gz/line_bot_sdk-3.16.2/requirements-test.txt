@@ -1,0 +1,6 @@
+pytest
+pytest-pep8
+pytest-cov
+pytest-aiohttp
+responses
+pytest_httpserver >= 1.1.2
