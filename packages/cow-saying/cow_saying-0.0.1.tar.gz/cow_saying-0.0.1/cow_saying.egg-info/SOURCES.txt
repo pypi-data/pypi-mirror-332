@@ -1,0 +1,8 @@
+setup.py
+cow_saying/__init__.py
+cow_saying/file.py
+cow_saying/second_file.py
+cow_saying.egg-info/PKG-INFO
+cow_saying.egg-info/SOURCES.txt
+cow_saying.egg-info/dependency_links.txt
+cow_saying.egg-info/top_level.txt
