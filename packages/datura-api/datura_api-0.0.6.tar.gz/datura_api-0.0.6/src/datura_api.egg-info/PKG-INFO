@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: datura_api
+Version: 0.0.6
+Summary: A Python SDK for interacting with the My API service.
+Author: Your Name
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: requires-python
