@@ -1,0 +1,13 @@
+dsmq/__init__.py,sha256=YCgbnQAk8YbtHRyMcU0v2O7RdRhPhlT-vS_q40a7Q6g,50
+dsmq/client.py,sha256=ZsbuvsWX6_4-tkp7i3ixYAPEyvoebKX8qFtW38DHdXE,2569
+dsmq/demo.py,sha256=K53cC5kN7K4kNJlPq7c5OTIMHRCKTo9hYX2aIos57rU,542
+dsmq/example_get_client.py,sha256=PvAsDGEAH1kVBifLVg2rx8ZxnAZmvzVCvZq13VgpLds,301
+dsmq/example_put_client.py,sha256=QxDc3i7KAjjhpwxRRpI0Ke5KTNSPuBf9kkcGyTvUEaw,353
+dsmq/server.py,sha256=HXPH9-nSzz2Iy2UzIWqgUVbL174jq1VBzs7im9vRLqk,8268
+dsmq/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsmq/tests/integration_test.py,sha256=dLsQGCmpXv4zRb93TriccH7TbUyD9MHcLckAQqfDOK4,5980
+dsmq/tests/performance_suite.py,sha256=E59zB2ZvM8V5f8RxaB7p-Kehqyhrgsl0sXuy7g74BaI,5218
+dsmq-1.3.1.dist-info/METADATA,sha256=K6fqrudTKsXR2xlHDlTNkrjepNcsKn5kX9I5yjpzxPk,4859
+dsmq-1.3.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dsmq-1.3.1.dist-info/licenses/LICENSE,sha256=3Yu1mAp5VsKmnDtzkiOY7BdmrLeNwwZ3t6iWaLnlL0Y,1071
+dsmq-1.3.1.dist-info/RECORD,,
