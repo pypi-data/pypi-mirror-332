@@ -1,0 +1,5 @@
+snakemake_logger_plugin_rich/__init__.py,sha256=eXmRu2I50p-Y5vpNnX0PZjIEDJtOfLikPdYEmxoj6k4,1260
+snakemake_logger_plugin_rich/handler.py,sha256=reWrDDig4N_u8JnKE62d3hn7BNJCFflMgck_vtZoT4w,7430
+snakemake_logger_plugin_rich-0.2.3.dist-info/METADATA,sha256=Up652U5sirroOGV_cp03-njRh8Vqw5hgtkItbRnwnzw,560
+snakemake_logger_plugin_rich-0.2.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+snakemake_logger_plugin_rich-0.2.3.dist-info/RECORD,,
