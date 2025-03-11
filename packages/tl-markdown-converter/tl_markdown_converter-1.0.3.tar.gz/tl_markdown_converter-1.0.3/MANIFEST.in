@@ -1,0 +1,27 @@
+include README.md
+include LICENSE
+include requirements.txt
+
+# Include Python package files
+recursive-include converter *.py
+recursive-include converter/core *.py
+recursive-include converter/utils *.py
+
+# Include template files
+recursive-include converter/templates *.html
+recursive-include converter/templates *.css
+recursive-include converter/templates *.json
+recursive-include converter/templates *.js
+
+# Exclude unnecessary files
+exclude *.pyc
+exclude *.pyo
+exclude *.pyd
+exclude .git
+exclude .gitignore
+exclude .DS_Store
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+exclude *.egg-info
+exclude build
+exclude dist 

@@ -1,0 +1,36 @@
+{
+    "template": "modern/template.html",
+    "css": "modern/style.css",
+    "variables": {
+        "title": "",
+        "author": "",
+        "date": "",
+        "copyright": "© 2024 版权所有",
+        "toc": "",
+        "content": ""
+    },
+    "page": {
+        "size": "A4",
+        "margin": {
+            "top": "2cm",
+            "right": "2cm",
+            "bottom": "2cm",
+            "left": "2cm"
+        }
+    },
+    "fonts": {
+        "default": {
+            "family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+            "size": "16px",
+            "line-height": "1.65"
+        },
+        "heading": {
+            "family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+            "weight": "600"
+        },
+        "code": {
+            "family": "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace",
+            "size": "0.9em"
+        }
+    }
+} 

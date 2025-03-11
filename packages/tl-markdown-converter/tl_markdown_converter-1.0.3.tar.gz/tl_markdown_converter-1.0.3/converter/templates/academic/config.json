@@ -1,0 +1,61 @@
+{
+    "name": "学术模板",
+    "description": "适合学术论文和研究报告的正式排版风格",
+    "version": "1.0.0",
+    "author": "Fiction团队",
+    "html_template": "template.html",
+    "css_files": ["style.css"],
+    "js_files": ["script.js"],
+    "pdf_settings": {
+        "margin": {
+            "top": "25mm",
+            "right": "25mm",
+            "bottom": "25mm",
+            "left": "25mm"
+        },
+        "format": "A4",
+        "printBackground": true
+    },
+    "image_settings": {
+        "width": 800,
+        "deviceScaleFactor": 2
+    },
+    "template": "academic/template.html",
+    "css": "academic/style.css",
+    "variables": {
+        "title": "",
+        "author": "作者姓名",
+        "affiliation": "机构单位",
+        "abstract": "",
+        "keywords": "",
+        "content": "",
+        "references": [],
+        "footnotes": []
+    },
+    "page": {
+        "size": "A4",
+        "margin": {
+            "top": "2.54cm",
+            "right": "2.54cm",
+            "bottom": "2.54cm",
+            "left": "2.54cm"
+        }
+    },
+    "fonts": {
+        "default": {
+            "family": "Georgia, Times New Roman, serif",
+            "size": "12pt",
+            "line-height": "1.6"
+        },
+        "title": {
+            "family": "Arial, sans-serif",
+            "size": "18pt",
+            "weight": "bold"
+        },
+        "heading": {
+            "family": "Arial, sans-serif",
+            "size": "14pt",
+            "weight": "bold"
+        }
+    }
+} 

@@ -1,0 +1,342 @@
+/* 杂志风格模板 CSS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* 基础样式 */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.magazine-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 标题和头部样式 */
+.magazine-header {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.magazine-header:after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: -5px;
+    left: 35%;
+}
+
+.magazine-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+
+.magazine-subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    margin-bottom: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.magazine-meta {
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 内容布局 */
+.magazine-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+    color: #222;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 段落和文本样式 */
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+strong, b {
+    font-weight: 600;
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* 引用样式 */
+blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #555;
+    border-left: none;
+    padding: 20px 40px;
+    margin: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+blockquote:before, blockquote:after {
+    content: '"';
+    font-size: 60px;
+    position: absolute;
+    color: #ddd;
+}
+
+blockquote:before {
+    top: -10px;
+    left: 10px;
+}
+
+blockquote:after {
+    bottom: -30px;
+    right: 10px;
+}
+
+/* 列表样式 */
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* 图片样式 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* 特殊文本效果 */
+.dropcap {
+    float: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    color: #000;
+}
+
+.highlight {
+    background-color: #ffffd9;
+    padding: 2px 4px;
+}
+
+/* 多列布局 */
+.two-column {
+    column-count: 2;
+    column-gap: 40px;
+}
+
+.three-column {
+    column-count: 3;
+    column-gap: 30px;
+}
+
+/* 分隔线 */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 40px 0;
+    position: relative;
+}
+
+hr:before {
+    content: "§";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0 20px;
+    color: #999;
+    font-size: 16px;
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 16px;
+}
+
+table th {
+    background-color: #f8f8f8;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+}
+
+table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .magazine-title {
+        font-size: 36px;
+    }
+    
+    .magazine-subtitle {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    
+    .two-column, .three-column {
+        column-count: 1;
+    }
+    
+    blockquote {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+    
+    p, ul li, ol li {
+        font-size: 16px;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    .magazine-container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 24pt;
+    }
+    
+    h2 {
+        font-size: 20pt;
+    }
+    
+    h3 {
+        font-size: 16pt;
+    }
+    
+    p, ul li, ol li {
+        font-size: 12pt;
+    }
+    
+    blockquote {
+        font-size: 14pt;
+    }
+    
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+} 

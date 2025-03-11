@@ -1,0 +1,9 @@
+{
+    "name": "默认模板",
+    "description": "简洁的阅读体验，适合各种类型的文档",
+    "version": "1.0.0",
+    "author": "Fiction团队",
+    "html_template": "template.html",
+    "css_files": ["style.css"],
+    "js_files": []
+} 

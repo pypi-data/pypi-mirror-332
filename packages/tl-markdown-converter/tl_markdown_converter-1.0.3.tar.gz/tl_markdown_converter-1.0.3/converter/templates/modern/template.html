@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- 外部CSS将在此处通过链接标签插入 -->
+</head>
+<body>
+    <!-- 页眉 -->
+    <header class="page-header">
+        {% if date %}
+        <time datetime="{{ date }}">{{ date }}</time>
+        {% endif %}
+        {% if author %}
+        <span class="author">{{ author }}</span>
+        {% endif %}
+    </header>
+    
+    <!-- 主要内容 -->
+    <main class="content">
+        {% if title %}
+        <h1>{{ title }}</h1>
+        {% endif %}
+        
+        {% if toc %}
+        <nav class="table-of-contents">
+            <h2>目录</h2>
+            {{ toc }}
+        </nav>
+        {% endif %}
+        
+        {{ content }}
+    </main>
+    
+    <!-- 页脚 -->
+    <footer class="page-footer">
+        {% if copyright %}
+        <div class="copyright">{{ copyright }}</div>
+        {% endif %}
+        <div class="generated">使用 Fiction Markdown Converter 生成</div>
+    </footer>
+    
+    <!-- 深色模式切换按钮 -->
+    <div class="theme-toggle" id="themeToggle" aria-label="切换深色/浅色模式">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </div>
+    
+    <!-- 返回顶部按钮 -->
+    <div class="back-to-top" id="backToTop" aria-label="返回顶部">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </div>
+    
+    <script>
+        // 深色模式切换
+        const themeToggle = document.getElementById('themeToggle');
+        let isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        // 检查本地存储中的主题首选项
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+                isDarkMode = true;
+            } else {
+                isDarkMode = false;
+            }
+        } else if (isDarkMode) {
+            document.body.classList.add('dark-theme');
+        }
+        
+        // 更新图标
+        updateThemeIcon();
+        
+        themeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+            isDarkMode = !isDarkMode;
+            updateThemeIcon();
+            
+            // 保存用户偏好到本地存储
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        });
+        
+        function updateThemeIcon() {
+            themeToggle.innerHTML = isDarkMode 
+                ? '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>'
+                : '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+        }
+        
+        // 返回顶部按钮
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 自动为标题添加ID
+        document.addEventListener('DOMContentLoaded', function() {
+            const headings = document.querySelectorAll('h2, h3, h4, h5, h6');
+            
+            headings.forEach(heading => {
+                if (!heading.id) {
+                    const id = heading.textContent
+                        .toLowerCase()
+                        .replace(/\s+/g, '-')
+                        .replace(/[^\w-]/g, '');
+                    heading.id = id;
+                }
+            });
+            
+            // 为表格添加容器
+            const tables = document.querySelectorAll('table');
+            tables.forEach(table => {
+                const wrapper = document.createElement('div');
+                wrapper.className = 'table-wrapper';
+                table.parentNode.insertBefore(wrapper, table);
+                wrapper.appendChild(table);
+            });
+        });
+    </script>
+</body>
+</html> 

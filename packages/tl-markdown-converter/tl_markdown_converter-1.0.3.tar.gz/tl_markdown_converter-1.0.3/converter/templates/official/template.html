@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- 外部CSS将在此处通过链接标签插入 -->
+</head>
+<body>
+    <article class="document-body">
+        <!-- 发文机关标志 -->
+        <header class="document-header">
+            {{ header_org }}
+        </header>
+
+        <!-- 发文字号 -->
+        <div class="document-number">
+            {{ doc_number }}
+        </div>
+
+        <!-- 密级和保密期限 -->
+        {% if security_level %}
+        <div class="security-level">
+            {{ security_level }}
+        </div>
+        {% endif %}
+
+        <!-- 签发人 -->
+        <div class="issuer">
+            签发人：<span class="issuer-name">{{ issuer }}</span>
+        </div>
+
+        <!-- 公文标题 -->
+        <div class="document-title">
+            <h1>{{ title }}</h1>
+        </div>
+
+        <!-- 正文内容 -->
+        {{ content }}
+
+        <!-- 附件列表 -->
+        {% if attachments %}
+        <div class="attachment-list">
+            <h2>附件：</h2>
+            {% for attachment in attachments %}
+            <p>{{ loop.index }}. {{ attachment }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <!-- 版记 -->
+        <footer class="document-footer">
+            {% if cc_to %}
+            <div class="cc-to">抄送：{{ cc_to }}</div>
+            {% endif %}
+            <div class="issuing-office">{{ issuing_office }}</div>
+            <div class="issuing-date">{{ issuing_date }} 印发</div>
+        </footer>
+    </article>
+</body>
+</html> 

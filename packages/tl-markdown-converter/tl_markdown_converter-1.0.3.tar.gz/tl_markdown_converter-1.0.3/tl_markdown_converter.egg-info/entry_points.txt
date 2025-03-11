@@ -1,0 +1,2 @@
+[console_scripts]
+md-converter = converter.cli:main

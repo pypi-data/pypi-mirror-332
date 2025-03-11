@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- 外部CSS将在此处通过链接标签插入 -->
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="site-info">
+                <div class="site-title">{{ project_name }}</div>
+                <div class="site-version">v{{ version }}</div>
+            </div>
+            
+            <!-- 侧边栏导航 -->
+            <nav class="sidebar-nav">
+                <h3>目录</h3>
+                {% if toc_items %}
+                <ul class="sidebar-nav-list">
+                    {% for item in toc_items %}
+                    <li><a href="{{ item.link }}">{{ item.text }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <ul class="sidebar-nav-list">
+                    <li><a href="#introduction">介绍</a></li>
+                    <li><a href="#installation">安装</a></li>
+                    <li><a href="#usage">使用方法</a></li>
+                    <li><a href="#api">API 参考</a></li>
+                    <li><a href="#examples">示例</a></li>
+                </ul>
+                {% endif %}
+            </nav>
+        </aside>
+        
+        <!-- 主要内容 -->
+        <main class="content">
+            <header>
+                <h1>{{ title }}</h1>
+                {% if description %}
+                <p class="description">{{ description }}</p>
+                {% endif %}
+            </header>
+            
+            <!-- 正文内容 -->
+            {{ content }}
+            
+            <!-- 页脚 -->
+            <footer>
+                <div class="footer-content">
+                    <p>最后更新: {{ last_updated }}</p>
+                    {% if author %}
+                    <p>作者: {{ author }}</p>
+                    {% endif %}
+                </div>
+            </footer>
+        </main>
+        
+        <!-- 右侧目录 -->
+        <aside class="toc">
+            <div class="toc-container">
+                <h3>本页目录</h3>
+                <div id="toc-content"></div>
+            </div>
+        </aside>
+    </div>
+    
+    <!-- 移动端菜单切换按钮 -->
+    <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <script>
+        // 移动端菜单切换
+        document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('open');
+        });
+        
+        // 自动生成目录
+        document.addEventListener('DOMContentLoaded', function() {
+            const headings = document.querySelectorAll('h2, h3, h4');
+            const tocContent = document.getElementById('toc-content');
+            
+            if (tocContent && headings.length) {
+                const list = document.createElement('ul');
+                list.className = 'toc-list';
+                
+                headings.forEach(heading => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    
+                    // 如果标题没有id，创建一个
+                    if (!heading.id) {
+                        heading.id = heading.textContent
+                            .toLowerCase()
+                            .replace(/\s+/g, '-')
+                            .replace(/[^\w-]/g, '');
+                    }
+                    
+                    a.href = '#' + heading.id;
+                    a.textContent = heading.textContent;
+                    
+                    // 根据标题级别缩进
+                    if (heading.tagName === 'H3') {
+                        a.style.paddingLeft = '1rem';
+                    } else if (heading.tagName === 'H4') {
+                        a.style.paddingLeft = '2rem';
+                    }
+                    
+                    li.appendChild(a);
+                    list.appendChild(li);
+                });
+                
+                tocContent.appendChild(list);
+                
+                // 监听滚动，高亮当前标题
+                window.addEventListener('scroll', () => {
+                    let current = '';
+                    
+                    headings.forEach(heading => {
+                        const rect = heading.getBoundingClientRect();
+                        
+                        if (rect.top <= 100) {
+                            current = '#' + heading.id;
+                        }
+                    });
+                    
+                    document.querySelectorAll('.toc-list a').forEach(a => {
+                        a.classList.remove('active');
+                        if (a.getAttribute('href') === current) {
+                            a.classList.add('active');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

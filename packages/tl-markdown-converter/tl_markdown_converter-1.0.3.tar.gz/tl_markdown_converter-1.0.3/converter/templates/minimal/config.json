@@ -1,0 +1,23 @@
+{
+    "id": "minimal",
+    "name": "极简模板",
+    "description": "一个极简的Markdown转换模板，专注于内容的清晰呈现",
+    "version": "1.0.0",
+    "author": "Fiction团队",
+    "html_template": "template.html",
+    "css_files": ["style.css"],
+    "pdf_settings": {
+        "margin": {
+            "top": "2cm",
+            "right": "2cm",
+            "bottom": "2cm",
+            "left": "2cm"
+        },
+        "format": "A4",
+        "printBackground": true
+    },
+    "image_settings": {
+        "width": 800,
+        "deviceScaleFactor": 2
+    }
+} 

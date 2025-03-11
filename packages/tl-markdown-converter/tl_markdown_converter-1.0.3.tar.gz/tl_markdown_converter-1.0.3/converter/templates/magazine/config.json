@@ -1,0 +1,23 @@
+{
+    "name": "杂志模板",
+    "description": "现代杂志风格的排版，适合内容丰富的文章",
+    "version": "1.0.0",
+    "author": "Fiction团队",
+    "html_template": "template.html",
+    "css_files": ["style.css"],
+    "js_files": ["script.js"],
+    "pdf_settings": {
+        "margin": {
+            "top": "20mm",
+            "right": "20mm",
+            "bottom": "20mm",
+            "left": "20mm"
+        },
+        "format": "A4",
+        "printBackground": true
+    },
+    "image_settings": {
+        "width": 850,
+        "deviceScaleFactor": 2
+    }
+} 

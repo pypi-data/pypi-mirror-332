@@ -1,0 +1,41 @@
+{
+    "template": "official/template.html",
+    "css": "official/style.css",
+    "variables": {
+        "header_org": "某某机关",
+        "doc_number": "某发〔2024〕1号",
+        "security_level": "",
+        "issuer": "张三",
+        "title": "",
+        "content": "",
+        "attachments": [],
+        "cc_to": "",
+        "issuing_office": "某某机关办公室",
+        "issuing_date": "2024年1月1日"
+    },
+    "page": {
+        "size": "A4",
+        "margin": {
+            "top": "37mm",
+            "right": "28mm",
+            "bottom": "37mm",
+            "left": "28mm"
+        }
+    },
+    "fonts": {
+        "default": {
+            "family": "FangSong_GB2312, FangSong, 仿宋, STFangsong, 仿宋_GB2312",
+            "size": "16pt",
+            "line-height": "1.5"
+        },
+        "title": {
+            "family": "STXinwei, 华文新魏",
+            "size": "22pt",
+            "weight": "bold"
+        },
+        "header": {
+            "family": "KaiTi_GB2312, KaiTi, 楷体, STKaiti",
+            "size": "18pt"
+        }
+    }
+} 

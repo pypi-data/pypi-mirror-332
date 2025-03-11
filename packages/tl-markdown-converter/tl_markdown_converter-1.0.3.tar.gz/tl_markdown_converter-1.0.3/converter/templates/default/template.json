@@ -1,0 +1,22 @@
+{
+    "name": "默认模板",
+    "id": "default",
+    "description": "简洁现代的默认样式模板，适合大多数Markdown内容",
+    "version": "1.0.0",
+    "author": "Fiction团队",
+    "html_template": "template.html",
+    "css_files": ["style.css"],
+    "js_files": [],
+    "preview_image": "preview.png",
+    "pdf_settings": {
+        "page_size": "A4",
+        "orientation": "portrait",
+        "margins": {"top": "2cm", "right": "2cm", "bottom": "2cm", "left": "2cm"}
+    },
+    "image_settings": {
+        "default_width": 800,
+        "max_height": 0,
+        "device_scale_factor": 2
+    },
+    "supported_features": ["toc", "code-highlight", "footnotes"]
+} 

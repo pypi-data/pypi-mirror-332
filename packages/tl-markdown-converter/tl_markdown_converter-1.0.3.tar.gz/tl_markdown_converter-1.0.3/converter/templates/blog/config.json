@@ -1,0 +1,9 @@
+{
+    "name": "博客模板",
+    "description": "适合博客文章的模板，包含作者信息、分类和标签",
+    "version": "1.0.0",
+    "author": "Fiction团队",
+    "html_template": "template.html",
+    "css_files": ["style.css"],
+    "js_files": ["script.js"]
+} 

@@ -1,0 +1,337 @@
+/* 技术文档样式的Markdown转HTML */
+:root {
+  --primary-color: #3b82f6;
+  --code-bg: #f3f4f6;
+  --border-color: #e5e7eb;
+  --sidebar-width: 280px;
+  --content-width: 860px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #374151;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  border-right: 1px solid var(--border-color);
+  padding: 2rem 1rem;
+}
+
+.content {
+  margin-left: var(--sidebar-width);
+  padding: 2rem;
+  max-width: var(--content-width);
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+/* 段落 */
+p {
+  margin-bottom: 1rem;
+}
+
+/* 链接 */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 代码样式 */
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  background-color: var(--code-bg);
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: var(--code-bg);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow: auto;
+  line-height: 1.45;
+  margin: 1rem 0;
+  border: 1px solid var(--border-color);
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+/* 语法高亮示例 */
+.token.comment { color: #6b7280; }
+.token.keyword { color: #8b5cf6; }
+.token.string { color: #10b981; }
+.token.number { color: #f59e0b; }
+.token.function { color: #3b82f6; }
+.token.property { color: #ec4899; }
+
+/* 引用块 */
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  background-color: rgba(59, 130, 246, 0.05);
+  color: #4b5563;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+/* 提示和警告框 */
+.note, .tip, .warning, .danger {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid;
+  border-radius: 3px;
+}
+
+.note {
+  background-color: #f3f4f6;
+  border-left-color: #9ca3af;
+}
+
+.tip {
+  background-color: rgba(16, 185, 129, 0.1);
+  border-left-color: #10b981;
+}
+
+.warning {
+  background-color: rgba(245, 158, 11, 0.1);
+  border-left-color: #f59e0b;
+}
+
+.danger {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-left-color: #ef4444;
+}
+
+/* 列表 */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li > ul, li > ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* 表格 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  text-align: left;
+}
+
+table th, table td {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 0.75rem;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* API 方法样式 */
+.api-method {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  background-color: #f9fafb;
+}
+
+.api-method-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.http-method {
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-right: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.get { background-color: #10b981; color: white; }
+.post { background-color: #3b82f6; color: white; }
+.put { background-color: #f59e0b; color: white; }
+.delete { background-color: #ef4444; color: white; }
+
+.endpoint {
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+/* 目录导航 */
+.toc {
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.toc-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc-list li {
+  margin-bottom: 0.5rem;
+}
+
+.toc-list a {
+  color: #4b5563;
+  text-decoration: none;
+}
+
+.toc-list a:hover {
+  color: var(--primary-color);
+}
+
+.toc-list .active {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* 版本标记 */
+.version-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.deprecated {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.beta {
+  background-color: #dbeafe;
+  color: #3b82f6;
+}
+
+.new {
+  background-color: #d1fae5;
+  color: #10b981;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 10;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 20;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  .sidebar, .toc, .menu-toggle {
+    display: none;
+  }
+  
+  .content {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  pre, code {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+} 

@@ -1,0 +1,17 @@
+# 核心依赖
+markdown>=3.3.0
+jinja2>=3.0.0
+Pillow>=9.0.0
+beautifulsoup4>=4.9.0
+playwright>=1.20.0
+python-docx>=0.8.11
+
+# HTML转PDF依赖
+weasyprint>=54.0
+
+# 工具依赖
+argparse>=1.4.0
+python-dotenv>=0.19.0
+
+# 日志和错误处理
+rich>=10.0.0 
