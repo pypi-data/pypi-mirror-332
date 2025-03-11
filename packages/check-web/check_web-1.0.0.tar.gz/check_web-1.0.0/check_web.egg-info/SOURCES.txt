@@ -1,0 +1,9 @@
+README.md
+setup.py
+check_web.egg-info/PKG-INFO
+check_web.egg-info/SOURCES.txt
+check_web.egg-info/dependency_links.txt
+check_web.egg-info/requires.txt
+check_web.egg-info/top_level.txt
+infoweb/__init__.py
+infoweb/infoweb.py
