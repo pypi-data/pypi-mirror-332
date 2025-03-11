@@ -1,0 +1,8 @@
+setup.py
+my_packet_aboba_nike_pro/__init__.py
+my_packet_aboba_nike_pro/module1.py
+my_packet_aboba_nike_pro/module2.py
+my_packet_aboba_nike_pro.egg-info/PKG-INFO
+my_packet_aboba_nike_pro.egg-info/SOURCES.txt
+my_packet_aboba_nike_pro.egg-info/dependency_links.txt
+my_packet_aboba_nike_pro.egg-info/top_level.txt
