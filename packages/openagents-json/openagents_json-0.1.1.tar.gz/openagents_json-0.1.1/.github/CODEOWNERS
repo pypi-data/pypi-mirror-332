@@ -1,0 +1,11 @@
+# This file defines code ownership for the OpenAgents JSON project
+# Each line is a file pattern followed by one or more owners
+
+# Default owners for everything in the repo
+* @nznking
+
+# Core package
+/openagents_json/ @nznking
+
+# GitHub Actions workflows
+/.github/workflows/ @nznking

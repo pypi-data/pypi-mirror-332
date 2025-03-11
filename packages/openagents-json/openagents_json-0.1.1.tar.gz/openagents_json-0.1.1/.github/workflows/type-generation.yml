@@ -1,0 +1,56 @@
+name: Type Generation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'openagents_json/workflow/models.py'
+      - 'openagents_json/workflow/validator/base.py'
+      - 'scripts/generate_types.py'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'openagents_json/workflow/models.py'
+      - 'openagents_json/workflow/validator/base.py'
+      - 'scripts/generate_types.py'
+  workflow_dispatch:
+
+jobs:
+  generate-types:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install datamodel-code-generator
+
+      - name: Generate types
+        run: |
+          python scripts/generate_types.py
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [[ -n "$(git status --porcelain openagents_json/ui/src/types/generated)" ]]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Fail if types are not up to date
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          echo "Error: Generated TypeScript types are not up to date."
+          echo "Please run 'python scripts/generate_types.py' and commit the changes."
+          git diff
+          exit 1
