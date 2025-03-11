@@ -1,0 +1,8 @@
+setup.py
+vasyapauk228nagibator/__init__.py
+vasyapauk228nagibator/vasyapauk228nagibator1.py
+vasyapauk228nagibator/vasyapauk228nagibator2.py
+vasyapauk228nagibator.egg-info/PKG-INFO
+vasyapauk228nagibator.egg-info/SOURCES.txt
+vasyapauk228nagibator.egg-info/dependency_links.txt
+vasyapauk228nagibator.egg-info/top_level.txt

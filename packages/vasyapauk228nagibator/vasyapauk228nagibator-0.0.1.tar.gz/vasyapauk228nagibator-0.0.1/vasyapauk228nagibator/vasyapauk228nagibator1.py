@@ -1,0 +1,2 @@
+def nig():
+    print("nig")
