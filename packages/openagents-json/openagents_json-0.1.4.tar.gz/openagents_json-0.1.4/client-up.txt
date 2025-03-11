@@ -1,0 +1,96 @@
+**Below is a consolidated `next_steps.txt` plan with a combined checklist, merging the refined MVP recommendations **and** the goal for an automatically generated (Swagger-compatible) API experience—without including any sample code.**  
+
+---
+
+## next_steps.txt
+
+### 1. **Introduce Basic Workflow Validation**
+
+- **Action**: Create a dedicated validation module or function (e.g., `workflow_validation`) that inspects each workflow’s fields (`id`, `steps`, references to agents/tools) before execution.  
+- **Success Metric**: If the workflow is invalid, respond with a clear error (e.g., `400 Bad Request`) in the FastAPI endpoint.
+
+---
+
+### 2. **Add Minimal Retry Logic for Workflow Steps**
+
+- **Action**: Provide an optional `max_retries` parameter for each step. If a step fails, retry up to the specified limit.  
+- **Success Metric**: Demonstrate partial resilience to transient failures without introducing overly complex orchestration.
+
+---
+
+### 3. **Standardize FastAPI API with Pydantic Models & Consistent Errors**
+
+- **Action**:  
+  - Use Pydantic schemas for input and output objects (e.g., `WorkflowCreate`, `JobCreate`).  
+  - Maintain a uniform error response structure (e.g., `{ "error": "ErrorName", "detail": "Error details here" }`).  
+- **Success Metric**: All routes produce well-defined OpenAPI docs with consistent error formats.
+
+---
+
+### 4. **Expand Basic Test Coverage: Unit & Integration**
+
+- **Action**:  
+  - Create unit tests (for agents, job manager, workflow logic) in a `tests/unit/` folder.  
+  - Implement integration tests in a `tests/integration/` folder, calling your FastAPI endpoints with a `TestClient`.  
+- **Success Metric**: Automatic tests verify that a workflow can be registered, run, and produce expected outcomes.
+
+---
+
+### 5. **(Optional) CLI Stub**
+
+- **Action**: If time allows, implement a minimal CLI command (e.g., validating a workflow) that internally calls your FastAPI routes.  
+- **Success Metric**: Provide basic convenience for local testing. Not essential if your main priority is the FastAPI extension.
+
+---
+
+### 6. **Establish a Simple CI Pipeline**
+
+- **Action**:  
+  - Use GitHub Actions (or another CI) to run `pytest` automatically.  
+  - (Optional) Track coverage with a coverage tool, enforcing coverage thresholds.  
+- **Success Metric**: PRs and commits trigger tests, preventing regressions or unverified code from merging.
+
+---
+
+### 7. **Ensure Swagger-Compatible Auto-Documentation**
+
+- **Action**:  
+  - For each route, define Pydantic request/response models and docstrings.  
+  - Let FastAPI’s built-in `/docs` (Swagger) and `/redoc` auto-generate the UI.  
+  - Add route-level metadata (like `summary` and `description`) for clarity.  
+- **Success Metric**: All endpoints appear in `/docs` with clear parameters, JSON schemas, and error formats—minimal manual overhead.
+
+---
+
+## Checklist
+
+1. **Workflow Validation**  
+   - [ ] Implement a validation module.  
+   - [ ] Return `400` if the workflow fails validation.  
+
+2. **Retry Logic**  
+   - [ ] Add `max_retries` in step definitions.  
+   - [ ] Track attempt counts to prevent infinite loops.  
+
+3. **API & Model Consistency**  
+   - [ ] Replace ad-hoc dicts with Pydantic models (input/output).  
+   - [ ] Standardize error responses.  
+
+4. **Unit & Integration Tests**  
+   - [ ] Write core unit tests for agents, job manager, validation.  
+   - [ ] Write integration tests calling FastAPI endpoints.  
+
+5. **(Optional) CLI Stub**  
+   - [ ] Decide if a CLI is needed for local testing.  
+   - [ ] If so, create a minimal command (e.g., `openagents test`).  
+
+6. **Set Up CI**  
+   - [ ] Configure GitHub Actions to run tests.  
+   - [ ] (Optional) Enforce coverage thresholds.  
+
+7. **Swagger-Generated Documentation**  
+   - [ ] Use Pydantic schemas thoroughly.  
+   - [ ] Provide route docstrings and metadata.  
+   - [ ] Verify endpoints in `/docs` or `/redoc`.  
+
+By following these seven steps—and using the above checklist—you’ll uphold a **simple, stable** FastAPI extension with reduced risk of runtime errors, thorough test coverage, and automatically generated docs that other developers can easily consume.
