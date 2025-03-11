@@ -1,0 +1,10 @@
+pypi_test_ameynert/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_test_ameynert/main.py,sha256=j2efuAqhSTHpg1SVaauo9_jpQgtCVTHlSJ3Cs5DU4_M,779
+pypi_test_ameynert/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_test_ameynert/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_test_ameynert/tools/hello.py,sha256=5yABYlguY3GlW902eczvs-Za0ZKzfVBKY5p8s8kgHPs,167
+pypi_test_ameynert-0.1.0.dist-info/LICENSE,sha256=nhb8fSZ6BiLse8bizh6cUrZkZ9xrSeRjv2V0z5W_09U,1076
+pypi_test_ameynert-0.1.0.dist-info/METADATA,sha256=9_4t9dzGGEP0gb7Lp1R3b-8vUr7mhI4y9IctSgonBFQ,3118
+pypi_test_ameynert-0.1.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pypi_test_ameynert-0.1.0.dist-info/entry_points.txt,sha256=1eCQOVPaQFnKTbgguzuUuJb_SYt2zWBrGfX7Y9ato3g,66
+pypi_test_ameynert-0.1.0.dist-info/RECORD,,
