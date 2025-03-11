@@ -1,0 +1,66 @@
+[project]
+name = "hyperiax"
+authors = [
+  { name="Stefan Sommer", email="sommer@di.ku.dk" },
+  { name="Marcus Holte Teller", email="marcus@di.ku.dk" },
+  { name="Gefan Yang", email="***@di.ku.dk" },
+  { name="Michael Baand Severinsen", email="***@di.ku.dk" },
+  { name="Morten Akhøj Pedersen", email="***@di.ku.dk" },
+  { name="Nicklas Boserup", email="***@di.ku.dk" }
+]
+description = "Tree traversals using JAX"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "jax",
+    "jaxlib",
+    "tqdm",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+examples = [
+    "jaxdifferentialgeometry",
+    "notebook",
+    "ipykernel",
+    "matplotlib",
+    "pandas",
+    "plotly",
+    "trimesh",
+]
+dev = [
+    "black",
+    "flake8",
+    "notebook",
+    "ipykernel",
+    "matplotlib",
+    "plotly",
+    "pytest",
+]
+doc = [
+    "hyperiax",
+    "sphinx-rtd-theme",
+    "sphinx-autodoc-annotation",
+    "nbsphinx",
+    "markupsafe==2.0.1",
+    "ipython",
+]
+
+[project.urls]
+Homepage = "https://github.com/computationalevolutionarymorphometry/hyperiax"
+Issues = "https://github.com/computationalevolutionarymorphometry/hyperiax/issues"
+
+[build-system]
+requires = [
+    "setuptools>=60",
+    "setuptools-scm>=8.0",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_file = "hyperiax/_version.py"
