@@ -1,0 +1,9 @@
+carconnectivity_plugins/mqtt_homeassistant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+carconnectivity_plugins/mqtt_homeassistant/_version.py,sha256=ScgmPZZ2rB5sd02-ceIOSKP_pK8jHq6dsu7tkCUIFho,508
+carconnectivity_plugins/mqtt_homeassistant/plugin.py,sha256=StbRV4gf5Xc9bUd-vVv7O0FL8xnko1m_PgB_eUI1dzo,55352
+carconnectivity_plugins/mqtt_homeassistant/ui/plugin_ui.py,sha256=HXfksTDIH0-s1khm66-oK2BvFySbx6zjgLDnAVDWfn8,1472
+carconnectivity_plugin_mqtt_homeassistant-0.2a2.dist-info/LICENSE,sha256=PIwI1alwDyOfvEQHdGCm2u9uf_mGE8030xZDfun0xTo,1071
+carconnectivity_plugin_mqtt_homeassistant-0.2a2.dist-info/METADATA,sha256=dCvHWYbAhox7KV65805My5JGCtkyhWh-wD8pzMkXCnU,6602
+carconnectivity_plugin_mqtt_homeassistant-0.2a2.dist-info/WHEEL,sha256=52BFRY2Up02UkjOa29eZOS2VxUrpPORXg1pkohGGUS8,91
+carconnectivity_plugin_mqtt_homeassistant-0.2a2.dist-info/top_level.txt,sha256=ep_mZungsfFWxUx-jsL6dHWIcCQyftqeC3UbHAwR71g,24
+carconnectivity_plugin_mqtt_homeassistant-0.2a2.dist-info/RECORD,,
