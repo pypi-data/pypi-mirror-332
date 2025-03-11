@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+FastWrite.egg-info/PKG-INFO
+FastWrite.egg-info/SOURCES.txt
+FastWrite.egg-info/dependency_links.txt
+FastWrite.egg-info/requires.txt
+FastWrite.egg-info/top_level.txt
+QuickScript/__init__.py
+QuickScript/bleu.py
+QuickScript/config.py
+QuickScript/data_flow.py
+QuickScript/doc_generator.py
+QuickScript/file_processor.py
