@@ -1,0 +1,9 @@
+README.md
+setup.py
+finiteautomata/__init__.py
+finiteautomata/core.py
+finiteautomata.egg-info/PKG-INFO
+finiteautomata.egg-info/SOURCES.txt
+finiteautomata.egg-info/dependency_links.txt
+finiteautomata.egg-info/requires.txt
+finiteautomata.egg-info/top_level.txt
