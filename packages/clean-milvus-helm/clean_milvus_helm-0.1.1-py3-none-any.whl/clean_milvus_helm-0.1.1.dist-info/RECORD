@@ -1,0 +1,6 @@
+clean_milvus_helm/__init__.py,sha256=ZDvbFNkhM7j7K6pdbYRP1dsGwy10Y7o3zkKz1dW1cT8,88
+clean_milvus_helm/main.py,sha256=N5tBNpmlqM_ai8fcSl4R0xrlgay32gOtpDEol_2XL6g,4949
+clean_milvus_helm-0.1.1.dist-info/METADATA,sha256=E7hQWe6BEchYl5UD84i-1m3YRGFEOLJyMYKFhMQ-ErE,1178
+clean_milvus_helm-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+clean_milvus_helm-0.1.1.dist-info/entry_points.txt,sha256=XHLSR-R6_Ys_XUe4cVLbmZBmF30eAM4JnYBzq6XxEJM,66
+clean_milvus_helm-0.1.1.dist-info/RECORD,,
