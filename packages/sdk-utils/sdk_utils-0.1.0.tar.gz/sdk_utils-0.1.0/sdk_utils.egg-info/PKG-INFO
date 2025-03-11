@@ -1,0 +1,72 @@
+Metadata-Version: 2.2
+Name: sdk_utils
+Version: 0.1.0
+Summary: A utility library for SDK development
+Home-page: https://github.com/guyue55/sdk_utils
+Author: Author
+Author-email: author@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# SDK Utils
+
+A utility library for SDK development that provides common functionality for building Python SDKs.
+
+## Installation
+
+```bash
+pip install sdk_utils
+```
+
+## Features
+
+- API client utilities
+- Authentication helpers
+- Rate limiting and retry mechanisms
+- Response parsing and error handling
+- Logging and debugging tools
+
+## Usage
+
+```python
+from sdk_utils.client import APIClient
+from sdk_utils.auth import BearerAuth
+
+# Create an authenticated client
+client = APIClient(
+    base_url="https://api.example.com",
+    auth=BearerAuth("your_token_here"),
+    timeout=30
+)
+
+# Make API requests with automatic retry and error handling
+response = client.get("/endpoint", params={"key": "value"})
+
+# Parse the response
+data = response.json()
+print(data)
+```
+
+## Documentation
+
+For full documentation, visit [our documentation site](https://github.com/yourusername/sdk_utils).
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sdk_utils/__init__.py
+sdk_utils/auth.py
+sdk_utils/client.py
+sdk_utils/exceptions.py
+sdk_utils.egg-info/PKG-INFO
+sdk_utils.egg-info/SOURCES.txt
+sdk_utils.egg-info/dependency_links.txt
+sdk_utils.egg-info/top_level.txt
+tests/__init__.py
+tests/test_client.py
