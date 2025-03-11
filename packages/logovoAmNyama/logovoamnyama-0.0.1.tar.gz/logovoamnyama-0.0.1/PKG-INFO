@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: logovoAmNyama
+Version: 0.0.1
+Summary: My Package
+Author: Savina Julia
+Author-email: uliasavina2005@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary

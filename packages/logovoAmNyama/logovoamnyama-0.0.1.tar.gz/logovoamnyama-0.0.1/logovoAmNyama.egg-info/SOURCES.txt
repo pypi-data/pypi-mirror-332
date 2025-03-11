@@ -1,0 +1,8 @@
+setup.py
+logovoAmNyama/__init__.py
+logovoAmNyama/onene.py
+logovoAmNyama/twowo.py
+logovoAmNyama.egg-info/PKG-INFO
+logovoAmNyama.egg-info/SOURCES.txt
+logovoAmNyama.egg-info/dependency_links.txt
+logovoAmNyama.egg-info/top_level.txt
