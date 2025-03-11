@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/maplotlibcisco-distutils/__init__.py
+src/maplotlibcisco_distutils.egg-info/PKG-INFO
+src/maplotlibcisco_distutils.egg-info/SOURCES.txt
+src/maplotlibcisco_distutils.egg-info/dependency_links.txt
+src/maplotlibcisco_distutils.egg-info/top_level.txt
