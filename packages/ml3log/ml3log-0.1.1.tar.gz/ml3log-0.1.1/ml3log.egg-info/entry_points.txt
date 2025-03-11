@@ -1,0 +1,2 @@
+[console_scripts]
+ml3log = ml3log.__main__:main
