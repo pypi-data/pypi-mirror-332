@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: northguard
+Version: 0.0.1
+Summary: A Python client for a pubsub system.
+Author: jonb
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+Still in early development. Come back later!
+
