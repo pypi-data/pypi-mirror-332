@@ -1,0 +1,99 @@
+test_cases:
+  # ---------------------------
+  # 正常场景
+  # ---------------------------
+  - description: "正常场景 - 读取最新区块的存储槽（默认区块标识符）"
+    method_name: "get_storage_at"
+    params:
+      - "0xContractAddress"  # 有效合约地址
+      - "0x0"                # 存储位置（slot 0）
+
+  - description: "正常场景 - 使用十六进制存储位置"
+    method_name: "get_storage_at"
+    params:
+      - "0xContractAddress"
+      - "0x1234"             # 十六进制位置
+    kwargs: {block_identifier: "latest"}
+
+  - description: "正常场景 - 使用整数存储位置"
+    method_name: "get_storage_at"
+    params:
+      - "0xContractAddress"
+      - 65536                 # 整数位置（自动转为十六进制）
+    kwargs: {block_identifier: 123456}
+
+  - description: "正常场景 - 读取空存储槽"
+    method_name: "get_storage_at"
+    params:
+      - "0xUninitializedContract"
+      - "0x1"
+    expected_result: "0x0000000000000000000000000000000000000000000000000000000000000000"
+
+  - description: "正常场景 - 使用ENS域名合约地址"
+    method_name: "get_storage_at"
+    params:
+      - "storage.eth"         # 解析为合约地址的ENS域名
+      - "0x0"
+
+  # ---------------------------
+  # 异常场景
+  # ---------------------------
+  - description: "异常场景 - 无效合约地址格式"
+    method_name: "get_storage_at"
+    params:
+      - "0xINVALID"
+      - "0x0"
+    expected_error: "InvalidAddress"
+
+  - description: "异常场景 - 非合约地址查询"
+    method_name: "get_storage_at"
+    params:
+      - "0x742d35Cc6634C0532925a3b844Bc454e4438f44e"  # 普通EOA地址
+      - "0x0"
+    expected_result: "0x"  # 或抛出错误，根据具体实现
+
+  - description: "异常场景 - 存储位置格式错误"
+    method_name: "get_storage_at"
+    params:
+      - "0xContractAddress"
+      - "invalid_slot"       # 非十六进制/整数
+    expected_error: "Web3ValidationError"
+
+  - description: "异常场景 - 不存在的区块号"
+    method_name: "get_storage_at"
+    params:
+      - "0xContractAddress"
+      - "0x0"
+    kwargs: {block_identifier: 99999999}
+    expected_error: "BlockNotFound"
+
+  # ---------------------------
+  # 边界场景
+  # ---------------------------
+  - description: "边界场景 - 最大存储位置（2^256-1）"
+    method_name: "get_storage_at"
+    params:
+      - "0xContractAddress"
+      - "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    expected_condition: "len(result) == 66"  # 0x前缀 + 64字符
+
+  - description: "边界场景 - 零存储位置"
+    method_name: "get_storage_at"
+    params:
+      - "0xContractAddress"
+      - 0
+    expected_condition: "result.startswith('0x')"
+
+  - description: "边界场景 - 超大整数位置（2^256）"
+    method_name: "get_storage_at"
+    params:
+      - "0xContractAddress"
+      - 115792089237316195423570985008687907853269984665640564039457584007913129639936  # 2^256
+    expected_error: "Web3ValidationError"  # 超过uint256范围
+
+  - description: "边界场景 - 已销毁合约的存储查询"
+    method_name: "get_storage_at"
+    params:
+      - "0xDestroyedContract"
+      - "0x0"
+    expected_result: "0x0000000000000000000000000000000000000000000000000000000000000000"

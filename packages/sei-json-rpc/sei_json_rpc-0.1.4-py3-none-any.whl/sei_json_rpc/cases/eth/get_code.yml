@@ -1,0 +1,74 @@
+test_cases:
+  # ---------------------------
+  # 正常场景
+  # ---------------------------
+  - description: "正常场景 - 最新区块的合约代码查询（默认区块标识符）"
+    method_name: "get_code"
+    params: [ "0x388C818CA8B9251b393131C08a736A67ccB19297" ]
+
+  - description: "正常场景 - 显式指定最新区块"
+    method_name: "get_code"
+    params: [ "0x388C818CA8B9251b393131C08a736A67ccB19297" ]
+    kwargs: { block_identifier: "latest" }
+
+  - description: "正常场景 - 指定历史区块号查询"
+    method_name: "get_code"
+    params: [ "0xdAC17F958D2ee523a2206206994597C13D831ec7" ]
+    kwargs: { block_identifier: 21966579 }  # 合约部署后的区块号
+
+  - description: "正常场景 - 使用区块哈希查询"
+    method_name: "get_code"
+    params: [ "0xdAC17F958D2ee523a2206206994597C13D831ec7" ]
+    kwargs: { block_identifier: "0x966379b5c50e5dea50e08567ea7279b893fd0abf13fe452e83ed24922aedfe44" }
+
+  - description: "正常场景 - 普通地址返回空代码"
+    method_name: "get_code"
+    params: [ "0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5" ]  # 普通EOA地址
+    expected_result: "0x"  # 普通账户代码为空
+
+  # ---------------------------
+  # 异常场景
+  # ---------------------------
+  - description: "异常场景 - 无效地址格式"
+    method_name: "get_code"
+    params: [ "0xINVALID_ADDRESS" ]
+    # "ERROR: ENS name: '0xContractAddress' is invalid."
+    expected_error: "is invalid"
+
+  - description: "异常场景 - 错误类型参数（列表类型区块号）"
+    method_name: "get_code"
+    params: [ "0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5" ]
+    kwargs: { block_identifier: [ 123 ] }
+    expected_error: "ERROR: {'code': -32602, 'message': 'invalid argument 1: json: cannot unmarshal array into Go value of type string'}"
+
+  - description: "异常场景 - 无效区块哈希长度"
+    method_name: "get_code"
+    params: [ "0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5" ]
+    kwargs: { block_identifier: "0x1234" }
+    expected_error: ""
+
+  # ---------------------------
+  # 边界场景
+  # ---------------------------
+  - description: "边界场景 - 零地址代码查询"
+    method_name: "get_code"
+    params: [ "0x0000000000000000000000000000000000000000" ]
+    expected_result: ""  # 零地址无代码
+
+  # ---------------------------
+  # 待实现场景
+  # ---------------------------
+
+  - description: "边界场景 - 已销毁合约地址查询"
+    method_name: "get_code"
+    params: [ "" ]  # TODO 已自毁的合约地址
+    kwargs: { block_identifier: "latest" }
+    expected_result: ""  # 自毁后代码为空
+
+  - description: "边界场景 - 超长合约代码验证"
+    method_name: "get_code"
+    params: [ "" ]  # TODO 具有超长字节码的合约
+
+  - description: "正常场景 - 使用ENS域名查询合约"
+    method_name: "get_code"
+    params: [ "contract.eth" ]  # TODO 替换为真实ENS域名
