@@ -1,0 +1,5 @@
+Metadata-Version: 2.2
+Name: vortex_authentication
+Version: 0.2.0
+Requires-Dist: requests
+Dynamic: requires-dist
