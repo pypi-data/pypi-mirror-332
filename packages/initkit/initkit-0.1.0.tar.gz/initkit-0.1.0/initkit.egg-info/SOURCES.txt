@@ -1,0 +1,12 @@
+README.md
+setup.py
+app/__init__.py
+app/config.py
+app/models.py
+app/views.py
+initkit.egg-info/PKG-INFO
+initkit.egg-info/SOURCES.txt
+initkit.egg-info/dependency_links.txt
+initkit.egg-info/entry_points.txt
+initkit.egg-info/requires.txt
+initkit.egg-info/top_level.txt
