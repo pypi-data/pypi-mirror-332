@@ -1,0 +1,6 @@
+setup.py
+byteduwot/__init__.py
+byteduwot.egg-info/PKG-INFO
+byteduwot.egg-info/SOURCES.txt
+byteduwot.egg-info/dependency_links.txt
+byteduwot.egg-info/top_level.txt
