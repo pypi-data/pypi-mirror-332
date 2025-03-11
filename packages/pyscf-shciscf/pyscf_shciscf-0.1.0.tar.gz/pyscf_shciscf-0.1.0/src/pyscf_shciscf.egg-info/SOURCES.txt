@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/pyscf-shciscf/__init__.py
+src/pyscf_shciscf.egg-info/PKG-INFO
+src/pyscf_shciscf.egg-info/SOURCES.txt
+src/pyscf_shciscf.egg-info/dependency_links.txt
+src/pyscf_shciscf.egg-info/top_level.txt
