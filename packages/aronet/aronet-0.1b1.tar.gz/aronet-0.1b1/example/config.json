@@ -1,0 +1,27 @@
+{
+  "private_key": "/home/mt/Projects/aronet/example/config.json",
+  "organization": "example",
+  "common_name": "host-01",
+  "daemon": {
+    "prefixs": [
+      "192.168.128.1/24",
+      "240e::1/60"
+    ],
+    "network": "fd00::1/64",
+    "use_netns": true,
+    "extra_ip": ["192.168.128.1/32"]
+  },
+  "endpoints": [
+    {
+      "address": "1.1.1.1",
+      "port": 12025,
+      "serial_number": 0
+    },
+    {
+      "address_family": "ip6",
+      "address": null,
+      "port": 12025,
+      "serial_number": 1
+    }
+  ]
+}

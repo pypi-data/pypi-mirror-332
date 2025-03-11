@@ -1,0 +1,12 @@
+result
+*.egg-info
+build
+dist
+.venv
+subprojects/strongswan
+subprojects/bird
+__pycache__
+test.py
+.ruff_cache
+.vagrant
+.tmp

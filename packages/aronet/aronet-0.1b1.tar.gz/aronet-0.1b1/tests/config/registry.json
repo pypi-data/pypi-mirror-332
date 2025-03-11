@@ -1,0 +1,80 @@
+[
+  {
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASCV1oi1Fu7jK31pSvMq1ofahu9BRI9O7zsZZ2bpdmJo=\n-----END PUBLIC KEY-----",
+    "organization": "test1",
+    "nodes": [
+      {
+        "common_name": "moon",
+        "endpoints": [
+          {
+            "serial_number": 0,
+            "address": "172.32.0.2",
+            "port": 12025
+          }
+        ],
+        "remarks": {
+          "network": "fd66::1/64",
+          "prefixs": [
+            "192.168.128.1/24"
+          ]
+        }
+      },
+      {
+        "common_name": "earth",
+        "endpoints": [
+          {
+            "serial_number": 0,
+            "address": "172.32.0.4",
+            "port": 12025
+          }
+        ],
+        "remarks": {
+          "network": "fd68::1/64",
+          "prefixs": [
+            "192.168.130.1/24"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAgsODQENIjHqks45F0U3tcJbg5rp1bQvb93z3aP75y/c=\n-----END PUBLIC KEY-----",
+    "organization": "test2",
+    "nodes": [
+      {
+        "common_name": "sun",
+        "endpoints": [
+          {
+            "address_family": "ip4",
+            "address": null,
+            "serial_number": 0,
+            "port": 12025
+          }
+        ],
+        "remarks": {
+          "network": "fd67::1/64",
+          "prefixs": [
+            "192.168.129.1/24"
+          ]
+        }
+      },
+      {
+        "common_name": "mars",
+        "endpoints": [
+          {
+            "address_family": "ip4",
+            "address": "172.32.0.5",
+            "serial_number": 0,
+            "port": 12025
+          }
+        ],
+        "remarks": {
+          "network": "fd69::1/64",
+          "prefixs": [
+            "192.168.131.1/24"
+          ]
+        }
+      }
+    ]
+  }
+]
