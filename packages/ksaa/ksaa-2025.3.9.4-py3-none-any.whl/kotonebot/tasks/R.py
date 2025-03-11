@@ -1,0 +1,418 @@
+
+from kotonebot.tasks.common import sprite_path
+from kotonebot.backend.core import Image, HintBox, HintPoint
+
+
+
+class Common:
+    
+    ButtonClose = Image(path=sprite_path(r"ba0f3cab-896b-437a-976c-d3d14f8f6aa3.png"), name="button_close.png")
+
+    ButtonCommuFastforward = Image(path=sprite_path(r"3b4ad523-58bc-41e7-9f86-3fae9e1dabcb.png"), name="button_commu_fastforward.png")
+
+    ButtonCommuSkip = Image(path=sprite_path(r"b025652e-575c-4c42-9211-973bc7f9d605.png"), name="button_commu_skip.png")
+
+    ButtonCompletion = Image(path=sprite_path(r"015dcacc-8b26-4ca3-b339-619d5f587e65.png"), name="button_completion.png")
+
+    ButtonConfirm = Image(path=sprite_path(r"f8611ca6-64b8-435a-b00e-6f0543c33c09.png"), name="button_confirm.png")
+
+    ButtonConfirmNoIcon = Image(path=sprite_path(r"cff6d2cb-b37d-481d-8f56-ba9b7d5e4e52.png"), name="button_confirm_no_icon.png")
+
+    ButtonContest = Image(path=sprite_path(r"57023874-f2a3-4ff4-88da-bf3d084a7a01.png"), name="button_contest.png")
+
+    ButtonEnd = Image(path=sprite_path(r"077ae8c9-ee68-404e-95c0-7e741593b9d9.png"), name="button_end.png")
+
+    ButtonHome = Image(path=sprite_path(r"bf9920c5-5dd8-4ce7-b671-6049ab584681.png"), name="button_home.png")
+
+    ButtonIconArrowShort = Image(path=sprite_path(r"41637b56-22f0-4894-90d3-7b34c4da5aa9.png"), name="button_icon_arrow_short.png")
+
+    ButtonIconArrowShortDisabled = Image(path=sprite_path(r"18531eae-4345-4e06-83e5-27b964426adb.png"), name="button_icon_arrow_short_disabled.png")
+
+    ButtonIconCheckMark = Image(path=sprite_path(r"a4ebe721-333a-495d-a175-ce60632bea7f.png"), name="button_icon_check_mark.png")
+
+    ButtonIconClose = Image(path=sprite_path(r"94bb77e6-9326-42b6-8682-4af05222a0bb.png"), name="button_icon_close.png")
+
+    ButtonNext = Image(path=sprite_path(r"0831e16b-9320-4fad-9354-e5dfddb0723c.png"), name="button_next.png")
+
+    ButtonNextNoIcon = Image(path=sprite_path(r"1ea4293e-8efb-4eb6-bc86-136c9751ac9e.png"), name="button_next_no_icon.png")
+
+    ButtonRetry = Image(path=sprite_path(r"b5ee4329-0a2f-4b3e-90cd-ed3be076dc26.png"), name="button_retry.png")
+
+    ButtonSelect = Image(path=sprite_path(r"75f346aa-0180-4365-ac3f-72b8225ce24c.png"), name="button_select.png")
+
+    ButtonStart = Image(path=sprite_path(r"2e1f19c7-cc34-4d99-ac3f-ac7d78a389db.png"), name="button_start.png")
+
+    ButtonToolbarHome = Image(path=sprite_path(r"700f15d8-83ac-4bab-b842-314d7d6e8e10.png"), name="button_toolbar_home.png")
+
+    CheckboxUnchecked = Image(path=sprite_path(r"bf0a7d4e-d126-4884-ba60-12ca0eeee849.png"), name="checkbox_unchecked.png")
+
+    ButtonToolbarHomeBinary = Image(path=sprite_path(r"2f68e457-4491-4ebc-b436-e3e63db92e14.png"), name="底部工具栏 首页按钮 二值化图片")
+
+    ButtonToolbarMenuBinary = Image(path=sprite_path(r"bf6dcf21-2ffc-441f-82f3-59319f2313b1.png"), name="底部工具栏 菜单按钮 二值化图片")
+
+    TextGameUpdate = Image(path=sprite_path(r"e5af145e-5b3b-4a25-930b-e704570c3007.png"), name="text_game_update.png")
+
+    TextNetworkError = Image(path=sprite_path(r"2bb7f745-f593-4ef1-80a9-9e3cd08f53bc.png"), name="text_network_error.png")
+
+    ButtonOK = Image(path=sprite_path(r"8424ecdd-8857-4764-9fd0-d4bfa440c128.png"), name="OK 按钮")
+
+    ButtonSelect2 = Image(path=sprite_path(r"5ebcde3b-f0fd-4e5d-b3de-ada8f0b5e03b.png"), name="選択する")
+
+
+    pass
+class Daily:
+    
+    ButonLinkData = Image(path=sprite_path(r"cbc181fd-f17c-4f80-a875-e5e5efba69ee.png"), name="buton_link_data.png")
+
+    ButtonAssignmentPartial = Image(path=sprite_path(r"69679601-4bf0-4b8b-9106-0dbb5d4e71ee.png"), name="button_assignment_partial.png")
+
+    ButtonClaimAllNoIcon = Image(path=sprite_path(r"35fd6143-5ce3-41b3-a221-62d32a8d87f5.png"), name="button_claim_all_no_icon.png")
+
+    ButtonContestChallenge = Image(path=sprite_path(r"672f812c-c4a3-462e-bdda-13d93f2b7825.png"), name="button_contest_challenge.png")
+
+    ButtonContestChallengeStart = Image(path=sprite_path(r"84cc2831-bda3-4ada-8dd9-75dc6153b7d4.png"), name="button_contest_challenge_start.png")
+
+    ButtonContestRanking = Image(path=sprite_path(r"3b50277f-9da3-48e4-ba7c-2a416820a798.png"), name="button_contest_ranking.png")
+
+    ButtonContestStart = Image(path=sprite_path(r"bdd64180-d3dc-4833-a31e-a44e7efae2fd.png"), name="button_contest_start.png")
+
+    ButtonDailyShop = Image(path=sprite_path(r"e47a505c-7ea3-493b-b428-6db4cc305758.png"), name="button_daily_shop.png")
+
+    ButtonHomeCurrent = Image(path=sprite_path(r"95b4eea0-72ac-4fb5-92f0-6970160651d5.png"), name="button_home_current.png")
+
+    ButtonIconPass = Image(path=sprite_path(r"10372be1-7bd1-47da-9341-179e7565d08f.png"), name="button_icon_pass.png")
+
+    ButtonIconSkip = Image(path=sprite_path(r"a43d6b34-d273-4313-8139-decf9e8e544d.png"), name="button_icon_skip.png")
+
+    ButtonMission = Image(path=sprite_path(r"93d62710-eee8-4ef9-8b24-c0553f7862ff.png"), name="button_mission.png")
+
+    ButtonPass = Image(path=sprite_path(r"f19c43e3-3ff8-420e-9f5c-4a2771a8aa36.png"), name="button_pass.png")
+
+    ButtonPassClaim = Image(path=sprite_path(r"ed39dfd4-d9d5-4f13-835b-b620fe9bf485.png"), name="button_pass_claim.png")
+
+    ButtonPresentsPartial = Image(path=sprite_path(r"7e2e8f12-5d14-4466-8b90-de2b16a00c32.png"), name="button_presents_partial.png")
+
+    ButtonProduce = Image(path=sprite_path(r"d20e9c22-5ded-47bd-a8d2-03964fd66bb9.png"), name="button_produce.png")
+
+    ButtonShop = Image(path=sprite_path(r"78974ea1-c106-4c05-b9a1-7037d4e5f911.png"), name="button_shop.png")
+
+    ButtonShopCountAdd = Image(path=sprite_path(r"78cdc702-2a31-41f7-a0f9-f8eb964bbff5.png"), name="button_shop_count_add.png")
+
+    ButtonShopCountAddDisabled = Image(path=sprite_path(r"141ddc38-d0c8-4b6d-ba13-9ef553ff4ab1.png"), name="button_shop_count_add_disabled.png")
+
+    IconTitleDailyShop = Image(path=sprite_path(r"e9ee330d-dfca-440e-8b8c-0a3b4e8c8730.png"), name="日常商店标题图标")
+
+    BoxHomeAssignment = HintBox(x1=16, y1=642, x2=127, y2=752, source_resolution=(720, 1280))
+
+    BoxHomeAP = HintBox(x1=291, y1=4, x2=500, y2=82, source_resolution=(720, 1280))
+
+    BoxHomeJewel = HintBox(x1=500, y1=7, x2=703, y2=82, source_resolution=(720, 1280))
+
+    BoxHomeActivelyFunds = HintBox(x1=11, y1=517, x2=137, y2=637, source_resolution=(720, 1280))
+
+    IconAssignKouchou = Image(path=sprite_path(r"cc6a2063-de6d-427f-9237-61b2e7f34fe0.png"), name="icon_assign_kouchou.png")
+
+    IconAssignMiniLive = Image(path=sprite_path(r"b7299d78-7d82-4d27-8895-8d3e09a913f6.png"), name="icon_assign_mini_live.png")
+
+    IconAssignOnlineLive = Image(path=sprite_path(r"7556ccec-5b38-4768-a161-b75794a4f212.png"), name="icon_assign_online_live.png")
+
+    IconAssignTitle = Image(path=sprite_path(r"62889407-47ca-4065-9e3d-67b8aa9fead9.png"), name="icon_assign_title.png")
+
+    IconShopAp = Image(path=sprite_path(r"a5fec2d1-5e69-4770-8828-24b23e2afd64.png"), name="icon_shop_ap.png")
+
+    IconShopMoney = Image(path=sprite_path(r"ba4c63e4-1e60-4443-8516-e4c489141c27.png"), name="icon_shop_money.png")
+
+    IconShopTitle = Image(path=sprite_path(r"5feff903-6fa6-474a-a2e0-9d95e2d0902f.png"), name="icon_shop_title.png")
+
+    IconTitleAssign = Image(path=sprite_path(r"112c8407-46c0-43ba-858b-6761b95027f8.png"), name="icon_title_assign.png")
+
+    IconTitlePass = Image(path=sprite_path(r"2c92c4d8-d770-43ee-8b6b-a54b0eed71eb.png"), name="icon_title_pass.png")
+
+    BoxApkUpdateDialogTitle = HintBox(x1=26, y1=905, x2=342, y2=967, source_resolution=(720, 1280))
+
+    ButtonAssignmentShortenTime = Image(path=sprite_path(r"1652f06a-5417-49ef-8949-4854772d9ab7.png"), name="工作页面 短缩 时间")
+
+    BoxMissonTabs = HintBox(x1=11, y1=929, x2=703, y2=1030, source_resolution=(720, 1280))
+
+    TextActivityFundsMax = Image(path=sprite_path(r"58267693-60fa-42e7-a224-1ef52bf74133.png"), name="text_activity_funds_max.png")
+
+    TextAssignmentCompleted = Image(path=sprite_path(r"7fc75d76-14e7-4e4d-95f4-fabd8ecb11eb.png"), name="text_assignment_completed.png")
+
+    TextContest = Image(path=sprite_path(r"9cc83e9a-97ec-411a-be06-3893a018156d.png"), name="text_contest.png")
+
+    TextContestLastOngoing = Image(path=sprite_path(r"ea12baef-5bc6-4690-b26b-4a0fc496aa94.png"), name="text_contest_last_ongoing.png")
+
+    TextContestNoMemory = Image(path=sprite_path(r"c34c3d7f-4eaf-4044-9e7e-9d2b93a550ea.png"), name="text_contest_no_memory.png")
+
+    TextContestOverallStats = Image(path=sprite_path(r"0324f414-e1d4-4d4b-a09c-6736b097c6f8.png"), name="text_contest_overall_stats.png")
+
+    TextShopPurchased = Image(path=sprite_path(r"551be7a9-f7f9-421c-94e6-09f5220c1ee2.png"), name="text_shop_purchased.png")
+
+    TextShopRecommended = Image(path=sprite_path(r"218bf557-53b0-4ba7-8812-646bed7716fa.png"), name="text_shop_recommended.png")
+
+    TextTabShopAp = Image(path=sprite_path(r"459ea2d5-0a55-444d-86a6-59b3a208fae6.png"), name="text_tab_shop_ap.png")
+
+
+    pass
+class Shop:
+    
+    ItemLessonNote = Image(path=sprite_path(r"0949c622-9067-4f0d-bac2-3f938a1d2ed2.png"), name="レッスンノート")
+
+    ItemVeteranNote = Image(path=sprite_path(r"b2af59e9-60e3-4d97-8c72-c7ba092113a3.png"), name="ベテランノート")
+
+    ItemSupportEnhancementPt = Image(path=sprite_path(r"835489e2-b29b-426c-b4c9-3bb9f8eb6195.png"), name="サポート強化Pt 支援强化Pt")
+
+    ItemSenseNoteVocal = Image(path=sprite_path(r"c5b7d67e-7260-4f08-a0e9-4d31ce9bbecf.png"), name="センスノート（ボーカル）感性笔记（声乐）")
+
+    ItemSenseNoteDance = Image(path=sprite_path(r"0f7d581d-cea3-4039-9205-732e4cd29293.png"), name="センスノート（ダンス）感性笔记（舞蹈）")
+
+    ItemSenseNoteVisual = Image(path=sprite_path(r"d3cc3323-51af-4882-ae12-49e7384b746d.png"), name="センスノート（ビジュアル）感性笔记（形象）")
+
+    ItemLogicNoteVocal = Image(path=sprite_path(r"a1df3af1-a3e7-4521-a085-e4dc3cd1cc57.png"), name="ロジックノート（ボーカル）理性笔记（声乐）")
+
+    ItemLogicNoteDance = Image(path=sprite_path(r"a9fcaf04-0c1f-4b0f-bb5b-ede9da96180f.png"), name="ロジックノート（ダンス）理性笔记（舞蹈）")
+
+    ItemLogicNoteVisual = Image(path=sprite_path(r"c3f536d6-a04a-4651-b3f9-dd2c22593f7f.png"), name="ロジックノート（ビジュアル）理性笔记（形象）")
+
+    ItemAnomalyNoteVocal = Image(path=sprite_path(r"eef25cf9-afd0-43b1-b9c5-fbd997bd5fe0.png"), name="アノマリーノート（ボーカル）非凡笔记（声乐）")
+
+    ItemAnomalyNoteDance = Image(path=sprite_path(r"df991b42-ed8e-4f2c-bf0c-aa7522f147b6.png"), name="アノマリーノート（ダンス）非凡笔记（舞蹈）")
+
+    ItemAnomalyNoteVisual = Image(path=sprite_path(r"9340b854-025c-40da-9387-385d38433bef.png"), name="アノマリーノート（ビジュアル）非凡笔记（形象）")
+
+    ItemRechallengeTicket = Image(path=sprite_path(r"ea1ba124-9cb3-4427-969a-bacd47e7d920.png"), name="再挑戦チケット 重新挑战券")
+
+    ItemRecordKey = Image(path=sprite_path(r"1926f2f9-4bd7-48eb-9eba-28ec4efb0606.png"), name="記録の鍵  解锁交流的物品")
+
+    class IdolPiece:
+        
+        倉本千奈_WonderScale = Image(path=sprite_path(r"6720b6e8-ae80-4cc0-a885-518efe12b707.png"), name="倉本千奈 WonderScale 碎片")
+    
+        篠泽广_光景 = Image(path=sprite_path(r"afa06fdc-a345-4384-b25d-b16540830256.png"), name="篠泽广 光景 碎片")
+    
+        紫云清夏_TameLieOneStep = Image(path=sprite_path(r"278b7d9c-707e-4392-9677-74574b5cdf42.png"), name="紫云清夏 Tame-Lie-One-Step 碎片")
+    
+        葛城リーリヤ_白線 = Image(path=sprite_path(r"74ff07b3-d91c-4579-80cd-379ed7020622.png"), name="葛城リーリヤ 白線 碎片")
+    
+        姫崎薪波_cIclumsy_trick  = Image(path=sprite_path(r"a7f5abf1-982f-4a55-8d41-3ad6f56798e0.png"), name="姫崎薪波 cIclumsy trick 碎片")
+    
+        花海咲季_FightingMyWay = Image(path=sprite_path(r"2bc00520-0afe-40e5-8743-d33fc6b2945a.png"), name="花海咲季 FightingMyWay 碎片")
+    
+        藤田ことね_世界一可愛い私 = Image(path=sprite_path(r"135ee57a-d30d-4ba8-83f0-9f1681a49ff7.png"), name="藤田ことね 世界一可愛い私 碎片")
+    
+        花海佑芽_TheRollingRiceball = Image(path=sprite_path(r"d15959bf-d07b-4f07-948a-c0aeaf17756a.png"), name="花海佑芽 The Rolling Riceball 碎片")
+    
+        月村手毬_LunaSayMaybe = Image(path=sprite_path(r"868b97a9-492e-4712-b47f-82b97495b019.png"), name="月村手毬 Luna say maybe 碎片")
+    
+    
+        pass
+
+    pass
+class Produce:
+    
+    BoxProduceOngoing = HintBox(x1=179, y1=937, x2=551, y2=1091, source_resolution=(720, 1280))
+
+    ButtonAutoSet = Image(path=sprite_path(r"43cf9b3a-0dcd-41b0-8083-0fd21a98d5b6.png"), name="button_auto_set.png")
+
+    ButtonProduce = Image(path=sprite_path(r"5ec1c6df-454c-4ae3-b81a-e2e50514ba5e.png"), name="button_produce.png")
+
+    ButtonProduceStart = Image(path=sprite_path(r"4dc821e3-6f15-4662-82c0-5116dfdd35fe.png"), name="button_produce_start.png")
+
+    ButtonRegular = Image(path=sprite_path(r"36ab6094-ff93-4fea-8d5a-58edff6ddaec.png"), name="button_regular.png")
+
+    CheckboxIconNoteBoost = Image(path=sprite_path(r"2ffd8372-e526-41fe-95e3-2e89a93933f9.png"), name="checkbox_icon_note_boost.png")
+
+    CheckboxIconSupportPtBoost = Image(path=sprite_path(r"c63b7939-a0fa-4c87-a890-ff69210fd02e.png"), name="checkbox_icon_support_pt_boost.png")
+
+    BoxModeButtons = HintBox(x1=7, y1=818, x2=713, y2=996, source_resolution=(720, 1280))
+
+    ButtonPIdolOverview = Image(path=sprite_path(r"e88c9ad1-ec37-4fcd-b086-862e1e7ce8fd.png"), name="Pアイドルー覧  P偶像列表展示")
+
+    BoxStepIndicator = HintBox(x1=4, y1=11, x2=405, y2=99, source_resolution=(720, 1280))
+
+    BoxSetCountIndicator = HintBox(x1=17, y1=671, x2=119, y2=707, source_resolution=(720, 1280))
+
+    PointProduceNextSet = HintPoint(x=702, y=832)
+
+    PointProducePrevSet = HintPoint(x=14, y=832)
+
+    IconPIdolLevel = Image(path=sprite_path(r"30a6f399-6999-4f04-bb77-651e0214112f.png"), name="P偶像卡上的等级图标")
+
+    KbIdolOverviewName = HintBox(x1=140, y1=16, x2=615, y2=97, source_resolution=(720, 1280))
+
+    ButtonResume = Image(path=sprite_path(r"ccbcb114-7f73-43d1-904a-3a7ae660c531.png"), name="再開する")
+
+    BoxResumeDialogProduceType = HintBox(x1=186, y1=491, x2=541, y2=550, source_resolution=(720, 1280))
+
+    BoxResumeDialogIdolTitle = HintBox(x1=194, y1=794, x2=523, y2=840, source_resolution=(720, 1280))
+
+    RadioTextSkipCommu = Image(path=sprite_path(r"8570e83a-2e97-41fe-98bb-850139044a1c.png"), name="radio_text_skip_commu.png")
+
+    TextAPInsufficient = Image(path=sprite_path(r"4883c564-f950-4a29-9f5f-6f924123cd22.png"), name="培育 AP 不足提示弹窗 标题")
+
+    ButtonRefillAP = Image(path=sprite_path(r"eaba6ebe-f0df-4918-aee5-ef4e3ffedcf0.png"), name="确认恢复AP按钮")
+
+    ScreenshotNoEnoughAp2 = Image(path=sprite_path(r"44b189e4-1254-4f99-bcbb-b24e9341c7f6.png"), name="screenshot_no_enough_ap_2.png")
+
+    TextRentAvailable = Image(path=sprite_path(r"bf5e39ce-6bd2-4354-9e6d-94a7d9b0017a.png"), name="text_rent_available.png")
+
+
+    pass
+class InPurodyuusu:
+    
+    A = Image(path=sprite_path(r"f9a90f25-15f3-47ab-a6cd-ca9e089d320e.png"), name="A.png")
+
+    AcquireBtnDisabled = Image(path=sprite_path(r"85d83075-a786-416c-b68d-e84f3d79288b.png"), name="acquire_btn_disabled.png")
+
+    ButtonCancel = Image(path=sprite_path(r"86aed4bf-b83e-4fa6-ab99-af4eb819b4ff.png"), name="button_cancel.png")
+
+    ButtonComplete = Image(path=sprite_path(r"76bb918f-6f96-4a33-a66e-398e69997c5e.png"), name="button_complete.png")
+
+    ButtonFinalPracticeDance = Image(path=sprite_path(r"34b9de54-12ba-43b3-ade9-12e4da6769e1.png"), name="button_final_practice_dance.png")
+
+    ButtonFinalPracticeVisual = Image(path=sprite_path(r"c3a24458-512b-45fa-81d9-86bc1d18bc49.png"), name="button_final_practice_visual.png")
+
+    ButtonFinalPracticeVocal = Image(path=sprite_path(r"fb45e8a7-be0a-41d1-a448-0a0c984e2bf5.png"), name="button_final_practice_vocal.png")
+
+    ButtonFollowNoIcon = Image(path=sprite_path(r"f917c735-2506-4bd8-ab67-924158a18300.png"), name="button_follow_no_icon.png")
+
+    ButtonIconStudy = Image(path=sprite_path(r"d5dbbcb0-1170-4db2-9863-7ac8fb37c634.png"), name="button_icon_study.png")
+
+    ButtonIconStudyVisual = Image(path=sprite_path(r"07a9f0b0-ccf9-4880-9b8b-505245b6df38.png"), name="button_icon_study_visual.png")
+
+    ButtonLeave = Image(path=sprite_path(r"8feff7f3-4e8d-45f4-b7a6-9a253f5fde4a.png"), name="button_leave.png")
+
+    ButtonNextNoIcon = Image(path=sprite_path(r"d4a90265-2ec0-4301-b068-6eeeae25dc4c.png"), name="button_next_no_icon.png")
+
+    ButtonNotAcquire = Image(path=sprite_path(r"4ac4bea1-03e6-4a45-a8f1-284019b2e2f1.png"), name="button_not_acquire.png")
+
+    ButtonRetry = Image(path=sprite_path(r"bef6fa7f-2a10-466e-85b0-4df4b3c7dd94.png"), name="button_retry.png")
+
+    ButtonTextActionOuting = Image(path=sprite_path(r"0455a241-ce90-49b2-9f8f-114156b5ddd8.png"), name="button_text_action_outing.png")
+
+    ButtonTextAllowance = Image(path=sprite_path(r"acfbe55a-000a-44bd-a8d0-3d42c3087c2c.png"), name="button_text_allowance.png")
+
+    ButtonTextConsult = Image(path=sprite_path(r"4a470210-9999-46d5-a645-a42c7c750401.png"), name="button_text_consult.png")
+
+    IconClearBlue = Image(path=sprite_path(r"4400dd0c-c329-45b4-863a-1d5c8cc17ed0.png"), name="icon_clear_blue.png")
+
+    IconTitleAllowance = Image(path=sprite_path(r"fa8ee677-18f3-46ee-a380-8db0f477cf76.png"), name="icon_title_allowance.png")
+
+    IconTitleStudy = Image(path=sprite_path(r"dc63a56b-b112-4610-8403-a0182edc1495.png"), name="icon_title_study.png")
+
+    LootboxSliverLock = Image(path=sprite_path(r"efa3d652-3d6e-403a-894a-61532d0e01d8.png"), name="lootbox_sliver_lock.png")
+
+    LootBoxSkillCard = Image(path=sprite_path(r"9bd06a9d-e663-4d7c-ad47-b014a06aab22.png"), name="loot_box_skill_card.png")
+
+    M = Image(path=sprite_path(r"4680321f-cb7a-43e8-ba66-1c630eb5bb6c.png"), name="M.png")
+
+    BoxWeeksUntilExam = HintBox(x1=11, y1=8, x2=237, y2=196, source_resolution=(720, 1280))
+
+    TextActionVocal = Image(path=sprite_path(r"d6b64759-26b7-45b1-bf8e-5c0d98611e0d.png"), name="Vo. レッスン")
+
+    TextActionDance = Image(path=sprite_path(r"303cccc1-c674-4d3a-8c89-19ea729fdbef.png"), name="Da. レッスン")
+
+    TextActionVisual = Image(path=sprite_path(r"cc8a495d-330d-447d-8a80-a8a6ecc409c5.png"), name="Vi. レッスン")
+
+    BoxExamTop = HintBox(x1=5, y1=2, x2=712, y2=55, source_resolution=(720, 1280))
+
+    PDrinkIcon = Image(path=sprite_path(r"7c0759c3-d891-47dd-869b-236a6ef2de4c.png"), name="p_drink_icon.png")
+
+    PItemIconColorful = Image(path=sprite_path(r"31689a56-9cce-4c31-95a8-64c37a62c54e.png"), name="p_item_icon_colorful.png")
+
+    PSkillCardIconBlue = Image(path=sprite_path(r"f47da007-2ab2-49e1-b0f4-b262b3aa5928.png"), name="p_skill_card_icon_blue.png")
+
+    PSkillCardIconColorful = Image(path=sprite_path(r"583b12fa-a10d-405d-adb2-97fb013443a1.png"), name="p_skill_card_icon_colorful.png")
+
+    Rest = Image(path=sprite_path(r"ee7780c2-8036-4c43-a389-3d34f589931a.png"), name="rest.png")
+
+    RestConfirmBtn = Image(path=sprite_path(r"94efe575-147f-44db-ae63-0b668a9a7342.png"), name="rest_confirm_btn.png")
+
+    ButtonIconOuting = Image(path=sprite_path(r"8ded6c98-85ea-4858-a66d-4fc8caecb7c5.png"), name="行动按钮图标 外出（おでかけ）")
+
+    BoxGoalClearNext = HintBox(x1=79, y1=503, x2=157, y2=532, source_resolution=(720, 1280))
+
+    BoxLessonCards5_1 = HintBox(x1=16, y1=882, x2=208, y2=1136, source_resolution=(720, 1280))
+
+    BoxNoSkillCard = HintBox(x1=180, y1=977, x2=529, y2=1026, source_resolution=(720, 1280))
+
+    TitleIconOuting = Image(path=sprite_path(r"ee4e512b-4982-49b6-9c71-31984b58e1d0.png"), name="外出（おでかけ）页面 标题图标")
+
+    BoxPDrinkMaxConfirmTitle = HintBox(x1=46, y1=829, x2=270, y2=876, source_resolution=(720, 1280))
+
+    BoxSelectPStuff = HintBox(x1=62, y1=558, x2=655, y2=716, source_resolution=(720, 1280))
+
+    BoxSelectPStuffComfirm = HintBox(x1=256, y1=1064, x2=478, y2=1128, source_resolution=(720, 1280))
+
+    BoxSkillCardAcquired = HintBox(x1=194, y1=712, x2=528, y2=765, source_resolution=(720, 1280))
+
+    BoxSkillCardEnhaced = HintBox(x1=49, y1=948, x2=676, y2=1106, source_resolution=(720, 1280))
+
+    ScreenshotSkillCardEnhanceDialog = Image(path=sprite_path(r"6b631eaa-848d-441b-993a-340c0fe2a7f1.png"), name="screenshot_skill_card_enhance_dialog.png")
+
+    IconTitleSkillCardEnhance = Image(path=sprite_path(r"79abd239-5eed-4195-9fa8-d729daa874ca.png"), name="技能卡强化 标题 图标")
+
+    ButtonEnhance = Image(path=sprite_path(r"da439e8c-3b74-4371-9657-0736d826c7d1.png"), name="技能卡 强化按钮")
+
+    T = Image(path=sprite_path(r"16fbc93d-b294-4001-b4e9-ee2af181415f.png"), name="睡意卡字母 T（眠気）")
+
+    IconSp = Image(path=sprite_path(r"d982d2b5-4bc0-4ae9-a516-f29c2848d64b.png"), name="SP 课程图标")
+
+    BoxCommuEventButtonsArea = HintBox(x1=14, y1=412, x2=703, y2=1089, source_resolution=(720, 1280))
+
+    TextSelfStudyVocal = Image(path=sprite_path(r"c78c38cc-7b61-4dc4-820d-0a5b684ef52e.png"), name="文化课事件 自习 声乐")
+
+    TextSelfStudyDance = Image(path=sprite_path(r"83d0a033-466c-463a-bb8c-be0f2953e9b2.png"), name="文化课事件 自习 舞蹈")
+
+    TextSelfStudyVisual = Image(path=sprite_path(r"4695f96b-c4f5-4bb6-a021-a13b6ceb2883.png"), name="文化课事件 自习 形象")
+
+    TextAsariProduceEnd = Image(path=sprite_path(r"d31ffc25-07aa-42be-bffc-8a8a909e391b.png"), name="text_asari_produce_end.png")
+
+    TextButtonExamSkipTurn = Image(path=sprite_path(r"d131e063-038e-41d6-8a1b-d516b8fa0832.png"), name="text_button_exam_skip_turn.png")
+
+    TextClearUntil = Image(path=sprite_path(r"2cfbe7a2-a254-4678-9b21-508478accdf7.png"), name="text_clear_until.png")
+
+    TextDance = Image(path=sprite_path(r"0d755b1d-60d1-4ace-9037-3b4b19e4eb0d.png"), name="text_dance.png")
+
+    TextFinalProduceRating = Image(path=sprite_path(r"cb3b0d06-c347-4d9d-a20d-d38470333ec8.png"), name="text_final_produce_rating.png")
+
+    TextOneWeekRemaining = Image(path=sprite_path(r"e1507d8d-21e1-4cd3-928d-b658a3b5ffda.png"), name="text_one_week_remaining.png")
+
+    TextPerfectUntil = Image(path=sprite_path(r"4e6effd9-34cd-4ca2-9a17-1464c520c674.png"), name="text_perfect_until.png")
+
+    TextPleaseSelectPDrink = Image(path=sprite_path(r"b285015c-e34c-4ddf-a144-7a744f0b072d.png"), name="text_please_select_p_drink.png")
+
+    TextPDiary = Image(path=sprite_path(r"395fb17e-4385-4912-8c37-fd52e6cb4569.png"), name="text_p_diary.png")
+
+    TextPDrinkMax = Image(path=sprite_path(r"cde43be9-e858-4b89-bcf7-c33e7bcf5192.png"), name="text_p_drink_max.png")
+
+    TextSenseiTipConsult = Image(path=sprite_path(r"c2089e13-3b6d-4817-85ff-c73d5f6c61cf.png"), name="text_sensei_tip_consult.png")
+
+    TextSenseiTipDance = Image(path=sprite_path(r"4d416d46-2563-480e-8abd-3b019360bb1b.png"), name="text_sensei_tip_dance.png")
+
+    TextSenseiTipRest = Image(path=sprite_path(r"19e10d00-1fbd-4f4a-9e06-ab0bc3a8744f.png"), name="text_sensei_tip_rest.png")
+
+    TextSenseiTipVisual = Image(path=sprite_path(r"8f2d80fb-08fb-40ab-8648-7e6eaafcc2d2.png"), name="text_sensei_tip_visual.png")
+
+    TextSenseiTipVocal = Image(path=sprite_path(r"266e80c1-be42-4ae0-bbd2-0452f6d7fa8a.png"), name="text_sensei_tip_vocal.png")
+
+    TextSkipTurnDialog = Image(path=sprite_path(r"39817a3c-1d16-4fef-9dc3-f2ca22e07f48.png"), name="text_skip_turn_dialog.png")
+
+    TextVisual = Image(path=sprite_path(r"ffc49dad-ef40-46da-bf5a-643fb9ba470a.png"), name="text_visual.png")
+
+    class Action:
+        
+        ActionStudy = Image(path=sprite_path(r"a4ed32ce-abe1-4b16-ae4c-df59857d59ea.png"), name="action_study.png")
+    
+        PDorinkuBg = Image(path=sprite_path(r"3d7486ed-0ac0-4d20-8da4-45c3a9c2d958.png"), name="p_dorinku_bg.png")
+    
+        PDorinkuBgMask = Image(path=sprite_path(r"15e6bf39-9089-4e8a-b956-62191c4558ce.png"), name="p_dorinku_bg_mask.png")
+    
+        PItem = Image(path=sprite_path(r"1df31455-83bd-4084-801e-10fa5b6c6ebe.png"), name="p_item.png")
+    
+        VocalWhiteBg = Image(path=sprite_path(r"08af35d1-7a66-447d-a06b-215085a0b95a.png"), name="vocal_white_bg.png")
+    
+    
+        pass
+
+    pass
