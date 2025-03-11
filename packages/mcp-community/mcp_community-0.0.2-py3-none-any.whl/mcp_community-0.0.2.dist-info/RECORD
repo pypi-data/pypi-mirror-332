@@ -1,0 +1,11 @@
+mcp_community/__init__.py,sha256=6vkk_8hUVOHU-U51iJ40XG0SdXWJL72HiiAF90eJHPA,381
+mcp_community/run.py,sha256=9sF98qBRKND23OEOMbPCqZlYIGzbp_lzp1PETAi0o1E,3490
+mcp_community/examples/mcp_client.py,sha256=3BThanXsDEbbqQveAqm2PR0Dlj175Us-S4VxxH7Y6LI,4119
+mcp_community/examples/ruff.toml,sha256=vH89kRupXz9M_qCrP9iC-cUlZjeBl_Ebe7FYdVKRWyk,51
+mcp_community/servers/README.md,sha256=FnKp4sBFcbctJMHy3s8R-UP4uxs2O8pxRBwq65fP3vI,71
+mcp_community/servers/__init__.py,sha256=iajfDHt_SQOxt4giTQK1y6AXMJ6ZCufPMcZvS-MLxk8,68
+mcp_community/servers/calculator.py,sha256=v8bV1pMTvLOS4Itzfo7XvbOKD5H1juhsSp8_WedB0K4,752
+mcp_community-0.0.2.dist-info/METADATA,sha256=x0lXKa4VHPoRYhiA_ENCpLMJZz8oppJK-zhRjF2--PA,16190
+mcp_community-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_community-0.0.2.dist-info/licenses/LICENSE,sha256=h0EvgT1TdS9kSAZK9_DCBCWkxNldkgn6jUj3wyvDI_8,11339
+mcp_community-0.0.2.dist-info/RECORD,,
