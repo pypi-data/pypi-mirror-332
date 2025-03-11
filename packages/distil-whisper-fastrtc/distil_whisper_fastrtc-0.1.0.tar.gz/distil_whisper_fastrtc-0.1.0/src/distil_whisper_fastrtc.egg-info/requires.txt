@@ -1,0 +1,13 @@
+numpy>=1.20.0
+torch>=1.10.0
+transformers>=4.30.0
+accelerate>=0.20.0
+click>=8.0.0
+
+[audio]
+librosa>=0.9.0
+
+[dev]
+pytest>=7.0.0
+black>=23.0.0
+isort>=5.0.0

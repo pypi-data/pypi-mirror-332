@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/distil_whisper_fastrtc/__init__.py
+src/distil_whisper_fastrtc/model.py
+src/distil_whisper_fastrtc/utils.py
+src/distil_whisper_fastrtc.egg-info/PKG-INFO
+src/distil_whisper_fastrtc.egg-info/SOURCES.txt
+src/distil_whisper_fastrtc.egg-info/dependency_links.txt
+src/distil_whisper_fastrtc.egg-info/requires.txt
+src/distil_whisper_fastrtc.egg-info/top_level.txt
+tests/test_model.py
