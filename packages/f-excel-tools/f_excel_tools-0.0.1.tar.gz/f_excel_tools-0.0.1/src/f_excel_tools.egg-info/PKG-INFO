@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: f-excel-tools
+Version: 0.0.1
+Summary: Collection of excel tools
+Author-email: Filipe Ferreira <code@filipeandre.com>
+Project-URL: Homepage, https://github.com/filipeandre/f-excel-tools
+Description-Content-Type: text/markdown
+Requires-Dist: openpyxl
+Requires-Dist: pyside6
+
+# f-excel-tools
+
+This package contains a collection of excel tools

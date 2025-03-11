@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "f-excel-tools"
+version = "0.0.1"
+description = "Collection of excel tools"
+readme = "README.md"
+authors = [
+    {name = "Filipe Ferreira", email = "code@filipeandre.com"}
+]
+dependencies = [
+    "openpyxl",
+    "pyside6",
+]
+urls = { "Homepage" = "https://github.com/filipeandre/f-excel-tools" }
+
+[project.scripts]
+f-email-splitter = "main:__main__"
