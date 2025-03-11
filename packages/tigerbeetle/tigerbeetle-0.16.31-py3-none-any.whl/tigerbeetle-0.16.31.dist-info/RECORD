@@ -1,0 +1,14 @@
+tigerbeetle/__init__.py,sha256=3cmov0HPkByJw1znLKoTqIuZUEeEQMEg1fflWY3ty9A,168
+tigerbeetle/bindings.py,sha256=8YfOv18KBGvLkkfhMiUFAuwCCzkhdgKg9-kuI80rW44,26460
+tigerbeetle/client.py,sha256=oGg1vAFqI8UZ5awI3sshZfxUdBsroUKwgp2rUa75lFc,9255
+tigerbeetle/lib.py,sha256=JKreDxdw_YejtH7F135_m6I6mNBSwjokaI6QicKm7cc,2425
+tigerbeetle/lib/aarch64-linux-gnu.2.27/libtb_client.so,sha256=09D4OS_wFQ4YcuNYY9W8_VrLbdjCJU2j1Y6eQJwRFPo,3912832
+tigerbeetle/lib/aarch64-linux-musl/libtb_client.so,sha256=sbUWhwMrJNvz0kRhGlFCekee1huRj-E_F_FxwzuZJTg,3889584
+tigerbeetle/lib/aarch64-macos/libtb_client.dylib,sha256=lMbZNJJT222GYaS7rufhlF2BDf16EOn_SBwARs1AmPU,535312
+tigerbeetle/lib/x86_64-linux-gnu.2.27/libtb_client.so,sha256=pAUTOpXxDl0lm9HPlEWsc3T-HvK9V4kT88nY9lKY_no,3855128
+tigerbeetle/lib/x86_64-linux-musl/libtb_client.so,sha256=LDkbUtHSd0Xy8YwZZvE1c30J5y_J8iEsXvC9dkj3sbI,3852176
+tigerbeetle/lib/x86_64-macos/libtb_client.dylib,sha256=mJelvjkGua7ooFNq60s41-UM0EBfTd71ylnn0qIUB6Q,743535
+tigerbeetle/lib/x86_64-windows/tb_client.dll,sha256=L6YjmebrVyd7mk0b1WGLYvfiP_vu7iNz5cdeIQKdhoY,832512
+tigerbeetle-0.16.31.dist-info/METADATA,sha256=knRWwqFT2zAFIFydouTiX1SquewOaJEcLuvZflpNEgA,22957
+tigerbeetle-0.16.31.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+tigerbeetle-0.16.31.dist-info/RECORD,,
