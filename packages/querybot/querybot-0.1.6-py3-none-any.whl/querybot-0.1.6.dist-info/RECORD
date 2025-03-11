@@ -1,0 +1,9 @@
+querybot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+querybot/app.py,sha256=_7C77wdoKSMcCCtPXG5jToyZAcE5pigNxSK2oLCzk9A,16098
+querybot/static/index.html,sha256=IjZFB08qmpmxWBhRvmuCuCZKalPLeJg-wLVCvasQ-K4,5562
+querybot/static/js/script.js,sha256=Bsuv-F7GS9aHinkC-Nc7KA8sWfcCh0sSTk85QQ79xmk,14286
+querybot-0.1.6.dist-info/entry_points.txt,sha256=J_zJiZ71zdNns_v-Kq1Qc9rJDqPQLgKZUm8cWOaALjM,46
+querybot-0.1.6.dist-info/LICENSE,sha256=5rsRIqxj5PlXZmJrnVabQbVQT-Kh4QmFtOv4Xf42w0w,1096
+querybot-0.1.6.dist-info/METADATA,sha256=kyMCc52CGjECNYbZppkvxm3lwaWQxVE2wI4Kpirxc8o,5639
+querybot-0.1.6.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+querybot-0.1.6.dist-info/RECORD,,
