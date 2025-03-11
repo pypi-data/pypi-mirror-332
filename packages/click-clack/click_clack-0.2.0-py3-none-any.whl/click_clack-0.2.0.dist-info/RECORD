@@ -1,0 +1,13 @@
+click_clack/ClickClack.py,sha256=ESgCThsYob68EjFPY0btQ1h5U38bpxbKAm-OJzsZVW4,16493
+click_clack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+click_clack/click_clack.py,sha256=IK4GTnmq7B7G5lVO9PwvEy9ED5Tm2eI-xrSK0zcxeKY,2223
+click_clack/crawl/__init__.py,sha256=66TnTSp_o4ORGsHSPJy0yV9KiD5j8f4FXQho5OW60ls,3513
+click_clack/mcp/__init__.py,sha256=l0hXzO0P2X_8HOmAUeqYVMd7Y1FvNtud3AjRAsTe9k0,110
+click_clack/mcp/generate_mcp_server.py,sha256=JN3lmdARPk2agV420dSwdeGt15ldbZW7WqXhy-lBIMU,3743
+click_clack/utils/__init__.py,sha256=q1rvmnLo-XqXeoqYzLvZbZJPO16D2FxkjpqVaMp0nyI,94
+click_clack/utils/generate_help.py,sha256=CbQgp60nO4QKT7ZqYNbUj_VGzSeY1yMy33vaeuqbb48,1040
+click_clack-0.2.0.dist-info/METADATA,sha256=itsW1AQDJyc7s8CuQvPr3VlAidOBH99fCJTN9Hwf6DU,17094
+click_clack-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+click_clack-0.2.0.dist-info/entry_points.txt,sha256=-IQC2LLHYr94npAXD6ueyFnSPiG6C4ZgwLNDlyIXblQ,68
+click_clack-0.2.0.dist-info/licenses/LICENSE,sha256=2RHEzO2yKAdNZ5zvevAGMfDV5NbVp2cwRXU2OahygtQ,11342
+click_clack-0.2.0.dist-info/RECORD,,
