@@ -1,0 +1,1 @@
+https://bart.sec.samsung.net/artifactory/api/pypi/trec-pypi/simple
