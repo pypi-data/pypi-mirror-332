@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+example_package_clarenceh.egg-info/PKG-INFO
+example_package_clarenceh.egg-info/SOURCES.txt
+example_package_clarenceh.egg-info/dependency_links.txt
+example_package_clarenceh.egg-info/top_level.txt
