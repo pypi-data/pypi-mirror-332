@@ -1,0 +1,51 @@
+Metadata-Version: 2.2
+Name: osmg
+Version: 1.0.1
+Summary: OpenSees Model Generator
+Home-page: https://github.com/ioannis-vm/OpenSees_Model_Generator
+Author: John Vouvakis Manousakis
+License: GPL
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: descartes>=1.1.0
+Requires-Dist: dill>=0.3.7
+Requires-Dist: json-tricks>=3.17.3
+Requires-Dist: matplotlib>=3.4.1
+Requires-Dist: numpy>=1.20.2
+Requires-Dist: openpyxl>=3.0.7
+Requires-Dist: pandas>=1.2.4
+Requires-Dist: plotly>=4.14.3
+Requires-Dist: scipy>=1.9.0
+Requires-Dist: shapely>=1.7.1
+Requires-Dist: tqdm>=2.0.0
+Requires-Dist: xlrd>=2.0.1
+Requires-Dist: pydantic
+Requires-Dist: pyarrow
+Provides-Extra: dev
+Requires-Dist: codespell; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: jupyter; extra == "dev"
+Requires-Dist: jupytext; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: types-requests; extra == "dev"
+Requires-Dist: nbsphinx; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: sphinx-autoapi; extra == "dev"
+Requires-Dist: sphinx-rtd_theme; extra == "dev"
+Requires-Dist: sphinx_autodoc_typehints; extra == "dev"
+Requires-Dist: xdoctest; extra == "dev"
+
+OpenSees Model Generator
