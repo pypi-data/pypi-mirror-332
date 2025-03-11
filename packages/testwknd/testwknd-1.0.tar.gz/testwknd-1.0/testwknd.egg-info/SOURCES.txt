@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+testwknd/__init__.py
+testwknd/pdf2image.py
+testwknd/pdf2text.py
+testwknd.egg-info/PKG-INFO
+testwknd.egg-info/SOURCES.txt
+testwknd.egg-info/dependency_links.txt
+testwknd.egg-info/top_level.txt
