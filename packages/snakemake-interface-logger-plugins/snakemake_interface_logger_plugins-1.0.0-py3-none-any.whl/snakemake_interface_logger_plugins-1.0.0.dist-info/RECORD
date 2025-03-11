@@ -1,0 +1,9 @@
+snakemake_interface_logger_plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snakemake_interface_logger_plugins/base.py,sha256=BDXVDRyGgdpjXTY4iSyU8gwConRR_OIxP5Vy1WP0f-o,1476
+snakemake_interface_logger_plugins/common.py,sha256=E_TD7JJNNVlPe4i-rLh3LIZoI8xn2e8r0IWJn-vV-vc,1089
+snakemake_interface_logger_plugins/registry/__init__.py,sha256=3gKbc3c7UXqsD4rY5oWcvC1x8Z6FejV0t2eZJStZL_U,1705
+snakemake_interface_logger_plugins/registry/plugin.py,sha256=fHxgAVvNP7vGthxMNXPo-OHHs-H0VfndaJHPP8rb4Zc,880
+snakemake_interface_logger_plugins/settings.py,sha256=8ZOMVfGmp1MCaZ1Is8y74Dp5sV8wnSpZiAtPMWLwRcI,811
+snakemake_interface_logger_plugins-1.0.0.dist-info/METADATA,sha256=xAmVFukj1uPIIgHwfMg_6qD2-139atQZNlMX1nZo2zc,997
+snakemake_interface_logger_plugins-1.0.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+snakemake_interface_logger_plugins-1.0.0.dist-info/RECORD,,
