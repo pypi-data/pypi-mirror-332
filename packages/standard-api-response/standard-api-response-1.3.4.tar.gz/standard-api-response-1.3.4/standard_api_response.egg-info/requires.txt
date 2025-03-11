@@ -1,0 +1,4 @@
+pydantic
+fastapi
+inflection
+convertable-key-model
