@@ -1,0 +1,8 @@
+setup.py
+vortex_auth/__init__.py
+vortex_auth/auth.py
+vortex_authentication.egg-info/PKG-INFO
+vortex_authentication.egg-info/SOURCES.txt
+vortex_authentication.egg-info/dependency_links.txt
+vortex_authentication.egg-info/requires.txt
+vortex_authentication.egg-info/top_level.txt
