@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "shllm"
+version = "0.0.5"
+description = "Natural langauge shell commands."
+authors = ["Ryan Hendry <ryanhendry123@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyperclip = "^1.9.0"
+openai = "^1.51.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+shllm = "shllm:main"
