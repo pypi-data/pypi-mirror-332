@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+src/starlette_http_exceptions/__init__.py
+src/starlette_http_exceptions/main.py
+src/starlette_http_exceptions/status.py
+src/starlette_http_exceptions.egg-info/PKG-INFO
+src/starlette_http_exceptions.egg-info/SOURCES.txt
+src/starlette_http_exceptions.egg-info/dependency_links.txt
+src/starlette_http_exceptions.egg-info/requires.txt
+src/starlette_http_exceptions.egg-info/top_level.txt
