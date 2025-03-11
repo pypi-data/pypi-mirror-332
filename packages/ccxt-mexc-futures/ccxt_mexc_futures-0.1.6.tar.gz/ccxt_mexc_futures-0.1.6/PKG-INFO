@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: ccxt-mexc_futures
+Version: 0.1.6
+Summary: CCXT module for MEXC Futures API
+Home-page: 
+Author: 
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: ccxt
+Requires-Dist: requests
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
