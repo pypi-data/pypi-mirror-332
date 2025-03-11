@@ -1,0 +1,8 @@
+joblib
+lightgbm
+numpy
+orjson
+pandas
+sentence_transformers
+spacy
+tqdm
