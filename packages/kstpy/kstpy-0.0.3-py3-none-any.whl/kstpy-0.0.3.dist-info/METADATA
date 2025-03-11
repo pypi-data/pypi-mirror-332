@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: kstpy
+Version: 0.0.3
+Summary: A Python pasckage for Knowledge Space Theory
+License: GNU General Public License v3.0
+Author: Cord Hockemeyer
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# kstpy
+
+A Python pasckage for Knowledge Space Theory
+
+## Installation
+
+```bash
+$ pip install kstpy
+```
+
+## Usage
+
+- TODO
+
+## License
+
+`kstpy` was created by Cord Hockemeyer. It is licensed under the terms of the GNU General Public License v3.0 license.
+
+## Credits
+
+`kstpy` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
