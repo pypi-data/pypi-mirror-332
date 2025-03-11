@@ -1,0 +1,7 @@
+README.md
+setup.py
+IFC2IDA.egg-info/PKG-INFO
+IFC2IDA.egg-info/SOURCES.txt
+IFC2IDA.egg-info/dependency_links.txt
+IFC2IDA.egg-info/requires.txt
+IFC2IDA.egg-info/top_level.txt
