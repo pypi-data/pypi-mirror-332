@@ -1,0 +1,122 @@
+from pydantic import BaseModel, Field
+
+class CompanyProfile(BaseModel):
+    symbol: str = Field(..., description="The symbol of the stock")
+    price: float = Field(..., description="The price of the stock")
+    marketCap: float = Field(..., description="The market cap of the stock")
+    beta: float = Field(..., description="The beta of the stock")
+    lastDividend: float = Field(..., description="The last dividend of the stock")
+    range: str = Field(..., description="The range of the stock")
+    change: float = Field(..., description="The change of the stock")
+    changePercentage: float = Field(..., description="The change percentage of the stock")
+    volume: int = Field(..., description="The volume of the stock")
+    averageVolume: int = Field(..., description="The average volume of the stock")
+    companyName: str = Field(..., description="The name of the company")
+    currency: str = Field(..., description="The currency of the stock")
+    cik: str = Field(..., description="The cik of the stock")
+    isin: str = Field(..., description="The isin of the stock")
+    cusip: str = Field(..., description="The cusip of the stock")
+    exchangeFullName: str = Field(..., description="The exchange full name of the stock")
+    exchange: str = Field(..., description="The exchange of the stock")
+    industry: str = Field(..., description="The industry of the stock")
+    website: str = Field(..., description="The website of the company")
+    description: str = Field(..., description="The description of the company")
+    ceo: str = Field(..., description="The ceo of the company")
+    sector: str = Field(..., description="The sector of the company")
+    country: str = Field(..., description="The country of the company")
+    fullTimeEmployees: str = Field(..., description="The full time employees of the company")
+    phone: str = Field(..., description="The phone of the company")
+    address: str = Field(..., description="The address of the company")
+    city: str = Field(..., description="The city of the company")
+    state: str = Field(..., description="The state of the company")
+    zip: str = Field(..., description="The zip of the company")
+    image: str = Field(..., description="The image of the company")
+    ipoDate: str = Field(..., description="The ipo date of the company")
+    defaultImage: bool = Field(..., description="The default image of the company")
+    isEtf: bool = Field(..., description="The is etf of the company")
+    isActivelyTrading: bool = Field(..., description="The is actively trading of the company")
+    isAdr: bool = Field(..., description="The is adr of the company")
+    isFund: bool = Field(..., description="The is fund of the company")
+
+class CompanyNote(BaseModel):
+    cik: str = Field(..., description="The cik of the company")
+    symbol: str = Field(..., description="The symbol of the stock")
+    title: str = Field(..., description="The title of the note")
+    exchange: str = Field(..., description="The exchange of the note")
+
+class StockPeer(BaseModel):
+    symbol: str = Field(..., description="The symbol of the stock")
+    companyName: str = Field(..., description="The company name of the stock")
+    price: float = Field(..., description="The price of the stock")
+    mktCap: int | float = Field(..., description="The market cap of the stock")
+
+class DelistedCompany(BaseModel):
+    symbol: str = Field(..., description="The symbol of the stock")
+    companyName: str = Field(..., description="The company name of the stock")
+    exchange: str = Field(..., description="The exchange of the stock")
+    ipoDate: str = Field(..., description="The ipo date of the stock")
+    delistedDate: str = Field(..., description="The delisted date of the stock")
+
+class EmployeeCount(BaseModel):
+    symbol: str = Field(..., description="The symbol of the stock")
+    cik: str = Field(..., description="The cik of the stock")
+    acceptanceTime: str = Field(..., description="The acceptance time of the stock")
+    periodOfReport: str = Field(..., description="The period of report of the stock")
+    companyName: str = Field(..., description="The company name of the stock")
+    formType: str = Field(..., description="The form type of the stock")
+    filingDate: str = Field(..., description="The filing date of the stock")
+    employeeCount: int = Field(..., description="The employee count of the stock")
+    source: str = Field(..., description="The source of the stock")
+
+class MarketCapitalization(BaseModel):
+    symbol: str = Field(..., description="The symbol of the stock")
+    date: str = Field(..., description="The date of the market cap")
+    marketCap: float = Field(..., description="The market cap of the stock")
+
+class SharesFloat(BaseModel):
+    symbol: str = Field(..., description="The symbol of the stock")
+    date: str | None = Field(None, description="The date of the shares float")
+    freeFloat: float | None = Field(None, description="The free float of the stock")
+    floatShares: int | float | None = Field(None, description="The float shares of the stock")
+    outstandingShares: int | float | None = Field(None, description="The outstanding shares of the stock")
+
+class MergerAcquisition(BaseModel):
+    symbol: str = Field(..., description="The symbol of the stock")
+    companyName: str = Field(..., description="The company name of the stock")
+    cik: str = Field(..., description="The cik of the stock")
+    targetedCompanyName: str = Field(..., description="The targeted company name of the stock")
+    targetedCik: str | None = Field(None, description="The targeted cik of the stock")
+    targetedSymbol: str | None = Field(None, description="The targeted symbol of the stock")
+    transactionDate: str = Field(..., description="The transaction date of the stock")
+    acceptedDate: str = Field(..., description="The accepted date of the stock")
+    link: str = Field(..., description="The link of the stock")
+
+class Executive(BaseModel):
+    title: str = Field(..., description="The title of the executive")
+    name: str = Field(..., description="The name of the executive")
+    pay: float | None = Field(None, description="The pay of the executive")
+    currencyPay: str = Field(..., description="The currency pay of the executive")
+    gender: str = Field(..., description="The gender of the executive")
+    yearBorn: int | None = Field(None, description="The year born of the executive")
+    active: bool | None = Field(None, description="The active of the executive")
+
+class ExecutiveCompensation(BaseModel):
+    symbol: str = Field(..., description="The symbol of the stock")
+    companyName: str = Field(..., description="The company name of the stock")
+    filingDate: str = Field(..., description="The filing date of the stock")
+    acceptedDate: str = Field(..., description="The accepted date of the stock")
+    nameAndPosition: str = Field(..., description="The name and position of the stock")
+    year: int = Field(..., description="The year of the stock")
+    salary: float = Field(..., description="The salary of the stock")
+    bonus: float = Field(..., description="The bonus of the stock")
+    stockAward: float = Field(..., description="The stock award of the stock")
+    optionAward: float | None = Field(None, description="The option award of the stock")
+    incentivePlanCompensation: float = Field(..., description="The incentive plan compensation of the stock")
+    allOtherCompensation: float = Field(..., description="The all other compensation of the stock")
+    total: float = Field(..., description="The total of the stock")
+    link: str = Field(..., description="The link of the stock")
+
+class ExecutiveCompensationBenchmark(BaseModel):
+    industryTitle: str = Field(..., description="The industry title of the stock")
+    year: int = Field(..., description="The year of the stock")
+    averageCompensation: float = Field(..., description="The average compensation of the stock")
