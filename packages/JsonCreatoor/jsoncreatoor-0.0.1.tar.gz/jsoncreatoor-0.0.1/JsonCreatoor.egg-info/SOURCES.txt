@@ -1,0 +1,10 @@
+README.md
+setup.py
+JsonCreatoor.egg-info/PKG-INFO
+JsonCreatoor.egg-info/SOURCES.txt
+JsonCreatoor.egg-info/dependency_links.txt
+JsonCreatoor.egg-info/requires.txt
+JsonCreatoor.egg-info/top_level.txt
+src/__init__.py
+src/JsonLibralyCreator/__init__.py
+src/JsonLibralyCreator/main.py
