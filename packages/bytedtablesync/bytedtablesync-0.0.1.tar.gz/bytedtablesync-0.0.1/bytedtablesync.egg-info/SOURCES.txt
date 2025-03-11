@@ -1,0 +1,6 @@
+setup.py
+bytedtablesync/__init__.py
+bytedtablesync.egg-info/PKG-INFO
+bytedtablesync.egg-info/SOURCES.txt
+bytedtablesync.egg-info/dependency_links.txt
+bytedtablesync.egg-info/top_level.txt
