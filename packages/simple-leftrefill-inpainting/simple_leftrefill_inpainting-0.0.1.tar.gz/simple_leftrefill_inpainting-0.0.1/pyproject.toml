@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "simple-leftrefill-inpainting"
+version = "0.0.1"
+description = "This is a wrapper api of paper LeftRefill"
+authors = ["jingwei xu <davidxujw@gmail.com>"]
+readme = "README.md"
+packages = [{include = "simple_leftrefill_inpainting"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.3"
+opencv-python = "^4.8.0.74"
+pillow = "^9.5.0"
+torch = ">=1.13.1, !=2.0.1"
+torchvision = ">=0.14.1"
+fire = "^0.5.0"
+webdataset = "*"
+transformers = "4.39.3"
+huggingface_hub = "0.20.2"
+easydict = "*"
+pytorch_lightning = "1.5.0"
+kornia = "0.5.0"
+timm = "0.4.12"
+einops = "*"
+open_clip_torch = "2.16.0"
+yacs = "0.1.8"
+diffusers = "0.27.2"
+omegaconf = "*"
+scikit-image = "*"
+
+[tool.poetry.scripts]
+simple_leftrefill = "simple_leftrefill_inpainting.cli:leftrefill_cli"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
