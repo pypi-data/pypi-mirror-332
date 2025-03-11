@@ -1,0 +1,26 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "i18nTool"
+version = "v0.1.0"
+authors = [
+    { name = "weinibuliu", email = "weinibuliu@outlook.com" },
+]
+description = "A Simple and lightweight Python internationalization (i18n) tool."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pyyaml",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Repository = "https://github.com/weinibuliu/python-i18nTool"
+
+[tool]
