@@ -1,0 +1,6 @@
+setup.py
+bytedance_autotestdock/__init__.py
+bytedance_autotestdock.egg-info/PKG-INFO
+bytedance_autotestdock.egg-info/SOURCES.txt
+bytedance_autotestdock.egg-info/dependency_links.txt
+bytedance_autotestdock.egg-info/top_level.txt
