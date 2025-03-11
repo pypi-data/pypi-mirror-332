@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "f-excel-tools"
+version = "0.1.0"
+description = "Collection of excel tools"
+authors = ["Filipe Ferreira <ola@filipeandre.com>"]
+readme = "README.md"
+homepage = "https://github.com/filipeandre/f-excel-tools"
+package-mode = true
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+matplotlib = "^3.10.1"
+pandas = "^2.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+openpyxl = "^3.1.5"
+pyqt6 = "^6.8.1"
+
+[tool.poetry.scripts]
+f-excel = "f_excel_tools.main:main"
+f-excel-tools = "f_excel_tools.main:main"
